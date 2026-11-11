@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pinky's Locksmithing — Website concept by Cream City Post</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23e600c4'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#e600c4;--pink-l:#ffe3f8;--hot:#ff3fcf;--char:#18161a;--char-2:#26232a;--paper:#fbf8fa;--muted:#6c6570;--line:rgba(24,22,26,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Space Grotesk",system-ui,sans-serif;background:var(--paper);color:var(--char);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,56px)}
+.k{text-transform:uppercase;letter-spacing:.16em;font-weight:600;font-size:12px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.mark{text-decoration:none;line-height:1}
+.mark b{font-family:"Pacifico",cursive;font-weight:400;font-size:30px;color:var(--pink)}
+.mark small{display:block;margin-top:2px;letter-spacing:.32em;font-size:10.5px;font-weight:700;color:var(--char)}
+.call{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;color:#fff;background:var(--pink);padding:12px 18px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 20px -6px rgba(230,0,196,.55)}
+.call i{width:8px;height:8px;border-radius:50%;background:#fff;animation:p 1.6s infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(28px,5vw,72px) 0 clamp(56px,7vw,96px)}
+.hero .k{color:var(--pink)}
+h1{font-weight:700;font-size:clamp(46px,6.6vw,96px);line-height:.95;letter-spacing:-.035em;margin-top:16px}
+h1 span{color:var(--pink)}
+.lede{margin-top:22px;font-size:clamp(16px,1.35vw,19px);color:var(--muted);max-width:44ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:16px;padding:16px 24px;border-radius:999px}
+.btn-p{background:var(--char);color:#fff}
+.btn-s{border:1.5px solid var(--char)}
+.gauge{position:relative;aspect-ratio:1;max-width:460px;width:100%;justify-self:center}
+.gauge svg{width:100%;height:100%;display:block}
+.gauge .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 18%}
+.gauge .c b{font-size:clamp(64px,8vw,112px);font-weight:700;letter-spacing:-.04em;line-height:.9}
+.gauge .c b sup{font-size:.42em;color:var(--pink);vertical-align:.95em}
+.gauge .c span{margin-top:12px;font-size:15px;color:var(--muted);line-height:1.35}
+.gauge .c span strong{color:var(--char)}
+.aaron{background:var(--char);color:#fff}
+.aaron-in{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,72px);align-items:center;padding-top:clamp(56px,7vw,96px);padding-bottom:clamp(56px,7vw,96px)}
+.ph{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:545/490;box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph span{position:absolute;left:14px;bottom:14px;background:rgba(24,22,26,.8);padding:7px 11px;border-radius:999px;font-size:12px}
+.aaron h2{font-weight:700;font-size:clamp(30px,3.6vw,50px);line-height:1.02;letter-spacing:-.025em}
+.aaron h2 span{color:var(--hot)}
+.aaron p{margin-top:16px;color:rgba(255,255,255,.72);max-width:46ch}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
+.svc div{background:var(--char-2);border-radius:16px;padding:18px}
+.svc b{display:block;font-size:17px}
+.svc small{display:block;margin-top:6px;color:rgba(255,255,255,.6);font-size:13.5px;line-height:1.4}
+.svc div:first-child{background:var(--pink)}
+.svc div:first-child small{color:rgba(255,255,255,.88)}
+.area{padding:26px 0;border-bottom:1px solid var(--line)}
+.area .k{color:var(--pink)}
+.area p{margin-top:10px;font-size:15.5px;color:var(--muted);line-height:1.8}
+.area p b{color:var(--char);font-weight:600}
+.invite{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;padding-top:clamp(48px,6vw,84px);padding-bottom:clamp(48px,6vw,84px)}
+.invite h2{font-weight:700;font-size:clamp(26px,3vw,42px);line-height:1.05;letter-spacing:-.02em;max-width:18ch}
+.invite h2 em{font-family:"Pacifico",cursive;font-style:normal;font-weight:400;color:var(--pink);font-size:.9em}
+.invite p{color:var(--muted)}
+.contact{display:grid;gap:4px;margin-top:14px;font-weight:600}
+.contact a{text-decoration:none;color:var(--pink)}
+footer{background:var(--char);color:rgba(255,255,255,.6);font-size:12px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:18px;padding-bottom:20px}
+footer b{color:#fff}
+@media (max-width:900px){.hero,.aaron-in,.invite{grid-template-columns:1fr}.gauge{max-width:380px;order:-1}.invite{gap:12px}}
+@media (max-width:560px){.mark b{font-size:24px}.call{padding:10px 14px;font-size:14px}.btn{flex:1 1 100%}.svc{grid-template-columns:1fr}.gauge{max-width:320px}}
+@media (prefers-reduced-motion:reduce){.call i{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#top"><b>Pinky's</b><small>LOCKSMITHING</small></a>
+    <a class="call" href="tel:+14144013613"><i></i>(414) 401-3613</a>
+  </header>
+  <section class="hero" id="top">
+    <div>
+      <span class="k">Milwaukee mobile locksmith · 24 hours</span>
+      <h1>Locked out? <span>Think Pink.</span></h1>
+      <p class="lede">Car keys, home and business locks. We come to you, anywhere in the Milwaukee metro, with upfront pricing and no surprise charges.</p>
+      <div class="ctas">
+        <a class="btn btn-p" href="tel:+14144013613">Call now, 24/7</a>
+        <a class="btn btn-s" href="mailto:office@pinkyslocksmithing.com">Email us</a>
+      </div>
+    </div>
+    <div class="gauge" role="img" aria-label="85 percent of emergency lockouts resolved within 20 minutes of arrival">
+      <svg viewBox="0 0 400 400"><circle cx="200" cy="200" r="172" fill="#fff" stroke="#f0e4ed" stroke-width="22"/><line x1="200.0" y1="14.0" x2="200.0" y2="6.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="219.4" y1="15.0" x2="219.9" y2="11.0" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="238.7" y1="18.1" x2="239.5" y2="14.2" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="257.5" y1="23.1" x2="258.7" y2="19.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="275.7" y1="30.1" x2="277.3" y2="26.4" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="293.0" y1="38.9" x2="297.0" y2="32.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="309.3" y1="49.5" x2="311.7" y2="46.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="324.5" y1="61.8" x2="327.1" y2="58.8" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="338.2" y1="75.5" x2="341.2" y2="72.9" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="350.5" y1="90.7" x2="353.7" y2="88.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="361.1" y1="107.0" x2="368.0" y2="103.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="369.9" y1="124.3" x2="373.6" y2="122.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="376.9" y1="142.5" x2="380.7" y2="141.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="381.9" y1="161.3" x2="385.8" y2="160.5" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="385.0" y1="180.6" x2="389.0" y2="180.1" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="386.0" y1="200.0" x2="394.0" y2="200.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="385.0" y1="219.4" x2="389.0" y2="219.9" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="381.9" y1="238.7" x2="385.8" y2="239.5" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="376.9" y1="257.5" x2="380.7" y2="258.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="369.9" y1="275.7" x2="373.6" y2="277.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="361.1" y1="293.0" x2="368.0" y2="297.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="350.5" y1="309.3" x2="353.7" y2="311.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="338.2" y1="324.5" x2="341.2" y2="327.1" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="324.5" y1="338.2" x2="327.1" y2="341.2" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="309.3" y1="350.5" x2="311.7" y2="353.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="293.0" y1="361.1" x2="297.0" y2="368.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="275.7" y1="369.9" x2="277.3" y2="373.6" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="257.5" y1="376.9" x2="258.7" y2="380.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="238.7" y1="381.9" x2="239.5" y2="385.8" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="219.4" y1="385.0" x2="219.9" y2="389.0" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="200.0" y1="386.0" x2="200.0" y2="394.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="180.6" y1="385.0" x2="180.1" y2="389.0" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="161.3" y1="381.9" x2="160.5" y2="385.8" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="142.5" y1="376.9" x2="141.3" y2="380.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="124.3" y1="369.9" x2="122.7" y2="373.6" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="107.0" y1="361.1" x2="103.0" y2="368.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="90.7" y1="350.5" x2="88.3" y2="353.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="75.5" y1="338.2" x2="72.9" y2="341.2" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="61.8" y1="324.5" x2="58.8" y2="327.1" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="49.5" y1="309.3" x2="46.3" y2="311.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="38.9" y1="293.0" x2="32.0" y2="297.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="30.1" y1="275.7" x2="26.4" y2="277.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="23.1" y1="257.5" x2="19.3" y2="258.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="18.1" y1="238.7" x2="14.2" y2="239.5" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="15.0" y1="219.4" x2="11.0" y2="219.9" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="14.0" y1="200.0" x2="6.0" y2="200.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="15.0" y1="180.6" x2="11.0" y2="180.1" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="18.1" y1="161.3" x2="14.2" y2="160.5" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="23.1" y1="142.5" x2="19.3" y2="141.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="30.1" y1="124.3" x2="26.4" y2="122.7" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="38.9" y1="107.0" x2="32.0" y2="103.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="49.5" y1="90.7" x2="46.3" y2="88.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="61.8" y1="75.5" x2="58.8" y2="72.9" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="75.5" y1="61.8" x2="72.9" y2="58.8" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="90.7" y1="49.5" x2="88.3" y2="46.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="107.0" y1="38.9" x2="103.0" y2="32.0" stroke="#18161a" stroke-opacity="0.5" stroke-width="2"/><line x1="124.3" y1="30.1" x2="122.7" y2="26.4" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="142.5" y1="23.1" x2="141.3" y2="19.3" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="161.3" y1="18.1" x2="160.5" y2="14.2" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/><line x1="180.6" y1="15.0" x2="180.1" y2="11.0" stroke="#18161a" stroke-opacity="0.22" stroke-width="1"/>
+<circle cx="200" cy="200" r="172" fill="none" stroke="#e600c4" stroke-width="22" stroke-linecap="round" stroke-dasharray="918.6 1080.7" transform="rotate(-90 200 200)"/>
+<rect x="186" y="2" width="28" height="12" rx="3" fill="#18161a"/><rect x="194" y="12" width="12" height="8" fill="#18161a"/></svg>
+      <div class="c"><b>85<sup>%</sup></b><span>of emergency lockouts resolved <strong>within 20 minutes</strong> of arrival</span></div>
+    </div>
+  </section>
+</div>
+
+<section class="aaron">
+  <div class="wrap aaron-in">
+    <div class="ph"><img src="img/cutter.jpg" alt="Car key being cut in Pinky's key machine" loading="lazy"><span>Car key cutting &amp; programming</span></div>
+    <div>
+      <span class="k" style="color:var(--hot)">Family-owned &amp; operated</span>
+      <h2 style="margin-top:12px">When you call, <span>Aaron answers.</span></h2>
+      <p>He's the locksmith, he explains everything upfront, and he's the one coming to help. No call center, no dispatch.</p>
+      <div class="svc">
+        <div><b>Automotive</b><small>Lost keys, transponder programming, fob replacement. No towing.</small></div>
+        <div><b>Residential</b><small>Lockouts, rekeying, deadbolts &amp; lock repair.</small></div>
+        <div><b>Commercial</b><small>Master key systems, high-security locks, access control.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="area"><span class="k">Mobile service across the Milwaukee metro</span>
+    <p><b>Milwaukee</b> · Wauwatosa · Bay View · West Allis · Shorewood · Whitefish Bay · Glendale · <b>Brookfield</b> · <b>New Berlin</b> · <b>Waukesha</b> · <b>Germantown</b> · Menomonee Falls · <b>Oak Creek</b> · Franklin · Cudahy · Greenfield · South Milwaukee · St. Francis · Brown Deer · Mequon</p>
+  </div>
+  <section class="invite">
+    <h2>A first look at a new website for <em>Pinky's.</em></h2>
+    <div>
+      <p>This is a sneak peek. Like the direction? Reply and we'll build the full site.</p>
+      <div class="contact">
+        <a href="tel:+14144013613">(414) 401-3613</a>
+        <a href="mailto:office@pinkyslocksmithing.com">office@pinkyslocksmithing.com</a>
+      </div>
+    </div>
+  </section>
+</div>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Pinky's Locksmithing site.</span><span>Photo and facts from pinkyslocksmithing.com.</span></div></footer>
+</body>
+</html>
