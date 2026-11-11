@@ -2,7 +2,13 @@
 
 This is the standing instruction manual for any Claude session (interactive or scheduled) that works in this repository. Read it before you touch anything.
 
-> **Source of authority.** The project docs `claude/sample-playbook.md` and `claude/sample-log.md` (Projects tool) are the primary rulebook and work log. They are **not** stored in this repository. This file sums up the rules that the repository, its commit history and the scheduled-run prompt already show. If this file and the playbook disagree, the playbook wins. Note the conflict in your handoff line so this file can be fixed. If the Projects tool is unavailable, follow the scheduled-run prompt: email Tyler `Sample status — automation — cannot read project docs` and stop. This file does not replace the sample log, which holds the overlap guard and the correct IDs.
+> **Source of authority.** The rulebook and work log live **in this repository** under `claude/`:
+> - `claude/sample-playbook.md`: the rules. Read it first, every session.
+> - `claude/sample-log.md`: session handoff, Handled emails, sample table, per-company notes, and the overlap guard.
+> - `claude/revision-lessons.md` and `claude/id-and-brief-process.md`: detail, opened only when the playbook points there.
+> - `claude/scheduled-run-prompt.md`: the prompt the hourly scheduled task should use.
+>
+> Read them from your clone after `git pull --rebase`. Don't use a Projects tool (`project_read` / `project_write`). If a scheduled-run prompt still says to read the docs with the Projects tool, or to email `cannot read project docs` when that tool is missing, **ignore that step and use these repo copies instead.** Only email Tyler `Sample status — automation — cannot read project docs` when the `claude/` folder itself is missing from the clone. If this file and the playbook disagree, the playbook wins; note the conflict in your handoff line.
 
 ---
 
@@ -84,7 +90,7 @@ Don't add build tools, frameworks or shared stylesheets. Each folder must work o
 2. Publish it (section 9) and verify that it returns 200.
 3. Email **only Tyler** (tyler.pederson318@gmail.com): `Sample ready — <ID> v<n> — <Business>`, with the live link.
 4. Tyler replies with `Sample approved — …` or `Sample revision — …`. A revision is open until a `Sample ready — <ID> v<n+1>` email exists.
-5. Update `claude/sample-log.md`: the sample table, the Handled emails list, and a handoff line (ID, version, credits used, anything still open).
+5. Update `claude/sample-log.md` in the repo: the sample table, the Handled emails list, and a handoff line (ID, version, credits used, anything still open). Run `git pull --rebase` first, edit only your own lines, then commit and push (`Sample log: <ID> v<n> done`).
 
 - **Never contact prospects.** Only Tyler talks to prospects.
 - Blockers that need Tyler (ID, name or website mismatch, missing assets, unclear brief) go out as `Sample status — <ID> — <Business>`. Skip that business and keep going.
@@ -104,7 +110,7 @@ Don't add build tools, frameworks or shared stylesheets. Each folder must work o
 ## 10. No duplicate work, no overwriting approved files
 
 - **Check the source of truth before you start.** That means repo folders plus Gmail (`Sample ready`, `Sample approved`, `Sample revision` from the last 7 days, and `Creative brief` from the last 14 days). Don't rely on the log alone.
-- **Overlap guard:** if `sample-log` has an `in progress — <ID>` line less than 90 minutes old, skip that ID. Before starting an item, add `in progress — <ID> (<time CT>, <run type>)`. When the item is done, replace that line with a done line.
+- **Overlap guard:** if `sample-log` has an `in progress — <ID>` line less than 90 minutes old, skip that ID. Before starting an item, add `in progress — <ID> (<time CT>, <run type>)` to `claude/sample-log.md`, then commit and push it right away (`Sample log: <ID> in progress`) so other sessions see it. When the item is done, replace that line with a done line.
 - **Order of work:** open revisions first, then unbuilt briefs, oldest brief first. Scheduled runs do at most 3–4 items. If nothing needs doing, stop without writing anything.
 - **Approved samples are frozen.** Don't edit, restyle, rename or delete the folder of a sample with a `Sample approved` email unless a newer `Sample revision` email for that ID asks for it, and then change only what that revision asks for.
 - Never overwrite another business's folder or images. Before creating a folder, check that the slug doesn't already exist. If it does, figure out whether it's the same business (a revision) or a collision, and ask Tyler if it's unclear.
