@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>OnTime Handyman — Website concept by Cream City Post</title>
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@100..125,400..800&family=Nunito+Sans:opsz,wght@6..12,400..700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1d5b8c;--navy-d:#123a5a;--ink:#1b2430;--steel:#5d6b78;--mist:#eef3f7;--line:#d6e0e8;--amber:#f2b134}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Nunito Sans",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(18px,4vw,56px)}
+.k{font-family:"Saira",sans-serif;font-stretch:125%;text-transform:uppercase;letter-spacing:.18em;font-weight:600;font-size:11.5px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+header.top img{height:46px;width:auto}
+.call{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;color:#fff;background:var(--navy);padding:12px 18px;border-radius:10px;white-space:nowrap}
+.call svg{width:15px;height:15px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:center;padding:clamp(24px,4vw,56px) 0 clamp(56px,7vw,100px)}
+.badge{display:inline-flex;align-items:center;gap:8px;color:var(--navy);background:var(--mist);border:1px solid var(--line);padding:8px 12px;border-radius:999px}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--amber)}
+h1{font-family:"Saira",sans-serif;font-stretch:112%;font-weight:800;font-size:clamp(46px,6.4vw,92px);line-height:.92;letter-spacing:-.015em;margin-top:22px;text-transform:uppercase}
+h1 span{display:block;color:var(--navy)}
+.lede{margin-top:22px;font-size:clamp(16px,1.35vw,19px);color:var(--steel);max-width:42ch}
+.lede b{color:var(--ink)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:16px;padding:16px 22px;border-radius:10px}
+.btn-p{background:var(--ink);color:#fff}
+.btn-s{border:1.5px solid var(--line);color:var(--ink)}
+.dial{position:relative;width:100%;max-width:560px;justify-self:center;aspect-ratio:1}
+.dial svg.gear{position:absolute;inset:0;width:100%;height:100%}
+.dial .face{position:absolute;inset:13%;border-radius:50%;overflow:hidden;box-shadow:0 0 0 6px #fff,0 20px 50px rgba(18,58,90,.25)}
+.dial .face img{width:100%;height:100%;object-fit:cover;display:block}
+.dial svg.hands{position:absolute;inset:13%;width:74%;height:74%;pointer-events:none}
+.dial .tag{position:absolute;right:2%;bottom:6%;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;box-shadow:0 10px 24px rgba(18,58,90,.12)}
+.dial .tag b{display:block;font-family:"Saira",sans-serif;font-stretch:112%;font-size:17px;color:var(--navy)}
+.dial .tag small{color:var(--steel);font-size:12.5px}
+.work{background:var(--mist);padding:clamp(56px,7vw,96px) 0}
+.work-h{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}
+.work h2{font-family:"Saira",sans-serif;font-stretch:112%;font-weight:700;font-size:clamp(28px,3.2vw,42px);line-height:1.05;text-transform:uppercase}
+.work h2 span{color:var(--navy)}
+.cards{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:16px;align-items:stretch}
+.card{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.card{display:flex;flex-direction:column}
+.card img{width:100%;flex:1;min-height:220px;object-fit:cover;display:block}
+.card:first-child img{min-height:300px}
+.card div{display:flex;justify-content:space-between;align-items:center;padding:18px 18px;height:64px}
+.card h3{font-size:16.5px;font-weight:700}
+.card small{color:var(--steel);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:13.5px;color:var(--steel)}
+.area{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;padding:22px 0;border-bottom:1px solid var(--line)}
+.area .k{color:var(--steel)}
+.area b{font-family:"Saira",sans-serif;font-stretch:112%;font-weight:600;font-size:16px;color:var(--navy)}
+.invite{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;padding-top:clamp(48px,6vw,84px);padding-bottom:clamp(48px,6vw,84px)}
+.invite h2{font-family:"Saira",sans-serif;font-stretch:112%;font-weight:700;font-size:clamp(26px,3vw,40px);line-height:1.08;text-transform:uppercase;max-width:20ch}
+.invite p{color:var(--steel)}
+.contact{display:grid;gap:4px;margin-top:16px;font-weight:600}
+.contact a{text-decoration:none;color:var(--navy)}
+footer{background:var(--navy-d);color:rgba(255,255,255,.7);font-size:12px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:18px;padding-bottom:20px}
+footer b{color:#fff}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .dial{max-width:440px;width:88%;order:-1;margin-top:8px}
+  .cards{grid-template-columns:1fr 1fr}
+  .card:first-child{grid-column:1/-1}
+  .card:first-child img{min-height:0;aspect-ratio:16/10;flex:none}
+  .card img{min-height:0;aspect-ratio:4/3;flex:none}
+  .invite{grid-template-columns:1fr;gap:12px}
+}
+@media (max-width:560px){
+  header.top img{height:36px}
+  .call{padding:10px 12px;font-size:14px}
+  .btn{flex:1 1 100%}
+  .work-h{flex-direction:column;align-items:flex-start}
+  .card div{padding:14px;height:auto;flex-direction:column;align-items:flex-start;gap:2px}
+  .card h3{font-size:15px}
+  .dial .tag{right:0;bottom:2%}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <img src="img/logo.png" alt="OnTime Handyman">
+    <a class="call" href="tel:+12625256776"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(262) 525-6776</a>
+  </header>
+  <section class="hero">
+    <div>
+      <span class="badge k"><i></i>Fully licensed &amp; insured</span>
+      <h1>On time. <span>On budget.</span></h1>
+      <p class="lede">Meet <b>Dylan</b>, your reliable, experienced contractor for renovations, repairs and home maintenance across Waukesha County and surrounding areas.</p>
+      <div class="ctas">
+        <a class="btn btn-p" href="tel:+12625256776">Get a free estimate</a>
+        <a class="btn btn-s" href="mailto:dylan@ontimehandymanwi.com">Email Dylan</a>
+      </div>
+    </div>
+    <div class="dial" aria-hidden="true">
+      <svg class="gear" viewBox="0 0 400 400"><polygon points="200.0,24.0 225.6,5.7 250.7,10.7 267.4,37.4 288.0,47.6 319.3,44.5 338.6,61.4 339.6,92.9 352.4,112.0 381.1,125.0 389.3,149.3 374.5,177.0 376.0,200.0 394.3,225.6 389.3,250.7 362.6,267.4 352.4,288.0 355.5,319.3 338.6,338.6 307.1,339.6 288.0,352.4 275.0,381.1 250.7,389.3 223.0,374.5 200.0,376.0 174.4,394.3 149.3,389.3 132.6,362.6 112.0,352.4 80.7,355.5 61.4,338.6 60.4,307.1 47.6,288.0 18.9,275.0 10.7,250.7 25.5,223.0 24.0,200.0 5.7,174.4 10.7,149.3 37.4,132.6 47.6,112.0 44.5,80.7 61.4,61.4 92.9,60.4 112.0,47.6 125.0,18.9 149.3,10.7 177.0,25.5" fill="#1d5b8c"/><circle cx="200" cy="200" r="160" fill="#fff"/><line x1="350.0" y1="200.0" x2="340.0" y2="200.0" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="349.2" y1="215.7" x2="345.2" y2="215.3" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="346.7" y1="231.2" x2="342.8" y2="230.4" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="342.7" y1="246.4" x2="338.9" y2="245.1" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="337.0" y1="261.0" x2="333.4" y2="259.4" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="329.9" y1="275.0" x2="321.2" y2="270.0" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="321.4" y1="288.2" x2="318.1" y2="285.8" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="311.5" y1="300.4" x2="308.5" y2="297.7" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="300.4" y1="311.5" x2="297.7" y2="308.5" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="288.2" y1="321.4" x2="285.8" y2="318.1" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="275.0" y1="329.9" x2="270.0" y2="321.2" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="261.0" y1="337.0" x2="259.4" y2="333.4" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="246.4" y1="342.7" x2="245.1" y2="338.9" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="231.2" y1="346.7" x2="230.4" y2="342.8" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="215.7" y1="349.2" x2="215.3" y2="345.2" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="200.0" y1="350.0" x2="200.0" y2="340.0" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="184.3" y1="349.2" x2="184.7" y2="345.2" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="168.8" y1="346.7" x2="169.6" y2="342.8" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="153.6" y1="342.7" x2="154.9" y2="338.9" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="139.0" y1="337.0" x2="140.6" y2="333.4" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="125.0" y1="329.9" x2="130.0" y2="321.2" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="111.8" y1="321.4" x2="114.2" y2="318.1" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="99.6" y1="311.5" x2="102.3" y2="308.5" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="88.5" y1="300.4" x2="91.5" y2="297.7" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="78.6" y1="288.2" x2="81.9" y2="285.8" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="70.1" y1="275.0" x2="78.8" y2="270.0" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="63.0" y1="261.0" x2="66.6" y2="259.4" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="57.3" y1="246.4" x2="61.1" y2="245.1" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="53.3" y1="231.2" x2="57.2" y2="230.4" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="50.8" y1="215.7" x2="54.8" y2="215.3" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="50.0" y1="200.0" x2="60.0" y2="200.0" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="50.8" y1="184.3" x2="54.8" y2="184.7" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="53.3" y1="168.8" x2="57.2" y2="169.6" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="57.3" y1="153.6" x2="61.1" y2="154.9" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="63.0" y1="139.0" x2="66.6" y2="140.6" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="70.1" y1="125.0" x2="78.8" y2="130.0" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="78.6" y1="111.8" x2="81.9" y2="114.2" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="88.5" y1="99.6" x2="91.5" y2="102.3" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="99.6" y1="88.5" x2="102.3" y2="91.5" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="111.8" y1="78.6" x2="114.2" y2="81.9" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="125.0" y1="70.1" x2="130.0" y2="78.8" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="139.0" y1="63.0" x2="140.6" y2="66.6" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="153.6" y1="57.3" x2="154.9" y2="61.1" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="168.8" y1="53.3" x2="169.6" y2="57.2" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="184.3" y1="50.8" x2="184.7" y2="54.8" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="200.0" y1="50.0" x2="200.0" y2="60.0" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="215.7" y1="50.8" x2="215.3" y2="54.8" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="231.2" y1="53.3" x2="230.4" y2="57.2" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="246.4" y1="57.3" x2="245.1" y2="61.1" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="261.0" y1="63.0" x2="259.4" y2="66.6" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="275.0" y1="70.1" x2="270.0" y2="78.8" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="288.2" y1="78.6" x2="285.8" y2="81.9" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="300.4" y1="88.5" x2="297.7" y2="91.5" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="311.5" y1="99.6" x2="308.5" y2="102.3" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="321.4" y1="111.8" x2="318.1" y2="114.2" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="329.9" y1="125.0" x2="321.2" y2="130.0" stroke="#1d5b8c" stroke-width="3" stroke-linecap="round"/><line x1="337.0" y1="139.0" x2="333.4" y2="140.6" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="342.7" y1="153.6" x2="338.9" y2="154.9" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="346.7" y1="168.8" x2="342.8" y2="169.6" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/><line x1="349.2" y1="184.3" x2="345.2" y2="184.7" stroke="#1d5b8c" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <div class="face"><img src="img/hero.jpg" alt=""></div>
+      <svg class="hands" viewBox="0 0 100 100"><line x1="50" y1="50" x2="50" y2="14" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".92"/><line x1="50" y1="50" x2="31" y2="70" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".92"/><circle cx="50" cy="50" r="3.2" fill="#fff"/><circle cx="50" cy="50" r="1.4" fill="#1d5b8c"/></svg>
+      <div class="tag"><b>Seamless gutters</b><small>&amp; gutter guard installation</small></div>
+    </div>
+  </section>
+</div>
+
+<section class="work">
+  <div class="wrap">
+    <div class="work-h">
+      <h2>One call. <span>A long list.</span></h2>
+      <span class="k" style="color:var(--steel)">From installing to upgrading</span>
+    </div>
+    <div class="cards">
+      <article class="card"><img src="img/kitchen.jpg" alt="Renovated kitchen with gray shaker cabinets and subway tile" loading="lazy"><div><h3>Home renovation</h3><small>Kitchens, baths, basements</small></div></article>
+      <article class="card"><img src="img/gutters.jpg" alt="Gutter and gutter guard installation" loading="lazy"><div><h3>Gutters</h3><small>Seamless &amp; guards</small></div></article>
+      <article class="card"><img src="img/door.jpg" alt="Installed storm door and entry" loading="lazy"><div><h3>Home repairs</h3><small>Doors, windows, faucets</small></div></article>
+    </div>
+    <div class="chips">
+      <span>Bathroom remodeling</span><span>Painting &amp; wallpapering</span><span>Carpentry &amp; custom woodworking</span><span>Plumbing &amp; electrical</span><span>Flooring</span><span>Power washing &amp; deck repair</span><span>Assembly &amp; installation</span><span>Home maintenance</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="area"><span class="k">Serving</span><b>Waukesha</b><b>Washington</b><b>Ozaukee</b><b>Sheboygan</b><b>Fond du Lac</b><span class="k">counties</span></div>
+  <section class="invite">
+    <h2>A first look at a new website for OnTime Handyman.</h2>
+    <div>
+      <p>This is a sneak peek. Like the direction? Reply and we'll build the full site.</p>
+      <div class="contact">
+        <a href="tel:+12625256776">(262) 525-6776</a>
+        <a href="mailto:dylan@ontimehandymanwi.com">dylan@ontimehandymanwi.com</a>
+        <span>W234N6075 Tulip Lane, Sussex, WI</span>
+      </div>
+    </div>
+  </section>
+</div>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official OnTime Handyman site.</span><span>Logo and photos from ontimehandymanwi.com; main photo enhanced.</span></div></footer>
+</body>
+</html>
