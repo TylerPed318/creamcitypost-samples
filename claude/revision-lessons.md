@@ -85,6 +85,11 @@ Approved as final so far: CCP-005 v3, CCP-007 v3, CCP-008 v3, CCP-009 v3, CCP-01
 - If `media_import_url` is refused (e.g. SiteGround returns HTML to bots), upload from the sandbox: `media_upload` → `curl -X PUT -H "Content-Type: image/jpeg" -H "If-None-Match: *" --data-binary @file '<upload_url>'` → `media_confirm` → `upscale_image`.
 - Use Tyler's Chrome only when he's at his computer (not available from the mobile app).
 
+## Build lessons (scheduled run, Nov 11 PM)
+- Manufacturer promo banners (e.g., Bartz's 2000×680) often have text and buttons baked into one side. Crop to the clean side before using one as a hero.
+- Shop-sign photos usually show extra phone numbers or mascots. Crop to the part you can publish (bay, logo half) instead of editing pixels.
+- Fetching the Higgsfield sandbox isn't needed now: the session network reaches image hosts directly (Wagtail cms_images, GoDaddy wsimg, lh3.googleusercontent `=s0`, graph.facebook.com profile pictures). Local Playwright is enough for the screenshot pass.
+
 ## Pre-send checklist (tick every item before emailing Sample ready)
 - [ ] **ID taken from the "Trades leads with IDs" sheet; creative brief searched, read and cross-checked** (or "no brief found" stated in the email)
 - [ ] **Teaser shape: ~5 blocks, one interactive, 3-photo row, 1–2 reviews, closer** — nothing else
