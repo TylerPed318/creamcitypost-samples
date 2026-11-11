@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>All City Mudjacking — Website concept by Cream City Post</title>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dust:#F3F2EE; --ink:#1C1C1C; --slate:#2C333A; --slate-2:#3A424B;
+  --red:#B42318; --red-dk:#8F1B12; --surface:#FFFFFF; --hair:#D0CEC8;
+  --muted:#5B5F63; --logo-blue:#1F4E9C;
+  --display:"Barlow Condensed",Arial Narrow,sans-serif;
+  --body:"Source Sans 3",system-ui,sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--dust);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+/* header */
+.top{background:var(--slate);color:var(--dust);position:sticky;top:0;z-index:20;border-bottom:3px solid var(--red)}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:76px}
+.brand img{width:170px}
+.since{font:600 13px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:#B9BEC4;border-left:1px solid #56606A;padding-left:14px}
+.top-cta{margin-left:auto;display:flex;align-items:center;gap:10px}
+.tel{font:700 22px/1 var(--display);letter-spacing:.02em;text-decoration:none;white-space:nowrap;padding:10px 4px}
+.tel:hover{color:#fff;text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:4px;font:700 17px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:background .15s,transform .15s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dk);transform:translateY(-1px)}
+.btn-line{border:2px solid var(--slate);color:var(--slate)}
+.btn-line:hover{background:var(--slate);color:#fff}
+
+/* hero */
+.hero{padding:56px 0 64px;background:
+  linear-gradient(180deg,rgba(44,51,58,.06),rgba(44,51,58,0) 60%),var(--dust)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px;align-items:center}
+.kicker{font:700 14px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin:0 0 18px}
+h1{font:800 clamp(44px,6.4vw,84px)/.92 var(--display);text-transform:uppercase;letter-spacing:-.005em;margin:0;color:var(--slate)}
+h1 .stamp{display:inline-block;color:var(--red);position:relative}
+h1 .stamp::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:5px;background:var(--red)}
+.lede{font-size:19px;color:#33373B;max-width:34ch;margin:30px 0 28px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+/* slider */
+.compare{position:relative;aspect-ratio:10/7;border-radius:6px;overflow:hidden;background:#ccc;box-shadow:0 0 0 1px var(--hair),0 24px 48px -24px rgba(28,28,28,.45);user-select:none;touch-action:pan-y}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.compare .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.compare .bar{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
+.compare .knob{position:absolute;top:50%;left:var(--pos,50%);width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:var(--red);border:3px solid #fff;pointer-events:none;display:grid;place-items:center}
+.compare .knob::before{content:"";width:18px;height:10px;background:
+  conic-gradient(from 90deg at 0 50%,#fff 0 0) ;clip-path:polygon(0 50%,35% 0,35% 100%,0 50%,100% 50%,65% 0,65% 100%,100% 50%);}
+.compare input:focus-visible ~ .knob{outline:3px solid var(--slate);outline-offset:3px}
+.tag{position:absolute;top:14px;padding:6px 10px;background:rgba(28,28,28,.78);color:#fff;font:700 13px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;border-radius:3px;pointer-events:none}
+.tag.b{left:14px}.tag.a{right:14px;background:var(--red)}
+.cap{font-size:14px;color:var(--muted);margin:12px 2px 0}
+
+/* proof strip */
+.proof{background:var(--slate);color:var(--dust)}
+.proof ul{list-style:none;margin:0 auto;padding:0 20px;max-width:var(--wrap);display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 18px;border-left:1px solid #47505A;font:600 15px/1.3 var(--body);color:#C9CDD2}
+.proof li:first-child{border-left:0}
+.proof b{display:block;font:700 26px/1.05 var(--display);text-transform:uppercase;color:#fff;letter-spacing:.02em;margin-bottom:4px}
+
+/* section heads */
+section{padding:84px 0}
+.eyebrow{font:700 14px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin:0 0 12px}
+h2{font:800 clamp(34px,4.4vw,54px)/1 var(--display);text-transform:uppercase;color:var(--slate);margin:0 0 18px}
+.intro{max-width:60ch;color:#33373B;margin:0}
+
+/* how it works */
+.how{background:var(--surface);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:44px;counter-reset:s}
+.step{position:relative;padding-top:8px}
+.step svg{width:100%;height:auto;display:block;margin-bottom:18px;border-radius:4px;background:var(--dust)}
+.step h3{font:700 24px/1.1 var(--display);text-transform:uppercase;color:var(--slate);margin:0 0 8px;display:flex;gap:12px;align-items:baseline}
+.step h3::before{counter-increment:s;content:"0" counter(s);color:var(--red);font-size:20px}
+.step p{margin:0;color:#3D4145}
+.why{margin-top:44px;padding:22px 26px;border-left:5px solid var(--red);background:var(--dust);max-width:820px}
+.why p{margin:0;font:600 clamp(20px,2.2vw,24px)/1.35 var(--serif);color:var(--slate)}
+.why small{display:block;margin-top:8px;font:400 14px/1.4 var(--body);color:var(--muted)}
+
+/* services + work */
+.svc-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px;align-items:start}
+.svc{list-style:none;margin:28px 0 0;padding:0;border-top:2px solid var(--slate)}
+.svc li{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--hair);font:700 21px/1.2 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--slate)}
+.svc li span{font:400 14px/1.4 var(--body);text-transform:none;letter-spacing:0;color:var(--muted);text-align:right}
+.jobs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.job{margin:0;background:var(--surface);border:1px solid var(--hair);border-radius:5px;overflow:hidden}
+.job img{width:100%;aspect-ratio:25/18;object-fit:cover}
+.job figcaption{padding:10px 12px;font:700 15px/1.2 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--slate)}
+.jobs-note{grid-column:1/-1;font-size:14px;color:var(--muted);margin:2px 0 0}
+.res{margin-top:22px;font-size:15px;color:#3D4145}
+
+/* about + contact */
+.closer{background:var(--slate);color:var(--dust)}
+.closer h2{color:#fff}
+.closer .grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:start}
+.about p{color:#D3D6DA;max-width:52ch}
+.about blockquote{margin:26px 0;padding:0 0 0 20px;border-left:4px solid var(--red);font:600 22px/1.35 var(--serif);color:#fff}
+.trucks{margin:28px 0 0;max-width:480px}
+.trucks img{border-radius:5px;width:100%}
+.trucks figcaption{font-size:14px;color:#AEB4BA;margin-top:8px}
+.card{background:var(--surface);color:var(--ink);border-radius:6px;padding:30px;border-top:6px solid var(--red)}
+.card h3{font:800 30px/1 var(--display);text-transform:uppercase;color:var(--slate);margin:0 0 6px}
+.card .big{display:block;font:800 clamp(36px,4vw,46px)/1 var(--display);color:var(--red);text-decoration:none;margin:14px 0 18px}
+.card .big:hover{color:var(--red-dk)}
+.card dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 18px;font-size:16px}
+.card dt{font:700 14px/1.6 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card dd{margin:0}
+.hours{border-collapse:collapse;width:100%}
+.hours td{padding:2px 0}
+.hours td+td{text-align:right}
+.hours tr.closed td{color:var(--muted)}
+.hours tr.today td{font-weight:700;color:var(--red)}
+.open-now{display:inline-block;margin-top:6px;font:700 13px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;padding:6px 9px;border-radius:3px;background:#E9E7E1;color:var(--slate)}
+.open-now.on{background:#E6F2EA;color:#1E6B3A}
+.card .btn{width:100%;margin-top:22px}
+.firstlook{padding:56px 0;text-align:center}
+.firstlook p{margin:0 auto;max-width:56ch;font:600 clamp(20px,2.4vw,26px)/1.35 var(--serif);color:var(--slate)}
+footer{border-top:1px solid var(--hair);padding:22px 0 30px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+
+@media (max-width:960px){
+  .hero .wrap,.svc-grid,.closer .grid{grid-template-columns:minmax(0,1fr);gap:36px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid #47505A}
+  .steps{grid-template-columns:minmax(0,1fr);gap:36px}
+  .step svg{max-width:460px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top .wrap{min-height:64px;gap:10px}
+  .brand img{width:124px}
+  .since,.top .btn{display:none}
+  .tel{font-size:19px}
+  .hero{padding:34px 0 44px}
+  .lede{font-size:17px;margin:24px 0 22px}
+  .hero-ctas .btn{flex:1 1 100%}
+  section{padding:60px 0}
+  .jobs{grid-template-columns:minmax(0,1fr)}
+  .svc li{flex-direction:column;gap:2px}
+  .svc li span{text-align:left}
+  .card{padding:24px 20px}
+  .proof li{padding:18px 14px}
+  .proof b{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="All City Mudjacking, Inc. home"><img src="img/logo.png" alt="All City Mudjacking, Inc." width="361" height="130"></a>
+    <span class="since">Since 1984 · Franklin, WI</span>
+    <div class="top-cta">
+      <a class="tel" href="tel:+14145432400">414-543-2400</a>
+      <a class="btn btn-red" href="https://milwaukeemudjacking.com/contact-us.html">Free estimate</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Milwaukee-area mudjacking &amp; concrete repair</p>
+      <h1 id="h">We raise concrete, <span class="stamp">not prices!</span></h1>
+      <p class="lede">All City Mudjacking, founded in 1984, lifts sunken driveways, sidewalks and garage floors in the Milwaukee area, usually without tearing out the concrete.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-red" href="tel:+14145432400">Call 414-543-2400</a>
+        <a class="btn btn-line" href="https://milwaukeemudjacking.com/contact-us.html">Request a quote</a>
+      </div>
+    </div>
+    <div>
+      <div class="compare" style="--pos:50%">
+        <img src="img/before.jpg" alt="Before: crumbling brick ledge and broken brick on the concrete beside a garage door" width="1000" height="700">
+        <img class="after" src="img/after.jpg" alt="After: the same brick ledge rebuilt and the concrete beside it clean and level" width="1000" height="700">
+        <span class="tag b">Before</span><span class="tag a">After</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+        <span class="bar"></span><span class="knob"></span>
+      </div>
+      <p class="cap">One of their own before-and-after jobs. Drag the handle to compare.</p>
+    </div>
+  </div>
+</section>
+
+<div class="proof">
+  <ul>
+    <li><b>Founded 1984</b>Concrete repair &amp; installation</li>
+    <li><b>Free estimates</b>Call or request a quote</li>
+    <li><b>Res · Com · Ind</b>Residential, commercial and industrial concrete</li>
+    <li><b>Mon–Sat 6–6</b>Franklin, Wisconsin</li>
+  </ul>
+</div>
+
+<section class="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <p class="eyebrow">What is mudjacking?</p>
+    <h2 id="how-h">Don't replace it. Raise it.</h2>
+    <p class="intro">Mudjacking raises sunken concrete back to its original level, restoring uneven slabs close to their original grade and alignment with the concrete around them. Here's how it works.</p>
+    <div class="steps">
+      <div class="step">
+        <svg viewBox="0 0 300 150" role="img" aria-label="A sunken slab with small holes drilled through it">
+          <rect x="0" y="118" width="300" height="32" fill="#C9C3B6"/>
+          <rect x="0" y="40" width="80" height="26" fill="#9AA0A6"/><rect x="220" y="40" width="80" height="26" fill="#9AA0A6"/>
+          <g transform="rotate(4 150 70)"><rect x="82" y="58" width="136" height="26" fill="#7E858C"/>
+          <rect x="116" y="58" width="6" height="26" fill="#F3F2EE"/><rect x="176" y="58" width="6" height="26" fill="#F3F2EE"/></g>
+          <path d="M82 84 L218 94 L218 118 L82 118Z" fill="#E4DFD4"/>
+          <path d="M119 20v30M179 20v30" stroke="#B42318" stroke-width="3" stroke-dasharray="4 4"/>
+          <text x="150" y="110" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="12" fill="#5B5F63">void under the slab</text>
+        </svg>
+        <h3>Drill</h3>
+        <p>A number of 1.5-inch holes are drilled in the sunken concrete.</p>
+      </div>
+      <div class="step">
+        <svg viewBox="0 0 300 150" role="img" aria-label="Slurry pumped through the holes fills the void and lifts the slab">
+          <rect x="0" y="118" width="300" height="32" fill="#C9C3B6"/>
+          <rect x="0" y="40" width="80" height="26" fill="#9AA0A6"/><rect x="220" y="40" width="80" height="26" fill="#9AA0A6"/>
+          <g transform="rotate(1.5 150 60)"><rect x="82" y="48" width="136" height="26" fill="#7E858C"/>
+          <rect x="116" y="48" width="6" height="26" fill="#B42318"/><rect x="176" y="48" width="6" height="26" fill="#B42318"/></g>
+          <path d="M82 76 L218 80 L218 118 L82 118Z" fill="#B9A58A"/>
+          <path d="M119 10v34M179 10v34" stroke="#B42318" stroke-width="4"/>
+          <path d="M150 104v-14M144 96l6-6 6 6" stroke="#fff" stroke-width="2.5" fill="none"/>
+        </svg>
+        <h3>Pump</h3>
+        <p>Slurry is pumped through the holes. When the void underneath is filled, the concrete rises.</p>
+      </div>
+      <div class="step">
+        <svg viewBox="0 0 300 150" role="img" aria-label="The slab sits level with its neighbors and the holes are patched">
+          <rect x="0" y="118" width="300" height="32" fill="#C9C3B6"/>
+          <rect x="0" y="40" width="80" height="26" fill="#9AA0A6"/><rect x="220" y="40" width="80" height="26" fill="#9AA0A6"/>
+          <rect x="82" y="40" width="136" height="26" fill="#7E858C"/>
+          <rect x="116" y="40" width="6" height="26" fill="#BFC3C7"/><rect x="176" y="40" width="6" height="26" fill="#BFC3C7"/>
+          <path d="M82 66 H218 V118 H82Z" fill="#B9A58A"/>
+          <path d="M0 34 H300" stroke="#B42318" stroke-width="2" stroke-dasharray="10 6"/>
+        </svg>
+        <h3>Patch &amp; use</h3>
+        <p>The holes are patched with shrink-proof grout and the surface is ready to use.</p>
+      </div>
+    </div>
+    <div class="why">
+      <p>“The cost of mudjacking averages a fraction of the cost of replacement. Mudjacking is faster, cleaner, and more cost effective.”</p>
+      <small>From All City Mudjacking's own description of the process.</small>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="svc-h">
+  <div class="wrap svc-grid">
+    <div>
+      <p class="eyebrow">Services</p>
+      <h2 id="svc-h">Concrete, brick &amp; foundations</h2>
+      <ul class="svc">
+        <li>Mudjacking <span>Raise settled concrete</span></li>
+        <li>Garage floors <span>Attached &amp; detached</span></li>
+        <li>Masonry <span>Including tuckpointing</span></li>
+        <li>Foundation repairs <span>Wall reinforcement</span></li>
+        <li>Waterproofing</li>
+      </ul>
+      <p class="res">Driveways, sidewalks, steps and slabs, for homes, businesses and industrial sites.</p>
+    </div>
+    <div class="jobs">
+      <figure class="job"><img src="img/walk.jpg" alt="Before and after: a front walk by a brick house raised back to level" width="800" height="576" loading="lazy"><figcaption>Front walk</figcaption></figure>
+      <figure class="job"><img src="img/garage.jpg" alt="Before and after: a cracked, sunken garage floor slab raised to meet the wall" width="800" height="576" loading="lazy"><figcaption>Garage floor</figcaption></figure>
+      <figure class="job"><img src="img/stoop.jpg" alt="Before and after: a front stoop and the walk below it brought back in line" width="800" height="576" loading="lazy"><figcaption>Front stoop</figcaption></figure>
+      <p class="jobs-note">Before (left) and after (right) on each job, from All City Mudjacking's portfolio.</p>
+    </div>
+  </div>
+</section>
+
+<section class="closer" aria-labelledby="about-h">
+  <div class="wrap grid">
+    <div class="about">
+      <p class="eyebrow">About</p>
+      <h2 id="about-h">Mudjacking experts since 1984</h2>
+      <p>All City Mudjacking, Inc. was founded in 1984 and offers concrete repair and installation for homes, businesses and industrial properties. They're experts at mudjacking and use the latest concrete raising technology to get the job done right.</p>
+      <blockquote>“We are committed to bringing you quality workmanship at affordable prices.”</blockquote>
+      <p>Proud members of NARI and the Wisconsin Association of Foundation Repair Professionals.</p>
+      <figure class="trucks"><img src="img/trucks.jpg" alt="Two white All City Mudjacking, Inc. work trucks parked on a residential street" width="600" height="340" loading="lazy"><figcaption>Look for the white All City trucks.</figcaption></figure>
+    </div>
+    <aside class="card" aria-labelledby="c-h">
+      <h3 id="c-h">Get a free estimate</h3>
+      <p style="margin:0;color:var(--muted)">Have concrete that's sinking? Call to schedule a consultation.</p>
+      <a class="big" href="tel:+14145432400">414-543-2400</a>
+      <dl>
+        <dt>Office</dt>
+        <dd>7095 S. Ballpark Dr., Suite 320<br>Franklin, WI 53132</dd>
+        <dt>Hours</dt>
+        <dd>
+          <table class="hours" aria-label="Business hours">
+            <tbody id="hrs">
+              <tr data-d="1"><td>Mon</td><td>6:00am–6:00pm</td></tr>
+              <tr data-d="2"><td>Tue</td><td>6:00am–6:00pm</td></tr>
+              <tr data-d="3"><td>Wed</td><td>6:00am–6:00pm</td></tr>
+              <tr data-d="4"><td>Thu</td><td>6:00am–6:00pm</td></tr>
+              <tr data-d="5"><td>Fri</td><td>6:00am–6:00pm</td></tr>
+              <tr data-d="6"><td>Sat</td><td>6:00am–6:00pm</td></tr>
+              <tr data-d="0" class="closed"><td>Sun</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <span class="open-now" id="open" hidden></span>
+        </dd>
+      </dl>
+      <a class="btn btn-red" href="https://milwaukeemudjacking.com/contact-us.html">Request a quote</a>
+    </aside>
+  </div>
+</section>
+
+<div class="firstlook"><div class="wrap"><p>This is a first look at what a new All City Mudjacking homepage could feel like. Same slogan, same phone number, a cleaner way in.</p></div></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Website by Cream City Post · Independent website concept, not the official All City Mudjacking site. Logo, job photos and truck photo from milwaukeemudjacking.com; before/after photo enhanced.</span>
+    <span>All City Mudjacking, Inc. · 7095 S. Ballpark Dr., Suite 320, Franklin, WI 53132 · <a href="tel:+14145432400">414-543-2400</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var c=document.querySelector('.compare'),r=c.querySelector('input');
+  function set(){c.style.setProperty('--pos',r.value+'%')}
+  r.addEventListener('input',set);set();
+  try{
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',hour12:false}).formatToParts(new Date());
+    var wd={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6},d,h;
+    p.forEach(function(x){if(x.type==='weekday')d=wd[x.value];if(x.type==='hour')h=parseInt(x.value,10)%24});
+    var row=document.querySelector('#hrs tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+    var o=document.getElementById('open'),on=d!==0&&h>=6&&h<18;
+    o.textContent=on?'Open now':'Closed now · Mon–Sat 6am–6pm';o.className='open-now'+(on?' on':'');o.hidden=false;
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
