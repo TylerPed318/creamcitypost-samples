@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<title>Mike Ingrilli Plumbing — Website concept by Cream City Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e1114;--teal:#1f9cc4;--teal-d:#137a9c;--ice:#eef7fa;--mist:#f6f8f9;--muted:#55606a;--line:#dde5ea}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Figtree",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1220px;margin:0 auto;padding:0 clamp(18px,4vw,52px)}
+.d{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-style:italic;text-transform:uppercase;letter-spacing:.005em;line-height:.95}
+.k{font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.16em;font-size:14px;color:var(--teal-d)}
+/* emergency strip */
+.em{background:var(--ink);color:#fff;font-size:14px}
+.em .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:9px;padding-bottom:9px}
+.em b{color:#7fd3ec;font-weight:700}
+.em .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3fd17a;margin-right:8px;box-shadow:0 0 0 0 rgba(63,209,122,.6);animation:p 2s infinite}
+@keyframes p{70%{box-shadow:0 0 0 9px rgba(63,209,122,0)}100%{box-shadow:0 0 0 0 rgba(63,209,122,0)}}
+.em a{text-decoration:none;font-weight:700}
+/* header */
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+.hd img{height:54px;width:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:700;border-radius:999px;padding:13px 22px;font-size:16px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.t{background:var(--teal);color:#fff}
+.btn.t:hover{background:var(--teal-d)}
+.btn.o{border:2px solid var(--ink);color:var(--ink)}
+.btn.o:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+/* hero */
+.hero{position:relative;padding:clamp(24px,4vw,56px) 0 clamp(48px,6vw,88px)}
+.hero:before{content:"";position:absolute;inset:0 0 0 52%;background:var(--ice);border-radius:0 0 0 60px;z-index:-1}
+.hero .g{display:grid;grid-template-columns:1.02fr 1fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(50px,6.2vw,88px);margin:14px 0 22px}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(2){color:var(--teal)}
+.hero p.l{font-size:clamp(17px,1.5vw,19px);color:var(--muted);max-width:540px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.ph{position:relative}
+.ph .f{border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(14,17,20,.45);aspect-ratio:5/4}
+.ph .f img{width:100%;height:100%;object-fit:cover}
+.ph .tag{position:absolute;left:-22px;bottom:-26px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 14px 34px -14px rgba(14,17,20,.35);display:flex;gap:12px;align-items:center;max-width:300px}
+.ph .tag .n{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-style:italic;font-size:44px;line-height:1;color:var(--teal)}
+.ph .tag small{display:block;font-size:13.5px;line-height:1.35;color:var(--muted)}
+.ph .tag small b{color:var(--ink);font-size:14.5px}
+.drop{position:absolute;right:-16px;top:-18px;width:74px;height:74px;background:var(--teal);border-radius:50% 0 50% 50%;transform:rotate(-45deg);box-shadow:0 10px 24px -8px rgba(19,122,156,.6)}
+/* proof strip */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.proof div.c{padding:22px 18px;border-left:1px solid var(--line)}
+.proof div.c:first-child{border-left:0;padding-left:0}
+.proof strong{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-style:italic;font-size:34px;line-height:1.05}
+.proof span{font-size:14.5px;color:var(--muted)}
+/* sections */
+section{padding:clamp(60px,8vw,108px) 0}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.sh h2{font-size:clamp(38px,4.6vw,62px);margin-top:10px}
+.sh p{max-width:430px;color:var(--muted)}
+/* problem picker */
+.pk{display:grid;grid-template-columns:300px 1fr;gap:22px}
+.pk .opts{display:flex;flex-direction:column;gap:10px}
+.pk button{all:unset;cursor:pointer;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;border:1.5px solid var(--line);background:#fff;font-weight:600;font-size:16.5px;transition:border-color .15s,background .15s}
+.pk button i{flex:none;width:34px;height:34px;border-radius:50%;background:var(--ice);display:grid;place-items:center;font-style:normal;color:var(--teal-d);font-weight:700;font-size:14px}
+.pk button[aria-selected=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pk button[aria-selected=true] i{background:var(--teal);color:#fff}
+.pk button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.card{display:grid;grid-template-columns:1.05fr 1fr;border-radius:26px;overflow:hidden;background:var(--mist);min-height:430px}
+.card .im{position:relative}
+.card .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .25s}
+.card .tx{padding:clamp(24px,3vw,40px);display:flex;flex-direction:column}
+.card h3{font-size:clamp(34px,3.4vw,46px);margin:8px 0 14px}
+.card p{color:#36414b}
+.card ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
+.card li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600}
+.card .note{margin-top:auto;display:flex;gap:10px;align-items:flex-start;font-size:14.5px;background:#fff;border-radius:14px;padding:12px 14px;border-left:4px solid var(--teal)}
+.also{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;align-items:center;color:var(--muted);font-size:15px}
+.also span{border:1.5px dashed #b9c7cf;border-radius:999px;padding:7px 14px;color:var(--ink);font-weight:600}
+/* family */
+.fam{background:var(--ink);color:#fff;border-radius:40px;margin:0 clamp(10px,2vw,24px)}
+.fam .g{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,70px);align-items:center}
+.fam .por{border-radius:24px;overflow:hidden;aspect-ratio:4/5}
+.fam .por img{width:100%;height:100%;object-fit:cover}
+.fam .k{color:#7fd3ec}
+.fam h2{font-size:clamp(40px,4.8vw,64px);margin:10px 0 18px}
+.fam p{color:#c6cfd6;max-width:560px}
+.tl{list-style:none;margin-top:34px;position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tl:before{content:"";position:absolute;left:0;right:0;top:15px;height:2px;background:#2b3943}
+.tl li{position:relative;padding-top:38px}
+.tl li:before{content:"";position:absolute;top:7px;left:0;width:18px;height:18px;border-radius:50%;background:var(--ink);border:3px solid var(--teal)}
+.tl b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-style:italic;font-size:30px;line-height:1;color:#fff}
+.tl span{display:block;font-size:14px;color:#aab6bf;margin-top:6px;line-height:1.4}
+.crew{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.crew span{background:#1c252c;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600}
+.crew span em{font-style:normal;color:#7fd3ec}
+/* reviews */
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv figure{background:var(--mist);border-radius:22px;padding:28px 26px;display:flex;flex-direction:column}
+.rv .q{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:60px;line-height:.6;color:var(--teal);height:28px}
+.rv blockquote{font-size:16.5px;color:#26313a;flex:1}
+.rv figcaption{margin-top:18px;font-weight:700}
+.rv figcaption span{display:block;font-weight:500;color:var(--muted);font-size:14px}
+/* area */
+.area{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.cty{background:var(--ice);border-radius:26px;padding:clamp(24px,3vw,40px)}
+.cty h3{font-size:40px;margin:8px 0 20px}
+.cty .ch{display:flex;flex-wrap:wrap;gap:10px}
+.cty .ch span{background:#fff;border-radius:12px;padding:12px 16px;font-weight:700;font-size:16px;box-shadow:0 1px 0 var(--line)}
+.cty .ch span small{display:block;font-weight:500;color:var(--muted);font-size:12.5px}
+.ct{border:1.5px solid var(--line);border-radius:26px;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:16px}
+.ct .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-style:italic;font-size:clamp(40px,4.4vw,54px);line-height:1;text-decoration:none;color:var(--ink)}
+.ct .big:hover{color:var(--teal-d)}
+.ct p{color:var(--muted)}
+.ct a.m{font-weight:600}
+/* invite */
+.invite{border-top:1px solid var(--line);padding:46px 0 52px}
+.invite .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.invite h2{font-size:clamp(32px,3.6vw,46px)}
+.invite p{color:var(--muted)}
+footer{background:var(--mist);font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+footer b{color:var(--ink)}
+@media (max-width:980px){
+  .hero:before{inset:auto 0 0 0;height:46%;border-radius:40px 40px 0 0}
+  .hero .g{grid-template-columns:minmax(0,1fr)}
+  .ph{margin:0 8px}
+  .ph .tag{left:12px}
+  .proof .wrap{grid-template-columns:1fr 1fr}
+  .proof div.c:nth-child(3){border-left:0;padding-left:0}
+  .proof div.c:nth-child(n+3){border-top:1px solid var(--line)}
+  .pk{grid-template-columns:1fr}
+  .pk .opts{flex-direction:row;flex-wrap:wrap}
+  .pk button{flex:1 1 calc(50% - 10px);box-sizing:border-box}
+  .card{grid-template-columns:1fr}
+  .card .im{aspect-ratio:4/3}
+  .fam .g{grid-template-columns:1fr}
+  .fam .por{max-width:420px;aspect-ratio:1/1}
+  .rv{grid-template-columns:1fr}
+  .area{grid-template-columns:1fr}
+  .invite .wrap{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .em .wrap{font-size:13px}
+  .em .hide{display:none}
+  .hd img{height:40px}
+  .hd .btn{padding:10px 14px;font-size:14.5px}
+  .hd .btn .hide{display:none}
+  .btn{flex:1 1 100%}
+  .hd .btn{flex:none}
+  .pk button{flex:1 1 100%;padding:13px 14px;font-size:15.5px}
+  .tl{grid-template-columns:1fr 1fr;row-gap:22px}
+  .tl:before{display:none}
+  .ph .tag{bottom:-30px;max-width:260px}
+  .drop{width:54px;height:54px;right:-6px;top:-12px}
+}
+</style>
+</head>
+<body>
+<div class="em"><div class="wrap"><span><span class="dot"></span><b>24/7 emergency service</b><span class="hide"> — don’t hesitate to call.</span></span><a href="tel:+14142139617">414-213-9617</a></div></div>
+<div class="wrap">
+  <header class="hd">
+    <img src="img/logo.png" alt="Mike Ingrilli Plumbing" width="500" height="172">
+    <a class="btn t" href="tel:+14142139617"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span class="hide">Call&nbsp;</span>414-213-9617</a>
+  </header>
+</div>
+
+<div class="hero">
+  <div class="wrap g">
+    <div>
+      <div class="k">West Allis, WI · Est. 2007 · Licensed, bonded &amp; insured</div>
+      <h1 class="d"><span>Prompt.</span><span>Proficient.</span><span>Professional.</span></h1>
+      <p class="l">Residential and commercial plumbing from a family-owned West Allis company — led by Mike Ingrilli, a third-generation plumber and Master Plumber since 1989.</p>
+      <div class="cta">
+        <a class="btn t" href="tel:+14142139617">Call 414-213-9617</a>
+        <a class="btn o" href="mailto:customerservice@mip4u.com?subject=Estimate%20request">Request an estimate</a>
+      </div>
+    </div>
+    <div class="ph">
+      <span class="drop" aria-hidden="true"></span>
+      <div class="f"><img src="img/team.jpg" alt="The Mike Ingrilli Plumbing team with their service van" width="1400" height="1120"></div>
+      <div class="tag"><span class="n">85+</span><small><b>Combined years of experience</b> across the Mike Ingrilli Plumbing team</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="proof"><div class="wrap">
+  <div class="c"><strong>41 yrs</strong><span>Mike’s plumbing experience</span></div>
+  <div class="c"><strong>36 yrs</strong><span>As a Master Plumber</span></div>
+  <div class="c"><strong>3rd gen</strong><span>Family plumbing tradition</span></div>
+  <div class="c"><strong>24/7</strong><span>Emergency response</span></div>
+</div></div>
+
+<section>
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="k">What’s going on at your place?</div><h2 class="d">Pick the problem. See the fix.</h2></div>
+      <p>Every drain, sewer and jetting job can come with video footage of the finished work — by email, flash drive or onsite viewing.</p>
+    </div>
+    <div class="pk">
+      <div class="opts" role="tablist" aria-label="Plumbing problems">
+        <button role="tab" aria-selected="true" data-i="0"><i>01</i>A clogged or slow drain</button>
+        <button role="tab" aria-selected="false" data-i="1"><i>02</i>Roots, grease or a line that keeps clogging</button>
+        <button role="tab" aria-selected="false" data-i="2"><i>03</i>Something’s wrong with my sewer line</button>
+        <button role="tab" aria-selected="false" data-i="3"><i>04</i>Selling my home and need proof</button>
+      </div>
+      <div class="card" role="tabpanel" aria-live="polite">
+        <div class="im"><img id="pi" src="img/drain.jpg" alt="Mike clearing a drain with a drain machine" width="1200" height="900"></div>
+        <div class="tx">
+          <div class="k" id="pk">Drain cleaning</div>
+          <h3 class="d" id="pt">Clear it out, start to street.</h3>
+          <p id="pd">Clogged or slow-running drains cleared across the Milwaukee area, plus thorough sewer line cleaning from the toilet to the main clean-out and out to the street (up to 200 feet).</p>
+          <ul id="pl"><li>Toilets</li><li>Floor drains</li><li>Sinks</li><li>Laundry tubs</li><li>Showers</li><li>Catch basins</li></ul>
+          <div class="note" id="pn">Video of the completed work is available by email, flash drive or onsite viewing.</div>
+        </div>
+      </div>
+    </div>
+    <div class="also">Also: <span>Residential plumbing</span><span>Commercial plumbing</span><span>Kitchen &amp; bath remodeling</span></div>
+  </div>
+</section>
+
+<section class="fam">
+  <div class="wrap g">
+    <div class="por"><img src="img/mike.jpg" alt="Mike Ingrilli, Master Plumber" width="880" height="1100" loading="lazy"></div>
+    <div>
+      <div class="k">Family-owned &amp; operated</div>
+      <h2 class="d">Three generations of plumbing. One name on the van.</h2>
+      <p>Mike Ingrilli comes from a family of plumbers. He started in 1985, earned his Master Plumber license in 1989 and founded Mike Ingrilli Plumbing in 2007. Today his daughter Anya runs operations, and the team brings more than 85 combined years to every call.</p>
+      <ol class="tl">
+        <li><b>1985</b><span>Mike starts plumbing</span></li>
+        <li><b>1989</b><span>Master Plumber license</span></li>
+        <li><b>2007</b><span>Mike Ingrilli Plumbing founded</span></li>
+        <li><b>Today</b><span>A family team, 24/7</span></li>
+      </ol>
+      <div class="crew"><span>Mike <em>· Master Plumber</em></span><span>Anya <em>· Operations Manager</em></span><span>Brandon</span><span>David</span><span>Joe</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="k">From customers</div><h2 class="d">Prompt. And they mean it.</h2></div>
+      <p>A few words from homeowners across the area.</p>
+    </div>
+    <div class="rv">
+      <figure><div class="q">“</div><blockquote>Always prompt and great communicators. Friendly, capable, and they get the job done. Highly recommended.</blockquote><figcaption>Mark<span>Butler, WI</span></figcaption></figure>
+      <figure><div class="q">“</div><blockquote>They were prompt on getting me an estimate and scheduling the job. He charged me what he had quoted me for fixing my sink and I was very happy with the services.</blockquote><figcaption>Fatima<span>Wauwatosa, WI</span></figcaption></figure>
+      <figure><div class="q">“</div><blockquote>I was hesitant to do a major renovation of my master bathroom but after meeting Mike and his team, I felt confident that the bathroom would turn out exactly as I needed.</blockquote><figcaption>Theresa<span>Oak Creek, WI</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap area">
+    <div class="cty">
+      <div class="k">Service area</div>
+      <h3 class="d">Five counties around Milwaukee</h3>
+      <div class="ch">
+        <span>Milwaukee<small>County</small></span><span>Waukesha<small>County</small></span><span>Ozaukee<small>County</small></span><span>Racine<small>County</small></span><span>Washington<small>County</small></span>
+      </div>
+    </div>
+    <div class="ct">
+      <div class="k">Emergency? Call any time.</div>
+      <a class="big" href="tel:+14142139617">414-213-9617</a>
+      <p>We respond 24/7.<br>237 S. Curtis Road, West Allis, WI 53214</p>
+      <a class="m" href="mailto:customerservice@mip4u.com">customerservice@mip4u.com</a>
+    </div>
+  </div>
+</section>
+
+<div class="invite"><div class="wrap">
+  <h2 class="d">A first look at a new website for Mike Ingrilli Plumbing.</h2>
+  <p>This is a sneak peek. Like the direction? Reply and we’ll build the full site.</p>
+</div></div>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Mike Ingrilli Plumbing site.</span><span>Logo, photos, reviews and facts from mip4u.com.</span></div></footer>
+<script>
+(function(){
+  var D=[
+   {k:'Drain cleaning',t:'Clear it out, start to street.',i:'img/drain.jpg',a:'Mike clearing a drain with a drain machine',d:'Clogged or slow-running drains cleared across the Milwaukee area, plus thorough sewer line cleaning from the toilet to the main clean-out and out to the street (up to 200 feet).',l:['Toilets','Floor drains','Sinks','Laundry tubs','Showers','Catch basins'],n:'Video of the completed work is available by email, flash drive or onsite viewing.'},
+   {k:'Hydro-jetting',t:'High pressure. Clean pipe.',i:'img/jetter.jpg',a:'Mike with the Mike Ingrilli Plumbing hydro-jetting trailer',d:'Roots, grease, sand and gravel can build blockages that snaking can’t fully remove. Hydro-jetting flushes the debris out with extremely high-pressure water and thoroughly cleans the pipe.',l:['Roots','Grease','Sand & gravel','Residential','Commercial','Industrial'],n:'Keeps sewer and drain lines clog-free up to three times longer than conventional drain cleaning.'},
+   {k:'Sewer video inspection',t:'See what’s really down there.',i:'img/inspect.jpg',a:'Mike running a camera inspection on a drain line',d:'A blocked sewer line isn’t always obvious — poorly functioning drains can be the first sign. We inspect the line to find the problem, clean out the debris and record a video inspection after the work is done.',l:['Slow drains','Backups','Blockages','After-cleaning video'],n:'Footage by email, flash drive or onsite viewing.'},
+   {k:'Proof of clean line',t:'Evidence on file.',i:'img/inspect.jpg',a:'Mike running a camera inspection on a drain line',d:'A sewer line video inspection shows the line is clean — useful if a dispute ever comes up, or when proof of work is needed at the time you sell your home.',l:['Home sales','Proof of work','Disputes'],n:'You get the video by email, flash drive or onsite viewing.'}];
+  var b=document.querySelectorAll('.pk button'),$=function(x){return document.getElementById(x)};
+  b.forEach(function(x){x.addEventListener('click',function(){
+    b.forEach(function(y){y.setAttribute('aria-selected','false')});x.setAttribute('aria-selected','true');
+    var o=D[+x.dataset.i],im=$('pi');
+    if(im.getAttribute('src')!==o.i){im.style.opacity=0;setTimeout(function(){im.src=o.i;im.alt=o.a;im.style.opacity=1},160);}
+    $('pk').textContent=o.k;$('pt').textContent=o.t;$('pd').textContent=o.d;$('pn').textContent=o.n;
+    $('pl').innerHTML=o.l.map(function(s){return '<li>'+s+'</li>'}).join('');
+  });});
+})();
+</script>
+</body>
+</html>
