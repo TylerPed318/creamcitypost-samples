@@ -2,7 +2,7 @@
 
 This is the standing instruction manual for any Claude session (interactive or scheduled) that works in this repository. Read it before you touch anything.
 
-> **Source of authority.** The project docs `claude/sample-playbook.md` and `claude/sample-log.md` (Projects tool) are the primary rulebook and work log. This file sums up the rules that the repository, its commit history and the scheduled-run prompt already show. If this file and the playbook disagree, the playbook wins. Note the conflict in your handoff line so this file can be fixed.
+> **Source of authority.** The project docs `claude/sample-playbook.md` and `claude/sample-log.md` (Projects tool) are the primary rulebook and work log. They are **not** stored in this repository. This file sums up the rules that the repository, its commit history and the scheduled-run prompt already show. If this file and the playbook disagree, the playbook wins. Note the conflict in your handoff line so this file can be fixed. If the Projects tool is unavailable, follow the scheduled-run prompt: email Tyler `Sample status — automation — cannot read project docs` and stop. This file does not replace the sample log, which holds the overlap guard and the correct IDs.
 
 ---
 
@@ -49,9 +49,9 @@ Required in every `index.html`:
 - `<!DOCTYPE html>`, `<html lang="en">`, `<meta charset="utf-8">`
 - `<meta name="viewport" content="width=device-width, initial-scale=1">`
 - `<meta name="robots" content="noindex,nofollow">`
-- `<title>` in the form `<Business> · <Town> <trade> · design sample`
+- `<title>` in the form `<Business> — Website concept by Cream City Post` (16 of the 17 samples use this; only `tpc-painting` differs)
 - A favicon (file in `img/` or inline SVG)
-- Footer line: `Independent design sample · Website by Cream City Post`
+- A footer that says the page is an unofficial concept and names its sources, in the form used across the samples: `Website by Cream City Post · Independent website concept, not the official <Business> site. <Logo, photos, …> from <their domain>.` Add `; main photo enhanced` when a photo was AI-enhanced.
 
 Don't add build tools, frameworks or shared stylesheets. Each folder must work on its own under GitHub Pages (`.nojekyll` stays at the repo root). Keep the root `index.html` as the neutral Cream City Post placeholder. Don't list prospects there.
 
@@ -63,7 +63,7 @@ Don't add build tools, frameworks or shared stylesheets. Each folder must work o
 
 ## 6. Prospect IDs and naming
 
-- **IDs use the format `CCP-###` and come only from the creative brief or the leads sheet.** Never invent, guess or reuse an ID. (Early samples carried wrong or duplicate IDs, for example CCP-011, CCP-012 and CCP-014 each appear on two businesses in the history. The sample log lists these, and they must not be repeated.)
+- **IDs use the format `CCP-###` and come only from the creative brief or the leads sheet.** Never invent, guess or reuse an ID. (Early samples carried wrong or duplicate IDs. In the commit history, CCP-011, CCP-012, CCP-013 and CCP-014 each appear on two different businesses, and some businesses changed IDs between versions, such as P's Junk (CCP-023 → CCP-114), Sparks Electric (CCP-014 → CCP-020) and Wood Floors Unlimited (CCP-015 → CCP-021). Don't trust IDs in old commit messages or old `Sample ready` emails. The sample log records the correct ID for each business, and the wrong ones must not be reused.)
 - **No brief, no sample.** Build only from a `Creative brief` email (newest copy per ID).
 - **Folder slug:** lowercase, hyphenated, built from the business name (for example `tpc-painting`, `mike-ingrilli-plumbing`, `ps-junk-removal`). Once a slug is published, never rename it, because its URL may already have been sent.
 - **Versions:** the first build is `v1`. Each revision Tyler requests is the next `v<n>`. Small fixes within a version keep the same version number (`CCP-014 v1: fix image aspect`).
