@@ -9,6 +9,7 @@
 - Nov 11, 12:20 PM CT: Audit. Log was stale: CCP-011/012/013 v1 had already been built and emailed (11:54–11:59 CT) by another session. Fixed below.
 - Nov 11, 12:35 PM CT (interactive): done. CCP-114 v2 (0 credits), CCP-011 v2 (2 credits), CCP-014 v1 (4 credits) built and emailed. Next up for the 1:11 PM scheduled run: CCP-015 All City Mudjacking v1, then CCP-016 Bartz's Floor Covering v1. Tip: photo `img` tags need `height:auto` in CSS, or the width/height attributes stretch them.
 - Nov 11, ~4:00 PM CT (interactive): The 3:00 PM scheduled run stopped because the Projects tool wasn't available. These docs now live in the repo under `claude/` and are read from the clone; `claude/scheduled-run-prompt.md` is the updated hourly prompt. Nothing built. Next up: CCP-015 All City Mudjacking v1, then CCP-016 Bartz's Floor Covering v1.
+- in progress — CCP-015 (Nov 11, 4:05 PM CT, scheduled run)
 
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2).
