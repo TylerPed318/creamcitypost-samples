@@ -14,6 +14,9 @@
 - Nov 11, ~4:47 PM CT (scheduled run): CCP-023 v1 done, live and emailed (0 credits, no photos). Open: Tyler to confirm "5.0 on Google (3 reviews)" and Instagram before either is added.
 - Nov 11, ~5:00 PM CT (scheduled run): CCP-024 v1 done, live and emailed (0 credits). Session ends after 3 items (016, 023, 024). Open: Astro's 4.9/256 is from the brief's Nov 11 audit (Maps not re-checked). Next up, by brief time: CCP-030 Luna Beauty Salon (a salon, not a trade; build it or check with Tyler), CCP-032 Fernandez Auto Service, CCP-022 4Ever Green Lawn Care, CCP-033, CCP-034, CCP-040, then 049–064.
 
+- in progress — CCP-023 (5:28 PM CT, scheduled run)
+- in progress — CCP-024 (5:28 PM CT, scheduled run)
+
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11).
 Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 2 Go, CCP-012 Hernia, CCP-013 Ingrilli, CCP-014 Sparks, CCP-015 Wood Floors Unlimited, CCP-022 Sunset Septic). The real IDs are in the table.
