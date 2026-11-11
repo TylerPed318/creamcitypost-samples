@@ -117,14 +117,16 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 
 /* reviews */
 .rev{padding:60px 0 88px}
-.qs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:30px}
-figure.q{margin:0;padding:30px 30px 24px;background:var(--navy);color:#DCE3F2;border-radius:16px;position:relative}
-figure.q blockquote{margin:0;font:500 20px/1.5 var(--serif);color:#fff}
-figure.q blockquote:before{content:"\201C";display:block;font:700 60px/.6 var(--serif);color:var(--gold);margin-bottom:12px}
-figure.q figcaption{margin-top:18px;font-size:14px;color:#AEB9D3}
-figure.q figcaption b{color:var(--gold);font-weight:600}
-.rev .gl{margin-top:16px;font-size:14px}
-.rev .gl a{color:var(--blue);font-weight:600;text-underline-offset:3px}
+.gcard{display:grid;grid-template-columns:auto minmax(0,1fr);gap:36px;align-items:center;padding:40px;background:var(--navy);border-radius:18px;color:#DCE3F2}
+.gscore{text-align:center;padding-right:36px;border-right:1px solid rgba(255,255,255,.16)}
+.gnum{display:block;font:700 clamp(56px,8vw,84px)/1 var(--serif);color:#fff}
+.gstars{display:block;margin-top:8px;color:var(--gold);letter-spacing:4px;font-size:20px}
+.gtxt h2{color:#fff;margin-top:4px}
+.gtxt p{margin:12px 0 0;color:#C9D3EA;max-width:34em}
+.gtxt .kicker{color:var(--gold);margin:0}
+.gbtn{display:inline-block;margin-top:20px;padding:12px 20px;border-radius:999px;background:var(--gold);color:var(--navy);font-weight:700;text-decoration:none;transition:background .2s}
+.gbtn:hover,.gbtn:focus-visible{background:#fff}
+@media (max-width:640px){.gcard{grid-template-columns:minmax(0,1fr);gap:20px;padding:28px 22px}.gscore{border-right:0;border-bottom:1px solid rgba(255,255,255,.16);padding:0 0 18px}}
 
 /* contact */
 .contact{background:var(--navy);color:#DCE3F2;padding:84px 0;position:relative;overflow:hidden}
@@ -160,13 +162,12 @@ footer a{color:#D7DDEB}
   .hcta .tel{display:none}
   .logo img{width:124px}
   .seg{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .adds,.grid7,.qs{grid-template-columns:minmax(0,1fr)}
+  .adds,.grid7{grid-template-columns:minmax(0,1fr)}
   .estbox .l,.estbox .r{padding:24px 20px}
   .est,.beyond,.contact{padding:60px 0}
   .rev{padding:40px 0 60px}
   .how{padding-top:60px}
   .hero p.sub{font-size:17px}
-  figure.q blockquote{font-size:18px}
   body{padding-bottom:72px}
   .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(22,38,74,.97);box-shadow:0 -8px 24px rgba(0,0,0,.18)}
   .mbar .btn{min-height:48px;width:100%}
@@ -289,19 +290,15 @@ footer a{color:#D7DDEB}
 
 <section class="rev">
   <div class="wrap">
-    <p class="kicker">From Google reviews</p>
-    <h2>Hosts and owners notice the details.</h2>
-    <div class="qs">
-      <figure class="q">
-        <blockquote>The work they do is amazing, never a detail left unchecked. Incredibly responsive and knowledgeable.</blockquote>
-        <figcaption><b>Jason Bertellotti</b> · Google review</figcaption>
-      </figure>
-      <figure class="q">
-        <blockquote>They do an excellent job keeping both my restaurant and my home spotless. The team is professional, reliable, and very detail-oriented.</blockquote>
-        <figcaption><b>Chesaree Rollins</b> · Google review</figcaption>
-      </figure>
+    <div class="gcard">
+      <div class="gscore"><span class="gnum">5.0</span><span class="gstars" aria-hidden="true">★★★★★</span></div>
+      <div class="gtxt">
+        <p class="kicker">On Google</p>
+        <h2>Hosts and owners notice the details.</h2>
+        <p>A Service Beyond is rated 5.0 on Google. Read what clients say, in their own words, on the listing.</p>
+        <a class="gbtn" href="https://www.google.com/search?q=A+Service+Beyond+Milwaukee+414-253-0907">Read the reviews on Google →</a>
+      </div>
     </div>
-    <p class="gl"><a href="https://www.google.com/maps/search/A+Service+Beyond+777+N+Jefferson+St+Milwaukee">Read the reviews on Google</a></p>
   </div>
 </section>
 
@@ -328,7 +325,7 @@ footer a{color:#D7DDEB}
 
 <footer>
   <div class="wrap">
-    <span>Website by Cream City Post · Independent website concept, not the official A Service Beyond site. Logo, prices and service list from aservicebeyond.com; review excerpts from their Google listing.</span>
+    <span>Website by Cream City Post · Independent website concept, not the official A Service Beyond site. Logo, prices and service list from aservicebeyond.com; rating from their Google listing.</span>
     <span>A Service Beyond · Serving the greater Milwaukee area · <a href="tel:+14142530907">(414) 253-0907</a> · <a href="mailto:aservicebeyond@gmail.com">aservicebeyond@gmail.com</a></span>
   </div>
 </footer>
