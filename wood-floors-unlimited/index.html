@@ -42,7 +42,7 @@ img{display:block;max-width:100%}
 .ph .cap b{display:block;color:var(--ink);font-size:14.5px}
 /* proof */
 .proof{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.proof .wrap{display:grid;grid-template-columns:1.4fr repeat(3,1fr);align-items:stretch}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
 .proof .c{padding:22px 20px;border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
 .proof .c:first-child{border-left:0;padding-left:0}
 .proof b{font-family:"Fraunces",serif;font-weight:700;font-size:20px;line-height:1.2}
@@ -73,49 +73,17 @@ section{padding:clamp(60px,8vw,104px) 0}
 .dtx h3{font-size:clamp(28px,2.6vw,36px)}
 .dtx p{color:var(--muted)}
 .dtx blockquote{font-family:"Fraunces",serif;font-style:italic;font-size:21px;border-left:3px solid var(--oak);padding-left:14px;margin-top:auto}
-/* stain */
-.stain{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:22px;align-items:center}
-.board{border-radius:22px;overflow:hidden;aspect-ratio:16/11;position:relative;box-shadow:0 30px 60px -36px rgba(59,36,22,.6)}
-.board .wood{position:absolute;inset:0;background:
-  repeating-linear-gradient(0deg,transparent 0 58px,rgba(0,0,0,.18) 58px 60px),
-  repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 3px,transparent 3px 11px,rgba(0,0,0,.05) 11px 13px,transparent 13px 29px),
-  linear-gradient(90deg,#e8cfa6,#dcbf92 30%,#e6cba0 55%,#d6b585);}
-.board .tint{position:absolute;inset:0;mix-blend-mode:multiply;transition:background .5s;background:#ffffff}
-.board .tag{position:absolute;left:16px;bottom:16px;background:rgba(255,250,242,.94);border-radius:12px;padding:9px 14px;font-weight:700;font-size:14.5px}
-.board .tag small{display:block;font-weight:500;color:var(--muted);font-size:12px}
-.sw{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 18px}
-.sw button{all:unset;cursor:pointer;width:54px;height:54px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15);position:relative}
-.sw button[aria-pressed=true]{outline:3px solid var(--walnut);outline-offset:3px}
-.sw button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.stx h2{font-size:clamp(36px,4.2vw,54px);margin:10px 0 14px}
-.stx p{color:var(--muted)}
-.stx .q{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;font-size:15.5px}
-.stx .q b{display:block;margin-top:6px;font-size:14px}
-.note{font-size:12.5px;color:var(--muted);margin-top:10px}
-/* gallery */
-.gal{display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
-.gal figure{position:relative;border-radius:20px;overflow:hidden;background:#d9c7ad}
-.gal figure:first-child{grid-row:span 2}
-.gal img{width:100%;height:100%;object-fit:cover}
-.gal figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,250,242,.94);border-radius:10px;padding:6px 11px;font-weight:700;font-size:13.5px}
-.gal .tall{grid-row:span 2}
-/* pets */
-.pets{background:var(--walnut);color:#f3e6d4;border-radius:36px;margin:0 clamp(10px,2vw,24px)}
-.pets .g{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(28px,5vw,64px);align-items:center}
-.pets .im{border-radius:24px;overflow:hidden;aspect-ratio:4/5}
-.pets .im img{width:100%;height:100%;object-fit:cover}
-.pets .k{color:#e9c08a}
-.pets h2{font-size:clamp(40px,4.8vw,64px);margin:10px 0 18px;color:#fff}
-.pets p{color:#d9c8b2;max-width:540px}
-.pets ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
-.pets li{background:rgba(255,255,255,.07);border-radius:14px;padding:14px 16px;font-size:14.5px}
-.pets li b{display:block;color:#fff;font-size:16px}
-/* reviews */
-.rv{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px}
-.rv figure{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column}
-.rv blockquote{font-family:"Fraunces",serif;font-size:19px;line-height:1.4;flex:1}
-.rv figure:first-child blockquote{font-size:22px}
-.rv figcaption{margin-top:16px;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--oak)}
+/* photo row */
+.row3{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px;height:420px}
+.row3 figure{position:relative;border-radius:20px;overflow:hidden;background:#d9c7ad}
+.row3 img{width:100%;height:100%;object-fit:cover}
+.row3 figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,250,242,.94);border-radius:10px;padding:6px 11px;font-weight:700;font-size:13.5px}
+/* close */
+.close{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px;align-items:stretch}
+.rv2{display:grid;gap:14px}
+.rv2 figure{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px 26px}
+.rv2 blockquote{font-family:"Fraunces",serif;font-size:19px;line-height:1.4}
+.rv2 figcaption{margin-top:12px;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--oak)}
 /* commercial + visit */
 .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
 .box{border-radius:26px;padding:clamp(24px,3vw,38px)}
@@ -140,15 +108,11 @@ footer{background:var(--walnut);color:#cdb89e;font-size:13.5px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
 footer b{color:#fff}
 @media (max-width:1000px){
-  .hero,.dust,.stain,.pets .g,.duo,.invite .wrap{grid-template-columns:minmax(0,1fr)}
-  .proof .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero,.dust,.close,.invite .wrap{grid-template-columns:minmax(0,1fr)}
+  .row3{height:auto;grid-template-columns:1fr 1fr;grid-auto-rows:240px}
+  .row3 figure:first-child{grid-column:span 2}
+  .proof .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
   .proof .c{border-left:0;padding:16px 10px 16px 0}
-  .proof .nba{grid-column:1/-1;border-bottom:1px solid var(--line)}
-  .gal{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:240px}
-  .gal figure:first-child{grid-column:span 2;grid-row:auto}
-  .gal .tall{grid-row:span 2}
-  .rv{grid-template-columns:minmax(0,1fr)}
-  .pets .im{max-width:420px;aspect-ratio:1/1}
   .room{min-height:320px}
 }
 @media (max-width:560px){
@@ -158,10 +122,8 @@ footer b{color:#fff}
   .btn{flex:1 1 100%}
   .hd .btn{flex:none}
   .ph .cap{left:8px;top:auto;bottom:-22px}
-  .pets ul{grid-template-columns:minmax(0,1fr)}
-  .gal{grid-auto-rows:180px}
-  .sw button{width:46px;height:46px}
   .tog button{padding:8px 12px;font-size:13px}
+  .row3{grid-auto-rows:200px}
   .proof .wrap{grid-template-columns:minmax(0,1fr)}
   .proof .c{border-bottom:1px solid var(--line)}
   .proof .c:last-child{border-bottom:0}
@@ -193,10 +155,10 @@ footer b{color:#fff}
 </div>
 
 <div class="proof"><div class="wrap">
-  <div class="c nba"><b>A patent used at <i>the NBA</i> for the last 60 years.</b><span>Wood flooring technology developed by Wood Floors Unlimited.</span></div>
   <div class="c"><b>Dustless sanding</b><span>Atomic Dust Containment</span></div>
-  <div class="c"><b>Non-toxic finishes</b><span>Family &amp; pet safe</span></div>
-  <div class="c"><b>Custom stains</b><span>Mixed to match your home</span></div>
+  <div class="c"><b>Non-toxic finishes</b><span>Family &amp; pet safe, almost odor free</span></div>
+  <div class="c"><b>Custom stains</b><span>Mixed with you to match your home</span></div>
+  <div class="c"><b>Free in-home estimates</b><span>Call or email to set a time</span></div>
 </div></div>
 
 <section>
@@ -229,7 +191,7 @@ footer b{color:#fff}
       <div class="dtx">
         <div class="k">Atomic Dust Containment</div>
         <h3 class="s">A 28-horsepower vacuum, mounted on the truck.</h3>
-        <p>Bona’s Atomic DCS® powers a super vacuum from outside your home that pulls dust particles and fumes out as the crew works — picking up virtually all dust before it becomes airborne.</p>
+        <p>BonaKemi’s Atomic DCS® powers a super vacuum from outside your home that pulls dust particles and fumes out as the crew works — picking up virtually all dust before it becomes airborne.</p>
         <blockquote>“I can’t believe how clean it is!”<br><small style="font-family:Manrope,sans-serif;font-style:normal;font-size:13.5px;color:var(--muted)">The most common response from clients</small></blockquote>
       </div>
     </div>
@@ -237,90 +199,35 @@ footer b{color:#fff}
 </section>
 
 <section style="padding-top:0">
-  <div class="wrap stain">
-    <div class="board"><div class="wood"></div><div class="tint" id="tint"></div><div class="tag" id="tag">Natural<small>Sanded back to bare wood</small></div></div>
-    <div class="stx">
-      <div class="k">Custom staining</div>
-      <h2 class="s">Old floor too dark? Go any direction.</h2>
-      <p>Sanding removes all the old stain and finish, so you can choose an entirely new tone. Tap a swatch to try a direction — then the crew mixes the exact color to match your cabinets, doors or anything you like.</p>
-      <div class="sw" role="group" aria-label="Stain direction">
-        <button type="button" aria-pressed="true" data-c="#ffffff" data-n="Natural" data-d="Sanded back to bare wood" style="background:#e5c99c" aria-label="Natural"></button>
-        <button type="button" aria-pressed="false" data-c="#f0d9b0" data-n="Light &amp; airy" data-d="A soft, pale tone" style="background:#d9bb8a" aria-label="Light"></button>
-        <button type="button" aria-pressed="false" data-c="#d39a5a" data-n="Honey" data-d="Warm golden tone" style="background:#c2874a" aria-label="Honey"></button>
-        <button type="button" aria-pressed="false" data-c="#a8683a" data-n="Warm brown" data-d="Classic mid-tone" style="background:#93592f" aria-label="Warm brown"></button>
-        <button type="button" aria-pressed="false" data-c="#6b4029" data-n="Deep walnut" data-d="Rich and dark" style="background:#5a3622" aria-label="Deep walnut"></button>
-        <button type="button" aria-pressed="false" data-c="#8c8a86" data-n="Weathered grey" data-d="Cool, modern tone" style="background:#8f8676" aria-label="Weathered grey"></button>
-      </div>
-      <div class="q">“They put several colors on our floor to make sure the color was perfect. These guys are great!”<b>— Anne</b></div>
-      <div class="note">Swatches are an illustration. Real samples are mixed and tested on your own floor.</div>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0">
   <div class="wrap">
     <div class="sh">
-      <div><div class="k">From the job site</div><h2 class="s">Patterns, borders and old-world wood.</h2></div>
-      <p>From an understated border to a classic herringbone — or a full custom design that gives the room its WOW factor.</p>
+      <div><div class="k">From the job site</div><h2 class="s">Patterns, borders and rich, warm wood.</h2></div>
+      <p>Real floors from their own jobs. They do commercial work too — gymnasiums, stages and studios, a skill built working alongside Tom’s dad.</p>
     </div>
-    <div class="gal">
+    <div class="row3">
       <figure><img src="img/herringbone.jpg" alt="Herringbone wood floor installation in progress" width="1200" height="900" loading="lazy"><figcaption>Herringbone</figcaption></figure>
-      <figure class="tall"><img src="img/hallway.jpg" alt="Rich, dark-toned hardwood floor in a front hallway" width="748" height="830" loading="lazy"><figcaption>Hallway floor</figcaption></figure>
-      <figure><img src="img/reclaimed.jpg" alt="Reclaimed mixed hardwood floor under timber beams" width="1100" height="768" loading="lazy"><figcaption>Reclaimed hardwood</figcaption></figure>
-      <figure><img src="img/maple-walnut.jpg" alt="Light wood floor with dark contrasting borders" width="1000" height="600" loading="lazy" style="object-position:50% 70%"><figcaption>Custom borders</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section class="pets">
-  <div class="wrap g">
-    <div class="im"><img src="img/border-dog.jpg" alt="A dog resting by the hearth on a wood floor with a diamond-pattern border inlay" width="768" height="1024" loading="lazy"></div>
-    <div>
-      <div class="k">Non-toxic finishes</div>
-      <h2 class="s">Safe for the whole family. Even the furry ones.</h2>
-      <p>Environmentally friendly, non-toxic products make the finishing process almost odor free — and, most importantly, really safe for your family and pets.</p>
-      <ul>
-        <li><b>Almost odor free</b>Non-toxic finishing products</li>
-        <li><b>Dustless sanding</b>Atomic Dust Containment</li>
-        <li><b>Custom stain colors</b>Mixed with you, to match</li>
-        <li><b>Lasts a lifetime</b>Wood floors are the preferred choice for home buyers</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="sh">
-      <div><div class="k">Testimonials</div><h2 class="s">They come back for it.</h2></div>
-    </div>
-    <div class="rv">
-      <figure><blockquote>“We originally had our floors installed by Wood Floors Unlimited 13 years ago when we built our house … the floors look wonderful, but the PEOPLE working for Wood Floors Unlimited are to be commended for going the ‘extra mile.’”</blockquote><figcaption>Margaret</figcaption></figure>
-      <figure><blockquote>“Wood Floors Unlimited installed a reclaimed mixed hardwood floor in our kitchen, dining and living room. This floor is awesome!”</blockquote><figcaption>Jack</figcaption></figure>
-      <figure><blockquote>“They were friendly and answered all my questions with courtesy and professionalism that a lot of companies don’t seem to believe in these days.”</blockquote><figcaption>Chris</figcaption></figure>
+      <figure><img src="img/hallway.jpg" alt="Rich, dark-toned hardwood floor in a front hallway" width="748" height="830" loading="lazy"><figcaption>Hallway floor</figcaption></figure>
+      <figure><img src="img/border-dog.jpg" alt="A dog resting by the hearth on a wood floor with a diamond-pattern border inlay" width="768" height="1024" loading="lazy"><figcaption>Border inlay</figcaption></figure>
     </div>
   </div>
 </section>
 
 <section style="padding-top:0">
-  <div class="wrap duo">
-    <div class="box c">
-      <div class="k">Commercial &amp; sports flooring</div>
-      <h3 class="s">Sports flooring is in the family’s DNA.</h3>
-      <p>Years spent working alongside Tom’s dad installing and finishing gymnasium floors — from professional sports teams to grade school gyms. New installs or refinishing, no project too big or too small.</p>
-      <div class="chips"><span>Gymnasiums</span><span>Racquetball</span><span>Yoga &amp; aerobics</span><span>Stages</span><span>Community rooms</span></div>
+  <div class="wrap close">
+    <div class="rv2">
+      <figure><blockquote>“We originally had our floors installed by Wood Floors Unlimited 13 years ago when we built our house … the floors look wonderful, but the PEOPLE working for Wood Floors Unlimited are to be commended for going the ‘extra mile.’”</blockquote><figcaption>Margaret</figcaption></figure>
+      <figure><blockquote>“They were friendly and answered all my questions with courtesy and professionalism that a lot of companies don’t seem to believe in these days.”</blockquote><figcaption>Chris</figcaption></figure>
     </div>
     <div class="box v">
       <div class="k">Visit the showroom</div>
       <h3 class="s">See and feel the wood.</h3>
-      <p>Meet the team and see samples of many wood species before you choose.</p>
       <dl class="vis">
         <dt>Where</dt><dd>N43W32986 Rasmus Road, Nashotah, WI 53058</dd>
         <dt>Hours</dt><dd>Monday – Friday, 9 am – 4:30 pm</dd>
-        <dt>Call</dt><dd><a href="tel:+12623678896">262-367-8896</a></dd>
+        <dt>Call</dt><dd><a href="tel:+12623678896">(262) 367-8896</a></dd>
         <dt>Email</dt><dd><a href="mailto:info@woodfloorsunlimitedinc.com">info@woodfloorsunlimitedinc.com</a></dd>
       </dl>
-      <div class="badges"><span>NWFA MEMBER</span><span>NARI</span></div>
+      <a class="btn w" href="tel:+12623678896" style="margin-top:18px">Book a free in-home estimate</a>
     </div>
   </div>
 </section>
@@ -336,11 +243,6 @@ footer b{color:#fff}
   document.querySelectorAll('.tog button').forEach(function(b){b.addEventListener('click',function(){
     document.querySelectorAll('.tog button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');
     var c=b.dataset.m==='1';room.classList.toggle('clean',c);ml.textContent=c?'Airborne dust · picked up at the source':'Airborne dust';
-  });});
-  var t=document.getElementById('tint'),tag=document.getElementById('tag');
-  document.querySelectorAll('.sw button').forEach(function(b){b.addEventListener('click',function(){
-    document.querySelectorAll('.sw button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');
-    t.style.background=b.dataset.c;tag.innerHTML=b.dataset.n+'<small>'+b.dataset.d+'</small>';
   });});
 })();
 </script>
