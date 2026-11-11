@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<title>Dnesco Electric, Inc. — Website concept by Cream City Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F1EB;--ink:#1A1D21;--steel:#1E2A36;--steel2:#2A3947;--card:#FFFFFF;--copper:#A65B32;--rule:#C8C2B8;--muted:#5d6166;--green:#1f7a4f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-size:17px}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.m{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:600;border-radius:4px;padding:14px 22px;font-size:16px;transition:background .15s,transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.c{background:var(--copper);color:#fff}
+.btn.c:hover{background:#8f4c28}
+.btn.g{border:1.5px solid rgba(244,241,235,.45);color:var(--bg)}
+.btn.g:hover{border-color:var(--bg)}
+.btn.s{background:var(--steel);color:var(--bg)}
+/* header */
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.hd img{height:60px;width:auto}
+.hd nav{display:flex;align-items:center;gap:26px;font-weight:500;font-size:15.5px}
+.hd nav a{text-decoration:none}
+.hd nav a:hover{color:var(--copper)}
+.hd nav .em{color:var(--copper);font-weight:600}
+/* hero */
+.hero{background:var(--steel);color:var(--bg);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(0deg,rgba(255,255,255,.04) 1px,transparent 1px) 0 0/48px 48px;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:clamp(28px,5vw,64px);align-items:end;padding-top:clamp(56px,8vw,112px);padding-bottom:clamp(56px,8vw,104px)}
+.hero .m{color:#c9a58e}
+.hero h1{font-family:"IBM Plex Serif",Georgia,serif;font-weight:500;font-size:clamp(46px,6.4vw,92px);line-height:1.02;letter-spacing:-.02em;margin:18px 0 22px}
+.hero h1 em{color:#d9a27f}
+.hero p{font-size:clamp(17px,1.5vw,20px);color:#c5cdd5;max-width:620px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.spec{border-left:1px solid rgba(244,241,235,.2);padding-left:24px;display:grid;gap:18px}
+.spec div b{display:block;font-size:28px;font-weight:600;letter-spacing:-.01em}
+.spec div span{font-size:14px;color:#9fb0bf}
+/* trust */
+.trust{border-bottom:1px solid var(--rule);background:var(--card)}
+.trust .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;padding-top:16px;padding-bottom:16px;font-weight:500;font-size:15px;color:#33383e}
+.trust span{display:flex;align-items:center;gap:9px}
+.trust span:before{content:"";width:12px;height:2px;background:var(--copper)}
+section{padding:clamp(56px,7vw,96px) 0}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px;flex-wrap:wrap}
+.sh h2{font-size:clamp(32px,3.8vw,48px);font-weight:600;letter-spacing:-.02em;line-height:1.1;margin-top:10px;max-width:640px}
+.sh .m{color:var(--copper)}
+.sh p{max-width:420px;color:var(--muted)}
+/* services */
+.sv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--rule);background:var(--card)}
+.sv article{padding:26px 22px 24px;border-left:1px solid var(--rule);display:flex;flex-direction:column}
+.sv article:first-child{border-left:0}
+.sv .n{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--copper)}
+.sv h3{font-size:21px;font-weight:600;letter-spacing:-.01em;margin:10px 0 10px;line-height:1.2}
+.sv p{color:var(--muted);font-size:15.5px;flex:1}
+.sv a{margin-top:16px;font-weight:600;font-size:14.5px;text-decoration:none;color:var(--steel);border-bottom:1.5px solid var(--copper);align-self:flex-start}
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px)}
+.about h2{font-size:clamp(32px,3.6vw,44px);font-weight:600;letter-spacing:-.02em;line-height:1.1;margin:10px 0 14px}
+.about .m{color:var(--copper)}
+.about p{color:#3a3f45}
+.team{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--rule)}
+.team li{padding:12px 0;border-bottom:1px solid var(--rule);font-size:15px;display:flex;flex-direction:column}
+.team li:nth-child(odd){padding-right:16px}
+.team li b{font-weight:600}
+.team li span{color:var(--muted);font-size:14px}
+.team li.lead{grid-column:1/-1;background:var(--card);padding:14px 16px;border:1px solid var(--rule);margin-bottom:6px}
+/* community */
+.comm{display:flex;align-items:center;gap:24px;background:var(--card);border:1px solid var(--rule);padding:18px 22px}
+.comm img{width:190px;flex:none}
+.comm p{color:#3a3f45;font-size:15.5px}
+.comm b{font-weight:600}
+/* contact */
+.ct{background:var(--steel);color:var(--bg);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0}
+.ct .l{padding:clamp(26px,4vw,48px)}
+.ct .l .m{color:#c9a58e}
+.ct h2{font-size:clamp(30px,3.4vw,42px);font-weight:600;letter-spacing:-.02em;line-height:1.1;margin:10px 0 14px}
+.ct .l p{color:#c5cdd5}
+.ct .addr{margin-top:22px;display:grid;gap:4px;font-size:16px}
+.ct .addr a{font-size:26px;font-weight:600;text-decoration:none}
+.route{background:var(--steel2);padding:clamp(26px,4vw,48px);display:flex;flex-direction:column;gap:16px}
+.route .m{color:#9fb0bf}
+.tabs{display:flex;background:rgba(0,0,0,.25);border-radius:4px;padding:4px;gap:4px}
+.tabs button{all:unset;cursor:pointer;flex:1;text-align:center;padding:10px 12px;border-radius:3px;font-weight:600;font-size:14.5px;color:#c5cdd5}
+.tabs button[aria-selected=true]{background:var(--bg);color:var(--steel)}
+.tabs button:focus-visible{outline:2px solid #d9a27f;outline-offset:2px}
+.ans{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:4px;padding:18px 20px;min-height:150px}
+.ans b{display:block;font-size:20px;margin-bottom:6px}
+.ans p{color:#c5cdd5;font-size:15.5px}
+.ans .btn{margin-top:14px}
+.invite{padding:46px 0 50px}
+.invite .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.invite h2{font-size:clamp(28px,3.2vw,40px);font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.invite p{color:var(--muted)}
+footer{border-top:1px solid var(--rule);font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+footer b{color:var(--ink)}
+@media (max-width:980px){
+  .hero .wrap,.about,.ct,.invite .wrap{grid-template-columns:minmax(0,1fr)}
+  .spec{border-left:0;padding-left:0;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(244,241,235,.2);padding-top:18px}
+  .sv{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sv article:nth-child(3){border-left:0}
+  .sv article:nth-child(n+3){border-top:1px solid var(--rule)}
+  .hd nav .x{display:none}
+}
+@media (max-width:600px){
+  .hd img{height:44px}
+  .hd nav .em{display:none}
+  .hd .btn{padding:10px 12px;font-size:14.5px}
+  .btn{flex:1 1 100%}
+  .hd .btn,.ans .btn{flex:none}
+  .spec{grid-template-columns:minmax(0,1fr)}
+  .sv{grid-template-columns:minmax(0,1fr)}
+  .sv article{border-left:0;border-top:1px solid var(--rule)}
+  .sv article:first-child{border-top:0}
+  .team{grid-template-columns:minmax(0,1fr)}
+  .team li:nth-child(odd){padding-right:0}
+  .comm{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hd">
+    <img src="img/logo.png" alt="Dnesco Electric, Inc." width="520" height="196">
+    <nav><a class="x" href="#services">Services</a><a class="x" href="#about">About</a><a class="x" href="#contact">Contact</a><a class="em" href="#contact">24/7 emergency (commercial &amp; industrial)</a><a class="btn s" href="tel:+14144253700">414-425-3700</a></nav>
+  </header>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="m">Dnesco Electric of Wisconsin · Electrical contractor</div>
+      <h1>Quality service <em>since 1959.</em></h1>
+      <p>Dnesco Electric is a Milwaukee electrical contractor for commercial and industrial work, including low-voltage technology and DC power in critical facilities.</p>
+      <div class="cta">
+        <a class="btn c" href="#contact">Request a project quote</a>
+        <a class="btn g" href="tel:+14144253700">Call 414-425-3700</a>
+      </div>
+    </div>
+    <div class="spec">
+      <div><b>Since 1959</b><span>Southeastern Wisconsin</span></div>
+      <div><b>4 service lines</b><span>Commercial · Industrial · DC Power · Communications</span></div>
+      <div><b>24/7</b><span>Emergency service for industrial &amp; commercial requests</span></div>
+    </div>
+  </div>
+</div>
+<div class="trust"><div class="wrap">
+  <span>Since 1959</span><span>Commercial &amp; industrial</span><span>DC power for critical facilities</span><span>24/7 emergency for industrial and commercial requests</span><span>7811 N. 86th St., Milwaukee</span>
+</div></div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="m">Our services</div><h2>Built for plants, offices and critical facilities.</h2></div>
+      <p>A wide variety of data and electrical work, specializing in commercial and industrial projects.</p>
+    </div>
+    <div class="sv">
+      <article><span class="n">01</span><h3>Commercial Services</h3><p>A wide variety of commercial projects, delivered on time with the highest quality — whether it’s a large office building or a quick repair.</p><a href="#contact">Request a quote</a></article>
+      <article><span class="n">02</span><h3>Industrial</h3><p>Equipped to handle the most complicated and challenging industrial electrical projects.</p><a href="#contact">Request a quote</a></article>
+      <article><span class="n">03</span><h3>DC Power Solutions</h3><p>Critical facilities require clean, uninterrupted power — from one or two critical units to a highly sophisticated DC power plant.</p><a href="#contact">Request a quote</a></article>
+      <article><span class="n">04</span><h3>Sound &amp; Communications</h3><p>Dnesco Communications designs and installs structured cabling to future-proof commercial and industrial growth.</p><a href="#contact">Request a quote</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap about">
+    <div>
+      <div class="m">About Dnesco</div>
+      <h2>A named team behind every project.</h2>
+      <p>Dnesco has been in business since 1959, known for commercial and industrial electrical work, low-voltage technology and DC power solutions in critical facilities. President and owner Gregg Schwister has been in the trade since 1996 and leads a team he considers extended family.</p>
+    </div>
+    <ul class="team">
+      <li class="lead"><b>Gregg Schwister</b><span>President &amp; Owner · in the trade since 1996</span></li>
+      <li><b>Stacy Schwister</b><span>Vice President</span></li>
+      <li><b>Steve Griffith</b><span>Operations Manager</span></li>
+      <li><b>Jason Pirkey</b><span>Senior Project Manager</span></li>
+      <li><b>Tom Strobel</b><span>Director of Procurement</span></li>
+      <li><b>Chris Lokker</b><span>Technologies Division Manager</span></li>
+      <li><b>Joe Perez</b><span>Technologies Division Service Manager</span></li>
+    </ul>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="comm">
+      <img src="img/bucks.jpg" alt="Milwaukee Bucks Small Business Partner 25/26" width="644" height="294" loading="lazy">
+      <p><b>Proudly involved</b> with IBEW Local 494, the National Electrical Contractors Association, the Bucks Small Business Partnership, Wisconsin Security Association, Germantown Youth Sports, MSOW Youth Sponsorship, Daniel Boone Conservation League and Kettle Moraine Lutheran High School.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="ct">
+      <div class="l">
+        <div class="m">Contact</div>
+        <h2>Request a project quote.</h2>
+        <p>Tell us about the facility and the scope. Normal inquiries are handled Monday through Friday.</p>
+        <div class="addr"><a href="tel:+14144253700">414-425-3700</a><span>7811 N. 86th St., Milwaukee, WI 53224</span></div>
+      </div>
+      <div class="route">
+        <div class="m">Who should I call?</div>
+        <div class="tabs" role="tablist" aria-label="Request type">
+          <button role="tab" aria-selected="true" data-i="0">Industrial / commercial emergency</button>
+          <button role="tab" aria-selected="false" data-i="1">Everything else</button>
+        </div>
+        <div class="ans" role="tabpanel" aria-live="polite">
+          <b id="at">Call now — 24/7.</b>
+          <p id="ad">Industrial and commercial emergency service is available 24/7 at the same number.</p>
+          <a class="btn c" id="ab" href="tel:+14144253700">Call 414-425-3700</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="invite"><div class="wrap">
+  <h2>A first look at a new website for Dnesco Electric.</h2>
+  <p>This is a sneak peek. Like the direction? Reply and we’ll build the full site.</p>
+</div></div>
+<footer><div class="wrap"><span><b>Sample design by Cream City Post</b> · Independent concept, not the official Dnesco site. Dnesco Electric, Inc. · 7811 N. 86th St., Milwaukee, WI 53224 · 414-425-3700 · ©2026</span><span>Logo, graphic and facts from dnesco.com.</span></div></footer>
+<script>
+(function(){
+  var D=[{t:'Call now — 24/7.',d:'Industrial and commercial emergency service is available 24/7 at the same number.',b:'Call 414-425-3700'},
+         {t:'Call Monday through Friday.',d:'For quotes and all other requests, call during normal business hours, Monday through Friday.',b:'Call 414-425-3700'}];
+  var b=document.querySelectorAll('.tabs button');
+  b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.setAttribute('aria-selected','false')});x.setAttribute('aria-selected','true');var o=D[+x.dataset.i];
+    document.getElementById('at').textContent=o.t;document.getElementById('ad').textContent=o.d;document.getElementById('ab').textContent=o.b;});});
+})();
+</script>
+</body>
+</html>
