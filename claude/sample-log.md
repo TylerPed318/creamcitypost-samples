@@ -9,7 +9,7 @@
 - Nov 11, 12:20 PM CT: Audit. Log was stale: CCP-011/012/013 v1 had already been built and emailed (11:54–11:59 CT) by another session. Fixed below.
 - Nov 11, 12:35 PM CT (interactive): done. CCP-114 v2 (0 credits), CCP-011 v2 (2 credits), CCP-014 v1 (4 credits) built and emailed. Next up for the 1:11 PM scheduled run: CCP-015 All City Mudjacking v1, then CCP-016 Bartz's Floor Covering v1. Tip: photo `img` tags need `height:auto` in CSS, or the width/height attributes stretch them.
 - Nov 11, ~4:00 PM CT (interactive): The 3:00 PM scheduled run stopped because the Projects tool wasn't available. These docs now live in the repo under `claude/` and are read from the clone; `claude/scheduled-run-prompt.md` is the updated hourly prompt. Nothing built. Next up: CCP-015 All City Mudjacking v1, then CCP-016 Bartz's Floor Covering v1.
-- in progress — CCP-015 (Nov 11, 4:05 PM CT, scheduled run)
+- Nov 11, ~4:25 PM CT (scheduled run): **CCP-015 blocked, not published.** Draft page committed on branch `claude/great-lamport-uxvt5c` (`all-city-mudjacking/index.html`, no images yet). Images are prepared in the Higgsfield sandbox at `/home/user/acm/out/` (kept ~24h): before.jpg/after.jpg (Higgsfield 4K upscale of their 2000×700 before/after, split; 2 credits), walk/garage/stoop.jpg (portfolio 001/003/010, VisualLightBox watermark cropped off), trucks.jpg, logo.png. Blockers: (1) this cloud environment's network policy blocks milwaukeemudjacking.com, tylerped318.github.io and the Higgsfield CDN, and the GitHub tools only write text, so image files can't reach the repo; (2) Pages serves `main`, but the run is pinned to its own branch and CLAUDE.md forbids pushing to `main`. Also: each run gets a fresh branch off `main`, so `in progress` lines on run branches are invisible to other runs. Needs Tyler: allow those hosts (or a Trusted/Full network policy) and say which branch to publish to. Next up after that: CCP-015 finish, then CCP-016 Bartz's v1.
 
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2).
@@ -29,7 +29,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-012 | Dnesco Electric Inc | Electrical, Milwaukee | brief | v1 | dnesco-electric/ | **Approved v1.** |
 | CCP-013 | Big Jim's Small Engine Service | Small engine, Oconomowoc | brief | v1 | big-jims-small-engine/ | Awaiting review. |
 | CCP-014 | TPC The Painting Company LLP | Painting, Muskego | brief | v1 | tpc-painting/ | v1 emailed Nov 11, 12:33 PM. 4 credits. |
-| CCP-015 | All City Mudjacking | Mudjacking, Franklin | brief | — | — | Brief ready; not built. |
+| CCP-015 | All City Mudjacking | Mudjacking, Franklin | brief | v1 draft | all-city-mudjacking/ | Draft on branch; blocked (images/publishing). 2 credits. |
 | CCP-016 | Bartz's Floor Covering | Flooring, Franklin | brief | — | — | Brief ready; not built. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
