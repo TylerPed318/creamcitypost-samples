@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Astro Auto Repair — Website concept by Cream City Post</title>
+<meta name="description" content="Honest auto repair on Milwaukee's south side. Engine repair, diagnostics, exhaust, transmission, brakes, tune-ups and towing at 4722 S 13th St. Call (414) 319-9400.">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#1C2226; --char-2:#232B30; --steel:#484A4E; --blue:#2E6378; --ice:#76A4B2; --call:#1E88E5; --call-dk:#1670C2;
+  --light:#F3F5F7; --silver:#D4D6D8; --card:#FFFFFF; --ink:#151A1D; --hair:#DDE2E6; --muted:#5A646B;
+  --head:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif; --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--light);color:var(--ink);font:17px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--ice);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:.98;margin:0;text-transform:uppercase;letter-spacing:.01em}
+h2{font-size:clamp(38px,5vw,60px);color:var(--char)}
+.eyebrow{font:700 13px/1 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin:0 0 12px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:6px;font:700 16px/1 var(--body);letter-spacing:.02em;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:19px;height:19px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn.call{background:var(--call);color:#fff}
+.btn.call:hover{background:var(--call-dk)}
+.btn.white{background:#fff;color:var(--char)}
+.btn.white:hover{background:var(--silver)}
+.btn.ghost{border-color:rgba(212,214,216,.5);color:#fff}
+.btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+.btn.dark{background:var(--char);color:#fff}
+.btn.dark:hover{background:var(--blue)}
+
+/* header: diamond-plate texture */
+header{position:sticky;top:0;z-index:30;background:
+  repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 6px,transparent 6px 18px),
+  repeating-linear-gradient(-45deg,rgba(255,255,255,.035) 0 6px,transparent 6px 18px),var(--char);
+  border-bottom:3px solid var(--blue)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:8px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.brand img{width:64px;height:64px;border-radius:8px;object-fit:cover;box-shadow:0 0 0 2px rgba(118,164,178,.4)}
+.brand b{font:800 24px/1 var(--head);text-transform:uppercase;letter-spacing:.03em}
+.brand small{display:block;font:600 12px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-top:3px}
+.hr{display:flex;align-items:center;gap:12px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(212,214,216,.25);border-radius:999px;color:var(--silver);font-size:14px;font-weight:600;white-space:nowrap}
+.chip i{width:9px;height:9px;border-radius:50%;background:#5BC27A;box-shadow:0 0 0 3px rgba(91,194,122,.2)}
+.chip i.off{background:#C9734F;box-shadow:0 0 0 3px rgba(201,115,79,.2)}
+.hr .btn{min-height:46px;padding:0 18px;font-size:15px}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--char);overflow:hidden}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,34,38,.96) 0%,rgba(28,34,38,.86) 42%,rgba(28,50,60,.45) 100%)}
+.hero .wrap{position:relative;padding-top:96px;padding-bottom:104px}
+.hero .eyebrow{color:var(--ice)}
+.hero h1{font-size:clamp(52px,8vw,104px);max-width:9.5em}
+.hero h1 span{color:var(--ice)}
+.hero p{font-size:19px;color:var(--silver);max-width:32em;margin:22px 0 30px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* reputation strip */
+.rep{background:var(--blue);color:#fff}
+.rep ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1.3fr repeat(3,minmax(0,1fr))}
+.rep li{padding:20px 18px;border-left:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;justify-content:center}
+.rep li:first-child{border-left:0;padding-left:0}
+.rep b{font:800 30px/1 var(--head);text-transform:uppercase;letter-spacing:.02em}
+.rep .stars{color:#FFD45C;letter-spacing:2px;font-size:18px;margin-left:6px}
+.rep span{font-size:14px;color:#D5E4EA;margin-top:4px}
+
+/* services */
+.svc{padding:88px 0}
+.svc .top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:40px;align-items:end;margin-bottom:34px}
+.svc .top p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:10px;padding:24px 22px;display:flex;gap:16px;align-items:flex-start;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--ice);transform:translateY(-2px)}
+.card .ic{width:48px;height:48px;border-radius:10px;background:var(--char);display:grid;place-items:center;flex:none}
+.card .ic svg{width:26px;height:26px;fill:none;stroke:var(--ice);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:28px;color:var(--char);margin:2px 0 6px}
+.card p{margin:0;font-size:15.5px;color:var(--muted)}
+.tow{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:var(--char);border-radius:12px;overflow:hidden;color:var(--silver)}
+.tow .tx{padding:34px 34px;display:flex;flex-direction:column;justify-content:center}
+.tow h3{font-size:clamp(34px,4vw,46px);color:#fff}
+.tow h3 span{color:var(--ice)}
+.tow p{margin:12px 0 22px}
+.tow .ph{background:#0F1417}
+.tow .ph img{width:100%;height:100%;object-fit:cover;aspect-ratio:1000/646}
+.tow .cta{display:flex;flex-wrap:wrap;gap:10px}
+
+/* reviews */
+.rev{background:var(--char);color:var(--silver);padding:88px 0}
+.rev h2{color:#fff}
+.rev .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px;margin-bottom:34px}
+.rev .head a{color:var(--ice);font-weight:700;text-underline-offset:4px}
+.qs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+figure.q{margin:0;background:var(--char-2);border:1px solid rgba(118,164,178,.22);border-top:4px solid var(--ice);border-radius:10px;padding:26px 24px 22px;display:flex;flex-direction:column}
+figure.q .s{color:#FFD45C;letter-spacing:2px;font-size:15px}
+figure.q blockquote{margin:12px 0 18px;color:#EEF1F3;font-size:17px;line-height:1.55;flex:1}
+figure.q figcaption{font-size:14px}
+figure.q figcaption b{color:#fff;font-weight:700}
+
+/* visit */
+.visit{padding:88px 0}
+.vbox{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;background:var(--card);border:1px solid var(--hair);border-radius:14px;overflow:hidden}
+.vbox .l{padding:40px}
+.vbox .r{padding:40px;background:#F8FAFB;border-left:1px solid var(--hair)}
+.status{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:10px;background:var(--char);color:#fff;margin-bottom:18px}
+.status i{width:12px;height:12px;border-radius:50%;background:#5BC27A;flex:none;box-shadow:0 0 0 4px rgba(91,194,122,.22)}
+.status i.off{background:#C9734F;box-shadow:0 0 0 4px rgba(201,115,79,.22)}
+.status b{font:800 24px/1 var(--head);text-transform:uppercase;letter-spacing:.03em}
+.status span{display:block;font-size:14px;color:var(--silver)}
+.addr{font:800 34px/1 var(--head);text-transform:uppercase;color:var(--char);margin:10px 0 6px}
+.near{color:var(--muted);margin:0 0 18px}
+.tel{display:inline-block;font:800 40px/1 var(--head);color:var(--blue);text-decoration:none;margin-bottom:22px}
+.tel:hover{color:var(--call)}
+.vbox .cta{display:flex;flex-wrap:wrap;gap:10px}
+table{width:100%;border-collapse:collapse;font-size:16px}
+td{padding:11px 0;border-bottom:1px solid var(--hair)}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+tr.now td{color:var(--blue);font-weight:700}
+tr.now td:first-child:after{content:"  ← today";font-weight:600;font-size:14px}
+.small{font-size:13.5px;color:var(--muted);margin-top:12px}
+
+.closer{background:var(--blue);color:#fff;text-align:center;padding:56px 0}
+.closer h2{color:#fff;font-size:clamp(32px,4.4vw,52px)}
+.closer p{margin:10px auto 24px;color:#D5E4EA;max-width:34em}
+.closer .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+footer{background:#111518;color:#8C969D;font-size:13.5px;padding:22px 0 26px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between}
+footer a{color:var(--silver)}
+
+.mbar{display:none}
+@media (max-width:960px){
+  .svc .top,.tow,.vbox{grid-template-columns:minmax(0,1fr)}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qs{grid-template-columns:minmax(0,1fr)}
+  .rep ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rep li{padding:16px 14px}
+  .rep li:nth-child(odd){border-left:0;padding-left:0}
+  .rep li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
+  .vbox .r{border-left:0;border-top:1px solid var(--hair)}
+  .tow .ph{order:-1}
+}
+@media (max-width:640px){
+  .chip,.hr .btn{display:none}
+  .brand img{width:52px;height:52px}
+  .brand b{font-size:21px}
+  .hero .wrap{padding-top:60px;padding-bottom:68px}
+  .hero .bg:after{background:linear-gradient(180deg,rgba(28,34,38,.80) 0%,rgba(28,34,38,.92) 100%)}
+  .hero p{font-size:17px}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .svc,.rev,.visit{padding:60px 0}
+  .tow .tx,.vbox .l,.vbox .r{padding:26px 20px}
+  .addr{font-size:30px}
+  .tel{font-size:36px}
+  body{padding-bottom:74px}
+  .mbar{display:grid;grid-template-columns:1.3fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(28,34,38,.97);border-top:2px solid var(--blue)}
+  .mbar .btn{width:100%;min-height:50px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Astro Auto Repair home">
+      <img src="img/logo.jpg" alt="Astro Auto Repair LLC logo" width="360" height="360">
+      <span><b>Astro Auto Repair</b><small>General Repair &amp; Towing</small></span>
+    </a>
+    <div class="hr">
+      <span class="chip"><i id="hdot"></i><span id="hchip">Mon–Fri 8–6 · Sat 8–3</span></span>
+      <a class="btn call" href="tel:+14143199400"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>(414) 319-9400</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="bg"><img src="img/bay.jpg" alt="The open service bay at Astro Auto Repair, 4722 S 13th St" width="2000" height="1124" fetchpriority="high"></div>
+  <div class="wrap">
+    <p class="eyebrow">13th &amp; Layton · Milwaukee's south side</p>
+    <h1>Honest auto repair on <span>Milwaukee's south side.</span></h1>
+    <p>Engine repair, diagnostics, exhaust, transmission, brakes, tune-ups and towing at 4722 S 13th St, right off I-94 and Layton.</p>
+    <div class="cta">
+      <a class="btn call" href="tel:+14143199400"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Call (414) 319-9400</a>
+      <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=4722+S+13th+St,+Milwaukee,+WI+53221"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Get directions</a>
+    </div>
+  </div>
+</section>
+
+<section class="rep" aria-label="Reputation">
+  <div class="wrap">
+    <ul>
+      <li><b>4.9 on Google<span class="stars" aria-hidden="true">★★★★★</span></b><span>256 reviews (Nov 11, 2026)</span></li>
+      <li><b>Fair pricing</b><span>A top theme in reviews</span></li>
+      <li><b>Kind staff</b><span>A top theme in reviews</span></li>
+      <li><b>Clear diagnosis</b><span>A top theme in reviews</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <p class="eyebrow">Straight off the shop sign</p>
+        <h2>Engine repair &amp; more.</h2>
+      </div>
+      <p>From a check-engine light to a car that won't roll, bring it to the open bay on 13th Street. Call ahead and describe the problem.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 10h2V8h4V6h4v2h3l2 3h1v5h-1l-2 3H9l-2-2H4Z"/><path d="M2 12v3"/></svg></span><div><h3>Engine repair</h3><p>Engine problems diagnosed and repaired in the shop.</p></div></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 12l3-3 2 2 4-4M8 20h8M12 16v4"/></svg></span><div><h3>Diagnostics</h3><p>Warning lights, odd noises and drivability problems tracked down.</p></div></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 14h9a3 3 0 0 0 3-3V8h3a3 3 0 0 1 3 3v1"/><path d="M3 14v3h4"/><path d="M18 17c1 0 1.5.6 1.5 1.5M21 15.5c1 .8 1 2.2 0 3"/></svg></span><div><h3>Exhaust</h3><p>Exhaust system repair for leaks, rattles and loud mufflers.</p></div></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6 8v8M12 8v8M18 8v4H6"/></svg></span><div><h3>Transmission</h3><p>Shifting, slipping and transmission trouble looked at.</p></div></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M5 7.5A9 9 0 0 1 8 4.6"/></svg></span><div><h3>Brakes</h3><p>Squeaks, grinding and soft pedals, checked and repaired.</p></div></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4Z"/></svg></span><div><h3>Tune-ups</h3><p>Tune-ups and routine work to keep your car running right.</p></div></div>
+      <div class="tow">
+        <div class="tx">
+          <p class="eyebrow" style="color:var(--ice)">General repair &amp; towing</p>
+          <h3>Car won't make it in? <span>Call for towing.</span></h3>
+          <p>Astro Auto Repair LLC does general repair and towing. Call the shop and tell us where you are.</p>
+          <div class="cta"><a class="btn call" href="tel:+14143199400">Call (414) 319-9400</a></div>
+        </div>
+        <div class="ph"><img src="img/sign.jpg" alt="The Astro Auto Repair LLC sign: General Repair &amp; Towing" width="1000" height="646" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="reviews">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow" style="color:var(--ice)">Why people come back</p>
+        <h2>256 reviews. Here are three.</h2>
+      </div>
+      <a href="https://www.google.com/maps/search/Astro+Auto+Repair+4722+S+13th+St+Milwaukee+WI">Read all reviews on Google</a>
+    </div>
+    <div class="qs">
+      <figure class="q">
+        <blockquote>Alejandro is a wonderful mechanic, he is very knowledgeable. He is ALSO MORE THEN FAIR, he takes time to listen to your questions. Gives you a fair price, that helps working families.</blockquote>
+        <figcaption><b>Jose Rosales</b> · Google review</figcaption>
+      </figure>
+      <figure class="q">
+        <blockquote>I've trusted Astro Auto Repair with my vehicle for a couple years now, and I honestly wouldn't take my car anywhere else but here. Alex has always been my go-to guy because I know he'll give me a straight answer…</blockquote>
+        <figcaption><b>Jimmy Lavaty</b> · Google review</figcaption>
+      </figure>
+      <figure class="q">
+        <blockquote>Very friendly people and clean 🧼 office prices are very good to i recommend it for you and family auto repairs and oil change…</blockquote>
+        <figcaption><b>Elias Cortez</b> · Google review</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="vbox">
+      <div class="l">
+        <div class="status" aria-live="polite"><i id="sdot"></i><div><b id="stitle">Hours</b><span id="ssub">Mon–Fri 8 AM–6 PM · Sat 8 AM–3 PM</span></div></div>
+        <p class="eyebrow">Find the shop</p>
+        <p class="addr">4722 S 13th St<br>Milwaukee, WI 53221</p>
+        <p class="near">Right off I-94 at Layton Ave.</p>
+        <a class="tel" href="tel:+14143199400">(414) 319-9400</a>
+        <div class="cta">
+          <a class="btn dark" href="https://www.google.com/maps/dir/?api=1&destination=4722+S+13th+St,+Milwaukee,+WI+53221">Get directions</a>
+          <a class="btn white" style="border-color:var(--hair)" href="https://www.facebook.com/474961792904293">Facebook</a>
+        </div>
+      </div>
+      <div class="r">
+        <p class="eyebrow">Shop hours</p>
+        <table aria-label="Shop hours">
+          <tbody id="hours">
+            <tr data-d="1"><td>Monday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="2"><td>Tuesday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="3"><td>Wednesday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="4"><td>Thursday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="5"><td>Friday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="6"><td>Saturday</td><td>8 AM – 3 PM</td></tr>
+            <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <p class="small">Hours may vary on holidays — call ahead to confirm.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <h2>A first look at Astro's own website.</h2>
+    <p>Everything a driver needs in one place: services, reviews, hours and one tap to call.</p>
+    <div class="cta"><a class="btn white" href="tel:+14143199400">Call (414) 319-9400</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Website by Cream City Post · Independent website concept, not an official Astro Auto Repair site. Logo from their Facebook page; shop photos, hours, rating and review excerpts from their Google listing.</span>
+    <span>Astro Auto Repair LLC · 4722 S 13th St, Milwaukee, WI 53221 · <a href="tel:+14143199400">(414) 319-9400</a></span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="btn call" href="tel:+14143199400"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>Call now</a>
+  <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=4722+S+13th+St,+Milwaukee,+WI+53221">Directions</a>
+</nav>
+
+<script>
+(function(){
+  var H={0:null,1:[8,18],2:[8,18],3:[8,18],4:[8,18],5:[8,18],6:[8,15]};
+  var N=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  function fmt(h){var s=h>=12?"PM":"AM",x=h%12||12;return x+" "+s}
+  try{
+    var parts=new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date());
+    var g=function(t){for(var i=0;i<parts.length;i++)if(parts[i].type===t)return parts[i].value};
+    var d=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday"));
+    var hr=(+g("hour"))%24+(+g("minute"))/60;
+    var row=document.querySelector('#hours tr[data-d="'+d+'"]');if(row)row.className="now";
+    var h=H[d],open=!!(h&&hr>=h[0]&&hr<h[1]);
+    var nd=d,nh=null;
+    if(!open){
+      if(h&&hr<h[0]){nh=h;}else{for(var k=1;k<=7;k++){nd=(d+k)%7;if(H[nd]){nh=H[nd];break;}}}
+    }
+    var title=open?"Open now":"Closed now";
+    var sub=open?"Open until "+fmt(h[1])+" today":"Opens "+(nd===d?"today":(nd===(d+1)%7?"tomorrow":N[nd]))+" at "+fmt(nh[0]);
+    document.getElementById("stitle").textContent=title;
+    document.getElementById("ssub").textContent=sub;
+    document.getElementById("sdot").className=open?"":"off";
+    document.getElementById("hdot").className=open?"":"off";
+    document.getElementById("hchip").textContent=open?"Open until "+fmt(h[1]):"Closed · "+sub.replace("Opens ","opens ");
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
