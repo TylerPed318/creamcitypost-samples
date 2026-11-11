@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<title>Hernia Movers Inc. — Website concept by Cream City Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#161514;--red:#c8202c;--red-d:#9e1520;--cream:#f4eee1;--ticket:#fffaf0;--muted:#5d5850;--line:#ddd3bf;--blue:#2f5f95;--green:#2f7d3b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Archivo",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,56px)}
+.k{font-stretch:118%;text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:11.5px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:2px solid var(--ink)}
+.top img{height:56px;width:auto;display:block}
+.call{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:800;color:#fff;background:var(--red);padding:12px 18px;border-radius:6px;white-space:nowrap;font-stretch:110%}
+.call svg{width:15px;height:15px}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(32px,5vw,72px) 0 clamp(56px,7vw,96px)}
+.since{display:inline-flex;align-items:center;gap:10px;color:var(--blue)}
+.since b{font-family:"Alfa Slab One",serif;font-weight:400;font-size:15px;letter-spacing:.06em}
+.since i{width:34px;height:2px;background:var(--blue)}
+h1{font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(46px,6.4vw,92px);line-height:.98;letter-spacing:-.01em;margin-top:16px}
+h1 em{font-style:normal;color:var(--red)}
+.lede{margin-top:22px;font-size:clamp(16px,1.35vw,19px);color:var(--muted);max-width:44ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:800;font-size:16px;padding:16px 24px;border-radius:6px;font-stretch:110%}
+.btn-r{background:var(--red);color:#fff}
+.btn-o{border:2px solid var(--ink)}
+/* freight ticket */
+.ticket{background:var(--ticket);border:2px solid var(--ink);border-radius:10px;position:relative;box-shadow:10px 10px 0 var(--ink);transform:rotate(1.2deg)}
+.ticket .head{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:2px dashed var(--ink)}
+.ticket .head b{font-family:"Alfa Slab One",serif;font-weight:400;font-size:15px;letter-spacing:.04em}
+.ticket .head span{color:var(--red)}
+.ticket .ph{margin:14px;border:2px solid var(--ink);border-radius:4px;overflow:hidden;aspect-ratio:4/3}
+.ticket .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ticket .foot{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px dashed var(--ink)}
+.ticket .foot div{padding:10px 14px;border-right:2px dashed var(--ink)}
+.ticket .foot div:last-child{border-right:0}
+.ticket .foot small{display:block;color:var(--muted);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.ticket .foot strong{font-size:14px;font-stretch:110%}
+.stamp{position:absolute;right:-18px;top:-22px;width:108px;height:108px;border-radius:50%;border:3px solid var(--red);color:var(--red);display:grid;place-items:center;text-align:center;transform:rotate(-14deg);background:rgba(255,250,240,.9);font-family:"Alfa Slab One",serif;line-height:1;box-shadow:0 0 0 4px rgba(255,250,240,.9)}
+.stamp small{display:block;font-family:"Archivo",sans-serif;font-weight:800;font-size:9.5px;letter-spacing:.18em}
+.stamp b{display:block;font-weight:400;font-size:26px;margin:2px 0}
+/* livery strip */
+.livery{background:var(--ink);color:#fff;overflow:hidden}
+.livery .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px;padding-top:16px;padding-bottom:16px}
+.livery span{font-style:italic;font-weight:700;font-stretch:90%;font-size:clamp(16px,1.8vw,22px)}
+.livery span b{color:#ff6b74;font-weight:700}
+/* move picker */
+.moves{padding:clamp(56px,7vw,96px) 0}
+.moves-h{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}
+.moves h2{font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:1.02}
+.moves h2 em{font-style:normal;color:var(--red)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tabs button{font:inherit;font-weight:700;font-stretch:110%;font-size:15px;padding:11px 16px;border-radius:6px;border:2px solid var(--ink);background:transparent;cursor:pointer;color:var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:#fff}
+.panel{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(20px,4vw,48px);align-items:center;margin-top:22px;background:var(--ticket);border:2px solid var(--ink);border-radius:10px;padding:clamp(20px,3vw,34px)}
+.panel h3{font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(24px,2.6vw,34px);line-height:1.05}
+.panel p{margin-top:12px;color:var(--muted);font-size:16.5px}
+.panel .photos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.panel .photos img{width:100%;aspect-ratio:1;object-fit:cover;border:2px solid var(--ink);border-radius:4px;display:block}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.facts span{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
+.areas{border-top:2px solid var(--ink);padding:22px 0;display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px}
+.areas b{font-family:"Alfa Slab One",serif;font-weight:400;font-size:17px}
+.invite{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;padding:clamp(40px,5vw,72px) 0 clamp(48px,6vw,84px);border-top:2px solid var(--ink)}
+.invite h2{font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(28px,3.2vw,44px);line-height:1.04;max-width:17ch}
+.invite p{color:var(--muted)}
+.contact{display:grid;gap:4px;margin-top:14px;font-weight:700}
+.contact a{text-decoration:none;color:var(--red);width:max-content}
+footer{background:var(--ink);color:rgba(255,255,255,.62);font-size:12px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:18px;padding-bottom:20px}
+footer b{color:#fff}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .ticket{transform:none;margin-right:10px}
+  .stamp{right:-6px;top:-26px;width:92px;height:92px}
+  .stamp b{font-size:22px}
+  .panel{grid-template-columns:1fr}
+  .invite{grid-template-columns:1fr;gap:12px}
+  .moves-h{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:560px){
+  .top img{height:40px}
+  .call{padding:10px 12px;font-size:14px}
+  .btn{flex:1 1 100%}
+  .ticket .foot strong{font-size:12.5px}
+  .ticket .foot div{padding:8px 10px}
+  .tabs button{flex:1 1 calc(50% - 8px);font-size:14px;padding:10px 8px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <img src="img/logo.jpg" alt="Hernia Movers Inc. — Since 1975 — The Potentate of Totin' Freight">
+    <a class="call" href="tel:+14142636402"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(414) 263-6402</a>
+  </header>
+  <section class="hero">
+    <div>
+      <span class="since k"><i></i><b>SINCE 1975</b> · Milwaukee, WI</span>
+      <h1>The Potentate of <em>Totin' Freight.</em></h1>
+      <p class="lede">Residential and commercial moving, packing, storage and long-distance moves, with clear upfront estimates and no hidden fees.</p>
+      <div class="ctas">
+        <a class="btn btn-r" href="tel:+14142636402">Get a free quote</a>
+        <a class="btn btn-o" href="mailto:info@herniamovers.com">Email us</a>
+      </div>
+    </div>
+    <div class="ticket">
+      <div class="stamp" aria-hidden="true"><div><small>SINCE</small><b>1975</b><small>MILWAUKEE</small></div></div>
+      <div class="head"><b>MOVE TICKET</b></div>
+      <div class="ph"><img src="img/truck-street.jpg" alt="Hernia Movers truck parked on a Milwaukee street in winter"></div>
+      <div class="foot">
+        <div><small>Estimate</small><strong>Free</strong></div>
+        <div><small>Hidden fees</small><strong>None</strong></div>
+        <div><small>Coverage</small><strong>Licensed &amp; insured</strong></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="livery" aria-label="Services"><div class="wrap">
+  <span><b>•</b> Home / Business</span><span><b>•</b> Local / Long Distance</span><span><b>•</b> Storage / Warehousing</span><span><b>•</b> General Delivery</span>
+</div></div>
+
+<div class="wrap">
+  <section class="moves">
+    <div class="moves-h">
+      <h2>What are you <em>moving?</em></h2>
+      <span class="k" style="color:var(--muted)">Tap a move type</span>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Move type">
+      <button role="tab" aria-selected="true" data-i="0">Residential</button>
+      <button role="tab" aria-selected="false" data-i="1">Commercial</button>
+      <button role="tab" aria-selected="false" data-i="2">Packing</button>
+      <button role="tab" aria-selected="false" data-i="3">Storage</button>
+      <button role="tab" aria-selected="false" data-i="4">Long distance</button>
+    </div>
+    <div class="panel" role="tabpanel">
+      <div>
+        <h3 id="pt">Residential moving</h3>
+        <p id="pd">Local apartment, condo and home moves handled with care and precision. From heavy furniture to fragile items, belongings are packed, transported and delivered safely and efficiently.</p>
+      </div>
+      <div class="photos">
+        <img src="img/truck-side.jpg" alt="Hernia Movers box truck with its service list painted on the side" loading="lazy">
+        <img src="img/truck-load.jpg" alt="Hernia Movers truck being loaded at the lift gate" loading="lazy">
+      </div>
+    </div>
+    <div class="facts"><span>Free, fast estimates</span><span>Upfront pricing, no hidden fees</span><span>Licensed &amp; insured</span><span>Homes &amp; businesses</span></div>
+  </section>
+  <div class="areas"><span class="k" style="color:var(--muted)">Serving</span><b>Milwaukee</b><b>Ozaukee</b><b>Waukesha</b><b>Washington</b><b>Racine</b><span class="k" style="color:var(--muted)">counties</span></div>
+  <section class="invite">
+    <h2>A first look at a new website for Hernia Movers.</h2>
+    <div>
+      <p>This is a sneak peek. Like the direction? Reply and we'll build the full site.</p>
+      <div class="contact">
+        <a href="tel:+14142636402">(414) 263-6402</a>
+        <a href="mailto:info@herniamovers.com">info@herniamovers.com</a>
+        <span>3210 N Pierce St, Milwaukee, WI 53212</span>
+      </div>
+    </div>
+  </section>
+</div>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Hernia Movers site.</span><span>Logo, photos and facts from herniamovers.com; main photo enhanced.</span></div></footer>
+<script>
+(function(){
+  var D=[
+   ['Residential moving','Local apartment, condo and home moves handled with care and precision. From heavy furniture to fragile items, belongings are packed, transported and delivered safely and efficiently.'],
+   ['Commercial moving','Minimize downtime with organized relocations for offices, retail spaces and equipment, with structured planning, professional handling and clear communication throughout.'],
+   ['Packing services','Full and partial packing with quality materials and proven techniques: fragile items carefully wrapped and furniture secured for safe, damage-free transport.'],
+   ['Storage services','Short-term and long-term storage in a clean, monitored facility designed to protect your belongings until you’re ready.'],
+   ['Long distance moving','Relocating beyond Milwaukee? Organized planning, reliable transportation and clear communication so your belongings arrive safely and on time.']];
+  var tabs=document.querySelectorAll('.tabs button'),t=document.getElementById('pt'),d=document.getElementById('pd');
+  tabs.forEach(function(b){b.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected','false')});b.setAttribute('aria-selected','true');var i=+b.dataset.i;t.textContent=D[i][0];d.textContent=D[i][1];});});
+})();
+</script>
+</body>
+</html>
