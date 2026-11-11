@@ -89,9 +89,13 @@ section{padding:clamp(60px,8vw,104px) 0}
 .em p{color:#ffe3df;max-width:520px}
 .em .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
 .em .chips span{background:rgba(255,255,255,.16);border-radius:999px;padding:7px 14px;font-weight:700;font-size:14px}
-.em blockquote{background:#fff;color:var(--ink);border-radius:22px;padding:26px;font-size:18px;font-weight:500;line-height:1.5}
-.em blockquote b{display:block;margin-top:12px;font-size:14px;color:var(--red)}
-.em .call{display:block;font-family:"Sora",sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,42px);color:#fff;text-decoration:none;margin-top:22px;letter-spacing:-.02em}
+.em blockquote{background:rgba(255,255,255,.12);border-left:4px solid var(--sun);border-radius:0 16px 16px 0;padding:16px 20px;font-size:17px;font-weight:500;line-height:1.5;margin-top:22px;max-width:560px}
+.em .info{background:#fff;color:var(--ink);border-radius:24px;padding:clamp(22px,3vw,32px);display:grid;gap:8px}
+.em .info .k{color:var(--red)}
+.em .info a{font-weight:600}
+.em .info .sm{font-size:14px;color:var(--muted);margin-top:6px}
+.em blockquote b{display:block;margin-top:8px;font-size:14px;color:#ffd9a8}
+.em .call{display:block;font-family:"Sora",sans-serif;font-weight:800;font-size:clamp(32px,3.4vw,44px);color:var(--green);text-decoration:none;letter-spacing:-.02em}
 /* bundle */
 .bun{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
 .bun .ph2{border-radius:24px;overflow:hidden;aspect-ratio:4/3}
@@ -208,69 +212,29 @@ footer b{color:var(--ink)}
     <div class="sv">
       <article class="card"><div class="im"><img src="img/residential.jpg" alt="Technician probing for a septic tank lid in a landscaped yard" width="1216" height="808" loading="lazy"></div><div class="tx"><span class="tg">Friendly · Efficient · Clean</span><h3>Residential</h3><p>Home septic problems are the specialty — pumping, cleaning, repairs and maintenance for systems of all types.</p><ul><li>Full tank pumping</li><li>Replace baffles &amp; unplug lines</li><li>Float switches &amp; pumps</li></ul></div></article>
       <article class="card"><div class="im"><img src="img/commercial.jpg" alt="Holding tank riser connected to a pump hose at a commercial property" width="1000" height="795" loading="lazy"></div><div class="tx"><span class="tg">Reliable · Prescheduled</span><h3>Commercial</h3><p>Holding tanks pumped on a regular schedule, so there’s no call to remember and no worry about a full tank.</p><ul><li>Regular pumping schedule</li><li>Fixed budget</li><li>Courteous drivers</li></ul></div></article>
-      <article class="card"><div class="im"><img src="img/inspections.jpg" alt="Two Sunset Septic technicians with a clipboard arriving for an inspection" width="1215" height="805" loading="lazy"></div><div class="tx"><span class="tg">Septic · Holding tank</span><h3>Inspections</h3><p>Septic and holding tank inspections for home buyers, sellers and home inspectors in Waukesha County.</p><ul><li>Inspection report</li><li>Holding tanks &amp; mound systems</li><li>Septic pumps &amp; lines</li></ul></div></article>
+      <article class="card"><div class="im"><img src="img/inspections.jpg" alt="Two Sunset Septic technicians with a clipboard arriving for an inspection" width="1215" height="805" loading="lazy"></div><div class="tx"><span class="tg">Septic · Holding tank</span><h3>Inspections</h3><p>Septic and holding tank inspections for home buyers and sellers in Waukesha County.</p><ul><li>Inspection report</li><li>Septic, well &amp; water testing in one visit</li><li>Results ready for your lender</li></ul></div></article>
     </div>
   </div>
 </section>
 
-<section class="em">
+<section class="em" style="margin-bottom:clamp(40px,6vw,72px)">
   <div class="wrap g">
     <div>
       <div class="k">Emergency service</div>
       <h2 class="h">Backed up on a Sunday? Call anyway.</h2>
       <p>Septic emergencies are never welcome, and nights, weekends and holidays are the worst. When that disaster happens, call Sunset Septic Service.</p>
-      <div class="chips"><span>Night or daytime</span><span>Weekends</span><span>Holidays</span></div>
+      <blockquote>“Our septic system backed up on a Sunday and they were at our house within an hour. A total lifesaver and very knowledgeable.”<b>— Liz H.</b></blockquote>
+    </div>
+    <div class="info">
+      <div class="k">Schedule your service</div>
       <a class="call" href="tel:+12629689812">(262) 968-9812</a>
-    </div>
-    <blockquote>“Our septic system backed up on a Sunday and they were at our house within an hour. A total lifesaver and very knowledgeable.”<b>— Liz H.</b></blockquote>
-  </div>
-</section>
-
-<section>
-  <div class="wrap bun">
-    <div class="ph2"><img src="img/cover.jpg" alt="Technician opening a septic tank cover" width="600" height="400" loading="lazy"></div>
-    <div>
-      <div class="k">Buying or selling a home?</div>
-      <h2 class="h" style="font-size:clamp(32px,3.8vw,48px);margin-top:10px">One visit. Three reports.</h2>
-      <p class="lead">No need to schedule multiple appointments. Sunset Septic bundles it all, and you get the results back promptly to submit to your closing agent or mortgage lender.</p>
-      <ol class="steps">
-        <li><div><b>Septic or holding tank inspection</b><span>Pumping plus a tank inspection report</span></div></li>
-        <li><div><b>Well inspection</b><span>Done at the same visit</span></div></li>
-        <li><div><b>Water safety test</b><span>Sample collected and lab tested</span></div></li>
-      </ol>
+      <a href="mailto:office@sunsetseptic.com">office@sunsetseptic.com</a>
+      <span>S34 W29945 Little John Drive<br>Waukesha, WI 53189</span>
+      <span class="sm">Serving Waukesha County and the surrounding area · Night, weekend &amp; holiday emergencies</span>
     </div>
   </div>
 </section>
 
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="sh"><div><div class="k">Client testimonials</div><h2 class="h">Honest, thorough, quick.</h2></div></div>
-    <div class="rv">
-      <figure><div class="q">“</div><blockquote>We used them for home sale and septic inspection. Very thorough and informative. Helped us out with all our questions and prompt quick service.</blockquote><figcaption>Rob W.</figcaption></figure>
-      <figure><div class="q">“</div><blockquote>I had a problem with my pump, they came out quick to fix. Clint was honest and thorough. … I would definitely recommend Clint and Sunset Septic.</blockquote><figcaption>Jeff H.</figcaption></figure>
-      <figure><div class="q">“</div><blockquote>Sunset septic did an amazing job for me and came out to my house within an hour or two of calling. … Great timelines and pricing.</blockquote><figcaption>Chad C.</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="sh"><div><div class="k">Septic do’s &amp; don’ts</div><h2 class="h">Keep it hassle-free.</h2></div><p>A few tips from the pros, straight from Sunset Septic’s care guide.</p></div>
-    <div class="care">
-      <div class="do"><h3>Do</h3><ul><li>Keep trees and brush at least 15′ from your system</li><li>Check for faucet leaks — one can waste 700 gallons a year</li><li>Keep records of your system’s location and cleaning</li></ul></div>
-      <div class="dont"><h3>Don’t</h3><ul><li>Do all your laundry in one day — space it out</li><li>Use chemical compounds or septic tank cleaners</li><li>Put a lot of water into the system at one time</li></ul></div>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="ct">
-      <div><div class="k" style="color:var(--sun)">Schedule your service</div><h2 class="h">Serving Waukesha County and the surrounding area.</h2><p>Call with your questions — or to get on the schedule before maintenance issues arise.</p></div>
-      <div class="info"><a class="p" href="tel:+12629689812">(262) 968-9812</a><a href="mailto:office@sunsetseptic.com">office@sunsetseptic.com</a><span style="color:#d3e0d7">S34 W29945 Little John Drive<br>Waukesha, WI 53189</span></div>
-    </div>
-  </div>
-</section>
 
 <div class="invite"><div class="wrap">
   <h2 class="h">A first look at a new website for Sunset Septic Service.</h2>
