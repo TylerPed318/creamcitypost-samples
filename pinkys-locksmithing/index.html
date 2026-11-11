@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Pinky's Locksmithing — Website concept by Cream City Post</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23e600c4'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
 <style>
@@ -68,21 +68,27 @@ footer b{color:#fff}
 @media (max-width:900px){.hero,.aaron-in,.invite{grid-template-columns:1fr}.gauge{max-width:380px;order:-1}.invite{gap:12px}}
 @media (max-width:560px){.mark b{font-size:24px}.call{padding:10px 14px;font-size:14px}.btn{flex:1 1 100%}.svc{grid-template-columns:1fr}.gauge{max-width:320px}}
 @media (prefers-reduced-motion:reduce){.call i{animation:none}}
+.mark img{height:46px;width:auto;object-fit:contain;display:block}
+.phs{display:grid;gap:14px}
+.phs .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ph.tall{aspect-ratio:4/5}
+.contact .hours{margin-top:6px;font-size:14px;color:#6c6570;font-weight:500;line-height:1.5;max-width:40ch}
+@media (max-width:560px){.phs .row{grid-template-columns:1fr 1fr;gap:10px}.ph.tall{aspect-ratio:3/4}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <a class="mark" href="#top"><b>Pinky's</b><small>LOCKSMITHING</small></a>
+    <a class="mark" href="#top"><img src="img/logo.png" alt="Pinky's Locksmithing"></a>
     <a class="call" href="tel:+14144013613"><i></i>(414) 401-3613</a>
   </header>
   <section class="hero" id="top">
     <div>
-      <span class="k">Milwaukee mobile locksmith · 24 hours</span>
+      <span class="k">Milwaukee mobile locksmith</span>
       <h1>Locked out? <span>Think Pink.</span></h1>
       <p class="lede">Car keys, home and business locks. We come to you, anywhere in the Milwaukee metro, with upfront pricing and no surprise charges.</p>
       <div class="ctas">
-        <a class="btn btn-p" href="tel:+14144013613">Call now, 24/7</a>
+        <a class="btn btn-p" href="tel:+14144013613">Call now</a>
         <a class="btn btn-s" href="mailto:office@pinkyslocksmithing.com">Email us</a>
       </div>
     </div>
@@ -97,7 +103,13 @@ footer b{color:#fff}
 
 <section class="aaron">
   <div class="wrap aaron-in">
-    <div class="ph"><img src="img/cutter.jpg" alt="Car key being cut in Pinky's key machine" loading="lazy"><span>Car key cutting &amp; programming</span></div>
+    <div class="phs">
+      <div class="ph"><img src="img/cutter.jpg" alt="Car key being cut in Pinky's key machine" loading="lazy"><span>Car key cutting &amp; programming</span></div>
+      <div class="row">
+        <div class="ph tall"><img src="img/lockout.jpg" alt="Non-destructive lockout entry" loading="lazy"><span>Lockout entry</span></div>
+        <div class="ph tall"><img src="img/install.jpg" alt="Residential lock installation" loading="lazy"><span>Lock installation</span></div>
+      </div>
+    </div>
     <div>
       <span class="k" style="color:var(--hot)">Family-owned &amp; operated</span>
       <h2 style="margin-top:12px">When you call, <span>Aaron answers.</span></h2>
@@ -122,10 +134,11 @@ footer b{color:#fff}
       <div class="contact">
         <a href="tel:+14144013613">(414) 401-3613</a>
         <a href="mailto:office@pinkyslocksmithing.com">office@pinkyslocksmithing.com</a>
+        <span class="hours">Normal hours: Sun–Fri 9am–3pm. Emergency: Sun–Thu 24 hours, Fri 12am–3pm. Closed Saturday.</span>
       </div>
     </div>
   </section>
 </div>
-<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Pinky's Locksmithing site.</span><span>Photo and facts from pinkyslocksmithing.com.</span></div></footer>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Pinky's Locksmithing site.</span><span>Logo, photos, hours and facts from pinkyslocksmithing.com.</span></div></footer>
 </body>
 </html>
