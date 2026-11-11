@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bartz's Floor Covering — Website concept by Cream City Post</title>
+<meta name="description" content="Family-owned flooring and countertop showroom in Franklin, WI. More than 50 years of experience, professional installation and free estimates.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --linen:#F8F4EE; --ink:#1A1714; --walnut:#3F2A1D; --walnut-2:#5A3E2B;
+  --brass:#B08A4F; --brass-dk:#8C6A36; --brass-lt:#E9D3A8;
+  --surface:#FFFFFF; --hair:#E2D8CC; --muted:#6B5E52;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1160px; --r:4px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--linen);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+/* top bar */
+.top{background:var(--walnut);color:#EFE6DA;font-size:13.5px}
+.top .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;justify-content:space-between;padding-top:8px;padding-bottom:8px}
+.top a{text-decoration:none}
+.top a:hover{color:var(--brass-lt)}
+.top .today b{color:var(--brass-lt);font-weight:700}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#8FB98A;margin-right:7px;vertical-align:1px}
+.dot.off{background:#C9A28A}
+
+/* header */
+header.main{background:var(--linen);border-bottom:1px solid var(--hair);position:sticky;top:0;z-index:20}
+header.main .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.logo img{width:172px;height:auto}
+.nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:var(--r);font:700 14px/1 var(--sans);letter-spacing:.04em;text-decoration:none;border:1px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.brass{background:var(--brass);color:#fff}
+.btn.brass:hover{background:var(--brass-dk)}
+.btn.line{border-color:var(--walnut);color:var(--walnut)}
+.btn.line:hover{background:var(--walnut);color:var(--linen)}
+.btn.light{background:var(--linen);color:var(--walnut)}
+.btn.light:hover{background:#fff}
+.btn.ghost{border-color:rgba(248,244,238,.5);color:var(--linen)}
+.btn.ghost:hover{border-color:var(--linen);background:rgba(248,244,238,.08)}
+.callnum{font-weight:800;color:var(--walnut);text-decoration:none;white-space:nowrap;padding:0 6px}
+.callnum:hover{color:var(--brass-dk)}
+
+/* hero */
+.hero{padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:48px;align-items:center}
+.eyebrow{font:800 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass-dk);margin:0 0 18px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;margin:0;color:var(--walnut)}
+h1{font-size:clamp(44px,6.4vw,78px);letter-spacing:-.01em}
+h1 em{font-style:italic;font-weight:500;color:var(--brass-dk)}
+.lede{font-size:18px;color:#3B332C;margin:22px 0 28px;max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.frame{position:relative;padding:14px;background:var(--surface);border:1px solid var(--hair);box-shadow:0 30px 60px -30px rgba(63,42,29,.45)}
+.frame img{width:100%;aspect-ratio:1080/680;object-fit:cover}
+.tag{position:absolute;left:-18px;bottom:34px;background:var(--walnut);color:var(--linen);padding:12px 16px;max-width:250px;font-size:13px;line-height:1.4;box-shadow:0 12px 24px -12px rgba(0,0,0,.4)}
+.tag b{display:block;font:600 19px/1.15 var(--serif);color:var(--brass-lt);margin-bottom:3px}
+
+/* proof */
+.proof{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:var(--surface)}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 18px;text-align:center;border-left:1px solid var(--hair)}
+.proof li:first-child{border-left:0}
+.proof b{display:block;font:600 24px/1.1 var(--serif);color:var(--walnut)}
+.proof span{font-size:13px;color:var(--muted);letter-spacing:.02em}
+
+/* sample board */
+.board{padding:88px 0}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px 40px;margin-bottom:34px}
+h2{font-size:clamp(34px,4.4vw,52px)}
+.head p{max-width:30em;margin:0;color:var(--muted)}
+.bd{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:28px;align-items:stretch}
+.chips{display:flex;flex-direction:column;gap:8px}
+.chip{display:flex;align-items:center;gap:14px;width:100%;padding:8px 14px 8px 8px;background:transparent;border:1px solid var(--hair);border-radius:var(--r);font:700 15px/1.2 var(--sans);color:var(--ink);cursor:pointer;text-align:left;transition:border-color .2s,background .2s}
+.chip img{width:46px;height:46px;object-fit:cover;border-radius:2px;flex:none}
+.chip:hover{border-color:var(--brass)}
+.chip[aria-selected="true"]{background:var(--walnut);border-color:var(--walnut);color:var(--linen)}
+.panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:var(--surface);border:1px solid var(--hair)}
+.panel .ph{position:relative;min-height:340px}
+.panel .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.panel .tx{padding:36px 34px;display:flex;flex-direction:column;justify-content:center}
+.panel .tx .k{font:800 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass-dk)}
+.panel h3{font-size:38px;margin:10px 0 14px}
+.panel p{margin:0 0 22px;color:#3B332C}
+.panel .links{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.panel .links a.txt{font-weight:700;font-size:14px;color:var(--walnut);text-underline-offset:4px}
+.fade{animation:f .35s ease}
+@keyframes f{from{opacity:.25}to{opacity:1}}
+.svc{margin-top:22px;font-size:14.5px;color:var(--muted)}
+.svc b{color:var(--walnut)}
+
+/* showroom */
+.room{background:var(--walnut);color:#EFE6DA;padding:88px 0}
+.room .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.room h2{color:var(--linen)}
+.room h2 em{color:var(--brass-lt);font-weight:500}
+.room p{margin:18px 0 0;max-width:32em}
+.room .pics{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;max-width:560px}
+.room figure{margin:0}
+.room figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border:6px solid #F3ECE2}
+.room figcaption{font-size:12.5px;color:#CDBBA8;margin-top:8px}
+.room .pics figure:first-child{transform:translateY(26px)}
+.room .cta{margin-top:28px}
+
+/* reviews */
+.words{padding:88px 0 40px}
+.qs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:34px}
+blockquote{margin:0;background:var(--surface);border:1px solid var(--hair);padding:34px 32px 28px;position:relative}
+blockquote:before{content:"\201C";position:absolute;top:-6px;left:24px;font:700 84px/1 var(--serif);color:var(--brass)}
+blockquote p{margin:12px 0 18px;font:500 22px/1.4 var(--serif);color:var(--ink);font-style:italic}
+blockquote cite{font-style:normal;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--walnut)}
+.src{font-size:13px;color:var(--muted);margin-top:16px}
+
+/* visit */
+.visit{padding:48px 0 96px}
+.card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);background:var(--surface);border:1px solid var(--hair)}
+.card .l{padding:44px 40px;border-right:1px solid var(--hair)}
+.card .r{padding:44px 40px;background:#FBF8F3}
+.addr{font:600 26px/1.25 var(--serif);color:var(--walnut);margin:14px 0 6px}
+.phone{display:inline-block;font:700 30px/1.2 var(--serif);color:var(--brass-dk);text-decoration:none;margin:8px 0 22px}
+.phone:hover{color:var(--walnut)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:9px 0;border-bottom:1px solid var(--hair)}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+tr.now td{color:var(--walnut);font-weight:800}
+tr.now td:first-child:after{content:" · today";font-weight:600;color:var(--brass-dk)}
+.note{font-size:13.5px;color:var(--muted);margin-top:12px}
+
+/* closer + footer */
+.closer{background:var(--ink);color:#E8E0D5;padding:70px 0;text-align:center}
+.closer h2{color:var(--linen);font-size:clamp(32px,4vw,46px)}
+.closer h2 em{color:var(--brass-lt);font-weight:500}
+.closer p{max-width:36em;margin:14px auto 26px;color:#BEB3A6}
+.closer .cta{justify-content:center}
+footer{background:#120F0D;color:#9C9187;font-size:13px;padding:22px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between}
+footer a{color:#D6C6B0}
+
+@media (max-width:960px){
+  .hero .wrap,.room .wrap,.card{grid-template-columns:minmax(0,1fr)}
+  .hero{padding:36px 0 48px}
+  .tag{left:12px;bottom:-22px}
+  .hero .frame{margin-bottom:12px}
+  .bd{grid-template-columns:minmax(0,1fr)}
+  .chips{flex-direction:row;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+  .chip{width:auto;flex:none}
+  .card .l{border-right:0;border-bottom:1px solid var(--hair)}
+  .room .pics{max-width:none}
+}
+@media (max-width:700px){
+  .nav .btn.line,.nav .btn.brass{display:none}
+  .logo img{width:140px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid var(--hair)}
+  .panel{grid-template-columns:minmax(0,1fr)}
+  .panel .ph{min-height:0;aspect-ratio:4/3}
+  .panel .tx{padding:26px 22px}
+  .qs{grid-template-columns:minmax(0,1fr)}
+  .card .l,.card .r{padding:30px 22px}
+  .board,.room,.words{padding-top:64px;padding-bottom:64px}
+  .words{padding-bottom:24px}
+  .top .addr-short{display:none}
+  blockquote p{font-size:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <span class="today"><span class="dot" id="dot"></span><span id="todayline">Mon 8–7 · Tue–Fri 8–5 · Sat 9–3 · Sun closed</span></span>
+    <span><span class="addr-short">11360 W Forest Home Ave, Franklin · </span><a href="tel:+14145297770"><b>(414) 529-7770</b></a></span>
+  </div>
+</div>
+
+<header class="main">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Bartz's Floor Covering home"><img src="img/logo.png" alt="Bartz's Floor Covering" width="420" height="165"></a>
+    <nav class="nav" aria-label="Main">
+      <a class="callnum" href="tel:+14145297770">(414) 529-7770</a>
+      <a class="btn line" href="#visit">Visit the showroom</a>
+      <a class="btn brass" href="https://www.bartzsfloorcovering.com/contact">Get a free estimate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Family-owned · Franklin, Wisconsin</p>
+      <h1>Your flooring destination <em>in Franklin.</em></h1>
+      <p class="lede">Bartz's Floor Covering is a family-owned showroom at 11360 W Forest Home Ave — hardwood, carpet, luxury vinyl, laminate, tile and countertops, with professional installation and free estimates.</p>
+      <div class="cta">
+        <a class="btn brass" href="https://www.bartzsfloorcovering.com/contact">Get a free estimate</a>
+        <a class="btn line" href="tel:+14145297770">Call (414) 529-7770</a>
+      </div>
+    </div>
+    <div class="frame">
+      <img src="img/hero.jpg" alt="Bedroom with patterned Karastan Kashmere XTRA carpet" width="1080" height="680" fetchpriority="high">
+      <div class="tag"><b>Karastan Kashmere® XTRA</b>One of the carpet lines Bartz's carries.</div>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-label="Why Bartz's">
+  <div class="wrap">
+    <ul>
+      <li><b>Family owned</b><span>& operated</span></li>
+      <li><b>50+ years</b><span>of experience</span></li>
+      <li><b>Professional</b><span>installation</span></li>
+      <li><b>Free</b><span>estimates</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="board" id="products">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">The sample board</p>
+        <h2>Floors, tile &amp; countertops<br>under one roof.</h2>
+      </div>
+      <p>Pick a surface to see what Bartz's carries. Then come feel the real samples in Franklin — our team will help you match color, budget and room.</p>
+    </div>
+    <div class="bd">
+      <div class="chips" role="tablist" aria-label="Product types" id="chips"></div>
+      <div class="panel" id="panel" role="tabpanel" aria-live="polite">
+        <div class="ph"><img id="pimg" src="img/carpet.jpg" alt="" width="720" height="720"></div>
+        <div class="tx">
+          <span class="k" id="pk">Flooring</span>
+          <h3 id="ph">Carpet</h3>
+          <p id="pp"></p>
+          <div class="links">
+            <a class="btn line" id="pl" href="https://www.bartzsfloorcovering.com/products/catalog/floors/carpet/?product_type=1&product_subtype=5">Browse carpet</a>
+            <a class="txt" href="https://www.bartzsfloorcovering.com/contact">Ask about a free estimate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="svc"><b>Services:</b> product selection · installation · custom area rugs. Brands include Karastan, Mohawk, Shaw, Mannington, Pergo and more.</p>
+  </div>
+</section>
+
+<section class="room" id="about">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" style="color:var(--brass-lt)">Family owned, customer focused</p>
+      <h2>Stop in and see us <em>on Forest Home.</em></h2>
+      <p>Bartz's is a locally owned and operated family business with over 50 years of industry experience. While products have evolved and changed, the staff at Bartz's continues to put customers first, helping generations of families and businesses find the right flooring and countertops for them.</p>
+      <p>We're a full-service center with a 100% commitment to customer satisfaction. Our installers are experts in their field, and we guarantee our work.</p>
+      <div class="cta">
+        <a class="btn light" href="https://www.google.com/maps/search/?api=1&query=Bartz%27s+Floor+Covering+11360+W+Forest+Home+Ave+Franklin+WI+53132">Get directions</a>
+        <a class="btn ghost" href="tel:+14145297770">(414) 529-7770</a>
+      </div>
+    </div>
+    <div class="pics">
+      <figure><img src="img/showroom.jpg" alt="Carpet sample displays inside the Bartz's showroom" width="534" height="400" loading="lazy"><figcaption>Inside the showroom</figcaption></figure>
+      <figure><img src="img/storefront.jpg" alt="Bartz's Floor Covering storefront in Franklin" width="534" height="400" loading="lazy"><figcaption>11360 W Forest Home Ave</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="words">
+  <div class="wrap">
+    <p class="eyebrow">From Bartz's customers</p>
+    <h2>Patient help, respectful installers.</h2>
+    <div class="qs">
+      <blockquote>
+        <p>Kelly is great! I needed flooring and countertops to match my existing woodwork and paint colors… She was so helpful and patient with me as I searched for the perfect options.</p>
+        <cite>Heidi W</cite>
+      </blockquote>
+      <blockquote>
+        <p>From the minute I stepped into the show room, the knowledge on their products, the professionalism and respect of the installers was top notch.</p>
+        <cite>Wendy H</cite>
+      </blockquote>
+    </div>
+    <p class="src">Excerpts from testimonials published on bartzsfloorcovering.com.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="card">
+      <div class="l">
+        <p class="eyebrow">Visit the showroom</p>
+        <h2>Come walk the floors.</h2>
+        <p class="addr">11360 W Forest Home Ave<br>Franklin, WI 53132</p>
+        <a class="phone" href="tel:+14145297770">(414) 529-7770</a>
+        <div class="cta">
+          <a class="btn brass" href="https://www.bartzsfloorcovering.com/contact">Request a free estimate</a>
+          <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Bartz%27s+Floor+Covering+11360+W+Forest+Home+Ave+Franklin+WI+53132">Directions</a>
+        </div>
+      </div>
+      <div class="r">
+        <p class="eyebrow">Showroom hours</p>
+        <table aria-label="Showroom hours">
+          <tbody id="hours">
+            <tr data-d="1"><td>Monday</td><td>8:00 AM – 7:00 PM</td></tr>
+            <tr data-d="2"><td>Tuesday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr data-d="3"><td>Wednesday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr data-d="4"><td>Thursday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr data-d="5"><td>Friday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr data-d="6"><td>Saturday</td><td>9:00 AM – 3:00 PM</td></tr>
+            <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Or by appointment — call ahead and we'll set a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <h2>A first look at a warmer <em>Bartz's homepage.</em></h2>
+    <p>Showroom first, family shop up front, and the full catalog one tap away.</p>
+    <div class="cta">
+      <a class="btn brass" href="tel:+14145297770">Call (414) 529-7770</a>
+      <a class="btn ghost" href="https://www.bartzsfloorcovering.com/products">Browse the catalog</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Website by Cream City Post · Independent website concept, not the official Bartz's Floor Covering site. Logo, showroom photos, product and manufacturer photos, and testimonials from bartzsfloorcovering.com.</span>
+    <span>Bartz's Floor Covering · 11360 W Forest Home Ave, Franklin, WI 53132 · <a href="tel:+14145297770">(414) 529-7770</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var C="https://www.bartzsfloorcovering.com/products/catalog/";
+  var items=[
+    {id:"carpet",k:"Flooring",h:"Carpet",img:"img/carpet.jpg",alt:"Soft neutral carpet in a bedroom",
+     p:"Plush or smooth, subtle or bold — carpet from all major brands, including Karastan, Mohawk and Shaw.",
+     url:C+"floors/carpet/?product_type=1&product_subtype=5"},
+    {id:"hardwood",k:"Flooring",h:"Hardwood",img:"img/hardwood.jpg",alt:"Warm oak hardwood floor in a bathroom",
+     p:"A large selection of hardwood from all major brands, chosen to fit your design aesthetic and your budget.",
+     url:C+"floors/hardwood/?product_type=1&product_subtype=1"},
+    {id:"luxury-vinyl",k:"Flooring",h:"Luxury vinyl",img:"img/luxury-vinyl.jpg",alt:"Wood-look luxury vinyl in a living room",
+     p:"Luxury vinyl flooring with the look you want, from all major brands, with professional installation.",
+     url:C+"floors/luxury-vinyl/?product_type=1&product_subtype=4"},
+    {id:"laminate",k:"Flooring",h:"Laminate",img:"img/laminate.jpg",alt:"Sun-dried oak laminate in a living room",
+     p:"Laminate options from all major brands — subtle or bold, in the colors and textures to suit your space.",
+     url:C+"floors/laminate/?product_type=1&product_subtype=11"},
+    {id:"tile",k:"Tile",h:"Tile",img:"img/tile.jpg",alt:"White herringbone tile floor in a kitchen",
+     p:"Porcelain, glass, ceramic, mosaic and natural stone — from subtle to bold, matte to glossy. We're here to guide you in your selections.",
+     url:C+"floors/tile/?product_type=1&product_subtype=2"},
+    {id:"countertops",k:"Countertops",h:"Countertops",img:"img/countertops.jpg",alt:"Quartz countertop sample with wood and carpet samples",
+     p:"Quartz and natural stone countertop selections, from clean, simple looks to complex, bold colors.",
+     url:C+"countertops/?product_type=4"}
+  ];
+  var chips=document.getElementById("chips");
+  var $=function(i){return document.getElementById(i)};
+  function show(i,focus){
+    var it=items[i];
+    [].forEach.call(chips.children,function(b,j){b.setAttribute("aria-selected",j===i?"true":"false");b.tabIndex=j===i?0:-1;});
+    var img=$("pimg");img.src=it.img;img.alt=it.alt;
+    $("pk").textContent=it.k;$("ph").textContent=it.h;$("pp").textContent=it.p;
+    $("pl").href=it.url;$("pl").textContent="Browse "+it.h.toLowerCase();
+    var p=$("panel");p.classList.remove("fade");void p.offsetWidth;p.classList.add("fade");
+    if(focus)chips.children[i].focus();
+  }
+  items.forEach(function(it,i){
+    var b=document.createElement("button");b.type="button";b.className="chip";b.setAttribute("role","tab");
+    b.innerHTML='<img src="'+it.img+'" alt="" width="46" height="46" loading="lazy"><span>'+it.h+'</span>';
+    b.addEventListener("click",function(){show(i)});
+    b.addEventListener("keydown",function(e){
+      var n=null;if(e.key==="ArrowDown"||e.key==="ArrowRight")n=(i+1)%items.length;
+      if(e.key==="ArrowUp"||e.key==="ArrowLeft")n=(i+items.length-1)%items.length;
+      if(n!==null){e.preventDefault();show(n,true);}
+    });
+    chips.appendChild(b);
+  });
+  show(0);
+
+  // Today's hours (Franklin, WI time)
+  var H={0:null,1:[8,19],2:[8,17],3:[8,17],4:[8,17],5:[8,17],6:[9,15]};
+  var L={1:"8 AM – 7 PM",2:"8 AM – 5 PM",3:"8 AM – 5 PM",4:"8 AM – 5 PM",5:"8 AM – 5 PM",6:"9 AM – 3 PM"};
+  try{
+    var parts=new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date());
+    var get=function(t){for(var i=0;i<parts.length;i++)if(parts[i].type===t)return parts[i].value};
+    var d=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(get("weekday"));
+    var hr=(+get("hour"))%24+(+get("minute"))/60;
+    var row=document.querySelector('#hours tr[data-d="'+d+'"]');if(row)row.className="now";
+    var h=H[d],open=h&&hr>=h[0]&&hr<h[1];
+    $("dot").className="dot"+(open?"":" off");
+    $("todayline").innerHTML=open?"Showroom open today · <b>"+L[d]+"</b>":(h?"Today: "+L[d]+" · <b>call to set an appointment</b>":"Closed Sundays · <b>call to set an appointment</b>");
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
