@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
 <title>Urban Loggers LLC — Website concept by Cream City Post</title>
-<link rel="icon" href="img/logo.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500..800;1,500..700&family=Work+Sans:wght@400..700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -57,6 +59,23 @@ blockquote cite{display:block;margin-top:6px;font-family:"Work Sans",sans-serif;
 footer{background:var(--ink);color:rgba(246,241,231,.6);font-size:12px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:18px;padding-bottom:20px}
 footer b{color:var(--paper)}
+
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:600;font-size:14.5px}
+.rating .stars{color:#e0a526;letter-spacing:2px;font-size:15px}
+.rating small{color:var(--muted);font-weight:500}
+.quotes{display:grid;gap:22px;margin-top:28px}
+.quotes blockquote{margin-top:0}
+.yard{padding-top:clamp(48px,6vw,80px);padding-bottom:clamp(8px,2vw,20px)}
+.yard-h{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}
+.yard h2{font-family:"Bitter",serif;font-weight:700;font-size:clamp(26px,3vw,40px);line-height:1.08;max-width:20ch}
+.yard h2 em{font-style:italic;color:var(--saw-d)}
+.yard .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.yard figure{margin:0}
+.yard figure div{border-radius:10px;overflow:hidden;aspect-ratio:3/4}
+.yard img{width:100%;height:100%;object-fit:cover;display:block}
+.yard figcaption{margin-top:10px;font-weight:600;font-size:15px}
+.yard figcaption span{display:block;font-weight:400;color:var(--muted);font-size:13.5px}
+@media (max-width:900px){.yard .grid{grid-template-columns:1fr 1fr}.yard figure:first-child{grid-column:1/-1}.yard figure:first-child div{aspect-ratio:4/3}.yard-h{flex-direction:column;align-items:flex-start}}
 @media (max-width:900px){
   .hero,.crew-in,.invite{grid-template-columns:1fr}
   .slab{order:-1;max-width:560px}
@@ -75,7 +94,7 @@ footer b{color:var(--paper)}
 <body>
 <div class="wrap">
   <header class="top">
-    <img src="img/logo.png" alt="Urban Loggers, LLC">
+    <img src="img/logo.jpg" alt="Urban Loggers, LLC">
     <a class="call" href="tel:+14142404626">(414) 240-4626 <small>· 24/7</small></a>
   </header>
   <section class="hero">
@@ -88,6 +107,7 @@ footer b{color:var(--paper)}
         <a class="btn btn-s" href="mailto:urbanloggersllc@gmail.com">Email Brian</a>
       </div>
       <div class="ticks"><span>Licensed &amp; insured</span><span>24/7 emergency</span><span>Free estimates</span><span>SAM registered</span></div>
+      <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span>Rated 4.9 <small>by 30+ Milwaukee-area homeowners on Google</small></div>
     </div>
     <div class="slab" role="img" aria-label="Illustration of a live-edge hardwood slab stamped Urban Loggers, milled in Wisconsin"><svg viewBox="0 0 620 470" xmlns="http://www.w3.org/2000/svg">
 <defs><linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c29b"/><stop offset=".55" stop-color="#cfa676"/><stop offset="1" stop-color="#b98a5a"/></linearGradient></defs>
@@ -128,10 +148,27 @@ footer b{color:var(--paper)}
         <li>Log milling &amp; hardwood slabs <span>Portable sawmill</span></li>
         <li>Land clearing <span>Small &amp; mid-size lots</span></li>
       </ul>
-      <blockquote>“Took this city girl's fear of the cost of tree removal away for good!”<cite>Karen S., Google review</cite></blockquote>
+      <div class="quotes">
+        <blockquote>“Took this city girl's fear of the cost of tree removal away for good!”<cite>Karen S., Google review</cite></blockquote>
+        <blockquote>“They chipped the wood pile in a couple hours, leaving me with beautiful wood chips for landscaping. They go above and beyond.”<cite>Mary W., Google review</cite></blockquote>
+      </div>
     </div>
   </div>
 </section>
+
+<div class="wrap">
+  <section class="yard">
+    <div class="yard-h">
+      <h2>Your tree doesn't have to end up <em>as chips.</em></h2>
+      <span class="mono" style="color:var(--saw-d)">From the Urban Loggers gallery</span>
+    </div>
+    <div class="grid">
+      <figure><div><img src="img/furniture.jpg" alt="Rustic outdoor chairs and table made from milled logs" loading="lazy"></div><figcaption>Custom pieces from milled logs<span>Your hardwood, kept and repurposed</span></figcaption></figure>
+      <figure><div><img src="img/logyard.jpg" alt="Cleared lot with logs stacked for milling" loading="lazy"></div><figcaption>Land clearing<span>Best hardwood saved for milling</span></figcaption></figure>
+      <figure><div><img src="img/rigging.jpg" alt="Climber rigging a large tree beside a house" loading="lazy"></div><figcaption>Difficult removals<span>Rigging and climbing where machines can't go</span></figcaption></figure>
+    </div>
+  </section>
+</div>
 
 <div class="wrap">
   <div class="area"><span class="mono">Serving</span><b>Milwaukee</b><b>Wauwatosa</b><b>West Allis</b><b>Brookfield</b><b>Pewaukee</b><b>Waukesha</b><b>Mequon</b><b>Cedarburg</b><b>Racine</b><span class="mono">&amp; surrounding communities</span></div>
@@ -146,6 +183,6 @@ footer b{color:var(--paper)}
     </div>
   </section>
 </div>
-<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Urban Loggers LLC site.</span><span>Logo, photo and review from urbanloggers.org; photo enhanced.</span></div></footer>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Urban Loggers LLC site.</span><span>Logo, photos, rating and reviews from urbanloggers.org; main photo enhanced.</span></div></footer>
 </body>
 </html>
