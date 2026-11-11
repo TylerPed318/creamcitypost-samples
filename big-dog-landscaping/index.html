@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Big Dog Landscaping — Website concept by Cream City Post</title>
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500..700&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet">
+<style>
+:root{--kraft:#b99a6b;--kraft-l:#e9dcc4;--cream:#f7f1e6;--bark:#2d2219;--pine:#1f3d2b;--sky:#7fb2cf;--ink:#1f1a14;--muted:#6a5d4d;--line:rgba(45,34,25,.16)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,56px)}
+.k{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-weight:500;font-size:12.5px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:58px;height:58px;border-radius:10px;object-fit:cover;box-shadow:0 4px 12px rgba(45,34,25,.2)}
+.brand span{font-family:"Oswald",sans-serif;font-weight:700;font-size:20px;letter-spacing:.04em;text-transform:uppercase;line-height:1}
+.brand small{display:block;font-family:"DM Sans";font-weight:500;font-size:12px;letter-spacing:.12em;color:var(--muted);margin-top:3px}
+.call{text-decoration:none;font-weight:700;background:var(--bark);color:var(--cream);padding:12px 18px;border-radius:8px;white-space:nowrap}
+.intro{text-align:center;padding:clamp(28px,4vw,56px) 0 clamp(24px,3vw,36px)}
+.intro .k{color:var(--muted)}
+h1{font-family:"Oswald",sans-serif;font-weight:700;font-size:clamp(46px,7.4vw,108px);line-height:.95;text-transform:uppercase;letter-spacing:-.005em;margin-top:12px}
+h1 em{font-style:normal;color:var(--pine)}
+.intro p{margin:18px auto 0;max-width:52ch;color:var(--muted);font-size:clamp(16px,1.35vw,19px)}
+.compare{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:600/496;max-width:760px;margin:0 auto;width:100%;background:#ccc;user-select:none;touch-action:pan-y;box-shadow:0 30px 60px -20px rgba(45,34,25,.35)}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.compare .after{clip-path:inset(0 0 0 var(--p,50%))}
+.compare .bar{position:absolute;top:0;bottom:0;left:var(--p,50%);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.compare .knob{position:absolute;top:50%;left:var(--p,50%);width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25);cursor:ew-resize}
+.compare .knob svg{width:26px;height:26px}
+.compare .lbl{position:absolute;top:16px;padding:8px 12px;border-radius:6px;background:rgba(31,26,20,.75);color:#fff}
+.compare .lbl.l{left:16px}.compare .lbl.r{right:16px;background:var(--pine)}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.cap{max-width:760px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:13.5px}
+.cap b{color:var(--ink)}
+.ctas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:34px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:16px;padding:16px 24px;border-radius:8px}
+.btn-p{background:var(--pine);color:#fff}
+.btn-s{border:1.5px solid var(--bark)}
+.services{margin-top:clamp(56px,7vw,96px);background:var(--bark);color:var(--cream);padding:clamp(48px,6vw,80px) 0}
+.services h2{font-family:"Oswald",sans-serif;font-weight:700;font-size:clamp(28px,3.4vw,44px);text-transform:uppercase;line-height:1}
+.services h2 em{font-style:normal;color:var(--kraft)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:28px;border-top:1px solid rgba(247,241,230,.18)}
+.grid div{padding:22px 22px 22px 0;border-bottom:1px solid rgba(247,241,230,.18)}
+.grid div:nth-child(3n+2),.grid div:nth-child(3n){padding-left:22px;border-left:1px solid rgba(247,241,230,.18)}
+.grid b{font-family:"Oswald",sans-serif;font-weight:500;font-size:20px;text-transform:uppercase;letter-spacing:.02em}
+.grid small{display:block;color:rgba(247,241,230,.6);font-size:13.5px;margin-top:4px}
+.quote{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;margin-top:36px;max-width:780px}
+.quote svg{width:36px;height:36px;color:var(--kraft)}
+.quote p{font-size:clamp(18px,1.8vw,23px);line-height:1.4}
+.quote cite{display:block;font-style:normal;color:rgba(247,241,230,.6);font-size:13.5px;margin-top:10px}
+.invite{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;padding-top:clamp(48px,6vw,84px);padding-bottom:clamp(48px,6vw,84px)}
+.invite h2{font-family:"Oswald",sans-serif;font-weight:700;font-size:clamp(26px,3vw,42px);line-height:1.02;text-transform:uppercase;max-width:18ch}
+.invite p{color:var(--muted)}
+.contact{display:grid;gap:4px;margin-top:14px;font-weight:600}
+.contact a{text-decoration:none;color:var(--pine)}
+footer{border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:18px;padding-bottom:20px}
+footer b{color:var(--ink)}
+@media (max-width:820px){
+
+  .grid{grid-template-columns:1fr 1fr}
+  .grid div{padding:18px 16px 18px 0!important;border-left:0!important}
+  .grid div:nth-child(2n){padding-left:16px!important;border-left:1px solid rgba(247,241,230,.18)!important}
+  .invite{grid-template-columns:1fr;gap:12px}
+}
+@media (max-width:560px){
+  .brand span{font-size:16px}.brand img{width:46px;height:46px}
+  .call{padding:10px 12px;font-size:14px}
+  .btn{flex:1 1 100%}
+
+  .grid b{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top"><img src="img/logo.jpg" alt="Big Dog Landscaping logo"><span>Big Dog<small>LANDSCAPING · WAUKESHA</small></span></a>
+    <a class="call" href="tel:+14143089698">(414) 308-9698</a>
+  </header>
+  <section class="intro" id="top">
+    <span class="k">Waukesha County, Wisconsin</span>
+    <h1>Drag to see <em>the difference.</em></h1>
+    <p>Design, installation and maintenance that bring your outdoor space to life. This is one of our own jobs.</p>
+  </section>
+  <div class="compare" id="cmp" style="--p:50%">
+    <img src="img/before.jpg" alt="Before: overgrown fire pit area in a grassy yard">
+    <img class="after" src="img/after.jpg" alt="After: rebuilt stone fire pit with a clean gravel surround">
+    <div class="bar"></div>
+    <div class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3d2b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
+    <span class="lbl l k">Before</span><span class="lbl r k">After</span>
+    <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+  </div>
+  <div class="cap"><span><b>Custom fire pit</b> · Outdoor features</span><span>Photos: Big Dog Landscaping</span></div>
+  <div class="ctas">
+    <a class="btn btn-p" href="tel:+14143089698">Get a free estimate</a>
+    <a class="btn btn-s" href="mailto:bigdoglandscaping101@gmail.com">Email us</a>
+  </div>
+</div>
+
+<section class="services">
+  <div class="wrap">
+    <h2>Design to <em>maintenance.</em></h2>
+    <div class="grid">
+      <div><b>Landscape design</b><small>&amp; installation</small></div>
+      <div><b>Lawn care</b><small>&amp; maintenance</small></div>
+      <div><b>Hardscaping</b><small>Patios, paths &amp; fire pits</small></div>
+      <div><b>Tree &amp; shrub</b><small>Services</small></div>
+      <div><b>Irrigation</b><small>Systems</small></div>
+      <div><b>Seasonal cleanup</b><small>Spring &amp; fall</small></div>
+    </div>
+    <div class="quote">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 7h4v4H8c0 2 1 3 3 3v3c-3 0-5-2-5-6V7zm9 0h4v4h-3c0 2 1 3 3 3v3c-3 0-5-2-5-6V7z"/></svg>
+      <div><p>“I’ve worked with a lot of landscaping crews and can safely say no one works harder than Big Dog.”</p><cite>Janet K., Waukesha County</cite></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="invite">
+    <h2>A first look at a new website for Big Dog Landscaping.</h2>
+    <div>
+      <p>This is a sneak peek. Like the direction? Reply and we'll build the full site.</p>
+      <div class="contact">
+        <a href="tel:+14143089698">(414) 308-9698</a>
+        <a href="mailto:bigdoglandscaping101@gmail.com">bigdoglandscaping101@gmail.com</a>
+        <span>720 N East Ave, Waukesha, WI 53186</span>
+      </div>
+    </div>
+  </section>
+</div>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Big Dog Landscaping site.</span><span>Logo, photos and review from bigdoglandscaping101.com.</span></div></footer>
+<script>
+(function(){var c=document.getElementById('cmp'),r=c.querySelector('input');function s(v){c.style.setProperty('--p',v+'%')}r.addEventListener('input',function(){s(r.value)});})();
+</script>
+</body>
+</html>
