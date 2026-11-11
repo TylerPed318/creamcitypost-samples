@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<title>Sunset Septic Service — Website concept by Cream City Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1f3d2b;--green2:#2b5239;--sun:#f6b81c;--orange:#f08a1d;--red:#d8302b;--cream:#fbf7ee;--ink:#14201a;--muted:#5b6a61;--line:#e2ddcf}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Public Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1220px;margin:0 auto;padding:0 clamp(18px,4vw,52px)}
+.h{font-family:"Sora",sans-serif;font-weight:800;letter-spacing:-.025em;line-height:1.02}
+.k{font-family:"Sora",sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:700;border-radius:12px;padding:14px 22px;font-size:16px;transition:transform .15s,filter .15s}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.btn.s{background:var(--sun);color:var(--green)}
+.btn.o{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn.g{background:var(--green);color:#fff}
+/* top */
+.top{background:var(--green);color:#fff;position:relative;overflow:hidden}
+.top:before{content:"";position:absolute;width:900px;height:900px;border-radius:50%;right:-260px;bottom:-560px;background:radial-gradient(circle,rgba(246,184,28,.45),rgba(240,138,29,.18) 45%,transparent 70%);pointer-events:none}
+.top>*{position:relative}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.hd img{height:66px;width:auto}
+.hd .r{display:flex;align-items:center;gap:16px}
+.hd .r small{color:#bcd0c2;font-size:14px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,5vw,64px);align-items:center;padding:clamp(24px,4vw,52px) 0 clamp(60px,7vw,96px)}
+.hero h1{font-size:clamp(42px,5.6vw,76px);margin:14px 0 20px}
+.hero h1 span{color:var(--sun)}
+.hero p{font-size:clamp(17px,1.5vw,19px);color:#d3e0d7;max-width:520px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.ph{position:relative}
+.ph .f{border-radius:26px;overflow:hidden;aspect-ratio:8/5;box-shadow:0 40px 70px -30px rgba(0,0,0,.6)}
+.ph .f img{width:100%;height:100%;object-fit:cover}
+.ph .t{position:absolute;left:-26px;bottom:-34px;width:42%;border-radius:18px;overflow:hidden;border:5px solid var(--green);box-shadow:0 20px 40px -20px rgba(0,0,0,.6);aspect-ratio:3/2}
+.ph .t img{width:100%;height:100%;object-fit:cover}
+.ph .b{position:absolute;right:16px;top:16px;background:var(--cream);color:var(--green);border-radius:999px;padding:8px 14px;font-weight:700;font-size:13.5px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:30px;color:#bcd0c2;font-size:14.5px}
+.trust span:before{content:"✓";color:var(--sun);font-weight:800;margin-right:7px}
+section{padding:clamp(60px,8vw,104px) 0}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.sh h2{font-size:clamp(34px,4.2vw,54px);margin-top:10px;max-width:680px}
+.sh p{max-width:430px;color:var(--muted)}
+/* calculator */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -44px rgba(31,61,43,.5)}
+.calc .in{padding:clamp(24px,3.4vw,44px)}
+.calc h2{font-size:clamp(30px,3.4vw,44px);margin:10px 0 12px}
+.calc p{color:var(--muted)}
+.yrs{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.yrs button{all:unset;cursor:pointer;padding:10px 14px;border-radius:10px;border:1.5px solid var(--line);font-weight:700;font-size:15px;min-width:52px;text-align:center}
+.yrs button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}
+.yrs button:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.calc .out{background:var(--green);color:#fff;padding:clamp(24px,3.4vw,44px);display:flex;flex-direction:column;justify-content:center;gap:12px;position:relative;overflow:hidden}
+.calc .out:after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;right:-120px;bottom:-200px;background:radial-gradient(circle,rgba(246,184,28,.5),transparent 70%)}
+.out .st{display:inline-flex;align-self:flex-start;border-radius:999px;padding:6px 12px;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;background:#2f6b45}
+.out .st.due{background:var(--sun);color:var(--green)}
+.out .st.over{background:var(--red)}
+.out .big{font-family:"Sora",sans-serif;font-weight:800;font-size:clamp(40px,4.6vw,62px);line-height:1;letter-spacing:-.03em}
+.out .msg{color:#d3e0d7;max-width:420px;position:relative;z-index:1}
+.track{display:flex;gap:6px;margin:6px 0 4px;position:relative;z-index:1}
+.track i{flex:1;height:10px;border-radius:5px;background:rgba(255,255,255,.15)}
+.track i.on{background:var(--sun)}
+.track i.late{background:var(--red)}
+.tl{display:flex;justify-content:space-between;font-size:12.5px;color:#a9c0b0;position:relative;z-index:1}
+.out .btn{align-self:flex-start;margin-top:6px;position:relative;z-index:1}
+/* services */
+.sv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+.card .im{aspect-ratio:3/2;overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:cover}
+.card .tx{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.card .tg{font-weight:700;color:var(--red);font-size:14px}
+.card h3{font-family:"Sora",sans-serif;font-weight:800;font-size:25px;letter-spacing:-.02em;margin:4px 0 10px}
+.card p{color:var(--muted);font-size:15.5px}
+.card ul{list-style:none;margin-top:14px;display:grid;gap:7px}
+.card li{font-size:15px;font-weight:600;padding-left:22px;position:relative}
+.card li:before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;border-radius:50%;background:var(--sun)}
+/* emergency */
+.em{background:var(--red);color:#fff;border-radius:32px;margin:0 clamp(10px,2vw,24px);padding:clamp(40px,6vw,72px) 0}
+.em .g{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:center}
+.em .k{color:#ffd9a8}
+.em h2{font-size:clamp(34px,4.2vw,56px);margin:10px 0 14px}
+.em p{color:#ffe3df;max-width:520px}
+.em .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.em .chips span{background:rgba(255,255,255,.16);border-radius:999px;padding:7px 14px;font-weight:700;font-size:14px}
+.em blockquote{background:#fff;color:var(--ink);border-radius:22px;padding:26px;font-size:18px;font-weight:500;line-height:1.5}
+.em blockquote b{display:block;margin-top:12px;font-size:14px;color:var(--red)}
+.em .call{display:block;font-family:"Sora",sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,42px);color:#fff;text-decoration:none;margin-top:22px;letter-spacing:-.02em}
+/* bundle */
+.bun{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.bun .ph2{border-radius:24px;overflow:hidden;aspect-ratio:4/3}
+.bun .ph2 img{width:100%;height:100%;object-fit:cover}
+.steps{list-style:none;counter-reset:s;display:grid;gap:12px;margin-top:22px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.steps li:before{content:counter(s);font-family:"Sora",sans-serif;font-weight:800;width:46px;height:46px;border-radius:12px;background:var(--green);color:var(--sun);display:grid;place-items:center;font-size:20px}
+.steps b{display:block;font-size:16.5px}
+.steps span{color:var(--muted);font-size:14.5px}
+.bun .lead{color:var(--muted);margin-top:12px}
+/* reviews */
+.rv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.rv figure{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column}
+.rv .q{font-family:"Sora",sans-serif;font-weight:800;font-size:54px;line-height:.6;height:24px;color:var(--sun)}
+.rv blockquote{font-size:16.5px;flex:1}
+.rv figcaption{margin-top:16px;font-weight:800}
+/* care */
+.care{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.care div{border-radius:22px;padding:24px 26px}
+.care .do{background:#e6efe8}
+.care .dont{background:#f8e6e3}
+.care h3{font-family:"Sora",sans-serif;font-weight:800;font-size:22px;margin-bottom:10px}
+.care ul{list-style:none;display:grid;gap:8px}
+.care li{font-size:15.5px;padding-left:26px;position:relative}
+.care .do li:before{content:"✓";position:absolute;left:0;font-weight:800;color:var(--green2)}
+.care .dont li:before{content:"✕";position:absolute;left:0;font-weight:800;color:var(--red)}
+/* contact */
+.ct{background:var(--green);color:#fff;border-radius:32px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:24px;padding:clamp(28px,4vw,52px);align-items:center}
+.ct h2{font-size:clamp(32px,3.8vw,50px);margin:10px 0 12px}
+.ct p{color:#d3e0d7}
+.ct .info{background:rgba(255,255,255,.07);border-radius:20px;padding:22px 24px;display:grid;gap:10px}
+.ct .info a.p{font-family:"Sora",sans-serif;font-weight:800;font-size:clamp(28px,3vw,38px);color:var(--sun);text-decoration:none}
+.invite{padding:50px 0 54px}
+.invite .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.invite h2{font-size:clamp(28px,3.2vw,40px)}
+.invite p{color:var(--muted)}
+footer{border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+footer b{color:var(--ink)}
+@media (max-width:1000px){
+  .hero,.calc,.em .g,.bun,.ct,.invite .wrap{grid-template-columns:minmax(0,1fr)}
+  .sv,.rv{grid-template-columns:minmax(0,1fr)}
+  .card{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+  .card .im{aspect-ratio:auto;min-height:100%}
+  .ph{margin:0 0 30px 18px}
+}
+@media (max-width:640px){
+  .hd img{height:50px}
+  .hd .r small{display:none}
+  .hd .btn{padding:10px 14px;font-size:14.5px}
+  .btn{flex:1 1 100%}
+  .hd .btn,.out .btn{flex:none}
+  .card{display:flex}
+  .card .im{aspect-ratio:3/2}
+  .care{grid-template-columns:minmax(0,1fr)}
+  .ph .t{left:-14px;width:46%}
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="wrap">
+    <header class="hd">
+      <img src="img/logo.png" alt="Sunset Septic Service" width="440" height="210">
+      <div class="r"><small>Waukesha County &amp; beyond</small><a class="btn s" href="tel:+12629689812">(262) 968-9812</a></div>
+    </header>
+    <div class="hero">
+      <div>
+        <div class="k">Septic systems &amp; holding tanks</div>
+        <h1 class="h">Over 30 years of <span>clean, friendly</span> septic service.</h1>
+        <p>No spills, no oil leaks on your driveway, no messes. Licensed, insured and bonded drivers who show up on time, stay clean and answer your questions.</p>
+        <div class="cta">
+          <a class="btn s" href="tel:+12629689812">Call (262) 968-9812</a>
+          <a class="btn o" href="mailto:office@sunsetseptic.com?subject=Schedule%20service">Schedule by email</a>
+        </div>
+        <div class="trust"><span>Pumping</span><span>Repairs</span><span>Certified inspections</span><span>Well &amp; water testing</span></div>
+      </div>
+      <div class="ph">
+        <div class="f"><img src="img/truck.jpg" alt="Sunset Septic pump truck parked on a residential driveway" width="1600" height="1000"></div>
+        <div class="t"><img src="img/tech.jpg" alt="Sunset Septic technician in a branded red shirt beside the truck" width="750" height="500"></div>
+        <span class="b">Licensed · Insured · Bonded</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="calc">
+      <div class="in">
+        <div class="k">The 3-year rule</div>
+        <h2 class="h">When is your tank due?</h2>
+        <p>Wisconsin requires septic systems to be pumped and/or inspected at least every three years. Tap the year of your last pump or inspection.</p>
+        <div class="yrs" role="group" aria-label="Year of last pump or inspection" id="yrs"></div>
+      </div>
+      <div class="out" aria-live="polite">
+        <span class="st" id="st">On schedule</span>
+        <div class="big" id="big">Due by 2027</div>
+        <div class="track" id="tr"><i></i><i></i><i></i></div>
+        <div class="tl" id="tl"><span>2024</span><span>2027</span></div>
+        <div class="msg" id="msg">You’re set for now. A Sunset Septic service plan takes the guesswork out of the next one.</div>
+        <a class="btn s" href="tel:+12629689812">Get on the schedule</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="k">Services</div><h2 class="h">Homes, businesses and home sales.</h2></div>
+      <p>Regular maintenance and pumping prolong the life and improve the function of your septic or holding tank system.</p>
+    </div>
+    <div class="sv">
+      <article class="card"><div class="im"><img src="img/residential.jpg" alt="Technician probing for a septic tank lid in a landscaped yard" width="1216" height="808" loading="lazy"></div><div class="tx"><span class="tg">Friendly · Efficient · Clean</span><h3>Residential</h3><p>Home septic problems are the specialty — pumping, cleaning, repairs and maintenance for systems of all types.</p><ul><li>Full tank pumping</li><li>Replace baffles &amp; unplug lines</li><li>Float switches &amp; pumps</li></ul></div></article>
+      <article class="card"><div class="im"><img src="img/commercial.jpg" alt="Holding tank riser connected to a pump hose at a commercial property" width="1000" height="795" loading="lazy"></div><div class="tx"><span class="tg">Reliable · Prescheduled</span><h3>Commercial</h3><p>Holding tanks pumped on a regular schedule, so there’s no call to remember and no worry about a full tank.</p><ul><li>Regular pumping schedule</li><li>Fixed budget</li><li>Courteous drivers</li></ul></div></article>
+      <article class="card"><div class="im"><img src="img/inspections.jpg" alt="Two Sunset Septic technicians with a clipboard arriving for an inspection" width="1215" height="805" loading="lazy"></div><div class="tx"><span class="tg">Septic · Holding tank</span><h3>Inspections</h3><p>Septic and holding tank inspections for home buyers, sellers and home inspectors in Waukesha County.</p><ul><li>Inspection report</li><li>Holding tanks &amp; mound systems</li><li>Septic pumps &amp; lines</li></ul></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="em">
+  <div class="wrap g">
+    <div>
+      <div class="k">Emergency service</div>
+      <h2 class="h">Backed up on a Sunday? Call anyway.</h2>
+      <p>Septic emergencies are never welcome, and nights, weekends and holidays are the worst. When that disaster happens, call Sunset Septic Service.</p>
+      <div class="chips"><span>Night or daytime</span><span>Weekends</span><span>Holidays</span></div>
+      <a class="call" href="tel:+12629689812">(262) 968-9812</a>
+    </div>
+    <blockquote>“Our septic system backed up on a Sunday and they were at our house within an hour. A total lifesaver and very knowledgeable.”<b>— Liz H.</b></blockquote>
+  </div>
+</section>
+
+<section>
+  <div class="wrap bun">
+    <div class="ph2"><img src="img/cover.jpg" alt="Technician opening a septic tank cover" width="600" height="400" loading="lazy"></div>
+    <div>
+      <div class="k">Buying or selling a home?</div>
+      <h2 class="h" style="font-size:clamp(32px,3.8vw,48px);margin-top:10px">One visit. Three reports.</h2>
+      <p class="lead">No need to schedule multiple appointments. Sunset Septic bundles it all, and you get the results back promptly to submit to your closing agent or mortgage lender.</p>
+      <ol class="steps">
+        <li><div><b>Septic or holding tank inspection</b><span>Pumping plus a tank inspection report</span></div></li>
+        <li><div><b>Well inspection</b><span>Done at the same visit</span></div></li>
+        <li><div><b>Water safety test</b><span>Sample collected and lab tested</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><div><div class="k">Client testimonials</div><h2 class="h">Honest, thorough, quick.</h2></div></div>
+    <div class="rv">
+      <figure><div class="q">“</div><blockquote>We used them for home sale and septic inspection. Very thorough and informative. Helped us out with all our questions and prompt quick service.</blockquote><figcaption>Rob W.</figcaption></figure>
+      <figure><div class="q">“</div><blockquote>I had a problem with my pump, they came out quick to fix. Clint was honest and thorough. … I would definitely recommend Clint and Sunset Septic.</blockquote><figcaption>Jeff H.</figcaption></figure>
+      <figure><div class="q">“</div><blockquote>Sunset septic did an amazing job for me and came out to my house within an hour or two of calling. … Great timelines and pricing.</blockquote><figcaption>Chad C.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><div><div class="k">Septic do’s &amp; don’ts</div><h2 class="h">Keep it hassle-free.</h2></div><p>A few tips from the pros, straight from Sunset Septic’s care guide.</p></div>
+    <div class="care">
+      <div class="do"><h3>Do</h3><ul><li>Keep trees and brush at least 15′ from your system</li><li>Check for faucet leaks — one can waste 700 gallons a year</li><li>Keep records of your system’s location and cleaning</li></ul></div>
+      <div class="dont"><h3>Don’t</h3><ul><li>Do all your laundry in one day — space it out</li><li>Use chemical compounds or septic tank cleaners</li><li>Put a lot of water into the system at one time</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="ct">
+      <div><div class="k" style="color:var(--sun)">Schedule your service</div><h2 class="h">Serving Waukesha County and the surrounding area.</h2><p>Call with your questions — or to get on the schedule before maintenance issues arise.</p></div>
+      <div class="info"><a class="p" href="tel:+12629689812">(262) 968-9812</a><a href="mailto:office@sunsetseptic.com">office@sunsetseptic.com</a><span style="color:#d3e0d7">S34 W29945 Little John Drive<br>Waukesha, WI 53189</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="invite"><div class="wrap">
+  <h2 class="h">A first look at a new website for Sunset Septic Service.</h2>
+  <p>This is a sneak peek. Like the direction? Reply and we’ll build the full site.</p>
+</div></div>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Sunset Septic site.</span><span>Logo, photos, testimonials and facts from sunsetseptic.com.</span></div></footer>
+<script>
+(function(){
+  var now=new Date().getFullYear(),wrap=document.getElementById('yrs'),sel=now-2;
+  var $=function(x){return document.getElementById(x)};
+  for(var y=now;y>=now-6;y--){var b=document.createElement('button');b.type='button';b.textContent=y;b.dataset.y=y;wrap.appendChild(b)}
+  var nb=document.createElement('button');nb.type='button';nb.textContent='Not sure';nb.dataset.y='0';wrap.appendChild(nb);
+  function show(y){
+    wrap.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.y===y))});
+    var st=$('st'),bars=$('tr').children;
+    if(!y){st.className='st due';st.textContent='Not sure?';$('big').textContent='Let’s check';
+      $('msg').textContent='Call and Sunset Septic can inspect and pump your system — then a service plan keeps you on schedule.';
+      for(var i=0;i<3;i++)bars[i].className='';$('tl').innerHTML='<span>Last service</span><span>+3 years</span>';return}
+    var due=y+3,used=Math.min(now-y,3);
+    for(var i=0;i<3;i++)bars[i].className=i<used?(now>=due?'late':'on'):'';
+    $('tl').innerHTML='<span>'+y+'</span><span>'+due+'</span>';
+    if(now>due){st.className='st over';st.textContent='Overdue';$('big').textContent='Was due '+due;$('msg').textContent='Your system is past the 3-year mark. Call to get pumped and inspected.'}
+    else if(now===due){st.className='st due';st.textContent='Due this year';$('big').textContent='Due in '+due;$('msg').textContent='This is the year. Get on the schedule before maintenance issues arise.'}
+    else{st.className='st';st.textContent='On schedule';$('big').textContent='Due by '+due;$('msg').textContent='You’re set for now. A Sunset Septic service plan takes the guesswork out of the next one.'}
+  }
+  wrap.addEventListener('click',function(e){var b=e.target.closest('button');if(b)show(+b.dataset.y)});
+  show(sel);
+})();
+</script>
+</body>
+</html>
