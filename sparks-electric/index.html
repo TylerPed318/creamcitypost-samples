@@ -99,7 +99,7 @@ section{padding:clamp(60px,8vw,104px) 0}
 /* reviews */
 .rv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .rv figure{background:#fff;border-radius:22px;padding:28px 26px;border:1px solid var(--line);display:flex;flex-direction:column}
-.rv .st{color:var(--volt);letter-spacing:2px;font-size:17px;-webkit-text-stroke:.5px #c9a000}
+.rv .st{font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:64px;line-height:.6;height:26px;color:var(--blue)}
 .rv blockquote{font-size:16.5px;margin-top:12px;flex:1}
 .rv figcaption{margin-top:18px;font-weight:700}
 .rv figcaption span{display:block;font-weight:500;color:var(--muted);font-size:14px}
@@ -145,6 +145,7 @@ footer b{color:var(--ink)}
   .cps{grid-template-columns:minmax(0,1fr)}
   .why ol{grid-template-columns:minmax(0,1fr)}
   .strip .wrap{font-size:14px}
+  .panel .cx{display:none}
 }
 </style>
 </head>
@@ -168,7 +169,7 @@ footer b{color:var(--ink)}
       </div>
       <div>
         <div class="panel"><div class="door">
-          <div class="lab m"><span>Main panel · <b>SparksElectric</b></span><span>8 circuits</span></div>
+          <div class="lab m"><span>Main panel · <b>SparksElectric</b></span><span class="cx">8 circuits</span></div>
           <div class="grid" role="tablist" aria-label="What do you need?">
             <button class="bk" role="tab" aria-selected="true" data-i="0"><span class="sw"></span>Power out / storm hit</button>
             <button class="bk" role="tab" aria-selected="false" data-i="1"><span class="sw"></span>Still on old fuses</button>
@@ -236,9 +237,9 @@ footer b{color:var(--ink)}
       <p>Your complete satisfaction with Sparks’ electricians and electrical repairs is 100% guaranteed.</p>
     </div>
     <div class="rv">
-      <figure><div class="st">★★★★★</div><blockquote>“When my husband’s DIY fix went awry, Gary at Sparks Electric was able to come out the same day to fix it. … I appreciated his honest assessment on which things were ‘critical’ vs. just nice to have.”</blockquote><figcaption>Nikki<span>Sparks customer</span></figcaption></figure>
-      <figure><div class="st">★★★★★</div><blockquote>“Efficient, knowledgable, and fairly priced. What more can one ask? … There was no pressure whatsoever. All the work was done in a competent manner, and every day all work areas were thoroughly clean.”</blockquote><figcaption>John<span>Sparks customer</span></figcaption></figure>
-      <figure><div class="st">★★★★★</div><blockquote>“If anyone is looking for an outstanding electrician, you do not need to look any farther. Gary at Sparks was fantastic. He was friendly, polite and extreme patient.”</blockquote><figcaption>Mark G.<span>Sparks customer</span></figcaption></figure>
+      <figure><div class="st">“</div><blockquote>“When my husband’s DIY fix went awry, Gary at Sparks Electric was able to come out the same day to fix it. … I appreciated his honest assessment on which things were ‘critical’ vs. just nice to have.”</blockquote><figcaption>Nikki<span>Sparks customer</span></figcaption></figure>
+      <figure><div class="st">“</div><blockquote>“Efficient, knowledgable, and fairly priced. What more can one ask? … There was no pressure whatsoever. All the work was done in a competent manner, and every day all work areas were thoroughly clean.”</blockquote><figcaption>John<span>Sparks customer</span></figcaption></figure>
+      <figure><div class="st">“</div><blockquote>“If anyone is looking for an outstanding electrician, you do not need to look any farther. Gary at Sparks was fantastic. He was friendly, polite and extreme patient.”</blockquote><figcaption>Mark G.<span>Sparks customer</span></figcaption></figure>
     </div>
   </div>
 </section>
