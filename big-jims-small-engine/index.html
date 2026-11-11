@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<title>Big Jim's Small Engine Service — Website concept by Cream City Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F0EA;--ink:#1A1A1A;--navy:#1C3E6E;--navy2:#163257;--gold:#D0A13A;--red:#C0392B;--card:#FFFFFF;--line:#D5D0C6;--muted:#5d5a55}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-size:17px}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.o{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:1.02}
+.k{font-family:"Oswald",sans-serif;font-weight:500;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;border-radius:8px;padding:13px 20px;font-size:16.5px;transition:transform .15s,filter .15s}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
+.btn.r{background:var(--red);color:#fff}
+.btn.y{background:var(--gold);color:#1a1a1a}
+.btn.w{border:1.5px solid rgba(255,255,255,.5);color:#fff}
+/* header */
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.hd img{height:62px;width:auto}
+.hd .r{display:flex;gap:16px;align-items:center}
+.hd .r .e{font-weight:700;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--gold)}
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;border:56px solid rgba(208,161,58,.12);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,60px);align-items:center;padding-top:clamp(44px,6vw,84px);padding-bottom:clamp(48px,6vw,88px)}
+.hero h1{font-weight:700;font-size:clamp(44px,5.8vw,80px);margin:14px 0 18px}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:clamp(17px,1.5vw,19.5px);color:#cfd9e8;max-width:540px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+/* ticket */
+.tk{background:var(--card);color:var(--ink);border-radius:16px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);overflow:hidden}
+.tk .top{background:var(--gold);padding:12px 20px;display:flex;justify-content:space-between;font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:15px}
+.tk .in{padding:18px 20px 20px;display:grid;gap:14px}
+.tk .q b{display:block;font-size:14.5px;margin-bottom:7px}
+.ch{display:flex;flex-wrap:wrap;gap:7px}
+.ch button{all:unset;cursor:pointer;border:1.5px solid var(--line);border-radius:999px;padding:6px 12px;font-weight:600;font-size:14px}
+.ch button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.ch button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.tk .sum{border-top:2px dashed var(--line);padding-top:12px;font-size:15px;color:#3b3935}
+.tk .act{display:flex;gap:8px;flex-wrap:wrap}
+.tk .act .btn{padding:11px 16px;font-size:15px}
+/* trust */
+.trust{background:var(--navy2);color:#e6ecf5}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 22px;padding-top:14px;padding-bottom:14px;font-weight:600;font-size:15px}
+.trust span:before{content:"★ ";color:var(--gold);font-size:12px;vertical-align:1px}
+section{padding:clamp(56px,7vw,92px) 0}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px;flex-wrap:wrap}
+.sh h2{font-weight:700;font-size:clamp(34px,4.2vw,54px);color:var(--navy);margin-top:6px}
+.sh .k{color:var(--red)}
+.sh p{max-width:430px;color:var(--muted)}
+.sv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.sv article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;border-top:5px solid var(--navy)}
+.sv article:nth-child(3n+2){border-top-color:var(--gold)}
+.sv article:nth-child(3n){border-top-color:var(--red)}
+.sv h3{font-family:"Oswald",sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;letter-spacing:.01em;color:var(--navy)}
+.sv p{color:var(--muted);font-size:15.5px;margin-top:6px}
+.brands{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;color:var(--muted);font-size:15px}
+.brands span{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:7px 14px;font-family:"Oswald",sans-serif;font-weight:600;letter-spacing:.08em;color:var(--ink)}
+/* about+contact */
+.ac{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:18px}
+.ab{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3vw,36px)}
+.ab h2{font-weight:700;font-size:clamp(30px,3.4vw,42px);color:var(--navy);margin:6px 0 12px}
+.ab .k{color:var(--red)}
+.ab p{color:#3b3935}
+.ab blockquote{margin-top:16px;border-left:4px solid var(--gold);padding-left:14px;font-weight:600;color:var(--navy)}
+.cc{background:var(--navy);color:#fff;border-radius:18px;padding:clamp(24px,3vw,36px);display:grid;gap:10px;align-content:start}
+.cc a.p{font-family:"Oswald",sans-serif;font-weight:700;font-size:clamp(32px,3.4vw,42px);text-decoration:none;color:var(--gold)}
+.cc a.m{font-weight:600}
+.cc span{color:#cfd9e8}
+.cc small{color:#a9b9cf;font-size:14px;margin-top:6px}
+.invite{padding:46px 0 50px}
+.invite .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.invite h2{font-weight:700;font-size:clamp(28px,3.2vw,40px);color:var(--navy)}
+.invite p{color:var(--muted)}
+footer{border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+footer b{color:var(--ink)}
+@media (max-width:960px){
+  .hero .wrap,.ac,.invite .wrap{grid-template-columns:minmax(0,1fr)}
+  .sv{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  .hd img{height:48px}
+  .hd .r .e{display:none}
+  .hd .btn{padding:10px 14px;font-size:15px}
+  .btn{flex:1 1 100%}
+  .hd .btn,.tk .act .btn{flex:1 1 auto}
+  .hd .btn{flex:none}
+  .sv{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hd">
+    <img src="img/logo.png" alt="Big Jim's Small Engine Service" width="197" height="80">
+    <div class="r"><a class="e" href="mailto:bigjimsses@gmail.com">Email us</a><a class="btn r" href="tel:+12625675878">(262) 567-5878</a></div>
+  </header>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="k">Oconomowoc · Lake Country · Since 1993</div>
+      <h1 class="o">Lake Country small-engine repair, <span>since 1993.</span></h1>
+      <p>Big Jim's Small Engine Service in Oconomowoc sells and repairs chainsaws, snow blowers, lawn mowers and zero-turns for Dodge, Jefferson and Waukesha counties — and sharpens blades and chains at the counter.</p>
+      <div class="cta">
+        <a class="btn r" href="tel:+12625675878">Call (262) 567-5878</a>
+        <a class="btn w" href="mailto:bigjimsses@gmail.com">Email bigjimsses@gmail.com</a>
+      </div>
+    </div>
+    <div class="tk" aria-label="Start a repair request">
+      <div class="top"><span>Repair ticket</span><span>650 Armour Rd</span></div>
+      <div class="in">
+        <div class="q"><b>What’s the machine?</b><div class="ch" data-g="m"><button type="button" aria-pressed="true">Lawn mower</button><button type="button" aria-pressed="false">Zero-turn</button><button type="button" aria-pressed="false">Snow blower</button><button type="button" aria-pressed="false">Chainsaw</button><button type="button" aria-pressed="false">Leaf blower</button></div></div>
+        <div class="q"><b>What does it need?</b><div class="ch" data-g="n"><button type="button" aria-pressed="false">Blade sharpening</button><button type="button" aria-pressed="false">Chain sharpening</button><button type="button" aria-pressed="false">Recoil repair</button><button type="button" aria-pressed="false">Tire or tube</button><button type="button" aria-pressed="false">Carburetor</button><button type="button" aria-pressed="true">Not sure — take a look</button></div></div>
+        <div class="q"><b>Getting it to the shop</b><div class="ch" data-g="p"><button type="button" aria-pressed="true">I’ll bring it in</button><button type="button" aria-pressed="false">Please pick it up</button></div></div>
+        <div class="sum" id="sum" aria-live="polite"></div>
+        <div class="act"><a class="btn r" id="em" href="mailto:bigjimsses@gmail.com">Email this request</a><a class="btn y" href="tel:+12625675878">Or call</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="trust"><div class="wrap"><span>Since 1993</span><span>Oconomowoc, Wisconsin</span><span>Serving Dodge, Jefferson &amp; Waukesha counties</span><span>Pickup, repair &amp; delivery</span></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="k">Sales &amp; service</div><h2 class="o">Bring it in — or we’ll pick it up.</h2></div>
+      <p>Bring your machine in for advice on the repair, or have it picked up. Equipment is cleaned before it’s delivered back.</p>
+    </div>
+    <div class="sv">
+      <article><h3>Mowers &amp; zero-turns</h3><p>Lawn mower and zero-turn sales and repair.</p></article>
+      <article><h3>Chainsaws</h3><p>Chainsaw sales and repair — and help finding the right saw.</p></article>
+      <article><h3>Snow blowers</h3><p>Snow blower sales and repair.</p></article>
+      <article><h3>Sharpening &amp; tires</h3><p>Over-the-counter blade and chainsaw chain sharpening, plus lawn and garden tire repair and tubes.</p></article>
+      <article><h3>Counter repairs</h3><p>Recoil repairs and carburetor repairs.</p></article>
+      <article><h3>Pickup &amp; delivery</h3><p>Can’t haul it? They’ll pick it up — and clean it before it comes back.</p></article>
+    </div>
+    <div class="brands">Brands at the shop: <span>TORO</span><span>STIHL</span><span>ECHO</span><span>ARIENS</span><span>SIMPLICITY</span><span>ALTOZ</span></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap ac">
+    <div class="ab">
+      <div class="k">About Big Jim’s</div>
+      <h2 class="o">A Lake Country staple.</h2>
+      <p>In business since 1993, Big Jim’s has been a staple of the Lake Country area for lawn and garden sales and repairs — and the crew will help you find the right chainsaw, leaf blower, snowblower or lawn mower.</p>
+      <blockquote>“Our dealership has a rock solid reputation of providing excellent service, support and satisfaction.”</blockquote>
+    </div>
+    <div class="cc">
+      <div class="k">Visit the shop</div>
+      <a class="p" href="tel:+12625675878">(262) 567-5878</a>
+      <a class="m" href="mailto:bigjimsses@gmail.com">bigjimsses@gmail.com</a>
+      <span>650 Armour Rd, Oconomowoc, WI 53066</span>
+      <small>See what customers say — find Big Jim’s on Facebook and Google.</small>
+    </div>
+  </div>
+</section>
+
+<div class="invite"><div class="wrap">
+  <h2 class="o">A first look at a new website for Big Jim's Small Engine Service.</h2>
+  <p>This is a sneak peek. Like the direction? Reply and we’ll build the full site.</p>
+</div></div>
+<footer><div class="wrap"><span><b>Sample design by Cream City Post</b> · Independent concept, not the official Big Jim's site. Big Jim's Small Engine Service · 650 Armour Rd, Oconomowoc, WI 53066 · (262) 567-5878 · bigjimsses@gmail.com · ©2026</span><span>Logo and facts from bigjimsses.com.</span></div></footer>
+<script>
+(function(){
+  var st={m:'Lawn mower',n:'Not sure — take a look',p:'I’ll bring it in'},sum=document.getElementById('sum'),em=document.getElementById('em');
+  function upd(){
+    var need=st.n.indexOf('Not sure')===0?'a look / diagnosis':st.n.toLowerCase();
+    var how=st.p.indexOf('pick')>-1?'Please pick it up.':'I’ll bring it in.';
+    var t='Repair request: '+st.m.toLowerCase()+' — needs '+need+'. '+how;
+    sum.textContent=t;
+    em.href='mailto:bigjimsses@gmail.com?subject='+encodeURIComponent('Repair request — '+st.m)+'&body='+encodeURIComponent(t+'\n\nName:\nPhone:\nAddress (for pickup):\n');
+  }
+  document.querySelectorAll('.ch').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+    g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');st[g.dataset.g]=b.textContent;upd();});});
+  upd();
+})();
+</script>
+</body>
+</html>
