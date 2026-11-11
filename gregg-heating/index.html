@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B365D'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='40' font-weight='700' fill='%23F6F1E8'%3EG%3C/text%3E%3Crect x='14' y='51' width='16' height='4' fill='%23B84A2F'/%3E%3Crect x='34' y='51' width='16' height='4' fill='%234A8FD9'/%3E%3C/svg%3E">
+<title>Gregg Heating &amp; Air Conditioning — Website concept by Cream City Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F6F1E8;--card:#FFFFFF;--ink:#1C1915;--navy:#1B365D;--rust:#B84A2F;--line:#D7D0C6;--muted:#5f584f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-size:17px}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.s{font-family:"Fraunces",Georgia,serif;font-weight:600;letter-spacing:-.015em;line-height:1.05}
+.k{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rust)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;border-radius:10px;padding:13px 22px;font-size:16.5px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.n{background:var(--navy);color:var(--paper)}
+.btn.n:hover{background:#142a49}
+.btn.r{background:var(--rust);color:#fff}
+.btn.o{border:1.5px solid var(--navy);color:var(--navy)}
+/* header */
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.hd img{height:68px;width:auto}
+.hd .r{display:flex;align-items:center;gap:18px}
+.hd .r a.t{font-weight:700;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--rust)}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,64px);align-items:center;padding:clamp(36px,5vw,72px) 0 clamp(40px,5vw,64px)}
+.hero h1{font-size:clamp(46px,5.8vw,78px);margin:14px 0 18px;color:var(--navy)}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--rust)}
+.hero p{font-size:clamp(17px,1.5vw,19.5px);color:var(--muted);max-width:540px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.status{display:inline-flex;align-items:center;gap:10px;margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px 8px 12px;font-size:15px}
+.status i{width:10px;height:10px;border-radius:50%;background:#2f8a4e;box-shadow:0 0 0 4px rgba(47,138,78,.15)}
+.status.off i{background:var(--rust);box-shadow:0 0 0 4px rgba(184,74,47,.15)}
+.status b{font-weight:700}
+.ph{position:relative}
+.ph .f{background:var(--card);border-radius:22px;padding:12px;box-shadow:0 30px 60px -36px rgba(27,54,93,.55);border:1px solid var(--line)}
+.ph .f img{border-radius:14px;width:100%;aspect-ratio:650/370;object-fit:cover}
+.ph .seal{position:absolute;left:-18px;top:-18px;width:104px;height:104px;border-radius:50%;background:var(--navy);color:var(--paper);display:grid;place-items:center;text-align:center;line-height:1.05;box-shadow:0 12px 24px -12px rgba(0,0,0,.5)}
+.ph .seal small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.ph .seal b{font-family:"Fraunces",serif;font-size:30px;font-weight:600}
+.ph figcaption{font-size:14px;color:var(--muted);padding:10px 4px 2px}
+/* trust */
+.trust{background:var(--navy);color:var(--paper)}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 22px;padding-top:16px;padding-bottom:16px;font-weight:600;font-size:15.5px}
+.trust span{display:flex;align-items:center;gap:8px}
+.trust span:before{content:"";width:7px;height:7px;background:var(--rust);transform:rotate(45deg)}
+section{padding:clamp(56px,7vw,92px) 0}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px;flex-wrap:wrap}
+.sh h2{font-size:clamp(34px,4vw,50px);margin-top:8px;color:var(--navy)}
+.sh p{max-width:420px;color:var(--muted)}
+/* services */
+.sv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.sv a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;transition:border-color .15s,transform .15s}
+.sv a:hover{border-color:var(--navy);transform:translateY(-2px)}
+.sv h3{font-family:"Fraunces",serif;font-weight:600;font-size:23px;color:var(--navy)}
+.sv p{color:var(--muted);font-size:15.5px;margin:6px 0 12px}
+.sv span{font-weight:700;font-size:14.5px;color:var(--rust)}
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.about blockquote{font-family:"Fraunces",serif;font-size:clamp(26px,2.8vw,36px);line-height:1.2;color:var(--navy);border-left:4px solid var(--rust);padding-left:20px}
+.about blockquote small{display:block;font-family:"Source Sans 3",sans-serif;font-size:14.5px;color:var(--muted);margin-top:12px}
+.about p{color:#3d3832;margin-top:14px}
+.about h2{font-size:clamp(32px,3.6vw,44px);color:var(--navy);margin:8px 0 6px}
+/* area */
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.map img{width:100%;aspect-ratio:1600/567;object-fit:cover}
+.map figcaption{padding:12px 16px;font-size:15px;color:var(--muted)}
+/* contact */
+.ct{background:var(--navy);color:var(--paper);border-radius:28px;padding:clamp(26px,4vw,48px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px;align-items:center}
+.ct .k{color:#e9a48f}
+.ct h2{font-size:clamp(32px,3.8vw,48px);margin:8px 0 10px}
+.ct p{color:#c9d3e0}
+.ct dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;background:rgba(255,255,255,.06);border-radius:18px;padding:22px 24px}
+.ct dt{font-weight:700}
+.ct dd{color:#dfe6ef}
+.ct a.p{font-family:"Fraunces",serif;font-size:28px;color:#fff;text-decoration:none}
+.invite{padding:46px 0 50px}
+.invite .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.invite h2{font-size:clamp(28px,3.2vw,40px);color:var(--navy)}
+.invite p{color:var(--muted)}
+footer{border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+footer b{color:var(--ink)}
+@media (max-width:960px){
+  .hero,.about,.ct,.invite .wrap{grid-template-columns:minmax(0,1fr)}
+  .sv{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ph{margin:12px 0 0 14px}
+}
+@media (max-width:600px){
+  .hd img{height:50px}
+  .hd .r a.t{display:none}
+  .hd .btn{padding:10px 14px;font-size:15px}
+  .btn{flex:1 1 100%}
+  .hd .btn{flex:none}
+  .sv{grid-template-columns:minmax(0,1fr)}
+  .ph .seal{width:84px;height:84px;left:-10px;top:-14px}
+  .ph .seal b{font-size:24px}
+  .ct dl{grid-template-columns:minmax(0,1fr)}
+  .ct dd{margin-bottom:6px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hd">
+    <img src="img/logo.png" alt="Gregg Heating &amp; Air Conditioning" width="290" height="163">
+    <div class="r"><a class="t" href="tel:+12627821200">Request service</a><a class="btn n" href="tel:+12627821200">(262) 782-1200</a></div>
+  </header>
+  <div class="hero">
+    <div>
+      <div class="k">New Berlin, WI · Established 1974</div>
+      <h1 class="s">Do the job right <em>the first time.</em></h1>
+      <p>Gregg Heating &amp; Air Conditioning has been keeping New Berlin and the surrounding Waukesha and Milwaukee communities comfortable since 1974. Now owner-run by Kyle Geisberger.</p>
+      <div class="cta">
+        <a class="btn n" href="tel:+12627821200">Call (262) 782-1200</a>
+        <a class="btn o" href="tel:+12627821200">Request service</a>
+      </div>
+      <div class="status" id="status" aria-live="polite"><i></i><span id="stxt"><b>Office hours</b> · Mon–Fri 8am–4pm</span></div>
+    </div>
+    <figure class="ph">
+      <div class="seal"><div><small>Est.</small><b>1974</b></div></div>
+      <div class="f"><img src="img/van.jpg" alt="A Gregg Heating &amp; Air Conditioning service van" width="650" height="370"></div>
+    </figure>
+  </div>
+</div>
+
+<div class="trust"><div class="wrap">
+  <span>Established 1974</span><span>Owner Kyle Geisberger</span><span>NATE-certified service technicians</span><span>Licensed, bonded &amp; insured</span><span>Emergency service on weekends</span>
+</div></div>
+
+<section>
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="k">Services</div><h2 class="s">Heating, cooling and indoor comfort.</h2></div>
+      <p>Factory-trained installation and service technicians. Free estimates, service agreements and financing are available — ask when you call.</p>
+    </div>
+    <div class="sv">
+      <a href="tel:+12627821200"><h3>Air Conditioning</h3><p>Cooling repair, service and new systems for Wisconsin summers.</p><span>Call to request service →</span></a>
+      <a href="tel:+12627821200"><h3>Heating</h3><p>Furnace repair, maintenance and replacement before the cold sets in.</p><span>Call to request service →</span></a>
+      <a href="tel:+12627821200"><h3>Heat Pumps</h3><p>Efficient heating and cooling from one system, installed and serviced.</p><span>Call to request service →</span></a>
+      <a href="tel:+12627821200"><h3>Indoor Air Quality</h3><p>Cleaner, more comfortable air inside your home.</p><span>Call to request service →</span></a>
+      <a href="tel:+12627821200"><h3>Boilers</h3><p>Boiler service and replacement for steady, even heat.</p><span>Call to request service →</span></a>
+      <a href="tel:+12627821200"><h3>Ductless</h3><p>Ductless systems for rooms and additions without ductwork.</p><span>Call to request service →</span></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap about">
+    <blockquote>“Do the job right the first time, and stand behind what you do.”<small>Gregg Heating’s motto</small></blockquote>
+    <div>
+      <div class="k">About Gregg</div>
+      <h2 class="s">A New Berlin shop since 1974.</h2>
+      <p>Gregg Heating &amp; Air Conditioning was established in 1974 by Greg Hausinger. Kyle Geisberger, the current owner, began working at Gregg Heating in 2001 and took over in 2017 when Greg retired. Most new business comes from satisfied clients and referrals — and the shop still stands behind every job from 2165 S 170th St in New Berlin.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><div><div class="k">Service area</div><h2 class="s">Waukesha, Milwaukee and the communities around them.</h2></div></div>
+    <figure class="map"><img src="img/map.jpg" alt="Map of communities Gregg Heating serves across Waukesha and Milwaukee counties" width="1600" height="567" loading="lazy"><figcaption>From the New Berlin shop to Oconomowoc, Brookfield, Wauwatosa, Muskego, Franklin and the communities listed on their site.</figcaption></figure>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="ct">
+      <div>
+        <div class="k">Request service</div>
+        <h2 class="s">Call the shop. Talk to people who stand behind the work.</h2>
+        <p>Free estimates and financing are offered — ask about current options when you call.</p>
+      </div>
+      <dl>
+        <dt>Call</dt><dd><a class="p" href="tel:+12627821200">(262) 782-1200</a></dd>
+        <dt>Shop</dt><dd>2165 S 170th St, New Berlin, WI 53151</dd>
+        <dt>Hours</dt><dd>Monday–Friday 8am–4pm<br>Saturday &amp; Sunday — Emergency Service</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="invite"><div class="wrap">
+  <h2 class="s">A first look at a new website for Gregg Heating &amp; Air Conditioning.</h2>
+  <p>This is a sneak peek. Like the direction? Reply and we’ll build the full site.</p>
+</div></div>
+<footer><div class="wrap"><span><b>Sample design by Cream City Post</b> · Independent concept, not the official Gregg Heating site. Gregg Heating &amp; Air Conditioning · 2165 S 170th St, New Berlin, WI 53151 · (262) 782-1200 · © 2026</span><span>Logo, photo and facts from greggheating.com.</span></div></footer>
+<script>
+(function(){
+  try{
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',hour12:false}).formatToParts(new Date());
+    var d=p.find(function(x){return x.type==='weekday'}).value,h=+p.find(function(x){return x.type==='hour'}).value%24;
+    var wk=['Mon','Tue','Wed','Thu','Fri'].indexOf(d)>-1,open=wk&&h>=8&&h<16;
+    var s=document.getElementById('status'),t=document.getElementById('stxt');
+    if(open){t.innerHTML='<b>Office open now</b> · Mon–Fri 8am–4pm'}
+    else if(!wk){s.classList.add('off');t.innerHTML='<b>Weekend emergency service</b> · call (262) 782-1200'}
+    else{s.classList.add('off');t.innerHTML='<b>Office closed now</b> · opens 8am weekdays'}
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
