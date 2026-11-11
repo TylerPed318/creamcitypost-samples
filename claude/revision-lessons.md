@@ -100,3 +100,6 @@ Approved as final so far: CCP-005 v3, CCP-007 v3, CCP-008 v3, CCP-009 v3, CCP-01
 - [ ] Real job photos used (or a deliberate photo-free design, flagged in the email)
 - [ ] Clear upgrade over their current site; hero composition differs from theirs
 - [ ] Live-URL check in the sandbox at 1440 and 390 (real fonts), no overflow; page and all images return 200
+
+- **Nov 11, CCP-023 v2 / CCP-024 v2 (review copy):** Never quote a named Google review unless you've copied it word for word from the live listing during the build. Directory snapshots and aggregates don't count. If the live listing can't be opened, show only a stable rating line ("4.9 on Google"), with no review count and no date, plus a link to the listing. Review themes ("Fair pricing") are fine as long as they aren't attributed to anyone.
+- **Nov 11, CCP-024 v2 (full-bleed hero):** A full-bleed hero renders at the full viewport width, so it needs about 2900px to stay sharp at 1920. Upscale at 4K and save at about 2900px, q70 (~450 KB). The ByteDance upscaler garbles small lettering on doors. Blend that strip back from a Lanczos-resized original with a feathered mask.

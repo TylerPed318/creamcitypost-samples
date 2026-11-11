@@ -15,10 +15,10 @@
 - Nov 11, ~5:00 PM CT (scheduled run): CCP-024 v1 done, live and emailed (0 credits). Session ends after 3 items (016, 023, 024). Open: Astro's 4.9/256 is from the brief's Nov 11 audit (Maps not re-checked). Next up, by brief time: CCP-030 Luna Beauty Salon (a salon, not a trade; build it or check with Tyler), CCP-032 Fernandez Auto Service, CCP-022 4Ever Green Lawn Care, CCP-033, CCP-034, CCP-040, then 049–064.
 
 - Nov 11, ~5:40 PM CT (scheduled run): CCP-023 v2 done, live and emailed (0 credits). Named review quotes removed; stable "5.0 on Google" card, no count. Logged CCP-015/016 v1 approvals. Note: commit 7764af0 ("Sample log: CCP-023 v2 done") accidentally carried the CCP-024 v2 review-copy edits and no log change.
-- in progress — CCP-024 (5:28 PM CT, scheduled run)
+- Nov 11, ~5:50 PM CT (scheduled run): CCP-024 v2 done, live and emailed (4 credits: bay 4K upscale + sign 2K upscale; door "General Repair & Towing" strip blended back from the original). Review quotes and count removed. Hours kept 8–6 / 8–3 (live Google not checkable). Session ends after 2 revisions. Next up, by brief time: CCP-030 Luna Beauty Salon (a salon, not a trade; still unresolved), CCP-032 Fernandez Auto Service, CCP-022 4Ever Green, CCP-033, CCP-034, CCP-040, then 049–066.
 
 ## Handled emails (don't reprocess)
-CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2).
+CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
 Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 2 Go, CCP-012 Hernia, CCP-013 Ingrilli, CCP-014 Sparks, CCP-015 Wood Floors Unlimited, CCP-022 Sunset Septic). The real IDs are in the table.
 
 ## Samples
@@ -38,7 +38,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-015 | All City Mudjacking | Mudjacking, Franklin | brief | v1 | all-city-mudjacking/ | **Approved v1.** |
 | CCP-016 | Bartz's Floor Covering | Flooring, Franklin | brief | v1 | bartzs-floor-covering/ | **Approved v1.** |
 | CCP-023 | A Service Beyond | STR cleaning, Milwaukee | brief | v2 | a-service-beyond/ | v2 emailed Nov 11, ~5:40 PM. 0 credits. Photo-free; no review quotes. |
-| CCP-024 | Astro Auto Repair | Auto repair, Milwaukee | brief | v1 | astro-auto-repair/ | v1 emailed Nov 11, ~5:00 PM. 0 credits. Facebook/Google-only lead. |
+| CCP-024 | Astro Auto Repair | Auto repair, Milwaukee | brief | v2 | astro-auto-repair/ | v2 emailed Nov 11, ~5:50 PM. 4 credits. Facebook/Google-only lead. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
 | CCP-019 | Mike Ingrilli Plumbing | Plumbing, West Allis | 10-20 #9 | v1 | mike-ingrilli-plumbing/ | Awaiting review. |
@@ -59,7 +59,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-015 All City Mudjacking:** founded 1984 only (never "29 years"); 7095 S. Ballpark Dr., Suite 320, Franklin, WI 53132 only (no West Allis); Mon–Sat 6:00am–6:00pm, Sun closed; 414-543-2400; no email. Portfolio photos carry a VisualLightBox.com watermark at the bottom; crop it. Their SSL chain is missing its intermediate, so fetch with the ZeroSSL intermediate added (don't disable verification).
 - **CCP-016 Bartz's:** "more than 50 years" only (no founding year or owner name); 11360 W Forest Home Ave, Franklin, WI 53132; (414) 529-7770; Mon 8–7, Tue–Fri 8–5, Sat 9–3, Sun closed, "or by appointment". No email; the estimate form is /contact. Homepage banners have text baked into the left ~45%, so crop to the right side. Real storefront and showroom photos are on /about-us (534px). The "roam-in-color" kitchen and the about_me patio images are stock; skip them.
 - **CCP-023 A Service Beyond:** prices $90/$120/$150 (1/2/3 BR), larger homes quoted; text/call 414-253-0907; aservicebeyond@gmail.com. Site images are all GoDaddy stock, so no photos. No address (Google address is a PMB), no hours, no insured/licensed claims. "Fred" appears only in a review. Facebook/Yelp links are placeholders. No named review quotes (v2); "5.0 on Google" only, no count.
-- **CCP-024 Astro:** 4722 S 13th St, Milwaukee 53221; (414) 319-9400 only (never 414-763-4172); Google hours Mon–Fri 8–6, Sat 8–3, Sun closed; never show the sign's cartoon mascot; no owner name or emissions-station claim. Google photos: storefront (cropped to the bay) and sign close-up (ASTRO half only).
+- **CCP-024 Astro:** 4722 S 13th St, Milwaukee 53221; (414) 319-9400 only (never 414-763-4172); Google hours Mon–Fri 8–6, Sat 8–3, Sun closed; never show the sign's cartoon mascot; no owner name or emissions-station claim. Google photos: storefront (cropped to the bay) and sign close-up (ASTRO half only). v2: no review quotes, no review count ("4.9 on Google" only); bay/sign are Higgsfield upscales.
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
