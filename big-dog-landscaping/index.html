@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Big Dog Landscaping — Website concept by Cream City Post</title>
-<link rel="icon" href="img/logo.jpg">
+<link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500..700&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet">
 <style>
@@ -26,7 +26,10 @@ a{color:inherit}
 h1{font-family:"Oswald",sans-serif;font-weight:700;font-size:clamp(46px,7.4vw,108px);line-height:.95;text-transform:uppercase;letter-spacing:-.005em;margin-top:12px}
 h1 em{font-style:normal;color:var(--pine)}
 .intro p{margin:18px auto 0;max-width:52ch;color:var(--muted);font-size:clamp(16px,1.35vw,19px)}
-.compare{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:600/496;max-width:760px;margin:0 auto;width:100%;background:#ccc;user-select:none;touch-action:pan-y;box-shadow:0 30px 60px -20px rgba(45,34,25,.35)}
+.pairs{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1160px;margin:0 auto}
+.pair{margin:0}
+.credit{text-align:center;color:var(--muted);font-size:12.5px;margin-top:16px}
+.compare{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:6/5;width:100%;background:#ccc;user-select:none;touch-action:pan-y;box-shadow:0 30px 60px -20px rgba(45,34,25,.35)}
 .compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
 .compare .after{clip-path:inset(0 0 0 var(--p,50%))}
 .compare .bar{position:absolute;top:0;bottom:0;left:var(--p,50%);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
@@ -35,7 +38,7 @@ h1 em{font-style:normal;color:var(--pine)}
 .compare .lbl{position:absolute;top:16px;padding:8px 12px;border-radius:6px;background:rgba(31,26,20,.75);color:#fff}
 .compare .lbl.l{left:16px}.compare .lbl.r{right:16px;background:var(--pine)}
 .compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
-.cap{max-width:760px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:13.5px}
+.cap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:13.5px}
 .cap b{color:var(--ink)}
 .ctas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:34px 0 0}
 .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:16px;padding:16px 24px;border-radius:8px}
@@ -75,6 +78,7 @@ footer b{color:var(--ink)}
 
   .grid b{font-size:17px}
 }
+@media (max-width:760px){.pairs{grid-template-columns:1fr;gap:28px}.compare{aspect-ratio:6/5}}
 </style>
 </head>
 <body>
@@ -86,17 +90,33 @@ footer b{color:var(--ink)}
   <section class="intro" id="top">
     <span class="k">Waukesha County, Wisconsin</span>
     <h1>Drag to see <em>the difference.</em></h1>
-    <p>Design, installation and maintenance that bring your outdoor space to life. This is one of our own jobs.</p>
+    <p>Design, installation and maintenance that bring your outdoor space to life. These are two of our own jobs.</p>
   </section>
-  <div class="compare" id="cmp" style="--p:50%">
-    <img src="img/before.jpg" alt="Before: overgrown fire pit area in a grassy yard">
-    <img class="after" src="img/after.jpg" alt="After: rebuilt stone fire pit with a clean gravel surround">
-    <div class="bar"></div>
-    <div class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3d2b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
-    <span class="lbl l k">Before</span><span class="lbl r k">After</span>
-    <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+  <div class="pairs">
+    <figure class="pair">
+      <div class="compare" style="--p:50%">
+        <img src="img/firepit-before.jpg" alt="Before: overgrown fire pit area in a grassy yard">
+        <img class="after" src="img/firepit-after.jpg" alt="After: rebuilt stone fire pit with a paver surround">
+        <div class="bar"></div>
+        <div class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3d2b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
+        <span class="lbl l k">Before</span><span class="lbl r k">After</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Compare fire pit before and after">
+      </div>
+      <figcaption class="cap"><span><b>Fire pit construction</b></span><span>Drag to compare</span></figcaption>
+    </figure>
+    <figure class="pair">
+      <div class="compare" style="--p:50%">
+        <img src="img/frontyard-before.jpg" alt="Before: front yard beds">
+        <img class="after" src="img/frontyard-after.jpg" alt="After: front yard landscaping with a stone wall">
+        <div class="bar"></div>
+        <div class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3d2b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
+        <span class="lbl l k">Before</span><span class="lbl r k">After</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Compare front yard before and after">
+      </div>
+      <figcaption class="cap"><span><b>Front yard landscaping with stone wall</b></span><span>Drag to compare</span></figcaption>
+    </figure>
   </div>
-  <div class="cap"><span><b>Custom fire pit</b> · Outdoor features</span><span>Photos: Big Dog Landscaping</span></div>
+  <p class="credit">Photos: Big Dog Landscaping, enhanced for clarity.</p>
   <div class="ctas">
     <a class="btn btn-p" href="tel:+14143089698">Get a free estimate</a>
     <a class="btn btn-s" href="mailto:bigdoglandscaping101@gmail.com">Email us</a>
@@ -136,7 +156,7 @@ footer b{color:var(--ink)}
 </div>
 <footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official Big Dog Landscaping site.</span><span>Logo, photos and review from bigdoglandscaping101.com.</span></div></footer>
 <script>
-(function(){var c=document.getElementById('cmp'),r=c.querySelector('input');function s(v){c.style.setProperty('--p',v+'%')}r.addEventListener('input',function(){s(r.value)});})();
+document.querySelectorAll('.compare').forEach(function(c){var r=c.querySelector('input');r.addEventListener('input',function(){c.style.setProperty('--p',r.value+'%')});});
 </script>
 </body>
 </html>
