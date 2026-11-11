@@ -100,14 +100,15 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 /* reviews */
 .rev{background:var(--char);color:var(--silver);padding:88px 0}
 .rev h2{color:#fff}
-.rev .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px;margin-bottom:34px}
-.rev .head a{color:var(--ice);font-weight:700;text-underline-offset:4px}
-.qs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-figure.q{margin:0;background:var(--char-2);border:1px solid rgba(118,164,178,.22);border-top:4px solid var(--ice);border-radius:10px;padding:26px 24px 22px;display:flex;flex-direction:column}
-figure.q .s{color:#FFD45C;letter-spacing:2px;font-size:15px}
-figure.q blockquote{margin:12px 0 18px;color:#EEF1F3;font-size:17px;line-height:1.55;flex:1}
-figure.q figcaption{font-size:14px}
-figure.q figcaption b{color:#fff;font-weight:700}
+.rbox{display:grid;grid-template-columns:auto minmax(0,1fr);gap:44px;align-items:center}
+.rbox .score{display:flex;flex-direction:column;align-items:center;padding:26px 34px;background:var(--char-2);border:1px solid rgba(118,164,178,.22);border-top:4px solid var(--ice);border-radius:10px}
+.rbox .num{font:800 clamp(64px,9vw,96px)/1 var(--head);color:#fff}
+.rbox .s{color:#FFD45C;letter-spacing:3px;font-size:20px;margin-top:6px}
+.rbox .on{margin-top:6px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:13px}
+.rbox p{margin:12px 0 0;max-width:36em}
+.rlink{display:inline-block;margin-top:18px;color:var(--ice);font-weight:700;text-underline-offset:4px}
+.rlink:hover,.rlink:focus-visible{color:#fff}
+@media (max-width:720px){.rbox{grid-template-columns:minmax(0,1fr);gap:24px}.rbox .score{justify-self:start}}
 
 /* visit */
 .visit{padding:88px 0}
@@ -143,7 +144,6 @@ footer a{color:var(--silver)}
 @media (max-width:960px){
   .svc .top,.tow,.vbox{grid-template-columns:minmax(0,1fr)}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .qs{grid-template-columns:minmax(0,1fr)}
   .rep ul{grid-template-columns:repeat(2,minmax(0,1fr))}
   .rep li{padding:16px 14px}
   .rep li:nth-child(odd){border-left:0;padding-left:0}
@@ -201,7 +201,7 @@ footer a{color:var(--silver)}
 <section class="rep" aria-label="Reputation">
   <div class="wrap">
     <ul>
-      <li><b>4.9 on Google<span class="stars" aria-hidden="true">★★★★★</span></b><span>256 reviews (Nov 11, 2026)</span></li>
+      <li><b>4.9 on Google<span class="stars" aria-hidden="true">★★★★★</span></b><span>Rated by local drivers</span></li>
       <li><b>Fair pricing</b><span>A top theme in reviews</span></li>
       <li><b>Kind staff</b><span>A top theme in reviews</span></li>
       <li><b>Clear diagnosis</b><span>A top theme in reviews</span></li>
@@ -240,26 +240,14 @@ footer a{color:var(--silver)}
 
 <section class="rev" id="reviews">
   <div class="wrap">
-    <div class="head">
+    <div class="rbox">
+      <div class="score"><span class="num">4.9</span><span class="s" aria-hidden="true">★★★★★</span><span class="on">on Google</span></div>
       <div>
         <p class="eyebrow" style="color:var(--ice)">Why people come back</p>
-        <h2>256 reviews. Here are three.</h2>
+        <h2>Fair prices. Kind staff. Straight answers.</h2>
+        <p>Those are the themes drivers mention again and again. Read what they say, in their own words, on the Google listing.</p>
+        <a class="rlink" href="https://www.google.com/maps/search/Astro+Auto+Repair+4722+S+13th+St+Milwaukee+WI">Read the reviews on Google →</a>
       </div>
-      <a href="https://www.google.com/maps/search/Astro+Auto+Repair+4722+S+13th+St+Milwaukee+WI">Read all reviews on Google</a>
-    </div>
-    <div class="qs">
-      <figure class="q">
-        <blockquote>Alejandro is a wonderful mechanic, he is very knowledgeable. He is ALSO MORE THEN FAIR, he takes time to listen to your questions. Gives you a fair price, that helps working families.</blockquote>
-        <figcaption><b>Jose Rosales</b> · Google review</figcaption>
-      </figure>
-      <figure class="q">
-        <blockquote>I've trusted Astro Auto Repair with my vehicle for a couple years now, and I honestly wouldn't take my car anywhere else but here. Alex has always been my go-to guy because I know he'll give me a straight answer…</blockquote>
-        <figcaption><b>Jimmy Lavaty</b> · Google review</figcaption>
-      </figure>
-      <figure class="q">
-        <blockquote>Very friendly people and clean 🧼 office prices are very good to i recommend it for you and family auto repairs and oil change…</blockquote>
-        <figcaption><b>Elias Cortez</b> · Google review</figcaption>
-      </figure>
     </div>
   </div>
 </section>
@@ -308,7 +296,7 @@ footer a{color:var(--silver)}
 
 <footer>
   <div class="wrap">
-    <span>Website by Cream City Post · Independent website concept, not an official Astro Auto Repair site. Logo from their Facebook page; shop photos, hours, rating and review excerpts from their Google listing.</span>
+    <span>Website by Cream City Post · Independent website concept, not an official Astro Auto Repair site. Logo from their Facebook page; shop photos, hours and rating from their Google listing; shop photos enhanced.</span>
     <span>Astro Auto Repair LLC · 4722 S 13th St, Milwaukee, WI 53221 · <a href="tel:+14143199400">(414) 319-9400</a></span>
   </div>
 </footer>
