@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1736'/%3E%3Cpath d='M36 6 14 36h14l-4 22 22-32H32z' fill='%23ffd21f'/%3E%3C/svg%3E">
+<title>SparksElectric.com LLC — Website concept by Cream City Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1736;--navy2:#13265a;--blue:#1e5bd8;--volt:#ffd21f;--green:#1f8a4c;--paper:#f5f3ee;--ink:#0d1220;--muted:#5a6275;--line:#e1ddd2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Inter Tight",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1220px;margin:0 auto;padding:0 clamp(18px,4vw,52px)}
+.d{font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:.005em}
+.m{font-family:"JetBrains Mono",monospace;font-weight:500;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:700;border-radius:12px;padding:14px 22px;font-size:16px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.v{background:var(--volt);color:var(--navy);box-shadow:0 8px 24px -10px rgba(255,210,31,.8)}
+.btn.g{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.btn.g:hover{border-color:#fff}
+/* top */
+.top{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.top:after{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 85% 20%,rgba(30,91,216,.45),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(255,210,31,.08),transparent 60%);pointer-events:none}
+.top>*{position:relative;z-index:1}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+.hd img{height:64px;width:auto;border-radius:10px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+.hd .r{display:flex;align-items:center;gap:18px}
+.hd .r span{font-size:14px;color:#b9c4dd}
+.hd .r span b{color:var(--volt)}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(30px,5vw,70px);align-items:center;padding:clamp(28px,5vw,64px) 0 clamp(56px,7vw,96px)}
+.hero .m{color:var(--volt)}
+.hero h1{font-size:clamp(54px,7.2vw,104px);margin:16px 0 22px}
+.hero h1 em{font-style:normal;color:var(--volt)}
+.hero p{font-size:clamp(17px,1.5vw,19px);color:#c9d2e6;max-width:540px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.chips span{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 12px;font-size:13.5px;color:#dfe5f3}
+.chips span:before{content:"✓ ";color:var(--volt);font-weight:700}
+/* panel */
+.panel{background:linear-gradient(160deg,#d9dde4,#aeb4c0);border-radius:22px;padding:16px;box-shadow:0 40px 70px -30px rgba(0,0,0,.7),inset 0 1px 0 #fff}
+.panel .door{background:#1a1f2b;border-radius:14px;padding:18px 16px 16px;position:relative}
+.panel .lab{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;color:#8d97ad}
+.panel .lab b{color:var(--volt);font-weight:700}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;position:relative}
+.grid:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:6px;margin-left:-3px;background:#3a4152;border-radius:3px}
+.bk{all:unset;cursor:pointer;display:flex;align-items:center;gap:10px;background:#262c3a;border-radius:8px;padding:8px 10px;color:#d6dbe7;font-size:13.5px;font-weight:600;line-height:1.25;min-height:44px;position:relative}
+.grid .bk:nth-child(even){flex-direction:row-reverse;text-align:right}
+.bk .sw{flex:none;width:34px;height:20px;border-radius:5px;background:#0f131c;position:relative;box-shadow:inset 0 1px 3px rgba(0,0,0,.6)}
+.bk .sw:after{content:"";position:absolute;top:2px;left:2px;width:15px;height:16px;border-radius:3px;background:#5d6577;transition:left .18s,background .18s}
+.bk[aria-selected=true]{background:#2f3a55;color:#fff;box-shadow:0 0 0 1.5px var(--volt)}
+.bk[aria-selected=true] .sw:after{left:17px;background:var(--volt);box-shadow:0 0 10px rgba(255,210,31,.8)}
+.bk:focus-visible{outline:2px solid var(--volt);outline-offset:2px}
+.read{margin-top:14px;background:#0b1020;border-radius:10px;padding:14px 16px;min-height:150px;border:1px solid #2a3248}
+.read .m{color:#7d8cb3;font-size:11.5px}
+.read h3{font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;font-size:28px;line-height:1;color:var(--volt);margin:6px 0 8px}
+.read p{color:#c9d2e6;font-size:14.5px;line-height:1.5}
+.read ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.read li{font-size:12.5px;background:#1b2440;color:#e6ebf6;border-radius:6px;padding:4px 8px}
+.hint{text-align:center;color:#8d97ad;font-size:13px;margin-top:10px}
+/* strip */
+.strip{background:var(--volt);color:var(--navy)}
+.strip .wrap{display:flex;justify-content:space-between;gap:10px 22px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px;font-weight:700;font-size:15px}
+.strip span:before{content:"⚡ "}
+section{padding:clamp(60px,8vw,104px) 0}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+.sh .m{color:var(--blue)}
+.sh h2{font-size:clamp(44px,5.4vw,74px);margin-top:10px}
+.sh p{max-width:440px;color:var(--muted)}
+/* surge */
+.surge{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.stg{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(22px,3vw,34px);position:relative;overflow:hidden}
+.stg .n{font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:120px;line-height:.8;color:#eef0f6;position:absolute;right:18px;top:16px}
+.stg h3{font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;font-size:34px;line-height:1;margin:10px 0 10px;position:relative}
+.stg p{color:var(--muted);position:relative;max-width:420px}
+.stg svg{width:100%;height:auto;margin-top:18px;position:relative}
+.why{margin-top:20px;background:var(--navy);color:#dfe5f3;border-radius:22px;padding:clamp(22px,3vw,34px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:26px;align-items:center}
+.why h3{font-family:"Big Shoulders Display",sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(30px,3vw,40px);line-height:1;color:#fff}
+.why h3 em{font-style:normal;color:var(--volt)}
+.why ol{list-style:none;counter-reset:c;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.why li{counter-increment:c;background:#13224a;border-radius:12px;padding:10px 12px;font-size:14.5px}
+.why li:before{content:counter(c,decimal-leading-zero);font-family:"JetBrains Mono",monospace;color:var(--volt);font-size:12px;display:block}
+/* coupons */
+.cps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.cp{background:#fff;border:2px dashed #b9b2a0;border-radius:18px;padding:22px 20px 18px;display:flex;flex-direction:column;position:relative}
+.cp .amt{font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:66px;line-height:.9;color:var(--navy)}
+.cp .amt sup{font-size:.45em;vertical-align:top;position:relative;top:.25em}
+.cp h3{font-weight:700;font-size:17px;line-height:1.3;margin:8px 0 6px}
+.cp p{font-size:13.5px;color:var(--muted);flex:1}
+.cp button{all:unset;cursor:pointer;margin-top:16px;text-align:center;border-radius:10px;padding:10px;font-weight:700;font-size:14.5px;background:var(--navy);color:#fff}
+.cp button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.cp.on{border-style:solid;border-color:var(--green);background:#f0faf3}
+.cp.on button{background:var(--green)}
+.cp .tip{display:none;margin-top:10px;font-size:13.5px;color:var(--green);font-weight:600;text-align:center}
+.cp.on .tip{display:block}
+/* reviews */
+.rv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.rv figure{background:#fff;border-radius:22px;padding:28px 26px;border:1px solid var(--line);display:flex;flex-direction:column}
+.rv .st{color:var(--volt);letter-spacing:2px;font-size:17px;-webkit-text-stroke:.5px #c9a000}
+.rv blockquote{font-size:16.5px;margin-top:12px;flex:1}
+.rv figcaption{margin-top:18px;font-weight:700}
+.rv figcaption span{display:block;font-weight:500;color:var(--muted);font-size:14px}
+/* area */
+.area{background:var(--navy);color:#fff;border-radius:36px;margin:0 clamp(10px,2vw,24px)}
+.area .g{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4vw,56px);align-items:center}
+.area .m{color:var(--volt)}
+.area h2{font-size:clamp(42px,5vw,68px);margin:10px 0 22px}
+.towns{display:flex;flex-wrap:wrap;gap:8px}
+.towns span{background:#152657;border-radius:10px;padding:10px 14px;font-weight:600}
+.towns span.hq{background:var(--volt);color:var(--navy)}
+.cc{background:#0f1e45;border:1px solid #233a7a;border-radius:24px;padding:clamp(22px,3vw,34px)}
+.cc a.big{display:block;font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:clamp(46px,5vw,64px);line-height:1;text-decoration:none;color:var(--volt);margin:10px 0 14px}
+.cc p{color:#c9d2e6}
+.cc .fn{font-size:13px;color:#8d97ad;margin-top:14px}
+.invite{padding:52px 0 56px}
+.invite .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.invite h2{font-size:clamp(34px,3.8vw,50px)}
+.invite p{color:var(--muted)}
+footer{border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+footer b{color:var(--ink)}
+@media (max-width:1020px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .cps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rv{grid-template-columns:minmax(0,1fr)}
+  .area .g{grid-template-columns:minmax(0,1fr)}
+  .why{grid-template-columns:minmax(0,1fr)}
+  .invite .wrap{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .surge{grid-template-columns:minmax(0,1fr)}
+  .hd .r span{display:none}
+}
+@media (max-width:560px){
+  .hd img{height:50px}
+  .hd .btn{padding:11px 14px;font-size:14.5px}
+  .btn{flex:1 1 100%}
+  .hd .btn{flex:none}
+  .grid{grid-template-columns:minmax(0,1fr);gap:7px}
+  .grid:before{display:none}
+  .grid .bk:nth-child(even){flex-direction:row;text-align:left}
+  .cps{grid-template-columns:minmax(0,1fr)}
+  .why ol{grid-template-columns:minmax(0,1fr)}
+  .strip .wrap{font-size:14px}
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="wrap">
+    <header class="hd">
+      <img src="img/logo.jpg" alt="Service by SparksElectric.com LLC" width="504" height="248">
+      <div class="r"><span><b>Same day</b> electrical service</span><a class="btn v" href="tel:+14145368500">Call 414-536-8500</a></div>
+    </header>
+    <div class="hero">
+      <div>
+        <div class="m">Milwaukee electricians · Residential &amp; commercial</div>
+        <h1 class="d">Power out? Breaker tripping? <em>Same-day fix.</em></h1>
+        <p>Licensed and insured electricians serving Milwaukee and all surrounding areas — with up-front pricing, on-site estimates and vans that carry thousands of parts and hundreds of tools to get the job done right.</p>
+        <div class="cta">
+          <a class="btn v" href="tel:+14145368500">Call 414-536-8500</a>
+          <a class="btn g" href="mailto:SparksElectric@icloud.com?subject=Estimate%20request">Email for an estimate</a>
+        </div>
+        <div class="chips"><span>Licensed &amp; insured</span><span>Drug free</span><span>Up-front pricing</span><span>100% satisfaction guaranteed</span></div>
+      </div>
+      <div>
+        <div class="panel"><div class="door">
+          <div class="lab m"><span>Main panel · <b>SparksElectric</b></span><span>8 circuits</span></div>
+          <div class="grid" role="tablist" aria-label="What do you need?">
+            <button class="bk" role="tab" aria-selected="true" data-i="0"><span class="sw"></span>Power out / storm hit</button>
+            <button class="bk" role="tab" aria-selected="false" data-i="1"><span class="sw"></span>Still on old fuses</button>
+            <button class="bk" role="tab" aria-selected="false" data-i="2"><span class="sw"></span>Need more power</button>
+            <button class="bk" role="tab" aria-selected="false" data-i="3"><span class="sw"></span>Lights, fans &amp; outlets</button>
+            <button class="bk" role="tab" aria-selected="false" data-i="4"><span class="sw"></span>Protect my electronics</button>
+            <button class="bk" role="tab" aria-selected="false" data-i="5"><span class="sw"></span>Keep power on in outages</button>
+            <button class="bk" role="tab" aria-selected="false" data-i="6"><span class="sw"></span>Old or unsafe wiring</button>
+            <button class="bk" role="tab" aria-selected="false" data-i="7"><span class="sw"></span>For my business</button>
+          </div>
+          <div class="read" role="tabpanel" aria-live="polite">
+            <div class="m" id="rk">Circuit 01 · Emergency</div>
+            <h3 id="rt">Storm damage &amp; power outages</h3>
+            <p id="rd">Power outages, storm damage and lightning damage handled with same-day electrical service, and emergency service available.</p>
+            <ul id="rl"><li>Power outages</li><li>Storm damage</li><li>Lightning damage</li><li>Emergency service*</li></ul>
+          </div>
+        </div></div>
+        <div class="hint">Flip a breaker to see how Sparks can help.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="strip"><div class="wrap"><span>Same day service</span><span>Wiring specialists</span><span>On-site estimates</span><span>Fully equipped trucks</span><span>Maintenance contracts</span></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="m">Whole-home surge protection</div><h2 class="d">One storm can fry everything plugged in.</h2></div>
+      <p>One lightning storm can cause thousands, even tens of thousands, of dollars in damage to a home’s electronics. Sparks’ Cutler-Hammer Certified Electricians protect it in two stages.</p>
+    </div>
+    <div class="surge">
+      <div class="stg"><span class="n">1</span><div class="m" style="color:var(--blue)">Stage 1</div><h3>At the service entrance</h3><p>A surge suppression device at your service entrance knocks an incoming surge down to a level surge strips can handle.</p>
+        <svg viewBox="0 0 400 120" aria-hidden="true"><path d="M10 60h120" stroke="#0a1736" stroke-width="4" fill="none"/><path d="m60 30-14 26h12l-8 26 22-34H58l8-18z" fill="#ffd21f" stroke="#0a1736" stroke-width="2"/><rect x="130" y="25" width="90" height="70" rx="10" fill="#0a1736"/><text x="175" y="66" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="13" fill="#ffd21f">SPD</text><path d="M220 60h170" stroke="#1e5bd8" stroke-width="4" fill="none" stroke-dasharray="2 0"/><path d="M240 60c10-10 20 10 30 0s20 10 30 0" stroke="#1e5bd8" stroke-width="3" fill="none"/><text x="315" y="45" font-family="Inter Tight,sans-serif" font-size="13" fill="#5a6275">reduced surge →</text></svg>
+      </div>
+      <div class="stg"><span class="n">2</span><div class="m" style="color:var(--blue)">Stage 2</div><h3>At the point of use</h3><p>Surge protection where your TVs, computers and appliances plug in catches what’s left, so the stages work together.</p>
+        <svg viewBox="0 0 400 120" aria-hidden="true"><path d="M10 60h100" stroke="#1e5bd8" stroke-width="4" fill="none"/><rect x="110" y="40" width="120" height="40" rx="8" fill="#fff" stroke="#0a1736" stroke-width="3"/><circle cx="140" cy="60" r="6" fill="#0a1736"/><circle cx="170" cy="60" r="6" fill="#0a1736"/><circle cx="200" cy="60" r="6" fill="#0a1736"/><path d="M230 60h40" stroke="#0a1736" stroke-width="3"/><rect x="275" y="22" width="110" height="68" rx="6" fill="#0a1736"/><rect x="283" y="30" width="94" height="50" rx="3" fill="#1e5bd8"/><path d="M315 90h30v10h-30z" fill="#0a1736"/><text x="330" y="60" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="12" fill="#fff">PROTECTED</text></svg>
+      </div>
+    </div>
+    <div class="why">
+      <h3>Skip the <em>after-storm</em> headache.</h3>
+      <ol><li>Diagnose all of the issues</li><li>Find every location of damage</li><li>Weave through warranty issues</li><li>Locate replacement products</li><li>Call numerous service departments</li><li>Or protect the home up front</li></ol>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="m">Specials &amp; discounts</div><h2 class="d">Save on your first call.</h2></div>
+      <p>Tap an offer to save it, then mention it when you call.</p>
+    </div>
+    <div class="cps">
+      <div class="cp"><div class="amt"><sup>$</sup>25 off</div><h3>For new customers</h3><p>Limit one per new customer.</p><button type="button">Save this offer</button><div class="tip">Saved — mention it when you call 414-536-8500.</div></div>
+      <div class="cp"><div class="amt"><sup>$</sup>149</div><h3>Whole-house electrical safety &amp; energy consultation</h3><p>A $349 value. Limited time offer.</p><button type="button">Save this offer</button><div class="tip">Saved — mention it when you call 414-536-8500.</div></div>
+      <div class="cp"><div class="amt"><sup>$</sup>25 off</div><h3>Troubleshooting &amp; diagnostic</h3><p>Limit one per customer.</p><button type="button">Save this offer</button><div class="tip">Saved — mention it when you call 414-536-8500.</div></div>
+      <div class="cp"><div class="amt"><sup>$</sup>25 back</div><h3>Cash back referral for existing customers</h3><p>No limit on the number of referrals.</p><button type="button">Save this offer</button><div class="tip">Saved — mention it when you call 414-536-8500.</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="m">Customer testimonials</div><h2 class="d">Honest, prompt &amp; qualified.</h2></div>
+      <p>Your complete satisfaction with Sparks’ electricians and electrical repairs is 100% guaranteed.</p>
+    </div>
+    <div class="rv">
+      <figure><div class="st">★★★★★</div><blockquote>“When my husband’s DIY fix went awry, Gary at Sparks Electric was able to come out the same day to fix it. … I appreciated his honest assessment on which things were ‘critical’ vs. just nice to have.”</blockquote><figcaption>Nikki<span>Sparks customer</span></figcaption></figure>
+      <figure><div class="st">★★★★★</div><blockquote>“Efficient, knowledgable, and fairly priced. What more can one ask? … There was no pressure whatsoever. All the work was done in a competent manner, and every day all work areas were thoroughly clean.”</blockquote><figcaption>John<span>Sparks customer</span></figcaption></figure>
+      <figure><div class="st">★★★★★</div><blockquote>“If anyone is looking for an outstanding electrician, you do not need to look any farther. Gary at Sparks was fantastic. He was friendly, polite and extreme patient.”</blockquote><figcaption>Mark G.<span>Sparks customer</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap g">
+    <div>
+      <div class="m">Servicing Milwaukee &amp; all surrounding areas</div>
+      <h2 class="d">Your neighborhood electrician.</h2>
+      <div class="towns"><span class="hq">Milwaukee</span><span>Wauwatosa</span><span>West Allis</span><span>Glendale</span><span>Shorewood</span><span>Whitefish Bay</span><span>Brown Deer</span><span>Menomonee Falls</span></div>
+    </div>
+    <div class="cc">
+      <div class="m" style="color:#8d97ad">Call for same-day service</div>
+      <a class="big" href="tel:+14145368500">414-536-8500</a>
+      <p>4248 N. 76th Street (Lower S.E.)<br>Milwaukee, WI 53222</p>
+      <p style="margin-top:8px"><a href="mailto:SparksElectric@icloud.com">SparksElectric@icloud.com</a></p>
+      <div class="fn">*Emergency service available. 24/7 emergency rates may be higher.</div>
+    </div>
+  </div>
+</section>
+
+<div class="invite"><div class="wrap">
+  <h2 class="d">A first look at a new website for SparksElectric.com.</h2>
+  <p>This is a sneak peek. Like the direction? Reply and we’ll build the full site.</p>
+</div></div>
+<footer><div class="wrap"><span><b>Website by Cream City Post</b> · Independent website concept, not the official SparksElectric.com site.</span><span>Logo, offers, testimonials and facts from sparkselectric.com.</span></div></footer>
+<script>
+(function(){
+  var D=[
+   {t:'Storm damage & power outages',d:'Power outages, storm damage and lightning damage handled with same-day electrical service, and emergency service available.',l:['Power outages','Storm damage','Lightning damage','Emergency service*']},
+   {t:'Fuse box to breakers',d:'Convert an old fuse box to a modern circuit breaker panel, and upgrade the service while you’re at it.',l:['Fuse box conversion','Circuit breakers','Panel repairs & installs','Service upgrades']},
+   {t:'Service upgrades',d:'Adding a shop, a hot tub or new appliances? Upgrade your service and add dedicated circuits.',l:['Service upgrades','Appliance & HVAC circuits','Pool & hot tub wiring','Room additions']},
+   {t:'Lighting & outlets',d:'New and replacement outlets, switches, ceiling fans and lighting fixtures, with vans stocked to get the job done right.',l:['Outlets & switches','Ceiling fans','Lighting fixtures','Computer & phone wiring']},
+   {t:'Whole-home surge protection',d:'Two-stage protection from Cutler-Hammer Certified Electricians: at the service entrance and at the point of use.',l:['Stage 1: service entrance','Stage 2: point of use','Lightning protection']},
+   {t:'Back-up generators',d:'Standby generators sense an outage and start producing power right away. An automatic transfer switch backs up selected circuits or your entire service.',l:['Standby generators','Portable generators','Automatic transfer switch']},
+   {t:'Wiring & rewiring',d:'Wiring specialists who find and correct unsafe or marginal conditions, then rewire to bring it up to date.',l:['Wiring & rewiring','Troubleshooting','Panel repairs','Remodeling']},
+   {t:'Commercial service',d:'Keep your business running with equipment connections, building rewiring and upgrades, and a maintenance contract.',l:['Equipment connection','Building re-wiring','Lighting repair','Electric sign repair','Buried cable locating','Maintenance contract']}];
+  var b=document.querySelectorAll('.bk'),$=function(x){return document.getElementById(x)};
+  b.forEach(function(x){x.addEventListener('click',function(){
+    b.forEach(function(y){y.setAttribute('aria-selected','false')});x.setAttribute('aria-selected','true');
+    var i=+x.dataset.i,o=D[i];
+    $('rk').textContent='Circuit 0'+(i+1)+(i===0?' · Emergency':i===7?' · Business':' · Home');
+    $('rt').textContent=o.t;$('rd').textContent=o.d;
+    $('rl').innerHTML=o.l.map(function(s){return '<li>'+s+'</li>'}).join('');
+  });});
+  document.querySelectorAll('.cp button').forEach(function(x){x.addEventListener('click',function(){
+    var c=x.parentNode,on=c.classList.toggle('on');x.textContent=on?'Saved ✓':'Save this offer';
+  });});
+})();
+</script>
+</body>
+</html>
