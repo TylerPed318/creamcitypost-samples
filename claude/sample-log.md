@@ -205,3 +205,4 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - in progress — CCP-072 (Nov 12, 12:32 PM CT, scheduled run)
 - done — CCP-073 v1 (Nov 12, ~1:36 PM CT, scheduled run): live (page + 10 imgs 200, byte-identical), emailed 1a1d143421d7b781; 0 credits; commit 824617e. Fix/Make/Solve doors, bonus-room slider, tape-measure motif. Open: no reviews/hours exist; Chris only via email; apron + client-face photos unused; images ~1.06 MB (lazy).
 - in progress — CCP-074 (Nov 12, 1:31 PM CT, scheduled run)
+- in progress — CCP-075 (Nov 12, 1:37 PM CT, scheduled run)
