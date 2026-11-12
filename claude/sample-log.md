@@ -136,7 +136,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-075 | Tomasicyk Landscape Design | Landscaping + hardscapes, Hartland | brief | v2 | tomasicyk-landscape-design/ | v1 emailed Nov 12, ~1:42 PM; v2 (full-res hero) emailed ~2:50 PM. 0 credits. |
 | CCP-076 | Bergson Interiors Ltd | Interior design showroom | brief | v1 | bergson-interiors/ | v1 emailed Nov 12, ~3:40 PM. 0 credits. |
 | CCP-077 | Great Lakes Sales & Service | Auto repair, Nashotah | brief | v1 | great-lakes-sales-service/ | v1 emailed Nov 12, ~3:45 PM. 2 credits (hero upscale). |
-| CCP-078 | Fuerst Electric | Electrician (residential/commercial/new construction), Wales | brief | v1 | fuerst-electric/ | v1 emailed Nov 12, ~4:45 PM. 0 credits. Photo-free. |
+| CCP-078 | Fuerst Electric | Electrician (residential/commercial/new construction), Wales | brief | v1 | fuerst-electric/ | v1 emailed Nov 12, ~4:31 PM. 0 credits. Photo-free. |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
@@ -248,5 +248,6 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 CCP-073 revisions 1a1d196910a0f314 and clarification 1a1d1bd58030f0ff handled by v3 ready 1a1d1d42444db326.
 CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - Nov 12, 16:20 CT (scheduled run): last finished CCP-073 v3 and CCP-072 v2, 2 credits total. Next verified unbuilt CCP-078 Fuerst Electric, then079-085,087,090-093. Model selection unavailable; used supported runtime. Named render unavailable, installed Playwright used. Required q85 exports exceed normal page weight; disclosed in both ready emails. Old unpublished BFH draft preserved outside checkout at ../bfh-draft-preserved-20261112-1600; do not rebuild it.
-- done — CCP-078 v1 (Nov 12, ~16:45 CT, scheduled run): live (page 200, byte-identical; no image files), emailed 1a1d1e2bd52b8144; 0 credits; commit 5d95651. Photo-free typographic build: 10,000-hours credential plate, lime wire motif, breaker-panel picker (Homeowners/Builders/Commercial). Open: no confirmed job photos (ask Joe); Joe not named; no count/named quotes per guidelines; HVAC/Security omitted pending confirmation.
-- Nov 12, ~16:45 CT (scheduled run): session ends after 1 item (078 v1), 0 credits. Next up, oldest brief first: CCP-079 Beachside Boat & Bait (1a1d12b861eb80fe), CCP-080 Dean Pipito Water Features (1a1d13009cac81d4), then 081–085, 087, 090–093.
+- done — CCP-078 v1 (Nov 12, ~16:31 CT, scheduled run): live (page 200, byte-identical; no image files), emailed 1a1d1e2bd52b8144; 0 credits; commit 5d95651. Photo-free typographic build: 10,000-hours credential plate, lime wire motif, breaker-panel picker (Homeowners/Builders/Commercial). Open: no confirmed job photos (ask Joe); Joe not named; no count/named quotes per guidelines; HVAC/Security omitted pending confirmation.
+- Nov 12, ~16:31 CT (scheduled run): CCP-078 v1 finished, 0 credits; continuing. Next up, oldest brief first: CCP-079 Beachside Boat & Bait (1a1d12b861eb80fe), CCP-080 Dean Pipito Water Features (1a1d13009cac81d4), then 081–085, 087, 090–093.
+- in progress — CCP-079 (Nov 12, 16:32 CT, scheduled run)
