@@ -4,10 +4,14 @@ Adopted Nov 11, 2026 (Tyler). **This is the one doc to read before building or r
 
 ---
 
+## Required design companion (Tyler, Nov 11)
+
+Read [sample-design-guidelines.md](sample-design-guidelines.md) fully before every build or revision. Tyler's latest design rules there supersede older conflicting design instructions here: faithful inline-SVG logo reproduction, brief palette/fonts, stable Google rating plus unattributed themes with no count, own-site quotations only, one brand-specific motif, sticky header and mobile call bar, phone/email conversion CTAs, 44px tap targets, AA contrast, reduced motion, and 375px overflow checks. Preserve useful navigation to verified existing business pages. Keep this playbook's repository, lead, overlap, publication, QA and delivery workflow.
+
 ## 1. Efficiency rules (Tyler, Nov 11)
 
 1. **New session every 3–4 samples.** At the end of each session, add a one-line handoff to the "Session handoff" section of `claude/sample-log.md`: last ID finished, next ID up, anything open. Start the next session by reading this playbook, then only that handoff and the sample-log table.
-2. **Read one doc, not five.** Read this playbook. Open `revision-lessons.md` only for the full photo-host URL tricks or the revision history. Open `sample-log.md` for the status table, per-company notes and the handoff line.
+2. **Read the required rule pair.** Read this playbook and `sample-design-guidelines.md`. Open `revision-lessons.md` only for the full photo-host URL tricks or the revision history. Open `sample-log.md` for the status table, per-company notes and the handoff line.
 3. ~~Shared template~~ **Not adopted. Every sample is unique to its client:** its own layout, type, colors (from their logo) and interactive element. Never reuse another sample's page as a base.
 4. **Let the brief do the research.** Read the creative brief. On the prospect's site, fetch only the homepage plus About/History (needed to check claims and find trust lines) and the gallery page if you need photos. Don't crawl the rest of the site.
 5. **One round of screenshots.** Run one live-URL check at 1440 and 390 in the Higgsfield sandbox. Re-shoot only the part you fixed if something fails. Inspect photos at full size once, when you choose them, not again after publishing.
@@ -36,17 +40,17 @@ Header with real logo + tap-to-call → hero (headline + one framed real photo) 
 
 - Use only facts from their own site (or Facebook/Google listing for no-website leads), or facts the brief marks as verified. **Check About and History.** When they conflict with the homepage, History wins. Never credit a predecessor's achievements to the current company.
 - Hours must match their posted schedule exactly. Never write "24/7" unless they say it, and keep their caveats.
-- No stars unless they publish ratings. Reviews are short excerpts credited the way they credit them.
+- Ratings must be verified and linked; show a stable line without a count, optionally one star. Use 2–3 unattributed review themes. Quote only verbatim own-site testimonials with their exact attribution; no named Google-review quotations.
 - No dollar amounts from old specials. Use "Ask about current specials when you call."
 - Show a badge only when their **copy** states the membership. Skip placeholder or template content.
 
 ## 5. Photos and brand
 
 - Always use the **original full-res file** (Wix: no `/v1/fill` suffix; Squarespace: `?format=2500w`; GoDaddy: drop `/:/rs=`, and never use `isteam/stock`; WordPress: drop `-1024x683` or `-scaled`).
-- **Sharpness math:** the image's real width must be ≥1.5× its CSS width on desktop and about 3× on a 390px phone. That means about 1800px+ for the hero. If it falls short, upscale with Higgsfield or show it smaller.
+- **Sharpness math:** the image's real width must be ≥1.5× its CSS width on desktop and about 3× on a 390px phone. That means about 1800px+ for the hero. If it falls short, show it smaller under the latest design guidelines; enlarge/upscale only under a later explicit instruction.
 - After an upscale, zoom in on all lettering; upscalers garble text. Read the text in every photo and drop or crop anything showing another company's name.
 - Skip stock, CGI, AI-looking or composite photos (even ones on their own site), family/kid photos and partner work. Check crop edges for frames or black fill. If they have no real photos, build a photo-free design and flag it in the email.
-- Use their real logo (≤ ~25 KB) and always add a favicon. Photos ~100–300 KB each; whole page under 1 MB.
+- Preserve their real brand; faithfully reproduce the existing logo as clean inline SVG from the brief/reference under the latest design guidelines (no invented logo redesign). Always add a favicon. Photos ~100–300 KB each; whole page under 1 MB.
 
 ## 6. Publish and email
 

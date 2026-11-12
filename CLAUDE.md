@@ -4,6 +4,7 @@ This is the standing instruction manual for any Claude session (interactive or s
 
 > **Source of authority.** The rulebook and work log live **in this repository** under `claude/`:
 > - `claude/sample-playbook.md`: the rules. Read it first, every session.
+> - `claude/sample-design-guidelines.md`: Tyler's required design companion. Read fully before every build/revision; newer design requirements override older conflicting design text below.
 > - `claude/sample-log.md`: session handoff, Handled emails, sample table, per-company notes, and the overlap guard.
 > - `claude/revision-lessons.md` and `claude/id-and-brief-process.md`: detail, opened only when the playbook points there.
 > - `claude/scheduled-run-prompt.md`: the prompt the hourly scheduled task should use.
