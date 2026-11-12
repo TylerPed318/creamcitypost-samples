@@ -39,6 +39,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - Nov 11, 2026 ~9:53 PM CT (Tyler chat): last finished CCP-055 v3 and CCP-060 v2 visual revisions, exact deployed commits verified, public assets 200, 1440/390 live renders inspected. Both ready emails confirmed SENT; AKL 4 credits, Whitlow 0. Next eligible remains CCP-061. Open: original photo camera angles differ; other prior fact omissions retained. Model selection unavailable. Design lesson: execute the brief's main visual idea at a confident scale; company-specific, modern compositions are required.
 
 ## Handled emails (don't reprocess)
+CCP-062 creative brief 1a1ccaf6044bf09f handled; v1 ready sent 1a1ce061a372fa65 (Nov 11).
 CCP-061 creative brief 1a1ccab102b90037 handled; v1 ready 1a1ce013b02b6378 confirmed SENT.
 CCP-058 creative brief 1a1cc45ac01db85e handled; v1 ready sent 1a1cdd58326ed92f (Nov 11).
 CCP-057 creative brief 1a1cc40dbfc9fd66 handled; v1 ready sent 1a1cdd23ce7e3383 (Nov 11).
@@ -75,6 +76,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-049 | Lake Time Services | Marine upholstery + mobile boat service, Pewaukee | brief | v1 | lake-time-services/ | v1 emailed Nov 11, ~8:45 PM. 0 credits. |
 | CCP-051 | Gary's Auto Repair | Auto repair (imports + all makes), Delafield | brief | v1 | garys-auto-repair/ | v1 emailed Nov 11, ~9:00 PM. 0 credits. |
 | CCP-061 | Hero Plumbing LLC | Plumbing, Milwaukee | brief + master CSV | v1 | hero-plumbing/ | Live and emailed; 0 credits; pitch/ZIP confirmation pending. |
+| CCP-062 | Rogers Landscaping and Tree Services LLC | Landscaping + hardscape + tree, Waukesha | brief | v1 | rogers-landscaping/ | v1 emailed Nov 11, ~10:31 PM. 0 credits. |
 | CCP-060 | Whitlow's Security Specialists | Locksmith, Milwaukee | brief + master CSV | v2 | whitlows-security/ | Distinct team/key-wall visual revision live and emailed; 0 credits. |
 | CCP-055 | AKL Resurfacing | Bathtub/tile refinishing, Milwaukee | brief + master CSV | v3 | akl-resurfacing/ | Large-slider visual revision live and emailed; 4 credits. |
 | CCP-054 | Giese's Tree & Landscaping Service LLC | Tree/landscaping, Milwaukee | brief + master CSV | v1 | gieses-tree-landscaping/ | v1 live and emailed Nov 11. 0 credits; photo-free; ISA pending verification. |
@@ -114,6 +116,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-052 O&W:** 4379 S Howell Ave, Suite 4, Milwaukee 53207; 414-339-2641; hours "Monday – Friday: 6:00 am – 5:00 pm" + "We offer after 5:00 pm or weekend emergency service" (site has 4 conflicting versions); owner Omer (first name only; from their blog); "4.9 on Google" only. Never use the Getty mini-split photo or the Rinnai product render. No licensed/insured claims; no heat pump/mini-split until confirmed.
 - **CCP-056 Final Conflict:** owner Rashid Ali; mobile 414-731-6478 (primary, Google/truck), store 414-616-1420; finalconflictpest@gmail.com; 2984 N Teutonia Ave, Milwaukee 53206; service Mon–Sat 8–5, store Mon–Sat 10–5; "over 25 years of experience on staff" wording only; "5.0 on Google" only. owner photo has certificates blurred. Never use the Adobe Stock pest images; img_2770 shows an unidentified man (not used).
 - **CCP-057 SWAT:** 414.270.1383; services@mkeswat.com; P.O. Box 510800, Milwaukee 53203 only; since 2005; 8 counties (Milwaukee, Waukesha, Ozaukee, Washington, Racine, Kenosha, Sheboygan, Fond du Lac); no hours; "4.6 on Google" only. Never use the Shutterstock hero; no Ogden name until Tyler OKs; "seasoned vets" ≠ veterans.
+- **CCP-062 Rogers:** (262) 510-6035 (call or text); Rogerslandscapingtreeservices@gmail.com (site mailto is broken); 1001 Lincoln Ave, Waukesha 53186; no hours; "5.0 on Google" only. Never show the BBB Accredited badge (not accredited) or "Fully Bonded"; no Roger/Jaret in our copy. Own-site testimonial John Fischer OK verbatim. Hero house number 1176 blurred. Skip climber/mower photos (unconfirmed) and stock gallery images.
 - **CCP-058 Rodriguez:** 414-544-4062 used (Google: 414-699-5630, unresolved); rodriguezpaintingllc78@gmail.com; hours Mon–Fri 8–6, Sat 8–12:30; "4.3 on Google" only. No years (seven years vs EST. 2023), no licensed/insured, no Thomas, no N Water St address. Own-site testimonials Jessica/Danny OK verbatim; never credit the commercial one to David. Skip p1 crew-on-ladders (possible Pexels) and the pillowcase/vanity photos; p6 cropped to drop wall drawing.
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
@@ -140,6 +143,8 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 
 - done — CCP-061 v1 (Nov 11, 2026, scheduled run resumed): live and emailed 1a1ce013b02b6378, confirmed SENT; 0 credits; sample commit 6e4c22e. Original logo retained; founder portrait only; unconfirmed project photography, ZIP, political imagery and reviews omitted.
 
-- in progress — CCP-062 (2026-11-11 22:26 CT, scheduled run)
+- done — CCP-062 v1 (Nov 11, ~10:31 PM CT, scheduled run): live (page + 7 images 200, byte-identical) and emailed 1a1ce061a372fa65; 0 credits; commit eef5448. Open: hours, Roger/Jaret names, BBB A+, real snow photo; climber/mower photos not used (ownership unconfirmed).
+
+- in progress — CCP-063 (2026-11-11 22:31 CT, scheduled run)
 
 - Nov 11, 2026 ~22:27 CT (resumed run): last finished CCP-061 v1; next CCP-062 already claimed by concurrent run; next unclaimed queue ID CCP-063. Live HTML byte-match and all assets200;1440/390 visually inspected,375 overflow/all5 service choices passed using installed Playwright in Higgsfield sandbox (named script absent). Runtime cannot select Claude models. 0 credits. Original logo retained inside SVG wrapper; one real portrait, project text replaces unconfirmed photography. Open: pitch decision given low Google rating; ZIP unconfirmed. Ready1a1ce013b02b6378 confirmed SENT.
