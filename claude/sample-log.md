@@ -110,3 +110,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 
 - done — CCP-056 v1 (Nov 11, ~9:45 PM CT, scheduled run): live (page + 6 assets 200) and emailed 1a1cdcecb70ac8cc; 0 credits. Open: Tyler to confirm primary phone (mobile 414-731-6478 used); no named review quotes; truck photo skipped.
 - in progress — CCP-057 (Nov 11, 9:46 PM CT, scheduled run)
+
+- in progress — CCP-055 v2 (Nov 11, 2026 9:48 PM America/Chicago, Tyler chat slider revision)
