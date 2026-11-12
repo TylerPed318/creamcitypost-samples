@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-078 v1 revision 1a1d1eefd4ca8a94 handled; v2 ready sent 1a1d218bc66ee1e9 (Nov 12).
 CCP-072 creative brief 1a1d0bea7f964d48 handled; v1 ready sent 1a1d1b1323aa2806 (Nov 12).
 CCP-079 creative brief 1a1d12b861eb80fe handled; v1 ready sent 1a1d1e898435d92d (Nov 12).
 CCP-078 creative brief 1a1d1002c5826a89 handled; v1 ready sent 1a1d1e2bd52b8144 (Nov 12).
@@ -137,7 +138,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-075 | Tomasicyk Landscape Design | Landscaping + hardscapes, Hartland | brief | v2 | tomasicyk-landscape-design/ | v1 emailed Nov 12, ~1:42 PM; v2 (full-res hero) emailed ~2:50 PM. 0 credits. |
 | CCP-076 | Bergson Interiors Ltd | Interior design showroom | brief | v1 | bergson-interiors/ | v1 emailed Nov 12, ~3:40 PM. 0 credits. |
 | CCP-077 | Great Lakes Sales & Service | Auto repair, Nashotah | brief | v1 | great-lakes-sales-service/ | v1 emailed Nov 12, ~3:45 PM. 2 credits (hero upscale). |
-| CCP-078 | Fuerst Electric | Electrician (residential/commercial/new construction), Wales | brief | v1 | fuerst-electric/ | v1 emailed Nov 12, ~4:31 PM. 0 credits. Photo-free. |
+| CCP-078 | Fuerst Electric | Electrician (residential/commercial/new construction), Wales | brief | v2 | fuerst-electric/ | v1 emailed Nov 12, ~4:31 PM; v2 (own-site promises replace Google themes) emailed ~5:40 PM. 0 credits. Photo-free. |
 | CCP-079 | Beachside Boat & Bait | Boat rentals + bait, Pewaukee Lake | brief | v1 | beachside-boat-bait/ | v1 emailed Nov 12, ~16:37. 2 credits (kayak upscale). |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
@@ -255,4 +256,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - Nov 12, ~16:31 CT (scheduled run): CCP-078 v1 finished, 0 credits; continuing. Next up, oldest brief first: CCP-079 Beachside Boat & Bait (1a1d12b861eb80fe), CCP-080 Dean Pipito Water Features (1a1d13009cac81d4), then 081–085, 087, 090–093.
 - done — CCP-079 v1 (Nov 12, ~16:37 CT, scheduled run): live (page + 4 imgs 200, byte-identical), emailed 1a1d1e898435d92d; 2 credits (kayak 2K upscale); commit a97b479. Oval porthole hero (slide tri-toon on trailer), group-size fleet slider. Open: prices/promo codes, season end date and hours omitted pending owner; on-lake slide photo skipped (identifiable kids); fishing-boat registration blurred.
 - Nov 12, ~16:37 CT (scheduled run): session ends after 2 builds (078, 079 v1), 2 credits total. Next up, oldest brief first: CCP-080 Dean Pipito Water Features (1a1d13009cac81d4), then 081–085, 087, 090–093.
-- in progress — CCP-078 v2 (Nov 12, 5:28 PM CT, scheduled run)
+- done — CCP-078 v2 (Nov 12, ~5:40 PM CT, scheduled run): live (page 200, byte-identical), emailed 1a1d218bc66ee1e9; 0 credits; commit 0b0608c. Review themes → three own-site promises (on time/on budget, estimate first, all work guaranteed — used instead of 'like our home' since that's the pull quote); caption/footer now 'rating from Google'.
+- in progress — CCP-080 (Nov 12, 5:40 PM CT, scheduled run)
