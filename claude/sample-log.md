@@ -245,3 +245,4 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 CCP-073 revisions 1a1d196910a0f314 and clarification 1a1d1bd58030f0ff handled by v3 ready 1a1d1d42444db326.
 CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - Nov 12, 16:20 CT (scheduled run): last finished CCP-073 v3 and CCP-072 v2, 2 credits total. Next verified unbuilt CCP-078 Fuerst Electric, then079-085,087,090-093. Model selection unavailable; used supported runtime. Named render unavailable, installed Playwright used. Required q85 exports exceed normal page weight; disclosed in both ready emails. Old unpublished BFH draft preserved outside checkout at ../bfh-draft-preserved-20261112-1600; do not rebuild it.
+- in progress — CCP-078 (Nov 12, 16:31 CT, scheduled run)
