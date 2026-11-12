@@ -214,3 +214,6 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - done — CCP-075 v1 (Nov 12, ~1:42 PM CT, scheduled run): live (page + 7 imgs 200, byte-identical), emailed 1a1d1484ab013ce8; 0 credits; commit e16ffb2. Build/Care switch, flagstone motif; all CTAs phone or mailto (their contact form is broken). Open: no reviews/Google listing; Jake title unconfirmed; Facebook link is Squarespace's.
 
 - Nov 12, ~1:42 PM CT (scheduled run): session ends after 3 items (073, 074, 075 v1), 0 credits total. CCP-072 still claimed by another run (12:32 PM; resumable after 2:02 PM if not finished). Next up, oldest brief first: CCP-076 Bergson Interiors (1a1d0f6d5c15cd81), CCP-077 Great Lakes Sales & Service (1a1d0fbfd817cbdf), CCP-078 Fuerst Electric (1a1d1002c5826a89), CCP-079 Beachside Boat & Bait (1a1d12b861eb80fe), CCP-080 Aquatica (1a1d13009cac81d4), CCP-081 Inside Out Remodeling (1a1d1330482b2a3b), CCP-082 Heating and Cooling Drs (1a1d1367beff6fb2).
+- in progress — CCP-073 (Nov 12, 2:35 PM CT, scheduled run)
+- in progress — CCP-074 (Nov 12, 2:35 PM CT, scheduled run)
+- in progress — CCP-075 (Nov 12, 2:35 PM CT, scheduled run)
