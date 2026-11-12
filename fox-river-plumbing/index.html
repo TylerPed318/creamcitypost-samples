@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Fox River Plumbing, Inc — Website concept by Cream City Post</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231A1A1A'/%3E%3Ctext x='15' y='44' font-family='Georgia,serif' font-size='36' fill='%23fff'%3EF%3C/text%3E%3Cpath d='M18 20c10-6 16 4 22 16s12 14 18 12c-8 6-18 2-24-10S24 18 18 20z' fill='%238A2A38'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;1,8..60,400;1,8..60,500&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#6E1F2B;
+  --maroon-deep:#4E1520;
+  --maroon-ink:#3A0F17;
+  --copper:#B87333;
+  --copper-light:#E2A66C;
+  --stone:#F4EFEA;
+  --stone-line:#E3D9CF;
+  --charcoal:#1A1A1A;
+  --ink:#2E2A28;
+  --muted:#5E5550;
+  --white:#FFFFFF;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--stone);color:var(--ink);font:400 17px/1.65 "Open Sans",system-ui,sans-serif}
+a{color:inherit}
+h1,h2,h3{font-family:"League Spartan",system-ui,sans-serif;font-weight:700;line-height:1.02;letter-spacing:-.015em;margin:0;color:var(--charcoal)}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+a:focus-visible,button:focus-visible{outline:3px solid var(--copper-light);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:.75em 1.35em;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--maroon);color:var(--white)}
+.btn-primary:hover{background:var(--maroon-deep)}
+.btn-light{background:var(--white);color:var(--maroon)}
+.btn-light:hover{background:var(--stone)}
+.btn-line{border-color:rgba(255,255,255,.6);color:var(--white)}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:var(--white);border-bottom:1px solid var(--stone-line)}
+.top .wrap{display:flex;align-items:center;gap:22px;min-height:76px}
+.logo{display:block;flex:none;text-decoration:none}
+.logo svg{width:172px;height:auto;display:block}
+.top .hrs{margin-left:auto;font-size:.88rem;color:var(--muted);text-align:right;line-height:1.35}
+.top .hrs b{color:var(--charcoal)}
+.top .btn{white-space:nowrap}
+
+/* hero */
+.hero{position:relative;background:var(--maroon);color:var(--white);overflow:hidden}
+.hero .pipes{position:absolute;inset:0;width:100%;height:100%;opacity:.9;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:40px;padding:84px 0 96px;align-items:end}
+.eyebrow{font:700 .8rem/1 "Open Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-light)}
+.hero h1{color:var(--white);font-size:clamp(3.2rem,8.4vw,7.6rem);font-weight:800;margin:20px 0 22px;line-height:.92}
+.hero h1 span{display:block;font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-weight:400;font-size:.42em;letter-spacing:0;line-height:1.15;color:#F6DCD9;margin-top:.35em;max-width:20ch}
+.hero p{font-size:1.12rem;max-width:44ch;color:#F3E4E2;margin:0 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.gauge{border:1px solid rgba(255,255,255,.25);border-radius:var(--r);padding:26px;background:rgba(58,15,23,.45);backdrop-filter:blur(2px)}
+.gauge .big{font-family:"League Spartan",sans-serif;font-weight:800;font-size:clamp(4rem,8vw,6.2rem);line-height:.9;color:var(--white)}
+.gauge .big sup{font-size:.45em;color:var(--copper-light);vertical-align:.9em}
+.gauge p{margin:8px 0 18px;font-size:.98rem;color:#F3E4E2}
+.gauge a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--white);font-weight:600;text-decoration-color:var(--copper-light);text-underline-offset:4px}
+.gauge a span{color:#F2C94C}
+
+/* proof */
+.proof{background:var(--charcoal);color:#EDE7E2}
+.proof ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:20px 18px;border-left:1px solid #3a3533;font-size:.92rem;line-height:1.35}
+.proof li:first-child{border-left:0}
+.proof b{display:block;font-family:"League Spartan",sans-serif;font-size:1.2rem;color:var(--white);margin-bottom:2px}
+
+/* paths */
+.paths{padding:96px 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:end;margin-bottom:34px}
+.head h2{font-size:clamp(2.2rem,4.6vw,3.6rem)}
+.head p{margin:0;color:var(--muted)}
+.switch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border:2px solid var(--charcoal);border-radius:var(--r);overflow:hidden;margin-bottom:24px}
+.switch button{font:700 1.05rem "League Spartan",sans-serif;min-height:64px;padding:12px 18px;border:0;background:var(--white);color:var(--charcoal);cursor:pointer;text-align:left;display:flex;align-items:center;gap:12px;transition:background .2s,color .2s}
+.switch button+button{border-left:2px solid var(--charcoal)}
+.switch button small{display:block;font:400 .85rem "Open Sans",sans-serif;color:var(--muted)}
+.switch button:hover{background:var(--stone)}
+.switch button[aria-selected=true]{background:var(--charcoal);color:var(--white)}
+.switch button[aria-selected=true] small{color:#CFC7C2}
+.switch .dot{width:14px;height:14px;border-radius:50%;border:2px solid currentColor;flex:none}
+.switch button[aria-selected=true] .dot{background:var(--copper);border-color:var(--copper)}
+.panel{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:0;background:var(--white);border-radius:var(--r);border:1px solid var(--stone-line);overflow:hidden}
+.panel[hidden]{display:none}
+.panel .lead{background:var(--maroon-deep);color:var(--white);padding:40px;position:relative;overflow:hidden}
+.panel .lead h3{color:var(--white);font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:14px}
+.panel .lead p{color:#F3E4E2;margin:0 0 24px}
+.panel .lead q{display:block;font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-size:1.15rem;color:var(--copper-light);margin-top:8px}
+.panel ol{list-style:none;margin:0;padding:36px 40px;counter-reset:s;display:grid;gap:0}
+.panel ol li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px dashed var(--stone-line)}
+.panel ol li:last-child{border-bottom:0}
+.panel ol li:before{content:counter(s,decimal-leading-zero);font:800 1.1rem "League Spartan",sans-serif;color:var(--copper);border:2px solid var(--copper);border-radius:50%;width:44px;height:44px;display:grid;place-items:center}
+.panel ol b{display:block;color:var(--charcoal);font-family:"League Spartan",sans-serif;font-size:1.15rem}
+.panel ol span{color:var(--muted);font-size:.95rem}
+
+/* kohler */
+.asr{background:var(--white);border-block:1px solid var(--stone-line)}
+.asr .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:32px;align-items:center;padding:44px 0}
+.asr .tag{font:800 clamp(2.4rem,5vw,3.6rem)/1 "League Spartan",sans-serif;color:var(--maroon);letter-spacing:.02em}
+.asr h2{font-size:1.5rem;margin-bottom:4px}
+.asr p{margin:0;color:var(--muted)}
+
+/* people + trust */
+.people{padding:96px 0}
+.people .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px;align-items:stretch}
+.owners{background:var(--charcoal);color:#EDE7E2;border-radius:var(--r);padding:44px;position:relative;overflow:hidden}
+.owners .mono{display:flex;gap:10px;margin-bottom:26px}
+.owners .mono i{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font:800 1.5rem "League Spartan",sans-serif;font-style:normal;background:var(--maroon);color:var(--white);border:2px solid var(--copper)}
+.owners h2{color:var(--white);font-size:clamp(1.9rem,3.4vw,2.7rem);margin-bottom:16px}
+.owners p{margin:0 0 14px;max-width:52ch}
+.owners blockquote{margin:24px 0 0;padding-left:18px;border-left:3px solid var(--copper);font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-size:1.2rem;color:var(--white)}
+.owners blockquote cite{display:block;font:600 .85rem "Open Sans",sans-serif;font-style:normal;color:#CFC7C2;margin-top:8px}
+.reviews{background:var(--white);border:1px solid var(--stone-line);border-radius:var(--r);padding:40px;display:flex;flex-direction:column}
+.reviews .score{display:flex;align-items:baseline;gap:12px}
+.reviews .score b{font:800 4rem/1 "League Spartan",sans-serif;color:var(--charcoal)}
+.reviews .score span{color:#B8860B;font-size:1.6rem}
+.reviews h3{font-size:1.3rem;margin:6px 0 22px}
+.reviews ul{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:12px}
+.reviews li{display:flex;gap:12px;align-items:flex-start;font-weight:600;color:var(--charcoal)}
+.reviews li:before{content:"";flex:none;width:22px;height:12px;margin-top:.45em;border:3px solid var(--copper);border-top:0;border-radius:0 0 12px 12px}
+.reviews a.more{margin-top:auto;font-weight:700;color:var(--maroon);min-height:44px;display:inline-flex;align-items:center;text-underline-offset:4px}
+
+/* contact */
+.contact{background:var(--maroon);color:var(--white);position:relative;overflow:hidden}
+.contact .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;padding:84px 0;align-items:center}
+.contact h2{color:var(--white);font-size:clamp(2.2rem,4.6vw,3.6rem)}
+.contact h2 em{font-family:"Source Serif 4",Georgia,serif;font-weight:400;color:var(--copper-light)}
+.contact p.l{color:#F3E4E2;margin:18px 0 26px;max-width:42ch}
+.card{background:var(--white);color:var(--ink);border-radius:var(--r);padding:32px;box-shadow:0 24px 50px -24px rgba(0,0,0,.5)}
+.card dl{margin:0;display:grid;gap:16px}
+.card dt{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon)}
+.card dd{margin:2px 0 0;font-weight:600;color:var(--charcoal);overflow-wrap:anywhere}
+.card dd a{text-decoration-color:var(--copper);text-underline-offset:3px}
+.card dd small{display:block;font-weight:400;color:var(--muted)}
+
+footer{background:var(--maroon-ink);color:#D9C9C6;font-size:.86rem;padding:28px 0 32px}
+footer .first{font-family:"League Spartan",sans-serif;font-size:1.3rem;color:var(--white);margin:0 0 10px}
+footer p{margin:0}
+
+.callbar{display:none}
+
+@media (max-width:960px){
+  .top .hrs{display:none}
+  .top .btn{margin-left:auto}
+  .hero .wrap{grid-template-columns:minmax(0,1fr);padding:56px 0 64px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid #3a3533}
+  .head,.panel,.people .grid,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+  .asr .wrap{grid-template-columns:minmax(0,1fr);gap:14px}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:76px}
+  .top .wrap{min-height:64px;gap:10px}
+  .logo svg{width:118px}
+  .top .btn .long{display:none}
+  .top .btn{padding:.6em 1em;font-size:.95rem}
+  .switch{grid-template-columns:minmax(0,1fr)}
+  .switch button+button{border-left:0;border-top:2px solid var(--charcoal)}
+  .panel .lead,.owners,.reviews,.card{padding:28px 22px}
+  .panel ol{padding:20px 22px}
+  .paths,.people{padding:64px 0}
+  .contact .wrap{padding:60px 0}
+  .hero .pipes{opacity:.3}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--charcoal);box-shadow:0 -6px 20px rgba(0,0,0,.3)}
+  .callbar .btn{min-height:50px;padding:.5em .6em;font-size:.95rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Fox River Plumbing, back to top">
+      <svg viewBox="0 0 300 140" role="img" aria-label="Fox River Plumbing logo">
+        <path d="M58 30 C88 22 110 38 128 62 C144 88 166 114 210 117 C240 119 266 116 292 110 C266 126 232 134 196 133 C154 131 130 108 116 82 C100 58 84 40 58 30Z" fill="#6E1F2B"/>
+        <text x="8" y="78" font-family="'Source Serif 4',Georgia,'Times New Roman',serif" font-size="68" font-weight="500" fill="#1A1A1A" letter-spacing="-1">Fox River</text>
+        <text x="174" y="101" font-family="'Open Sans',Arial,sans-serif" font-size="19" font-weight="600" fill="#1A1A1A" letter-spacing="3">PLUMBING</text>
+      </svg>
+    </a>
+    <div class="hrs"><b>7:00 am – 4:30 pm</b><br>Closed on holidays</div>
+    <a class="btn btn-primary" href="tel:+12623338072"><svg aria-hidden="true"><use href="#phone"/></svg><span class="long">Call&nbsp;</span>(262) 333-8072</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <svg class="pipes" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#B87333" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+      <path d="M-20 120 H880 a40 40 0 0 1 40 40 V520 a40 40 0 0 0 40 40 H1480" stroke-width="10"/>
+      <path d="M-20 600 H360 a40 40 0 0 0 40-40 V300 a40 40 0 0 1 40-40 H1060 a40 40 0 0 0 40-40 V-20" stroke-width="6" opacity=".6"/>
+      <path d="M1240 -20 V380 a40 40 0 0 0 40 40 H1480" stroke-width="6" opacity=".6"/>
+    </g>
+    <g fill="#B87333" opacity=".7"><rect x="904" y="300" width="32" height="14" rx="3"/><rect x="384" y="420" width="32" height="12" rx="3"/><rect x="1224" y="160" width="32" height="12" rx="3"/></g>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Family business · Waukesha, WI</span>
+      <h1>Experience matters.<span>Residential plumbing for new homes, remodels and repairs.</span></h1>
+      <p>Darryl and Debbie Michlig bring over 70 years of combined plumbing knowledge and experience to builders and homeowners across Waukesha &amp; Milwaukee Counties.</p>
+      <div class="cta">
+        <a class="btn btn-light" href="tel:+12623338072"><svg aria-hidden="true"><use href="#phone"/></svg>Call (262) 333-8072</a>
+        <a class="btn btn-line" href="mailto:debm@foxriverplumbing.com?subject=Plumbing%20request">Email for a free quote</a>
+      </div>
+    </div>
+    <aside class="gauge" aria-label="Experience">
+      <div class="big">70<sup>+</sup></div>
+      <p>years of combined plumbing knowledge and experience between the owners.</p>
+      <a href="https://www.google.com/maps/place/Fox+River+Plumbing/@42.9838988,-88.237721,17z/data=!4m8!3m7!1s0x8805a73e6c501e8f:0x713afb6312fd486f!9m1!1b1?hl=en"><span aria-hidden="true">★</span>5.0 on Google</a>
+    </aside>
+  </div>
+</section>
+
+<section class="proof" aria-label="Quick facts">
+  <ul class="wrap">
+    <li><b>★ 5.0 on Google</b>from builders and homeowners</li>
+    <li><b>Family business</b>owner-operated</li>
+    <li><b>Kohler ASR</b>authorized service repairs</li>
+    <li><b>Free consultations</b>to explain your options</li>
+  </ul>
+</section>
+
+<section class="paths" id="services">
+  <div class="wrap">
+    <div class="head">
+      <h2>Two kinds of customers. One standard.</h2>
+      <p>Fox River Plumbing works with the best builders in the area, and with homeowners who need it done right. Pick the one that sounds like you.</p>
+    </div>
+    <div class="switch" role="tablist" aria-label="Choose your project">
+      <button role="tab" id="t-build" aria-controls="p-build" aria-selected="true"><span class="dot"></span><span>I'm building or remodeling<small>Builders, contractors, homeowners mid-project</small></span></button>
+      <button role="tab" id="t-home" aria-controls="p-home" aria-selected="false" tabindex="-1"><span class="dot"></span><span>I need a plumber at home<small>Fixtures, water heaters, leaks, Kohler repairs</small></span></button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-build" aria-labelledby="t-build">
+      <div class="lead">
+        <h3>New construction &amp; remodels</h3>
+        <p>Plumbing for new single-family homes, additions, remodels and lower-level finishes — working with the best builders in the area.</p>
+        <a class="btn btn-light" href="tel:+12623338072">Call about a project</a>
+      </div>
+      <ol>
+        <li><div><b>New residential single-family homes</b><span>A specialty of the shop.</span></div></li>
+        <li><div><b>Additions</b><span>Plumbing for the space you're adding on.</span></div></li>
+        <li><div><b>Remodels</b><span>Free consultations to fit the scope to your lifestyle and budget.</span></div></li>
+        <li><div><b>Lower-level finishes</b><span>Plumbing for a finished lower level.</span></div></li>
+      </ol>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-home" aria-labelledby="t-home" hidden>
+      <div class="lead">
+        <h3>Service &amp; repair</h3>
+        <p>From a simple fixture replacement to a water heater. For emergency service, to get a free quote, or with questions, just email or give them a call.</p>
+        <a class="btn btn-light" href="tel:+12623338072">Call for service</a>
+      </div>
+      <ol>
+        <li><div><b>Fixture &amp; faucet replacement</b><span>Toilets, faucets and other fixtures.</span></div></li>
+        <li><div><b>Water heaters</b><span>Installation and service.</span></div></li>
+        <li><div><b>Leak detection</b><span>Finding and fixing the source.</span></div></li>
+        <li><div><b>Kohler ASR repairs</b><span>Kohler Authorized Service Representative repairs.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="asr" aria-label="Kohler Authorized Service Representative">
+  <div class="wrap">
+    <div class="tag">ASR</div>
+    <div>
+      <h2>Kohler Authorized Service Representative (ASR) repairs</h2>
+      <p>Repairs on Kohler fixtures from an authorized service representative in Waukesha.</p>
+    </div>
+    <a class="btn btn-primary" href="tel:+12623338072">Call about a Kohler repair</a>
+  </div>
+</section>
+
+<section class="people" id="about">
+  <div class="wrap grid">
+    <div class="owners">
+      <div class="mono" aria-hidden="true"><i>D</i><i>D</i></div>
+      <h2>Meet Darryl &amp; Debbie Michlig.</h2>
+      <p>As owners and operators of this small family business, Darryl and Debbie have over 70 years of combined plumbing knowledge and experience.</p>
+      <p>They pair the highest quality parts and equipment with a free consultation that explains every option, so you choose the scope of work that fits both your lifestyle and budget.</p>
+      <blockquote>“We strive to be in constant communication with our customers until the job is done.”<cite>Fox River Plumbing</cite></blockquote>
+    </div>
+    <div class="reviews">
+      <div class="score"><b>5.0</b><span aria-hidden="true">★</span></div>
+      <h3>on Google. What customers mention:</h3>
+      <ul>
+        <li>Attention to detail on new homes</li>
+        <li>Great communication with builders and trades</li>
+        <li>Honest, fair pricing</li>
+        <li>Quick help when something leaks</li>
+      </ul>
+      <a class="more" href="https://www.google.com/maps/place/Fox+River+Plumbing/@42.9838988,-88.237721,17z/data=!4m8!3m7!1s0x8805a73e6c501e8f:0x713afb6312fd486f!9m1!1b1?hl=en">Read the reviews on Google →</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <svg class="pipes" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%"><path d="M-20 440 H600 a40 40 0 0 0 40-40 V140 a40 40 0 0 1 40-40 H1480" fill="none" stroke="#B87333" stroke-width="8" opacity=".35"/></svg>
+  <div class="wrap">
+    <div>
+      <h2>A first look at your new site. <em>Experience matters.</em></h2>
+      <p class="l">Call for a free quote or with questions. Serving Waukesha &amp; Milwaukee Counties and surrounding areas.</p>
+      <div class="cta">
+        <a class="btn btn-light" href="tel:+12623338072"><svg aria-hidden="true"><use href="#phone"/></svg>Call (262) 333-8072</a>
+        <a class="btn btn-line" href="mailto:debm@foxriverplumbing.com?subject=Plumbing%20request">Email Fox River</a>
+      </div>
+    </div>
+    <div class="card">
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+12623338072">(262) 333-8072</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:debm@foxriverplumbing.com">debm@foxriverplumbing.com</a></dd></div>
+        <div><dt>Hours</dt><dd>7:00 am – 4:30 pm<small>Closed on holidays</small></dd></div>
+        <div><dt>Shop</dt><dd>1638 S West Ave, Unit A<small>Waukesha, WI 53189</small></dd></div>
+        <div><dt>Service area</dt><dd>Waukesha &amp; Milwaukee Counties<small>and surrounding areas</small></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="first">Fox River Plumbing, Inc</p>
+    <p>Website by Cream City Post · Independent website concept, not the official Fox River Plumbing, Inc site. Logo redrawn; services, owners, hours and contact details from foxriverplumbing.com; rating from Google.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-light" href="tel:+12623338072">Call (262) 333-8072</a>
+  <a class="btn btn-primary" href="mailto:debm@foxriverplumbing.com?subject=Plumbing%20request">Email</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function show(t,f){tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!on;});if(f)t.focus();}
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){show(b)});
+    b.addEventListener('keydown',function(e){var n=null;
+      if(e.key==='ArrowRight'||e.key==='ArrowDown')n=tabs[(i+1)%tabs.length];
+      if(e.key==='ArrowLeft'||e.key==='ArrowUp')n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault();show(n,true);}});
+  });
+})();
+</script>
+</body>
+</html>
