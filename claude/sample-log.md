@@ -200,3 +200,4 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - Nov 11, ~11:55 PM CT (scheduled run): session ends after 2 items (065, 066), 0 credits. No open revisions and no unbuilt briefs remain; next run should only check Gmail for new briefs/revisions. Logos traced with npm potrace (scratch install) for faithful SVGs.
 
 - in progress — CCP-072 (Nov 12, 12:32 PM CT, scheduled run)
+- in progress — CCP-073 (Nov 12, 1:30 PM CT, scheduled run)
