@@ -137,3 +137,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - done — CCP-060 v2 (Nov 11, Tyler chat): modern team/key-wall opening, oversized type and 1969 feature; 0 credits; commit 98e2e5e; live 1440/390 visually checked; public assets 200; ready 1a1cde2d1d1316ed confirmed SENT.
 
 - in progress — CCP-061 (2026-11-11 22:21 -06:00, scheduled run)
+
+- in progress — CCP-062 (2026-11-11 22:26 CT, scheduled run)
