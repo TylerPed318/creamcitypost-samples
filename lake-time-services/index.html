@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Lake Time Services — Website concept by Cream City Post</title>
+<meta name="description" content="Custom marine upholstery and mobile boat, PWC and trailer service across Lake Country, WI. Call 715-556-0685.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Lake Time Services","telephone":"+1-715-556-0685","email":"laketimemanagement@gmail.com","areaServed":"Lake Country, WI","url":"https://laketimeservices.com/","openingHours":"Mo-Fr 09:00-17:00"}
+</script>
+<style>
+:root{
+  --navy:#10243C;
+  --ink:#14202E;
+  --gold:#C49A5E;
+  --gold-soft:#E9D7BC;
+  --lake:#577F8C;
+  --mist:#F5F7F8;
+  --line:#DCE3E7;
+  --white:#FFFFFF;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Archivo,sans-serif;line-height:1.08;letter-spacing:-.02em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.eyebrow{font:700 12px/1 Archivo,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--lake)}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;font:700 16px/1 Archivo,sans-serif;text-decoration:none;transition:transform .15s,box-shadow .15s,background .15s}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(196,154,94,.35)}
+.btn-line{border:2px solid rgba(255,255,255,.45);color:var(--white)}
+.btn-line:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
+
+/* header */
+header{background:var(--navy);color:var(--white);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.08)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:74px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:52px;height:52px;background:var(--white);border-radius:50%;padding:3px}
+.brand b{font:800 20px/1 Archivo,sans-serif;letter-spacing:-.01em}
+.brand small{display:block;font:500 12px/1.3 Inter,sans-serif;color:var(--gold-soft);margin-top:4px}
+.hd .call{font:700 16px/1 Archivo,sans-serif;text-decoration:none;color:var(--navy);background:var(--gold);padding:13px 18px;border-radius:999px;white-space:nowrap}
+.hd .call:hover{background:#d3ad76}
+
+/* hero */
+.hero{background:var(--navy);color:var(--white);position:relative;overflow:hidden;padding:56px 0 0}
+.hero:before{content:"";position:absolute;inset:auto -10% -40% 30%;height:520px;background:radial-gradient(closest-side,rgba(87,127,140,.45),transparent);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:48px;align-items:end;position:relative}
+.hero-copy{padding-bottom:72px}
+.hero h1{font-size:clamp(38px,5.4vw,66px);font-weight:800;margin:16px 0 18px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);color:#cfd9e2;max-width:32em}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}
+.rating{display:inline-flex;align-items:center;gap:10px;font-size:15px;color:#cfd9e2}
+.rating .stars{color:var(--gold);letter-spacing:2px;font-size:16px}
+.hero .eyebrow{color:var(--gold-soft)}
+.porthole{position:relative;border-radius:var(--r) var(--r) 0 0;overflow:hidden;box-shadow:0 -10px 60px rgba(0,0,0,.35)}
+.porthole img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.porthole .tag{position:absolute;right:16px;top:16px;background:rgba(16,36,60,.82);backdrop-filter:blur(4px);color:var(--white);font:600 13px/1.3 Inter,sans-serif;padding:8px 12px;border-radius:10px}
+.wave{display:block;width:100%;height:46px;margin-top:-1px}
+
+/* proof strip */
+.proof{background:var(--white)}
+.proof ul{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:var(--r);margin:-8px 0 0;background:var(--white);position:relative;z-index:2}
+.proof li{padding:22px 22px;border-right:1px solid var(--line)}
+.proof li:last-child{border-right:0}
+.proof b{display:block;font:800 22px/1.1 Archivo,sans-serif;color:var(--navy)}
+.proof span{font-size:14px;color:#4b5a69}
+
+/* season */
+.season{margin:28px 0 0}
+.season div{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;background:var(--gold-soft);border-radius:14px;padding:16px 20px;font-weight:500;color:var(--navy)}
+.season strong{font:800 15px/1 Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+
+/* services picker */
+section{padding:84px 0}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:34px}
+.sec-head h2{font-size:clamp(30px,3.6vw,46px);color:var(--navy);margin-top:10px;max-width:16em}
+.sec-head p{max-width:30em;color:#4b5a69}
+.picker{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:28px}
+.tabs{display:flex;flex-direction:column;gap:8px}
+.tabs button{all:unset;cursor:pointer;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:14px;border:1px solid var(--line);font:700 17px/1.2 Archivo,sans-serif;color:var(--navy);background:var(--white);transition:background .15s,border-color .15s}
+.tabs button:hover{border-color:var(--lake)}
+.tabs button[aria-selected="true"]{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.tabs button .n{font:600 12px/1 Inter,sans-serif;color:var(--lake);min-width:22px}
+.tabs button[aria-selected="true"] .n{color:var(--gold)}
+.panel{background:var(--mist);border-radius:var(--r);padding:34px;min-height:100%}
+.panel[hidden]{display:none}
+.panel h3{font-size:30px;color:var(--navy);margin-bottom:10px}
+.panel p{color:#3b4a59;max-width:36em}
+.panel ul{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px;margin:22px 0 26px}
+.panel li{position:relative;padding-left:22px;font-size:16px}
+.panel li:before{content:"";position:absolute;left:0;top:.62em;width:10px;height:10px;border-radius:50%;border:2px solid var(--gold)}
+.panel .btn-gold{min-height:46px}
+
+/* gallery */
+.gallery{background:var(--mist)}
+.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.shots figure{background:var(--white);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.shots img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .4s}
+.shots figure:hover img{transform:scale(1.03)}
+.shots figcaption{padding:14px 18px;font:600 15px/1.3 Archivo,sans-serif;color:var(--navy)}
+
+/* reviews + contact */
+.close-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;align-items:stretch}
+.reviews{background:var(--navy);color:var(--white);border-radius:var(--r);padding:38px;position:relative;overflow:hidden}
+.reviews .big{font:800 clamp(64px,8vw,96px)/1 Archivo,sans-serif;color:var(--gold)}
+.reviews .stars{color:var(--gold);letter-spacing:4px;font-size:20px;margin:6px 0 4px}
+.reviews h2{font-size:clamp(26px,2.8vw,34px);margin:22px 0 14px}
+.reviews ul{list-style:none;display:grid;gap:12px;margin-bottom:24px}
+.reviews li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px 16px;color:#d9e2ea}
+.reviews li b{color:var(--white);font-weight:600}
+.reviews a.more{color:var(--gold-soft);font-weight:600}
+.contact{border:1px solid var(--line);border-radius:var(--r);padding:34px;display:flex;flex-direction:column;gap:20px}
+.contact h2{font-size:clamp(26px,2.8vw,34px);color:var(--navy)}
+.contact dl{display:grid;gap:16px}
+.contact dt{font:700 12px/1 Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--lake);margin-bottom:5px}
+.contact dd a{font-weight:600;color:var(--navy);text-decoration-color:var(--gold);text-underline-offset:3px;word-break:break-word}
+.contact .tel{font:800 28px/1 Archivo,sans-serif;text-decoration:none!important}
+.contact .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:#1b3657}
+
+/* closer */
+.closer{background:var(--navy);color:var(--white);padding:70px 0 40px;text-align:center}
+.closer img{width:96px;height:96px;margin:0 auto 18px;background:var(--white);border-radius:50%;padding:4px}
+.closer h2{font-size:clamp(28px,3.4vw,42px);margin-bottom:12px}
+.closer p{color:#cfd9e2;max-width:34em;margin:0 auto 26px}
+footer{background:#0b1a2c;color:#93a4b4;font-size:13px;padding:22px 0;text-align:center}
+footer a{color:#c7d3de}
+
+/* mobile call bar */
+.mbar{display:none}
+@media (max-width:900px){
+  .hero{padding-top:36px}
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+  .hero-copy{padding-bottom:0}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(2){border-right:0}
+  .proof li:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .picker{grid-template-columns:minmax(0,1fr)}
+  .tabs{flex-direction:row;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+  .tabs button{flex:0 0 auto;padding:12px 16px;font-size:15px}
+  .close-grid{grid-template-columns:minmax(0,1fr)}
+  .shots{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:74px}
+  section{padding:60px 0}
+  .brand small{display:none}
+  .hd .call{display:none}
+  .panel{padding:24px}
+  .panel ul{grid-template-columns:minmax(0,1fr)}
+  .shots{grid-template-columns:minmax(0,1fr)}
+  .shots img{aspect-ratio:4/3}
+  .reviews,.contact{padding:26px}
+  .proof li{padding:16px}
+  .proof b{font-size:19px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--navy);padding:10px 12px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:12px;font:700 15px/1 Archivo,sans-serif;text-decoration:none}
+  .mbar .c{background:var(--gold);color:var(--navy)}
+  .mbar .q{border:2px solid rgba(255,255,255,.4);color:var(--white)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="Lake Time Services home">
+      <img src="img/logo.png" alt="Lake Time logo" width="219" height="220">
+      <span><b>Lake Time Services</b><small>Custom interiors. Complete marine care.</small></span>
+    </a>
+    <a class="call" href="tel:+17155560685">Call 715-556-0685</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Lake Country, WI · Marine upholstery &amp; mobile service</span>
+        <h1>Fresh boat interiors, <em>made here in Lake Country.</em></h1>
+        <p class="lead">Custom seats, vinyl repair and foam upgrades in marine-grade, UV-resistant materials, plus mobile boat, PWC and trailer service and winterization.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="tel:+17155560685">Call 715-556-0685</a>
+          <a class="btn btn-line" href="https://laketimeservices.com/contact">Request a quote</a>
+        </div>
+        <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 on Google</div>
+      </div>
+      <figure class="porthole">
+        <img src="img/hero.jpg" alt="Finished white and gray ski boat bow seating with matching diamond-stitched pillows, on the water" width="1800" height="1350">
+        <figcaption class="tag">Ski boat bow seating, finished</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="proof">
+    <div class="wrap">
+      <ul>
+        <li><b>5.0 ★</b><span>Rating on Google</span></li>
+        <li><b>Mobile</b><span>Boat, PWC &amp; trailer service</span></li>
+        <li><b>UV-resistant</b><span>Marine-grade materials</span></li>
+        <li><b>Mon–Fri 9–5</b><span>Weekends &amp; emergencies: contact us</span></li>
+      </ul>
+      <div class="season"><div><strong>Winter is upholstery season</strong> Plan your interior project now and have it ready for launch. Call to get on the schedule.</div></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">What we do</span><h2>Pick a service. See exactly what's included.</h2></div>
+        <p>Everything on the list, one tap at a time. Every job gets the same care we'd give our own vessels.</p>
+      </div>
+      <div class="picker">
+        <div class="tabs" role="tablist" aria-label="Services">
+          <button role="tab" id="t1" aria-controls="p1" aria-selected="true"><span class="n">01</span>Upholstery</button>
+          <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><span class="n">02</span>Mobile Boat Service</button>
+          <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><span class="n">03</span>Mobile PWC Service</button>
+          <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><span class="n">04</span>Winterization</button>
+          <button role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1"><span class="n">05</span>Mobile Trailer Maintenance</button>
+        </div>
+        <div>
+          <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+            <h3>Upholstery</h3>
+            <p>New seats, refreshed vinyl and colors that match, in materials made for sun and water.</p>
+            <ul><li>Custom seat design and fabrication</li><li>Vinyl and fabric repair</li><li>Foam replacement and upgrades</li><li>Color matching and customization</li><li>Snap and zipper replacement</li><li>Marine-grade UV-resistant materials</li></ul>
+            <a class="btn btn-gold" href="tel:+17155560685">Talk upholstery: 715-556-0685</a>
+          </div>
+          <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+            <h3>Mobile Boat Service</h3>
+            <p>Engine and systems work, done where your boat is.</p>
+            <ul><li>Engine diagnostics and tune-ups</li><li>Oil and filter changes</li><li>Fuel system maintenance</li><li>Electrical system repairs</li><li>Propeller inspection and replacement</li><li>Hull cleaning and maintenance</li></ul>
+            <a class="btn btn-gold" href="tel:+17155560685">Book a service call</a>
+          </div>
+          <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+            <h3>Mobile PWC Service</h3>
+            <p>Keep the personal watercraft running all season.</p>
+            <ul><li>Impeller inspection and replacement</li><li>Carburetor cleaning and adjustment</li><li>Cooling system maintenance</li><li>Battery testing and replacement</li><li>Safety equipment inspection</li></ul>
+            <a class="btn btn-gold" href="tel:+17155560685">Book PWC service</a>
+          </div>
+          <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+            <h3>Winterization</h3>
+            <p>Put the boat away right, so spring starts on time.</p>
+            <ul><li>Engine antifreeze treatment</li><li>Fuel stabilization</li><li>Battery removal and storage</li><li>Water system drainage</li><li>Lubrication of moving parts</li><li>Interior protection and cleaning</li></ul>
+            <a class="btn btn-gold" href="tel:+17155560685">Ask about winterization</a>
+          </div>
+          <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+            <h3>Mobile Trailer Maintenance</h3>
+            <p>The trailer carries the boat. Keep it safe on the road.</p>
+            <ul><li>Structural inspections</li><li>Brake system maintenance</li><li>Electrical repairs</li><li>Storage preparation</li></ul>
+            <a class="btn btn-gold" href="tel:+17155560685">Schedule trailer service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">Real work, real boats</span><h2>Recent interiors, photographed on the job.</h2></div>
+        <p>Real photos of finished seating, no stock images.</p>
+      </div>
+      <div class="shots">
+        <figure><img src="img/captain-chair.jpg" alt="Gray pontoon captain's chair with red piping and black accents" width="900" height="1125" loading="lazy"><figcaption>Pontoon captain's chair</figcaption></figure>
+        <figure><img src="img/bench-piping.jpg" alt="Gray curved pontoon bench with red piping" width="900" height="1125" loading="lazy"><figcaption>Pontoon bench, piping detail</figcaption></figure>
+        <figure><img src="img/lounge-seat.jpg" alt="Gray pontoon lounge seat with red piping at the dock" width="900" height="1125" loading="lazy"><figcaption>Pontoon lounge seating</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap close-grid">
+      <div class="reviews">
+        <span class="eyebrow" style="color:var(--gold-soft)">What boaters say</span>
+        <div class="big">5.0</div>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <div style="color:#cfd9e2">on Google</div>
+        <h2>Reviews keep coming back to the same things.</h2>
+        <ul>
+          <li><b>Ski boat interiors</b> that look brand new again</li>
+          <li><b>Colors that match</b>, with plenty of vinyl samples to choose from</li>
+          <li><b>Responsive, fair-priced</b> mobile engine service</li>
+        </ul>
+        <a class="more" href="https://www.google.com/maps/place/Lake+Time+Services/@43.0716976,-88.2957957,17z/data=!4m6!3m5!1s0x8805af0ebb9b42ed:0xf51a15d0f81d5ff5!8m2!3d43.0716976!4d-88.2957957!16s%2Fg%2F11z8h179lj">Read the reviews on Google →</a>
+      </div>
+      <div class="contact" id="contact">
+        <div><span class="eyebrow">Get in touch</span><h2 style="margin-top:10px">Serving the greater Lake Country area.</h2></div>
+        <dl>
+          <div><dt>Call</dt><dd><a class="tel" href="tel:+17155560685">715-556-0685</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:laketimemanagement@gmail.com">laketimemanagement@gmail.com</a> <span style="color:#4b5a69;font-size:14px">(reply within 24 hours)</span></dd></div>
+          <div><dt>Hours</dt><dd>Monday–Friday 9am–5pm.<br>Contact us for weekend or emergency services.</dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn btn-gold" href="tel:+17155560685">Call now</a>
+          <a class="btn btn-navy" href="https://laketimeservices.com/contact">Request a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="closer">
+    <div class="wrap">
+      <img src="img/logo.png" alt="" width="219" height="220">
+      <h2>Made for more Lake Time.</h2>
+      <p>This is a first look at what your site could be: your real work up front, your 5.0 rating where boaters can see it, and one tap to call.</p>
+      <a class="btn btn-gold" href="tel:+17155560685">Call 715-556-0685</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Website by Cream City Post · Independent website concept, not the official Lake Time Services site. Logo, service list and hours from laketimeservices.com; photos and rating from their Google listing.</div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="c" href="tel:+17155560685">Call 715-556-0685</a>
+  <a class="q" href="https://laketimeservices.com/contact">Get a quote</a>
+</nav>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function show(t){
+    tabs.forEach(function(b){
+      var on=b===t;
+      b.setAttribute('aria-selected',on);
+      b.tabIndex=on?0:-1;
+      document.getElementById(b.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){show(b)});
+    b.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'||e.key==='ArrowDown'?1:e.key==='ArrowLeft'||e.key==='ArrowUp'?-1:0;
+      if(!d)return;e.preventDefault();
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n);
+    });
+  });
+})();
+</script>
+</body>
+</html>
