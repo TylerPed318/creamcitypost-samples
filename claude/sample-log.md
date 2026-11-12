@@ -24,6 +24,7 @@
 - Nov 11, ~8:10 PM CT (scheduled run): CCP-040 v1 done, live and emailed (0 credits). Session ends after 3 items (033, 034, 040). Open: Dan not named; no named quotes ("5.0 on Google" + themes). Next up, by brief time: CCP-049 Lake Time Services, CCP-051 Gary's Auto Repair, CCP-052 O&W Heating, then 054–066.
 - Nov 11, ~8:45 PM CT (scheduled run): CCP-049 v1 done, live and emailed (0 credits). Open: no named quotes or count ("5.0 on Google" + themes); Matt not named; no before/after (composites unconfirmed), so the interactive is a service picker; no town/lake names.
 - Nov 11, ~9:00 PM CT (scheduled run): CCP-051 v1 done, live and emailed (0 credits). Open: Saturday hours conflict (coupon says Sat 8–Noon; used contact-page "weekends closed"); no coupon amounts; no named quotes/count ("4.7 on Google"); only one usable interior photo.
+- in progress — CCP-052 (Nov 11, 9:02 PM CT, scheduled run)
 
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
