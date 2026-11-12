@@ -22,6 +22,7 @@
 - Nov 11, ~7:45 PM CT (scheduled run): CCP-033 v1 done, live and emailed (0 credits). Open: no named review quotes or count ("4.8 on Google" + themes); Sergio/owner, "family-run" and Spanish not stated pending Tyler; plate blurred on lift photo.
 - Nov 11, ~7:55 PM CT (scheduled run): CCP-034 v1 done, live and emailed (0 credits). Open: Jeff/owner not named; no Text button (SMS unconfirmed); "What to expect" steps are the brief's suggested process, to confirm with the owner.
 - Nov 11, ~8:10 PM CT (scheduled run): CCP-040 v1 done, live and emailed (0 credits). Session ends after 3 items (033, 034, 040). Open: Dan not named; no named quotes ("5.0 on Google" + themes). Next up, by brief time: CCP-049 Lake Time Services, CCP-051 Gary's Auto Repair, CCP-052 O&W Heating, then 054–066.
+- in progress — CCP-049 (Nov 11, 8:31 PM CT, scheduled run)
 
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
