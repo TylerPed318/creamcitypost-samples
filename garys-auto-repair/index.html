@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Gary's Auto Repair — Website concept by Cream City Post</title>
+<meta name="description" content="Gary's Auto, Delafield's bumper-to-bumper service center since 1981. All makes and models, with programming software for BMW and Mercedes. 703 Main St · 262-646-8507.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C8102E'/%3E%3Ctext x='32' y='47' font-family='Arial Black,Arial' font-weight='900' font-size='42' text-anchor='middle' fill='%23fff'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Gary's Auto Repair, Inc.","telephone":"+1-262-646-8507","address":{"@type":"PostalAddress","streetAddress":"703 Main Street","addressLocality":"Delafield","addressRegion":"WI","postalCode":"53018"},"foundingDate":"1981","openingHours":["Mo-Th 07:30-18:00","Fr 07:30-17:00"],"url":"https://garysautorepair.com/"}
+</script>
+<style>
+:root{
+  --red:#C8102E;
+  --red-dk:#8E0B1F;
+  --black:#141414;
+  --graphite:#2B2B2B;
+  --green:#7E8B6A;
+  --paper:#F3F3F1;
+  --white:#FFFFFF;
+  --muted:#5d5d5a;
+  --line:#dcdcd6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--graphite);background:var(--white);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;font-weight:800;line-height:.98;text-transform:uppercase;letter-spacing:.005em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.kick{display:inline-flex;align-items:center;gap:10px;font:700 15px/1 "Barlow Condensed",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.kick:before{content:"";width:28px;height:3px;background:currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;font:700 20px/1 "Barlow Condensed",sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:background .15s,transform .15s,color .15s}
+.btn:hover{transform:translateY(-2px)}
+a:focus-visible,button:focus-visible{outline:3px solid #ffb4c0;outline-offset:3px}
+.btn-red{background:var(--red);color:var(--white)}
+.btn-red:hover{background:var(--red-dk)}
+.btn-ghost{border:2px solid rgba(255,255,255,.4);color:var(--white)}
+.btn-ghost:hover{border-color:var(--white)}
+
+/* top */
+.topbar{background:var(--red);color:var(--white);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap}
+.topbar a{font-weight:600;text-decoration:none}
+header{background:var(--black);position:sticky;top:0;z-index:20;border-bottom:3px solid var(--red)}
+.hd{display:flex;justify-content:space-between;align-items:center;min-height:78px;gap:16px}
+.logo img{height:62px;width:auto}
+.hd .since{font:700 15px/1.1 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#bdbdb6;border-left:1px solid #3a3a3a;padding-left:16px;margin-left:16px}
+.hd-l{display:flex;align-items:center}
+.hd .btn{min-height:46px;font-size:19px}
+
+/* hero */
+.hero{background:var(--black);color:var(--white);padding:56px 0 64px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:0;bottom:0;width:46%;background:repeating-linear-gradient(115deg,transparent 0 22px,rgba(255,255,255,.025) 22px 24px);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:48px;align-items:center;position:relative;z-index:1}
+.hero h1{font-size:clamp(46px,6.4vw,88px);margin:18px 0 20px}
+.hero h1 span{color:var(--red)}
+.hero p{color:#c9c9c3;font-size:clamp(17px,1.5vw,19px);max-width:33em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.frame{position:relative}
+.frame img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:62% 50%;border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.stamp{position:absolute;left:-18px;bottom:-22px;background:var(--red);color:var(--white);padding:16px 22px;border-radius:4px;transform:rotate(-3deg);box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.stamp b{display:block;font:800 40px/0.9 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.stamp small{font:700 14px/1 "Barlow Condensed",sans-serif;letter-spacing:.16em;text-transform:uppercase}
+
+/* trust */
+.trust{background:var(--paper);border-bottom:1px solid var(--line)}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.trust li{padding:22px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.trust li:last-child{border-right:0}
+.trust b{font:800 26px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;color:var(--black)}
+.trust b em{font-style:normal;color:var(--red)}
+.trust span{font-size:14px;color:var(--muted);margin-top:4px}
+
+section{padding:88px 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:38px}
+.head h2{font-size:clamp(40px,5vw,64px);color:var(--black);margin-top:12px}
+.head p{color:var(--muted);max-width:34em}
+
+/* make picker */
+.makes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:stretch}
+.chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-content:start}
+.chips button{all:unset;cursor:pointer;text-align:center;padding:16px 8px;border:2px solid var(--line);border-radius:4px;font:700 22px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.03em;color:var(--black);transition:border-color .15s,background .15s,color .15s}
+.chips button:hover{border-color:var(--black)}
+.chips button[aria-pressed="true"]{background:var(--black);border-color:var(--black);color:var(--white);box-shadow:inset 0 -4px 0 var(--red)}
+.readout{background:var(--black);color:var(--white);border-radius:6px;padding:36px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:320px}
+.readout:before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;border:18px solid rgba(200,16,46,.18)}
+.readout .lbl{font:700 14px/1 "Barlow Condensed",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#9b9b95}
+.readout h3{font-size:clamp(44px,5vw,64px);margin:10px 0 16px;color:var(--white)}
+.readout p{font-size:19px;color:#e2e2dc;max-width:28em;position:relative}
+.readout .foot{margin-top:24px;font-size:14px;color:#9b9b95;border-top:1px solid #333;padding-top:16px}
+
+/* shop + services */
+.shop{background:var(--paper)}
+.shop-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start}
+.shop figure img{border-radius:6px;width:100%;aspect-ratio:3/2;object-fit:cover}
+.shop figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+.facts{margin-top:26px;display:grid;gap:12px}
+.facts div{background:var(--white);border-left:4px solid var(--green);padding:14px 18px;border-radius:0 4px 4px 0;font-size:16px}
+.svc{columns:2;column-gap:32px;list-style:none;margin:10px 0 28px}
+.svc li{break-inside:avoid;padding:11px 0;border-bottom:1px solid var(--line);font-weight:500;display:flex;gap:12px}
+.svc li:before{content:"";flex:0 0 8px;height:8px;margin-top:.6em;background:var(--red);transform:rotate(45deg)}
+.belt{background:var(--black);color:var(--white);padding:26px 28px;border-radius:6px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center}
+.belt b{font:800 28px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;color:var(--red);writing-mode:horizontal-tb}
+.belt p{color:#d6d6d0;font-size:16px}
+
+/* reviews + visit */
+.final{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.rating{border:2px solid var(--black);border-radius:6px;padding:36px;display:flex;flex-direction:column}
+.rating .num{display:flex;align-items:baseline;gap:14px}
+.rating .num b{font:800 96px/0.9 "Barlow Condensed",sans-serif;color:var(--black)}
+.rating .stars{color:var(--red);font-size:24px;letter-spacing:3px}
+.rating h3{font-size:34px;color:var(--black);margin:20px 0 14px}
+.rating ul{list-style:none;display:grid;gap:10px;margin-bottom:22px}
+.rating li{padding-left:28px;position:relative}
+.rating li:before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:700}
+.rating a{color:var(--red);font-weight:600;margin-top:auto}
+.visit{background:var(--black);color:var(--white);border-radius:6px;padding:36px}
+.visit h3{font-size:40px;margin-bottom:18px}
+.visit .tel{display:block;font:800 44px/1 "Barlow Condensed",sans-serif;color:var(--white);text-decoration:none;margin-bottom:20px}
+.visit .tel:hover{color:#ff8a9c}
+.visit address{font-style:normal;color:#d6d6d0;margin-bottom:20px}
+.visit address a{color:var(--white);font-weight:600;text-underline-offset:3px}
+.hours{width:100%;border-collapse:collapse;margin-bottom:22px;font-size:16px}
+.hours td{padding:9px 0;border-bottom:1px solid #2f2f2f;color:#d6d6d0}
+.hours td:last-child{text-align:right;color:var(--white);font-weight:600;white-space:nowrap;padding-left:10px}
+.hours tr.today td{color:var(--white)}
+.hours tr.today td:first-child:after{content:" · today";color:var(--red);font-weight:600}
+.open{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;margin-bottom:16px;color:#d6d6d0}
+.open i{width:10px;height:10px;border-radius:50%;background:#777}
+.open.on i{background:#3ccf6b;box-shadow:0 0 0 4px rgba(60,207,107,.2)}
+.specials{font-size:15px;color:#bdbdb6;border-top:1px dashed #444;padding-top:16px;margin-top:6px}
+
+.closer{background:var(--red);color:var(--white);padding:64px 0;text-align:center}
+.closer h2{font-size:clamp(38px,5vw,60px);margin-bottom:12px}
+.closer p{max-width:34em;margin:0 auto 26px;color:#ffe3e7}
+.closer .btn{background:var(--black);color:var(--white)}
+.closer .btn:hover{background:#000}
+footer{background:var(--black);color:#8f8f89;font-size:13px;padding:22px 0;text-align:center}
+
+.mbar{display:none}
+@media (max-width:960px){
+  .hero-grid,.makes,.shop-grid,.final,.head{grid-template-columns:minmax(0,1fr)}
+  .trust ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .trust li{border-bottom:1px solid var(--line)}
+  .trust li:nth-child(2n){border-right:0}
+  .trust li:last-child{grid-column:1/-1}
+  .stamp{left:12px;bottom:-18px}
+  .hd .since{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:74px}
+  section{padding:60px 0}
+  .topbar .hide-s{display:none}
+  .hd .btn{display:none}
+  .logo img{height:52px}
+  .hero{padding:36px 0 54px}
+  .chips{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .readout,.rating,.visit{padding:26px}
+  .svc{columns:1}
+  .belt{grid-template-columns:minmax(0,1fr)}
+  .rating .num b{font-size:80px}
+  .visit .tel{font-size:38px}
+  .hours{font-size:15px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--black);padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:3px solid var(--red)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:4px;font:700 19px/1 "Barlow Condensed",sans-serif;letter-spacing:.05em;text-transform:uppercase;text-decoration:none}
+  .mbar .c{background:var(--red);color:var(--white)}
+  .mbar .d{border:2px solid #555;color:var(--white)}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>703 Main Street, Delafield<span class="hide-s"> · Mon–Thu 7:30–6 · Fri 7:30–5</span></span>
+    <a href="tel:+12626468507">262-646-8507</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap hd">
+    <div class="hd-l">
+      <a class="logo" href="#top" aria-label="Gary's Auto home"><img src="img/logo.jpg" alt="Gary's Auto" width="370" height="175"></a>
+      <span class="since">A Bumper to Bumper<br>Service Center</span>
+    </div>
+    <a class="btn btn-red" href="tel:+12626468507">Call 262-646-8507</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kick" style="color:#ff6b80">Delafield, WI · Est. 1981</span>
+        <h1>Delafield's all-makes shop. <span>We know your cars.</span></h1>
+        <p>Imports and domestics, bumper to bumper. ASE Master and ASE Certified technicians, a four-bay shop with its own research room, and programming software for BMW and Mercedes.</p>
+        <div class="ctas">
+          <a class="btn btn-red" href="tel:+12626468507">Call 262-646-8507</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Gary%27s+Auto+Repair+703+Main+St+Delafield+WI+53018">Get directions</a>
+        </div>
+      </div>
+      <div class="frame">
+        <img src="img/storefront.jpg" alt="Gary's Auto storefront on Main Street in Delafield, with a car up on the lift in the open bay" width="1600" height="900">
+        <div class="stamp"><b>45 years</b><small>Serving Delafield</small></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap">
+      <ul>
+        <li><b>Est. <em>1981</em></b><span>Serving Delafield</span></li>
+        <li><b>2 yr / 24k</b><span>Warranty on most repairs</span></li>
+        <li><b>ASE</b><span>Master &amp; Certified Technicians</span></li>
+        <li><b>BBB</b><span>Accredited business</span></li>
+        <li><b><em>4.7 ★</em> Google</b><span>Rating on Google</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="makes">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kick">Make by make</span><h2>Pick your car. See what we know about it.</h2></div>
+        <p>We service all makes and models. These are the problems we see most, in our own words, for the cars Lake Country drives.</p>
+      </div>
+      <div class="makes">
+        <div class="chips" role="group" aria-label="Choose a make">
+          <button aria-pressed="true" data-m="0">BMW</button>
+          <button aria-pressed="false" data-m="1">Mini</button>
+          <button aria-pressed="false" data-m="2">Mercedes</button>
+          <button aria-pressed="false" data-m="3">VW</button>
+          <button aria-pressed="false" data-m="4">Audi</button>
+          <button aria-pressed="false" data-m="5">Volvo</button>
+          <button aria-pressed="false" data-m="6">Subaru</button>
+          <button aria-pressed="false" data-m="7">Lexus/Toyota</button>
+          <button aria-pressed="false" data-m="8">Acura/Honda</button>
+          <button aria-pressed="false" data-m="9" style="grid-column:1/-1">Kia · Hyundai · Ford · GM · Dodge</button>
+        </div>
+        <div class="readout" aria-live="polite">
+          <div>
+            <span class="lbl">We know your</span>
+            <h3 id="mk">BMW</h3>
+            <p id="mt">Twin turbo systems, X drive, oil consumption problems, breather system troubles. We have the programming licenses and software for BMWs.</p>
+          </div>
+          <div class="foot">We service all makes &amp; models. Not sure? Call and ask: 262-646-8507.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop">
+    <div class="wrap shop-grid">
+      <div>
+        <figure>
+          <img src="img/technician.jpg" alt="Gary's Auto technician balancing a tire in the shop" width="1024" height="683" loading="lazy">
+          <figcaption>Tire balancing in one of our four bays.</figcaption>
+        </figure>
+        <div class="facts">
+          <div><strong>3,000 sq ft, four bays</strong>, and a separate research room for the most current computerized repair information and technical bulletins.</div>
+          <div><strong>Fixed right the first time</strong> by ASE Master Technicians, ASE Certified Technicians and LT1 Technicians.</div>
+        </div>
+      </div>
+      <div>
+        <span class="kick">Bumper to bumper</span>
+        <h2 style="font-size:clamp(40px,5vw,64px);color:var(--black);margin:12px 0 18px">Service menu</h2>
+        <ul class="svc">
+          <li>Factory recommended maintenance</li>
+          <li>Diagnostic services</li>
+          <li>Complete vehicle inspection</li>
+          <li>Oil change</li>
+          <li>Engine tune-up</li>
+          <li>Timing belt replacement</li>
+          <li>Brake fluid flush</li>
+          <li>Coolant system flush</li>
+          <li>Air conditioner systems service</li>
+          <li>Automatic climate control service</li>
+          <li>Four wheel alignment</li>
+          <li>Tire balancing &amp; rotation</li>
+          <li>Transmission fluid &amp; filter change</li>
+          <li>Transmission replacement</li>
+          <li>Engine replacement</li>
+          <li>MotoVac fuel injection flush</li>
+        </ul>
+        <div class="belt">
+          <b>Timing belts</b>
+          <p>We always include new idler and tension pulleys, and timing-belt-driven water pumps, in our timing belt replacement service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap final">
+      <div class="rating">
+        <span class="kick">What drivers say</span>
+        <div class="num" style="margin-top:14px"><b>4.7</b><div><div class="stars" aria-label="Rated 4.7 out of 5">★★★★★</div><div style="color:var(--muted)">on Google</div></div></div>
+        <h3>Honest quotes. Quick turnaround.</h3>
+        <ul>
+          <li>Reviewers call out honest, affordable repairs, sometimes for a fraction of another shop's quote.</li>
+          <li>Problems spotted and fixed in time for vacations and deadlines.</li>
+          <li>A professional front office that explains the work and a family-like atmosphere.</li>
+        </ul>
+        <a href="https://www.google.com/maps/search/Gary's+Auto+Repair+703+Main+St+Delafield+WI">Read the reviews on Google →</a>
+      </div>
+      <div class="visit" id="visit">
+        <h3>Visit the shop</h3>
+        <a class="tel" href="tel:+12626468507">262-646-8507</a>
+        <address>703 Main Street, Delafield, WI 53018<br><a href="https://www.google.com/maps/search/?api=1&query=Gary%27s+Auto+Repair+703+Main+St+Delafield+WI+53018">Get directions</a></address>
+        <div class="open" id="open"><i></i><span>Hours</span></div>
+        <table class="hours" aria-label="Hours">
+          <tr data-d="1,2,3,4"><td>Monday – Thursday</td><td>7:30 AM – 6:00 PM</td></tr>
+          <tr data-d="5"><td>Friday</td><td>7:30 AM – 5:00 PM</td></tr>
+          <tr data-d="0,6"><td>Saturday &amp; Sunday</td><td>Closed</td></tr>
+        </table>
+        <div class="specials">Ask about current specials when you call. We accept Visa, MasterCard, Discover, cash and check.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="closer">
+    <div class="wrap">
+      <h2>45 years on Main Street.</h2>
+      <p>This is a first look at a site built around what makes Gary's different: the know-how for your car, the warranty, and one tap to call.</p>
+      <a class="btn" href="tel:+12626468507">Call 262-646-8507</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Website by Cream City Post · Independent website concept, not the official Gary's Auto Repair site. Logo, photos, services, hours and make-by-make notes from garysautorepair.com; rating from their Google listing.</div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="c" href="tel:+12626468507">Call now</a>
+  <a class="d" href="https://www.google.com/maps/search/?api=1&query=Gary%27s+Auto+Repair+703+Main+St+Delafield+WI+53018">Directions</a>
+</nav>
+
+<script>
+(function(){
+  var M=[
+    ["BMW","Twin turbo systems, X drive, oil consumption problems, breather system troubles. We have the programming licenses and software for BMWs."],
+    ["Mini","Variable transmission systems and carbon build up problems. We have the Walnut Blasting System on site!"],
+    ["Mercedes","Engine light problems, camshaft timing problems, power windows, power top systems. We have the programming licenses and software for Mercedes."],
+    ["VW","Emissions failures and engine light problems. We do coding/programming on VWs."],
+    ["Audi","Fluid leaks, engine light problems. We do coding and programming on Audis."],
+    ["Volvo","5-cylinder turbo engines, all wheel drive systems, throttle body failures."],
+    ["Subaru","Timing belt systems, all wheel drive systems, oil and coolant leaks, head gasket failures."],
+    ["Lexus/Toyota","Timing belt systems, tire pressure monitoring systems, emissions failures. We have Lexus/Toyota programming capabilities."],
+    ["Acura/Honda","Variable timing systems."],
+    ["All makes","Kia, Hyundai, Ford, Chevy/GM, Dodge… we could go on all day. We service all makes & models."]
+  ];
+  var bs=[].slice.call(document.querySelectorAll('.chips button')),k=document.getElementById('mk'),t=document.getElementById('mt');
+  bs.forEach(function(b){b.addEventListener('click',function(){
+    bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    var m=M[+b.dataset.m];k.textContent=m[0];t.textContent=m[1];
+  })});
+  // open-now, America/Chicago
+  try{
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date()),o={};
+    p.forEach(function(x){o[x.type]=x.value});
+    var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),mins=(+o.hour%24)*60+(+o.minute);
+    var close=d>=1&&d<=4?1080:d===5?1020:0,on=close&&mins>=450&&mins<close;
+    var el=document.getElementById('open');el.classList.toggle('on',!!on);
+    el.querySelector('span').textContent=on?'Open now':'Closed now';
+    [].forEach.call(document.querySelectorAll('.hours tr'),function(r){if(r.dataset.d.split(',').indexOf(String(d))>-1)r.classList.add('today')});
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
