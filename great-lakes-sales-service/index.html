@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Great Lakes Sales &amp; Service — Website concept by Cream City Post</title>
+<meta name="description" content="Locally owned auto repair, maintenance and tires in Nashotah, WI for over 40 years. Free loaner cars and shuttle service.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230055A5'/%3E%3Cpath d='M14 46A21 21 0 1 1 50 46' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M14 46A21 21 0 0 1 21 18' fill='none' stroke='%23CC0100' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M32 38L45 22' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='38' r='5' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#C8102E;
+  --red-logo:#CC0100;
+  --red-ink:#A50D26;
+  --blue:#0055A5;
+  --blue-ink:#00427F;
+  --navy:#13294B;
+  --navy-2:#0D1E38;
+  --steel:#6B7280;
+  --steel-ink:#4B5260;
+  --light:#F3F4F6;
+  --line:#DCE0E6;
+  --white:#FFFFFF;
+  --text:#1B2433;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+  --r:14px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--text);background:var(--white);line-height:1.55;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #F2B705;outline-offset:3px;border-radius:6px}
+.wrap{width:min(var(--wrap),100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;margin:0;letter-spacing:.005em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* top bar */
+.topbar{background:var(--navy);color:#E6EBF3;font-size:13.5px}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:space-between;padding:8px 0}
+.topbar span{display:inline-flex;align-items:center;gap:7px}
+.topbar b{color:#fff;font-weight:600}
+.topbar .dot{width:7px;height:7px;border-radius:50%;background:var(--red-logo);box-shadow:0 0 0 3px rgba(204,1,0,.25)}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:saturate(1.4) blur(6px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:20px;min-height:76px}
+.brand{display:block;color:#111;flex:0 0 auto;line-height:0}
+.brand svg{width:150px;height:auto;display:block}
+nav.main{display:flex;gap:4px;margin-left:auto}
+nav.main a{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--navy);padding:12px 12px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center}
+nav.main a:hover{background:var(--light);color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:10px;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;transition:transform .15s ease,background-color .15s ease,box-shadow .15s ease;border:2px solid transparent;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:0 0 auto}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 6px 0 var(--red-ink)}
+.btn-red:hover{background:var(--red-ink);transform:translateY(2px);box-shadow:0 4px 0 #7d0a1d}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 6px 0 var(--navy)}
+.btn-blue:hover{background:var(--blue-ink);transform:translateY(2px);box-shadow:0 4px 0 var(--navy)}
+.btn-ghost{border-color:currentColor;color:var(--navy);background:transparent}
+.btn-ghost:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+header .btn{min-height:46px;font-size:19px;padding:10px 18px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(36px,6vw,72px) 0 clamp(48px,7vw,88px);background:#fff}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,56px);align-items:center}
+.eyebrow{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:13px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin:0 0 18px}
+.eyebrow i{font-style:normal;color:var(--red)}
+.hero h1{font-size:clamp(44px,6.4vw,84px);text-transform:uppercase;color:var(--navy)}
+.hero h1 .hl{color:var(--blue);font-style:italic;position:relative;display:inline-block;padding-bottom:10px}
+.hero h1 .hl::after{content:"";position:absolute;left:0;right:6%;bottom:0;height:9px;background:
+  repeating-linear-gradient(90deg,var(--red) 0 14px,transparent 14px 19px);transform:skewX(-20deg);border-radius:2px}
+.hero p.sub{font-size:clamp(17px,1.6vw,19px);color:#2E3747;max-width:34em;margin:22px 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px 14px}
+.hero .owners{margin:26px 0 0;font-size:14px;color:var(--steel-ink);display:flex;gap:10px;align-items:center}
+.hero .owners svg{width:30px;height:30px;flex:0 0 auto}
+
+.shot{position:relative;margin:0}
+.shot .dial{position:absolute;right:-9%;top:-17%;width:62%;transform:scaleX(-1);aspect-ratio:1;z-index:0;pointer-events:none}
+.shot .frame{position:relative;z-index:1;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(19,41,75,.55),0 0 0 8px #fff;aspect-ratio:16/10;background:var(--navy)}
+.shot .frame img{width:100%;height:100%;object-fit:cover;object-position:32% 40%}
+.shot figcaption{position:relative;z-index:1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13.5px;color:var(--steel-ink);margin:16px 6px 0}
+.shot figcaption b{color:var(--navy)}
+
+/* proof strip */
+.proof{background:var(--blue);color:#fff;position:relative}
+.proof::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:repeating-linear-gradient(90deg,var(--red-logo) 0 30px,transparent 30px 38px)}
+.proof ul{list-style:none;margin:0;padding:26px 0 22px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.proof li{display:flex;flex-direction:column;gap:2px;padding-left:16px;border-left:2px solid rgba(255,255,255,.28)}
+.proof strong{font-family:var(--display);font-size:clamp(24px,2.4vw,30px);line-height:1.05;text-transform:uppercase;letter-spacing:.02em}
+.proof span{font-size:14px;color:#DCE8F6}
+.proof a{color:#fff;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:4px}
+.proof a:hover{text-decoration-color:#fff}
+
+/* planner (interactive) */
+.planner{background:radial-gradient(120% 90% at 0% 0%,#1B3A66 0,var(--navy) 46%,var(--navy-2) 100%);color:#E9EEF6;padding:clamp(56px,8vw,96px) 0}
+.planner .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,64px);align-items:start}
+.kicker{font-family:var(--display);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:16px;color:#FF6B6B;margin:0 0 10px}
+.planner h2{font-size:clamp(36px,4.6vw,58px);text-transform:uppercase;color:#fff}
+.planner .lede{color:#C9D3E3;max-width:36em;margin:14px 0 26px}
+.gauge-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:clamp(18px,3vw,30px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:center}
+.gauge{width:100%;max-width:300px;justify-self:center}
+.gauge text{font-family:var(--display);font-weight:600;fill:#9FB0C8;font-size:15px;letter-spacing:.04em}
+#needle{transition:transform .6s cubic-bezier(.3,1.4,.5,1);transform-origin:150px 150px}
+.readout .when{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#9FB0C8;font-weight:600;margin:0}
+.readout .state{font-family:var(--display);font-weight:700;font-size:clamp(40px,5vw,56px);line-height:1;text-transform:uppercase;margin:6px 0 4px;color:#fff;display:flex;align-items:center;gap:12px}
+.readout .state::before{content:"";width:14px;height:14px;border-radius:50%;background:#8B97A8;flex:0 0 auto}
+.readout.open .state::before{background:#3DDC84;box-shadow:0 0 0 5px rgba(61,220,132,.2)}
+.readout.closed .state::before{background:#FF6B6B;box-shadow:0 0 0 5px rgba(255,107,107,.18)}
+.readout .next{color:#C9D3E3;margin:0 0 12px;font-size:15px}
+.readout .tip{margin:0;padding:12px 14px;border-radius:12px;background:rgba(0,85,165,.35);border:1px solid rgba(120,170,230,.35);font-size:15px;color:#fff}
+.controls{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:18px}
+.days{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.days button,.nowbtn{font:600 15px/1 var(--body);min-height:44px;min-width:48px;padding:0 12px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#DCE4F0;cursor:pointer}
+.days button:hover,.nowbtn:hover{border-color:#fff;color:#fff}
+.days button[aria-pressed="true"]{background:#fff;color:var(--navy);border-color:#fff}
+.days button.wkend{color:#9FB0C8}
+.days button.wkend[aria-pressed="true"]{color:var(--navy)}
+.timerow{display:flex;align-items:center;gap:14px}
+.timerow label{font-size:14px;color:#C9D3E3;white-space:nowrap}
+input[type=range]{flex:1;min-width:0;height:44px;accent-color:var(--red);background:transparent;cursor:pointer}
+.nowbtn{margin-left:auto}
+
+.perks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.perks li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;align-items:center;padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);transition:background-color .3s,border-color .3s,transform .3s}
+.perks li.on{background:#fff;color:var(--text);border-color:#fff}
+.perks li.on p{color:#3A4456}
+.perks li.on .ic{background:var(--red);color:#fff}
+.perks .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.08);color:#fff;transition:background-color .3s}
+.perks .ic svg{width:26px;height:26px}
+.perks h3{font-size:24px;text-transform:uppercase;letter-spacing:.02em}
+.perks p{margin:2px 0 0;font-size:14.5px;color:#B8C4D6}
+.motto{margin:22px 0 0;font-family:var(--display);font-style:italic;font-weight:700;font-size:22px;color:#fff;line-height:1.2}
+.motto small{display:block;font:400 13px var(--body);color:#9FB0C8;margin-top:6px;font-style:normal}
+
+/* bays */
+.bays{padding:clamp(56px,8vw,96px) 0;background:var(--white)}
+.bays-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:end;margin-bottom:34px}
+.bays h2{font-size:clamp(36px,4.6vw,58px);text-transform:uppercase;color:var(--navy)}
+.bays .kicker{color:var(--red)}
+.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+.svc li{font-family:var(--display);font-weight:600;font-size:20px;color:var(--navy);padding:9px 0 9px 26px;border-bottom:1px solid var(--line);position:relative;line-height:1.15}
+.svc li:not(.svc-more)::before{content:"";position:absolute;left:0;top:50%;width:13px;height:5px;background:var(--red);transform:translateY(-50%) skewX(-20deg)}
+.svc-more{grid-column:1/-1;margin:14px 0 0;font-size:15px;color:var(--steel-ink)}
+.photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0;padding:0;list-style:none}
+.photos figure{margin:0}
+.photos .ph{border-radius:16px;overflow:hidden;aspect-ratio:2/1;background:var(--light);box-shadow:0 18px 30px -22px rgba(19,41,75,.6)}
+.photos img{width:100%;height:100%;object-fit:cover}
+.photos figcaption{font-size:14px;color:var(--steel-ink);margin:10px 2px 0}
+.tires{margin-top:30px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px 24px;align-items:center;padding:20px 24px;border-radius:16px;background:var(--light);border-left:6px solid var(--blue)}
+.tires .big{font-family:var(--display);font-weight:700;font-size:44px;line-height:1;color:var(--blue)}
+.tires p{margin:0;font-size:15px}
+.tires b{font-family:var(--display);font-size:22px;text-transform:uppercase;color:var(--navy);display:block;line-height:1.1;margin-bottom:2px}
+.tires .links{display:flex;flex-wrap:wrap;gap:8px 18px;font-weight:600;font-size:15px}
+.tires .links a{min-height:44px;display:inline-flex;align-items:center}
+
+/* trust + contact */
+.trust{background:var(--light);padding:clamp(56px,8vw,96px) 0;position:relative;overflow:hidden}
+.trust .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,4vw,56px);align-items:start}
+.rating{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.rating .num{font-family:var(--display);font-weight:700;font-size:clamp(88px,11vw,140px);line-height:.8;color:var(--navy)}
+.rating .star{font-size:46px;line-height:1;color:var(--red);margin-bottom:4px}
+.rating .on{font-family:var(--display);font-weight:700;font-size:28px;text-transform:uppercase;color:var(--navy);line-height:1;margin-bottom:6px}
+.rating .on a{color:var(--blue);text-underline-offset:5px}
+.themes{list-style:none;padding:0;margin:26px 0 30px;display:flex;flex-wrap:wrap;gap:10px}
+.themes li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:600;font-size:15px;color:var(--navy)}
+.themes-note{font-size:13px;color:var(--steel-ink);margin:-18px 0 30px}
+.warranty{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center;background:var(--navy);color:#fff;border-radius:18px;padding:22px 24px}
+.warranty .mile{font-family:var(--display);font-weight:700;text-align:center;line-height:.9;border:3px solid #fff;border-radius:50%;width:96px;height:96px;display:grid;place-content:center;font-size:34px}
+.warranty .mile small{display:block;font-size:13px;letter-spacing:.08em;margin-top:4px}
+.warranty p{margin:0;font-size:15px;color:#D6DEEA}
+.warranty b{display:block;font-family:var(--display);font-size:24px;text-transform:uppercase;color:#fff;line-height:1.1;margin-bottom:4px}
+.roadside{margin:18px 0 0;font-size:14.5px;color:#3A4456;padding-left:14px;border-left:3px solid var(--steel)}
+.card{background:#fff;border-radius:22px;padding:clamp(22px,3vw,32px);box-shadow:0 30px 60px -36px rgba(19,41,75,.55);border-top:8px solid var(--red);position:relative}
+.card h2{font-size:clamp(32px,3.4vw,42px);text-transform:uppercase;color:var(--navy);margin-bottom:6px}
+.card .phone{display:block;font-family:var(--display);font-weight:700;font-size:clamp(36px,4vw,46px);color:var(--red);text-decoration:none;line-height:1.1;margin:4px 0 18px}
+.card .phone:hover{color:var(--red-ink)}
+.card .btns{display:grid;gap:14px;margin-bottom:22px}
+.card dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 16px;font-size:15px}
+.card dt{font-weight:600;color:var(--steel-ink)}
+.card dd{margin:0}
+.card .small{font-size:13px;color:var(--steel-ink);margin:16px 0 0}
+
+/* closer + footer */
+.closer{background:var(--navy);color:#fff;padding:52px 0 40px;position:relative;overflow:hidden}
+.closer .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center}
+.closer h2{font-size:clamp(30px,3.6vw,44px);text-transform:uppercase}
+.closer p{color:#C9D3E3;margin:8px 0 0;max-width:40em}
+.closer .brand-w{color:#fff;line-height:0}
+.closer .brand-w svg{width:190px;height:auto}
+.closer .brand-w .plate{background:#fff;border-radius:16px;padding:10px 14px;display:inline-block;color:#111}
+.explore{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:22px}
+.explore a{color:#fff;font-weight:600;font-size:15px;min-height:44px;display:inline-flex;align-items:center;text-underline-offset:4px}
+footer.site{background:var(--navy-2);color:#AEBBD0;font-size:13.5px;padding:22px 0 26px}
+footer.site p{margin:0}
+footer.site a{color:#fff}
+
+/* mobile call bar */
+.callbar{display:none}
+
+@media (max-width:1020px){
+  nav.main{display:none}
+  header .btn{margin-left:auto}
+  .hero .wrap,.planner .wrap,.bays-head,.trust .wrap{grid-template-columns:minmax(0,1fr)}
+  .shot .dial{right:-12%;top:-12%;width:66%}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  body{padding-bottom:78px}
+  .topbar .hide-sm{display:none}
+  header.site .wrap{min-height:64px}
+  .brand svg{width:104px}
+  header .btn{font-size:17px;padding:8px 14px}
+  header .btn .lbl{display:none}
+    .ctas .btn{flex:1 1 100%}
+  .gauge-card{grid-template-columns:minmax(0,1fr)}
+  .gauge{max-width:240px}
+  .readout{text-align:left}
+  .svc{grid-template-columns:minmax(0,1fr)}
+  .photos{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:208px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-right:-16px;padding-right:16px}
+  .photos li{scroll-snap-align:start}
+  .tires{grid-template-columns:minmax(0,1fr)}
+  .warranty{grid-template-columns:minmax(0,1fr)}
+  .closer .wrap{grid-template-columns:minmax(0,1fr)}
+  .timerow{flex-wrap:wrap}
+  .timerow input{flex-basis:100%;order:3}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -10px 24px -16px rgba(19,41,75,.45)}
+  .callbar .btn{font-size:18px;padding:10px 8px;min-height:50px;box-shadow:none}
+  .callbar .btn:hover{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="gl-logo" viewBox="0 0 1492 800"><path d="M 286 18 C 284 19, 278 19, 273 20 C 268 20, 262 22, 260 22 C 258 23, 255 24, 253 24 C 250 24, 211 34, 210 35 C 209 35, 207 36, 204 36 C 202 37, 199 38, 198 39 C 197 39, 196 40, 194 40 C 193 40, 191 41, 189 42 C 186 43, 184 44, 183 44 C 182 44, 172 48, 169 50 C 168 51, 167 51, 166 52 C 164 53, 161 54, 159 55 C 158 55, 156 56, 155 57 C 148 60, 124 75, 115 82 C 114 83, 111 85, 109 87 C 99 94, 75 120, 68 129 C 67 131, 64 135, 62 138 C 60 141, 57 145, 56 147 C 56 148, 54 151, 52 154 C 51 156, 50 159, 49 160 C 42 175, 40 179, 40 180 C 40 180, 39 183, 38 185 C 37 187, 36 189, 36 190 C 36 191, 36 193, 35 194 C 33 197, 29 211, 27 221 C 22 247, 20 277, 23 295 C 24 298, 24 304, 24 307 C 24 315, 32 353, 35 360 C 35 362, 36 364, 36 365 C 36 366, 40 378, 45 391 C 46 394, 48 399, 48 401 C 49 403, 50 405, 50 406 C 51 408, 52 410, 52 411 C 54 418, 57 419, 69 419 C 83 419, 83 419, 79 411 C 77 407, 76 404, 76 403 C 76 402, 75 401, 74 399 C 71 393, 63 369, 58 349 C 56 341, 54 333, 54 331 C 53 328, 52 322, 52 318 C 51 313, 51 306, 50 303 C 48 294, 48 267, 49 257 C 51 238, 52 228, 53 224 C 54 221, 55 217, 55 215 C 57 208, 62 191, 65 183 C 66 181, 68 177, 70 173 C 73 165, 80 152, 82 149 C 83 148, 84 146, 84 146 C 84 139, 122 96, 140 83 C 143 81, 147 78, 150 76 C 153 74, 155 72, 156 72 C 156 72, 158 71, 159 70 C 159 69, 161 68, 161 68 C 162 68, 165 66, 168 64 C 171 62, 175 60, 177 59 C 178 59, 179 58, 180 58 C 180 57, 182 56, 183 56 C 185 55, 187 54, 188 53 C 189 53, 192 51, 196 49 C 199 48, 203 46, 206 45 C 208 44, 210 43, 211 43 C 211 43, 213 42, 215 42 C 217 40, 223 38, 232 35 C 234 35, 238 34, 240 33 C 247 30, 274 24, 283 23 C 286 23, 289 22, 290 22 C 291 21, 295 20, 297 20 C 300 20, 302 19, 302 19 C 302 17, 291 17, 286 18 M 511 170 C 507 170, 498 172, 490 172 C 483 173, 476 174, 475 175 C 474 175, 471 176, 468 176 C 465 177, 460 178, 457 178 C 455 179, 448 181, 444 183 C 439 184, 433 186, 431 186 C 430 187, 427 188, 425 188 C 423 189, 421 190, 421 190 C 419 191, 411 194, 404 196 C 402 197, 400 198, 399 199 C 397 199, 396 200, 395 200 C 394 200, 389 202, 378 207 C 376 208, 374 209, 373 209 C 372 209, 371 210, 370 210 C 369 211, 367 212, 366 212 C 364 213, 362 214, 361 214 C 360 215, 358 216, 357 216 C 355 217, 353 218, 352 218 C 351 219, 350 220, 348 221 C 346 221, 345 222, 344 223 C 343 223, 342 224, 341 224 C 340 224, 298 245, 296 247 C 295 247, 293 248, 292 249 C 291 249, 289 250, 288 251 C 287 251, 285 252, 284 253 C 283 253, 281 254, 280 254 C 278 256, 271 259, 263 260 C 261 261, 257 262, 256 263 C 255 263, 252 264, 249 264 C 239 266, 236 268, 237 274 L 237 279 231 283 C 228 286, 224 288, 222 289 C 212 295, 199 306, 193 314 C 187 321, 186 332, 187 351 C 189 378, 193 381, 193 355 C 193 323, 197 315, 232 292 C 242 286, 243 285, 252 285 C 265 285, 268 283, 256 281 C 245 280, 243 273, 253 272 C 256 271, 260 270, 262 270 C 264 269, 268 268, 271 268 C 273 267, 276 266, 278 265 C 279 265, 280 264, 281 264 C 282 264, 289 261, 297 257 C 305 253, 312 249, 314 248 C 315 247, 317 246, 318 246 C 319 245, 321 245, 322 244 C 323 243, 325 243, 326 242 C 328 241, 337 236, 340 235 C 341 234, 343 234, 344 233 C 345 232, 347 232, 348 231 C 349 230, 351 230, 352 229 C 353 229, 356 227, 360 225 C 363 224, 366 222, 367 222 C 368 221, 370 221, 371 220 C 373 219, 376 218, 386 213 C 392 210, 398 208, 399 208 C 400 208, 402 207, 404 206 C 406 205, 409 204, 409 204 C 410 204, 412 203, 414 202 C 416 201, 419 200, 421 200 C 422 199, 425 198, 427 198 C 433 195, 450 189, 458 188 C 460 187, 464 186, 466 185 C 468 185, 473 184, 477 183 C 481 183, 487 182, 490 181 C 518 176, 634 176, 688 181 C 694 182, 703 182, 710 183 C 716 183, 724 185, 729 185 C 734 186, 741 187, 746 188 C 750 189, 755 190, 756 191 C 758 191, 760 192, 761 192 C 763 192, 765 192, 767 193 C 770 194, 770 198, 766 197 C 760 197, 745 195, 739 194 C 705 189, 563 188, 547 194 C 544 194, 547 197, 558 206 C 572 217, 595 241, 608 256 C 622 272, 618 271, 643 270 C 659 270, 665 270, 669 271 C 672 271, 677 272, 679 272 C 682 272, 686 273, 688 274 C 690 274, 694 275, 696 275 C 697 275, 702 276, 705 277 C 708 278, 714 279, 717 280 C 721 281, 727 282, 730 283 C 736 284, 741 284, 741 283 C 741 282, 740 282, 740 282 C 727 278, 721 276, 718 276 C 716 276, 714 275, 712 275 C 711 274, 708 273, 706 272 C 703 272, 702 271, 702 270 C 702 268, 703 268, 735 268 C 753 268, 782 268, 800 267 C 818 266, 851 266, 874 265 C 898 265, 917 265, 917 264 C 918 264, 914 260, 912 260 C 911 260, 894 250, 884 244 C 881 242, 878 240, 878 240 C 877 240, 875 239, 872 237 C 870 235, 865 232, 862 230 C 858 228, 854 225, 852 224 C 850 223, 847 221, 846 221 C 845 220, 842 219, 840 217 C 838 216, 835 214, 833 213 C 830 212, 828 210, 827 210 C 826 209, 824 209, 823 208 C 822 207, 820 207, 819 206 C 818 206, 815 204, 812 202 C 808 201, 803 199, 801 198 C 792 194, 786 191, 777 189 C 775 188, 771 187, 769 187 C 759 184, 746 181, 739 180 C 734 179, 727 178, 723 177 C 719 177, 714 176, 711 176 C 708 176, 701 175, 696 175 C 669 171, 534 167, 511 170 M 471 197 C 464 198, 449 202, 438 206 C 436 206, 431 208, 429 208 C 423 210, 414 214, 413 215 C 412 215, 410 216, 408 216 C 407 217, 405 218, 404 219 C 403 219, 402 220, 402 220 C 401 220, 396 222, 390 225 C 384 228, 379 231, 377 232 C 376 233, 374 234, 373 234 C 372 235, 369 237, 365 239 C 362 241, 357 243, 355 245 C 353 246, 350 248, 348 249 C 341 253, 341 254, 342 260 C 343 263, 344 268, 344 271 C 344 276, 344 277, 347 280 L 350 284 430 284 C 499 284, 511 284, 513 285 C 514 286, 515 287, 516 287 C 519 287, 519 285, 517 284 C 511 282, 501 272, 501 268 C 501 265, 504 262, 510 259 L 516 256 533 256 L 551 256 555 258 C 557 260, 559 262, 560 264 C 561 271, 563 273, 569 279 C 575 286, 579 287, 581 285 C 581 284, 586 284, 592 284 C 605 284, 606 284, 594 271 C 562 236, 527 204, 514 200 C 504 196, 484 195, 471 197 M 1049 282 C 1049 282, 1051 283, 1053 284 C 1055 284, 1058 285, 1059 286 C 1060 286, 1064 287, 1067 288 C 1069 288, 1073 289, 1074 290 C 1075 290, 1078 291, 1080 291 C 1085 292, 1097 296, 1100 298 C 1102 298, 1104 299, 1104 299 C 1106 299, 1123 307, 1129 310 C 1153 325, 1175 350, 1168 356 C 1165 358, 1113 360, 1052 360 C 1020 360, 994 361, 993 361 C 989 364, 994 372, 1015 398 C 1020 403, 1019 405, 1010 404 C 996 404, 944 400, 927 398 C 897 395, 882 396, 905 399 C 911 400, 919 402, 923 403 C 928 403, 934 404, 937 404 C 941 404, 947 405, 952 406 C 956 406, 968 407, 978 408 C 988 409, 997 409, 997 410 C 1004 414, 1132 411, 1159 405 C 1176 402, 1176 402, 1180 412 C 1183 424, 1190 421, 1188 409 C 1187 405, 1187 397, 1187 392 C 1187 385, 1187 381, 1185 378 C 1184 376, 1184 370, 1183 361 C 1183 351, 1182 345, 1181 343 C 1176 333, 1159 317, 1146 310 C 1142 308, 1139 306, 1138 306 C 1135 304, 1125 300, 1124 300 C 1123 300, 1122 300, 1122 299 C 1121 299, 1116 297, 1111 295 C 1105 293, 1098 291, 1095 290 C 1092 289, 1089 288, 1087 288 C 1086 288, 1083 287, 1080 286 C 1077 285, 1073 284, 1071 284 C 1069 284, 1065 283, 1063 282 C 1057 281, 1049 280, 1049 282 M 682 319 C 680 319, 677 320, 674 320 C 670 320, 667 321, 655 327 C 648 330, 630 348, 627 354 C 626 356, 625 358, 625 358 C 624 361, 628 358, 634 351 C 639 347, 644 342, 647 341 C 650 339, 653 338, 654 337 C 673 326, 705 331, 722 347 C 732 356, 748 377, 748 382 C 748 382, 751 389, 756 399 C 760 408, 761 405, 758 395 C 757 392, 756 388, 756 388 C 756 387, 755 384, 753 381 C 752 378, 750 374, 749 372 C 739 348, 725 331, 711 325 C 710 324, 707 323, 706 322 C 704 321, 700 320, 697 320 C 694 320, 690 319, 688 319 C 686 318, 683 319, 682 319 M 238 336 C 231 337, 224 343, 218 350 C 214 357, 216 358, 222 352 C 233 340, 249 338, 262 347 C 267 350, 277 361, 277 363 C 277 364, 278 364, 279 364 C 281 364, 280 361, 275 353 C 265 337, 252 332, 238 336 M 808 342 C 803 346, 842 380, 852 380 C 853 380, 855 381, 856 382 C 857 382, 860 383, 862 383 C 864 383, 870 384, 875 384 C 887 386, 922 390, 942 391 C 949 392, 962 393, 971 393 C 1007 397, 1006 398, 993 381 C 982 368, 981 365, 985 360 C 990 355, 989 355, 976 354 C 970 354, 959 354, 952 353 C 944 353, 933 352, 926 352 C 920 352, 909 351, 902 351 C 896 350, 885 349, 879 349 C 872 348, 860 347, 853 346 C 845 346, 833 344, 827 344 C 820 343, 814 342, 814 342 C 812 341, 809 341, 808 342 M 184 592 C 184 595, 232 636, 249 648 C 251 649, 255 652, 259 654 C 266 660, 296 680, 296 680 C 297 680, 300 682, 303 684 C 306 686, 309 688, 311 689 C 319 694, 332 701, 333 702 C 334 703, 336 703, 337 704 C 338 705, 341 706, 344 708 C 346 709, 349 710, 350 711 C 351 712, 353 712, 354 713 C 355 714, 357 715, 358 715 C 359 716, 361 717, 362 717 C 364 718, 365 719, 368 720 C 369 721, 371 721, 372 722 C 374 723, 385 728, 386 728 C 386 728, 387 729, 388 729 C 389 730, 391 731, 393 732 C 394 732, 396 733, 397 734 C 398 734, 400 735, 402 736 C 403 736, 405 737, 406 737 C 406 737, 408 738, 410 739 C 413 740, 419 742, 426 746 C 427 746, 430 747, 431 748 C 433 748, 436 749, 438 750 C 440 751, 442 752, 443 752 C 444 752, 446 753, 447 753 C 449 754, 451 755, 453 755 C 455 756, 459 757, 462 758 C 471 761, 474 762, 479 763 C 481 764, 485 765, 486 766 C 487 766, 493 768, 499 770 C 505 771, 512 773, 516 774 C 519 775, 523 776, 525 776 C 526 776, 529 777, 530 777 C 532 778, 536 779, 540 780 C 543 780, 547 781, 548 781 C 549 782, 556 783, 563 784 C 570 785, 577 786, 577 787 C 578 787, 584 788, 590 788 C 597 789, 605 789, 608 790 C 612 790, 614 790, 614 789 C 614 788, 608 786, 601 785 C 593 784, 579 782, 575 781 C 573 780, 570 780, 568 780 C 566 780, 562 779, 559 778 C 556 777, 552 776, 550 776 C 548 776, 546 776, 544 775 C 543 774, 538 773, 533 772 C 519 769, 514 767, 511 766 C 505 764, 495 761, 487 759 C 482 757, 476 755, 475 754 C 473 754, 471 753, 470 753 C 469 753, 466 752, 464 750 C 461 749, 458 748, 457 748 C 457 748, 454 747, 452 746 C 450 745, 448 744, 447 744 C 446 744, 445 743, 443 743 C 442 742, 440 741, 439 741 C 437 740, 433 738, 424 734 C 421 733, 419 732, 418 732 C 418 732, 417 731, 416 731 C 415 730, 413 729, 411 728 C 410 728, 408 727, 407 726 C 406 726, 405 725, 403 725 C 401 724, 400 723, 399 723 C 398 722, 397 721, 395 721 C 393 720, 392 719, 391 718 C 390 718, 389 717, 389 717 C 387 717, 373 710, 364 705 C 362 703, 358 701, 357 700 C 355 700, 352 698, 350 697 C 348 695, 343 693, 340 691 C 329 684, 310 672, 301 666 C 299 665, 295 662, 292 660 C 285 655, 275 647, 266 640 C 263 638, 257 633, 253 630 C 245 624, 225 607, 215 597 C 209 591, 208 591, 196 591 C 186 590, 184 591, 184 592" fill="currentColor" fill-rule="evenodd"/><path d="M 333 44 C 323 44, 313 45, 312 45 C 311 46, 305 47, 298 47 C 282 49, 282 49, 298 66 C 323 93, 325 94, 327 94 C 334 92, 358 88, 372 87 C 380 86, 391 86, 396 85 C 414 84, 486 91, 496 95 C 498 96, 501 96, 503 96 C 509 96, 520 111, 520 118 C 520 120, 522 122, 524 122 C 526 122, 526 122, 526 119 C 525 117, 524 105, 523 93 C 520 64, 520 64, 514 64 C 512 64, 510 64, 509 63 C 508 62, 504 61, 500 61 C 496 60, 490 58, 487 58 C 473 54, 445 49, 428 47 C 423 46, 416 46, 412 45 C 403 44, 354 43, 333 44 M 263 54 C 261 55, 258 56, 257 56 C 254 56, 242 60, 228 65 C 226 66, 223 67, 221 68 C 216 69, 213 70, 202 76 C 156 98, 123 128, 100 170 C 92 183, 92 183, 102 187 C 103 188, 105 189, 106 189 C 107 190, 109 191, 110 191 C 111 192, 113 193, 114 193 C 115 194, 117 195, 118 195 C 119 196, 121 197, 122 197 C 123 198, 125 198, 126 199 C 127 200, 129 201, 130 201 C 131 202, 133 203, 135 203 C 136 204, 137 205, 138 205 C 139 206, 141 207, 142 207 C 146 209, 154 213, 157 215 C 160 217, 163 216, 164 213 C 165 211, 170 201, 176 190 C 185 174, 204 154, 222 140 C 236 130, 236 129, 240 128 C 241 127, 244 125, 247 124 C 249 122, 255 119, 260 117 C 265 114, 271 111, 273 110 C 275 109, 277 108, 278 108 C 279 108, 281 107, 283 106 C 293 101, 296 101, 307 108 C 308 109, 311 111, 313 111 C 314 112, 316 114, 317 114 C 318 115, 319 116, 319 116 C 320 116, 323 118, 326 121 C 336 128, 339 125, 330 116 C 327 114, 322 109, 320 106 C 314 100, 278 61, 273 56 C 269 51, 269 51, 263 54 M 533 71 C 532 72, 532 74, 533 83 C 534 88, 535 95, 535 97 C 535 103, 536 104, 545 106 C 548 107, 552 109, 554 109 C 555 110, 559 111, 561 112 C 568 114, 575 116, 580 118 C 582 119, 585 120, 586 120 C 586 120, 588 121, 590 121 C 591 122, 594 124, 597 124 C 599 125, 602 126, 604 127 C 608 128, 612 130, 621 134 C 623 135, 627 137, 630 138 C 638 142, 662 154, 667 157 C 672 159, 674 160, 683 161 C 688 161, 696 162, 699 163 C 703 163, 708 164, 711 164 C 714 164, 718 165, 721 166 C 730 169, 735 168, 729 163 C 727 161, 725 160, 725 160 C 724 160, 721 158, 718 156 C 715 154, 712 152, 712 152 C 711 152, 708 150, 705 148 C 702 146, 699 144, 698 144 C 698 144, 697 143, 696 142 C 695 142, 693 140, 692 139 C 690 139, 687 137, 685 136 C 680 133, 669 127, 665 125 C 664 124, 662 123, 661 123 C 660 122, 658 121, 656 120 C 653 119, 651 118, 650 117 C 648 116, 644 114, 642 113 C 636 110, 622 103, 618 102 C 608 97, 605 96, 601 94 C 598 93, 596 92, 595 92 C 594 92, 592 91, 591 90 C 589 89, 587 88, 586 88 C 584 88, 582 87, 581 86 C 579 85, 576 84, 575 84 C 574 84, 571 83, 569 82 C 567 81, 565 80, 564 80 C 563 80, 560 79, 558 78 C 556 77, 554 76, 553 76 C 552 76, 550 75, 548 75 C 541 71, 535 70, 533 71 M 87 198 C 85 202, 82 215, 79 225 C 73 248, 73 300, 78 326 C 79 330, 80 335, 81 338 C 83 347, 85 354, 87 362 C 92 377, 93 380, 95 383 C 95 385, 96 386, 96 387 C 96 388, 97 390, 98 392 C 99 395, 102 401, 104 407 C 111 421, 106 420, 142 420 C 178 420, 175 422, 166 402 C 164 398, 156 372, 156 371 C 156 370, 155 367, 154 363 C 145 333, 143 273, 151 253 C 151 251, 152 248, 152 246 C 152 239, 161 237, 175 242 C 181 244, 186 244, 187 242 C 187 241, 179 236, 177 236 C 176 236, 152 225, 149 223 C 148 222, 146 221, 145 221 C 144 220, 142 219, 141 219 C 140 218, 137 217, 133 215 C 129 213, 126 211, 125 211 C 124 210, 123 210, 122 209 C 121 209, 113 205, 105 201 C 88 193, 89 193, 87 198 M 246 590 C 246 591, 246 593, 247 593 C 252 598, 276 617, 286 625 C 303 637, 305 639, 312 644 C 315 646, 321 650, 326 653 C 330 656, 335 660, 337 661 C 338 661, 341 663, 343 664 C 346 666, 351 669, 359 674 C 363 676, 368 679, 371 680 C 382 687, 382 687, 389 682 C 391 680, 397 676, 400 673 C 407 669, 409 666, 405 664 C 404 664, 403 663, 402 663 C 386 653, 379 649, 359 635 C 357 633, 355 632, 355 632 C 354 632, 332 615, 318 603 L 302 590 278 590 C 264 590, 252 590, 250 589 C 248 589, 247 589, 246 590 M 863 608 C 862 611, 861 615, 860 617 C 857 627, 852 642, 850 646 C 849 649, 848 652, 848 653 C 848 654, 847 655, 847 657 C 845 659, 845 664, 847 665 C 849 666, 853 663, 854 659 C 855 656, 856 652, 857 650 C 858 647, 860 643, 860 641 C 861 638, 861 636, 862 636 C 862 635, 864 630, 865 626 C 867 621, 869 614, 870 612 C 873 606, 872 604, 868 604 C 865 604, 865 605, 863 608 M 1231 607 C 1228 611, 1228 612, 1230 614 C 1233 618, 1239 614, 1239 609 C 1239 605, 1235 604, 1231 607 M 787 608 C 769 612, 764 635, 779 640 C 782 640, 788 646, 788 648 C 788 656, 773 660, 764 655 C 760 653, 758 654, 757 658 C 756 664, 758 665, 771 665 C 788 665, 795 659, 796 647 L 796 641 791 636 C 789 634, 786 632, 786 632 C 783 632, 779 626, 779 624 C 779 617, 787 614, 801 616 C 806 617, 808 612, 806 609 C 804 607, 792 606, 787 608 M 996 608 C 995 608, 992 610, 989 613 C 984 618, 983 619, 984 627 C 984 630, 984 631, 978 636 C 960 652, 966 669, 988 665 C 992 664, 996 663, 998 661 C 1002 659, 1007 659, 1007 662 C 1007 663, 1013 666, 1016 666 C 1019 666, 1024 661, 1023 659 C 1023 657, 1021 657, 1019 657 C 1011 657, 1010 653, 1017 645 C 1024 637, 1031 623, 1029 621 C 1027 618, 1023 620, 1021 625 C 1016 638, 1009 646, 1007 641 C 1007 639, 1005 638, 1005 637 C 1002 635, 1003 632, 1007 628 C 1021 617, 1014 604, 996 608 M 1081 608 C 1073 610, 1065 618, 1064 626 C 1064 631, 1067 635, 1074 640 C 1082 645, 1084 648, 1080 653 C 1076 658, 1069 659, 1058 655 C 1052 652, 1049 661, 1055 664 C 1070 671, 1095 657, 1092 644 C 1091 641, 1082 632, 1080 632 C 1078 632, 1073 627, 1073 625 C 1073 617, 1085 613, 1095 616 C 1099 618, 1101 616, 1101 611 C 1101 607, 1091 606, 1081 608 M 996 616 C 991 620, 991 627, 996 628 C 999 628, 1006 622, 1006 618 C 1006 614, 1001 613, 996 616 M 824 624 C 819 624, 817 626, 815 628 C 811 633, 812 635, 821 632 C 825 630, 827 630, 830 631 C 835 633, 833 639, 826 639 C 809 639, 796 653, 804 663 C 807 665, 806 665, 823 665 C 832 664, 832 665, 837 648 C 839 643, 840 638, 841 636 C 842 632, 842 630, 840 627 C 838 625, 832 622, 830 622 C 830 622, 827 623, 824 624 M 890 624 C 875 628, 863 652, 871 661 C 876 667, 892 667, 897 661 C 903 655, 900 653, 892 657 C 885 660, 880 659, 878 654 C 875 648, 879 647, 893 647 L 905 647 907 644 C 912 630, 904 619, 890 624 M 930 624 C 917 627, 911 639, 920 645 C 922 647, 924 648, 925 648 C 928 648, 930 653, 928 655 C 926 658, 920 659, 916 657 C 910 654, 904 659, 909 663 C 918 671, 938 662, 938 649 C 938 647, 931 640, 929 640 C 927 640, 924 636, 924 634 C 925 632, 932 630, 935 630 C 942 632, 943 632, 944 630 C 945 626, 940 621, 935 622 C 935 622, 932 623, 930 624 M 1122 623 C 1100 629, 1091 660, 1108 665 C 1116 667, 1126 664, 1129 660 C 1132 655, 1130 654, 1122 657 L 1116 659 1112 657 C 1109 656, 1109 655, 1109 651 L 1109 648 1122 647 L 1135 647 1137 643 C 1143 630, 1134 620, 1122 623 M 1260 623 C 1236 630, 1227 662, 1248 666 C 1256 667, 1266 663, 1265 658 C 1264 656, 1261 656, 1258 658 C 1253 661, 1245 656, 1245 651 C 1245 640, 1263 624, 1268 631 C 1269 634, 1277 630, 1276 627 C 1274 623, 1266 622, 1260 623 M 1296 624 C 1276 630, 1266 659, 1283 665 C 1290 668, 1303 664, 1304 658 C 1305 655, 1303 654, 1297 657 C 1290 660, 1283 658, 1283 652 C 1283 647, 1284 647, 1298 647 C 1311 647, 1311 647, 1313 639 C 1315 627, 1307 620, 1296 624 M 1165 624 C 1164 625, 1161 625, 1158 624 C 1153 624, 1150 626, 1148 633 C 1148 634, 1146 640, 1144 646 C 1138 664, 1138 665, 1142 665 C 1145 665, 1148 663, 1148 659 C 1152 642, 1159 632, 1166 631 C 1171 631, 1172 630, 1172 626 C 1171 623, 1169 622, 1165 624 M 1209 624 C 1207 625, 1205 627, 1204 628 C 1203 630, 1200 634, 1198 638 C 1195 642, 1192 646, 1191 648 C 1188 653, 1187 650, 1186 637 L 1186 625 1183 624 C 1178 624, 1178 625, 1178 643 C 1178 670, 1181 672, 1196 653 C 1201 645, 1207 636, 1212 631 C 1217 624, 1215 621, 1209 624 M 1225 625 C 1224 627, 1223 631, 1219 643 C 1217 648, 1215 655, 1214 657 C 1212 661, 1212 662, 1213 663 C 1216 667, 1221 664, 1223 656 C 1224 653, 1225 650, 1226 648 C 1226 646, 1227 643, 1228 642 C 1228 641, 1229 637, 1231 633 C 1232 630, 1233 626, 1233 625 C 1232 624, 1226 624, 1225 625 M 888 632 C 880 636, 881 640, 891 640 C 899 639, 900 639, 900 636 C 900 630, 894 629, 888 632 M 1120 631 C 1116 633, 1113 637, 1113 638 C 1114 640, 1127 640, 1129 638 C 1135 634, 1127 628, 1120 631 M 1293 632 C 1285 636, 1286 639, 1295 640 C 1303 640, 1305 639, 1305 636 C 1305 630, 1300 629, 1293 632 M 987 638 C 986 639, 984 640, 983 640 C 977 640, 974 654, 980 657 C 987 660, 1001 655, 1001 649 C 1001 641, 991 633, 987 638 M 819 647 C 811 650, 809 654, 813 657 C 815 659, 815 659, 819 658 C 833 651, 832 642, 819 647 M 432 662 C 421 671, 406 683, 400 687 C 395 690, 394 693, 397 695 C 411 702, 430 711, 438 714 C 440 715, 444 717, 446 718 C 449 719, 451 720, 452 720 C 453 720, 455 721, 457 722 C 458 723, 460 724, 461 724 C 462 724, 464 725, 466 725 C 467 726, 470 728, 473 728 C 482 732, 484 732, 488 734 C 490 735, 492 736, 493 736 C 494 736, 496 737, 497 737 C 499 738, 504 740, 518 744 C 520 744, 523 745, 525 746 C 526 747, 529 747, 531 748 C 533 749, 539 750, 544 751 C 578 760, 574 760, 579 747 C 583 737, 583 737, 565 732 C 553 730, 542 726, 540 725 C 539 725, 537 724, 536 724 C 535 724, 532 723, 530 722 C 525 720, 520 718, 514 716 C 512 716, 508 714, 507 714 C 505 713, 503 712, 502 712 C 502 712, 499 711, 497 710 C 494 709, 490 707, 487 706 C 480 703, 474 700, 469 698 C 467 697, 465 696, 464 696 C 463 696, 462 695, 460 694 C 459 693, 457 692, 456 692 C 455 692, 453 691, 452 690 C 451 689, 449 688, 448 688 C 447 688, 445 687, 444 686 C 443 685, 441 684, 440 684 C 439 684, 438 683, 437 682 C 436 682, 434 681, 433 680 C 427 679, 428 676, 436 667 C 447 654, 445 652, 432 662 M 908 679 C 894 680, 894 680, 888 686 C 886 689, 870 701, 865 704 C 862 706, 858 709, 857 710 C 855 711, 852 712, 851 713 C 850 713, 848 714, 847 715 C 844 716, 840 719, 834 721 C 831 723, 827 725, 825 726 C 818 729, 817 729, 807 720 C 800 714, 798 712, 797 713 C 796 714, 796 714, 797 716 C 798 718, 802 726, 809 740 C 814 751, 817 753, 820 750 C 821 749, 822 748, 823 748 C 824 748, 826 747, 828 746 C 830 745, 832 744, 833 744 C 834 744, 861 731, 867 727 C 869 726, 871 725, 873 724 C 874 724, 875 722, 876 722 C 877 721, 878 720, 878 720 C 883 720, 924 684, 924 680 C 923 678, 924 678, 908 679 M 601 715 C 601 716, 599 720, 598 724 C 597 728, 594 737, 592 744 C 586 762, 586 762, 608 764 C 613 765, 619 765, 621 766 C 637 771, 735 770, 752 765 C 755 765, 759 764, 762 764 C 764 764, 768 763, 771 763 C 773 762, 779 760, 783 760 C 803 755, 804 755, 798 745 C 794 737, 793 736, 788 738 C 786 739, 783 740, 783 740 C 782 740, 777 741, 773 742 C 769 743, 763 744, 760 745 C 756 745, 752 746, 751 746 C 750 747, 744 748, 738 748 C 691 752, 694 751, 668 750 C 655 749, 642 747, 639 747 C 635 746, 627 745, 621 745 C 615 744, 609 743, 607 742 L 605 740 604 727 C 604 714, 603 711, 601 715" fill="#CC0100" fill-rule="evenodd"/><path d="M 136 434 C 134 435, 131 435, 129 436 C 118 438, 99 452, 92 461 C 91 463, 89 466, 87 469 C 85 471, 84 473, 84 474 C 84 474, 83 477, 82 479 C 78 488, 77 490, 75 499 C 66 537, 80 568, 110 578 C 125 582, 159 580, 170 573 C 172 573, 174 572, 175 572 C 176 572, 178 571, 180 570 C 181 569, 183 568, 184 568 C 189 568, 196 557, 196 548 C 196 547, 196 544, 197 542 C 198 541, 199 536, 200 533 C 200 529, 202 521, 203 515 C 206 501, 209 502, 174 502 C 140 502, 141 502, 140 510 C 140 513, 139 517, 139 519 C 137 525, 138 525, 156 525 C 175 525, 174 525, 172 535 C 170 548, 168 549, 150 554 C 113 563, 94 543, 102 505 C 103 499, 105 493, 106 490 C 107 488, 108 485, 108 485 C 108 483, 117 472, 121 468 C 138 453, 163 453, 176 466 C 178 468, 180 471, 181 472 C 183 480, 186 481, 201 479 C 210 478, 212 476, 210 472 C 209 470, 208 468, 208 467 C 208 466, 207 464, 206 463 C 205 461, 204 460, 204 459 C 204 454, 185 438, 175 436 C 173 436, 170 435, 168 434 C 163 433, 141 433, 136 434 M 1399 435 C 1359 447, 1354 491, 1390 509 C 1394 511, 1397 513, 1398 513 C 1399 514, 1401 515, 1402 515 C 1427 526, 1432 530, 1432 538 C 1432 548, 1422 555, 1407 556 C 1389 557, 1377 549, 1377 537 C 1377 531, 1375 530, 1362 531 C 1347 532, 1346 535, 1351 550 C 1363 584, 1423 592, 1449 563 C 1466 544, 1464 515, 1444 504 C 1437 501, 1427 496, 1423 494 C 1397 483, 1393 478, 1394 469 C 1398 451, 1435 452, 1441 470 C 1443 477, 1444 477, 1457 476 C 1470 476, 1472 475, 1470 471 C 1470 470, 1469 468, 1468 465 C 1464 442, 1427 426, 1399 435 M 249 436 C 249 437, 248 439, 247 441 C 247 443, 246 447, 245 450 C 244 455, 243 462, 241 473 C 240 478, 239 481, 239 482 C 238 482, 237 488, 236 494 C 235 500, 233 508, 232 512 C 232 516, 230 523, 229 529 C 228 535, 226 542, 226 545 C 224 551, 223 556, 221 568 C 219 578, 219 578, 234 578 C 249 577, 248 578, 250 565 C 251 561, 252 555, 253 553 C 254 550, 255 544, 256 541 C 260 517, 259 519, 270 519 C 285 519, 291 523, 297 536 C 299 539, 301 543, 302 545 C 303 546, 304 549, 304 550 C 304 551, 306 556, 308 561 C 310 565, 312 570, 312 572 C 314 577, 315 577, 330 578 C 346 578, 346 577, 343 570 C 341 567, 340 564, 340 563 C 340 563, 339 561, 338 559 C 337 556, 336 553, 335 552 C 335 551, 334 549, 333 548 C 333 547, 332 545, 331 544 C 331 543, 330 541, 329 540 C 329 539, 328 537, 327 536 C 326 532, 324 530, 320 525 C 315 519, 315 517, 321 516 C 324 516, 327 514, 329 514 C 331 513, 332 512, 333 512 C 334 512, 343 506, 347 502 C 357 492, 360 469, 353 454 C 351 448, 343 440, 340 440 C 339 440, 337 439, 336 438 C 334 437, 330 436, 308 436 C 293 436, 275 436, 266 436 C 258 436, 250 436, 249 436 M 393 436 C 392 437, 391 438, 391 439 C 391 440, 390 444, 390 446 C 389 449, 388 454, 387 457 C 386 460, 385 465, 385 469 C 384 473, 382 480, 381 487 C 380 493, 378 500, 377 503 C 377 505, 376 509, 376 511 C 376 513, 375 516, 375 518 C 374 520, 373 525, 372 529 C 371 536, 370 542, 367 555 C 365 565, 363 575, 363 576 C 364 578, 371 578, 417 578 L 471 578 473 575 C 474 574, 475 570, 475 567 C 476 564, 477 561, 477 559 C 479 554, 479 554, 437 554 C 391 554, 394 555, 398 540 C 399 537, 401 531, 402 527 C 404 514, 401 515, 441 515 C 481 515, 478 516, 480 506 C 481 502, 482 498, 482 497 C 485 492, 483 492, 446 492 C 417 492, 411 492, 410 491 C 410 489, 415 463, 416 460 C 417 459, 428 459, 454 459 C 483 459, 490 459, 491 458 C 494 455, 497 438, 495 437 C 494 436, 395 435, 393 436 M 564 438 C 563 439, 561 442, 560 445 C 557 450, 552 460, 549 464 C 548 465, 545 471, 541 478 C 537 485, 533 491, 533 492 C 531 495, 516 522, 513 527 C 507 539, 505 543, 503 546 C 499 552, 498 553, 496 557 C 494 561, 492 565, 488 571 C 484 577, 485 578, 500 578 C 508 578, 514 577, 515 577 C 515 576, 516 574, 521 566 C 533 543, 528 546, 560 546 C 591 546, 589 545, 592 567 C 593 577, 593 578, 608 578 L 620 577 619 570 C 619 567, 618 561, 617 559 C 617 556, 616 552, 616 550 C 616 548, 615 543, 615 540 C 613 531, 609 505, 605 480 C 604 476, 603 469, 602 465 C 602 460, 600 452, 600 448 C 598 435, 599 436, 581 436 C 568 436, 566 436, 564 438 M 698 436 L 645 437 644 441 C 643 444, 643 447, 642 448 C 638 459, 639 459, 661 459 C 685 459, 683 455, 675 492 C 673 499, 671 509, 669 520 C 668 526, 666 533, 665 536 C 665 538, 664 542, 664 544 C 664 545, 663 548, 663 551 C 662 553, 661 557, 661 560 C 660 562, 659 567, 658 569 C 656 577, 657 578, 672 578 C 686 577, 687 577, 687 572 C 688 569, 689 562, 691 556 C 692 550, 694 541, 694 538 C 695 534, 696 528, 697 526 C 698 523, 699 517, 700 513 C 700 508, 702 502, 702 498 C 705 486, 706 481, 707 474 C 710 458, 709 459, 732 459 C 752 459, 752 459, 753 454 C 756 442, 756 434, 753 435 C 752 435, 727 436, 698 436 M 833 437 C 833 437, 831 439, 831 442 C 830 445, 829 448, 825 469 C 822 483, 820 493, 819 498 C 818 500, 817 505, 816 509 C 816 513, 814 521, 813 528 C 811 534, 810 542, 809 546 C 808 549, 807 554, 807 557 C 804 565, 803 575, 803 576 C 804 578, 901 579, 903 577 C 906 573, 909 556, 907 555 C 907 554, 891 554, 873 554 C 834 554, 836 554, 838 546 C 838 544, 839 540, 840 538 C 840 536, 841 530, 842 525 C 847 504, 848 497, 849 493 C 850 487, 852 478, 855 464 C 856 457, 858 450, 859 447 C 860 441, 860 437, 859 436 C 857 435, 835 435, 833 437 M 992 438 C 991 439, 989 443, 987 447 C 982 456, 981 458, 971 475 C 967 482, 963 488, 963 489 C 962 490, 961 492, 960 494 C 960 495, 958 498, 956 501 C 955 503, 953 506, 952 508 C 952 509, 950 512, 948 515 C 947 517, 945 520, 945 522 C 944 523, 942 526, 941 529 C 939 531, 937 535, 936 537 C 933 541, 929 550, 925 556 C 916 571, 914 575, 914 576 C 915 577, 938 578, 942 577 C 943 577, 950 565, 954 556 C 960 546, 958 546, 988 546 C 1011 546, 1014 546, 1015 548 C 1017 550, 1020 562, 1020 569 C 1020 577, 1021 578, 1036 578 L 1048 578 1048 574 C 1048 571, 1047 567, 1047 563 C 1046 559, 1044 551, 1044 545 C 1043 539, 1042 532, 1041 530 C 1041 528, 1040 524, 1039 520 C 1039 516, 1038 511, 1037 508 C 1037 505, 1036 501, 1036 499 C 1036 497, 1035 493, 1035 489 C 1033 481, 1029 458, 1028 447 C 1026 436, 1027 436, 1009 436 C 995 436, 994 436, 992 438 M 1097 436 C 1097 437, 1096 438, 1096 439 C 1096 441, 1095 443, 1095 445 C 1094 446, 1093 451, 1092 455 C 1090 467, 1087 482, 1086 487 C 1085 489, 1084 493, 1084 496 C 1084 498, 1083 504, 1082 508 C 1079 519, 1077 527, 1075 536 C 1073 550, 1071 557, 1070 565 C 1067 578, 1066 577, 1081 578 C 1097 578, 1096 578, 1099 563 C 1100 557, 1102 550, 1102 547 C 1103 544, 1104 540, 1104 538 C 1105 535, 1107 533, 1114 527 C 1119 523, 1124 517, 1127 515 C 1131 511, 1136 510, 1136 514 C 1136 515, 1138 520, 1141 525 C 1150 542, 1154 550, 1160 562 C 1168 578, 1167 578, 1185 578 C 1202 577, 1202 577, 1197 569 C 1195 566, 1193 562, 1192 560 C 1191 558, 1188 553, 1186 550 C 1184 546, 1181 541, 1180 539 C 1179 536, 1177 532, 1175 530 C 1174 528, 1170 521, 1167 515 C 1162 505, 1159 500, 1156 494 C 1154 491, 1152 493, 1187 463 C 1193 458, 1201 450, 1206 446 C 1219 435, 1219 435, 1196 436 L 1178 436 1168 445 C 1163 451, 1152 460, 1145 467 C 1137 474, 1128 483, 1124 486 C 1116 494, 1110 495, 1115 488 C 1115 487, 1116 484, 1116 483 C 1116 481, 1120 461, 1122 452 C 1124 444, 1125 438, 1124 437 C 1123 436, 1099 435, 1097 436 M 1241 437 C 1240 437, 1240 439, 1240 440 C 1240 442, 1240 444, 1239 446 C 1238 447, 1237 452, 1237 456 C 1234 469, 1229 493, 1227 502 C 1226 504, 1225 509, 1225 512 C 1224 514, 1223 522, 1221 528 C 1220 534, 1218 543, 1218 547 C 1217 550, 1216 556, 1215 559 C 1213 569, 1212 575, 1212 576 C 1213 578, 1220 578, 1266 578 C 1327 578, 1324 578, 1324 570 C 1324 568, 1325 564, 1326 562 C 1329 554, 1331 555, 1287 554 C 1241 553, 1243 554, 1246 545 C 1248 539, 1249 534, 1251 524 C 1253 514, 1251 515, 1291 515 C 1319 515, 1325 515, 1326 514 C 1328 513, 1331 499, 1331 495 C 1331 493, 1331 492, 1296 492 C 1255 492, 1258 493, 1260 484 C 1265 456, 1260 459, 1304 459 C 1324 459, 1341 459, 1341 458 C 1342 457, 1346 438, 1345 437 C 1345 436, 1242 436, 1241 437 M 273 460 C 272 462, 268 478, 267 485 C 267 488, 266 490, 266 491 C 265 491, 265 495, 266 497 C 269 500, 308 497, 315 493 C 333 482, 333 462, 315 460 C 305 459, 274 459, 273 460 M 570 476 C 568 479, 566 483, 565 483 C 565 484, 564 485, 564 485 C 564 485, 562 489, 560 492 C 558 496, 556 499, 556 500 C 556 500, 555 501, 554 503 C 540 524, 539 523, 564 523 L 584 523 584 520 C 584 518, 583 512, 583 507 C 582 501, 580 490, 579 483 C 577 466, 575 465, 570 476 M 999 473 C 998 476, 995 480, 993 484 C 987 493, 982 503, 979 508 C 977 511, 975 514, 974 516 C 973 517, 972 519, 972 520 L 973 523 992 523 C 1009 523, 1011 523, 1012 521 C 1012 519, 1011 507, 1007 478 C 1005 467, 1002 466, 999 473" fill="#0055A5" fill-rule="evenodd"/></symbol></defs></svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><i class="dot" aria-hidden="true"></i><b>Mon–Fri 7:00 AM–5:30 PM</b></span>
+    <span>W39 E Wisconsin Ave · Nashotah, WI 53058</span>
+    <span class="hide-sm">FREE loaner vehicles &amp; shuttle service available</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Great Lakes Sales &amp; Service, home"><svg viewBox="0 0 1492 800" role="img" aria-hidden="true"><use href="#gl-logo"/></svg></a>
+    <nav class="main" aria-label="Main">
+      <a href="https://www.greatlakesautowi.com/Auto-Repair">Repairs</a>
+      <a href="https://www.greatlakesautowi.com/Shop-For-Tires">Tires</a>
+      <a href="https://www.greatlakesautowi.com/Pre-Owned-Cars">Pre-owned</a>
+      <a href="https://www.greatlakesautowi.com/About">About</a>
+      <a href="https://www.greatlakesautowi.com/Contact">Contact</a>
+    </nav>
+    <a class="btn btn-red" href="tel:+12623674150"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span class="lbl">Call&nbsp;</span>262-367-4150</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><span>Nashotah</span><i>/</i><span>Lake Country</span><i>/</i><span>Locally owned by Randy &amp; Cheri Luck</span></p>
+      <h1 id="h1">Reliable, affordable auto repair — <span class="hl">for over 40&nbsp;years.</span></h1>
+      <p class="sub">ASE-certified technicians, straight-forward estimates, and same-day service in most cases. Free loaner vehicles and shuttle service.</p>
+      <div class="ctas">
+        <a class="btn btn-red" href="tel:+12623674150"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call 262-367-4150</a>
+        <a class="btn btn-blue" href="https://www.greatlakesautowi.com/Auto-Repair/Schedule-A-Repair">Book a repair</a>
+      </div>
+      <p class="owners"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#0055A5"/><path d="M9 16.5l4.5 4.5L23 11.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Domestic and import vehicles, light trucks, fleet vehicles and extended warranty contracts.</span></p>
+    </div>
+    <figure class="shot">
+      <svg class="dial" viewBox="0 0 300 300" aria-hidden="true">
+        <g fill="none" stroke-width="22">
+          <path d="M57 243A130 130 0 0 1 150 20" stroke="#CC0100" stroke-dasharray="34 7"/>
+          <path d="M42 260A150 150 0 0 1 20 150" stroke="#13294B" stroke-width="5"/>
+        </g>
+      </svg>
+      <div class="frame"><img src="img/shop-front.webp" width="2400" height="1091" alt="The Great Lakes Sales &amp; Service building in Nashotah: blue metal front with red-trimmed service bay doors, the Great Lakes Sales &amp; Service sign with 262-367-4150, and a Goodyear sign over the office." fetchpriority="high"></div>
+      <figcaption><span><b>The shop</b> · W39 E Wisconsin Ave, Nashotah</span><span>NAPA AutoCare Center</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="proof" aria-label="Why Lake Country drivers choose Great Lakes">
+  <div class="wrap">
+    <ul>
+      <li><strong><a href="https://search.google.com/local/reviews?placeid=ChIJv28ktQ20BYgRgeoMTUgaQ5Y">4.6 ★ on Google</a></strong><span>Read the reviews</span></li>
+      <li><strong>Over 40 years</strong><span>Serving Lake Country</span></li>
+      <li><strong>NAPA AutoCare</strong><span>Center · certified by AC Delco</span></li>
+      <li><strong>ASE-certified</strong><span>Technicians, factory diagnostics</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="planner" aria-labelledby="plan-h">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Drop-off planner</p>
+      <h2 id="plan-h">Pick a time. We'll tell you how to get your car to us.</h2>
+      <p class="lede">The gauge runs on Nashotah time and the shop's posted hours. Drag it to when you'd like to come in.</p>
+      <div class="gauge-card">
+        <svg class="gauge" viewBox="0 0 300 300" role="img" aria-labelledby="gauge-t">
+          <title id="gauge-t">Shop-hours gauge: open Monday to Friday, 7:00 AM to 5:30 PM</title>
+          <g id="ticks"></g>
+          <path id="openArc" fill="none" stroke="#CC0100" stroke-width="16" stroke-linecap="butt"/>
+          <g id="labels"></g>
+          <g id="needle">
+            <path d="M150 143L262 150L150 157Z" fill="#fff"/>
+          </g>
+          <circle cx="150" cy="150" r="17" fill="#0055A5" stroke="#fff" stroke-width="4"/>
+          <text x="150" y="226" text-anchor="middle" style="fill:#fff;font-size:22px;font-weight:700" id="gTime">—</text>
+          <text x="150" y="248" text-anchor="middle" id="gDay">—</text>
+        </svg>
+        <div class="readout" id="readout" aria-live="polite">
+          <p class="when" id="when">Right now in Nashotah</p>
+          <p class="state" id="state">Checking…</p>
+          <p class="next" id="next"></p>
+          <p class="tip" id="tip"></p>
+        </div>
+        <div class="controls">
+          <div class="days" role="group" aria-label="Day of the week" id="days"></div>
+          <div class="timerow">
+            <label for="t">Time</label>
+            <input id="t" type="range" min="0" max="1425" step="15" value="600" aria-describedby="gTime">
+            <button type="button" class="nowbtn" id="now">Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ul class="perks" id="perks">
+        <li data-k="loaner"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M3 17v-4l2-5h14l2 5v4"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M5 12h14"/></svg></span><div><h3>Free loaner cars</h3><p>Keep your day moving while your car is in the bay.</p></div></li>
+        <li data-k="shuttle"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><h3>Shuttle within 10 miles</h3><p>A ride to work or home, and back when it's ready.</p></div></li>
+        <li data-k="keydrop"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 7l3 3M14 9l2 2"/></svg></span><div><h3>After-hour key drop</h3><p>Leave your vehicle overnight with our key drop.</p></div></li>
+        <li data-k="wait"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></svg></span><div><h3>Waiting room</h3><p>Clean and spacious, with free Wi-Fi, coffee, water and snacks.</p></div></li>
+      </ul>
+      <p class="motto">“Treat all your customers as you would like to be treated.”<small>— what we believe, from our About page</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="bays" aria-labelledby="bays-h">
+  <div class="wrap">
+    <div class="bays-head">
+      <div>
+        <p class="kicker">In the bays</p>
+        <h2 id="bays-h">Complete auto service, under one roof.</h2>
+      </div>
+      <ul class="svc">
+        <li>Brake Repair</li>
+        <li>Lube, Oil &amp; Filter Change</li>
+        <li>Engine Diagnostics and Performance</li>
+        <li>Wheel Alignment</li>
+        <li>Steering and Suspension System</li>
+        <li>Climate Control Systems</li>
+        <li>Starting, Charging &amp; Batteries</li>
+        <li>Transmission Repair</li>
+        <li class="svc-more" style="padding-left:0;border:0;font-family:var(--body);font-weight:400;font-size:15px;color:var(--steel-ink)">A straight-forward estimate, or alternate options, before any repair begins. <a href="https://www.greatlakesautowi.com/Auto-Repair">See all 20 services</a></li>
+      </ul>
+    </div>
+    <ul class="photos">
+      <li><figure><div class="ph"><img src="img/lift-diagnostics.webp" width="625" height="309" loading="lazy" alt="A technician working the controls of a vehicle lift, with the car raised overhead and a diagnostic screen in the background."></div><figcaption>On the lift</figcaption></figure></li>
+      <li><figure><div class="ph"><img src="img/oil-service.webp" width="625" height="309" loading="lazy" alt="A technician pouring oil into a car's engine with the hood up, in the service bay."></div><figcaption>Under the hood</figcaption></figure></li>
+      <li><figure><div class="ph"><img src="img/alignment-rack.webp" width="625" height="309" loading="lazy" alt="A light-blue Volkswagen Beetle convertible on a red alignment rack with alignment heads on the wheels."></div><figcaption>On the alignment rack</figcaption></figure></li>
+    </ul>
+    <div class="tires">
+      <span class="big" aria-hidden="true">18</span>
+      <p><b>Tire brands, BFGoodrich to Yokohama</b>Michelin, Goodyear, Bridgestone, Nokian and more. Road force balancing, nitrogen inflation and TPMS service.</p>
+      <div class="links"><a href="https://www.greatlakesautowi.com/Shop-For-Tires">Shop for tires</a><a href="https://www.greatlakesautowi.com/Pre-Owned-Cars">Pre-owned cars</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="trust" aria-labelledby="trust-h">
+  <div class="wrap">
+    <div>
+      <p class="kicker" style="color:var(--red)">What drivers say</p>
+      <h2 id="trust-h" class="sr">Rating and warranty</h2>
+      <div class="rating">
+        <span class="num">4.6</span><span class="star" aria-hidden="true">★</span>
+        <span class="on"><a href="https://search.google.com/local/reviews?placeid=ChIJv28ktQ20BYgRgeoMTUgaQ5Y">on Google</a></span>
+      </div>
+      <ul class="themes" aria-label="Themes in their Google reviews">
+        <li>Fair pricing</li>
+        <li>Thorough diagnosis</li>
+        <li>Kind, honest staff</li>
+        <li>Loaner car</li>
+      </ul>
+      <p class="themes-note">Themes that come up in their Google reviews.</p>
+      <div class="warranty">
+        <div class="mile" aria-hidden="true">24/24<small>MO · MILES</small></div>
+        <p><b>NAPA Nationwide Peace of Mind® Warranty</b>Covers parts and labor on qualifying repairs and services for 24 months/24,000 miles. <a style="color:#fff" href="https://www.greatlakesautowi.com/Auto-Repair/NAPA-Warranty">Warranty details</a></p>
+      </div>
+      <p class="roadside">Broken down? For 24-hour roadside assistance and towing, Great Lakes Sales &amp; Service recommends Bulldog Towing &amp; Recovery: <a href="tel:+12625601480">262-560-1480</a>.</p>
+    </div>
+    <aside class="card" aria-labelledby="card-h">
+      <h2 id="card-h">Call the shop</h2>
+      <a class="phone" href="tel:+12623674150">262-367-4150</a>
+      <div class="btns">
+        <a class="btn btn-red" href="tel:+12623674150">Call now</a>
+        <a class="btn btn-ghost" href="https://www.greatlakesautowi.com/Auto-Repair/Schedule-A-Repair">Book a repair online</a>
+      </div>
+      <dl>
+        <dt>Hours</dt><dd>Mon–Fri 7:00 AM–5:30 PM<br>Sat–Sun closed</dd>
+        <dt>Address</dt><dd><a href="https://www.google.com/maps/place/Great+Lakes+Sales+%26+Service/@43.1028598,-88.4139352,15z/data=!4m2!3m1!1s0x0:0x96431a484d0cea81">W39 E Wisconsin Ave<br>Nashotah, WI 53058</a></dd>
+        <dt>Serving</dt><dd>Nashotah, Oconomowoc, Delafield and surrounding Lake Country</dd>
+      </dl>
+      <p class="small">Online requests get a reply within 24 hours or less to confirm a time.</p>
+    </aside>
+  </div>
+</section>
+</main>
+
+<section class="closer" aria-labelledby="closer-h">
+  <div class="wrap">
+    <div>
+      <h2 id="closer-h">A first look at your new site.</h2>
+      <p>Your shop, your team and “same-day in most cases” up front, with booking one tap away.</p>
+      <nav class="explore" aria-label="More on greatlakesautowi.com">
+        <a href="https://www.greatlakesautowi.com/Auto-Repair">Repairs</a>
+        <a href="https://www.greatlakesautowi.com/Shop-For-Tires">Tires</a>
+        <a href="https://www.greatlakesautowi.com/Pre-Owned-Cars">Pre-owned</a>
+        <a href="https://www.greatlakesautowi.com/About">About</a>
+        <a href="https://www.facebook.com/greatlakeswi">Facebook</a>
+      </nav>
+    </div>
+    <div class="brand-w"><span class="plate"><svg viewBox="0 0 1492 800" aria-hidden="true"><use href="#gl-logo"/></svg></span></div>
+  </div>
+</section>
+<footer class="site">
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official Great Lakes Sales &amp; Service site. Logo redrawn; services, hours, warranty wording and photos from greatlakesautowi.com; rating from Google; main photo enhanced.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+12623674150">Call 262-367-4150</a>
+  <a class="btn btn-blue" href="https://www.greatlakesautowi.com/Auto-Repair/Schedule-A-Repair">Book a repair</a>
+</div>
+
+<script>
+(function(){
+  var OPEN=7*60, CLOSE=17*60+30, CX=150, CY=150;
+  var DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  var FULL=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var ORDER=[1,2,3,4,5,6,0];
+  var ns='http://www.w3.org/2000/svg';
+  function ang(min){return -225+270*min/1440;}
+  function pt(a,r){var t=a*Math.PI/180;return [CX+r*Math.cos(t),CY+r*Math.sin(t)];}
+  var ticks=document.getElementById('ticks'), labels=document.getElementById('labels');
+  for(var i=0;i<=48;i++){
+    var m=i*30, major=(m%180===0), a=ang(m);
+    var p1=pt(a,major?104:112), p2=pt(a,126);
+    var l=document.createElementNS(ns,'line');
+    l.setAttribute('x1',p1[0].toFixed(1));l.setAttribute('y1',p1[1].toFixed(1));
+    l.setAttribute('x2',p2[0].toFixed(1));l.setAttribute('y2',p2[1].toFixed(1));
+    l.setAttribute('stroke',major?'#fff':'#5C6F8C');l.setAttribute('stroke-width',major?3:2);
+    ticks.appendChild(l);
+    if(major&&i<48){
+      var h=m/60, txt=(h===0?'12a':h<12?h+'a':h===12?'12p':(h-12)+'p'), q=pt(a,84);
+      var tx=document.createElementNS(ns,'text');
+      tx.setAttribute('x',q[0].toFixed(1));tx.setAttribute('y',(q[1]+5).toFixed(1));tx.setAttribute('text-anchor','middle');
+      tx.textContent=txt;labels.appendChild(tx);
+    }
+  }
+  var arc=document.getElementById('openArc');
+  (function(){var a1=pt(ang(OPEN),134),a2=pt(ang(CLOSE),134);
+    arc.setAttribute('d','M'+a1[0].toFixed(1)+' '+a1[1].toFixed(1)+'A134 134 0 0 1 '+a2[0].toFixed(1)+' '+a2[1].toFixed(1));})();
+
+  function chicagoNow(){
+    try{
+      var f=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false});
+      var parts={};f.formatToParts(new Date()).forEach(function(x){parts[x.type]=x.value;});
+      var d=DAYS.indexOf(parts.weekday), h=parseInt(parts.hour,10)%24, mi=parseInt(parts.minute,10);
+      if(d<0||isNaN(h))throw 0;
+      return {day:d,min:h*60+mi};
+    }catch(e){var n=new Date();return {day:n.getDay(),min:n.getHours()*60+n.getMinutes()};}
+  }
+  function fmt(min){var h=Math.floor(min/60),m=min%60,ap=h<12?'AM':'PM',hh=h%12||12;return hh+':'+(m<10?'0':'')+m+' '+ap;}
+  function isWk(d){return d>=1&&d<=5;}
+
+  var state={day:1,min:600,live:true};
+  var daysEl=document.getElementById('days'), range=document.getElementById('t');
+  ORDER.forEach(function(d){
+    var b=document.createElement('button');b.type='button';b.textContent=DAYS[d];b.dataset.d=d;
+    b.setAttribute('aria-label',FULL[d]);if(!isWk(d))b.className='wkend';
+    b.addEventListener('click',function(){state.day=d;state.live=false;render();});
+    daysEl.appendChild(b);
+  });
+  range.addEventListener('input',function(){state.min=+range.value;state.live=false;render();});
+  document.getElementById('now').addEventListener('click',function(){var n=chicagoNow();state.day=n.day;state.min=n.min;state.live=true;render();});
+
+  function nextOpen(d,min){
+    if(isWk(d)&&min<OPEN)return 'Opens today at 7:00 AM.';
+    var nd=(d+1)%7,lbl='tomorrow';
+    while(!isWk(nd)){nd=(nd+1)%7;lbl=FULL[nd];}
+    if(lbl!=='tomorrow')lbl=FULL[nd];
+    return 'Opens '+lbl+' at 7:00 AM.';
+  }
+  function render(){
+    var d=state.day,min=state.min,open=isWk(d)&&min>=OPEN&&min<CLOSE;
+    document.getElementById('needle').style.transform='rotate('+ang(min)+'deg)';
+    arc.setAttribute('stroke',isWk(d)?'#CC0100':'#4A5A74');
+    document.getElementById('gTime').textContent=fmt(min);
+    document.getElementById('gDay').textContent=FULL[d].toUpperCase();
+    range.value=Math.min(1425,Math.round(min/15)*15);
+    range.setAttribute('aria-valuetext',FULL[d]+' '+fmt(min));
+    Array.prototype.forEach.call(daysEl.children,function(b){b.setAttribute('aria-pressed',String(+b.dataset.d===d));});
+    var ro=document.getElementById('readout');ro.className='readout '+(open?'open':'closed');
+    document.getElementById('when').textContent=state.live?'Right now in Nashotah':FULL[d]+' at '+fmt(min);
+    document.getElementById('state').textContent=open?'Open':'Closed';
+    document.getElementById('next').textContent=open?'Open until 5:30 PM today.':nextOpen(d,min);
+    var tip, on;
+    if(open){
+      if(CLOSE-min<=60){tip='Closing soon. Call ahead, or plan on the after-hour key drop.';on=['keydrop'];}
+      else{tip='Drop it off and ask for a free loaner, or a shuttle ride within 10 miles. Waiting? Coffee and Wi-Fi are on us.';on=['loaner','shuttle','wait'];}
+    }else{tip='Leave your vehicle overnight with the after-hour key drop, then call 262-367-4150 when we open.';on=['keydrop'];}
+    document.getElementById('tip').textContent=tip;
+    Array.prototype.forEach.call(document.querySelectorAll('#perks li'),function(li){li.classList.toggle('on',on.indexOf(li.dataset.k)>-1);});
+  }
+  var n=chicagoNow();state.day=n.day;state.min=n.min;render();
+})();
+</script>
+</body>
+</html>
