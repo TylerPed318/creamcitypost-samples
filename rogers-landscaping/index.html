@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Rogers Landscaping and Tree Services LLC — Website concept by Cream City Post</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2325352C'/%3E%3Cpath d='M30 50h4l-1-14 6-6-7 4-1-8-2 8-6-4 6 7z' fill='%23A08664'/%3E%3Cg fill='%237B9E36'%3E%3Ccircle cx='32' cy='22' r='11'/%3E%3Ccircle cx='21' cy='28' r='8'/%3E%3Ccircle cx='43' cy='28' r='8'/%3E%3C/g%3E%3Cpath d='M10 52q22-10 44 0' stroke='%235E801A' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#25352C;
+  --forest-2:#1B2721;
+  --green:#5E801A;
+  --green-hover:#4A6318;
+  --leaf:#7B9E36;
+  --leaf-light:#B9D27A;
+  --sage:#EEF3E6;
+  --stone:#D9CFBE;
+  --stone-2:#F6F2EA;
+  --ink:#1F2622;
+  --muted:#4B554E;
+  --white:#FFFFFF;
+  --r:18px;
+  --shadow:0 18px 40px -18px rgba(27,39,33,.45);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--stone-2);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.08;margin:0;letter-spacing:-.01em}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+a:focus-visible,button:focus-visible{outline:3px solid var(--leaf-light);outline-offset:3px;border-radius:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:.7em 1.3em;border-radius:999px;font-weight:700;text-decoration:none;transition:background .2s,transform .2s,color .2s;border:2px solid transparent}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--green);color:var(--white)}
+.btn-primary:hover{background:var(--green-hover)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:var(--white)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(246,242,234,.94);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--stone)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:72px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:54px;height:44px;flex:none}
+.brand b{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.25rem;line-height:1;color:var(--forest);display:block}
+.brand small{display:block;font-size:.74rem;color:var(--muted);letter-spacing:.02em;margin-top:3px;white-space:nowrap}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font-size:.92rem;font-weight:600;text-decoration:none;color:var(--forest);padding:10px 12px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{background:var(--sage)}
+.top .btn{padding:.55em 1.1em;font-size:.95rem;white-space:nowrap}
+
+/* hero */
+.hero{background:var(--forest);color:var(--white);position:relative;overflow:hidden;padding:56px 0 0}
+.hero .grid{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.45fr);gap:44px;align-items:end;width:min(1360px,100% - 32px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--leaf-light)}
+.eyebrow:before{content:"";width:28px;height:2px;background:currentColor}
+.hero h1{font-size:clamp(2.3rem,4.1vw,3.7rem);margin:18px 0 18px}
+.hero h1 em{font-style:italic;color:var(--leaf-light);font-weight:500}
+.hero p.sub{font-size:1.1rem;color:#DCE4D6;max-width:34ch;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .copy{padding-bottom:64px}
+.rating{display:inline-flex;align-items:center;gap:8px;margin-top:26px;color:#DCE4D6;font-size:.95rem;text-decoration:none;min-height:44px}
+.rating span{color:#F2C94C;font-size:1.15rem}
+.rating b{color:var(--white)}
+.rating:hover b{text-decoration:underline}
+
+/* plan-view photo */
+.plan{position:relative;margin:0;border-radius:var(--r) var(--r) 0 0;overflow:hidden;box-shadow:var(--shadow);background:#2f4136}
+.plan img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.pin{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;gap:8px;pointer-events:none}
+.pin i{width:30px;height:30px;border-radius:50%;background:var(--white);color:var(--forest);font:700 .85rem/30px Inter,sans-serif;text-align:center;font-style:normal;box-shadow:0 0 0 5px rgba(123,158,54,.55)}
+.pin span{background:rgba(27,39,33,.86);color:var(--white);font-size:.8rem;font-weight:600;padding:5px 10px;border-radius:999px;white-space:nowrap}
+.plan figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 16px;font-size:.78rem;color:#E4EADF;background:linear-gradient(transparent,rgba(27,39,33,.85));text-align:right}
+/* logo-arc ground lines motif */
+.arcs{display:block;width:100%;height:46px;color:var(--leaf)}
+
+/* proof strip */
+.proof{background:var(--white);border-bottom:1px solid var(--stone)}
+.proof ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 18px;border-left:1px solid var(--stone);display:flex;flex-direction:column;gap:2px}
+.proof li:first-child{border-left:0}
+.proof b{font-family:Fraunces,Georgia,serif;font-size:1.25rem;color:var(--forest)}
+.proof small{color:var(--muted);font-size:.88rem}
+
+/* picker */
+.pick{padding:88px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.sec-head h2{font-size:clamp(1.9rem,3.4vw,2.9rem);color:var(--forest);max-width:18ch}
+.sec-head p{margin:0;color:var(--muted);max-width:40ch}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.tabs button{font:600 1rem Inter,sans-serif;min-height:48px;padding:.6em 1.2em;border-radius:999px;border:2px solid var(--forest);background:transparent;color:var(--forest);cursor:pointer;transition:background .2s,color .2s}
+.tabs button:hover{background:var(--sage)}
+.tabs button[aria-selected=true]{background:var(--forest);color:var(--white)}
+.panel{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.panel[hidden]{display:none}
+.panel .ph{position:relative;min-height:320px}
+.panel .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.panel .ph span{position:absolute;left:14px;bottom:14px;background:rgba(27,39,33,.86);color:var(--white);font-size:.8rem;font-weight:600;padding:5px 11px;border-radius:999px}
+.panel .tx{padding:36px 36px 32px}
+.panel h3{font-size:1.7rem;color:var(--forest)}
+.tag{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--green);margin:.4em 0 1.1em;font-size:1.1rem}
+.panel ul{margin:0 0 22px;padding:0;list-style:none;display:grid;gap:8px}
+.panel li{padding-left:28px;position:relative}
+.panel li:before{content:"";position:absolute;left:0;top:.55em;width:16px;height:8px;border-bottom:3px solid var(--leaf);border-radius:0 0 50% 50%}
+.panel .note{font-size:.88rem;color:var(--muted);margin:0 0 18px}
+
+/* work */
+.work{background:var(--sage);padding:88px 0}
+.photos{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);grid-template-rows:auto auto;gap:18px}
+.photos figure{margin:0;position:relative;border-radius:var(--r);overflow:hidden;background:#cfd8c4}
+.photos figure:first-child{grid-row:span 2}
+.photos img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.photos figure:first-child img{aspect-ratio:auto;min-height:100%}
+.photos figcaption{position:absolute;left:12px;bottom:12px;background:var(--white);color:var(--forest);font-weight:600;font-size:.85rem;padding:6px 12px;border-radius:999px}
+
+/* reviews + contact */
+.trust{padding:88px 0}
+.trust .grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px;align-items:start}
+.quote{background:var(--forest);color:var(--white);border-radius:var(--r);padding:40px;position:relative;overflow:hidden}
+.quote .g{display:flex;align-items:center;gap:10px;font-weight:600;margin-bottom:22px}
+.quote .g a{color:var(--leaf-light)}
+.quote .g span{color:#F2C94C;font-size:1.3rem}
+.themes{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.themes li{border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:6px 14px;font-size:.9rem}
+blockquote{margin:0;font-family:Fraunces,Georgia,serif;font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.4;font-weight:500}
+blockquote footer{font:600 .92rem Inter,sans-serif;color:var(--leaf-light);margin-top:16px}
+.quote .links{margin-top:24px;display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem}
+.quote .links a{color:#DCE4D6;min-height:44px;display:inline-flex;align-items:center}
+.card{background:var(--white);border-radius:var(--r);padding:34px;border:1px solid var(--stone)}
+.card h2{font-size:1.8rem;color:var(--forest);margin-bottom:6px}
+.card p{margin:0 0 20px;color:var(--muted)}
+.card dl{margin:0 0 24px;display:grid;gap:14px}
+.card dt{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--green)}
+.card dd{margin:2px 0 0;font-weight:600;overflow-wrap:anywhere}
+.card dd a{text-decoration-color:var(--leaf);text-underline-offset:3px}
+.card .cta .btn-ghost{border-color:var(--forest);color:var(--forest)}
+.card .cta .btn-ghost:hover{background:var(--sage)}
+
+/* closer + footer */
+.closer{background:var(--forest);color:var(--white);text-align:left;padding:72px 0 40px}
+.closer .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.closer h2{font-size:clamp(1.8rem,3.4vw,2.7rem);max-width:20ch}
+.closer h2 em{color:var(--leaf-light);font-weight:500}
+footer.site{background:var(--forest-2);color:#B9C4B5;font-size:.85rem;padding:26px 0 30px}
+footer.site p{margin:0}
+footer.site a{color:#DCE4D6}
+
+.callbar{display:none}
+
+@media (max-width:960px){
+  .nav{display:none}
+  .top .btn{margin-left:auto}
+  .hero .grid{grid-template-columns:minmax(0,1fr);gap:8px}
+  .hero .copy{padding-bottom:28px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid var(--stone)}
+  .panel{grid-template-columns:minmax(0,1fr)}
+  .panel .ph{min-height:0;aspect-ratio:16/10}
+  .trust .grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:76px}
+  .top .wrap{min-height:64px;gap:10px}
+  .brand svg{width:44px;height:36px}
+  .brand b{font-size:1.05rem}
+  .brand small{display:none}
+  .top .btn .long{display:none}
+  .hero{padding-top:36px}
+  .pin span{display:none}
+  .pin i{width:26px;height:26px;line-height:26px}
+  .plan figcaption{text-align:left}
+  .legend{display:grid!important}
+  .pick,.work,.trust{padding:60px 0}
+  .panel .tx{padding:26px 22px}
+  .photos{grid-template-columns:minmax(0,1fr)}
+  .photos figure:first-child{grid-row:auto}
+  .photos figure:first-child img{aspect-ratio:4/3;min-height:0}
+  .quote,.card{padding:28px 22px}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--forest);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+  .callbar .btn{min-height:50px;padding:.5em .6em;font-size:.95rem}
+}
+.legend{display:none;list-style:none;margin:0;padding:12px 0 18px;gap:6px;grid-template-columns:repeat(2,minmax(0,1fr));font-size:.85rem;color:#DCE4D6}
+.legend b{display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--white);color:var(--forest);text-align:center;line-height:22px;font-size:.75rem;margin-right:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Rogers Landscaping and Tree Services, back to top">
+      <svg viewBox="0 0 120 96" aria-hidden="true">
+        <path d="M14 44 Q26 16 46 8" stroke="#7B9E36" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M106 44 Q94 16 74 8" stroke="#7B9E36" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M56 80 L58 54 L46 42 L58 49 L59 36 L62 49 L74 40 L63 54 L65 80Z" fill="#6B5135"/>
+        <g fill="#4E7A26">
+          <circle cx="60" cy="28" r="17"/><circle cx="41" cy="38" r="13"/><circle cx="79" cy="38" r="13"/>
+          <circle cx="47" cy="22" r="11"/><circle cx="73" cy="22" r="11"/><circle cx="31" cy="46" r="8"/><circle cx="89" cy="46" r="8"/>
+        </g>
+        <g fill="#7FAE3A"><circle cx="56" cy="20" r="7"/><circle cx="72" cy="30" r="6"/><circle cx="42" cy="32" r="6"/><circle cx="84" cy="42" r="4"/></g>
+        <path d="M10 70 Q30 64 50 74" stroke="#5E801A" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M18 78 Q34 72 52 80" stroke="#2D2D2D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <path d="M70 74 Q90 64 110 70" stroke="#5E801A" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M68 80 Q86 72 102 78" stroke="#2D2D2D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span><b>Rogers</b><small>Landscaping &amp; Tree services LLC</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="https://www.rogerslandscapingandtreeservices.com/about-6">About</a>
+      <a href="https://www.rogerslandscapingandtreeservices.com/book-online">Book online</a>
+    </nav>
+    <a class="btn btn-primary" href="tel:+12625106035"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span class="long">Call&nbsp;</span>(262) 510-6035</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap grid">
+    <div class="copy">
+      <span class="eyebrow">Father &amp; son · Waukesha, WI</span>
+      <h1>Patios, walls, fire pits and tree work, <em>built to last.</em></h1>
+      <p class="sub">Landscaping, hardscaping, tree services, lawn care and snow removal for homes and businesses. Free estimates.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+12625106035">Call (262) 510-6035</a>
+        <a class="btn btn-ghost" href="sms:+12625106035">Text for a free estimate</a>
+      </div>
+      <a class="rating" href="https://www.google.com/maps/place/Rogers+Landscaping+and+Tree+services+LLC/data=!4m8!3m7!1s0x2a6cdebc3d8c5dbd:0x4bc536050faca96!9m1!1b1"><span aria-hidden="true">★</span><b>5.0 on Google</b>· read the reviews</a>
+    </div>
+    <div>
+      <figure class="plan">
+        <img src="img/hero.jpg" width="1600" height="900" alt="Drone view of a finished front-yard job: a cream paver patio and walkway, a block retaining wall, stone steps and fresh mulched planting beds beside a brick house">
+        <div class="pin" style="left:63%;top:30%"><i>1</i><span>Paver patio</span></div>
+        <div class="pin" style="left:60%;top:58%"><i>2</i><span>New planting beds</span></div>
+        <div class="pin" style="left:78%;top:60%"><i>3</i><span>Block wall</span></div>
+        <div class="pin" style="left:37%;top:87%"><i>4</i><span>Steps</span></div>
+        <figcaption>Their own drone photo of a finished job</figcaption>
+      </figure>
+      <ul class="legend" aria-hidden="true"><li><b>1</b>Paver patio</li><li><b>2</b>New planting beds</li><li><b>3</b>Block wall</li><li><b>4</b>Steps</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-label="Quick facts">
+  <ul class="wrap">
+    <li><b>★ 5.0</b><small>on Google</small></li>
+    <li><b>Father &amp; son</b><small>family-run crew</small></li>
+    <li><b>Free estimates</b><small>on design, build &amp; tree work</small></li>
+    <li><b>Homes &amp; businesses</b><small>based at 1001 Lincoln Ave, Waukesha</small></li>
+  </ul>
+</section>
+
+<section class="pick" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What can we build for you?</h2>
+      <p>Pick a project to see what the crew handles. Then call or text for a free estimate.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Services">
+      <button role="tab" id="t-hard" aria-controls="p-hard" aria-selected="true">Hardscapes</button>
+      <button role="tab" id="t-tree" aria-controls="p-tree" aria-selected="false" tabindex="-1">Tree services</button>
+      <button role="tab" id="t-yard" aria-controls="p-yard" aria-selected="false" tabindex="-1">Lawn, landscaping &amp; snow</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-hard" aria-labelledby="t-hard">
+      <div class="ph"><img src="img/patio-pergola.jpg" width="900" height="506" alt="Drone view of a gray paver patio with a wooden pergola and new mulched beds behind a house" loading="lazy"><span>Paver patio &amp; pergola</span></div>
+      <div class="tx">
+        <h3>Outdoor design &amp; build</h3>
+        <p class="tag">Built to last, designed to impress.</p>
+        <ul>
+          <li>Paver patios and walkways</li>
+          <li>Retaining walls</li>
+          <li>Outdoor fireplaces and fire pits</li>
+          <li>Concrete patios, walkways, steps and driveways</li>
+          <li>Outdoor living spaces</li>
+        </ul>
+        <p class="note">Free estimates.</p>
+        <a class="btn btn-primary" href="tel:+12625106035">Call about a hardscape</a>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-tree" aria-labelledby="t-tree" hidden>
+      <div class="ph"><img src="img/tree-lift.jpg" width="900" height="506" alt="Crew member in an orange lift cutting limbs from a large tree beside a house" loading="lazy"><span>Tree work with the lift</span></div>
+      <div class="tx">
+        <h3>Tree services</h3>
+        <p class="tag">Expert care for stronger, healthier trees.</p>
+        <ul>
+          <li>Tree trimming</li>
+          <li>Tree removal</li>
+          <li>Crown cleanup</li>
+          <li>Broken and storm-damaged limbs</li>
+        </ul>
+        <p class="note">Free estimates.</p>
+        <a class="btn btn-primary" href="tel:+12625106035">Call about a tree</a>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-yard" aria-labelledby="t-yard" hidden>
+      <div class="ph"><img src="img/planting.jpg" width="900" height="581" alt="Crew member in a safety-green shirt watering a new row of arborvitae in a fresh rock bed" loading="lazy"><span>New arborvitae planting</span></div>
+      <div class="tx">
+        <h3>Lawn, landscaping &amp; snow</h3>
+        <p class="tag">Pristine lawns for homes and businesses.</p>
+        <ul>
+          <li>Residential and commercial lawn care</li>
+          <li>General landscaping and plantings</li>
+          <li>Commercial and residential snow removal</li>
+        </ul>
+        <p class="note">Lawn care pricing varies by property; call to talk it through.</p>
+        <a class="btn btn-primary" href="tel:+12625106035">Call about your yard</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="arcs" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true" style="background:var(--stone-2)"><path d="M0 46 Q300 0 600 30 T1200 20 V46Z" fill="#EEF3E6"/><path d="M0 40 Q300 -4 600 26 T1200 16" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Real jobs, from their own camera.</h2>
+      <p>Every photo on this page is the crew's own work. No stock.</p>
+    </div>
+    <div class="photos">
+      <figure><img src="img/firepit-dusk.jpg" width="900" height="675" alt="Round stone fire pit lit at dusk, ringed by white Adirondack chairs on a gravel pad" loading="lazy"><figcaption>Round fire pit with seating</figcaption></figure>
+      <figure><img src="img/gravel-patio.jpg" width="800" height="600" alt="Gravel patio with a fire pit, white chairs and planted beds, edged by large stone blocks" loading="lazy"><figcaption>Gravel patio &amp; fire pit</figcaption></figure>
+      <figure><img src="img/block-wall.jpg" width="800" height="555" alt="New light-gray block wall along a house with a fresh gravel border" loading="lazy"><figcaption>Block wall install</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="trust" id="contact">
+  <div class="wrap grid">
+    <div class="quote">
+      <div class="g"><span aria-hidden="true">★</span><a href="https://www.google.com/maps/place/Rogers+Landscaping+and+Tree+services+LLC/data=!4m8!3m7!1s0x2a6cdebc3d8c5dbd:0x4bc536050faca96!9m1!1b1">5.0 on Google</a></div>
+      <ul class="themes" aria-label="What customers mention">
+        <li>Spotless cleanup</li><li>Quick to respond</li><li>Courteous crew</li>
+      </ul>
+      <blockquote>“We really appreciate the work that Rogers Landscaping did!! They were great to work with and made sure that we were satisfied with the work when it was finished. They are customer focused and worked hard to complete the job in a timely manner!”
+        <footer>John Fischer, Waukesha, Wi.</footer>
+      </blockquote>
+      <div class="links"><a href="https://g.page/r/CZbK-lBgU7wEEBM/review">Leave a review</a><a href="https://www.facebook.com/profile.php?id=100083032727477">Facebook</a><a href="https://www.instagram.com/rogerslandscaping_llc/">Instagram</a></div>
+    </div>
+    <div class="card">
+      <h2>Get a free estimate</h2>
+      <p>Call or message to schedule a consultation.</p>
+      <dl>
+        <div><dt>Call or text</dt><dd><a href="tel:+12625106035">(262) 510-6035</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:Rogerslandscapingtreeservices@gmail.com">Rogerslandscapingtreeservices@gmail.com</a></dd></div>
+        <div><dt>Address</dt><dd>1001 Lincoln Ave, Waukesha, WI 53186</dd></div>
+      </dl>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+12625106035">Call now</a>
+        <a class="btn btn-ghost" href="mailto:Rogerslandscapingtreeservices@gmail.com">Email us</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="closer">
+  <div class="wrap">
+    <h2>A first look at your new site, <em>built from your own work.</em></h2>
+    <a class="btn btn-primary" href="tel:+12625106035">Call (262) 510-6035</a>
+  </div>
+</section>
+<footer class="site">
+  <div class="wrap"><p>Website by Cream City Post · Independent website concept, not the official Rogers Landscaping and Tree Services LLC site. Logo redrawn; services, contact details, testimonial and photos from rogerslandscapingandtreeservices.com; rating from Google.</p></div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-primary" href="tel:+12625106035">Call (262) 510-6035</a>
+  <a class="btn btn-ghost" href="sms:+12625106035">Text us</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function show(t,focus){
+    tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!on;});
+    if(focus)t.focus();
+  }
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){show(b)});
+    b.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];
+      if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];
+      if(e.key==='Home')n=tabs[0];
+      if(e.key==='End')n=tabs[tabs.length-1];
+      if(n){e.preventDefault();show(n,true);}
+    });
+  });
+})();
+</script>
+</body>
+</html>
