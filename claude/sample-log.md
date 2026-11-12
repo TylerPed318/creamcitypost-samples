@@ -52,6 +52,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
 CCP-072 creative brief 1a1d0bea7f964d48 handled; v1 ready sent 1a1d1b1323aa2806 (Nov 12).
+CCP-079 creative brief 1a1d12b861eb80fe handled; v1 ready sent 1a1d1e898435d92d (Nov 12).
 CCP-078 creative brief 1a1d1002c5826a89 handled; v1 ready sent 1a1d1e2bd52b8144 (Nov 12).
 CCP-077 creative brief 1a1d0fbfd817cbdf handled; v1 ready sent 1a1d1b1503e4db8d (Nov 12).
 CCP-076 creative brief 1a1d0f6d5c15cd81 handled; v1 ready sent 1a1d1aeae0cf7813 (Nov 12).
@@ -137,6 +138,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-076 | Bergson Interiors Ltd | Interior design showroom | brief | v1 | bergson-interiors/ | v1 emailed Nov 12, ~3:40 PM. 0 credits. |
 | CCP-077 | Great Lakes Sales & Service | Auto repair, Nashotah | brief | v1 | great-lakes-sales-service/ | v1 emailed Nov 12, ~3:45 PM. 2 credits (hero upscale). |
 | CCP-078 | Fuerst Electric | Electrician (residential/commercial/new construction), Wales | brief | v1 | fuerst-electric/ | v1 emailed Nov 12, ~4:31 PM. 0 credits. Photo-free. |
+| CCP-079 | Beachside Boat & Bait | Boat rentals + bait, Pewaukee Lake | brief | v1 | beachside-boat-bait/ | v1 emailed Nov 12, ~16:37. 2 credits (kayak upscale). |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
@@ -188,6 +190,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-072 BFH:** (608) 931-5202; owner Josh Gardner; Founding year unverified; omit body claims (logo artwork retained); "5.0 on Google" no count; own-site testimonials Candi Barber, Nick Kladis (Google), Julie Moe (Facebook) verbatim; Licensed & Insured and Satisfaction Guaranteed are on their site. No hours/address, pickup/delivery, handyman/decks/fences.
 - **CCP-077 Great Lakes:** (262) 367-4150 only (not 866-563-2833); Mon–Fri 7:00 AM–5:30 PM; over 40 years (not 30); owners Randy & Cheri Luck; "4.6 on Google" no count. No coupons, women-owned, NAPA card extension, team/event photos, email. Bulldog Towing only as their roadside recommendation. Hero = Higgsfield 4K upscale of 625px shop front.
 - **CCP-078 Fuerst:** 262-563-3308 only (never 414-255-4975, the site's broken emergency link); joe@fuerstelectric.com; Wales, WI, serving Waukesha & Milwaukee Counties (no street address; schema bike-trail address and Google 420 Pebble Creek Pass not used); no hours/license #; "over 15 years" new construction only; "5.0 on Google" no count. No HVAC/Security/same-day/24-7. No site photos confirmed as theirs.
+- **CCP-079 Beachside:** (262) 695-2628 / 695-BOAT; beachsidewi@gmail.com; 129 Park Ave, Pewaukee 53072; family-owned; season opens May 1 (end date conflicts Sept 30 vs Oct 15; no hours); "4.5 on Google" no count. No prices/codes until fleet confirmed; no AI images; no kids photos; never mention the hack on the page. Reserve = FareHarbor link.
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
@@ -250,4 +253,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - Nov 12, 16:20 CT (scheduled run): last finished CCP-073 v3 and CCP-072 v2, 2 credits total. Next verified unbuilt CCP-078 Fuerst Electric, then079-085,087,090-093. Model selection unavailable; used supported runtime. Named render unavailable, installed Playwright used. Required q85 exports exceed normal page weight; disclosed in both ready emails. Old unpublished BFH draft preserved outside checkout at ../bfh-draft-preserved-20261112-1600; do not rebuild it.
 - done — CCP-078 v1 (Nov 12, ~16:31 CT, scheduled run): live (page 200, byte-identical; no image files), emailed 1a1d1e2bd52b8144; 0 credits; commit 5d95651. Photo-free typographic build: 10,000-hours credential plate, lime wire motif, breaker-panel picker (Homeowners/Builders/Commercial). Open: no confirmed job photos (ask Joe); Joe not named; no count/named quotes per guidelines; HVAC/Security omitted pending confirmation.
 - Nov 12, ~16:31 CT (scheduled run): CCP-078 v1 finished, 0 credits; continuing. Next up, oldest brief first: CCP-079 Beachside Boat & Bait (1a1d12b861eb80fe), CCP-080 Dean Pipito Water Features (1a1d13009cac81d4), then 081–085, 087, 090–093.
-- in progress — CCP-079 (Nov 12, 16:32 CT, scheduled run)
+- done — CCP-079 v1 (Nov 12, ~16:37 CT, scheduled run): live (page + 4 imgs 200, byte-identical), emailed 1a1d1e898435d92d; 2 credits (kayak 2K upscale); commit a97b479. Oval porthole hero (slide tri-toon on trailer), group-size fleet slider. Open: prices/promo codes, season end date and hours omitted pending owner; on-lake slide photo skipped (identifiable kids); fishing-boat registration blurred.
+- Nov 12, ~16:37 CT (scheduled run): session ends after 2 builds (078, 079 v1), 2 credits total. Next up, oldest brief first: CCP-080 Dean Pipito Water Features (1a1d13009cac81d4), then 081–085, 087, 090–093.
