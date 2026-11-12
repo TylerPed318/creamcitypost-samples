@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Lake Country Project Guy LLC — Website concept by Cream City Post</title>
+<meta name="description" content="Home repairs, small remodels and custom carpentry in Delafield and Lake Country. Fix it. Make it. Solve it.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%233B2A1E'/%3E%3Cpath d='M8 46h48' stroke='%23C98F5D' stroke-width='4'/%3E%3Cpath d='M14 46v-7M24 46v-4M34 46v-7M44 46v-4M54 46v-7' stroke='%23C98F5D' stroke-width='2.5'/%3E%3Ctext x='32' y='34' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='24' fill='%23F7F2EA'%3EPG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --copper:#C98F5D;
+  --copper-ink:#8A5A2F;
+  --walnut:#3B2A1E;
+  --walnut-2:#4a3727;
+  --slate:#79888A;
+  --sage:#A9B8A0;
+  --paper:#F7F2EA;
+  --paper-2:#EFE6D8;
+  --ink:#2A2A28;
+  --muted:#5b5650;
+  --white:#FFFFFF;
+  --display:"League Spartan",system-ui,sans-serif;
+  --body:"Source Serif 4",Georgia,serif;
+  --r:14px;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.02;margin:0;color:var(--walnut);letter-spacing:-.01em}
+p{margin:0}
+.wrap{width:min(var(--wrap),100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--copper);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--walnut);color:var(--paper);padding:10px 14px;z-index:99}
+.skip:focus{left:8px}
+
+/* tape-measure motif */
+.tape{height:26px;background:
+  repeating-linear-gradient(90deg,var(--walnut) 0 2px,transparent 2px 64px) bottom/100% 15px no-repeat,
+  repeating-linear-gradient(90deg,var(--walnut) 0 1.5px,transparent 1.5px 32px) bottom/100% 10px no-repeat,
+  repeating-linear-gradient(90deg,rgba(59,42,30,.7) 0 1px,transparent 1px 8px) bottom/100% 6px no-repeat,
+  var(--copper);border-top:2px solid var(--walnut)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:.8em 1.3em;border-radius:999px;font:700 1rem/1 var(--display);letter-spacing:.02em;text-decoration:none;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;border:2px solid transparent}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-dark{background:var(--walnut);color:var(--paper)}
+.btn-dark:hover{background:#2a1d14;transform:translateY(-1px)}
+.btn-copper{background:var(--copper);color:var(--walnut)}
+.btn-copper:hover{background:#d49f70;transform:translateY(-1px)}
+.btn-line{border-color:var(--walnut);color:var(--walnut);background:transparent}
+.btn-line:hover{background:var(--walnut);color:var(--paper)}
+
+/* header */
+header.top{position:sticky;top:0;z-index:40;background:rgba(247,242,234,.94);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid rgba(59,42,30,.14)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.mark{display:flex;flex-direction:column;text-decoration:none;color:var(--walnut);line-height:.95}
+.mark b{font:800 1.32rem/1 var(--display);letter-spacing:-.01em}
+.mark span{font:600 .72rem/1.3 var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--copper-ink);margin-top:5px}
+nav.links{display:flex;gap:4px}
+nav.links a{font:600 .95rem/1 var(--display);text-decoration:none;color:var(--walnut);padding:15px 12px;border-radius:8px}
+nav.links a:hover{background:var(--paper-2)}
+.top .btn{min-height:46px;padding:.7em 1.1em}
+
+/* hero */
+.hero{padding:clamp(36px,6vw,80px) 0 0}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(28px,5vw,72px);align-items:end}
+.eyebrow{font:700 .82rem/1 var(--display);letter-spacing:.22em;text-transform:uppercase;color:var(--copper-ink);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--copper)}
+.hero h1{font-size:clamp(3rem,8.4vw,6.6rem);font-weight:800;margin:20px 0 22px;line-height:.92}
+.hero h1 span{display:block}
+.hero h1 .c{color:var(--copper-ink);position:relative;width:max-content;max-width:100%}
+.hero h1 .c::after{content:"";position:absolute;left:0;right:-.08em;bottom:.06em;height:.11em;background:repeating-linear-gradient(90deg,var(--copper) 0 2px,transparent 2px 10px);opacity:.9}
+.lede{font-size:clamp(1.1rem,1.6vw,1.3rem);max-width:34ch;color:var(--ink)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-note{margin-top:18px;font-size:.95rem;color:var(--muted)}
+.frame{position:relative;margin:0}
+.frame .ph{border-radius:var(--r) var(--r) 0 0;overflow:hidden;aspect-ratio:4/5;box-shadow:16px 16px 0 var(--sage)}
+.frame .ph img{width:100%;height:100%;object-fit:cover}
+.frame .tape{border-radius:0 0 6px 6px;box-shadow:16px 12px 0 var(--sage)}
+.frame figcaption{position:absolute;left:-14px;top:22px;background:var(--walnut);color:var(--paper);font:700 .8rem/1.2 var(--display);letter-spacing:.14em;text-transform:uppercase;padding:10px 14px;border-radius:4px;transform:rotate(-2deg)}
+
+/* proof strip */
+.proof{margin-top:clamp(40px,6vw,72px);background:var(--walnut);color:var(--paper)}
+.proof ul{list-style:none;margin:0;padding:22px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.proof li{display:flex;gap:12px;align-items:flex-start;font-size:.98rem;line-height:1.35}
+.proof li b{display:block;font:700 1.02rem/1.2 var(--display);color:var(--copper);letter-spacing:.01em;margin-bottom:2px}
+.proof svg{flex:none;width:22px;height:22px;color:var(--sage);margin-top:2px}
+
+/* sections */
+section{padding:clamp(56px,8vw,104px) 0}
+.kicker{font:700 .8rem/1 var(--display);letter-spacing:.22em;text-transform:uppercase;color:var(--copper-ink)}
+.sec-h{font-size:clamp(2rem,4.4vw,3.3rem);font-weight:800;margin-top:12px;max-width:18ch}
+.sec-p{margin-top:14px;max-width:56ch;color:var(--muted);font-size:1.08rem}
+
+/* three doors */
+.doors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px}
+.door{background:var(--white);border:1px solid rgba(59,42,30,.14);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.door:nth-child(2){transform:translateY(28px)}
+.door .ph{aspect-ratio:4/3;overflow:hidden;position:relative}
+.door .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.door:hover .ph img{transform:scale(1.03)}
+.door .tag{position:absolute;left:14px;bottom:14px;background:var(--copper);color:var(--walnut);font:800 1.5rem/1 var(--display);padding:10px 14px 8px;border-radius:6px}
+.door .body{padding:22px 22px 26px}
+.door p{color:var(--muted)}
+.door ul{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.door li{font:600 .86rem/1 var(--display);background:var(--paper);border:1px solid rgba(59,42,30,.16);color:var(--walnut);padding:9px 11px;border-radius:999px}
+.door .cap{font-size:.86rem;color:var(--muted);margin-top:14px;font-style:italic}
+
+/* before/after */
+.ba-sec{background:var(--paper-2)}
+.ba-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px);align-items:center}
+.ba{position:relative;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:#ddd;--pos:50%;box-shadow:0 22px 50px -24px rgba(59,42,30,.55);touch-action:pan-y}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba .lbl{position:absolute;top:14px;font:700 .78rem/1 var(--display);letter-spacing:.18em;text-transform:uppercase;padding:9px 11px;border-radius:4px;pointer-events:none}
+.ba .lbl.b{left:14px;background:var(--walnut);color:var(--paper)}
+.ba .lbl.a{right:14px;background:var(--copper);color:var(--walnut)}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:var(--paper);pointer-events:none}
+.ba .knob{position:absolute;top:50%;left:var(--pos);width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:var(--paper);border:3px solid var(--walnut);display:grid;place-items:center;pointer-events:none;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.ba .knob svg{width:24px;height:24px;color:var(--walnut)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba input:focus-visible ~ .knob{outline:3px solid var(--copper);outline-offset:3px}
+.ba-note{font-size:.9rem;color:var(--muted);margin-top:14px}
+.ba-steps{margin-top:24px;display:grid;gap:12px}
+.ba-steps div{display:flex;gap:14px;align-items:baseline}
+.ba-steps b{font:800 1.1rem/1 var(--display);color:var(--copper-ink);min-width:30px}
+
+/* lesson of love */
+.lesson{background:var(--walnut);color:var(--paper);padding:0;overflow:hidden}
+.lesson .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;align-items:stretch;width:100%;max-width:none;margin:0}
+.lesson .ph{min-height:420px;position:relative}
+.lesson .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lesson .txt{padding:clamp(40px,7vw,96px) clamp(24px,6vw,88px);display:flex;flex-direction:column;justify-content:center}
+.lesson .kicker{color:var(--copper)}
+.lesson blockquote{margin:18px 0 0;font:800 clamp(1.8rem,3.6vw,2.9rem)/1.08 var(--display);color:var(--paper);letter-spacing:-.01em}
+.lesson blockquote::before{content:"\201C";display:block;font:800 4.4rem/0.6 var(--display);color:var(--copper);margin-bottom:12px}
+.lesson .sub{margin-top:20px;font-style:italic;color:#e5d9c8;max-width:46ch}
+.lesson .src{margin-top:18px;font:600 .82rem/1.3 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--sage)}
+.lesson .src a{color:var(--sage)}
+
+/* photo row */
+.row3{display:grid;grid-template-columns:1.2fr .9fr 1fr;gap:16px;margin-top:36px;align-items:start}
+.row3 figure{margin:0}
+.row3 .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3}
+.row3 figure:nth-child(2) .ph{aspect-ratio:3/4}
+.row3 img{width:100%;height:100%;object-fit:cover}
+.row3 figcaption{font:600 .95rem/1.3 var(--display);color:var(--walnut);margin-top:10px;display:flex;gap:8px;align-items:center}
+.row3 figcaption::before{content:"";width:16px;height:2px;background:var(--copper)}
+.more{margin-top:28px}
+.more a{font:700 1rem/1 var(--display);color:var(--walnut);text-underline-offset:5px;text-decoration-color:var(--copper);text-decoration-thickness:2px}
+.more a:hover{color:var(--copper-ink)}
+
+/* contact */
+.contact{background:var(--paper-2)}
+.c-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px);align-items:start}
+.about p+p{margin-top:14px}
+.about .sig{margin-top:22px;font:700 1.05rem/1.3 var(--display);color:var(--walnut)}
+.reviews-note{margin-top:26px;padding:18px 20px;border:2px dashed rgba(59,42,30,.3);border-radius:var(--r);font-size:.98rem}
+.reviews-note b{font-family:var(--display);color:var(--walnut)}
+.reviews-note a{color:var(--copper-ink);font-weight:600}
+.card{background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:12px 12px 0 var(--walnut);border:2px solid var(--walnut)}
+.card .tape{border-top:0;border-bottom:2px solid var(--walnut)}
+.card .in{padding:26px 26px 28px}
+.card h3{font-size:1.7rem}
+.card dl{margin:18px 0 0;display:grid;gap:14px}
+.card dt{font:700 .74rem/1 var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--copper-ink)}
+.card dd{margin:5px 0 0;font-size:1.05rem}
+.card dd a{text-decoration-color:var(--copper);text-underline-offset:3px;word-break:break-word}
+.card .btns{display:grid;gap:10px;margin-top:22px}
+.card .fine{margin-top:16px;font-size:.92rem;color:var(--muted)}
+
+/* closer + footer */
+.closer{text-align:left;padding:clamp(56px,8vw,96px) 0}
+.closer .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:end;justify-content:space-between}
+.closer h2{font-size:clamp(2.2rem,5vw,3.8rem);max-width:15ch}
+footer{background:var(--walnut);color:#e8dccb;padding:28px 0 32px;font-size:.92rem}
+footer a{color:var(--paper)}
+footer p+p{margin-top:8px}
+
+/* tap targets for text links */
+.mark,.card dd a,.more a,.lesson .src a,footer a{display:inline-flex;align-items:center;min-height:44px}
+.reviews-note a{display:inline-block;padding:11px 0;margin:-11px 0}
+
+/* mobile call bar */
+.callbar{display:none}
+
+@media (max-width:980px){
+  nav.links{display:none}
+  .hero .wrap{grid-template-columns:minmax(0,1fr)}
+  .frame{max-width:560px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .doors{grid-template-columns:minmax(0,1fr)}
+  .door:nth-child(2){transform:none}
+  .door{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+  .door .ph{aspect-ratio:auto;min-height:100%}
+  .ba-grid,.c-grid{grid-template-columns:minmax(0,1fr)}
+  .lesson .wrap{grid-template-columns:minmax(0,1fr)}
+  .lesson .ph{min-height:300px}
+}
+@media (max-width:600px){
+  body{padding-bottom:76px}
+  .top .wrap{min-height:64px}
+  .top .btn{display:none}
+  .mark b{font-size:1.14rem}
+  .hero h1{font-size:clamp(2.9rem,15vw,4rem)}
+  .frame .ph,.frame .tape{box-shadow:10px 10px 0 var(--sage)}
+  .frame figcaption{left:10px}
+  .proof ul{grid-template-columns:minmax(0,1fr);gap:14px}
+  .door{display:flex}
+  .door .ph{aspect-ratio:4/3;min-height:0}
+  .row3{grid-template-columns:minmax(0,1fr)}
+  .row3 figure:nth-child(2) .ph{aspect-ratio:4/3}
+  .card{box-shadow:8px 8px 0 var(--walnut)}
+  .cta-row .btn{flex:1 1 100%}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--walnut);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+  .callbar .btn{min-height:50px;padding:.7em .6em;font-size:.95rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Lake Country Project Guy LLC, home">
+      <b>Lake Country Project Guy</b>
+      <span>Fix it · Make it · Solve it</span>
+    </a>
+    <nav class="links" aria-label="Site">
+      <a href="#work">Work</a>
+      <a href="#before-after">Before &amp; after</a>
+      <a href="https://lakecountryprojectguy.com/about-us">About</a>
+      <a href="https://lakecountryprojectguy.com/more-of-my-work">More of my work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-dark" href="tel:+14149157939"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>(414) 915-7939</a>
+  </div>
+</header>
+
+<main id="main">
+<div id="top" class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Delafield · Lake Country</p>
+      <h1><span>Fix it.</span><span class="c">Make it.</span><span>Solve it.</span></h1>
+      <p class="lede">Home repairs, small remodels and custom carpentry from Lake Country Project Guy, one local craftsman from start to finish.</p>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="tel:+14149157939"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call (414) 915-7939</a>
+        <a class="btn btn-line" href="https://lakecountryprojectguy.com/contact-us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>Send a photo for a free quote</a>
+      </div>
+      <p class="hero-note">Have you gone as far as your knowledge will take you on a project? Call for a free consultation.</p>
+    </div>
+    <figure class="frame">
+      <div class="ph"><img src="img/porch-sectional.webp" width="1120" height="1400" alt="Custom wood sectional with sage cushions built on a brick-front porch, pink flowers in the corner" fetchpriority="high"></div>
+      <div class="tape" aria-hidden="true"></div>
+      <figcaption>Outdoor sofa · built here</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="proof">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span><b>Delafield, WI</b>1051 Main Street</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Free quotes</b>and a full consultation on your options</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg><span><b>Woodworking to electrical installation</b>repairs and improvements</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span><b>Constant communication</b>with customers until the job is done</span></li>
+  </ul>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <p class="kicker">Three ways I can help</p>
+    <h2 class="sec-h">The honey-do list, the custom build, the odd problem.</h2>
+    <p class="sec-p">For anything your home might need, I have you covered. Pick the door that sounds like your project, then call or send a photo.</p>
+    <div class="doors">
+      <article class="door">
+        <div class="ph"><img src="img/bonus-room-finished.webp" width="1000" height="750" loading="lazy" alt="Finished bonus room with new wood-look floor, white walls and a round table with four chairs"><span class="tag">Fix it</span></div>
+        <div class="body">
+          <h3>Repair &amp; maintenance</h3>
+          <p>Don't risk further damage to your home by letting maintenance fall by the wayside. Hand over the honey-do list.</p>
+          <ul><li>Repairs</li><li>Remodeling</li><li>Basement update</li><li>Utility closet shelving</li></ul>
+          <p class="cap">Bonus room, after.</p>
+        </div>
+      </article>
+      <article class="door">
+        <div class="ph"><img src="img/closet-build.webp" width="900" height="1200" loading="lazy" alt="Custom closet with wood shelf and hanging rod full of clothes"><span class="tag">Make it</span></div>
+        <div class="body">
+          <h3>Custom builds</h3>
+          <p>Closets, shelves and furniture you can't buy off a shelf, built to fit your space.</p>
+          <ul><li>Custom closet build</li><li>Maple shelves</li><li>Barn door build / install</li><li>Oak window seat</li><li>Custom LED beds</li><li>Shaving stand</li></ul>
+          <p class="cap">Custom closet build.</p>
+        </div>
+      </article>
+      <article class="door">
+        <div class="ph"><img src="img/indoor-dog-house.webp" width="1000" height="750" loading="lazy" alt="Two black dogs resting in a dog house built into gray kitchen cabinetry"><span class="tag">Solve it</span></div>
+        <div class="body">
+          <h3>The odd problems</h3>
+          <p>An indoor dog house built into the cabinetry, with a hinged face for cleaning access. Tenant approved.</p>
+          <ul><li>Indoor dog house</li><li>Raspberry garden enclosure</li><li>Paddle board stand</li><li>Raised garden beds</li></ul>
+          <p class="cap">Indoor dog house: instant approval from tenants.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="before-after" class="ba-sec">
+  <div class="wrap ba-grid">
+    <div>
+      <p class="kicker">Before &amp; after</p>
+      <h2 class="sec-h">One bonus room, start to finish.</h2>
+      <p class="sec-p">Drag the handle to see the same room before and after the update.</p>
+      <div class="ba-steps">
+        <div><b>01</b><span>Old tile floor, boxes and a dark doorway.</span></div>
+        <div><b>02</b><span>New floor, fresh walls and an opened-up view.</span></div>
+      </div>
+      <p class="ba-note">Real photos of the same bonus room from the More of My Work page; the two were taken from slightly different spots.</p>
+    </div>
+    <div>
+      <div class="ba" id="ba">
+        <img src="img/bonus-room-after.webp" width="1240" height="930" loading="lazy" alt="After: bonus room with new wood-look floor, white walls and open alcoves">
+        <img class="before" src="img/bonus-room-before.webp" width="1240" height="930" loading="lazy" alt="Before: the same room with old patterned tile floor, moving boxes and a ladder">
+        <span class="lbl b">Before</span><span class="lbl a">After</span>
+        <span class="bar"></span>
+        <input type="range" min="0" max="100" value="50" aria-label="Before and after comparison: slide to reveal more of the before photo or the after photo">
+        <span class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lesson" aria-labelledby="lesson-h">
+  <div class="wrap">
+    <div class="ph"><img src="img/raised-garden-bed.webp" width="1000" height="750" loading="lazy" alt="Raised cedar and corrugated-metal garden bed full of bean plants, with a colander of picked beans"></div>
+    <div class="txt">
+      <p class="kicker" id="lesson-h">Lesson of love</p>
+      <blockquote>I went into this business to help people. Most days, they help me.</blockquote>
+      <p class="sub">A custom raised garden bed, so he may continue to pick flowers for his beautiful bride. Life is good!!!</p>
+      <p class="src">From <a href="https://lakecountryprojectguy.com/more-of-my-work">More of My Work</a></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Recent work</p>
+    <h2 class="sec-h">Built in Lake Country backyards.</h2>
+    <div class="row3">
+      <figure><div class="ph"><img src="img/raspberry-enclosure.webp" width="660" height="495" loading="lazy" alt="Long raised raspberry bed inside a green wire fence enclosure on a lawn"></div><figcaption>Raspberry garden enclosure</figcaption></figure>
+      <figure><div class="ph"><img src="img/bluebird-houses.webp" width="760" height="570" loading="lazy" alt="A row of handmade wooden bluebird houses lined up on a table"></div><figcaption>Bluebird houses, from a hope chest</figcaption></figure>
+      <figure><div class="ph"><img src="img/outdoor-sofa.webp" width="840" height="630" loading="lazy" alt="Wood outdoor sofa and ottoman with leaf-print cushions on a porch"></div><figcaption>Outdoor sofa</figcaption></figure>
+    </div>
+    <p class="more"><a href="https://lakecountryprojectguy.com/more-of-my-work">See more of my work →</a></p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap c-grid">
+    <div class="about">
+      <p class="kicker">Your repair professional</p>
+      <h2 class="sec-h">I have always loved fixing things.</h2>
+      <p class="sec-p">Repair knowledge is not enough without experience. From woodworking to electrical installation, I have fostered all of the skills you need for household repairs and improvements.</p>
+      <p class="sec-p">Renovation at a fair price: it is my highest priority to get the job done right the first time on every assignment. I provide a full consultation to explain your options.</p>
+      <div class="reviews-note"><b>Worked with Lake Country Project Guy?</b> Reviews are new here. Be one of the first to <a href="https://www.google.com/maps/place/Lake+Country+Project+Guy/@43.0610815,-88.3959731,17z/data=!3m1!4b1!4m6!3m5!1s0x8805b1314586c35b:0x197b5c7292aad67f!8m2!3d43.0610815!4d-88.3959731!16s%2Fg%2F11twq3m1l_">find us on Google</a> and share how your project went.</div>
+    </div>
+    <aside class="card" aria-labelledby="card-h">
+      <div class="tape" aria-hidden="true"></div>
+      <div class="in">
+        <h3 id="card-h">Start a project</h3>
+        <dl>
+          <div><dt>Call</dt><dd><a href="tel:+14149157939">(414) 915-7939</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:Chris@LakeCountryProjectGuy.com">Chris@LakeCountryProjectGuy.com</a></dd></div>
+          <div><dt>Address</dt><dd>1051 Main Street<br>Delafield, Wisconsin 53018</dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn btn-dark" href="tel:+14149157939">Call for a free quote</a>
+          <a class="btn btn-copper" href="https://lakecountryprojectguy.com/contact-us">Send photos of the job</a>
+        </div>
+        <p class="fine">For minor repairs and fixes, send the service/quote request with any photos. We stay in constant communication with our customers until the job is done.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="closer">
+  <div class="wrap">
+    <h2>A first look at your new site.</h2>
+    <a class="btn btn-dark" href="tel:+14149157939">Call (414) 915-7939</a>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official Lake Country Project Guy LLC site. Wordmark set in their League Spartan type; services, project captions, quotes, contact details and photos from lakecountryprojectguy.com.</p>
+    <p>© 2026 Lake Country Project Guy LLC · <a href="https://lakecountryprojectguy.com/">lakecountryprojectguy.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-copper" href="tel:+14149157939">Call (414) 915-7939</a>
+  <a class="btn btn-line" style="border-color:var(--paper);color:var(--paper)" href="https://lakecountryprojectguy.com/contact-us">Send a photo</a>
+</div>
+
+<script>
+(function(){
+  var ba=document.getElementById('ba');
+  if(!ba)return;
+  var r=ba.querySelector('input');
+  function set(){ba.style.setProperty('--pos',r.value+'%');}
+  r.addEventListener('input',set);
+  set();
+})();
+</script>
+</body>
+</html>
