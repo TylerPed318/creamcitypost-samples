@@ -30,6 +30,8 @@
 
 - Nov 11, 2026 ~9:24 PM CT (resumed scheduled run): last finished CCP-055 AKL Resurfacing v1, 0 credits; next CCP-056 Final Conflict Pest Management. Sample commit 3618777 verified byte-for-byte live; public images/favicon 200; live 1440/390 screenshots inspected and toggle tested using installed Playwright in Higgsfield sandbox (named script unavailable). Email 1a1cdc8921a22a82 confirmed SENT. Open: small original photos; pricing/rating/address omitted. Runtime cannot select Claude Sonnet; original logo typefaces preserved instead of proposed rebrand.
 
+CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
+
 ## Handled emails (don't reprocess)
 CCP-057 creative brief 1a1cc40dbfc9fd66 handled; v1 ready sent 1a1cdd23ce7e3383 (Nov 11).
 CCP-056 creative brief 1a1cc3e108bc9fca handled; v1 ready sent 1a1cdcecb70ac8cc (Nov 11).
@@ -64,7 +66,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-040 | Filut Electric | Electrician, Oconomowoc | brief | v1 | filut-electric/ | v1 emailed Nov 11, ~8:10 PM. 0 credits. Facebook/Google-only lead. |
 | CCP-049 | Lake Time Services | Marine upholstery + mobile boat service, Pewaukee | brief | v1 | lake-time-services/ | v1 emailed Nov 11, ~8:45 PM. 0 credits. |
 | CCP-051 | Gary's Auto Repair | Auto repair (imports + all makes), Delafield | brief | v1 | garys-auto-repair/ | v1 emailed Nov 11, ~9:00 PM. 0 credits. |
-| CCP-055 | AKL Resurfacing | Bathtub/tile refinishing, Milwaukee | brief + master CSV | v1 | akl-resurfacing/ | v1 live and emailed Nov 11; 0 credits. |
+| CCP-055 | AKL Resurfacing | Bathtub/tile refinishing, Milwaukee | brief + master CSV | v2 | akl-resurfacing/ | v2 slider revision live and emailed; 0 credits. |
 | CCP-054 | Giese's Tree & Landscaping Service LLC | Tree/landscaping, Milwaukee | brief + master CSV | v1 | gieses-tree-landscaping/ | v1 live and emailed Nov 11. 0 credits; photo-free; ISA pending verification. |
 | CCP-056 | Final Conflict Pest Management | Pest + wildlife control, Milwaukee | brief | v1 | final-conflict-pest/ | v1 emailed Nov 11, ~9:45 PM. 0 credits. |
 | CCP-057 | SWAT Team Pest Control | Pest control, Milwaukee | brief | v1 | swat-team-pest-control/ | v1 emailed Nov 11, ~9:58 PM. 0 credits. Photo-free; pitch decision pending (Ogden). |
@@ -115,4 +117,6 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - done — CCP-057 v1 (Nov 11, ~9:58 PM CT, scheduled run): live (200) and emailed 1a1cdd23ce7e3383; 0 credits; photo-free. Open: Tyler to decide whether to pitch (Ogden & Company partnership); no hours on site; Ogden not named.
 - in progress — CCP-058 (Nov 11, 9:59 PM CT, scheduled run)
 
-- in progress — CCP-055 v2 (Nov 11, 2026 9:48 PM America/Chicago, Tyler chat slider revision)
+- done — CCP-055 v2 (Nov 11, Tyler chat): slider revision live and emailed 1a1cdd3cd48a120c; 0 credits; commit b9503f0; drag/keyboard and 1440/390 affected-area QA passed.
+
+- in progress — CCP-060 (Nov 11, 2026 9:38 PM America/Chicago, resumed scheduled run; 056/057 delivered, 058 claimed by another run)
