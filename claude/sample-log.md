@@ -237,3 +237,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - done — CCP-077 v1 (Nov 12, ~3:45 PM CT, scheduled run): live (page + 4 imgs 200, byte-identical), emailed 1a1d1b1503e4db8d; 2 credits (4K upscale of 625px shop-front; lettering checked); commit c8684a4. Speedometer-arc motif, drop-off planner gauge. Open: original photos, (866) number, team photo IDs, women-owned, coupons.
 - Nov 12, 3:28 PM CT: CCP-073 v2 "revision" from tyguy318@icloud.com (1a1d196910a0f314) only says "same thing as the last request"; v2 already did all of it. Status email sent 1a1d1a7a49455515; no v3 until Tyler clarifies.
 - Nov 12, ~3:45 PM CT (scheduled run): session ends after 3 builds (072, 076, 077 v1), 2 credits total. CCP-073 v2 "revision" awaiting Tyler's clarification (status email sent). Next up, oldest brief first: CCP-078 Fuerst Electric (1a1d1002c5826a89), 079 Beachside Boat & Bait, 080 Aquatica, 081 Inside Out Remodeling, 082 Heating and Cooling Drs, 083–085, 087, 090–093 (no 086/088/089 brief seen).
+
+- in progress — CCP-073 (2026-11-12 16:04 -06:00 America/Chicago, scheduled run); v3 clarified photo revision.
