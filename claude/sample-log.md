@@ -23,7 +23,7 @@
 - Nov 11, ~7:55 PM CT (scheduled run): CCP-034 v1 done, live and emailed (0 credits). Open: Jeff/owner not named; no Text button (SMS unconfirmed); "What to expect" steps are the brief's suggested process, to confirm with the owner.
 - Nov 11, ~8:10 PM CT (scheduled run): CCP-040 v1 done, live and emailed (0 credits). Session ends after 3 items (033, 034, 040). Open: Dan not named; no named quotes ("5.0 on Google" + themes). Next up, by brief time: CCP-049 Lake Time Services, CCP-051 Gary's Auto Repair, CCP-052 O&W Heating, then 054–066.
 - Nov 11, ~8:45 PM CT (scheduled run): CCP-049 v1 done, live and emailed (0 credits). Open: no named quotes or count ("5.0 on Google" + themes); Matt not named; no before/after (composites unconfirmed), so the interactive is a service picker; no town/lake names.
-- in progress — CCP-051 (Nov 11, 8:47 PM CT, scheduled run)
+- Nov 11, ~9:00 PM CT (scheduled run): CCP-051 v1 done, live and emailed (0 credits). Open: Saturday hours conflict (coupon says Sat 8–Noon; used contact-page "weekends closed"); no coupon amounts; no named quotes/count ("4.7 on Google"); only one usable interior photo.
 
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
@@ -54,6 +54,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-034 | Cantrall Carpet Cleaners | Carpet cleaning, Waukesha | brief | v1 | cantrall-carpet-cleaners/ | v1 emailed Nov 11, ~7:55 PM. 0 credits. Facebook/Google-only lead; typographic. |
 | CCP-040 | Filut Electric | Electrician, Oconomowoc | brief | v1 | filut-electric/ | v1 emailed Nov 11, ~8:10 PM. 0 credits. Facebook/Google-only lead. |
 | CCP-049 | Lake Time Services | Marine upholstery + mobile boat service, Pewaukee | brief | v1 | lake-time-services/ | v1 emailed Nov 11, ~8:45 PM. 0 credits. |
+| CCP-051 | Gary's Auto Repair | Auto repair (imports + all makes), Delafield | brief | v1 | garys-auto-repair/ | v1 emailed Nov 11, ~9:00 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
 | CCP-019 | Mike Ingrilli Plumbing | Plumbing, West Allis | 10-20 #9 | v1 | mike-ingrilli-plumbing/ | Awaiting review. |
@@ -82,6 +83,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-034 Cantrall:** (262) 521-9973; Google hours Mon–Sat 9–5, Sun closed ("call to confirm"; FB directory says Mon–Fri 8–5). Never show the 3.9 rating/count, the home address (1506 Morey Ln) or the negative reviews. Services: carpet, upholstery, pet stain & odor, apartments/move-outs. Only real photo: the Facebook carpet mid-clean (soft, keep small).
 - **CCP-040 Filut:** (262) 719-3015 only; no address (Lake Dr is home-based), no hours, no licensed/insured/24-7 claims; "5.0 on Google". Services only from reviews. Hero = Google vans photo, cropped left of the bucket truck (other-company stickers), plate pixelated. Logo is an SVG redraw of the van roundel.
 - **CCP-049 Lake Time:** 715-556-0685; laketimemanagement@gmail.com; "Lake Country, WI" only (never the Peninsula Dr address); hours verbatim "Monday–Friday 9am–5pm. Contact us for weekend or emergency services."; services = their 5 lists. Photos from Google listing (=s0); skip the possibly-AI technician/Sea-Doo/trailer/checklist images; before/after composites unconfirmed. Quote CTA → laketimeservices.com/contact.
+- **CCP-051 Gary's:** 703 Main Street, Delafield 53018; 262-646-8507; hours Mon–Thu 7:30–6, Fri 7:30–5, weekends closed (coupon image says Sat 8–Noon; unresolved); est. 1981 / "45 Years"; ASE Master, ASE Certified and LT1 Technicians; BBB Accredited; 2-year/24,000-mile warranty "on most repairs"; "4.7 on Google" only. Make lines are from their specials JPG. Plates pixelated on storefront.jpg. No coupon amounts; no Max/Seth/Brock.
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
