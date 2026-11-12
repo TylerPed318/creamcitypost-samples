@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Alliance Electrical Contractors — Website concept by Cream City Post</title>
+<meta name="description" content="Waukesha electrical contractor since 2003. Custom homes, single and multi-family homes, commercial buildings, service upgrades, maintenance and home automation across Southeastern Wisconsin.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#C41130;
+  --red-dk:#A8152C;
+  --maroon:#4A1C24;
+  --maroon-2:#5E2530;
+  --char:#231F20;
+  --grey:#7B7A7A;
+  --grey-txt:#5C5B5B;
+  --off:#F5F5F5;
+  --white:#FFFFFF;
+  --line:#E2DFDF;
+  --display:"Oswald","Arial Narrow",sans-serif;
+  --body:"Source Sans 3",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--char);font:400 18px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:min(1200px,100%);margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;margin:0;text-transform:uppercase;letter-spacing:.005em}
+.kicker{font:600 14px/1 var(--body);letter-spacing:.16em;text-transform:uppercase}
+
+/* chevron motif, taken from the current site's red chevron shapes */
+.chev{display:flex;gap:6px}
+.chev i{width:22px;height:30px;background:var(--red);clip-path:polygon(0 0,45% 0,100% 50%,45% 100%,0 100%,55% 50%)}
+.chev i:nth-child(2){opacity:.75}.chev i:nth-child(3){opacity:.5}.chev i:nth-child(4){opacity:.3}
+
+/* header */
+header.site{position:sticky;top:0;z-index:20;background:#fff;border-bottom:4px solid var(--red)}
+header.site .wrap{display:flex;align-items:center;gap:20px;min-height:84px}
+.brand img{width:clamp(130px,14vw,170px)}
+nav.main{display:flex;margin-left:auto}
+nav.main a{text-decoration:none;font:500 16px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;padding:14px 12px;color:var(--char)}
+nav.main a:hover{color:var(--red-dk)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;font:600 17px/1 var(--display);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:2px;transition:background .15s ease,transform .15s ease}
+.btn svg{width:18px;height:18px;flex:0 0 auto}
+.btn-red{background:var(--red-dk);color:#fff}
+.btn-red:hover{background:#8E0F24;transform:translateY(-1px)}
+.btn-line{border-color:#fff;color:#fff}
+.btn-line:hover{background:#fff;color:var(--maroon)}
+.btn-dark{border-color:var(--char);color:var(--char)}
+.btn-dark:hover{background:var(--char);color:#fff}
+
+/* hero */
+.hero{background:var(--maroon);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-8%;top:0;bottom:0;width:46%;background:var(--maroon-2);clip-path:polygon(30% 0,100% 0,100% 100%,30% 100%,0 50%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr);gap:clamp(32px,5vw,72px);align-items:center;padding-block:clamp(48px,7vw,92px)}
+.hero .kicker{color:#F2B8C2;display:flex;gap:14px;align-items:center}
+.hero h1{font-size:clamp(42px,6vw,80px);margin:20px 0 22px}
+.hero h1 em{font-style:normal;color:#FF5C76}
+.hero .sub{font-size:clamp(18px,1.6vw,21px);color:#EBD9DC;max-width:34em;margin:0 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .or{margin:16px 0 0;font-size:15px;color:#D9BFC4}
+.hero .or a{color:#fff;font-weight:600}
+.shot{margin:0;position:relative;max-width:380px;justify-self:center;width:100%}
+.shot img{width:100%;aspect-ratio:3/4;object-fit:cover;border:8px solid #fff;box-shadow:0 26px 50px rgba(0,0,0,.35)}
+.shot figcaption{position:absolute;left:-18px;bottom:28px;background:var(--red-dk);color:#fff;font:600 14px/1.2 var(--body);padding:10px 14px;max-width:80%}
+
+/* proof */
+.proof{background:var(--char);color:#fff}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:24px 20px;border-left:1px solid rgba(255,255,255,.14)}
+.proof li:first-child{border-left:0}
+.proof b{display:block;font:600 clamp(26px,2.6vw,34px)/1 var(--display);text-transform:uppercase;color:#fff}
+.proof span{display:block;margin-top:6px;font-size:15px;color:#CFCACA}
+
+/* two doors (the interactive) */
+.sec{padding-block:clamp(56px,8vw,100px)}
+.doors .top{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.doors h2{font-size:clamp(34px,4.4vw,56px);color:var(--char)}
+.doors .kicker{color:var(--red-dk);display:block;margin-bottom:12px}
+.tabs{display:inline-flex;border:2px solid var(--char);border-radius:2px;padding:4px;gap:4px;background:#fff}
+.tabs button{min-height:48px;padding:0 22px;border:0;background:transparent;font:600 17px/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--char);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--red-dk);color:#fff}
+.tabs button:hover:not([aria-selected="true"]){background:var(--off)}
+.panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:0;border:1px solid var(--line);background:#fff}
+.panel[hidden]{display:none}
+.panel .lead{background:var(--off);padding:clamp(26px,3.4vw,44px);border-right:1px solid var(--line)}
+.panel .lead h3{font-size:clamp(28px,3vw,38px);margin:14px 0 14px}
+.panel .lead p{margin:0 0 24px;color:var(--grey-txt)}
+.panel ul{list-style:none;margin:0;padding:clamp(18px,2.6vw,32px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.panel li{border:1px solid var(--line);padding:18px 18px 18px 20px;border-left:4px solid var(--red)}
+.panel li b{display:block;font:600 21px/1.1 var(--display);text-transform:uppercase}
+.panel li span{display:block;margin-top:6px;font-size:16px;color:var(--grey-txt)}
+
+/* blueprint to final inspection band */
+.band{background:var(--off);border-block:1px solid var(--line)}
+.band .wrap{padding-block:clamp(40px,6vw,72px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px 56px;align-items:center}
+.route{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font:600 clamp(28px,4.4vw,58px)/1 var(--display);text-transform:uppercase;color:var(--char)}
+.route .chev i{height:clamp(22px,3vw,40px);width:clamp(16px,2.2vw,28px)}
+.route .end{color:var(--red-dk)}
+.band p{margin:0;color:var(--grey-txt)}
+.band p b{color:var(--char)}
+
+/* words + contact */
+.words .wrap{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(24px,4vw,56px)}
+.words h2{font-size:clamp(32px,4vw,50px);margin-bottom:26px}
+.words .kicker{color:var(--red-dk);display:block;margin-bottom:12px}
+.quotes{display:grid;gap:16px}
+blockquote{margin:0;padding:22px 24px;background:#fff;border:1px solid var(--line);position:relative}
+blockquote::before{content:"“";position:absolute;top:-6px;left:18px;font:700 64px/1 var(--display);color:var(--red)}
+blockquote p{margin:16px 0 10px;font-size:18px}
+blockquote cite{font-style:normal;font-weight:700;color:var(--grey-txt)}
+.card{background:var(--maroon);color:#fff;padding:clamp(26px,3vw,38px);align-self:start;position:sticky;top:108px}
+.card img{width:200px;margin-bottom:20px;background:#fff;padding:10px 14px}
+.card h3{font-size:30px;margin-bottom:16px}
+.card dl{margin:0 0 24px}
+.card dt{font:600 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#E3B6BE;margin-top:16px}
+.card dd{margin:6px 0 0;font-weight:600;font-size:19px}
+.card dd a{text-underline-offset:4px}
+.card .btn{width:100%;margin-top:10px}
+.about{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+.about p{margin:0 0 14px;color:var(--grey-txt)}
+.about p b{color:var(--char)}
+
+/* careers + closer */
+.careers{background:var(--char);color:#fff}
+.careers .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-block:34px}
+.careers p{margin:0;max-width:44em;color:#DCD7D7}
+.careers b{display:block;font:600 26px/1.1 var(--display);text-transform:uppercase;color:#fff;margin-bottom:6px}
+.first .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-block:clamp(40px,6vw,64px)}
+.first h2{font-size:clamp(30px,3.6vw,46px)}
+.first p{margin:8px 0 0;color:var(--grey-txt)}
+footer{background:var(--maroon);color:#E8D6D9;font-size:15px;padding:30px 0 40px}
+footer .wrap{display:flex;gap:20px 32px;align-items:center;flex-wrap:wrap}
+footer img{width:150px;background:#fff;padding:8px 12px}
+footer p{margin:0;flex:1 1 420px}
+
+.callbar{display:none}
+@media (max-width:980px){
+  nav.main{display:none}
+  header.site .btn{margin-left:auto}
+  .hero .wrap,.band .wrap,.words .wrap,.panel{grid-template-columns:minmax(0,1fr)}
+  .hero::after{display:none}
+  .panel .lead{border-right:0;border-bottom:1px solid var(--line)}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.14)}
+  .card{position:static}
+}
+@media (max-width:600px){
+  body{padding-bottom:74px}
+  header.site .wrap{min-height:68px}
+  header.site .btn{padding:0 14px;font-size:16px}
+  header.site .btn .lbl{display:none}
+  .hero .ctas .btn{flex:1 1 100%}
+  .shot{max-width:300px}
+  .shot figcaption{left:-8px}
+  .panel ul{grid-template-columns:minmax(0,1fr)}
+  .tabs{display:flex;width:100%}
+  .tabs button{flex:1 1 50%;padding:0 10px;font-size:16px}
+  .proof li{padding:18px 14px}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--maroon);box-shadow:0 -6px 18px rgba(0,0,0,.25)}
+  .callbar .btn{padding:0 10px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Alliance Electrical Contractors home"><img src="img/logo.svg" alt="Alliance Electrical Contractors logo" width="1004" height="480"></a>
+    <nav class="main" aria-label="Site">
+      <a href="https://www.allianceelectricalcontractors.com/services">Services</a>
+      <a href="https://www.allianceelectricalcontractors.com/projects">Projects</a>
+      <a href="https://www.allianceelectricalcontractors.com/about-us">About</a>
+      <a href="https://www.allianceelectricalcontractors.com/blank-1">Careers</a>
+      <a href="https://www.allianceelectricalcontractors.com/contact">Contact</a>
+    </nav>
+    <a class="btn btn-red" href="tel:+12624463331"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span class="lbl">Call&nbsp;</span>262-446-3331</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker"><span class="chev" aria-hidden="true"><i></i><i></i><i></i></span>Waukesha, WI · Since 2003</p>
+        <h1>Wiring Southeastern Wisconsin's <em>homes &amp; buildings</em> since 2003.</h1>
+        <p class="sub">30+ trained, bonded and experienced electricians for custom homes, single and multi-family homes and commercial buildings, from blueprint to final inspection.</p>
+        <div class="ctas">
+          <a class="btn btn-red" href="tel:+12624463331">Call 262-446-3331</a>
+          <a class="btn btn-line" href="mailto:admin@aecwi.com?subject=Project%20or%20service%20request">Email the office</a>
+        </div>
+        <p class="or">Builders: email plans to <a href="mailto:admin@aecwi.com?subject=Plans%20for%20quote">admin@aecwi.com</a></p>
+      </div>
+      <figure class="shot">
+        <img src="img/switchgear.jpg" alt="Commercial switchgear install with conduit runs and yellow safety bollards beside a strip-curtain doorway" width="768" height="1024" fetchpriority="high">
+        <figcaption>Commercial switchgear install</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li><b>Since 2003</b><span>Over 20 years of industry experience</span></li>
+        <li><b>30+</b><span>Trained, bonded, experienced electricians</span></li>
+        <li><b>Builders</b><span>Trusted by leading builders</span></li>
+        <li><b>Licensed</b><span>Skilled, licensed and insured technicians</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec doors" id="services">
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <span class="kicker">Two ways in</span>
+          <h2>Who are we wiring for?</h2>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Choose your project type">
+          <button type="button" role="tab" id="t-b" aria-controls="p-b" aria-selected="true">Builders</button>
+          <button type="button" role="tab" id="t-h" aria-controls="p-h" aria-selected="false" tabindex="-1">Homeowners</button>
+        </div>
+      </div>
+
+      <div class="panel" id="p-b" role="tabpanel" aria-labelledby="t-b">
+        <div class="lead">
+          <span class="chev" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <h3>Your electrical partner, start to finish</h3>
+          <p>We partner with some of Southeastern Wisconsin's top builders, with safety, code compliance and precision on every project, from a custom home to a large commercial facility.</p>
+          <a class="btn btn-red" href="mailto:admin@aecwi.com?subject=Plans%20for%20quote">Send plans for a quote</a>
+        </div>
+        <ul>
+          <li><b>Custom homes</b><span>Full-service electrical installation</span></li>
+          <li><b>Single &amp; multi-family</b><span>Neighborhoods, multiple homes</span></li>
+          <li><b>Commercial</b><span>Warehouses, outdoor, malls</span></li>
+          <li><b>Build-outs</b><span>Commercial build-outs, blueprint to final inspection</span></li>
+        </ul>
+      </div>
+
+      <div class="panel" id="p-h" role="tabpanel" aria-labelledby="t-h" hidden>
+        <div class="lead">
+          <span class="chev" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <h3>Upgrades and service for your home</h3>
+          <p>The same team that wires custom homes for the region's builders handles panels, electrical updates and maintenance for homeowners.</p>
+          <a class="btn btn-red" href="tel:+12624463331">Call 262-446-3331</a>
+        </div>
+        <ul>
+          <li><b>Service upgrades</b><span>Panels, electrical updates</span></li>
+          <li><b>Maintenance</b><span>Electrical maintenance for your home</span></li>
+          <li><b>Home automation</b><span>Home automation installations</span></li>
+          <li><b>Custom homes</b><span>Building new? Bring us in at the blueprint</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Our process">
+    <div class="wrap">
+      <div class="route"><span>Blueprint</span><span class="chev" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="end">Final inspection</span></div>
+      <p><b>“From custom home wiring to commercial build-outs and service upgrades, our experienced team ensures your project is powered safely and efficiently.”</b> High-quality work at competitive rates, across Southeastern Wisconsin.</p>
+    </div>
+  </section>
+
+  <section class="sec words" id="contact">
+    <div class="wrap">
+      <div>
+        <span class="kicker">In their words</span>
+        <h2>What customers say</h2>
+        <div class="quotes">
+          <blockquote><p>Highly trained professional team that goes above and beyond. I would highly recommend using Alliance Electrical Contractors.</p><cite>— Ryan E.</cite></blockquote>
+          <blockquote><p>Very customer focused, and pleasant to work with. Work is of high quality. Worked with them on building our house.</p><cite>— Susan D.</cite></blockquote>
+          <blockquote><p>He arrived right on time and got straight to work. He was very nice and knowledgeable and worked very efficiently.</p><cite>— Staci S.</cite></blockquote>
+        </div>
+        <div class="about">
+          <p><b>Founded in 2003,</b> Alliance Electrical Contractors has built a reputation for quality craftsmanship and outstanding service, providing electrical solutions for custom homes, residential properties and commercial buildings.</p>
+        </div>
+      </div>
+      <aside class="card" aria-label="Contact">
+        <img src="img/logo.svg" alt="" width="1004" height="480" loading="lazy">
+        <h3>Head office</h3>
+        <dl>
+          <dt>Phone</dt><dd><a href="tel:+12624463331">262-446-3331</a></dd>
+          <dt>Email</dt><dd><a href="mailto:admin@aecwi.com">admin@aecwi.com</a></dd>
+          <dt>Address</dt><dd>815 W. College Ave<br>Waukesha, WI 53186</dd>
+          <dt>Serving</dt><dd>Southeastern Wisconsin</dd>
+        </dl>
+        <a class="btn btn-red" href="tel:+12624463331">Call 262-446-3331</a>
+        <a class="btn btn-line" href="mailto:admin@aecwi.com">Email us</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="careers">
+    <div class="wrap">
+      <p><b>Join the Alliance team</b>Work on custom homes, residential developments and commercial projects alongside some of the region's premier builders.</p>
+      <a class="btn btn-line" href="https://www.allianceelectricalcontractors.com/blank-1">Careers</a>
+    </div>
+  </section>
+
+  <section class="first">
+    <div class="wrap">
+      <div>
+        <h2>A first look at your new site.</h2>
+        <p>Built around the builders and homeowners you already serve.</p>
+      </div>
+      <a class="btn btn-dark" href="tel:+12624463331">Call 262-446-3331</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo.svg" alt="Alliance Electrical Contractors" width="1004" height="480" loading="lazy">
+    <p>Website by Cream City Post · Independent website concept, not the official Alliance Electrical Contractors site. Logo redrawn from their logo; services, testimonials, contact details and project photo from allianceelectricalcontractors.com.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+12624463331">Call 262-446-3331</a>
+  <a class="btn btn-line" href="mailto:admin@aecwi.com">Email</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function pick(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on})}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(t)});
+    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];pick(n);n.focus();e.preventDefault()}});
+  });
+})();
+</script>
+</body>
+</html>
