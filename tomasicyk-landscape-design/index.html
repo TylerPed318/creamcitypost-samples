@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Tomasicyk Landscape Design — Website concept by Cream City Post</title>
+<meta name="description" content="Stone and paver patios, walkways and walls, planting and design, mowing and seasonal clean-ups in Hartland, WI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231F4D2E'/%3E%3Cpath d='M10 44l9-6 12 2 6 9-8 6-14-2z' fill='%239A9A92'/%3E%3Cpath d='M36 36l10-4 9 5-2 10-11 2-7-6z' fill='%23C8C2B2'/%3E%3Cpath d='M32 8c10 4 14 14 8 22-7-2-12-10-8-22z' fill='%23119C49'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#119C49;
+  --green-ink:#0E7A3A;
+  --garden:#1F4D2E;
+  --garden-2:#173b23;
+  --soil:#5A3E1B;
+  --flag:#9A9A92;
+  --flag-2:#C8C2B2;
+  --sand:#F4F0E6;
+  --sand-2:#E9E2D2;
+  --ink:#221509;
+  --text:#2b2a24;
+  --muted:#58554c;
+  --white:#FFFFFF;
+  --slab:"Sanchez",Georgia,serif;
+  --sans:"Source Sans 3",system-ui,sans-serif;
+  --r:12px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--sand);color:var(--text);font:400 1.08rem/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--slab);font-weight:400;line-height:1.08;margin:0;color:var(--garden)}
+p{margin:0}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;z-index:99;background:var(--garden);color:#fff;padding:10px 14px}
+.skip:focus{left:8px}
+
+/* motif: flagstone */
+.stones{display:block;width:150px;height:28px}
+.flag-clip{clip-path:polygon(4% 6%,38% 0,71% 4%,97% 0,100% 34%,96% 70%,100% 97%,63% 100%,30% 95%,0 100%,3% 62%,0 30%)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:.75em 1.35em;border-radius:8px;font:700 1.02rem/1 var(--sans);text-decoration:none;border:2px solid transparent;transition:background .15s ease,transform .15s ease,color .15s ease}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-garden{background:var(--garden);color:#fff}
+.btn-garden:hover{background:var(--green-ink);transform:translateY(-1px)}
+.btn-line{border-color:var(--garden);color:var(--garden)}
+.btn-line:hover{background:var(--garden);color:#fff}
+.btn-white{background:#fff;color:var(--garden)}
+.btn-white:hover{background:var(--sand-2)}
+
+/* header */
+header.top{position:sticky;top:0;z-index:40;background:rgba(244,240,230,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(31,77,46,.15)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px}
+.logo svg{width:40px;height:40px;flex:none}
+.logo .t{display:flex;flex-direction:column;line-height:1.05}
+.logo b{font:400 1.22rem/1.05 var(--slab);color:var(--garden)}
+.logo .t>span{font:600 .74rem/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--soil);margin-top:3px}
+nav.links{display:flex;gap:2px}
+nav.links a{font:600 1rem/1 var(--sans);color:var(--garden);text-decoration:none;padding:15px 12px;border-radius:6px}
+nav.links a:hover{background:var(--sand-2)}
+
+/* hero */
+.hero{padding:clamp(32px,6vw,76px) 0 clamp(40px,6vw,80px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,5vw,64px);align-items:center}
+.eyebrow{font:700 .85rem/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--green-ink)}
+.hero h1{font-size:clamp(2.4rem,4.4vw,3.7rem);margin:16px 0 18px}
+.hero h1 em{font-style:italic;color:var(--green-ink)}
+.lede{font-size:clamp(1.1rem,1.5vw,1.25rem);color:var(--text);max-width:40ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hero figure{margin:0}
+.hero .stone{position:relative;isolation:isolate}
+.hero .ph{aspect-ratio:4/3;background:var(--flag-2)}
+.hero .ph img{width:100%;height:100%;object-fit:cover}
+.hero .stone::before{content:"";position:absolute;inset:18px -14px -14px 18px;background:var(--flag-2);z-index:-1;clip-path:polygon(4% 6%,38% 0,71% 4%,97% 0,100% 34%,96% 70%,100% 97%,63% 100%,30% 95%,0 100%,3% 62%,0 30%)}
+.hero figcaption{margin-top:26px;font:italic 400 .98rem/1.4 var(--slab);color:var(--soil)}
+
+/* no middlemen band */
+.band{background:var(--garden);color:#fff;padding:clamp(48px,7vw,84px) 0;position:relative;overflow:hidden}
+.band .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(24px,5vw,64px);align-items:center}
+.band .kicker{color:#a9dcb9}
+.band blockquote{margin:14px 0 0;font:400 clamp(1.6rem,3.2vw,2.5rem)/1.22 var(--slab);color:#fff}
+.band blockquote strong{font-weight:400;color:#a9dcb9}
+.band ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.band li{display:flex;gap:12px;align-items:flex-start;font-size:1.06rem;color:#e6efe8}
+.band li svg{flex:none;width:22px;height:22px;margin-top:2px;color:#a9dcb9}
+.kicker{font:700 .82rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--green-ink)}
+
+/* picker */
+section{padding:clamp(56px,8vw,100px) 0}
+.sec-h{font-size:clamp(2rem,4.2vw,3.1rem);margin-top:12px;max-width:20ch}
+.sec-p{margin-top:12px;color:var(--muted);max-width:56ch}
+.switch{display:inline-grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:30px;background:var(--sand-2);padding:6px;border-radius:12px;max-width:100%}
+.switch button{appearance:none;border:0;background:transparent;font:700 1.02rem/1.15 var(--sans);color:var(--garden);padding:12px 18px;border-radius:8px;cursor:pointer;min-height:52px;text-align:left}
+.switch button small{display:block;font-weight:400;font-size:.85rem;color:var(--muted)}
+.switch button[aria-selected="true"]{background:var(--garden);color:#fff}
+.switch button[aria-selected="true"] small{color:#cfe3d5}
+.panel{margin-top:26px;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(20px,4vw,48px);align-items:start}
+.panel[hidden]{display:none}
+.panel .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:3/4}
+.panel .ph img{width:100%;height:100%;object-fit:cover}
+.panel .cap{margin-top:10px;font-size:.92rem;color:var(--muted);font-style:italic}
+.svc{display:grid;gap:14px}
+.svc article{background:var(--white);border-radius:var(--r);padding:22px 24px;border-left:6px solid var(--green)}
+.svc article:nth-child(2){border-left-color:var(--flag)}
+.svc article:nth-child(3){border-left-color:var(--soil)}
+.svc h3{font-size:1.45rem}
+.svc p{margin-top:6px;color:var(--muted)}
+.note{margin-top:4px;padding:18px 22px;border-radius:var(--r);background:var(--sand-2);font:italic 400 1.02rem/1.5 var(--slab);color:var(--soil)}
+.note span{display:block;margin-top:6px;font:600 .85rem/1.3 var(--sans);font-style:normal;color:var(--muted)}
+
+/* work */
+.work-sec{background:var(--white)}
+.work{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:34px}
+.work figure{margin:0}
+.work figure:nth-child(even){margin-top:40px}
+.work .ph{aspect-ratio:3/4;overflow:hidden;border-radius:var(--r)}
+.work img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.work figure:hover img{transform:scale(1.03)}
+.work figcaption{margin-top:10px;font:600 .98rem/1.35 var(--sans);color:var(--garden)}
+
+/* steps */
+.steps{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:s}
+.steps li{position:relative;padding:72px 22px 24px;background:var(--white);border-radius:var(--r);counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;left:22px;top:20px;width:42px;height:38px;display:grid;place-items:center;background:var(--flag-2);color:var(--garden);font:400 1.3rem/1 var(--slab);clip-path:polygon(8% 4%,62% 0,100% 18%,94% 78%,56% 100%,6% 92%,0 40%)}
+.steps b{display:block;font:400 1.3rem/1.2 var(--slab);color:var(--garden)}
+.steps span{display:block;margin-top:6px;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--sand-2)}
+.c-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.about p{margin-top:12px;color:var(--muted);max-width:50ch}
+.card{background:var(--garden);color:#fff;border-radius:var(--r);padding:clamp(24px,4vw,36px);position:relative;overflow:hidden}
+.card h2{color:#fff;font-size:clamp(1.8rem,3.2vw,2.4rem)}
+.card dl{margin:20px 0 0;display:grid;gap:12px}
+.card dt{font:700 .76rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#a9dcb9}
+.card dd{margin:4px 0 0;font-size:1.1rem}
+.card dd a{display:inline-flex;align-items:center;min-height:44px;color:#fff;font-weight:600;text-underline-offset:3px;word-break:break-word}
+.card .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.card .btn-line{border-color:#fff;color:#fff}
+.card .btn-line:hover{background:#fff;color:var(--garden)}
+
+.closer{padding:clamp(48px,7vw,84px) 0}
+.closer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+.closer h2{font-size:clamp(2rem,4.6vw,3.3rem)}
+footer{background:var(--ink);color:#e4ddd0;padding:28px 0 32px;font-size:.93rem}
+footer p+p{margin-top:8px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:#fff}
+
+.callbar{display:none}
+
+@media (max-width:980px){
+  nav.links{display:none}
+  .hero .wrap,.band .wrap,.c-grid{grid-template-columns:minmax(0,1fr)}
+  .hero figure{max-width:640px}
+  .work{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .work figure:nth-child(even){margin-top:0}
+}
+@media (max-width:600px){
+  body{padding-bottom:78px}
+  .top .wrap{min-height:64px}
+  .top .btn{display:none}
+  .logo b{font-size:1.08rem}
+  .cta .btn{flex:1 1 100%}
+  .hero .stone::before{inset:12px -8px -8px 12px}
+  .switch{display:grid;width:100%}
+  .switch button{padding:10px 12px}
+  .panel{grid-template-columns:minmax(0,1fr)}
+  .panel .ph{aspect-ratio:4/3}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--garden);box-shadow:0 -6px 18px rgba(0,0,0,.2)}
+  .callbar .btn{min-height:50px;padding:.7em .5em;font-size:.98rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Tomasicyk Landscape Design, Hartland, WI, home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 30l7-5 9 1.5 4.5 7-6 4.5L6 36.5z" fill="#9A9A92"/><path d="M24 25l8-3 6.5 4-1.5 7.5-8 1.5-5-4.5z" fill="#C8C2B2"/><path d="M19 2c8 3 11 11 6.5 17.5C20 18 16 11.5 19 2z" fill="#119C49"/><path d="M20 5c1.5 5 3 9 5 13" stroke="#1F4D2E" stroke-width="1.2" fill="none"/></svg>
+      <span class="t"><b>Tomasicyk Landscape Design</b><span>Hartland, WI</span></span>
+    </a>
+    <nav class="links" aria-label="Site">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#how">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-garden" href="tel:+12627511251"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>(262) 751-1251</a>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Family owned &amp; operated · Hartland, WI</p>
+      <h1>Natural solutions for <em>all</em> of your landscape needs.</h1>
+      <p class="lede">Stone and paver patios, walkways and walls, planting and design, mowing and seasonal clean-ups, with the owner &amp; operator on the job.</p>
+      <div class="cta">
+        <a class="btn btn-garden" href="tel:+12627511251"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call (262) 751-1251</a>
+        <a class="btn btn-line" href="mailto:TLDHartland@gmail.com?subject=Landscape%20consultation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Schedule a consultation</a>
+      </div>
+    </div>
+    <figure>
+      <div class="stone"><div class="ph flag-clip"><img src="img/flagstone-patio-firepit.webp" width="1200" height="900" alt="Flagstone patio with a wallstone fire pit, patio table and chairs, set in a lawn with trees behind" fetchpriority="high"></div></div>
+      <figcaption>Flagstone patio with sandbox &amp; wallstone firepit.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="band" aria-labelledby="band-h">
+  <div class="wrap">
+    <div>
+      <p class="kicker" id="band-h">No middlemen</p>
+      <blockquote>You won't have to deal with middlemen and managers. We have a small crew which keeps costs down and brings peace of mind that <strong>the owner &amp; operator is always on the job.</strong></blockquote>
+    </div>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Family owned &amp; operated business</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Small crew that keeps costs down</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>The yard of your dreams, even on a tight budget</li>
+    </ul>
+  </div>
+</section>
+
+<section id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <p class="kicker">What do you need?</p>
+    <h2 class="sec-h" id="svc-h">Build something new, or keep it looking good.</h2>
+    <p class="sec-p">Pick your path to see the services that fit.</p>
+    <div class="switch" role="tablist" aria-label="Service type">
+      <button role="tab" id="t-build" aria-controls="p-build" aria-selected="true">Build something<small>Patios, walls, grading, design</small></button>
+      <button role="tab" id="t-care" aria-controls="p-care" aria-selected="false" tabindex="-1">Keep it looking good<small>Plant care, mowing, clean-ups</small></button>
+    </div>
+
+    <div class="panel" id="p-build" role="tabpanel" aria-labelledby="t-build">
+      <div>
+        <div class="ph"><img src="img/stepping-stones-patio.webp" width="720" height="960" loading="lazy" alt="Flagstone stepping stones winding through new planting beds to a stone patio beside a gray house, a crew member at work"></div>
+        <p class="cap">Flagstone &amp; wallstone patio with flagstone stepping stones.</p>
+      </div>
+      <div class="svc">
+        <article><h3>Hardscapes</h3><p>Stone and paver walls, patios/walkways &amp; ponds for functional and aesthetic purposes.</p></article>
+        <article><h3>Grading</h3><p>From adjusting grade away from houses to fixing lawn area grades.</p></article>
+        <article><h3>Planting &amp; design</h3><p>Working with you to achieve the garden/yard of your dreams, even on a tight budget.</p></article>
+      </div>
+    </div>
+
+    <div class="panel" id="p-care" role="tabpanel" aria-labelledby="t-care" hidden>
+      <div>
+        <div class="ph"><img src="img/planting-beds-deck.webp" width="900" height="675" loading="lazy" alt="Curved mulched planting beds lined with crescent edgers around a deck and patio"></div>
+        <p class="cap">Crescent edger lined planting beds.</p>
+      </div>
+      <div class="svc">
+        <article><h3>Plant maintenance</h3><p>Trimming and treatment services for trees, shrubs, perennials and annuals.</p></article>
+        <article><h3>Lawncare &amp; maintenance</h3><p>Scheduled mowing and repairing/reseeding of lawns.</p></article>
+        <article><h3>Spring &amp; fall clean-ups</h3><p>Removal of old plant debris, mulching planting beds, leaf removal services.</p></article>
+        <p class="note">"Spring has arrived (or in Wisconsin what we like to call 'Second Winter'). Now is the perfect time to get the garden beds cleared out and mulched for the earliest perennials!"<span>Jake Tomasicyk, on the TLD blog</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work-sec" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <p class="kicker">Our work</p>
+    <h2 class="sec-h" id="work-h">Stone, block, brick and beds.</h2>
+    <div class="work">
+      <figure><div class="ph"><img src="img/flagstone-wallstone-patio.webp" width="720" height="960" loading="lazy" alt="Flagstone and wallstone patio along the back of a gray house with new lawn"></div><figcaption>Flagstone &amp; wallstone patio</figcaption></figure>
+      <figure><div class="ph"><img src="img/brussel-block-walkway.webp" width="720" height="960" loading="lazy" alt="Brussels block walkway between fresh mulch beds under a blue sky"></div><figcaption>Brussel block walkway</figcaption></figure>
+      <figure><div class="ph"><img src="img/brick-patio-staircase.webp" width="720" height="960" loading="lazy" alt="Work in progress on a brick patio with a timber-framed staircase up a boulder slope, a crew member kneeling"></div><figcaption>Brick patio &amp; timber framed staircase with brick inlay</figcaption></figure>
+      <figure><div class="ph"><img src="img/garden-retaining-border.webp" width="720" height="960" loading="lazy" alt="Custom garden framed by a retaining block border on a freshly striped lawn"></div><figcaption>Custom garden with retaining block border</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <p class="kicker">How it works</p>
+    <h2 class="sec-h" id="how-h">Simple, from first call to finished yard.</h2>
+    <ol class="steps">
+      <li><b>Call or email</b><span>Tell us about your yard. A few photos help.</span></li>
+      <li><b>Talk it through</b><span>We go over the yard, your ideas and your budget.</span></li>
+      <li><b>Owner on the job</b><span>The owner &amp; operator is on the job until it's done.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap c-grid">
+    <div class="about">
+      <svg class="stones" viewBox="0 0 150 28" aria-hidden="true"><path d="M2 18l10-9 16 2 4 11-12 5-15-2z" fill="#9A9A92"/><path d="M44 14l14-6 13 5-2 11-14 3-10-6z" fill="#C8C2B2"/><path d="M86 17l11-9 15 3 3 11-13 4-14-3z" fill="#9A9A92"/><path d="M126 12l12-3 10 7-3 9-13 1-7-7z" fill="#C8C2B2"/></svg>
+      <p class="kicker" style="margin-top:14px">Family owned &amp; operated</p>
+      <h2 class="sec-h" id="contact-h">Let's talk about your yard.</h2>
+      <p>Tomasicyk Landscape Design is a family owned and operated business in Hartland. A small crew keeps costs down, and the owner &amp; operator is always on the job.</p>
+      <p>Whether it's a new flagstone patio or keeping the beds clean and the lawn mowed, start with a call or an email.</p>
+    </div>
+    <aside class="card" aria-label="Contact details">
+      <h2>Schedule a consultation</h2>
+      <dl>
+        <div><dt>Contact</dt><dd>Jake Tomasicyk</dd></div>
+        <div><dt>Call</dt><dd><a href="tel:+12627511251">(262) 751-1251</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:TLDHartland@gmail.com">TLDHartland@gmail.com</a></dd></div>
+        <div><dt>Located in</dt><dd>Hartland, WI</dd></div>
+      </dl>
+      <div class="btns">
+        <a class="btn btn-white" href="tel:+12627511251">Call (262) 751-1251</a>
+        <a class="btn btn-line" href="mailto:TLDHartland@gmail.com?subject=Landscape%20consultation">Email us</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="closer">
+  <div class="wrap">
+    <h2>A first look at your new site.</h2>
+    <a class="btn btn-garden" href="tel:+12627511251">Call (262) 751-1251</a>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official Tomasicyk Landscape Design site. Wordmark redrawn in their Sanchez type; services, captions, blog quote, contact details and photos from tldhartland.com.</p>
+    <p><a href="https://www.tldhartland.com/">tldhartland.com</a></p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-white" href="tel:+12627511251">Call (262) 751-1251</a>
+  <a class="btn btn-line" style="border-color:#fff;color:#fff" href="mailto:TLDHartland@gmail.com?subject=Landscape%20consultation">Email us</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  function sel(t){
+    tabs.forEach(function(x){
+      var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(t)});
+    t.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];sel(n);n.focus();e.preventDefault();}
+    });
+  });
+})();
+</script>
+</body>
+</html>
