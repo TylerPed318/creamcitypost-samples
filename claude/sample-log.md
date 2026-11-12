@@ -19,6 +19,7 @@
 - Nov 11, ~6:50 PM CT (scheduled run): CCP-030 v1 done, live and emailed (0 credits). Built it even though it's a salon, because the brief says to. Open: color/facials/stylist names/booking unconfirmed; named review quote left out (live listing not opened); only 2 real photos.
 - Nov 11, ~7:05 PM CT (scheduled run): CCP-032 v1 done, live and emailed (0 credits, photo-free). Open: ZIP 53186 (card) vs 53188 (Google; used); "Ask for Miguel" and Spanish copy unconfirmed; no named review quotes.
 - Nov 11, ~7:20 PM CT (scheduled run): CCP-022 v1 done, live and emailed (0 credits). Session ends after 3 items (030, 032, 022). Open: confirm "Proud Black-owned" in the trust strip; service area left as "Greater Milwaukee". Next up, by brief time: CCP-033 Macias Auto Repair, CCP-034 Cantrall Carpet Cleaners, CCP-040 Filut Electric, then 049–066.
+- in progress — CCP-033 (Nov 11, 7:28 PM CT, scheduled run)
 
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
