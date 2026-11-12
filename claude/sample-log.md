@@ -20,7 +20,8 @@
 - Nov 11, ~7:05 PM CT (scheduled run): CCP-032 v1 done, live and emailed (0 credits, photo-free). Open: ZIP 53186 (card) vs 53188 (Google; used); "Ask for Miguel" and Spanish copy unconfirmed; no named review quotes.
 - Nov 11, ~7:20 PM CT (scheduled run): CCP-022 v1 done, live and emailed (0 credits). Session ends after 3 items (030, 032, 022). Open: confirm "Proud Black-owned" in the trust strip; service area left as "Greater Milwaukee". Next up, by brief time: CCP-033 Macias Auto Repair, CCP-034 Cantrall Carpet Cleaners, CCP-040 Filut Electric, then 049–066.
 - Nov 11, ~7:45 PM CT (scheduled run): CCP-033 v1 done, live and emailed (0 credits). Open: no named review quotes or count ("4.8 on Google" + themes); Sergio/owner, "family-run" and Spanish not stated pending Tyler; plate blurred on lift photo.
-- in progress — CCP-034 (Nov 11, 7:45 PM CT, scheduled run)
+- Nov 11, ~7:55 PM CT (scheduled run): CCP-034 v1 done, live and emailed (0 credits). Open: Jeff/owner not named; no Text button (SMS unconfirmed); "What to expect" steps are the brief's suggested process, to confirm with the owner.
+- in progress — CCP-040 (Nov 11, 7:55 PM CT, scheduled run)
 
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
@@ -48,6 +49,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-032 | Fernandez Auto Service | Auto repair, Waukesha | brief | v1 | fernandez-auto-service/ | v1 emailed Nov 11, ~7:05 PM. 0 credits. Photo-free; Facebook/Google-only lead. |
 | CCP-022 | 4Ever Green Lawn Care & Services LLC | Lawn care, Milwaukee | brief | v1 | 4ever-green-lawn-care/ | v1 emailed Nov 11, ~7:20 PM. 0 credits. Canva site. |
 | CCP-033 | Macias Auto Repair | Auto repair + body, Waukesha | brief | v1 | macias-auto-repair/ | v1 emailed Nov 11, ~7:45 PM. 0 credits. Facebook/Google-only lead. |
+| CCP-034 | Cantrall Carpet Cleaners | Carpet cleaning, Waukesha | brief | v1 | cantrall-carpet-cleaners/ | v1 emailed Nov 11, ~7:55 PM. 0 credits. Facebook/Google-only lead; typographic. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
 | CCP-019 | Mike Ingrilli Plumbing | Plumbing, West Allis | 10-20 #9 | v1 | mike-ingrilli-plumbing/ | Awaiting review. |
@@ -73,6 +75,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-032 Fernandez:** 817 W St Paul Ave, Waukesha 53188 (card says 53186); (262) 269-6233; Mon–Sat 9–6, Sun closed. Services only: tune up, suspension, brakes, transmission (card) + tires/used-tire mounting (reviews). No rating badge; no owner name.
 - **CCP-022 4Ever Green:** (414) 817-2027 (call + sms); 4EGLLC@gmail.com; office only: 316 N Milwaukee St Ste 301, 53202; hours verbatim "Monday to Friday 8:00 am to 5:00 pm · Saturday By appointment only · Closed on Sundays"; "over 4 years"; services = their 8-item list only. Skip the stock sprinkler image; 5f49… and 3aab… are the same photo. No social links.
 - **CCP-033 Macias:** 1336 E Main St, Waukesha 53186; (262) 542-6772; Maciasautorepairllc@gmail.com; Mon–Fri 8–5, Sat 8–3, Sun closed; "4.8 on Google" only. Services: brakes, steering & suspension, general repair, bumper, body & trim, headlight. Blur plate JR1574 on the lift photo; never use the crashed-car photo; under-truck photo is cropped to hide a bottle.
+- **CCP-034 Cantrall:** (262) 521-9973; Google hours Mon–Sat 9–5, Sun closed ("call to confirm"; FB directory says Mon–Fri 8–5). Never show the 3.9 rating/count, the home address (1506 Morey Ln) or the negative reviews. Services: carpet, upholstery, pet stain & odor, apartments/move-outs. Only real photo: the Facebook carpet mid-clean (soft, keep small).
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
