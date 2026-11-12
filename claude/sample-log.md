@@ -19,7 +19,7 @@
 - Nov 11, ~6:50 PM CT (scheduled run): CCP-030 v1 done, live and emailed (0 credits). Built it even though it's a salon, because the brief says to. Open: color/facials/stylist names/booking unconfirmed; named review quote left out (live listing not opened); only 2 real photos.
 - Nov 11, ~7:05 PM CT (scheduled run): CCP-032 v1 done, live and emailed (0 credits, photo-free). Open: ZIP 53186 (card) vs 53188 (Google; used); "Ask for Miguel" and Spanish copy unconfirmed; no named review quotes.
 - Nov 11, ~7:20 PM CT (scheduled run): CCP-022 v1 done, live and emailed (0 credits). Session ends after 3 items (030, 032, 022). Open: confirm "Proud Black-owned" in the trust strip; service area left as "Greater Milwaukee". Next up, by brief time: CCP-033 Macias Auto Repair, CCP-034 Cantrall Carpet Cleaners, CCP-040 Filut Electric, then 049–066.
-- in progress — CCP-033 (Nov 11, 7:28 PM CT, scheduled run)
+- Nov 11, ~7:45 PM CT (scheduled run): CCP-033 v1 done, live and emailed (0 credits). Open: no named review quotes or count ("4.8 on Google" + themes); Sergio/owner, "family-run" and Spanish not stated pending Tyler; plate blurred on lift photo.
 - in progress — CCP-034 (Nov 11, 7:45 PM CT, scheduled run)
 
 ## Handled emails (don't reprocess)
@@ -47,6 +47,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-030 | Luna Beauty Salon | Salon/barbershop, Milwaukee | brief | v1 | luna-beauty-salon/ | v1 emailed Nov 11, ~6:50 PM. 0 credits. Facebook/Google-only lead. |
 | CCP-032 | Fernandez Auto Service | Auto repair, Waukesha | brief | v1 | fernandez-auto-service/ | v1 emailed Nov 11, ~7:05 PM. 0 credits. Photo-free; Facebook/Google-only lead. |
 | CCP-022 | 4Ever Green Lawn Care & Services LLC | Lawn care, Milwaukee | brief | v1 | 4ever-green-lawn-care/ | v1 emailed Nov 11, ~7:20 PM. 0 credits. Canva site. |
+| CCP-033 | Macias Auto Repair | Auto repair + body, Waukesha | brief | v1 | macias-auto-repair/ | v1 emailed Nov 11, ~7:45 PM. 0 credits. Facebook/Google-only lead. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
 | CCP-019 | Mike Ingrilli Plumbing | Plumbing, West Allis | 10-20 #9 | v1 | mike-ingrilli-plumbing/ | Awaiting review. |
@@ -71,6 +72,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-030 Luna:** 3474 S 13th St, Milwaukee 53215; (414) 645-1016; Google hours Tue–Sat 9–7, Sun/Mon closed; "4.5 on Google" only (no count); LGBTQ+ friendly (Google attribute). Services: cuts/trims, fades, styling/braids only. Don't use the man-by-stone-wall photo.
 - **CCP-032 Fernandez:** 817 W St Paul Ave, Waukesha 53188 (card says 53186); (262) 269-6233; Mon–Sat 9–6, Sun closed. Services only: tune up, suspension, brakes, transmission (card) + tires/used-tire mounting (reviews). No rating badge; no owner name.
 - **CCP-022 4Ever Green:** (414) 817-2027 (call + sms); 4EGLLC@gmail.com; office only: 316 N Milwaukee St Ste 301, 53202; hours verbatim "Monday to Friday 8:00 am to 5:00 pm · Saturday By appointment only · Closed on Sundays"; "over 4 years"; services = their 8-item list only. Skip the stock sprinkler image; 5f49… and 3aab… are the same photo. No social links.
+- **CCP-033 Macias:** 1336 E Main St, Waukesha 53186; (262) 542-6772; Maciasautorepairllc@gmail.com; Mon–Fri 8–5, Sat 8–3, Sun closed; "4.8 on Google" only. Services: brakes, steering & suspension, general repair, bumper, body & trim, headlight. Blur plate JR1574 on the lift photo; never use the crashed-car photo; under-truck photo is cropped to hide a bottle.
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
