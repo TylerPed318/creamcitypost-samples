@@ -42,7 +42,9 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-034 v2 (Nov 12, ~10:45 AM CT, scheduled run): live (page + img 200, byte-identical), emailed 1a1d0964f1d07a5b; 0 credits; commit 6bd4849. Review themes replaced by Facebook/Google links; carpet photo max 340px (280 on phone).
 - done — CCP-067 v1 (Nov 12, ~11:15 AM CT, scheduled run): live (page + 9 imgs 200, byte-identical), emailed 1a1d09c9a067f715; 4 credits (2K upscale of the freezer before/after pair); commit 5528e22. Hero slider, logo potrace SVG. Open: Clorox 360/DockHounds currency, hours, photo permission.
 - Nov 12, ~11:15 AM CT (scheduled run): session ends after 3 items (033 v2, 034 v2, 067 v1), 4 credits total. Next up, oldest brief first: CCP-068 Waterfoul Plumbing (1a1d080caad8b225), CCP-069 Hardwired Electric (1a1d080e29bb260b), CCP-070 Dent Spa Wisconsin (1a1d080fbb748532).
+- in progress — CCP-068 (Nov 12, ~12:00 PM CT, scheduled run)
 ## Handled emails (don't reprocess)
+Nov 12 10:30 AM CT phone approvals logged: CCP-022 v1, 023 v2, 024 v2, 030 v1, 032 v1, 040 v1, 049 v1, 051 v1, 052 v1, 054 v1, 055 v3, 056 v1, 057 v1, 058 v1, 060 v2, 061 v1, 062 v1, 063 v1, 064 v1, 065 v1, 066 v1 (all frozen).
 CCP-067 creative brief 1a1d080263accb8e handled; v1 ready sent 1a1d09c9a067f715 (Nov 12).
 CCP-033 v1 revision 1a1d07fcdd007384 handled; v2 ready sent 1a1d0963cbf623df (Nov 12).
 CCP-034 v1 revision 1a1d07f980712d19 handled; v2 ready sent 1a1d0964f1d07a5b (Nov 12).
