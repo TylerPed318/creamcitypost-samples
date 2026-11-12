@@ -28,7 +28,10 @@
 
 - 2026-11-11 21:08 -06:00 (scheduled run): done — CCP-054 v1, live and emailed, 0 credits. Photo-free; owner confirmation needed for job photos. Original logo retained; BBB A+ verified; ISA claim omitted pending lookup; expired winter coupon omitted. Live 1440/390 QA passed using installed Playwright in Higgsfield sandbox (named script unavailable). Runtime cannot select Claude Sonnet. Last finished CCP-054 v1; next CCP-055 AKL Resurfacing, then CCP-056.
 
+- Nov 11, 2026 ~9:24 PM CT (resumed scheduled run): last finished CCP-055 AKL Resurfacing v1, 0 credits; next CCP-056 Final Conflict Pest Management. Sample commit 3618777 verified byte-for-byte live; public images/favicon 200; live 1440/390 screenshots inspected and toggle tested using installed Playwright in Higgsfield sandbox (named script unavailable). Email 1a1cdc8921a22a82 confirmed SENT. Open: small original photos; pricing/rating/address omitted. Runtime cannot select Claude Sonnet; original logo typefaces preserved instead of proposed rebrand.
+
 ## Handled emails (don't reprocess)
+CCP-055 creative brief 1a1cc38c89d60fe2 handled; v1 ready sent 1a1cdc8921a22a82 (Nov 11).
 CCP-054 creative brief 1a1cc293ef95a96f handled; v1 ready sent 1a1cdba7719f6498 (Nov 11).
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
 Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 2 Go, CCP-012 Hernia, CCP-013 Ingrilli, CCP-014 Sparks, CCP-015 Wood Floors Unlimited, CCP-022 Sunset Septic). The real IDs are in the table.
@@ -59,6 +62,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-040 | Filut Electric | Electrician, Oconomowoc | brief | v1 | filut-electric/ | v1 emailed Nov 11, ~8:10 PM. 0 credits. Facebook/Google-only lead. |
 | CCP-049 | Lake Time Services | Marine upholstery + mobile boat service, Pewaukee | brief | v1 | lake-time-services/ | v1 emailed Nov 11, ~8:45 PM. 0 credits. |
 | CCP-051 | Gary's Auto Repair | Auto repair (imports + all makes), Delafield | brief | v1 | garys-auto-repair/ | v1 emailed Nov 11, ~9:00 PM. 0 credits. |
+| CCP-055 | AKL Resurfacing | Bathtub/tile refinishing, Milwaukee | brief + master CSV | v1 | akl-resurfacing/ | v1 live and emailed Nov 11; 0 credits. |
 | CCP-054 | Giese's Tree & Landscaping Service LLC | Tree/landscaping, Milwaukee | brief + master CSV | v1 | gieses-tree-landscaping/ | v1 live and emailed Nov 11. 0 credits; photo-free; ISA pending verification. |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
@@ -98,4 +102,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-112 Sunset Septic:** over 30 years; licensed, insured & bonded drivers; WI 3-year pump/inspect rule; (262) 968-9812; skip the About page's placeholder team names.
 - **CCP-114 P's Junk:** owner Vanessa; 6001 W Capitol Dr, Milwaukee; 414-240-4332; contact@psjunkremovalwi.com; use only real job photos (IMG_2927, IMG_2894, IMG_2832, BE11FC62, 42B1A82A). No named review quotes; no exact review count; "5.0 on Google" only.
 
-- in progress — CCP-055 (Nov 11, 2026 9:19 PM America/Chicago, resumed scheduled run)
+- done — CCP-055 v1 (Nov 11, 2026 resumed scheduled run): live and emailed; 0 credits. Original typographic brand retained; real photos shown at 248px; no Google rating, pricing or residential address.
+
