@@ -56,10 +56,16 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .hero h1 em{font-style:italic;color:var(--orange)}
 .hero p.lead{font-size:clamp(17px,1.7vw,20px);color:#cfd9e3;max-width:34em;margin:0 0 28px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
-.photo{position:relative;margin:0;isolation:isolate}
-.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 60px rgba(0,0,0,.45);filter:saturate(.92)}
-.photo::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--orange);border-radius:var(--r);z-index:-1}
-.photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(16,30,39,.82);color:#fff;font-size:13px;font-weight:600;padding:6px 10px;border-radius:6px}
+.ticket{position:relative;isolation:isolate;background:#fff;color:var(--text);border-radius:var(--r);padding:28px 28px 24px;box-shadow:0 30px 60px rgba(0,0,0,.45);transform:rotate(1.5deg)}
+.ticket::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--orange);border-radius:var(--r);z-index:-1}
+.ticket .tk-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:2px dashed var(--line);padding-bottom:14px;margin-bottom:6px}
+.ticket .tk-top b{font:800 italic 22px/1.1 var(--head);color:var(--midnight)}
+.ticket .tk-top span{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--orange-d)}
+.ticket ul{list-style:none;margin:0;padding:0}
+.ticket li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-weight:600;color:var(--midnight)}
+.ticket li i{font-style:normal;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--card)}
+.ticket .tk-foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 14px;margin-top:16px;font-size:14px;color:var(--muted)}
+.ticket .tk-foot strong{color:var(--midnight)}
 
 /* proof strip */
 .proof{background:#fff;border-bottom:1px solid var(--line)}
@@ -96,7 +102,8 @@ section{padding:84px 0}
 .shop{background:var(--ink);color:#fff;padding:72px 0}
 .shop .sec-head h2{color:#fff}
 .shop .sec-head p{margin:0;color:#9fb0c1;max-width:30em}
-.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.grid3 figcaption.cap{padding:10px 12px;font-size:14px;color:#cfd9e3}
 .grid3 figure{margin:0;border-radius:var(--r);overflow:hidden;background:var(--deep)}
 .grid3 img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .grid3 .logo-tile{background:var(--midnight);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:24px;border:1px solid rgba(255,255,255,.08)}
@@ -140,11 +147,12 @@ footer a{color:#cfd9e3}
 
 @media (max-width:900px){
   .hero .wrap{grid-template-columns:1fr;gap:40px;padding:48px 0 64px}
-  .photo{max-width:420px}
+  .ticket{max-width:460px;transform:none}
   .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
   .proof li:nth-child(3){border-left:0}
   .proof li:nth-child(n+3){border-top:1px solid var(--line)}
   .panel,.visit .wrap{grid-template-columns:1fr}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:640px){
   body{padding-bottom:70px}
@@ -154,10 +162,11 @@ footer a{color:#cfd9e3}
   .hcall small{display:none}
   .hcall span{font-size:18px}
   section{padding:60px 0}
-  .grid3{grid-template-columns:1fr}
-  .grid3 img{aspect-ratio:4/3}
-  .grid3 .logo-tile img{aspect-ratio:1/1;width:240px}
-  .photo::before{inset:10px -8px -10px 8px}
+  .grid3{gap:10px}
+  .grid3 .logo-tile{padding:12px}
+  .grid3 .logo-tile figcaption{font-size:12px;text-align:center}
+  .ticket::before{inset:10px -8px -10px 8px}
+  .ticket{padding:22px 20px 18px}
   .rep,.info,.panel-intro{padding:24px}
   .switch{width:100%}
   .switch button{flex:1;padding:13px 10px}
@@ -201,10 +210,18 @@ footer a{color:#cfd9e3}
           <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Macias+Auto+Repair+1336+E+Main+St+Waukesha+WI+53186" target="_blank" rel="noopener">Get directions</a>
         </div>
       </div>
-      <figure class="photo">
-        <img src="img/shop-lift.jpg" alt="A pickup up on the lift in the Macias Auto Repair bay, mechanic standing below" width="900" height="1124">
-        <figcaption>In the bay on E Main St</figcaption>
-      </figure>
+      <div class="ticket" aria-label="What Macias Auto Repair works on">
+        <div class="tk-top"><b>Macias Auto Repair</b><span>Work we do</span></div>
+        <ul>
+          <li>Brakes <i>Mechanical</i></li>
+          <li>Steering &amp; suspension <i>Mechanical</i></li>
+          <li>General repairs <i>Mechanical</i></li>
+          <li>Bumpers <i>Body</i></li>
+          <li>Body &amp; trim <i>Body</i></li>
+          <li>Headlights <i>Body</i></li>
+        </ul>
+        <div class="tk-foot"><span><strong>1336 E Main St</strong>, Waukesha</span><span>Mon–Fri 8–5 · Sat 8–3</span></div>
+      </div>
     </div>
   </section>
 
@@ -267,9 +284,10 @@ footer a{color:#cfd9e3}
           <span class="eyebrow">At the shop</span>
           <h2 id="shop-h">Hands-on, every job.</h2>
         </div>
-        <p>Real photos from the Macias Auto Repair listing, out on the lot.</p>
+        <p>Real photos from the Macias Auto Repair listing: in the bay and out on the lot.</p>
       </div>
       <div class="grid3">
+        <figure><img src="img/shop-lift.jpg" alt="A pickup up on the lift in the Macias Auto Repair bay, mechanic standing below" width="900" height="1124" loading="lazy"></figure>
         <figure><img src="img/pickup-front.jpg" alt="Mechanic working at the front wheel of a white pickup" width="900" height="1124" loading="lazy"></figure>
         <figure><img src="img/under-pickup.jpg" alt="Mechanic working under the wheel well of a white pickup" width="900" height="1125" loading="lazy"></figure>
         <figure class="logo-tile"><img src="img/logo.jpg" alt="Macias Auto Repair LLC logo" width="480" height="480" loading="lazy"><figcaption>1336 E Main St · Waukesha</figcaption></figure>
