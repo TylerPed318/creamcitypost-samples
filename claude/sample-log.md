@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-073 creative brief 1a1d0c411e346c52 handled; v1 ready sent 1a1d143421d7b781 (Nov 12).
 CCP-071 creative brief 1a1d0ba3482fca44 handled; v1 ready sent 1a1d10a6d78b3d17 (Nov 12).
 CCP-068 v1 revision 1a1d0dbe76eeca02 handled; v2 ready sent 1a1d10494be1d21a (Nov 12).
 CCP-069 v1 revision 1a1d0dbe761f4b51 handled; v2 ready sent 1a1d104a4df231e9 (Nov 12).
@@ -118,6 +119,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-069 | Hardwired Electric | Electrical + Generac + lighting, Lake Country | brief | v2 | hardwired-electric/ | v1 emailed Nov 12, ~11:36 AM; v1 revision → v2 emailed ~12:50 PM. 0 credits. |
 | CCP-070 | Dent Spa Wisconsin | Paintless dent repair + detailing, Oconomowoc | brief | v1 | dent-spa-wisconsin/ | v1 emailed Nov 12, ~11:42 AM. 4 credits. |
 | CCP-071 | D&D Well & Pumps LLC | Well drilling + pumps, Oconomowoc | brief | v1 | dd-well-pumps/ | v1 emailed Nov 12, ~1:10 PM. 2 credits. |
+| CCP-073 | Lake Country Project Guy LLC | Handyman + custom carpentry, Delafield | brief | v1 | lake-country-project-guy/ | v1 emailed Nov 12, ~1:36 PM. 0 credits. |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
@@ -162,6 +164,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-069 Hardwired:** (262) 266-3687; hardwiredllc@outlook.com; hours "Monday-Friday, 7 A.M. – 5 P.M."; no street address (Highlander Dr only on Generac dealer page) and no license #; owner Nathan Whitt (career since 1998; "over 25 years"); lifetime warranty on labor and workmanship; Generac dealer, Lutron/Caseta; "5.0 on Google" only. Own-site testimonials B.Z., M.K., C.G. OK as text; never the CW "Generic Generator" graphic or Jordan. Photos: pergola (4032px), Nathan (296px, small only); Generac/kitchen/Lutron cards are product/stock.
 - **CCP-070 Dent Spa:** 262-599-6910 (call + text); dentspawisconsin@gmail.com; 500 Chaffee Rd. Suite B, Oconomowoc 53066; "Mon–Fri 8:30am–5:00pm · By Appointment"; family-owned and operated; "5.0 on Google" only. No years line, ARC Certified, Certified Master Technicians, #1, 414-331-7662 or $250 rental offer until confirmed. Own-site testimonials Chad Christensen, Todd Smith, Linda Thacker verbatim. Never RemovingDoorDent.jpg (spray gun). Porsche photo cropped to drop the EWALD plate frame. Tank pair = Higgsfield 2K upscale with original tool lettering blended back.
 - **CCP-071 D&D Well:** (262) 567-0803 only (never 262-965-4668 until confirmed); ddwellpumps06@wi.rr.com; N6331 County Road F, Oconomowoc 53066; hours "Open 24 Hours" Mon–Sun + "24 Hour Emergency Service. Holiday Hours May Vary. Please Call For Details."; since 1973 (no year counts); WI DNR Lic# 7181; fully insured; 9 counties; "4.6 on Google". Own-site testimonials Megan Duncan 8/9/2023, Dan 5/14/2022, Chris Knapp 9/16/2022 used verbatim. Not family-owned, not Darren's title. Skip the family-truck photo (child) and the gauge graphic.
+- **CCP-073 Lake Country Project Guy:** (414) 915-7939; Chris@LakeCountryProjectGuy.com; 1051 Main Street, Delafield 53018; no hours; no reviews/rating anywhere (Google listing unclaimed) — never show stars or quotes. Free quote/consultation OK. "Chris" only via email; no surname. Skip IMG_2317 (client face), the apron photo (unconfirmed) and 11DD97AC (mailbox number).
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
@@ -200,5 +203,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - Nov 11, ~11:55 PM CT (scheduled run): session ends after 2 items (065, 066), 0 credits. No open revisions and no unbuilt briefs remain; next run should only check Gmail for new briefs/revisions. Logos traced with npm potrace (scratch install) for faithful SVGs.
 
 - in progress — CCP-072 (Nov 12, 12:32 PM CT, scheduled run)
-- in progress — CCP-073 (Nov 12, 1:30 PM CT, scheduled run)
+- done — CCP-073 v1 (Nov 12, ~1:36 PM CT, scheduled run): live (page + 10 imgs 200, byte-identical), emailed 1a1d143421d7b781; 0 credits; commit 824617e. Fix/Make/Solve doors, bonus-room slider, tape-measure motif. Open: no reviews/hours exist; Chris only via email; apron + client-face photos unused; images ~1.06 MB (lazy).
 - in progress — CCP-074 (Nov 12, 1:31 PM CT, scheduled run)
