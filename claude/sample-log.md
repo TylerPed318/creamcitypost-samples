@@ -38,6 +38,8 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 
 - Nov 11, 2026 ~9:53 PM CT (Tyler chat): last finished CCP-055 v3 and CCP-060 v2 visual revisions, exact deployed commits verified, public assets 200, 1440/390 live renders inspected. Both ready emails confirmed SENT; AKL 4 credits, Whitlow 0. Next eligible remains CCP-061. Open: original photo camera angles differ; other prior fact omissions retained. Model selection unavailable. Design lesson: execute the brief's main visual idea at a confident scale; company-specific, modern compositions are required.
 
+- in progress — CCP-033 (Nov 12, 10:27 AM CT, scheduled run)
+- in progress — CCP-034 (Nov 12, 10:27 AM CT, scheduled run)
 ## Handled emails (don't reprocess)
 CCP-066 creative brief 1a1cce654b6cc626 handled; v1 ready sent 1a1ce3fe78564128 (Nov 11).
 CCP-065 creative brief 1a1cce2242a13c73 handled; v1 ready sent 1a1ce3cf4d5ceca1 (Nov 11).
