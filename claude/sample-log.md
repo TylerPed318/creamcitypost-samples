@@ -97,3 +97,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-021 Wood Floors Unlimited:** never use the NBA patent line; BonaKemi's Atomic DCS; NWFA/NARI not confirmed; showroom Mon–Fri 9–4:30; (262) 367-8896.
 - **CCP-112 Sunset Septic:** over 30 years; licensed, insured & bonded drivers; WI 3-year pump/inspect rule; (262) 968-9812; skip the About page's placeholder team names.
 - **CCP-114 P's Junk:** owner Vanessa; 6001 W Capitol Dr, Milwaukee; 414-240-4332; contact@psjunkremovalwi.com; use only real job photos (IMG_2927, IMG_2894, IMG_2832, BE11FC62, 42B1A82A). No named review quotes; no exact review count; "5.0 on Google" only.
+
+- in progress — CCP-055 (Nov 11, 2026 9:19 PM America/Chicago, resumed scheduled run)
