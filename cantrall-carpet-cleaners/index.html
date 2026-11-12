@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Cantrall Carpet Cleaners — Website concept by Cream City Post</title>
+<meta name="description" content="Website concept for Cantrall Carpet Cleaners, carpet and upholstery cleaning in Waukesha, WI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F4C5C'/%3E%3Cpath d='M32 10c8 11 14 19 14 27a14 14 0 0 1-28 0c0-8 6-16 14-27z' fill='%232A9DB0'/%3E%3Cpath d='M14 52h36M18 57h28' stroke='%23F2A541' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#0F4C5C; --teal-d:#0a3743; --aqua:#2A9DB0; --mist:#E8F4F6; --sand:#EFE9E1;
+  --text:#1F2A30; --muted:#55646b; --amber:#F2A541; --amber-h:#f7b864; --line:#d5e3e6;
+  --head:'Poppins',system-ui,sans-serif; --body:'Source Sans 3',system-ui,sans-serif;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--text);font:400 18px/1.6 var(--body)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1.15;letter-spacing:-.01em}
+.kick{font:600 13px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--aqua)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:12px;font:600 16px/1 var(--head);text-decoration:none;transition:background .15s,transform .15s,color .15s,border-color .15s}
+.btn-amber{background:var(--amber);color:var(--text)}
+.btn-amber:hover{background:var(--amber-h);transform:translateY(-1px)}
+.btn-ghost{border:2px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+header{background:var(--teal);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 1px 0 rgba(255,255,255,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark svg{width:34px;height:34px;flex:none}
+.mark b{font:700 19px/1.05 var(--head);display:block}
+.mark small{font:500 12px/1.2 var(--body);letter-spacing:.12em;text-transform:uppercase;color:#a9d3da}
+.hphone{font:600 17px/1 var(--head);color:var(--amber);text-decoration:none;white-space:nowrap}
+.hphone:hover{color:var(--amber-h)}
+
+/* hero with CSS carpet texture */
+.hero{position:relative;background:var(--teal);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.16;
+  background:
+   repeating-linear-gradient(90deg,rgba(255,255,255,.5) 0 2px,transparent 2px 9px),
+   repeating-linear-gradient(0deg,rgba(0,0,0,.45) 0 3px,transparent 3px 11px);
+  -webkit-mask-image:linear-gradient(100deg,transparent 35%,#000 75%);mask-image:linear-gradient(100deg,transparent 35%,#000 75%)}
+.hero::after{content:"";position:absolute;top:0;bottom:0;left:62%;width:46%;background:linear-gradient(90deg,rgba(42,157,176,.0),rgba(42,157,176,.22));transform:skewX(-12deg)}
+.hero .wrap{position:relative;z-index:1;padding:84px 0 92px;max-width:1120px}
+.hero h1{font-size:clamp(34px,5vw,60px);font-weight:700;max-width:15em;margin:16px 0 18px}
+.hero h1 span{color:var(--amber)}
+.hero p{font-size:clamp(18px,1.8vw,21px);color:#d4ecef;max-width:32em;margin:0 0 30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.lanes{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px;padding:0;list-style:none}
+.lanes li{font:500 14px/1 var(--head);padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.1);color:#e7f5f7}
+
+/* services */
+section{padding:84px 0}
+.head{max-width:40em;margin-bottom:34px}
+.head h2{font-size:clamp(28px,3.4vw,40px);color:var(--teal);margin-top:10px}
+.head p{color:var(--muted);margin:10px 0 0}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.card{background:var(--mist);border-radius:var(--r);padding:26px 22px;border:1px solid transparent;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--aqua);transform:translateY(-2px)}
+.card svg{width:40px;height:40px;stroke:var(--teal);margin-bottom:16px}
+.card h3{font-size:19px;color:var(--teal);margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:17px}
+
+/* property managers */
+.pm{background:var(--sand)}
+.pm .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center}
+.pm h2{font-size:clamp(28px,3.2vw,38px);color:var(--teal);margin:10px 0 14px}
+.pm p{margin:0 0 24px;color:#3b4a51}
+.pm figure{margin:0;position:relative}
+.pm figure img{width:100%;max-width:420px;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r);box-shadow:0 22px 44px rgba(15,76,92,.18);margin-left:auto}
+.pm figcaption{font-size:14px;color:var(--muted);margin-top:10px;text-align:right}
+
+/* what to expect: stepper */
+.steps-wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;align-items:start}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
+.steps button{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;align-items:center;padding:14px 16px;border-radius:14px;cursor:pointer;border:1px solid var(--line);background:#fff;font:600 17px/1.3 var(--head);color:var(--teal);transition:background .15s,border-color .15s}
+.steps button:hover{border-color:var(--aqua)}
+.steps button .n{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--mist);font-weight:700}
+.steps button[aria-selected="true"]{background:var(--teal);color:#fff;border-color:var(--teal)}
+.steps button[aria-selected="true"] .n{background:var(--amber);color:var(--text)}
+.steps button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.detail{background:var(--mist);border-radius:var(--r);padding:34px;min-height:100%}
+.detail h3{font-size:24px;color:var(--teal);margin:8px 0 12px}
+.detail p{margin:0;color:#3b4a51}
+.detail .of{font:600 13px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--aqua)}
+
+/* themes + contact */
+.contact{background:var(--teal);color:#e2f2f4}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.say,.reach{border-radius:var(--r);padding:34px}
+.say{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.say h2,.reach h2{font-size:clamp(26px,2.8vw,34px);color:#fff;margin:10px 0 18px}
+.say ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.say li{padding-left:30px;position:relative}
+.say li::before{content:"";position:absolute;left:0;top:.45em;width:14px;height:14px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--aqua)}
+.say .src{margin-top:20px;font-size:15px;color:#a9d3da}
+.reach{background:#fff;color:var(--text)}
+.reach h2{color:var(--teal)}
+.reach .big{display:block;font:700 clamp(26px,3vw,34px)/1.1 var(--head);color:var(--teal);text-decoration:none;margin-bottom:18px}
+.reach .big:hover{color:var(--aqua)}
+.hrs{width:100%;border-collapse:collapse;margin-bottom:16px}
+.hrs td{padding:8px 0;border-bottom:1px solid var(--line)}
+.hrs td:last-child{text-align:right;font-weight:600}
+.reach small{color:var(--muted);font-size:15px;display:block}
+
+.closer{background:var(--mist);padding:56px 0}
+.closer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.closer h2{font-size:clamp(24px,3vw,34px);color:var(--teal)}
+.closer p{margin:6px 0 0;color:var(--muted)}
+footer{background:var(--teal-d);color:#9cc4cb;font-size:14px;padding:28px 0 32px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+footer a{color:#e2f2f4}
+.mbar{display:none}
+
+@media (max-width:960px){
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pm .wrap,.steps-wrap,.contact .wrap{grid-template-columns:1fr}
+  .pm figure img{margin-left:0}
+  .pm figcaption{text-align:left}
+}
+@media (max-width:600px){
+  body{padding-bottom:70px}
+  .mark small{display:none}
+  .mark b{font-size:16px}
+  .hphone{font-size:15px}
+  .hero .wrap{padding:56px 0 64px}
+  section{padding:60px 0}
+  .cards{grid-template-columns:1fr}
+  .say,.reach,.detail{padding:24px}
+  .mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--teal-d);padding:8px}
+  .mbar a{display:flex;min-height:50px;align-items:center;justify-content:center;border-radius:12px;background:var(--amber);color:var(--text);font:600 16px/1 var(--head);text-decoration:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Cantrall Carpet Cleaners, home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4c6 8 10 13 10 19a10 10 0 0 1-20 0c0-6 4-11 10-19z" fill="#2A9DB0"/><path d="M8 34h24M12 38h16" stroke="#F2A541" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <span><b>Cantrall Carpet Cleaners</b><small>Waukesha, WI</small></span>
+    </a>
+    <a class="hphone" href="tel:+12625219973">(262) 521-9973</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <span class="kick" style="color:#7fd0dc">Carpet &amp; upholstery cleaning</span>
+      <h1 id="h1">Carpet and upholstery cleaning in Waukesha, from a cleaner <span>you'll know by name.</span></h1>
+      <p>Homes, move-outs and apartment complexes. Pet stains, smoke odor and everyday traffic lanes.</p>
+      <div class="ctas">
+        <a class="btn btn-amber" href="tel:+12625219973">Call (262) 521-9973</a>
+        <a class="btn btn-ghost" href="#services">See what we clean</a>
+      </div>
+      <ul class="lanes" aria-label="Who they clean for">
+        <li>Homes</li><li>Move-outs</li><li>Apartment complexes</li><li>Mon–Sat, 9–5</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="head">
+        <span class="kick">What we clean</span>
+        <h2 id="svc-h">Four jobs, done carefully.</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <svg viewBox="0 0 40 40" fill="none" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="9" width="30" height="22" rx="2"/><path d="M5 15h30M5 21h30M5 27h30"/></svg>
+          <h3>Carpet cleaning</h3><p>Whole rooms, hallways and the traffic lanes that wear first.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 20v-5a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v5"/><path d="M5 20a3 3 0 0 1 6 0v3h18v-3a3 3 0 0 1 6 0v9H5z"/><path d="M9 29v3M31 29v3"/></svg>
+          <h3>Upholstery cleaning</h3><p>Couches and chairs, cleaned in your home.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40" fill="none" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><ellipse cx="20" cy="26" rx="7" ry="6"/><circle cx="11" cy="17" r="3"/><circle cx="17" cy="11" r="3"/><circle cx="24" cy="11" r="3"/><circle cx="30" cy="17" r="3"/></svg>
+          <h3>Pet stain &amp; odor</h3><p>Pet accidents and the smell they leave behind.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 40 40" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 35V9l13-5 13 5v26"/><path d="M14 14h4M22 14h4M14 21h4M22 21h4M17 35v-7h6v7"/></svg>
+          <h3>Apartments &amp; move-outs</h3><p>Turnover cleaning between tenants, and homes before move-in.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pm" aria-labelledby="pm-h">
+    <div class="wrap">
+      <div>
+        <span class="kick">For property managers</span>
+        <h2 id="pm-h">Manage apartments in Waukesha County? Cantrall cleans between tenants.</h2>
+        <p>Apartment complexes are already on the customer list, with carpets cleaned after tenants move out. One call sets up the next turnover.</p>
+        <a class="btn btn-amber" href="tel:+12625219973">Call to set up turnover cleanings</a>
+      </div>
+      <figure>
+        <img src="img/carpet-clean-line.jpg" alt="Commercial carpet mid-clean, with a visible line between the cleaned and uncleaned sections" width="800" height="800" loading="lazy">
+        <figcaption>Mid-job: cleaned carpet up front, not yet cleaned behind.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="exp-h">
+    <div class="wrap">
+      <div class="head">
+        <span class="kick">What to expect</span>
+        <h2 id="exp-h">No surprises, start to finish.</h2>
+        <p>Tap a step.</p>
+      </div>
+      <div class="steps-wrap">
+        <ol class="steps" role="tablist" aria-label="Steps">
+          <li><button role="tab" aria-selected="true" aria-controls="detail" data-i="0"><span class="n">1</span>Call and describe the job</button></li>
+          <li><button role="tab" aria-selected="false" aria-controls="detail" data-i="1" tabindex="-1"><span class="n">2</span>An honest look at the stains</button></li>
+          <li><button role="tab" aria-selected="false" aria-controls="detail" data-i="2" tabindex="-1"><span class="n">3</span>The cleaning</button></li>
+          <li><button role="tab" aria-selected="false" aria-controls="detail" data-i="3" tabindex="-1"><span class="n">4</span>Walk-through when it's done</button></li>
+        </ol>
+        <div class="detail" id="detail" role="tabpanel" aria-live="polite">
+          <span class="of">Step <b id="d-n">1</b> of 4</span>
+          <h3 id="d-h">Call and describe the job</h3>
+          <p id="d-p">Tell us the rooms, the furniture and anything you're worried about: pets, smoke, a spill. We'll set a time that works for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" aria-label="What customers say and contact">
+    <div class="wrap">
+      <div class="say">
+        <span class="kick" style="color:#7fd0dc">From Google reviews</span>
+        <h2>What customers mention</h2>
+        <ul>
+          <li>On time, and a careful job</li>
+          <li>Homes that came out looking practically new, even after smokers</li>
+          <li>Steady work for an apartment complex</li>
+          <li>Customers who have used him for years</li>
+        </ul>
+        <p class="src">Themes from reviews on the Cantrall Carpet Cleaners Google listing.</p>
+      </div>
+      <div class="reach">
+        <span class="kick">Call to book</span>
+        <h2>Based in Waukesha, WI</h2>
+        <a class="big" href="tel:+12625219973">(262) 521-9973</a>
+        <table class="hrs" aria-label="Hours">
+          <tbody>
+            <tr><td>Monday – Saturday</td><td>9 AM – 5 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <small>Hours from Google. Please call to confirm.</small>
+      </div>
+    </div>
+  </section>
+
+  <div class="closer">
+    <div class="wrap">
+      <div>
+        <h2>Carpets due for a cleaning?</h2>
+        <p>Call Cantrall Carpet Cleaners and describe the job.</p>
+      </div>
+      <a class="btn btn-amber" href="tel:+12625219973">Call (262) 521-9973</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Cantrall Carpet Cleaners · Waukesha, WI · (262) 521-9973 · <a href="https://www.facebook.com/146880178690540" target="_blank" rel="noopener">Facebook</a></span>
+    <span>Website by Cream City Post · Independent website concept, not the official Cantrall Carpet Cleaners site. Photo from their Facebook page; details from their Google listing.</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick call"><a href="tel:+12625219973">Call (262) 521-9973</a></nav>
+
+<script>
+(function(){
+  var S=[
+    ["Call and describe the job","Tell us the rooms, the furniture and anything you're worried about: pets, smoke, a spill. We'll set a time that works for you."],
+    ["An honest look at the stains","Before any cleaning starts, we look at the carpet with you and say plainly what should come out and what may not."],
+    ["The cleaning","Carpet, upholstery, pet spots and odor: the job you agreed on, done carefully."],
+    ["Walk-through when it's done","We walk the rooms with you at the end, so you see the result before we leave."]
+  ];
+  var tabs=[].slice.call(document.querySelectorAll('.steps button'));
+  function pick(i){
+    tabs.forEach(function(t,j){t.setAttribute('aria-selected',i===j);t.tabIndex=i===j?0:-1});
+    document.getElementById('d-n').textContent=i+1;
+    document.getElementById('d-h').textContent=S[i][0];
+    document.getElementById('d-p').textContent=S[i][1];
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(i)});
+    t.addEventListener('keydown',function(e){
+      var k=e.key==='ArrowDown'||e.key==='ArrowRight'?1:e.key==='ArrowUp'||e.key==='ArrowLeft'?-1:0;
+      if(k){e.preventDefault();var n=(i+k+4)%4;pick(n);tabs[n].focus();}
+    });
+  });
+})();
+</script>
+</body>
+</html>
