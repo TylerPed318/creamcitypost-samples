@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>O&amp;W Heating and Cooling LLC — Website concept by Cream City Post</title>
+<meta name="description" content="Water heater, tankless, furnace, boiler and AC repair and installation for Milwaukee homes. O & W Heating and Cooling, 4379 S Howell Ave. Call 414-339-2641.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HVACBusiness","name":"O & W Heating and Cooling LLC","telephone":"+1-414-339-2641","address":{"@type":"PostalAddress","streetAddress":"4379 S Howell Ave, Suite 4","addressLocality":"Milwaukee","addressRegion":"WI","postalCode":"53207"},"openingHours":"Mo-Fr 06:00-17:00","url":"https://milwaukeewiheatingcontractor.com/"}
+</script>
+<style>
+:root{
+  --navy:#23285A;
+  --navy-dk:#181C42;
+  --maroon:#7B1E2B;
+  --maroon-dk:#5E1621;
+  --ink:#151515;
+  --copper:#B8733D;
+  --copper-lt:#E8C7A8;
+  --gray:#F2F4F7;
+  --line:#DDE1E8;
+  --muted:#545a66;
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--white);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:800;line-height:1.05;letter-spacing:-.015em}
+.serif{font-family:"Libre Baskerville",Georgia,serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.tag{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:8px;font-weight:700;font-size:18px;text-decoration:none;transition:background .15s,transform .15s,border-color .15s}
+.btn:hover{transform:translateY(-1px)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+.btn-m{background:var(--maroon);color:var(--white)}
+.btn-m:hover{background:var(--maroon-dk)}
+.btn-o{border:2px solid rgba(255,255,255,.5);color:var(--white)}
+.btn-o:hover{border-color:var(--white)}
+
+/* header */
+header{background:var(--white);position:sticky;top:0;z-index:20;box-shadow:0 1px 0 var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:80px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:62px;height:62px}
+.brand .r{font-size:14px;color:var(--muted);line-height:1.3}
+.brand .r b{color:var(--ink)}
+.brand .r .st{color:var(--copper);letter-spacing:1px}
+.hd .btn{min-height:46px;font-size:17px}
+
+/* hero */
+.hero{background:var(--navy);color:var(--white);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hero h1{font-size:clamp(40px,5.2vw,68px);margin:16px 0 20px}
+.hero h1 .serif{font-weight:700;font-style:italic;color:var(--copper-lt);letter-spacing:-.02em}
+.hero p{font-size:clamp(18px,1.6vw,20px);color:#d5d8ec;max-width:32em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .tag{color:var(--copper-lt)}
+.pipe{position:relative;padding:14px}
+.pipe:before{content:"";position:absolute;inset:0;border:3px solid var(--copper);border-radius:22px 22px 22px 120px;opacity:.85}
+.pipe img{border-radius:14px 14px 14px 108px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.pipe figcaption{position:absolute;right:10px;bottom:36px;background:var(--white);color:var(--navy);font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+
+/* proof */
+.proof{background:var(--navy-dk);color:var(--white)}
+.proof ul{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 20px;border-left:1px solid rgba(255,255,255,.1)}
+.proof li:first-child{border-left:0}
+.proof b{display:block;font-size:22px;font-weight:800}
+.proof b em{font-style:normal;color:var(--copper-lt)}
+.proof span{font-size:15px;color:#b9bdd8}
+
+section{padding:88px 0}
+.h2{font-size:clamp(34px,4.2vw,52px);color:var(--navy);margin:10px 0 14px}
+.lede{color:var(--muted);max-width:36em}
+
+/* equipment picker */
+.eq-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:34px 0 22px}
+.eq-tabs button{all:unset;cursor:pointer;padding:12px 18px;border-radius:999px;border:2px solid var(--line);font-weight:700;font-size:17px;color:var(--navy);transition:background .15s,border-color .15s,color .15s}
+.eq-tabs button:hover{border-color:var(--navy)}
+.eq-tabs button[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:var(--white)}
+.eq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:0;border-radius:18px;overflow:hidden;background:var(--gray);border:1px solid var(--line)}
+.eq[hidden]{display:none}
+.eq img{width:100%;height:100%;min-height:360px;aspect-ratio:4/5;object-fit:cover}
+.eq .tx{padding:40px;display:flex;flex-direction:column;justify-content:center}
+.eq h3{font-size:clamp(28px,3vw,38px);color:var(--navy);margin-bottom:12px}
+.eq p{color:#3a3f4b;max-width:34em}
+.eq .brands{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 6px}
+.eq .brands span{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:6px 12px;font-weight:600;font-size:15px}
+.eq .cap{font-size:14px;color:var(--muted);margin-top:16px}
+.eq .btn{align-self:flex-start;margin-top:22px}
+
+/* row */
+.work{background:var(--gray)}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:34px}
+.row3 figure{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.row3 img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.row3 figcaption{padding:12px 16px;font-weight:700;color:var(--navy);font-size:16px}
+
+/* omer + contact */
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.omer{border-radius:18px;padding:40px;background:var(--white);border:1px solid var(--line);position:relative}
+.omer:before{content:"";position:absolute;left:0;top:40px;bottom:40px;width:4px;background:var(--copper);border-radius:0 4px 4px 0}
+.score{display:flex;align-items:center;gap:16px;margin:18px 0 22px}
+.score b{font-size:72px;line-height:.9;color:var(--navy);font-weight:800}
+.score .st{color:var(--copper);font-size:22px;letter-spacing:3px}
+.omer h3{font-size:30px;color:var(--navy);margin-bottom:12px}
+.omer ul{list-style:none;display:grid;gap:10px;margin:18px 0 22px}
+.omer li{padding-left:28px;position:relative}
+.omer li:before{content:"";position:absolute;left:2px;top:.55em;width:12px;height:12px;border-radius:50%;background:var(--copper)}
+.omer a{color:var(--maroon);font-weight:700}
+.contact{background:var(--navy);color:var(--white);border-radius:18px;padding:40px}
+.contact h3{font-size:30px;margin-bottom:16px}
+.contact .tel{display:block;font-size:44px;font-weight:800;text-decoration:none;color:var(--white);line-height:1;margin-bottom:18px}
+.contact .tel:hover{color:var(--copper-lt)}
+.contact p{color:#d5d8ec;margin-bottom:12px}
+.contact strong{color:var(--white)}
+.areas{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 24px}
+.areas span{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 12px;font-size:15px;color:#e6e8f5}
+
+.closer{padding:72px 0;text-align:center;background:var(--white);border-top:1px solid var(--line)}
+.closer .mark{font-size:44px;color:var(--navy)}
+.closer .mark span{color:var(--maroon)}
+.closer p{max-width:34em;margin:10px auto 24px;color:var(--muted)}
+footer{background:var(--navy-dk);color:#9da2c4;font-size:13px;text-align:center;padding:22px 0}
+
+.mbar{display:none}
+@media (max-width:920px){
+  .hero-grid,.duo{grid-template-columns:minmax(0,1fr)}
+  .hero-grid{padding-top:40px;padding-bottom:48px;gap:36px}
+  .pipe{max-width:460px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.1)}
+  .eq{grid-template-columns:minmax(0,1fr)}
+  .eq img{aspect-ratio:4/3;min-height:0}
+}
+@media (max-width:640px){
+  body{font-size:17px;padding-bottom:74px}
+  section{padding:60px 0}
+  .hd .btn{display:none}
+  .brand img{width:52px;height:52px}
+  .eq .tx,.omer,.contact{padding:26px}
+  .row3{grid-template-columns:minmax(0,1fr)}
+  .row3 img{aspect-ratio:4/3}
+  .contact .tel{font-size:38px}
+  .proof li{padding:16px}
+  .proof b{font-size:19px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--white);padding:10px 12px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 18px rgba(0,0,0,.15)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:8px;font-weight:700;text-decoration:none}
+  .mbar .c{background:var(--maroon);color:var(--white)}
+  .mbar .b{border:2px solid var(--navy);color:var(--navy)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="O & W Heating and Cooling home">
+      <img src="img/logo.jpg" alt="O&amp;W Heating and Cooling logo" width="251" height="251">
+      <span class="r"><b>O &amp; W Heating and Cooling</b><br><span class="st">★★★★★</span> 4.9 on Google</span>
+    </a>
+    <a class="btn btn-m" href="tel:+14143392641">Call 414-339-2641</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">Milwaukee · Bay View · South Side</span>
+        <h1>Water heaters, furnaces, boilers &amp; AC, <span class="serif">explained honestly.</span></h1>
+        <p>Repair and installation for Milwaukee homes. We install Rinnai, Navien and Bradford White water heaters, and we service and repair most gas furnaces and boilers and all air conditioner brands. You get a full consultation on every option.</p>
+        <div class="ctas">
+          <a class="btn btn-m" href="tel:+14143392641">Call 414-339-2641</a>
+          <a class="btn btn-o" href="https://milwaukeewiheatingcontractor.com/">Book an appointment</a>
+        </div>
+      </div>
+      <figure class="pipe">
+        <img src="img/hero-navien-tankless.jpg" alt="New Navien tankless water heater installed on a black wall with copper piping" width="1100" height="1375">
+        <figcaption>New Navien tankless install</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="proof">
+    <div class="wrap">
+      <ul>
+        <li><b><em>4.9 ★</em> Google</b><span>Rating on Google</span></li>
+        <li><b>Rinnai · Navien</b><span>&amp; Bradford White installs</span></li>
+        <li><b>Residential</b><span>We serve residential clients</span></li>
+        <li><b>Mon–Fri 6–5</b><span>Evening &amp; weekend emergency service</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <span class="tag">What needs fixing?</span>
+      <h2 class="h2">Pick your equipment.</h2>
+      <p class="lede">Every photo here is one of our own installs.</p>
+      <div class="eq-tabs" role="tablist" aria-label="Equipment">
+        <button role="tab" id="e1" aria-controls="q1" aria-selected="true">Water heaters</button>
+        <button role="tab" id="e2" aria-controls="q2" aria-selected="false" tabindex="-1">Tankless</button>
+        <button role="tab" id="e3" aria-controls="q3" aria-selected="false" tabindex="-1">Furnaces</button>
+        <button role="tab" id="e4" aria-controls="q4" aria-selected="false" tabindex="-1">Boilers</button>
+        <button role="tab" id="e5" aria-controls="q5" aria-selected="false" tabindex="-1">Air conditioning</button>
+      </div>
+
+      <div class="eq" role="tabpanel" id="q1" aria-labelledby="e1">
+        <img src="img/water-heater.jpg" alt="Wall-mounted water heater install with copper piping" width="800" height="1000">
+        <div class="tx">
+          <h3>Water heater repair &amp; replacement</h3>
+          <p>We repair and service all residential water heaters. Not sure whether to repair or replace? We give a full consultation to explain all of your available options.</p>
+          <div class="brands"><span>Bradford White</span><span>Rheem</span><span>A.O. Smith</span><span>Rinnai</span><span>Navien</span></div>
+          <a class="btn btn-m" href="tel:+14143392641">Call about a water heater</a>
+        </div>
+      </div>
+      <div class="eq" role="tabpanel" id="q2" aria-labelledby="e2" hidden>
+        <img src="img/tankless.jpg" alt="White tankless water heater installed on a red wall" width="800" height="1000" loading="lazy">
+        <div class="tx">
+          <h3>Tankless install &amp; service</h3>
+          <p>We install Rinnai, Navien and Bradford White tankless water heaters in Milwaukee, and repair and service the ones you already have.</p>
+          <div class="brands"><span>Rinnai</span><span>Navien</span><span>Bradford White</span></div>
+          <a class="btn btn-m" href="tel:+14143392641">Ask about tankless</a>
+        </div>
+      </div>
+      <div class="eq" role="tabpanel" id="q3" aria-labelledby="e3" hidden>
+        <img src="img/furnace-payne.jpg" alt="New Payne 80% gas furnace installed in a basement" width="800" height="1000" loading="lazy">
+        <div class="tx">
+          <h3>Furnace repair &amp; install</h3>
+          <p>We service and repair most gas furnaces, install new ones, and perform yearly furnace safety inspection and cleaning.</p>
+          <p class="cap">Shown: new 80% Payne gas furnace install.</p>
+          <a class="btn btn-m" href="tel:+14143392641">Call about a furnace</a>
+        </div>
+      </div>
+      <div class="eq" role="tabpanel" id="q4" aria-labelledby="e4" hidden>
+        <img src="img/boiler-nti.jpg" alt="NTI boiler installed with copper piping" width="800" height="1000" loading="lazy">
+        <div class="tx">
+          <h3>Boiler repair &amp; install</h3>
+          <p>We service and repair most gas boilers, install new ones, and perform yearly boiler safety inspection and cleaning.</p>
+          <p class="cap">Shown: NTI boiler install.</p>
+          <a class="btn btn-m" href="tel:+14143392641">Call about a boiler</a>
+        </div>
+      </div>
+      <div class="eq" role="tabpanel" id="q5" aria-labelledby="e5" hidden>
+        <img src="img/ac-condensers.jpg" alt="Two new air conditioner condensers installed outside a home" width="900" height="601" loading="lazy">
+        <div class="tx">
+          <h3>AC repair &amp; install</h3>
+          <p>We service and repair all air conditioner brands, and install new systems when it's time.</p>
+          <p class="cap">Shown: two new AC condensers.</p>
+          <a class="btn btn-m" href="tel:+14143392641">Call about AC</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="wrap">
+      <span class="tag">Recent installs</span>
+      <h2 class="h2">Clean work, real basements.</h2>
+      <div class="row3">
+        <figure><img src="img/furnace-lennox.jpg" alt="New Lennox gas furnace installed in a basement" width="800" height="1000" loading="lazy"><figcaption>Lennox furnace install</figcaption></figure>
+        <figure><img src="img/tankless-basement.jpg" alt="Wall-mounted tankless water heater in a basement" width="800" height="800" loading="lazy"><figcaption>Tankless water heater install</figcaption></figure>
+        <figure><img src="img/ac-condensers.jpg" alt="Two new air conditioner condensers installed outside a home" width="900" height="601" loading="lazy"><figcaption>Two new AC condensers</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap duo">
+      <div class="omer">
+        <span class="tag">Owner-run</span>
+        <div class="score"><b>4.9</b><div><div class="st" aria-label="Rated 4.9 out of 5">★★★★★</div><div style="color:var(--muted)">on Google</div></div></div>
+        <h3>Omer runs O &amp; W, and reviewers say it shows.</h3>
+        <ul>
+          <li>Honest options, including when to leave things alone</li>
+          <li>Takes the time to explain the work as he goes</li>
+          <li>Quick response, often first to show up</li>
+        </ul>
+        <a href="https://www.google.com/maps/search/O%26W+Heating+and+Cooling+4379+S+Howell+Ave+Milwaukee">Read the reviews on Google →</a>
+      </div>
+      <div class="contact" id="contact">
+        <h3>Call or book service</h3>
+        <a class="tel" href="tel:+14143392641">414-339-2641</a>
+        <p><strong>Monday – Friday: 6:00 am – 5:00 pm</strong><br>We offer after 5:00 pm or weekend emergency service.</p>
+        <p>4379 S Howell Ave, Suite 4, Milwaukee, WI 53207</p>
+        <div class="areas" aria-label="Service area">
+          <span>Milwaukee</span><span>Bay View</span><span>Saint Francis</span><span>South Milwaukee</span><span>Oak Creek</span><span>Franklin</span><span>Greenfield</span><span>Greendale</span><span>Hales Corners</span><span>Glendale</span><span>Shorewood</span><span>Brown Deer</span>
+        </div>
+        <a class="btn btn-m" href="https://milwaukeewiheatingcontractor.com/" style="background:var(--white);color:var(--navy)">Book an appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="closer">
+    <div class="wrap">
+      <div class="mark serif">O<span>&amp;</span>W</div>
+      <p>This is a first look at a site that puts your reputation up front: your rating, your real installs, your name, and one tap to call.</p>
+      <a class="btn btn-m" href="tel:+14143392641">Call 414-339-2641</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Website by Cream City Post · Independent website concept, not the official O &amp; W Heating and Cooling site. Logo, install photos, services, hours and service area from milwaukeewiheatingcontractor.com; rating from their Google listing.</div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="c" href="tel:+14143392641">Call 414-339-2641</a>
+  <a class="b" href="https://milwaukeewiheatingcontractor.com/">Book service</a>
+</nav>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function show(t){tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!on;});}
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){show(b)});
+    b.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n);});
+  });
+})();
+</script>
+</body>
+</html>
