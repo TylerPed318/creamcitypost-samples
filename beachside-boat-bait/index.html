@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Beachside Boat &amp; Bait — Website concept by Cream City Post</title>
+<meta name="description" content="Pontoon, tri-toon, fishing boat and kayak rentals plus live bait on Pewaukee Lake, 129 Park Ave in downtown Pewaukee.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='32' rx='30' ry='24' fill='%23163E90'/%3E%3Cpath d='M12 26a22 16 0 0 1 40 0z' fill='%23FEBE10'/%3E%3Cpath d='M15 40q8-5 17 0t17 0' stroke='%23fff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,800;1,900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#163E90;
+  --navy-deep:#0E2A66;
+  --lake:#0081C9;
+  --lake-dark:#006BA8;
+  --sun:#FEBE10;
+  --sunset:#F28C28;
+  --sand:#F7F3EA;
+  --sand-deep:#EDE5D3;
+  --ink:#1D2433;
+  --muted:#4B5568;
+  --white:#FFFFFF;
+  --on-navy:#C9D6F2;
+  --display:"Montserrat",system-ui,sans-serif;
+  --body:"Source Sans 3",system-ui,sans-serif;
+  --wrap:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:18px;line-height:1.6;color:var(--ink);background:var(--sand);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sunset);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding-left:clamp(16px,4vw,40px);padding-right:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;color:var(--navy)}
+.kicker{font-family:var(--display);font-weight:800;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lake-dark);display:flex;align-items:center;gap:.6em}
+.kicker::before{content:"";width:30px;height:10px;background:radial-gradient(circle at 50% 100%,var(--sun) 0 9px,transparent 9.5px);flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:.7em 1.35em;border-radius:999px;font-family:var(--display);font-weight:800;font-size:.98rem;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,background-color .15s ease,color .15s ease,box-shadow .15s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-sun{background:var(--sun);color:var(--navy-deep);box-shadow:0 6px 0 -2px #d99c00}
+.btn-sun:hover{box-shadow:0 8px 0 -2px #d99c00}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:var(--navy-deep)}
+.btn-line{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-line:hover{background:var(--navy);color:var(--white)}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:var(--white);box-shadow:0 1px 0 rgba(22,62,144,.12)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:78px}
+.brand{display:block;width:clamp(120px,14vw,150px);text-decoration:none}
+.nav{display:flex;align-items:center;gap:4px}
+.nav .nl{font-family:var(--display);font-weight:700;font-size:.9rem;text-decoration:none;color:var(--navy);padding:12px 11px;border-radius:8px}
+.nav .nl:hover{background:var(--sand)}
+.nav .btn{margin-left:8px;padding:.55em 1.1em;font-size:.92rem}
+@media (max-width:980px){.nav .nl{display:none}}
+@media (max-width:440px){.nav .book{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-top:clamp(36px,6vw,72px);padding-bottom:clamp(60px,8vw,110px);background:
+  radial-gradient(120% 90% at 85% 0%,rgba(254,190,16,.22),transparent 55%),var(--sand)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(28px,5vw,64px);align-items:center}
+.hero h1{font-weight:900;font-style:italic;font-size:clamp(2.4rem,5.6vw,4.4rem);letter-spacing:-.02em;margin:.35em 0 .35em}
+.hero h1 span{color:var(--lake)}
+.hero .sub{font-size:clamp(1.08rem,1.6vw,1.22rem);color:var(--muted);max-width:32em;margin:0 0 1.5em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:24px;font-family:var(--display);font-weight:700;font-size:.92rem;color:var(--navy)}
+.hero .meta a{text-underline-offset:3px;display:inline-flex;align-items:center;gap:.35em;min-height:44px}
+.hero .meta .st{color:var(--sunset)}
+.hero .meta span{display:inline-flex;align-items:center;min-height:44px}
+
+.porthole{position:relative;margin:0;padding:clamp(10px,1.4vw,16px)}
+.porthole::before{content:"";position:absolute;inset:0;border-radius:50%/46%;border:clamp(8px,1.2vw,14px) solid var(--lake);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(-8deg)}
+.porthole::after{content:"";position:absolute;inset:-14px 6% auto auto;width:42%;height:24%;border-radius:999px 999px 0 0;background:var(--sun);z-index:-1;opacity:.9}
+.porthole .frame{position:relative;border-radius:50%/46%;overflow:hidden;border:6px solid var(--white);box-shadow:0 30px 60px -28px rgba(14,42,102,.6);aspect-ratio:4/3;background:#cfe0f0}
+.porthole img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.porthole figcaption{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);background:var(--navy);color:var(--white);font-family:var(--display);font-weight:700;font-size:.8rem;padding:.5em 1.1em;border-radius:999px;white-space:nowrap;box-shadow:0 8px 16px -8px rgba(0,0,0,.5)}
+@media (max-width:880px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.porthole{max-width:620px;margin:8px auto 0;width:100%}}
+
+.waves{display:block;width:100%;height:46px;margin-top:-45px;position:relative}
+
+/* included strip */
+.inc{background:var(--navy);color:var(--white);padding-top:clamp(40px,5vw,56px);padding-bottom:clamp(40px,5vw,60px)}
+.inc .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.inc h2{color:var(--white);font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem)}
+.inc h2 em{color:var(--sun)}
+.inc .head p{margin:0;color:var(--on-navy);max-width:28em;font-size:.98rem}
+.inc ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.inc li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:18px 16px;display:flex;flex-direction:column;gap:10px}
+.inc li svg{width:34px;height:34px;color:var(--sun)}
+.inc li b{font-family:var(--display);font-weight:800;font-size:1rem;line-height:1.25}
+.inc li span{font-size:.9rem;color:var(--on-navy);line-height:1.4}
+@media (max-width:980px){.inc ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:620px){.inc ul{grid-template-columns:repeat(2,minmax(0,1fr))}.inc li:last-child{grid-column:1/-1}}
+
+/* crew sizer */
+.crew{padding-top:clamp(64px,8vw,104px);padding-bottom:clamp(64px,8vw,104px)}
+.crew .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:start}
+.crew h2,.photos h2,.say h2{font-weight:900;font-style:italic;font-size:clamp(1.9rem,3.8vw,2.9rem);margin:.35em 0 .45em}
+.crew .lede{color:var(--muted);margin:0 0 1.3em}
+.dial{background:var(--white);border-radius:24px;padding:22px 22px 18px;box-shadow:0 20px 40px -26px rgba(14,42,102,.45);border:1px solid var(--sand-deep)}
+.dial label{font-family:var(--display);font-weight:800;color:var(--navy);display:block;margin-bottom:6px}
+.count{display:flex;align-items:center;gap:14px;margin:4px 0 12px}
+.count output{font-family:var(--display);font-weight:900;font-style:italic;font-size:3.6rem;line-height:1;color:var(--lake);min-width:2ch}
+.count small{color:var(--muted);font-size:.95rem;line-height:1.3}
+.step{width:48px;height:48px;border-radius:50%;border:2px solid var(--navy);background:var(--white);color:var(--navy);font-family:var(--display);font-weight:900;font-size:1.4rem;cursor:pointer;display:grid;place-items:center;flex:none}
+.step:hover{background:var(--navy);color:var(--white)}
+.count .sp{flex:1}
+input[type=range]{width:100%;accent-color:var(--lake);height:44px;margin:0;cursor:pointer}
+.ticks{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted);font-family:var(--display);font-weight:700;margin-top:-6px}
+.fleet{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.boat{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--white);border:1px solid var(--sand-deep);border-radius:16px;padding:12px 16px;transition:opacity .2s,transform .2s,border-color .2s}
+.boat .ic{width:46px;height:46px;border-radius:12px;background:var(--sand);display:grid;place-items:center;color:var(--navy)}
+.boat .ic svg{width:28px;height:28px}
+.boat b{font-family:var(--display);font-weight:800;color:var(--navy);font-size:.98rem;line-height:1.25;display:block}
+.boat span{font-size:.88rem;color:var(--muted)}
+.boat .cap{font-family:var(--display);font-weight:800;font-size:.8rem;color:var(--navy);background:var(--sand);border-radius:999px;padding:.35em .75em;white-space:nowrap}
+.boat.fits{border-color:var(--lake)}
+.boat.fits .cap{background:var(--lake);color:var(--white)}
+.boat.no{opacity:.42}
+.boat.no .cap{background:transparent;border:1px dashed #9aa3b5;color:var(--muted)}
+.fleet-note{font-size:.9rem;color:var(--muted);margin:14px 0 0}
+.result{font-family:var(--display);font-weight:800;color:var(--navy);margin:0 0 12px;font-size:1.02rem}
+@media (max-width:900px){.crew .wrap{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:420px){.boat{grid-template-columns:minmax(0,1fr) auto}.boat .ic{display:none}}
+
+/* photos */
+.photos{background:var(--white);padding-top:clamp(64px,8vw,100px);padding-bottom:clamp(64px,8vw,100px)}
+.photos .grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,.8fr);gap:18px;margin-top:28px;align-items:end}
+.photos figure{margin:0}
+.photos .ph{border-radius:22px;overflow:hidden;background:var(--sand)}
+.photos .ph img{width:100%;height:100%;object-fit:cover}
+.photos figure:nth-child(1) .ph{aspect-ratio:4/3}
+.photos figure:nth-child(2) .ph{aspect-ratio:4/3;border-radius:22px 22px 120px 22px}
+.photos figure:nth-child(3) .ph{aspect-ratio:4/5;border-radius:120px 120px 22px 22px}
+.photos figcaption{font-size:.92rem;color:var(--muted);margin-top:10px}
+.photos figcaption b{font-family:var(--display);color:var(--navy);display:block;font-size:.98rem}
+.more{margin-top:34px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.more div{background:var(--sand);border-radius:18px;padding:20px 22px;border-left:6px solid var(--sun)}
+.more b{font-family:var(--display);font-weight:800;color:var(--navy);display:block;margin-bottom:4px}
+.more p{margin:0;color:var(--muted);font-size:.97rem}
+.more a{color:var(--navy);font-weight:600;text-underline-offset:3px;display:inline-block;padding:8px 0 0}
+@media (max-width:820px){.photos .grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.photos figure:nth-child(1){grid-column:1/-1}.more{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.photos .grid{grid-template-columns:minmax(0,1fr)}.photos figure:nth-child(3) .ph{aspect-ratio:1/1}}
+
+/* reviews + contact */
+.say{padding-top:clamp(64px,8vw,104px);padding-bottom:clamp(64px,8vw,104px)}
+.say .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.rate{display:flex;align-items:center;gap:16px;margin:8px 0 22px;flex-wrap:wrap}
+.rate .big{font-family:var(--display);font-weight:900;font-style:italic;font-size:4.4rem;line-height:1;color:var(--navy)}
+.rate .big .st{color:var(--sun);font-size:2.6rem;vertical-align:.35em;margin-left:.08em;-webkit-text-stroke:1px #d99c00}
+.rate a{font-family:var(--display);font-weight:700;color:var(--navy);text-underline-offset:3px;display:inline-block;padding:10px 0}
+.rate p{margin:0;color:var(--muted)}
+.themes{display:flex;flex-wrap:wrap;gap:10px}
+.themes span{font-family:var(--display);font-weight:700;font-size:.95rem;color:var(--navy);background:var(--white);border:2px solid var(--navy);border-radius:999px;padding:.5em 1em}
+.themes span:nth-child(2n){background:var(--sun);border-color:var(--sun)}
+.say .fine{color:var(--muted);font-size:.86rem;margin-top:14px}
+.card{background:var(--navy);color:var(--white);border-radius:28px;padding:clamp(24px,3.5vw,38px);position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;border:18px solid var(--lake);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(20deg);opacity:.9}
+.card h3{color:var(--white);font-weight:900;font-style:italic;font-size:1.7rem;margin-bottom:18px;position:relative}
+.card dl{margin:0 0 22px;display:grid;gap:14px;position:relative}
+.card dt{font-family:var(--display);font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sun)}
+.card dd{margin:2px 0 0;overflow-wrap:anywhere}
+.card dd a{color:var(--white);text-underline-offset:3px;display:inline-block;padding:6px 0}
+.card .ctas{display:grid;gap:10px}
+.card .btn{white-space:normal;text-align:center}
+.card .btn-line{border-color:var(--white);color:var(--white)}
+.card .btn-line:hover{background:var(--white);color:var(--navy)}
+.card .rules{font-size:.9rem;color:var(--on-navy);border-top:1px solid rgba(255,255,255,.18);padding-top:16px;margin:20px 0 0}
+@media (max-width:900px){.say .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* closer + footer */
+.closer{background:var(--lake);color:var(--white);padding-top:clamp(44px,6vw,64px);padding-bottom:clamp(44px,6vw,64px);position:relative;overflow:hidden}
+.closer .wrap{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+.closer h2{color:var(--white);font-weight:900;font-style:italic;font-size:clamp(1.6rem,3.2vw,2.4rem)}
+.closer p{margin:.3em 0 0;color:#e3f2fb}
+.foot{background:var(--navy-deep);color:var(--on-navy);font-size:.9rem;padding-top:30px;padding-bottom:30px}
+.foot .wrap{display:grid;gap:10px}
+.foot b{color:var(--white);font-family:var(--display)}
+.foot a{color:var(--white);text-underline-offset:3px}
+
+.callbar{display:none}
+@media (max-width:600px){
+  body{padding-bottom:78px}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--navy);box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+  .callbar .btn{width:100%;padding:.6em .5em;font-size:.92rem}
+  .callbar .btn-line{border-color:var(--white);color:var(--white)}
+  .hero .ctas .btn{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Beachside Boat &amp; Bait home">
+      <svg viewBox="0 0 420 180" role="img" aria-label="Beachside Boat &amp; Bait logo">
+        <defs><clipPath id="ov"><ellipse cx="210" cy="90" rx="186" ry="76"/></clipPath></defs>
+        <path d="M30 128C-6 96 10 40 92 18 40 40 10 82 30 128z" fill="#0081C9"/>
+        <path d="M390 52c36 32 20 88-62 110 52-22 82-64 62-110z" fill="#0081C9"/>
+        <ellipse cx="210" cy="90" rx="186" ry="76" fill="#163E90"/>
+        <g clip-path="url(#ov)">
+          <ellipse cx="210" cy="64" rx="120" ry="44" fill="#FEBE10"/>
+          <path d="M70 36h280M90 46h250M110 56h210" stroke="#163E90" stroke-width="3" opacity=".5"/>
+          <rect x="0" y="62" width="420" height="120" fill="#163E90"/>
+        </g>
+        <ellipse cx="210" cy="90" rx="176" ry="67" fill="none" stroke="#fff" stroke-width="3"/>
+        <text x="210" y="104" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-style="italic" font-weight="900" font-size="58" fill="#1E4DB0" stroke="#fff" stroke-width="3" paint-order="stroke" textLength="318" lengthAdjust="spacingAndGlyphs">BEACHSIDE</text>
+        <text x="210" y="142" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-style="italic" font-weight="900" font-size="31" fill="#fff" textLength="196" lengthAdjust="spacingAndGlyphs">BOAT &amp; BAIT</text>
+      </svg>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="nl" href="https://beachsideboat.com/boat-rentals/">Rentals</a>
+      <a class="nl" href="https://beachsideboat.com/boat-club/">Boat Club</a>
+      <a class="nl" href="https://beachsideboat.com/bait/">Bait &amp; Tackle</a>
+      <a class="nl" href="https://beachsideboat.com/policies/">Policies</a>
+      <a class="btn btn-line book" href="https://fareharbor.com/embeds/book/beachsideboat/?full-items=yes&amp;flow=508528">Reserve</a>
+      <a class="btn btn-navy" href="tel:+12626952628">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+        695-BOAT
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <p class="kicker">On Pewaukee Lake · 129 Park Ave</p>
+      <h1 id="h1">Your day on <span>Pewaukee Lake</span> starts here.</h1>
+      <p class="sub">Pontoons, tri-toons, fishing boats and kayaks: clean, full of fuel and ready at the dock on Park Ave in downtown Pewaukee. Plus live bait &amp; tackle.</p>
+      <div class="ctas">
+        <a class="btn btn-sun" href="tel:+12626952628">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          Call (262) 695-BOAT
+        </a>
+        <a class="btn btn-line" href="https://fareharbor.com/embeds/book/beachsideboat/?full-items=yes&amp;flow=508528">Reserve a boat online</a>
+      </div>
+      <div class="meta">
+        <a href="https://www.google.com/maps/place/Beachside+Boat+%26+Bait/@43.0824593,-88.2641079,17z/data=!4m8!3m7!1s0x8805aea046a28e8d:0x8ced9200daee31e6!8m2!3d43.0824593!4d-88.2641079!9m1!1b1!16s%2Fg%2F11cly69zwk?hl=en&amp;gl=us" target="_blank" rel="noopener"><span class="st" aria-hidden="true">★</span> 4.5 on Google</a>
+        <span>Family-owned</span>
+        <span>Season opens May 1</span>
+      </div>
+    </div>
+    <figure class="porthole">
+      <div class="frame">
+        <img src="img/slide-tritoon.jpg" width="1800" height="1350" alt="Beachside's double-decker tri-toon with a water slide off the upper deck, parked on its trailer under a blue sky" fetchpriority="high">
+      </div>
+      <figcaption>15-passenger double-decker slide tri-toon</figcaption>
+    </figure>
+  </div>
+</section>
+<svg class="waves" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22c90-18 180-18 270 0s180 18 270 0 180-18 270 0 180 18 270 0 180-18 270 0 90 9 90 9V46H0z" fill="#163E90"/></svg>
+
+<section class="inc" aria-labelledby="inc-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="inc-h">Included with <em>every pontoon.</em></h2>
+      <p>You get the watercraft on beautiful Pewaukee Lake, clean and full of fuel. You only pay for the gas you use.</p>
+    </div>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M3 12h18M9 8V5h6v3"/></svg><b>Large cooler</b><span>With complimentary ice and water</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 3h8l2 4v13H6V7z"/><path d="M12 3v17M6 11h12"/></svg><b>Life vests &amp; cushions</b><span>Supplied with every rental</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 13a7 7 0 0 0 14 0M8 10h8"/></svg><b>Anchor, bumpers &amp; dock line</b><span>Ready to tie up</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20V8l5-4 5 4v12"/><path d="M14 12h4l2 3v5h-6"/><path d="M8 13h2"/></svg><b>Full of fuel</b><span>Clean and ready at the dock</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 4-4 2 2-4z"/></svg><b>Orientation</b><span>Before you head out</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="crew" id="fleet" aria-labelledby="crew-h">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Find your boat</p>
+      <h2 id="crew-h">How many are coming?</h2>
+      <p class="lede">From a 16′ fishing boat to a 15-passenger double-decker with a slide. Set your group size and we'll light up the boats that fit.</p>
+      <div class="dial">
+        <label for="crewN">People in your group</label>
+        <div class="count">
+          <button class="step" type="button" data-d="-1" aria-label="One fewer person">−</button>
+          <output id="crewOut" for="crewN" aria-live="polite">8</output>
+          <small class="sp">people,<br>including the driver</small>
+          <button class="step" type="button" data-d="1" aria-label="One more person">+</button>
+        </div>
+        <input id="crewN" type="range" min="1" max="15" value="8" aria-describedby="crewRes">
+        <div class="ticks" aria-hidden="true"><span>1</span><span>5</span><span>10</span><span>15</span></div>
+      </div>
+    </div>
+    <div>
+      <p class="result" id="crewRes" aria-live="polite"></p>
+      <ul class="fleet" id="fleetList"></ul>
+      <p class="fleet-note">Kayaks are first come, first served (no reservations). Prices, tax and gas details are on the <a href="https://beachsideboat.com/boat-rentals/">Rentals page</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="photos" aria-labelledby="ph-h">
+  <div class="wrap">
+    <p class="kicker">The real fleet</p>
+    <h2 id="ph-h">Clean, well-kept and ready to go.</h2>
+    <div class="grid">
+      <figure>
+        <div class="ph"><img src="img/pontoon-front.jpg" width="1200" height="824" alt="Front view of a Beachside tri-toon with its upper deck and slide frame, on a trailer" loading="lazy"></div>
+        <figcaption><b>Tri-toons</b>Deluxe, luxury and double-decker models.</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img src="img/fishing-boat.jpg" width="1300" height="798" alt="Blue Beachside fishing boat with a Beachside Boat &amp; Bait decal on the bow, on a trailer" loading="lazy"></div>
+        <figcaption><b>Fishing boats</b>3-person fishermen, 60 and 75 HP.</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img src="img/kayaks.jpg" width="1080" height="1328" alt="Rack of orange, pink and teal kayaks on the shore of Pewaukee Lake" loading="lazy"></div>
+        <figcaption><b>Kayaks</b>Single and tandem, walk-up only.</figcaption>
+      </figure>
+    </div>
+    <div class="more">
+      <div><b>Live bait &amp; tackle</b><p>Fatheads, shiners, suckers, crawlers, leeches and more. Bulk night crawler flats and wax worms on request; give about 2 weeks' notice.</p><a href="https://beachsideboat.com/bait/">See the bait list</a></div>
+      <div><b>Beachside Boat Club</b><p>“Why buy a boat when you can use ours?” No fueling, no covering, no trailering, no hassles.</p><a href="https://beachsideboat.com/boat-club/">How the club works</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="say" id="contact" aria-labelledby="say-h">
+  <div class="wrap">
+    <div>
+      <p class="kicker">What renters say</p>
+      <h2 id="say-h">Easy from booking to docking.</h2>
+      <div class="rate">
+        <span class="big">4.5<span class="st" aria-hidden="true">★</span></span>
+        <div><p>on Google</p><a href="https://www.google.com/maps/place/Beachside+Boat+%26+Bait/@43.0824593,-88.2641079,17z/data=!4m8!3m7!1s0x8805aea046a28e8d:0x8ced9200daee31e6!8m2!3d43.0824593!4d-88.2641079!9m1!1b1!16s%2Fg%2F11cly69zwk?hl=en&amp;gl=us" target="_blank" rel="noopener">Read the reviews</a></div>
+      </div>
+      <div class="themes">
+        <span>Helpful, friendly staff</span>
+        <span>Boats that look like new</span>
+        <span>Quick check-in &amp; check-out</span>
+        <span>Cooler of ice &amp; water</span>
+      </div>
+      <p class="fine">Themes summarized from Beachside's public Google reviews.</p>
+    </div>
+    <aside class="card" aria-labelledby="card-h">
+      <h3 id="card-h">Find us on Park Ave.</h3>
+      <dl>
+        <div><dt>Call</dt><dd><a href="tel:+12626952628">(262) 695-2628 · 695-BOAT</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:beachsidewi@gmail.com">beachsidewi@gmail.com</a></dd></div>
+        <div><dt>Dock &amp; shop</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=129+Park+Ave+Pewaukee+WI+53072" target="_blank" rel="noopener">129 Park Ave, Pewaukee, WI 53072</a></dd></div>
+        <div><dt>Season</dt><dd>Opens May 1 each year</dd></div>
+      </dl>
+      <div class="ctas">
+        <a class="btn btn-sun" href="tel:+12626952628">Call (262) 695-BOAT</a>
+        <a class="btn btn-line" href="mailto:beachsidewi@gmail.com?subject=Boat%20rental%20question">Email a question</a>
+      </div>
+      <p class="rules">Renters must be 21 with a valid driver's license and credit card. Renters 30 or younger need a Boaters Safety Certificate to operate motorized watercraft.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="closer" aria-label="About this preview">
+  <div class="wrap">
+    <div>
+      <h2>A first look at your new site.</h2>
+      <p>Your real boats, your lake, and a call button on every phone.</p>
+    </div>
+    <a class="btn btn-sun" href="tel:+12626952628">Call (262) 695-BOAT</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div><b>Beachside Boat &amp; Bait, LLC</b> · 129 Park Ave, Pewaukee, WI 53072 · <a href="tel:+12626952628">(262) 695-2628</a> · <a href="mailto:beachsidewi@gmail.com">beachsidewi@gmail.com</a></div>
+    <div>Website by Cream City Post · Independent website concept, not the official Beachside Boat &amp; Bait site. Logo redrawn; boat photos, fleet, inclusions and policies from beachsideboat.com; kayak photo enhanced; rating and review themes from Google.</div>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-sun" href="tel:+12626952628">Call 695-BOAT</a>
+  <a class="btn btn-line" href="https://fareharbor.com/embeds/book/beachsideboat/?full-items=yes&amp;flow=508528">Reserve</a>
+</div>
+
+<script>
+(function(){
+  var P='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 16h20l-2 4H4z"/><path d="M5 16V9h14v7M8 9V6h8v3"/></svg>';
+  var F='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 14h20l-4 6H6z"/><path d="M9 14V8l5 6"/></svg>';
+  var K='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 15c6-4 14-4 20 0-6 3-14 3-20 0z"/><path d="M6 6l12 12"/></svg>';
+  var fleet=[
+    {n:'Single kayak',d:'Walk-up only, first come first served',c:1,i:K},
+    {n:'Tandem kayak',d:'Walk-up only, first come first served',c:2,i:K},
+    {n:'16′ Fisherman 60HP',d:'Fishing boat',c:3,i:F},
+    {n:'Deluxe Fisherman 75HP',d:'Fishing boat',c:3,i:F},
+    {n:'10 Passenger 90HP Fishing Pontoon',d:'Fishing pontoon',c:10,i:P},
+    {n:'10 Passenger Deluxe Tri-toon 90HP',d:'Tri-toon',c:10,i:P},
+    {n:'11 Passenger 90HP Fishing Pontoon',d:'Fishing pontoon',c:11,i:P},
+    {n:'12 Passenger Deluxe Tri-toon 115HP',d:'Tri-toon',c:12,i:P},
+    {n:'15 Passenger Deluxe Tri-toon 150HP',d:'Tri-toon',c:15,i:P},
+    {n:'15 Passenger Luxury 200HP Tri-toon',d:'Tri-toon',c:15,i:P},
+    {n:'15 Passenger Double Decker Slide 150HP Tri-toon',d:'Tri-toon with a water slide',c:15,i:P}
+  ];
+  var list=document.getElementById('fleetList'),r=document.getElementById('crewN'),o=document.getElementById('crewOut'),res=document.getElementById('crewRes');
+  list.innerHTML=fleet.map(function(b,k){return '<li class="boat" data-k="'+k+'"><span class="ic">'+b.i+'</span><div><b>'+b.n+'</b><span>'+b.d+'</span></div><span class="cap">'+(b.c===1?'1 person':'Up to '+b.c)+'</span></li>'}).join('');
+  var items=[].slice.call(list.children);
+  function upd(){
+    var n=+r.value,c=0;o.textContent=n;
+    items.forEach(function(li,k){var f=fleet[k].c>=n;li.classList.toggle('fits',f);li.classList.toggle('no',!f);if(f)c++});
+    res.textContent=c+(c===1?' boat fits':' boats fit')+' a group of '+n+'.';
+  }
+  r.addEventListener('input',upd);
+  [].forEach.call(document.querySelectorAll('.step'),function(b){b.addEventListener('click',function(){r.value=Math.min(15,Math.max(1,+r.value+ +b.dataset.d));upd()})});
+  upd();
+})();
+</script>
+</body>
+</html>
