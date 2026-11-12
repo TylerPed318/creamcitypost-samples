@@ -38,9 +38,12 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 
 - Nov 11, 2026 ~9:53 PM CT (Tyler chat): last finished CCP-055 v3 and CCP-060 v2 visual revisions, exact deployed commits verified, public assets 200, 1440/390 live renders inspected. Both ready emails confirmed SENT; AKL 4 credits, Whitlow 0. Next eligible remains CCP-061. Open: original photo camera angles differ; other prior fact omissions retained. Model selection unavailable. Design lesson: execute the brief's main visual idea at a confident scale; company-specific, modern compositions are required.
 
-- in progress — CCP-033 (Nov 12, 10:27 AM CT, scheduled run)
-- in progress — CCP-034 (Nov 12, 10:27 AM CT, scheduled run)
+- done — CCP-033 v2 (Nov 12, ~10:45 AM CT, scheduled run): live (page + 6 imgs 200, byte-identical), emailed 1a1d0963cbf623df; 0 credits; commit d8eac2e. Typographic hero with "work order" service card; lift photo moved to a 4-tile shop row (2x2 on phones).
+- done — CCP-034 v2 (Nov 12, ~10:45 AM CT, scheduled run): live (page + img 200, byte-identical), emailed 1a1d0964f1d07a5b; 0 credits; commit 6bd4849. Review themes replaced by Facebook/Google links; carpet photo max 340px (280 on phone).
+- in progress — CCP-067 (Nov 12, 10:47 AM CT, scheduled run)
 ## Handled emails (don't reprocess)
+CCP-033 v1 revision 1a1d07fcdd007384 handled; v2 ready sent 1a1d0963cbf623df (Nov 12).
+CCP-034 v1 revision 1a1d07f980712d19 handled; v2 ready sent 1a1d0964f1d07a5b (Nov 12).
 CCP-066 creative brief 1a1cce654b6cc626 handled; v1 ready sent 1a1ce3fe78564128 (Nov 11).
 CCP-065 creative brief 1a1cce2242a13c73 handled; v1 ready sent 1a1ce3cf4d5ceca1 (Nov 11).
 CCP-064 creative brief 1a1ccb71faa6b425 handled; v1 ready sent 1a1ce0d5a5ed38e8 (Nov 11).
@@ -76,8 +79,8 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-030 | Luna Beauty Salon | Salon/barbershop, Milwaukee | brief | v1 | luna-beauty-salon/ | v1 emailed Nov 11, ~6:50 PM. 0 credits. Facebook/Google-only lead. |
 | CCP-032 | Fernandez Auto Service | Auto repair, Waukesha | brief | v1 | fernandez-auto-service/ | v1 emailed Nov 11, ~7:05 PM. 0 credits. Photo-free; Facebook/Google-only lead. |
 | CCP-022 | 4Ever Green Lawn Care & Services LLC | Lawn care, Milwaukee | brief | v1 | 4ever-green-lawn-care/ | v1 emailed Nov 11, ~7:20 PM. 0 credits. Canva site. |
-| CCP-033 | Macias Auto Repair | Auto repair + body, Waukesha | brief | v1 | macias-auto-repair/ | v1 emailed Nov 11, ~7:45 PM. 0 credits. Facebook/Google-only lead. |
-| CCP-034 | Cantrall Carpet Cleaners | Carpet cleaning, Waukesha | brief | v1 | cantrall-carpet-cleaners/ | v1 emailed Nov 11, ~7:55 PM. 0 credits. Facebook/Google-only lead; typographic. |
+| CCP-033 | Macias Auto Repair | Auto repair + body, Waukesha | brief | v2 | macias-auto-repair/ | v2 emailed Nov 12, ~10:45 AM (typographic hero). 0 credits. Facebook/Google-only lead. |
+| CCP-034 | Cantrall Carpet Cleaners | Carpet cleaning, Waukesha | brief | v2 | cantrall-carpet-cleaners/ | v2 emailed Nov 12, ~10:45 AM (no review themes; small photo). 0 credits. Facebook/Google-only lead; typographic. |
 | CCP-040 | Filut Electric | Electrician, Oconomowoc | brief | v1 | filut-electric/ | v1 emailed Nov 11, ~8:10 PM. 0 credits. Facebook/Google-only lead. |
 | CCP-049 | Lake Time Services | Marine upholstery + mobile boat service, Pewaukee | brief | v1 | lake-time-services/ | v1 emailed Nov 11, ~8:45 PM. 0 credits. |
 | CCP-051 | Gary's Auto Repair | Auto repair (imports + all makes), Delafield | brief | v1 | garys-auto-repair/ | v1 emailed Nov 11, ~9:00 PM. 0 credits. |
