@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Inside Out Remodeling LLC — Website concept by Cream City Post</title>
+<meta name="description" content="Turnkey remodeling from Wales, WI, serving Lake Country since 2004.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0055A5; --blue-dark:#00427f; --charcoal:#231F20; --slate:#5A5758;
+  --warm:#F7F5F1; --cedar:#B5733B; --cedar-dark:#8a5428; --white:#FFFFFF; --line:#e3ddd3;
+  --on-dark:#d9d4cc;
+  --display:'Barlow Semi Condensed','Arial Narrow',sans-serif; --body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --wrap:1160px; --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--charcoal);background:var(--warm);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--cedar);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;margin:0;color:var(--charcoal)}
+h2{font-size:clamp(2rem,4vw,3rem)}
+.kicker{font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cedar-dark);margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:26px;height:3px;background:var(--cedar)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:.7em 1.35em;border-radius:6px;font-family:var(--display);font-weight:700;font-size:1.1rem;letter-spacing:.02em;text-decoration:none;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-blue{background:var(--blue);color:var(--white)}
+.btn-blue:hover{background:var(--blue-dark);transform:translateY(-1px)}
+.btn-out{border:2px solid var(--charcoal);color:var(--charcoal)}
+.btn-out:hover{background:var(--charcoal);color:var(--white)}
+.btn-light{border:2px solid rgba(255,255,255,.55);color:var(--white)}
+.btn-light:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+.logo{display:block;line-height:0}
+.logo svg{height:56px;width:auto}
+.nav{display:flex;align-items:center;gap:clamp(12px,2vw,26px)}
+.nav .link{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--charcoal);text-decoration:none;padding:12px 2px}
+.nav .link:hover{color:var(--blue)}
+.top .btn{min-height:44px;padding:.5em 1em}
+@media (max-width:880px){.nav .link{display:none}}
+@media (max-width:420px){.logo svg{height:46px}.top .btn .long{display:none}.top .btn{padding:.5em .8em}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(40px,6vw,80px) 0 clamp(48px,6vw,84px)}
+.hero .roof{position:absolute;left:50%;top:clamp(18px,3vw,36px);transform:translateX(-50%);width:min(1500px,170vw);height:auto;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.2rem);letter-spacing:-.01em;margin-bottom:20px}
+.hero h1 span{color:var(--blue)}
+.hero .sub{font-size:1.1rem;color:var(--slate);max-width:33em;margin:0 0 26px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .tag{margin:22px 0 0;font-family:var(--display);font-style:italic;font-weight:600;color:var(--cedar-dark);font-size:1.15rem}
+.board{position:relative;background:var(--white);border:10px solid var(--cedar);border-radius:6px;padding:18px 18px 20px;box-shadow:14px 14px 0 rgba(35,31,32,.12);transform:rotate(1.2deg);max-width:470px;justify-self:end;width:100%}
+.board .label{font-family:var(--display);font-weight:700;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin:0 0 12px;display:flex;justify-content:space-between}
+.board .tiles{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);grid-template-rows:auto auto;gap:10px}
+.board figure{margin:0;position:relative}
+.board figure:first-child{grid-row:span 2}
+.board img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+.board figure:first-child img{aspect-ratio:3/4}
+.board figure:not(:first-child) img{aspect-ratio:4/3}
+.board figcaption{position:absolute;left:6px;bottom:6px;background:rgba(255,255,255,.94);font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:3px}
+.board .chips{display:flex;gap:6px;margin-top:12px}
+.board .chips i{flex:1;height:22px;border-radius:3px}
+.pin{position:absolute;top:-16px;width:16px;height:16px;border-radius:50%;background:var(--blue);box-shadow:0 2px 0 rgba(0,0,0,.25)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.board{justify-self:center;transform:none}}
+
+/* proof */
+.proof{background:var(--charcoal);color:var(--white)}
+.proof ul{list-style:none;margin:0 auto;max-width:var(--wrap);padding:20px clamp(16px,4vw,40px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.proof li{display:flex;align-items:center;gap:12px}
+.proof svg{width:30px;height:30px;color:#6fb0ee;flex:none}
+.proof b{font-family:var(--display);font-size:1.25rem;display:block;line-height:1.1}
+.proof span{font-size:.85rem;color:var(--on-dark)}
+@media (max-width:860px){.proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* rooms picker */
+.rooms{padding:clamp(60px,8vw,104px) 0;background:var(--white)}
+.rooms .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px 40px;margin-bottom:30px}
+.rooms .head p{max-width:30em;margin:0;color:var(--slate)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:0;border-bottom:3px solid var(--charcoal)}
+.tab{appearance:none;border:0;background:var(--warm);color:var(--charcoal);font:700 1.08rem var(--display);letter-spacing:.02em;min-height:48px;padding:.55em 1.1em;border-radius:6px 6px 0 0;cursor:pointer;transition:background .2s,color .2s}
+.tab:hover{background:#ece6dc}
+.tab[aria-selected="true"]{background:var(--charcoal);color:var(--white)}
+.panel{display:grid;grid-template-columns:300px minmax(0,1fr);gap:clamp(24px,4vw,48px);padding:clamp(24px,3.5vw,40px) 0 0;align-items:start}
+.panel[hidden]{display:none}
+.panel figure{margin:0}
+.panel img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.panel figcaption{font-size:.85rem;color:var(--slate);margin-top:8px}
+.panel .noimg{aspect-ratio:4/3;border-radius:var(--r);background:var(--warm);display:grid;place-items:center;color:var(--blue);border:2px dashed var(--line)}
+.panel .noimg svg{width:72px;height:72px}
+.panel h3{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:8px}
+.panel p{margin:0 0 18px;color:var(--slate)}
+.brands{display:grid;gap:12px}
+.brands div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:4px 16px;padding:12px 0;border-top:1px solid var(--line)}
+.brands dt{font-family:var(--display);font-weight:700;font-size:1.02rem}
+.brands dd{margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.brands dd span{font-size:.86rem;background:var(--warm);border-left:4px solid var(--cedar);padding:3px 10px;border-radius:3px}
+.brands dd span:nth-child(3n+2){border-left-color:var(--blue)}
+.brands dd span:nth-child(3n){border-left-color:var(--slate)}
+.rooms .fine{font-size:.84rem;color:var(--slate);margin-top:22px}
+@media (max-width:760px){.panel{grid-template-columns:minmax(0,1fr)}.panel figure,.panel .noimg{max-width:300px}.brands div{grid-template-columns:minmax(0,1fr)}}
+
+/* work row */
+.work{padding:clamp(56px,7vw,96px) 0;background:var(--warm)}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
+.row3 figure{margin:0;background:var(--white);padding:10px 10px 12px;border-radius:6px;box-shadow:6px 6px 0 rgba(35,31,32,.08)}
+.row3 figure:nth-child(2){transform:translateY(22px)}
+.row3 img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:3px}
+.row3 figcaption{font-size:.88rem;font-weight:500;margin-top:8px}
+.work .note{margin-top:46px;color:var(--slate)}
+@media (max-width:760px){.row3{grid-template-columns:repeat(2,minmax(0,1fr))}.row3 figure:nth-child(2){transform:none}.row3 figure:nth-child(3){grid-column:1/-1;max-width:290px}}
+
+/* turnkey + contact */
+.turnkey{padding:clamp(60px,8vw,104px) 0;background:var(--white)}
+.turnkey .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,5vw,64px);align-items:start}
+.turnkey blockquote{margin:22px 0 28px;padding:18px 22px;border-left:6px solid var(--blue);background:var(--warm);font-size:1.08rem;border-radius:0 var(--r) var(--r) 0}
+.turnkey blockquote cite{display:block;margin-top:8px;font-style:normal;font-size:.84rem;color:var(--slate)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;align-items:start}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;font-size:1.5rem;color:var(--white);background:var(--blue);width:52px;height:52px;display:grid;place-items:center;clip-path:polygon(50% 0,100% 38%,100% 100%,0 100%,0 38%)}
+.steps b{font-family:var(--display);font-size:1.3rem;display:block;line-height:1.2;margin-top:4px}
+.steps span{color:var(--slate);font-size:.95rem}
+.card{background:var(--charcoal);color:var(--white);border-radius:var(--r);padding:clamp(24px,3.5vw,36px);position:relative;border-top:10px solid var(--blue)}
+.card h3{color:var(--white);font-size:2rem;margin-bottom:6px}
+.card .lead{color:var(--on-dark);margin:0 0 20px}
+.card dl{margin:0 0 22px;display:grid;gap:12px}
+.card dt{font-family:var(--display);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;color:#9fc7f0}
+.card dd{margin:2px 0 0}
+.card dd a{color:var(--white);text-underline-offset:3px;display:inline-block;padding:6px 0}
+.card .act{display:grid;gap:10px}
+.card .small{font-size:.84rem;color:var(--on-dark);margin:16px 0 0}
+@media (max-width:900px){.turnkey .wrap{grid-template-columns:minmax(0,1fr)}}
+
+.closer{background:var(--blue);color:var(--white);padding:clamp(48px,6vw,80px) 0}
+.closer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.closer h2{color:var(--white)}
+.closer p{margin:8px 0 0;color:#dbe8f6;max-width:34em}
+.closer .btn{background:var(--white);color:var(--blue)}
+.closer .btn:hover{background:var(--warm)}
+footer{background:var(--charcoal);color:#bdb7b0;font-size:.84rem;padding:24px 0 28px}
+
+.callbar{display:none}
+@media (max-width:600px){
+  .callbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(35,31,32,.97)}
+  .callbar .btn{min-height:48px;padding:.5em .7em;font-size:1.05rem}
+  body{padding-bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Inside Out Remodeling LLC home">
+      <svg viewBox="200 50 1390 770" aria-hidden="true"><path fill="#0055A5" fill-rule="evenodd" d="M 718 63 C 717 64,714 66,712 66 C 710 67,707 68,706 69 C 704 70,702 72,701 72 C 699 72,697 74,695 75 C 693 76,689 77,687 78 C 684 79,681 80,681 81 C 680 82,677 83,675 84 C 672 85,669 86,669 87 C 668 88,665 89,663 90 C 660 91,657 92,657 93 C 656 94,653 95,651 96 C 648 97,645 98,645 99 C 644 100,641 101,639 102 C 636 103,633 104,632 105 C 632 106,629 107,626 108 C 623 109,620 110,618 111 C 617 112,614 114,612 114 C 610 115,608 116,606 117 C 605 118,602 120,600 120 C 598 121,596 122,594 123 C 593 124,590 126,588 126 C 586 127,584 128,582 129 C 581 130,578 132,576 132 C 574 133,572 134,570 135 C 569 136,566 138,565 138 C 563 138,559 140,557 142 C 550 146,543 146,541 142 C 541 140,541 127,541 110 C 541 89,540 81,539 80 C 538 78,456 78,453 80 C 452 81,452 82,452 135 C 452 197,452 194,444 197 C 441 198,438 199,437 200 C 435 201,432 202,431 203 C 429 204,426 205,425 206 C 423 207,420 208,419 209 C 417 210,414 211,413 212 C 411 213,408 214,407 215 C 405 216,402 217,401 218 C 399 219,396 220,395 221 C 393 222,390 223,389 224 C 387 225,384 226,383 227 C 381 228,376 230,373 232 C 370 233,367 235,366 235 C 365 235,363 236,361 237 C 359 238,356 240,354 240 C 352 241,350 242,348 243 C 347 244,344 246,342 246 C 340 247,338 248,336 249 C 335 250,332 252,329 253 C 327 254,324 255,324 256 C 323 257,321 258,319 258 C 317 258,314 260,312 261 C 310 262,306 264,304 264 C 302 265,300 266,300 267 C 299 268,296 269,294 270 C 291 271,288 272,288 273 C 287 274,284 275,282 276 C 279 277,276 278,276 279 C 275 280,272 281,270 282 C 267 283,264 284,264 285 C 263 286,260 287,257 288 C 254 289,251 291,250 291 C 248 292,246 294,244 294 C 242 295,239 296,238 297 C 236 299,234 300,234 300 C 233 300,222 305,217 307 C 216 308,215 309,215 310 C 215 312,218 312,350 312 C 438 312,485 312,488 312 C 490 311,498 305,510 296 C 511 295,515 292,519 290 C 522 287,528 283,531 280 C 535 277,540 273,542 272 C 545 270,550 266,554 263 C 557 260,562 256,565 254 C 568 252,572 249,574 248 C 576 246,581 242,585 239 C 589 236,595 231,599 229 C 602 226,607 223,609 221 C 611 219,615 216,617 215 C 619 213,621 212,622 211 C 623 210,626 208,629 205 C 632 203,636 200,636 200 C 637 199,642 195,647 192 C 652 188,658 184,660 182 C 662 180,666 177,668 176 C 671 174,677 170,681 167 C 684 163,689 160,692 158 C 694 156,697 154,699 152 C 701 151,703 149,704 148 C 705 148,710 144,714 141 C 725 133,728 133,743 141 C 744 142,747 143,749 144 C 750 145,753 146,755 147 C 756 148,759 149,761 150 C 762 151,765 152,767 153 C 768 154,771 155,773 156 C 774 157,778 159,781 161 C 784 162,788 164,791 166 C 793 167,796 168,797 169 C 797 169,800 170,803 172 C 805 173,808 174,809 175 C 809 175,812 176,815 178 C 817 179,820 180,821 181 C 821 181,824 182,827 184 C 829 185,832 186,833 187 C 833 187,836 188,839 190 C 841 191,844 192,845 193 C 845 193,849 195,852 196 C 856 198,859 200,859 200 C 859 201,861 202,863 203 C 866 204,869 205,870 206 C 870 207,873 208,876 209 C 878 210,881 211,882 212 C 882 213,885 214,888 215 C 890 216,893 217,894 218 C 894 219,897 220,900 221 C 902 222,905 223,906 224 C 906 225,909 226,912 227 C 914 228,917 229,918 230 C 918 231,921 232,924 233 C 926 234,929 235,929 236 C 930 237,933 239,944 243 C 946 245,949 246,951 247 C 952 248,955 249,957 250 C 958 251,961 252,963 253 C 964 254,967 255,969 256 C 970 257,973 258,975 259 C 976 260,979 261,981 262 C 982 263,985 264,987 265 C 988 266,990 267,992 268 C 997 270,998 271,1005 274 C 1009 277,1014 280,1017 281 C 1020 282,1023 284,1023 284 C 1023 285,1026 286,1028 287 C 1031 288,1034 289,1035 290 C 1035 291,1038 292,1041 293 C 1043 294,1046 295,1047 296 C 1047 297,1050 298,1053 299 C 1055 300,1058 301,1059 302 C 1059 303,1062 304,1065 305 C 1067 306,1070 307,1071 308 C 1071 309,1073 310,1075 311 C 1077 311,1080 313,1082 314 C 1084 315,1086 317,1088 317 C 1089 317,1091 319,1092 320 C 1094 321,1096 322,1098 323 C 1100 323,1103 325,1105 326 C 1109 328,1109 329,1131 328 C 1143 328,1154 328,1154 328 C 1156 327,1155 325,1153 325 C 1152 325,1147 322,1138 316 C 1136 314,1133 312,1131 312 C 1129 311,1128 310,1128 309 C 1128 309,1126 307,1123 306 C 1118 303,1114 301,1103 294 C 1097 290,1093 288,1092 288 C 1091 288,1090 287,1089 286 C 1088 285,1086 283,1083 282 C 1081 281,1080 280,1080 279 C 1080 279,1078 278,1075 276 C 1073 275,1070 273,1068 272 C 1066 271,1062 269,1060 267 C 1057 265,1053 263,1051 262 C 1049 261,1046 259,1045 258 C 1043 257,1040 256,1038 254 C 1037 253,1034 251,1031 250 C 1029 248,1025 246,1022 244 C 1020 242,1017 241,1016 241 C 1016 241,1014 239,1013 238 C 1011 237,1008 235,1006 234 C 1004 233,1002 232,1002 231 C 1001 230,998 229,996 228 C 994 227,991 225,991 225 C 991 224,989 223,987 222 C 985 221,983 219,981 218 C 979 217,976 215,973 214 C 971 212,967 210,965 208 C 962 206,959 204,958 204 C 956 203,954 201,952 200 C 948 198,943 195,940 193 C 937 191,925 183,916 178 C 914 176,911 174,909 174 C 907 173,906 172,906 171 C 906 171,904 169,901 168 C 899 167,896 165,894 164 C 892 163,888 161,886 159 C 883 157,879 155,877 154 C 875 153,873 151,871 150 C 869 149,867 148,867 148 C 867 147,865 146,862 144 C 860 143,858 142,856 140 C 855 139,854 139,853 139 C 852 139,851 137,849 136 C 846 134,839 129,833 127 C 831 125,828 124,827 123 C 827 122,825 121,823 120 C 821 119,818 118,816 116 C 815 115,812 113,809 112 C 807 110,803 108,800 106 C 798 104,795 103,794 103 C 794 103,792 101,791 100 C 789 99,786 97,784 96 C 783 95,780 93,778 92 C 776 91,773 89,771 88 C 770 87,767 85,765 84 C 763 83,760 81,759 80 C 751 75,746 72,742 69 C 740 68,737 66,736 66 C 735 66,733 64,731 63 C 728 60,723 60,718 63 M 1168 399 C 1165 400,1160 400,1156 400 C 1147 401,1130 403,1128 404 C 1127 405,1125 406,1122 407 C 1117 409,1105 421,1105 423 C 1105 424,1103 427,1102 430 C 1097 439,1096 450,1097 502 C 1097 554,1097 565,1102 575 C 1103 578,1104 580,1104 581 C 1104 582,1106 584,1107 585 C 1109 587,1111 589,1111 590 C 1113 592,1121 598,1125 599 C 1127 600,1131 601,1132 602 C 1138 605,1150 606,1182 606 C 1213 606,1225 605,1231 602 C 1232 601,1236 600,1238 599 C 1248 596,1262 581,1264 572 C 1264 571,1266 565,1267 559 L 1270 548 1270 501 C 1270 460,1270 453,1268 449 C 1267 446,1266 441,1265 438 C 1261 415,1239 401,1209 401 C 1206 400,1200 400,1197 399 C 1190 397,1174 397,1168 399 M 1464 432 C 1463 433,1463 436,1463 446 C 1463 461,1462 462,1453 462 C 1445 463,1444 463,1445 474 C 1445 485,1445 486,1452 487 C 1455 487,1458 488,1459 490 L 1462 493 1463 537 C 1463 585,1463 586,1468 594 C 1474 602,1480 604,1496 606 C 1524 608,1540 605,1549 595 C 1556 587,1561 557,1557 553 C 1556 551,1532 551,1531 553 C 1530 553,1530 556,1529 560 C 1528 573,1520 582,1510 581 C 1502 581,1500 579,1497 571 C 1494 567,1494 565,1495 530 L 1495 493 1498 490 L 1501 487 1525 487 C 1547 486,1549 486,1550 484 C 1552 482,1552 465,1550 464 C 1550 463,1538 463,1524 463 C 1492 462,1495 463,1495 446 C 1495 430,1495 431,1479 431 C 1468 431,1465 431,1464 432 M 1155 434 C 1144 438,1141 442,1137 452 L 1134 460 1134 503 L 1134 546 1137 554 C 1141 566,1144 569,1157 572 C 1171 576,1192 576,1205 572 C 1218 569,1222 566,1227 557 L 1230 550 1230 502 L 1230 453 1226 446 C 1223 440,1222 439,1218 437 C 1215 436,1211 434,1209 433 C 1205 432,1202 432,1184 432 C 1165 432,1164 432,1155 434 M 1299 464 C 1298 465,1298 468,1298 518 L 1298 571 1301 581 C 1306 597,1315 604,1333 606 C 1344 607,1360 606,1368 604 C 1374 603,1383 597,1385 594 C 1388 587,1391 589,1392 598 C 1393 601,1393 604,1394 604 C 1395 606,1424 606,1425 604 C 1426 603,1426 584,1426 533 L 1426 463 1410 463 L 1393 463 1392 511 C 1392 558,1392 559,1390 563 C 1383 576,1372 582,1357 582 C 1344 582,1339 579,1335 571 L 1332 566 1332 516 C 1332 481,1331 465,1330 464 C 1329 462,1302 462,1299 464"/><path fill="#231F20" fill-rule="evenodd" d="M 642 271 C 642 273,642 281,642 293 C 643 315,643 314,642 337 C 641 362,639 360,664 359 C 687 358,686 358,708 359 C 720 359,728 359,730 359 L 735 357 735 338 C 735 322,734 319,733 317 C 732 315,732 314,733 312 C 735 309,735 270,733 268 C 730 266,692 266,689 268 C 687 269,686 269,684 268 C 682 267,679 267,663 267 L 644 267 642 271 M 799 306 C 798 308,798 318,798 365 C 798 397,797 424,797 424 C 796 427,794 425,788 420 C 784 416,781 414,779 414 C 773 413,756 413,752 414 C 747 416,740 422,738 427 C 737 428,736 431,735 432 C 734 432,733 436,732 440 C 731 443,729 449,728 452 C 725 461,725 534,728 543 C 729 546,731 552,732 556 C 732 559,733 563,734 565 C 735 566,737 569,738 571 C 740 574,745 580,751 584 C 757 587,773 587,779 583 C 785 579,790 574,791 572 C 794 568,797 569,798 575 C 799 582,799 583,813 582 C 825 582,825 582,826 580 C 827 578,827 549,827 444 C 827 338,827 309,826 308 C 825 305,825 305,813 305 C 803 304,801 305,799 306 M 684 313 C 683 316,684 318,687 317 C 688 317,689 316,689 315 C 689 312,685 310,684 313 M 378 331 L 375 332 375 455 C 375 569,375 579,376 581 C 377 582,381 582,391 582 C 405 582,405 582,406 580 C 407 578,407 552,407 455 C 408 312,410 329,392 330 C 386 330,380 330,378 331 M 1008 331 L 1005 332 1004 477 C 1004 615,1004 623,1002 624 C 1001 626,986 626,689 626 C 402 626,378 627,376 628 C 374 631,374 646,376 649 C 378 650,403 651,713 651 L 1047 651 1048 647 C 1049 644,1049 592,1049 488 C 1050 335,1049 333,1048 332 C 1046 330,1044 330,1028 330 C 1019 330,1010 330,1008 331 M 497 414 C 494 414,491 416,487 420 C 478 427,475 427,474 420 C 474 414,472 414,458 414 C 442 413,443 403,444 497 C 444 559,444 578,445 580 C 446 582,446 582,458 582 C 476 583,475 590,475 518 C 475 479,475 456,475 456 C 476 456,477 453,478 450 C 481 439,494 435,505 441 C 508 444,509 445,512 451 L 515 458 515 518 C 515 590,513 583,530 583 C 541 583,543 582,543 581 C 544 579,544 557,544 509 L 544 439 541 431 C 536 420,531 415,524 414 C 517 412,504 412,497 414 M 595 414 C 579 418,565 437,565 458 C 565 476,574 490,595 506 C 613 519,619 526,619 537 C 619 546,617 548,612 554 L 607 558 596 558 C 585 558,585 558,581 555 C 571 548,570 549,571 567 C 571 576,571 579,573 580 C 584 586,586 586,598 586 C 609 586,610 586,618 583 C 630 578,638 570,643 558 L 647 548 646 535 C 646 523,646 520,644 519 C 643 518,642 515,641 512 C 638 506,629 496,621 490 C 596 472,588 458,597 447 C 604 439,616 436,625 441 C 627 442,631 443,634 443 L 638 443 638 432 C 639 418,638 416,627 414 C 620 412,603 412,595 414 M 889 414 C 875 417,861 436,858 454 C 858 458,857 464,856 468 C 853 486,856 549,861 554 C 862 555,863 559,864 562 C 868 570,876 578,887 583 C 896 587,896 587,907 586 C 916 586,919 586,924 583 C 927 582,930 580,931 580 C 934 579,944 568,947 563 C 948 560,949 557,950 556 C 952 554,955 531,953 530 C 950 527,930 527,927 530 C 926 531,925 534,925 538 C 924 546,923 549,917 554 C 913 558,912 559,907 558 C 899 558,896 556,891 547 C 887 540,887 540,886 527 C 885 509,885 509,888 507 C 889 505,891 505,920 505 C 957 505,955 506,954 489 C 954 474,952 453,950 450 C 949 449,948 445,947 443 C 944 430,931 417,919 414 C 913 412,897 412,889 414 M 672 415 L 669 416 669 497 C 669 572,669 579,670 581 C 673 583,698 583,699 581 C 700 579,701 563,701 497 C 701 418,700 416,699 415 C 696 413,676 413,672 415 M 771 440 C 767 443,761 451,761 454 C 761 455,760 459,758 463 C 755 472,755 526,758 534 C 759 536,760 541,761 544 C 763 552,770 559,778 559 C 785 559,791 554,792 548 C 792 546,794 543,795 540 L 798 534 798 499 L 798 464 795 455 C 789 440,781 435,771 440 M 898 441 C 896 442,893 445,891 448 C 887 453,886 460,885 476 C 885 481,887 482,904 482 C 925 483,925 483,924 468 C 923 446,910 433,898 441 M 602 709 C 578 711,566 728,566 756 C 566 779,573 791,588 799 L 595 803 613 803 L 630 803 637 799 C 650 792,657 782,659 766 C 663 724,643 704,602 709 M 241 709 C 227 709,225 710,224 711 C 222 714,222 800,224 801 C 226 803,238 803,240 802 C 241 800,242 798,242 785 L 242 770 244 768 C 246 766,248 766,254 766 C 263 766,266 767,272 780 C 281 798,284 802,287 803 C 290 804,300 804,303 802 C 305 801,305 800,300 791 C 298 787,295 780,293 777 C 288 768,288 765,294 761 C 304 753,308 735,301 722 C 298 717,296 715,291 712 C 285 709,277 708,241 709 M 362 709 C 339 713,327 734,330 766 C 334 795,349 804,390 803 C 404 803,406 802,406 796 C 406 788,404 788,387 788 C 368 788,363 786,358 781 C 354 777,353 774,353 769 C 353 763,353 763,378 763 C 399 763,400 762,402 760 C 405 758,405 757,403 753 C 402 749,401 749,378 749 C 364 750,356 749,354 748 C 352 747,352 740,354 736 C 355 734,362 726,364 725 C 364 725,373 725,383 725 C 405 724,406 724,406 716 C 406 710,404 709,384 709 C 375 709,365 709,362 709 M 438 709 C 434 710,433 710,432 713 C 431 719,432 800,433 802 C 435 804,445 804,448 802 L 451 800 450 774 C 450 748,451 744,453 744 C 454 744,460 754,462 760 C 463 763,465 771,468 778 C 470 784,472 792,474 795 C 475 801,476 802,479 802 C 487 805,495 803,496 799 C 501 785,503 781,504 776 C 506 772,507 766,508 763 C 510 755,515 747,517 745 C 521 741,521 744,521 773 L 520 800 523 802 C 526 804,535 804,538 802 C 540 800,540 714,538 711 C 537 709,522 708,515 709 C 511 710,508 714,504 729 C 503 733,500 741,498 746 C 496 752,493 760,492 764 C 489 775,483 778,480 769 C 480 767,477 758,474 749 C 471 739,468 730,467 727 C 464 718,460 710,457 709 C 455 709,446 709,438 709 M 691 709 C 685 711,686 709,686 757 C 686 796,686 800,687 802 C 689 803,721 804,737 803 C 764 800,775 782,772 748 C 771 728,764 717,747 711 C 743 709,697 708,691 709 M 830 710 C 817 711,807 719,802 733 C 798 743,798 768,802 779 C 810 798,821 803,855 803 C 873 804,876 802,874 793 C 873 788,871 788,856 788 C 848 788,839 787,836 786 C 825 784,817 770,823 765 C 824 763,826 763,846 763 C 871 763,873 762,873 756 C 873 750,872 750,846 749 C 825 749,823 749,822 747 C 819 743,821 737,827 730 C 832 725,835 725,853 725 C 862 725,869 724,871 723 C 875 722,876 715,873 711 C 871 709,870 709,853 709 C 843 709,833 709,830 710 M 906 709 C 901 710,901 710,901 746 L 901 779 903 785 C 907 793,910 796,918 800 C 925 803,925 803,943 803 C 964 803,965 803,964 796 C 964 788,964 788,948 787 C 933 787,932 787,928 784 C 920 778,920 777,920 743 C 919 709,919 710,912 709 C 911 709,908 709,906 709 M 995 709 C 994 709,992 710,992 711 C 990 713,990 800,991 802 C 993 804,1003 804,1006 802 L 1009 800 1009 756 C 1009 704,1009 707,995 709 M 1039 710 L 1037 712 1037 756 C 1036 799,1036 799,1038 801 C 1041 804,1048 804,1053 803 L 1056 802 1056 773 C 1056 738,1056 737,1062 745 C 1065 747,1067 750,1067 751 C 1068 755,1093 799,1095 801 C 1097 804,1115 804,1118 802 C 1120 799,1120 714,1118 711 C 1114 708,1104 708,1102 712 C 1102 713,1101 726,1101 741 C 1101 756,1101 769,1101 769 C 1099 772,1094 769,1091 764 C 1090 761,1087 756,1086 753 C 1084 750,1081 744,1079 741 C 1077 737,1074 732,1073 730 C 1071 727,1069 722,1067 719 C 1063 711,1059 709,1049 709 C 1043 709,1041 709,1039 710 M 1179 709 C 1165 711,1155 720,1150 733 C 1147 741,1147 742,1147 757 C 1147 772,1147 772,1150 780 C 1156 795,1165 801,1183 803 C 1198 804,1231 803,1233 802 C 1235 800,1235 754,1234 752 C 1232 750,1201 748,1195 750 C 1189 751,1187 757,1191 761 C 1192 762,1194 763,1200 763 C 1213 763,1217 765,1217 776 C 1217 785,1214 787,1200 787 C 1184 788,1179 786,1174 779 C 1165 768,1165 741,1174 731 C 1180 725,1181 725,1207 725 C 1235 724,1235 724,1234 717 C 1234 712,1234 711,1229 709 C 1226 708,1186 708,1179 709 M 1326 709 C 1324 710,1323 711,1322 712 C 1322 712,1322 728,1322 745 C 1322 777,1322 778,1324 783 C 1327 792,1331 796,1339 800 L 1346 803 1365 803 C 1386 803,1386 803,1386 795 C 1386 788,1385 787,1368 787 C 1354 787,1354 787,1349 784 C 1341 778,1341 777,1341 743 C 1340 709,1340 710,1333 709 C 1331 709,1328 709,1326 709 M 1411 711 C 1409 713,1409 713,1410 748 L 1410 783 1414 789 C 1421 800,1427 802,1449 803 C 1471 804,1475 803,1473 793 C 1472 788,1470 788,1455 787 C 1440 787,1436 786,1431 779 L 1428 774 1428 743 C 1427 707,1427 709,1418 709 C 1415 709,1413 709,1411 711 M 1522 709 C 1505 713,1496 722,1492 739 C 1487 760,1491 780,1501 791 C 1511 802,1515 803,1542 803 C 1568 803,1568 803,1567 795 C 1566 787,1566 787,1549 787 C 1525 788,1520 786,1514 774 C 1511 769,1511 768,1511 756 C 1511 742,1513 735,1521 729 C 1526 725,1527 725,1547 725 C 1566 725,1568 724,1568 717 C 1568 710,1566 709,1545 709 C 1534 709,1524 709,1522 709 M 602 724 C 595 727,589 733,587 739 C 586 745,586 768,588 773 C 594 790,618 795,632 783 C 642 773,642 741,632 730 C 626 723,613 721,602 724 M 244 727 C 240 730,241 746,244 749 C 246 751,265 752,271 751 C 283 747,285 731,274 726 C 269 724,246 724,244 727 M 707 726 C 705 728,705 731,705 756 C 705 789,704 787,718 787 C 744 788,751 781,751 756 C 751 738,748 731,738 726 C 732 724,710 724,707 726"/><path fill="#fff" d="M688 262h9v104h-9zM640 309h104v9H640z"/></svg>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#rooms">What we do</a>
+      <a class="link" href="#work">Our work</a>
+      <a class="link" href="#how">How it works</a>
+      <a class="btn btn-blue" href="tel:+12627192958" aria-label="Call 262-719-2958"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span class="long">262-719-2958</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h">
+  <svg class="roof" viewBox="0 0 1500 260" fill="none" aria-hidden="true"><path d="M0 250 750 18 1500 250" stroke="#0055A5" stroke-opacity=".09" stroke-width="22"/><path d="M455 112V40h60v54" stroke="#0055A5" stroke-opacity=".09" stroke-width="22"/></svg>
+  <div class="wrap">
+    <div>
+      <p class="kicker">Wales, WI · Lake Country since 2004</p>
+      <h1 id="hero-h">Lake Country remodeling, <span>start to finish.</span></h1>
+      <p class="sub">Kitchen &amp; bath remodels, lower levels and basement rec rooms, decks, siding, roofing, and window and door replacements. One turnkey crew, from design to framing and painting to flooring.</p>
+      <div class="ctas">
+        <a class="btn btn-blue" href="tel:+12627192958"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call 262-719-2958</a>
+        <a class="btn btn-out" href="mailto:skunstmann@wi.rr.com?subject=Free%20quote%20request">Email for a free quote</a>
+      </div>
+      <p class="tag">When quality is your top priority.</p>
+    </div>
+    <div class="board" aria-label="Project sample board">
+      <span class="pin" style="left:22%" aria-hidden="true"></span><span class="pin" style="right:22%" aria-hidden="true"></span>
+      <p class="label"><span>Sample board</span><span>Our projects</span></p>
+      <div class="tiles">
+        <figure><img src="img/kitchen.webp" width="850" height="460" alt="Finished kitchen with white cabinets, a paneled refrigerator and wood floors" style="object-position:62% 50%"><figcaption>Kitchen</figcaption></figure>
+        <figure><img src="img/lower-level.webp" width="850" height="460" alt="Lower-level rec room with theater seating, built-in shelves and a wood stove"><figcaption>Lower level</figcaption></figure>
+        <figure><img src="img/shed.webp" width="850" height="460" alt="Green garden shed with a covered porch and sliding door"><figcaption>Shed</figcaption></figure>
+      </div>
+      <div class="chips" aria-hidden="true"><i style="background:#0055A5"></i><i style="background:#B5733B"></i><i style="background:#5A5758"></i><i style="background:#d9cbb4"></i><i style="background:#231F20"></i></div>
+    </div>
+  </div>
+</section>
+
+<div class="proof">
+  <ul>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg><div><b>Since 2004</b><span>Serving Lake Country</span></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Based in Wales</b><span>493 East Welsh Road</span></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg><div><b>Free consultations</b><span>and free quotes</span></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg><div><b>Turnkey</b><span>Design to finish</span></div></li>
+  </ul>
+</div>
+
+<section class="rooms" id="rooms" aria-labelledby="rooms-h">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="kicker">Pick your project</p><h2 id="rooms-h">What are we remodeling?</h2></div>
+      <p>Choose a room to see what we do there and the product lines we feature. And remember, no job is too big or too small for us.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Project types">
+      <button class="tab" role="tab" id="t1" aria-controls="r1" aria-selected="true">Kitchens &amp; baths</button>
+      <button class="tab" role="tab" id="t2" aria-controls="r2" aria-selected="false" tabindex="-1">Lower levels</button>
+      <button class="tab" role="tab" id="t3" aria-controls="r3" aria-selected="false" tabindex="-1">Decks, siding &amp; roofing</button>
+      <button class="tab" role="tab" id="t4" aria-controls="r4" aria-selected="false" tabindex="-1">Windows &amp; doors</button>
+      <button class="tab" role="tab" id="t5" aria-controls="r5" aria-selected="false" tabindex="-1">Garages &amp; sheds</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="r1" aria-labelledby="t1">
+      <figure><img src="img/sink-counter.webp" width="850" height="460" loading="lazy" alt="Kitchen sink set in a speckled stone countertop with white raised-panel cabinets"><figcaption>Sink and countertop detail</figcaption></figure>
+      <div>
+        <h3>Kitchen &amp; bath remodels</h3>
+        <p>We bring samples of everything we possibly can to you for your choices and review, so you’re not chasing around to look at cabinets, counters and fixtures.</p>
+        <dl class="brands">
+          <div><dt>Cabinetry</dt><dd><span>American Woodmark</span><span>KraftMaid</span><span>Custom, with a local cabinet maker</span></dd></div>
+          <div><dt>Quartz counters</dt><dd><span>SileStone</span><span>Viatera</span><span>Stonemark</span><span>Caesarstone</span><span>Cambria</span></dd></div>
+          <div><dt>Plumbing fixtures</dt><dd><span>Kohler</span><span>Delta</span><span>American Standard</span><span>Moen</span><span>Elkay</span><span>Sterling</span><span>Pfister</span><span>Insinkerator</span><span>Krause</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="r2" aria-labelledby="t2" hidden>
+      <figure><img src="img/lower-level.webp" width="850" height="460" loading="lazy" alt="Lower-level rec room with theater seating, built-in shelves and a wood stove"><figcaption>Lower-level rec room</figcaption></figure>
+      <div>
+        <h3>Lower levels &amp; basement rec rooms</h3>
+        <p>Turnkey from start to finish: design, framing, painting and flooring handled by one contractor.</p>
+        <dl class="brands">
+          <div><dt>Lighting</dt><dd><span>Halo</span><span>Lutron</span><span>Leviton</span><span>Commercial Electric</span></dd></div>
+          <div><dt>Flooring</dt><dd><span>Lifeproof</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="r3" aria-labelledby="t3" hidden>
+      <figure><img src="img/covered-patio.webp" width="850" height="460" loading="lazy" alt="Covered stone patio with outdoor dining under a white balcony with turned railings"><figcaption>Covered patio under a balcony</figcaption></figure>
+      <div>
+        <h3>Decks, siding &amp; roofing</h3>
+        <p>Outside work gets the same start-to-finish handling as the inside.</p>
+        <dl class="brands">
+          <div><dt>Decking &amp; railing</dt><dd><span>Azek</span><span>Timber Tech</span><span>AFCO</span></dd></div>
+          <div><dt>Siding</dt><dd><span>LP Smartside</span><span>Diamond Kote</span></dd></div>
+          <div><dt>Roofing</dt><dd><span>GAF</span><span>IKO</span><span>Owens Corning</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="r4" aria-labelledby="t4" hidden>
+      <div class="noimg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M4 12h16"/></svg></div>
+      <div>
+        <h3>Window &amp; door replacements</h3>
+        <p>Replacement windows and doors from the lines we feature.</p>
+        <dl class="brands">
+          <div><dt>Windows &amp; doors</dt><dd><span>Andersen</span><span>Feather River</span><span>Simonton</span><span>Masonite</span><span>Therma Tru</span><span>JELD-WEN</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="r5" aria-labelledby="t5" hidden>
+      <figure><img src="img/shed.webp" width="850" height="460" loading="lazy" alt="Green garden shed with a covered porch and sliding door"><figcaption>Garden shed with porch</figcaption></figure>
+      <div>
+        <h3>Garages &amp; sheds</h3>
+        <p>We will however look at anything and all remodeling projects, from a garden shed to a new garage.</p>
+        <dl class="brands">
+          <div><dt>Roofing</dt><dd><span>GAF</span><span>IKO</span><span>Owens Corning</span></dd></div>
+          <div><dt>Siding</dt><dd><span>LP Smartside</span><span>Diamond Kote</span></dd></div>
+        </dl>
+      </div>
+    </div>
+    <p class="fine">Product lines as listed on insideoutremodelingwi.com (“Featuring the finest products”).</p>
+  </div>
+</section>
+
+<section class="work" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <p class="kicker">Our work</p>
+    <h2 id="work-h">Real rooms, real Lake Country homes.</h2>
+    <div class="row3">
+      <figure><img src="img/kitchen.webp" width="850" height="460" loading="lazy" alt="Finished kitchen with white cabinets, a paneled refrigerator and wood floors"><figcaption>Kitchen remodel</figcaption></figure>
+      <figure><img src="img/sunroom.webp" width="850" height="460" loading="lazy" alt="Dining room with knotty-pine walls, large windows and a chandelier"><figcaption>Pine-paneled dining room</figcaption></figure>
+      <figure><img src="img/garage-framing.webp" width="850" height="460" loading="lazy" alt="Garage under construction with roof trusses set on new framing and a block foundation"><figcaption>Garage framing in progress</figcaption></figure>
+    </div>
+    <p class="note">On the full site, this grows into a portfolio by project type.</p>
+  </div>
+</section>
+
+<section class="turnkey" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div>
+      <p class="kicker">How it works</p>
+      <h2 id="how-h">One contractor, start to finish.</h2>
+      <blockquote>“Our goal is to provide you an outstanding project, brought in on budget and on time.”<cite>From insideoutremodelingwi.com</cite></blockquote>
+      <ol class="steps">
+        <li><div><b>Free consultation</b><span>We talk through your project’s wants, needs, ideas and design.</span></div></li>
+        <li><div><b>Free quote</b><span>A quote for the work, at no charge.</span></div></li>
+        <li><div><b>Samples come to you</b><span>We bring samples of everything we possibly can for your choices and review.</span></div></li>
+        <li><div><b>We handle it all</b><span>From design to framing and painting to flooring.</span></div></li>
+      </ol>
+    </div>
+    <aside class="card" id="contact" aria-labelledby="card-h">
+      <h3 id="card-h">Set up your free consultation.</h3>
+      <p class="lead">Call or email to set up an appointment to review your project.</p>
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+12627192958">262-719-2958</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:skunstmann@wi.rr.com">skunstmann@wi.rr.com</a></dd></div>
+        <div><dt>Address</dt><dd>493 East Welsh Road, Wales, WI 53183</dd></div>
+        <div><dt>Serving</dt><dd>The Lake Country area</dd></div>
+      </dl>
+      <div class="act">
+        <a class="btn btn-blue" href="tel:+12627192958">Call 262-719-2958</a>
+        <a class="btn btn-light" href="mailto:skunstmann@wi.rr.com?subject=Free%20quote%20request">Email for a free quote</a>
+      </div>
+      <p class="small">No job is too big or too small.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="closer" aria-label="About this preview">
+  <div class="wrap">
+    <div><h2>A first look at your new site.</h2><p>Readable on a phone, one tap to call, and your projects up front.</p></div>
+    <a class="btn" href="tel:+12627192958">Call 262-719-2958</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">Website by Cream City Post · Independent website concept, not the official Inside Out Remodeling LLC site. Logo redrawn; services, product lines, wording and photos from insideoutremodelingwi.com.</div></footer>
+
+<div class="callbar">
+  <a class="btn btn-blue" href="tel:+12627192958">Call 262-719-2958</a>
+  <a class="btn btn-light" href="mailto:skunstmann@wi.rr.com?subject=Free%20quote%20request">Email</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function pick(t,f){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});if(f)t.focus();}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(t)});
+    t.addEventListener('keydown',function(e){var n=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(n){e.preventDefault();pick(tabs[(i+n+tabs.length)%tabs.length],true);}});
+  });
+})();
+</script>
+</body>
+</html>
