@@ -40,8 +40,10 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 
 - done — CCP-033 v2 (Nov 12, ~10:45 AM CT, scheduled run): live (page + 6 imgs 200, byte-identical), emailed 1a1d0963cbf623df; 0 credits; commit d8eac2e. Typographic hero with "work order" service card; lift photo moved to a 4-tile shop row (2x2 on phones).
 - done — CCP-034 v2 (Nov 12, ~10:45 AM CT, scheduled run): live (page + img 200, byte-identical), emailed 1a1d0964f1d07a5b; 0 credits; commit 6bd4849. Review themes replaced by Facebook/Google links; carpet photo max 340px (280 on phone).
-- in progress — CCP-067 (Nov 12, 10:47 AM CT, scheduled run)
+- done — CCP-067 v1 (Nov 12, ~11:15 AM CT, scheduled run): live (page + 9 imgs 200, byte-identical), emailed 1a1d09c9a067f715; 4 credits (2K upscale of the freezer before/after pair); commit 5528e22. Hero slider, logo potrace SVG. Open: Clorox 360/DockHounds currency, hours, photo permission.
+- Nov 12, ~11:15 AM CT (scheduled run): session ends after 3 items (033 v2, 034 v2, 067 v1), 4 credits total. Next up, oldest brief first: CCP-068 Waterfoul Plumbing (1a1d080caad8b225), CCP-069 Hardwired Electric (1a1d080e29bb260b), CCP-070 Dent Spa Wisconsin (1a1d080fbb748532).
 ## Handled emails (don't reprocess)
+CCP-067 creative brief 1a1d080263accb8e handled; v1 ready sent 1a1d09c9a067f715 (Nov 12).
 CCP-033 v1 revision 1a1d07fcdd007384 handled; v2 ready sent 1a1d0963cbf623df (Nov 12).
 CCP-034 v1 revision 1a1d07f980712d19 handled; v2 ready sent 1a1d0964f1d07a5b (Nov 12).
 CCP-066 creative brief 1a1cce654b6cc626 handled; v1 ready sent 1a1ce3fe78564128 (Nov 11).
@@ -96,6 +98,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-058 | Rodriguez Painting LLC | Painting + drywall + carpentry, Milwaukee | brief | v1 | rodriguez-painting/ | v1 emailed Nov 11, ~10:15 PM. 0 credits. |
 | CCP-065 | Giraffe Electric II, LLC | Electrical contractor (design-build + 24-hr service), Waukesha | brief | v1 | giraffe-electric/ | v1 emailed Nov 11, ~11:45 PM. 0 credits. |
 | CCP-066 | Alliance Electrical Contractors | Electrical (custom homes, multi-family, commercial), Waukesha | brief | v1 | alliance-electrical-contractors/ | v1 emailed Nov 11, ~11:55 PM. 0 credits. |
+| CCP-067 | OCD Cleaners | Residential & business cleaning, Oconomowoc | brief | v1 | ocd-cleaners/ | v1 emailed Nov 12, ~11:15 AM. 4 credits. |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
@@ -135,6 +138,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-058 Rodriguez:** 414-544-4062 used (Google: 414-699-5630, unresolved); rodriguezpaintingllc78@gmail.com; hours Mon–Fri 8–6, Sat 8–12:30; "4.3 on Google" only. No years (seven years vs EST. 2023), no licensed/insured, no Thomas, no N Water St address. Own-site testimonials Jessica/Danny OK verbatim; never credit the commercial one to David. Skip p1 crew-on-ladders (possible Pexels) and the pillowcase/vanity photos; p6 cropped to drop wall drawing.
 - **CCP-065 Giraffe:** (262) 549-6500; gina@giraffeelectric.com; 2025 S West Ave, Waukesha 53189; hours "Monday–Friday 7:00 AM - 3:30 PM CST", Sat/Sun closed; John (President) & Jeff (VP) Jrolf, founder Frank; "5.0 on Google" only. No year/X years, guarantee, BBB, license #, Kenosha/FdL, day-or-night. Suffix LLC vs Inc. unresolved (sample omits it). Lobby cropped to drop Crown of Life sign; ELCA gym and stock house card not used.
 - **CCP-066 Alliance:** 262-446-3331; admin@aecwi.com; 815 W. College Ave, Waukesha 53186; no hours anywhere; since 2003, 30+ electricians, over 20 years (site wording). No star rating (4.0/3), no Paul Damon review, no association logos/builder names/license #/master electricians/callback promise until confirmed. Own-site testimonials Ryan E., Susan D., Staci S. verbatim (no Google label). Only real photo: switchgear (768×1024); all 11062b_/a4c183_/f7133f… images are stock.
+- **CCP-067 OCD Cleaners:** (262) 719-1306; ocdcleanerswi@gmail.com; 111 W. 2nd Street, Oconomowoc 53066; no hours on site. Since 2000 (not "20+ years"); family owned and operated (careers); background test. "4.9 on Google" only. Melissa D verbatim own-site testimonial only. No Clorox/DockHounds until confirmed; no women-owned/LGBTQ+; ivy cottage and office images are stock. Freezer pair is Higgsfield 2K-upscaled; gallery pairs are originals.
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
