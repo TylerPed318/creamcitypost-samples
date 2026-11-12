@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Elect-Tech, Inc. — Website concept by Cream City Post</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2300AA5F'/%3E%3Cg transform='skewX(-14) translate(8 0)' fill='%23fff' stroke='%23111' stroke-width='2'%3E%3Cpath d='M12 20h16v5H18v4h8v5h-8v6h10v5H12z'/%3E%3Cpath d='M30 20h20v5h-7v20h-6V25h-7z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#00AA5F;
+  --green-ui:#0B6B35;
+  --green-hover:#08552A;
+  --green-tint:#E3F5EC;
+  --black:#111111;
+  --volt:#FFD23F;
+  --grey:#F1F3F2;
+  --line:#D8DEDB;
+  --ink:#222826;
+  --muted:#53605A;
+  --white:#FFFFFF;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--grey);color:var(--ink);font:400 16.5px/1.65 Montserrat,system-ui,sans-serif}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Oswald,"Arial Narrow",sans-serif;font-weight:700;text-transform:uppercase;line-height:.98;letter-spacing:.005em;margin:0;color:var(--black)}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+a:focus-visible{outline:3px solid var(--volt);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:.7em 1.3em;border-radius:8px;font:700 1rem Montserrat,sans-serif;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-green{background:var(--green-ui);color:var(--white)}
+.btn-green:hover{background:var(--green-hover)}
+.btn-dark{background:var(--black);color:var(--white)}
+.btn-dark:hover{background:#2a2a2a}
+.btn-outline{border-color:var(--black);color:var(--black)}
+.btn-outline:hover{background:var(--white)}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:var(--white);border-bottom:3px solid var(--green)}
+.top .wrap{display:flex;align-items:center;gap:18px;min-height:78px}
+.logo{flex:none;display:block}
+.logo svg{width:230px;height:auto;display:block}
+.nav{display:flex;gap:2px;margin-left:auto}
+.nav a{font:600 .86rem Montserrat,sans-serif;text-decoration:none;padding:10px 10px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{background:var(--green-tint)}
+.top .btn{white-space:nowrap}
+
+/* hero */
+.hero{background:var(--white);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:24px;align-items:center;padding:64px 0 40px;position:relative}
+.eyebrow{display:inline-block;font:700 .78rem Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;background:var(--black);color:var(--white);padding:7px 12px;border-radius:4px}
+.hero h1{font-size:clamp(3.1rem,7.6vw,6.9rem);margin:22px 0 22px;font-style:italic;transform:skewX(-4deg);transform-origin:left}
+.hero h1 .g{color:var(--green-ui);display:block}
+.hero p.sub{font-size:1.1rem;max-width:46ch;margin:0 0 26px;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.fine{font-size:.8rem;color:var(--muted);margin:12px 0 0}
+.mascot{position:relative;display:grid;place-items:center}
+.mascot .ring{position:absolute;width:min(420px,92%);aspect-ratio:1;border-radius:50%;background:var(--green-tint);border:3px solid var(--green)}
+.mascot img{position:relative;width:min(400px,100%);transform:rotate(-3deg)}
+.mascot .name{position:absolute;right:4%;bottom:6%;background:var(--black);color:var(--white);font:600 .8rem Montserrat,sans-serif;padding:6px 12px;border-radius:999px}
+.rating{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:600;text-decoration:none;min-height:44px}
+.rating span{color:#C99700;font-size:1.2rem}
+.rating:hover b{text-decoration:underline}
+/* cord motif */
+.cord{display:block;width:100%;height:70px}
+
+/* license strip */
+.creds{background:var(--black);color:#E8ECEA}
+.creds ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.creds li{padding:22px 18px;border-left:1px solid #2e2e2e;font-size:.85rem;line-height:1.35}
+.creds li:first-child{border-left:0}
+.creds b{display:block;font:600 1.35rem Oswald,sans-serif;text-transform:uppercase;color:var(--white);letter-spacing:.02em}
+.creds b i{font-style:normal;color:var(--green)}
+
+/* sectors */
+.sectors{padding:92px 0 72px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
+.head h2{font-size:clamp(2.2rem,4.8vw,3.8rem);max-width:16ch}
+.head h2 em{color:var(--green-ui);font-style:normal}
+.head p{margin:0;color:var(--muted);max-width:44ch}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.col{background:var(--white);border-radius:var(--r);border:1px solid var(--line);padding:30px 28px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.col:before{content:"";position:absolute;left:0;top:0;right:0;height:6px;background:var(--green)}
+.col .k{font:600 .78rem Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--green-ui)}
+.col h3{font-size:2rem;margin:6px 0 16px}
+.col ul{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:9px}
+.col li{padding-left:22px;position:relative;font-size:.95rem}
+.col li:before{content:"";position:absolute;left:0;top:.45em;width:10px;height:10px;border-radius:50%;border:3px solid var(--green)}
+.col a.more{margin-top:auto;font-weight:700;color:var(--green-ui);text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+.col.dark{background:var(--black);color:#E8ECEA;border-color:var(--black)}
+.col.dark h3{color:var(--white)}
+.col.dark .k,.col.dark a.more{color:#4FD394}
+
+/* status + photos */
+.live{padding:0 0 92px}
+.live .grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:18px}
+.status{background:var(--white);border-radius:var(--r);border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:16px}
+.status .now{display:flex;align-items:center;gap:14px}
+.lamp{width:22px;height:22px;border-radius:50%;background:#B9C2BE;box-shadow:0 0 0 6px #E5E9E7;flex:none}
+.status.open .lamp{background:var(--green);box-shadow:0 0 0 6px rgba(0,170,95,.22)}
+.status .now b{font:700 2rem Oswald,sans-serif;text-transform:uppercase;color:var(--black);line-height:1}
+.status .next{margin:0;color:var(--muted);min-height:1.6em}
+.status table{width:100%;border-collapse:collapse;font-size:.95rem}
+.status td{padding:9px 0;border-top:1px solid var(--line)}
+.status td:last-child{text-align:right;font-weight:600}
+.status tr.today td{color:var(--green-ui);font-weight:700}
+.status .note{font-size:.82rem;color:var(--muted);margin:0}
+.photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.photos figure{margin:0;border-radius:var(--r);overflow:hidden;position:relative;background:#cfd6d2}
+.photos img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover}
+.photos figcaption{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(17,17,17,.86);color:var(--white);font-size:.8rem;font-weight:600;padding:7px 12px;border-radius:8px}
+
+/* founder + reviews */
+.founder{background:var(--green-ui);color:var(--white);position:relative;overflow:hidden}
+.founder .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;padding:84px 0;position:relative}
+.founder .big{font:700 clamp(5rem,13vw,10rem)/.85 Oswald,sans-serif;color:var(--white);letter-spacing:-.02em}
+.founder .big small{display:block;font-size:.2em;letter-spacing:.14em;color:#BDF0D5;margin-top:12px}
+.founder h2{color:var(--white);font-size:clamp(1.8rem,3.4vw,2.6rem);margin:26px 0 14px}
+.founder p{margin:0 0 12px;color:#E6F7EE;max-width:52ch}
+.rev{background:var(--white);color:var(--ink);border-radius:var(--r);padding:34px;align-self:start}
+.rev .score{display:flex;align-items:center;gap:10px}
+.rev .score b{font:700 3.6rem/1 Oswald,sans-serif;color:var(--black)}
+.rev .score span{color:#C99700;font-size:1.6rem}
+.rev h3{font-size:1.25rem;margin:4px 0 18px;color:var(--muted)}
+.rev ul{list-style:none;margin:0 0 20px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.rev li{background:var(--green-tint);color:var(--green-hover);font-weight:600;font-size:.9rem;padding:8px 14px;border-radius:999px}
+.rev a{font-weight:700;color:var(--green-ui);min-height:44px;display:inline-flex;align-items:center;text-underline-offset:4px}
+
+/* contact */
+.contact{padding:84px 0}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
+.contact h2{font-size:clamp(2.2rem,4.8vw,3.8rem)}
+.contact h2 em{font-style:normal;color:var(--green-ui)}
+.contact p.l{color:var(--muted);margin:16px 0 24px;max-width:44ch}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:32px;border-left:6px solid var(--green)}
+.card dl{margin:0;display:grid;gap:15px}
+.card dt{font:600 .74rem Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--green-ui)}
+.card dd{margin:2px 0 0;font-weight:600;color:var(--black);overflow-wrap:anywhere}
+.card dd a{text-decoration-color:var(--green);text-underline-offset:3px}
+
+footer{background:var(--black);color:#B7C0BC;font-size:.85rem;padding:28px 0 32px}
+footer p{margin:0}
+footer .slogan{font:600 1.2rem Oswald,sans-serif;text-transform:uppercase;color:var(--white);margin-bottom:10px;letter-spacing:.03em}
+footer .slogan i{font-style:normal;color:var(--green)}
+
+.callbar{display:none}
+
+@media (max-width:1060px){.nav{display:none}.top .btn{margin-left:auto}}
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr);padding:44px 0 24px}
+  .mascot{order:-1;max-width:300px;margin:0 auto}
+  .creds ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .creds li:nth-child(3){border-left:0}
+  .creds li:nth-child(n+3){border-top:1px solid #2e2e2e}
+  .cols,.live .grid,.founder .wrap,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:76px}
+  .top .wrap{min-height:66px;gap:10px}
+  .logo svg{width:168px}
+  .top .btn .long{display:none}
+  .top .btn{padding:.55em .9em;font-size:.92rem}
+  .mascot{max-width:230px}
+  .sectors,.contact{padding:60px 0}
+  .live{padding-bottom:60px}
+  .founder .wrap{padding:60px 0}
+  .photos img{aspect-ratio:4/5}
+  .status,.rev,.card,.col{padding:26px 22px}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--black);box-shadow:0 -6px 20px rgba(0,0,0,.3)}
+  .callbar .btn{min-height:50px;padding:.5em .6em;font-size:.92rem}
+  .callbar .btn-outline{border-color:#fff;color:#fff}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+</defs></svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Elect-Tech, Inc., back to top">
+      <svg viewBox="0 0 420 172" role="img" aria-label="Elect-Tech Inc. Electrical Contractor logo">
+        <!-- cord swoosh -->
+        <path d="M30 40 C2 70 6 120 40 140 C90 165 250 150 380 140" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+        <!-- plug -->
+        <g transform="rotate(-40 40 34)"><rect x="26" y="22" width="26" height="22" rx="4" fill="#fff" stroke="#111" stroke-width="5"/><path d="M31 22v-12M46 22v-12" stroke="#111" stroke-width="5" stroke-linecap="round"/></g>
+        <circle cx="85" cy="82" r="56" fill="#00AA5F"/>
+        <g transform="translate(40 52) skewX(-16)" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round">
+          <path d="M18 2h26v9H29v12h13v9H29v14h15v9H18z"/>
+          <path d="M44 2h36v9H66v46H55V11H44z"/>
+          <path d="M80 2h14v55H80z"/>
+        </g>
+        <g transform="skewX(-12)">
+          <text x="182" y="76" font-family="Oswald,'Arial Narrow',sans-serif" font-weight="700" font-size="60" textLength="178" lengthAdjust="spacingAndGlyphs" fill="#00AA5F" stroke="#111" stroke-width="2" paint-order="stroke">ELECT-TECH</text>
+        </g>
+        <text x="366" y="76" font-family="Montserrat,Arial,sans-serif" font-weight="500" font-size="18" fill="#111">INC.</text>
+        <text x="158" y="110" font-family="Montserrat,Arial,sans-serif" font-weight="500" font-size="21.5" textLength="250" lengthAdjust="spacingAndGlyphs" fill="#111">ELECTRICAL CONTRACTOR</text>
+        <text x="30" y="164" font-family="Oswald,'Arial Narrow',sans-serif" font-weight="600" font-size="17" textLength="356" lengthAdjust="spacingAndGlyphs" fill="#111">RESIDENTIAL • COMMERCIAL • INDUSTRIAL</text>
+      </svg>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="https://www.elect-techinc.com/Electrician/Residential">Residential</a>
+      <a href="https://www.elect-techinc.com/Electrician/Commercial">Commercial</a>
+      <a href="https://www.elect-techinc.com/Electrician/Industrial">Industrial</a>
+      <a href="https://www.elect-techinc.com/Safety">Safety tips</a>
+      <a href="https://www.elect-techinc.com/About">About</a>
+      <a href="https://www.elect-techinc.com/Employment">Careers</a>
+    </nav>
+    <a class="btn btn-green" href="tel:+12624463122"><svg aria-hidden="true"><use href="#phone"/></svg><span class="long">Call&nbsp;</span>(262) 446-3122</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Family-owned · Waukesha · Since 2006</span>
+      <h1>The ones to trust <span class="g">when power's a must.</span></h1>
+      <p class="sub">Licensed &amp; certified electricians for homes, businesses and industrial facilities. Founded by Master Electrician Larry Meyers.</p>
+      <div class="cta">
+        <a class="btn btn-green" href="tel:+12624463122"><svg aria-hidden="true"><use href="#phone"/></svg>Call (262) 446-3122</a>
+        <a class="btn btn-outline" href="mailto:contact@elect-techinc.com?subject=Estimate%20request">Request a free estimate</a>
+      </div>
+      <p class="fine">Free estimates for contract pricing. Service work is billed time-and-material.</p>
+      <a class="rating" href="https://www.google.com/maps/place/Elect-Tech,+Inc./@42.9797087,-88.2352008,17z/data=!4m8!3m7!1s0x8805a665164e1805:0x651015df68e1bdf0!9m1!1b1?hl=en"><span aria-hidden="true">★</span><b>4.6 on Google</b></a>
+    </div>
+    <div class="mascot">
+      <div class="ring" aria-hidden="true"></div>
+      <img src="img/techy.png" width="745" height="677" alt="Techy, Elect-Tech's green plug mascot, running and pointing up while carrying an ETI plug">
+      <span class="name">Meet Techy</span>
+    </div>
+  </div>
+  <svg class="cord" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 20 C300 70 520 0 760 34 S1200 60 1450 18" fill="none" stroke="#111" stroke-width="5"/><circle cx="760" cy="34" r="9" fill="#00AA5F" stroke="#111" stroke-width="4"/></svg>
+</section>
+
+<section class="creds" aria-label="Credentials">
+  <ul class="wrap">
+    <li><b><i>20</i> years</b>in business, serving since 2006</li>
+    <li><b>#1042332-EC</b>Wisconsin contractor license</li>
+    <li><b>#171569-ME</b>Master Electrician license</li>
+    <li><b>Family-owned</b>&amp; operated in Waukesha</li>
+  </ul>
+</section>
+
+<section class="sectors" id="services">
+  <div class="wrap">
+    <div class="head">
+      <h2>Your single source for <em>complete electrical solutions.</em></h2>
+      <p>Residential, commercial and industrial work: safety-first, code-compliant, and built on long-term customer relationships.</p>
+    </div>
+    <div class="cols">
+      <article class="col">
+        <span class="k">Homes</span>
+        <h3>Residential</h3>
+        <ul>
+          <li>Electrical service and panel upgrades</li>
+          <li>Repairs from home inspection reports</li>
+          <li>Knob &amp; tube removal and circuit replacement</li>
+          <li>Ceiling fans, exhaust fans and outlets</li>
+          <li>Whole-home generator installation</li>
+          <li>Remodels, new construction and lighting</li>
+        </ul>
+        <a class="more" href="https://www.elect-techinc.com/Electrician/Residential">Residential services →</a>
+      </article>
+      <article class="col">
+        <span class="k">Businesses</span>
+        <h3>Commercial</h3>
+        <ul>
+          <li>New construction, remodels &amp; build-outs</li>
+          <li>Interior &amp; exterior lighting, LED retrofits</li>
+          <li>Parking lot lighting and sign wiring</li>
+          <li>Data and structured cabling</li>
+          <li>Trenching and underground electrical</li>
+          <li>Troubleshooting and diagnostics</li>
+        </ul>
+        <a class="more" href="https://www.elect-techinc.com/Electrician/Commercial">Commercial services →</a>
+      </article>
+      <article class="col dark">
+        <span class="k">Plants &amp; facilities</span>
+        <h3>Industrial</h3>
+        <ul>
+          <li>New industrial construction wiring</li>
+          <li>Machine wiring &amp; equipment connections</li>
+          <li>Transformers, generators and backup power</li>
+          <li>Industrial lighting systems &amp; design</li>
+          <li>Electrical repair and troubleshooting</li>
+        </ul>
+        <a class="more" href="https://www.elect-techinc.com/Electrician/Industrial">Industrial services →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="live" aria-label="Office hours and recent work">
+  <div class="wrap grid">
+    <div class="status" id="status" aria-live="polite">
+      <div class="now"><span class="lamp" aria-hidden="true"></span><b id="st-label">Office hours</b></div>
+      <p class="next" id="st-next">Mon–Fri 7:30 am – 3:00 pm</p>
+      <table aria-label="Business hours">
+        <tbody>
+          <tr data-d="1"><td>Monday</td><td>7:30 am – 3:00 pm</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>7:30 am – 3:00 pm</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>7:30 am – 3:00 pm</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>7:30 am – 3:00 pm</td></tr>
+          <tr data-d="5"><td>Friday</td><td>7:30 am – 3:00 pm</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>Closed</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Live status in Waukesha (Central) time, from posted business hours.</p>
+      <a class="btn btn-green" href="tel:+12624463122"><svg aria-hidden="true"><use href="#phone"/></svg>Call (262) 446-3122</a>
+    </div>
+    <div class="photos">
+      <figure><img src="img/hallway.jpg" width="1100" height="733" alt="Finished commercial hallway with barn-style gooseneck sconces and recessed panel lights" loading="lazy"><figcaption>Commercial interior lighting</figcaption></figure>
+      <figure><img src="img/building.jpg" width="1100" height="733" alt="Commercial building complex with a patio, parking lot and tall site light poles" loading="lazy"><figcaption>Commercial site &amp; parking-lot lighting</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="founder" id="about">
+  <svg aria-hidden="true" viewBox="0 0 1440 400" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%"><path d="M-10 360 C400 300 700 420 1100 330 S1400 250 1450 280" fill="none" stroke="#111" stroke-width="5" opacity=".35"/></svg>
+  <div class="wrap">
+    <div>
+      <div class="big">20<small>Years · since 2006</small></div>
+      <h2>Founded by a Master Electrician.</h2>
+      <p>Elect-Tech, Inc. was founded in 2006 by Larry Meyers, a Master Electrician with over 45 years of industry experience. Larry has held his Master Electrician License for more than 25 years.</p>
+      <p>Celebrating 20 years, thanks to you: your continued support, referrals and loyalty have helped this family-owned company grow.</p>
+    </div>
+    <div class="rev">
+      <div class="score"><b>4.6</b><span aria-hidden="true">★</span></div>
+      <h3>on Google. Customers mention:</h3>
+      <ul><li>Courteous techs</li><li>Friendly staff</li><li>Quick response</li><li>Quality of work</li></ul>
+      <a href="https://www.google.com/maps/place/Elect-Tech,+Inc./@42.9797087,-88.2352008,17z/data=!4m8!3m7!1s0x8805a665164e1805:0x651015df68e1bdf0!9m1!1b1?hl=en">Read the reviews on Google →</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>A first look at your new site. <em>Power's a must.</em></h2>
+      <p class="l">Serving Waukesha, Milwaukee, Brookfield, New Berlin and surrounding areas. Call the office or send a note for a free estimate on contract work.</p>
+      <div class="cta">
+        <a class="btn btn-green" href="tel:+12624463122"><svg aria-hidden="true"><use href="#phone"/></svg>Call (262) 446-3122</a>
+        <a class="btn btn-outline" href="mailto:contact@elect-techinc.com?subject=Estimate%20request">Email the office</a>
+      </div>
+    </div>
+    <div class="card">
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+12624463122">(262) 446-3122</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:contact@elect-techinc.com">contact@elect-techinc.com</a></dd></div>
+        <div><dt>Hours</dt><dd>Mon – Fri: 7:30 am – 3:00 pm · Sat – Sun: Closed</dd></div>
+        <div><dt>Office</dt><dd>2005 S. West Ave., Waukesha, WI 53189</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="slogan">The ones to trust when <i>power's a must!</i></p>
+    <p>Website by Cream City Post · Independent website concept, not the official Elect-Tech, Inc. site. Logo redrawn; Techy mascot, services, licenses, hours, contact details and project photos from elect-techinc.com; rating from Google.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-green" href="tel:+12624463122">Call (262) 446-3122</a>
+  <a class="btn btn-outline" href="mailto:contact@elect-techinc.com?subject=Estimate%20request">Free estimate</a>
+</div>
+
+<script>
+(function(){
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var o={};parts.forEach(function(p){o[p.type]=p.value});
+    var days={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+    var d=days[o.weekday],m=(parseInt(o.hour,10)%24)*60+parseInt(o.minute,10);
+    var open=d>=1&&d<=5&&m>=450&&m<900;
+    var row=document.querySelector('tr[data-d="'+d+'"]');if(row)row.className='today';
+    var box=document.getElementById('status'),label=document.getElementById('st-label'),next=document.getElementById('st-next');
+    if(open){box.classList.add('open');label.textContent='Open now';next.textContent='The office is open until 3:00 pm today.';}
+    else{
+      label.textContent='Closed now';
+      var msg;
+      if(d>=1&&d<=5&&m<450)msg='Opens today at 7:30 am.';
+      else if(d>=1&&d<=4)msg='Opens tomorrow at 7:30 am.';
+      else msg='Opens Monday at 7:30 am.';
+      next.textContent=msg;
+    }
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
