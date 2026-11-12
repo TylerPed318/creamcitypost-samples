@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Hardwired Electric — Website concept by Cream City Post</title>
+<meta name="description" content="Hardwired Electric: a family-owned, licensed electrical contractor serving Lake Country and the greater Milwaukee area. Generac generators, lighting controls, service upgrades, remodeling and repair.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23151D1D'/%3E%3Cpath d='M6 26h26M6 38h26' stroke='%23B87332' stroke-width='3'/%3E%3Cpath d='M32 26l10-14M32 26l16-6M32 38l10 14M32 38l16 6' stroke='%23B87332' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='10' r='4' fill='none' stroke='%23B87332' stroke-width='2.5'/%3E%3Ccircle cx='51' cy='19' r='4' fill='none' stroke='%23B87332' stroke-width='2.5'/%3E%3Ccircle cx='44' cy='54' r='4' fill='none' stroke='%23B87332' stroke-width='2.5'/%3E%3Ccircle cx='51' cy='45' r='4' fill='none' stroke='%23B87332' stroke-width='2.5'/%3E%3Cpath d='M12 29v6M12 32h8M20 29v6' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --charcoal:#151D1D; --charcoal-2:#1e2828; --copper:#B87332; --copper-dk:#8A4F16; --bronze:#AD6C38;
+  --off:#FBFBFB; --sand:#f3eee8; --gray:#5E5F5E; --white:#fff; --ink:#151D1D; --line:#e4ddd5;
+  --glow:#f3c27a;
+  --display:"Montserrat",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--off);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--copper-dk)}
+:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.7rem 1.35rem;border-radius:4px;font:700 .98rem/1 var(--display);letter-spacing:.02em;text-decoration:none;transition:background .15s,color .15s,transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-copper{background:var(--copper);color:var(--charcoal)}
+.btn-copper:hover{background:var(--glow)}
+.btn-line{border:2px solid rgba(255,255,255,.7);color:#fff}
+.btn-line:hover{background:#fff;color:var(--charcoal)}
+.btn-dark{background:var(--charcoal);color:#fff}
+.btn-dark:hover{background:#2a3636}
+svg.ico{width:1.1em;height:1.1em;flex:none}
+.label{font:700 .76rem/1 var(--display);letter-spacing:.22em;text-transform:uppercase;color:var(--copper-dk)}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--charcoal);border-bottom:1px solid rgba(184,115,50,.35)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:78px}
+.brand{display:block;width:190px;flex:none}
+.brand svg{display:block;width:100%;height:auto}
+nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+nav a{color:#e8e2da;text-decoration:none;font:600 .92rem/1 var(--display);padding:.8rem 0;display:inline-block}
+nav a:hover{color:var(--glow)}
+.bar .btn{padding:.6rem 1rem}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--charcoal);min-height:min(88vh,820px);display:flex;align-items:flex-end;overflow:hidden}
+.hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,29,29,.92) 0%,rgba(21,29,29,.7) 38%,rgba(21,29,29,.05) 70%),linear-gradient(0deg,rgba(21,29,29,.85),transparent 45%)}
+.hero-inner{position:relative;z-index:1;padding:clamp(80px,12vw,150px) 0 clamp(36px,5vw,64px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end}
+.hero .label{color:var(--glow)}
+h1{font:800 clamp(2.6rem,7vw,5.6rem)/.95 var(--display);letter-spacing:-.03em;margin:.9rem 0 1.1rem;max-width:9.5em}
+h1 .cu{color:var(--copper)}
+.lede{max-width:34em;font-size:clamp(1.08rem,1.6vw,1.25rem);color:#ece6de;margin:0 0 1.6rem}
+.ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.wire{display:block;height:2px;background:var(--copper);width:clamp(80px,14vw,180px);position:relative;margin-top:.2rem}
+.wire::after{content:"";position:absolute;right:-12px;top:-6px;width:12px;height:12px;border:2px solid var(--copper);border-radius:50%}
+.cap{font-size:.86rem;color:#d7d0c6;max-width:15em;text-align:right;border-right:2px solid var(--copper);padding-right:.8rem}
+
+/* hours card (interactive) */
+.status{background:var(--charcoal-2);color:#fff;border-top:1px solid rgba(184,115,50,.35)}
+.status .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(16px,3vw,40px);align-items:center;padding:22px 0}
+.lamp{display:flex;align-items:center;gap:.9rem}
+.bulb{width:46px;height:46px;flex:none;border-radius:50%;border:2px solid var(--copper);display:grid;place-items:center;transition:background .3s,box-shadow .3s}
+.bulb svg{width:24px;height:24px;color:var(--copper)}
+.status.open .bulb{background:var(--glow);border-color:var(--glow);box-shadow:0 0 0 6px rgba(243,194,122,.18),0 0 28px rgba(243,194,122,.6)}
+.status.open .bulb svg{color:var(--charcoal)}
+.state{font:800 1.35rem/1.1 var(--display)}
+.state small{display:block;font:400 .95rem/1.4 var(--body);color:#cfc8bf;margin-top:.2rem}
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;list-style:none;margin:0;padding:0}
+.week li{text-align:center;padding:.5rem .2rem;border-radius:4px;background:rgba(255,255,255,.05);font:600 .8rem/1.2 var(--display);color:#cfc8bf}
+.week li span{display:block;font:400 .78rem/1.3 var(--body);color:#9b968f;margin-top:.15rem}
+.week li.on{color:#fff}
+.week li.on span{color:#e8d9c6}
+.week li.today{outline:2px solid var(--copper);background:rgba(184,115,50,.18)}
+
+/* proof */
+.proof{border-bottom:1px solid var(--line);background:#fff}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:1.4rem 1.3rem;border-left:1px solid var(--line)}
+.proof li:first-child{border-left:0}
+.proof b{display:block;font:800 1.15rem/1.2 var(--display);color:var(--charcoal)}
+.proof span{color:var(--gray);font-size:.95rem}
+.proof a{color:var(--copper-dk);font-weight:600}
+
+section{padding:clamp(56px,8vw,108px) 0}
+h2{font:800 clamp(2rem,4.4vw,3.4rem)/1.02 var(--display);letter-spacing:-.025em;margin:.7rem 0 1rem}
+h2 .cu{color:var(--copper-dk)}
+
+/* doors */
+.doors-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:end;margin-bottom:2.4rem}
+.doors-head p{color:var(--gray);margin:0}
+.doors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line);background:#fff}
+.door{padding:clamp(24px,3vw,36px);border-left:1px solid var(--line);position:relative}
+.door:first-child{border-left:0}
+.door .n{font:800 3.2rem/1 var(--display);color:transparent;-webkit-text-stroke:1.5px var(--copper);letter-spacing:-.04em}
+.door h3{font:800 1.35rem/1.15 var(--display);margin:.8rem 0 .6rem}
+.door p{color:var(--gray);margin:0 0 1rem}
+.door ul{margin:0;padding:0;list-style:none;display:grid;gap:.45rem}
+.door li{display:flex;gap:.6rem;align-items:flex-start;font-weight:600}
+.door li::before{content:"";flex:none;width:14px;height:2px;background:var(--copper);margin-top:.75rem}
+.door a{display:inline-block;margin-top:1.2rem;font:700 .9rem/1 var(--display);padding:.6rem 0}
+
+/* owner + process */
+.owner{background:var(--charcoal);color:#ece6de;position:relative;overflow:hidden}
+.owner .wrap{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center}
+.owner h2{color:#fff}
+.owner .label{color:var(--glow)}
+.who{display:flex;gap:1.3rem;align-items:center;margin-top:1.6rem}
+.who img{width:140px;aspect-ratio:296/438;object-fit:cover;border-radius:70px 70px 6px 6px;border:3px solid var(--copper);background:#333}
+.who b{display:block;font:800 1.15rem/1.2 var(--display);color:#fff}
+.who span{color:#cfc8bf;font-size:.95rem}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;align-items:start;background:var(--charcoal-2);border:1px solid rgba(184,115,50,.3);border-radius:6px;padding:18px 20px}
+.steps li::before{content:counter(s,decimal-leading-zero);font:800 1.5rem/1 var(--display);color:var(--copper)}
+.steps b{display:block;font:700 1.05rem/1.25 var(--display);color:#fff;margin-bottom:.2rem}
+.steps span{color:#cfc8bf;font-size:.98rem}
+
+/* reviews + contact */
+.rc{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(28px,4vw,64px);align-items:start}
+.rating{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;margin:.6rem 0 1.2rem}
+.rating .big{font:800 3.2rem/1 var(--display)}
+.rating .star{color:var(--copper);font-size:1.6rem}
+.rating a{font-weight:600}
+.themes{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0 0 2rem}
+.themes li{border:1px solid var(--copper);color:var(--copper-dk);padding:.4rem .9rem;border-radius:999px;font:600 .9rem/1.3 var(--display)}
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+blockquote{margin:0;background:#fff;border:1px solid var(--line);border-top:3px solid var(--copper);padding:1.2rem 1.3rem;border-radius:0 0 6px 6px}
+blockquote.wide{grid-column:1/-1}
+blockquote p{margin:0 0 .6rem}
+blockquote cite{font:700 .9rem/1 var(--display);font-style:normal;color:var(--gray)}
+.note{font-size:.88rem;color:var(--gray);margin-top:1rem}
+.card{background:var(--sand);border:1px solid var(--line);border-radius:6px;padding:clamp(24px,3vw,34px);position:sticky;top:100px}
+.card h3{font:800 1.5rem/1.1 var(--display);margin:0 0 1.1rem}
+.card dl{margin:0 0 1.3rem;display:grid;gap:1rem}
+.card dt{font:700 .74rem/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--copper-dk);margin-bottom:.35rem}
+.card dd{margin:0}
+.card .btn{width:100%;margin-top:.6rem}
+.card .social{display:flex;gap:1.2rem;margin-top:1rem}
+.card .social a{font-weight:600;padding:.5rem 0}
+
+.closer{background:var(--charcoal);color:#ece6de;text-align:center;position:relative;overflow:hidden}
+.closer h2{color:#fff;max-width:16em;margin-inline:auto}
+.closer p{max-width:36em;margin:0 auto 1.6rem;color:#cfc8bf}
+.closer .ctas{justify-content:center}
+.closer .label{color:var(--glow)}
+footer{background:#0f1515;color:#b8b1a8;padding:34px 0 40px;font-size:.92rem}
+footer .wrap{display:flex;gap:1.6rem;align-items:center;flex-wrap:wrap}
+footer .brand{width:150px}
+footer p{margin:0;flex:1 1 400px}
+
+.callbar{display:none}
+@media (max-width:1000px){
+  nav{display:none}
+  .doors-head,.owner .wrap,.rc{grid-template-columns:minmax(0,1fr)}
+  .doors{grid-template-columns:minmax(0,1fr)}
+  .door{border-left:0;border-top:1px solid var(--line)}
+  .door:first-child{border-top:0}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid var(--line)}
+  .status .wrap{grid-template-columns:minmax(0,1fr)}
+  .card{position:static}
+}
+@media (max-width:600px){
+  body{padding-bottom:72px}
+  .bar{min-height:64px}
+  .brand{width:138px}
+  .bar .btn .long{display:none}
+  .hero{min-height:auto}
+  .hero::after{background:linear-gradient(0deg,rgba(21,29,29,.95) 0%,rgba(21,29,29,.75) 55%,rgba(21,29,29,.25) 100%)}
+  .hero-inner{grid-template-columns:minmax(0,1fr);padding-top:200px}
+  .cap{display:none}
+  .quotes{grid-template-columns:minmax(0,1fr)}
+  .proof li{padding:1.1rem .9rem}
+  .week{gap:4px}
+  .week li{font-size:.72rem;padding:.45rem .1rem}
+  .week li span{font-size:.68rem}
+  .who img{width:110px}
+  .callbar{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--charcoal);border-top:1px solid rgba(184,115,50,.45)}
+  .callbar .btn{width:100%;padding:.6rem .7rem;font-size:.95rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="-20 -10 1694 915"><path fill="#B87332" fill-rule="evenodd" d="M 1231 12 C 1203 22, 1201 59, 1228 72 C 1232 74, 1234 75, 1244 75 C 1256 75, 1256 75, 1256 78 C 1257 81, 1259 80, 1260 77 C 1260 73, 1258 72, 1245 71 C 1231 70, 1227 69, 1221 62 C 1200 41, 1222 6, 1251 15 C 1270 22, 1276 47, 1263 62 C 1259 66, 1261 68, 1265 64 C 1280 50, 1274 21, 1255 13 C 1248 10, 1237 9, 1231 12 M 1450 44 C 1435 48, 1427 59, 1427 75 C 1427 90, 1431 97, 1447 106 C 1453 110, 1454 110, 1454 113 C 1453 116, 1456 116, 1457 113 C 1459 109, 1457 108, 1449 103 C 1435 95, 1430 87, 1430 75 C 1430 44, 1474 35, 1485 65 C 1490 79, 1483 97, 1468 102 C 1463 104, 1462 107, 1466 106 C 1474 105, 1483 98, 1488 88 C 1499 64, 1476 36, 1450 44 M 1223 76 C 1222 77, 1224 83, 1227 84 C 1228 86, 1232 86, 1242 86 C 1254 86, 1256 86, 1256 88 C 1256 89, 1254 89, 1241 89 C 1227 89, 1226 89, 1224 91 C 1221 94, 1221 95, 1224 98 C 1227 100, 1227 100, 1241 100 C 1250 100, 1256 100, 1256 101 C 1256 102, 1251 102, 1242 102 C 1232 102, 1228 102, 1227 103 C 1225 106, 1227 106, 1242 106 C 1259 106, 1260 106, 1260 101 C 1260 97, 1258 96, 1242 96 C 1222 95, 1222 94, 1242 93 C 1259 92, 1260 92, 1260 87 C 1260 83, 1258 83, 1243 82 L 1228 82 1227 78 C 1226 75, 1224 74, 1223 76 M 1319 91 C 1296 99, 1289 127, 1305 145 C 1310 150, 1313 152, 1325 155 C 1332 158, 1333 158, 1333 160 C 1332 164, 1336 164, 1337 160 C 1338 157, 1335 155, 1324 151 C 1307 146, 1300 137, 1300 122 C 1300 87, 1350 83, 1357 118 C 1359 128, 1354 141, 1344 146 C 1342 148, 1340 150, 1340 150 C 1342 156, 1357 142, 1360 132 C 1367 107, 1343 84, 1319 91 M 1424 96 C 1421 102, 1424 105, 1437 113 C 1443 117, 1448 120, 1448 121 C 1448 123, 1447 122, 1434 114 C 1420 106, 1419 106, 1417 109 C 1413 113, 1414 115, 1430 124 C 1440 131, 1443 133, 1440 133 C 1439 133, 1433 130, 1427 126 C 1419 121, 1415 119, 1414 120 C 1412 122, 1413 122, 1426 130 C 1438 137, 1442 138, 1444 135 C 1447 131, 1444 129, 1432 121 C 1425 117, 1419 113, 1419 112 C 1419 110, 1419 110, 1433 118 C 1447 127, 1448 127, 1450 124 C 1454 120, 1452 118, 1442 112 C 1427 102, 1427 102, 1427 98 C 1428 94, 1426 92, 1424 96 M 1237 236 L 1237 363 625 363 C 289 363, 13 363, 12 364 C 11 364, 11 366, 11 368 L 12 370 629 371 L 1246 371 1246 242 C 1246 170, 1246 111, 1246 111 C 1246 110, 1245 110, 1242 110 L 1236 110 1237 236 M 1418 132 C 1418 133, 1386 187, 1348 252 C 1309 317, 1278 371, 1277 372 C 1277 373, 1278 373, 1282 373 L 1286 372 1355 256 C 1393 193, 1425 140, 1426 138 C 1429 136, 1429 134, 1426 134 C 1425 134, 1423 133, 1422 132 C 1420 129, 1418 129, 1418 132 M 1301 149 C 1300 150, 1300 154, 1301 157 C 1303 160, 1307 162, 1321 166 C 1326 167, 1329 169, 1329 170 C 1329 171, 1329 172, 1315 167 C 1298 162, 1294 162, 1295 169 C 1296 172, 1297 172, 1311 177 C 1320 180, 1325 182, 1325 183 C 1325 184, 1326 185, 1310 179 C 1298 176, 1296 175, 1296 177 C 1296 180, 1324 188, 1327 186 C 1329 185, 1330 181, 1327 179 C 1326 178, 1320 175, 1312 173 C 1304 170, 1299 168, 1299 168 C 1300 166, 1299 166, 1315 171 C 1330 176, 1333 176, 1333 170 C 1333 166, 1331 165, 1318 161 C 1306 157, 1304 156, 1304 152 C 1304 149, 1302 147, 1301 149 M 1471 180 C 1446 188, 1439 216, 1457 235 C 1466 245, 1466 245, 1465 247 C 1464 248, 1464 248, 1465 249 C 1466 250, 1467 250, 1468 248 C 1471 245, 1471 243, 1463 236 C 1455 227, 1452 222, 1451 214 C 1449 191, 1472 176, 1493 186 C 1518 199, 1511 237, 1482 240 C 1474 241, 1474 244, 1482 243 C 1508 243, 1522 209, 1504 189 C 1496 181, 1481 177, 1471 180 M 1303 186 C 1301 188, 1306 191, 1310 191 C 1314 190, 1315 188, 1311 187 C 1309 187, 1307 187, 1307 186 C 1305 185, 1303 185, 1303 186 M 1603 197 C 1580 203, 1572 227, 1587 250 C 1591 256, 1592 258, 1591 260 C 1589 262, 1590 264, 1593 263 C 1597 261, 1597 258, 1591 249 C 1584 239, 1583 235, 1583 228 C 1583 198, 1623 188, 1637 215 C 1647 234, 1633 256, 1611 256 C 1604 256, 1603 257, 1603 258 C 1604 262, 1618 261, 1626 257 C 1660 240, 1640 186, 1603 197 M 1301 201 C 1300 202, 1255 370, 1255 373 C 1255 373, 1257 373, 1259 373 L 1264 373 1286 289 C 1298 243, 1308 205, 1308 204 C 1308 200, 1303 199, 1301 201 M 1441 223 C 1437 228, 1438 232, 1450 244 C 1456 249, 1458 252, 1457 253 C 1457 254, 1453 250, 1445 243 C 1435 232, 1432 230, 1429 233 C 1426 236, 1428 239, 1438 250 C 1447 260, 1449 263, 1447 263 C 1447 263, 1442 258, 1436 252 C 1427 243, 1423 240, 1424 245 C 1425 247, 1445 267, 1447 267 C 1448 267, 1452 263, 1452 261 C 1452 260, 1437 243, 1433 239 C 1431 237, 1431 236, 1432 236 C 1433 236, 1438 241, 1444 246 C 1454 258, 1456 259, 1460 255 C 1463 252, 1463 252, 1452 241 C 1443 231, 1441 226, 1444 224 C 1446 224, 1445 221, 1444 221 C 1443 221, 1441 222, 1441 223 M 1570 234 C 1567 239, 1568 241, 1576 254 C 1581 261, 1583 265, 1582 265 C 1582 266, 1578 262, 1573 254 C 1563 240, 1563 239, 1559 241 C 1554 242, 1555 246, 1564 259 C 1571 270, 1572 273, 1570 273 C 1570 273, 1566 268, 1562 262 C 1554 250, 1552 248, 1551 250 C 1551 253, 1567 276, 1570 277 C 1572 277, 1575 275, 1575 272 C 1575 271, 1572 264, 1567 257 C 1560 246, 1559 244, 1561 244 C 1561 244, 1565 250, 1570 256 C 1578 268, 1579 270, 1583 269 C 1585 269, 1587 266, 1587 264 C 1587 264, 1584 258, 1580 252 C 1571 240, 1571 238, 1574 235 C 1575 233, 1576 232, 1575 232 C 1574 230, 1572 231, 1570 234 M 1426 255 C 1424 258, 1430 264, 1434 263 C 1435 262, 1435 262, 1432 259 C 1430 258, 1429 256, 1429 255 C 1429 254, 1426 254, 1426 255 M 1550 262 C 1549 263, 1506 288, 1454 317 C 1402 346, 1358 370, 1356 371 L 1354 373 1362 373 L 1370 373 1461 322 C 1511 295, 1552 272, 1552 271 C 1553 271, 1555 270, 1556 271 C 1559 271, 1559 269, 1556 266 C 1555 266, 1554 264, 1554 263 C 1554 261, 1552 260, 1550 262 M 1410 273 C 1404 278, 1378 303, 1353 328 L 1306 372 1311 373 L 1317 373 1324 367 C 1426 269, 1428 267, 1423 264 C 1420 262, 1421 262, 1410 273 M 12 524 C 10 527, 10 528, 12 530 L 14 532 626 532 L 1237 532 1237 659 L 1236 786 1241 785 C 1246 785, 1248 785, 1247 783 C 1246 783, 1246 724, 1246 653 L 1246 523 630 523 C 138 523, 13 523, 12 524 M 1259 537 C 1296 678, 1300 693, 1302 694 C 1305 695, 1308 693, 1308 691 C 1308 689, 1267 534, 1264 525 C 1264 523, 1263 523, 1260 523 L 1255 523 1259 537 M 1283 533 C 1388 709, 1417 760, 1418 762 C 1418 766, 1420 766, 1422 763 C 1423 762, 1425 761, 1426 761 C 1428 761, 1429 759, 1426 757 C 1426 756, 1394 703, 1356 640 L 1287 524 1282 523 L 1277 523 1283 533 M 1320 536 C 1387 601, 1420 631, 1421 631 C 1423 631, 1425 629, 1425 626 C 1425 625, 1401 601, 1372 574 L 1320 524 1313 523 L 1307 523 1320 536 M 1358 524 C 1358 524, 1401 549, 1454 578 C 1507 607, 1550 632, 1550 633 C 1551 635, 1554 634, 1554 632 C 1554 631, 1555 629, 1556 628 C 1558 626, 1559 624, 1556 624 C 1555 624, 1553 624, 1551 622 C 1549 621, 1508 598, 1460 572 L 1373 523 1365 523 C 1360 523, 1357 523, 1358 524 M 1567 620 C 1562 625, 1551 643, 1551 645 C 1552 647, 1554 645, 1562 633 C 1566 627, 1570 622, 1570 622 C 1572 622, 1571 625, 1564 636 C 1555 649, 1554 653, 1559 654 C 1563 656, 1564 655, 1573 641 C 1579 633, 1582 629, 1582 630 C 1583 630, 1581 634, 1576 641 C 1572 647, 1569 653, 1568 655 C 1568 659, 1573 666, 1575 663 C 1576 663, 1575 662, 1574 660 C 1571 657, 1571 655, 1580 643 C 1584 637, 1587 631, 1587 631 C 1587 629, 1585 626, 1583 626 C 1579 625, 1578 627, 1570 638 C 1565 645, 1561 651, 1561 651 C 1559 651, 1560 649, 1567 638 C 1572 631, 1575 624, 1575 623 C 1575 619, 1570 616, 1567 620 M 1435 639 C 1429 644, 1424 650, 1424 650 C 1423 655, 1427 652, 1436 643 C 1442 637, 1447 632, 1447 632 C 1449 632, 1447 635, 1438 645 C 1428 656, 1426 659, 1429 662 C 1432 665, 1435 663, 1445 652 C 1452 645, 1457 641, 1457 642 C 1458 643, 1455 646, 1449 652 C 1438 664, 1436 670, 1442 673 C 1444 675, 1446 673, 1444 671 C 1442 667, 1443 665, 1452 654 C 1463 643, 1463 643, 1460 640 C 1456 636, 1454 637, 1444 649 C 1438 654, 1433 659, 1432 659 C 1431 659, 1431 658, 1433 656 C 1437 652, 1452 635, 1452 634 C 1452 632, 1448 628, 1447 628 C 1446 628, 1440 633, 1435 639 M 1590 632 C 1590 633, 1590 635, 1591 635 C 1592 637, 1591 639, 1587 645 C 1580 655, 1579 662, 1579 670 C 1582 703, 1626 711, 1641 681 C 1652 659, 1632 631, 1608 635 C 1600 636, 1602 639, 1611 639 C 1633 639, 1647 661, 1637 680 C 1623 707, 1583 697, 1583 667 C 1583 660, 1584 656, 1591 646 C 1595 640, 1596 637, 1596 636 C 1595 632, 1591 630, 1590 632 M 1429 633 C 1427 635, 1425 639, 1426 640 C 1426 642, 1429 641, 1429 640 C 1429 639, 1430 637, 1432 636 C 1435 634, 1435 632, 1432 632 C 1431 632, 1430 633, 1429 633 M 1464 646 C 1464 647, 1464 648, 1465 649 C 1466 650, 1466 650, 1457 660 C 1447 671, 1444 685, 1450 697 C 1459 717, 1485 722, 1502 708 C 1515 696, 1515 673, 1503 661 C 1497 655, 1489 652, 1482 652 C 1474 651, 1474 654, 1482 655 C 1519 659, 1516 712, 1479 712 C 1462 712, 1450 698, 1451 681 C 1452 673, 1455 668, 1463 659 C 1470 652, 1471 651, 1468 647 C 1467 645, 1465 644, 1464 646 M 1304 706 C 1301 709, 1303 711, 1307 709 C 1308 708, 1310 708, 1311 708 C 1313 708, 1314 707, 1314 706 C 1314 703, 1307 703, 1304 706 M 1310 712 C 1300 715, 1296 717, 1296 718 C 1296 720, 1298 719, 1310 716 C 1326 710, 1325 711, 1325 712 C 1325 713, 1320 715, 1311 718 C 1297 723, 1296 723, 1295 726 C 1294 733, 1298 733, 1315 728 C 1329 723, 1329 724, 1329 725 C 1329 726, 1326 728, 1321 729 C 1303 734, 1299 737, 1300 744 C 1301 748, 1303 747, 1304 743 C 1304 739, 1306 738, 1318 734 C 1331 730, 1333 729, 1333 725 C 1333 719, 1330 719, 1315 724 C 1299 729, 1300 729, 1299 727 C 1299 727, 1304 725, 1312 722 C 1320 720, 1326 717, 1327 716 C 1330 714, 1329 710, 1327 709 C 1324 707, 1326 706, 1310 712 M 1333 733 C 1333 733, 1333 734, 1333 735 C 1333 736, 1331 738, 1325 740 C 1305 746, 1297 756, 1297 772 C 1296 802, 1331 816, 1352 795 C 1360 787, 1363 774, 1360 763 C 1357 753, 1342 739, 1340 745 C 1340 745, 1342 747, 1344 749 C 1354 754, 1359 767, 1357 777 C 1350 812, 1300 808, 1300 772 C 1300 758, 1307 749, 1324 744 C 1335 740, 1338 738, 1337 735 C 1336 732, 1333 731, 1333 733 M 1426 765 C 1413 773, 1412 773, 1414 775 C 1415 776, 1418 774, 1427 769 C 1433 765, 1439 762, 1440 762 C 1443 762, 1440 764, 1430 771 C 1414 780, 1412 782, 1417 786 C 1420 789, 1420 789, 1434 780 C 1447 773, 1448 772, 1448 774 C 1448 775, 1443 778, 1437 782 C 1425 789, 1422 793, 1424 798 C 1425 802, 1428 802, 1427 797 C 1427 793, 1427 793, 1442 783 C 1452 777, 1454 775, 1450 771 C 1448 768, 1447 768, 1433 776 C 1419 785, 1419 785, 1419 783 C 1419 782, 1425 778, 1432 774 C 1444 766, 1447 764, 1444 760 C 1442 757, 1438 758, 1426 765 M 1454 780 C 1453 781, 1453 782, 1453 783 C 1454 784, 1453 786, 1447 789 C 1431 798, 1427 805, 1427 820 C 1427 858, 1480 865, 1490 828 C 1494 811, 1482 791, 1466 789 C 1462 788, 1463 791, 1468 793 C 1482 798, 1490 816, 1485 830 C 1474 860, 1430 851, 1430 820 C 1430 808, 1435 800, 1449 792 C 1457 787, 1459 786, 1457 782 C 1456 779, 1455 778, 1454 780 M 1227 790 C 1224 792, 1229 793, 1242 793 C 1251 793, 1256 793, 1256 794 C 1256 795, 1251 795, 1242 795 C 1226 795, 1225 795, 1223 799 C 1220 805, 1223 806, 1242 806 C 1254 806, 1256 806, 1256 808 C 1256 809, 1254 809, 1242 809 C 1227 809, 1225 810, 1223 815 C 1221 821, 1225 822, 1227 817 L 1228 814 1243 813 C 1258 812, 1260 812, 1260 808 C 1260 803, 1259 803, 1242 802 C 1222 801, 1222 800, 1242 799 C 1251 799, 1258 799, 1259 798 C 1260 796, 1260 792, 1259 790 C 1258 789, 1228 788, 1227 790 M 1256 817 C 1256 820, 1256 820, 1244 820 C 1221 821, 1208 834, 1209 854 C 1211 888, 1257 897, 1271 865 C 1276 855, 1273 839, 1265 831 C 1261 827, 1259 829, 1263 833 C 1270 841, 1272 856, 1267 865 C 1253 892, 1213 882, 1213 852 C 1213 835, 1224 825, 1245 824 C 1258 823, 1260 822, 1260 818 C 1259 815, 1257 814, 1256 817"/><path fill="#fff" fill-rule="evenodd" d="M 1195 397 C 1160 403, 1141 439, 1156 471 C 1170 500, 1212 510, 1237 489 L 1241 486 1239 483 L 1236 481 1232 484 C 1222 491, 1208 494, 1196 492 C 1150 483, 1146 420, 1190 405 C 1203 401, 1221 404, 1232 412 L 1236 415 1239 413 L 1241 411 1239 408 C 1231 400, 1209 394, 1195 397 M 1499 397 C 1461 406, 1446 454, 1473 483 C 1490 501, 1520 505, 1541 492 C 1549 487, 1549 486, 1547 483 L 1544 481 1539 484 C 1522 498, 1495 495, 1479 479 C 1463 462, 1463 433, 1480 416 C 1495 401, 1523 399, 1540 412 L 1544 415 1547 413 C 1549 411, 1549 411, 1547 409 C 1538 399, 1516 394, 1499 397 M 10 448 L 10 499 22 499 L 34 499 34 478 L 34 457 57 457 L 80 457 80 478 L 80 499 92 499 L 104 499 104 448 L 104 397 92 397 L 80 397 80 417 L 80 437 57 437 L 34 437 34 417 L 34 397 22 397 L 10 397 10 448 M 129 447 C 117 475, 106 498, 106 498 C 106 499, 111 499, 118 499 L 130 498 135 488 L 139 477 163 477 L 186 478 191 488 L 195 499 208 499 C 219 499, 220 499, 220 497 C 219 496, 209 473, 197 446 L 175 398 163 397 L 151 397 129 447 M 222 448 L 222 499 234 499 L 246 499 246 485 L 246 471 257 471 L 268 471 278 485 L 287 499 300 499 L 313 499 309 493 C 306 489, 301 482, 297 476 L 290 466 294 465 C 313 455, 317 426, 302 410 C 292 399, 283 397, 248 397 L 222 397 222 448 M 315 448 L 315 499 343 499 C 368 499, 373 499, 379 497 C 432 484, 431 410, 377 398 C 372 397, 363 397, 343 397 L 315 397 315 448 M 409 398 C 410 399, 417 422, 426 449 L 442 499 455 499 L 468 498 479 465 C 485 447, 491 432, 491 432 C 491 432, 497 447, 503 466 L 513 499 526 499 L 539 498 556 449 C 565 421, 572 398, 572 398 C 572 397, 567 397, 561 397 L 550 398 538 433 C 532 452, 526 468, 526 468 C 526 468, 523 461, 521 453 C 518 445, 513 429, 509 418 L 503 397 492 397 L 480 397 469 433 C 462 452, 457 468, 457 468 C 456 468, 451 452, 445 432 L 434 397 421 397 C 412 397, 409 397, 409 398 M 577 448 L 577 499 589 499 L 601 499 601 448 L 601 397 589 397 L 577 397 577 448 M 607 448 L 607 499 619 499 L 631 499 631 485 L 631 471 642 471 L 653 471 662 485 L 672 499 685 499 C 691 499, 697 499, 697 498 C 697 498, 692 491, 686 482 L 675 467 681 463 C 700 450, 701 419, 682 406 C 672 398, 669 398, 636 397 L 607 397 607 448 M 706 448 L 706 499 746 499 L 785 499 785 490 L 785 480 757 480 L 729 480 729 468 L 729 457 753 457 L 777 457 777 448 L 777 438 753 438 L 729 438 729 427 L 729 416 756 416 L 783 416 783 406 L 783 397 744 397 L 706 397 706 448 M 792 448 L 792 499 820 499 C 845 499, 850 499, 856 497 C 909 484, 908 410, 854 398 C 849 397, 840 397, 820 397 L 792 397 792 448 M 910 448 L 910 499 945 499 L 980 499 980 496 L 980 492 948 492 L 917 492 917 472 L 917 451 944 451 L 972 450 972 447 L 972 444 945 444 L 917 444 917 424 L 917 404 948 404 L 978 404 978 400 L 978 397 944 397 L 910 397 910 448 M 996 448 L 996 499 1029 499 L 1062 499 1062 496 L 1062 492 1032 492 L 1003 492 1003 444 L 1003 397 1000 397 L 996 397 996 448 M 1075 448 L 1075 499 1110 499 L 1146 499 1146 496 L 1146 492 1114 492 L 1083 492 1083 472 L 1083 451 1110 451 L 1138 450 1138 447 L 1138 444 1111 444 L 1083 444 1083 424 L 1083 404 1114 404 L 1144 404 1144 400 L 1144 397 1110 397 L 1075 397 1075 448 M 1250 400 L 1250 404 1269 404 L 1287 404 1287 452 L 1287 499 1291 499 L 1295 499 1295 452 L 1295 404 1313 404 L 1332 404 1332 400 L 1332 397 1291 397 L 1250 397 1250 400 M 1344 448 L 1344 499 1348 499 L 1352 499 1352 482 L 1352 466 1368 466 C 1377 466, 1386 466, 1388 465 C 1390 465, 1391 465, 1403 482 L 1414 499 1419 499 C 1421 499, 1423 499, 1423 499 C 1423 498, 1418 491, 1411 482 C 1397 462, 1398 464, 1403 461 C 1427 451, 1429 415, 1406 403 C 1397 398, 1392 397, 1367 397 L 1344 397 1344 448 M 1437 448 L 1437 499 1441 499 L 1445 499 1445 448 L 1445 397 1441 397 L 1437 397 1437 448 M 1352 432 L 1352 459 1372 459 C 1395 458, 1399 457, 1405 452 C 1416 443, 1417 423, 1407 413 C 1400 406, 1396 405, 1373 404 L 1352 404 1352 432 M 246 434 L 246 452 257 452 C 279 452, 287 447, 287 434 C 287 421, 279 416, 256 416 L 246 416 246 434 M 339 448 L 339 480 350 480 C 381 480, 393 471, 393 448 C 394 426, 381 416, 349 416 L 339 416 339 448 M 631 434 L 631 452 645 452 C 664 451, 672 446, 672 434 C 672 422, 664 417, 645 416 L 631 416 631 434 M 816 448 L 816 480 827 480 C 858 480, 870 471, 870 448 C 871 426, 858 416, 826 416 L 816 416 816 448 M 155 440 L 147 458 155 459 C 159 459, 167 459, 171 459 L 179 458 171 440 C 167 430, 163 422, 163 422 C 163 422, 159 430, 155 440 M 32 565 C 19 570, 14 586, 22 598 C 27 607, 42 611, 52 606 L 56 604 57 595 C 57 587, 57 586, 56 586 C 54 586, 54 587, 54 593 C 54 602, 52 604, 43 605 C 29 606, 20 595, 22 581 C 25 569, 43 563, 52 570 C 54 572, 55 572, 56 571 C 59 566, 40 562, 32 565 M 81 586 C 81 605, 81 608, 82 608 C 84 608, 84 607, 84 601 L 84 594 91 594 C 95 594, 98 594, 99 593 C 100 593, 102 596, 106 600 C 109 605, 112 608, 113 608 C 115 608, 114 607, 111 602 C 105 593, 104 593, 107 591 C 114 588, 116 576, 111 570 C 107 565, 103 564, 92 564 L 81 564 81 586 M 144 566 C 136 570, 131 578, 132 588 C 134 612, 170 616, 177 592 C 182 574, 163 558, 144 566 M 198 580 C 199 603, 201 608, 216 608 C 230 608, 233 603, 234 580 C 234 564, 234 564, 232 564 C 230 564, 230 564, 230 579 C 230 600, 228 604, 217 605 C 205 606, 202 601, 202 580 C 202 564, 202 564, 200 564 C 198 564, 198 564, 198 580 M 258 586 C 258 607, 258 608, 260 608 C 262 608, 262 607, 262 589 L 262 571 277 589 C 285 600, 292 608, 293 608 C 294 608, 294 603, 294 586 C 294 567, 294 564, 293 564 C 291 564, 291 567, 291 583 L 290 601 276 583 C 267 571, 261 564, 260 564 C 258 564, 258 566, 258 586 M 319 586 L 320 608 329 608 C 350 609, 360 602, 360 586 C 360 571, 351 564, 330 564 L 319 564 319 586 M 381 586 L 381 608 396 608 C 410 608, 412 608, 412 606 C 412 605, 410 605, 398 605 L 385 605 385 596 L 385 587 396 587 C 406 587, 408 587, 408 586 C 408 584, 406 584, 396 584 L 385 584 385 576 L 385 567 398 567 C 409 567, 411 567, 411 566 C 411 564, 409 564, 396 564 L 381 564 381 586 M 433 586 L 433 608 446 608 C 466 607, 474 601, 474 586 C 474 571, 465 564, 444 564 L 433 564 433 586 M 521 586 C 521 607, 521 608, 523 608 C 525 608, 525 607, 525 586 C 525 565, 525 564, 523 564 C 521 564, 521 565, 521 586 M 550 586 C 550 605, 550 608, 552 608 C 553 608, 553 605, 553 589 C 553 578, 553 571, 554 571 C 554 572, 561 580, 569 590 C 577 600, 584 608, 585 608 C 586 608, 586 605, 586 586 C 586 565, 586 564, 584 564 C 582 564, 582 565, 582 583 L 582 601 567 583 C 559 572, 552 564, 551 564 C 550 564, 550 568, 550 586 M 637 586 L 637 608 652 608 C 666 608, 668 608, 668 606 C 668 605, 666 605, 654 605 L 641 605 641 596 L 641 587 652 587 C 662 587, 664 587, 664 586 C 664 584, 662 584, 652 584 L 641 584 641 576 L 641 567 654 567 C 665 567, 667 567, 667 566 C 667 564, 665 564, 652 564 L 637 564 637 586 M 686 567 C 687 568, 690 573, 693 577 L 699 585 691 596 C 682 608, 682 608, 685 608 C 686 608, 690 604, 694 598 L 701 588 709 598 C 714 605, 717 608, 718 608 C 720 608, 720 608, 718 605 C 707 590, 704 586, 704 585 C 704 585, 707 580, 711 574 C 717 566, 719 564, 717 564 C 716 564, 713 567, 708 573 C 705 578, 702 582, 701 582 C 701 582, 698 578, 694 573 C 690 567, 687 564, 686 564 C 684 564, 684 564, 686 567 M 747 565 C 730 572, 728 597, 745 605 C 753 609, 767 608, 770 603 C 772 601, 770 600, 765 603 C 760 606, 753 606, 747 603 C 734 597, 734 576, 747 569 C 753 566, 763 567, 767 570 C 770 572, 772 571, 770 568 C 767 564, 753 563, 747 565 M 792 586 L 792 608 808 608 C 821 608, 823 608, 823 606 C 823 605, 821 605, 810 605 L 796 605 796 596 L 796 587 808 587 C 817 587, 819 587, 819 586 C 819 584, 817 584, 808 584 L 796 584 796 576 L 796 567 809 567 C 820 567, 822 567, 822 566 C 822 564, 820 564, 807 564 L 792 564 792 586 M 844 586 L 844 608 858 608 C 871 608, 873 608, 873 606 C 873 605, 871 605, 860 605 L 848 605 848 584 C 848 565, 848 564, 846 564 C 844 564, 844 565, 844 586 M 891 586 L 891 608 906 608 C 918 608, 920 608, 920 606 C 920 605, 918 605, 907 605 L 894 605 894 584 C 894 567, 894 564, 892 564 C 891 564, 891 567, 891 586 M 938 586 L 938 608 953 608 C 966 608, 968 608, 968 606 C 968 605, 966 605, 954 605 L 941 605 941 596 L 941 587 953 587 C 962 587, 965 587, 965 586 C 964 585, 961 584, 953 584 L 941 584 941 575 L 941 567 954 567 C 965 567, 967 567, 967 566 C 967 564, 965 564, 952 564 L 938 564 938 586 M 990 586 C 990 605, 990 608, 991 608 C 993 608, 993 605, 993 589 L 994 571 1008 589 C 1016 599, 1023 608, 1024 608 C 1026 608, 1026 606, 1026 586 C 1026 565, 1026 564, 1024 564 C 1022 564, 1022 565, 1022 582 L 1022 601 1007 582 C 999 572, 992 564, 991 564 C 990 564, 990 568, 990 586 M 1060 566 C 1042 574, 1043 599, 1060 606 C 1067 609, 1078 608, 1084 604 C 1087 601, 1084 599, 1080 602 C 1074 606, 1063 606, 1057 601 C 1040 585, 1058 558, 1079 569 C 1084 572, 1086 571, 1084 569 C 1082 564, 1067 563, 1060 566 M 1106 586 L 1106 608 1121 608 C 1134 608, 1136 608, 1136 606 C 1136 605, 1134 605, 1122 605 L 1109 605 1109 596 L 1109 587 1121 587 C 1131 587, 1133 587, 1133 586 C 1133 584, 1131 584, 1121 584 L 1109 584 1109 576 L 1109 567 1122 567 C 1133 567, 1135 567, 1135 566 C 1135 564, 1133 564, 1120 564 L 1106 564 1106 586 M 84 579 L 84 591 91 591 C 104 591, 110 588, 111 580 C 112 571, 106 567, 93 567 L 84 567 84 579 M 146 568 C 127 577, 135 606, 156 605 C 181 603, 179 567, 154 567 C 152 567, 148 568, 146 568 M 323 586 L 323 605 333 605 C 350 604, 358 598, 357 584 C 356 573, 349 568, 333 567 L 323 567 323 586 M 437 586 L 437 605 445 605 C 460 605, 468 601, 470 591 C 474 577, 464 567, 446 567 L 437 567 437 586"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.3V17h16V7.3l-8 5.2zM5.4 7l6.6 4.3L18.6 7z"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Hardwired Electric, home"><svg role="img" aria-label="Hardwired Electric — Grounded in Excellence"><use href="#logo"/></svg></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="https://hardwiredelectricco.com/electrical-repairs">Services</a></li>
+        <li><a href="https://hardwiredelectricco.com/generator-installations">Generators</a></li>
+        <li><a href="https://hardwiredelectricco.com/lighting-control-system">Lighting</a></li>
+        <li><a href="https://hardwiredelectricco.com/meet-our-employees">Team</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-copper" href="tel:+12622663687"><svg class="ico"><use href="#i-phone"/></svg><span class="long">Call&nbsp;</span>(262)&nbsp;266-3687</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1" style="padding:0">
+  <img src="img/pergola-lighting.jpg" width="1800" height="1350" alt="A backyard pergola at dusk with lights glowing at the top of each white column, a stone fireplace, and small step lights set into the flagstone patio.">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="label">Lake Country · Southeastern Wisconsin</span>
+      <h1 id="h1">Grounded in <span class="cu">excellence.</span></h1>
+      <p class="lede">A family-owned, licensed electrical contractor. Every job starts with a conversation with owner and master electrician Nathan Whitt, then a free estimate, and the labor and workmanship carry a lifetime warranty.</p>
+      <div class="ctas">
+        <a class="btn btn-copper" href="tel:+12622663687"><svg class="ico"><use href="#i-phone"/></svg>Call (262) 266-3687</a>
+        <a class="btn btn-line" href="mailto:hardwiredllc@outlook.com?subject=Free%20estimate%20request"><svg class="ico"><use href="#i-mail"/></svg>Request a free estimate</a>
+      </div>
+    </div>
+    <div>
+      <p class="cap">Pergola and landscape lighting, from the Hardwired Electric website.</p>
+    </div>
+  </div>
+</section>
+
+<div class="status" id="status" aria-live="polite">
+  <div class="wrap">
+    <div class="lamp">
+      <span class="bulb" aria-hidden="true"><svg><use href="#i-bulb"/></svg></span>
+      <p class="state" id="state" style="margin:0">Monday–Friday, 7 A.M. – 5 P.M.<small id="state-sub">Hours of Operation</small></p>
+    </div>
+    <ul class="week" id="week" aria-label="Weekly hours">
+      <li data-d="0">Sun<span>Closed</span></li>
+      <li data-d="1" class="on">Mon<span>7–5</span></li>
+      <li data-d="2" class="on">Tue<span>7–5</span></li>
+      <li data-d="3" class="on">Wed<span>7–5</span></li>
+      <li data-d="4" class="on">Thu<span>7–5</span></li>
+      <li data-d="5" class="on">Fri<span>7–5</span></li>
+      <li data-d="6">Sat<span>Closed</span></li>
+    </ul>
+    <a class="btn btn-copper" href="tel:+12622663687"><svg class="ico"><use href="#i-phone"/></svg>Call the office</a>
+  </div>
+</div>
+
+<div class="proof">
+  <div class="wrap">
+    <ul>
+      <li><b>Over 25 years</b><span>of experience in Lake Country and greater Milwaukee</span></li>
+      <li><b>Lifetime warranty</b><span>on labor and workmanship</span></li>
+      <li><b>Generac dealer</b><span>and Lutron lighting controls</span></li>
+      <li><b>5.0 ★ on Google</b><span><a href="https://www.google.com/maps/place/Hardwired+Electric/@43.1927234,-88.0415015,17z/data=!4m6!3m5!1s0x671aebb84545a219:0x9cd923bd90e32105!8m2!3d43.1927234!4d-88.0415015!16s%2Fg%2F11s890km1z">Read the reviews</a></span></li>
+    </ul>
+  </div>
+</div>
+
+<section id="services" aria-labelledby="doors-h">
+  <div class="wrap">
+    <div class="doors-head">
+      <div>
+        <span class="label">What we do</span>
+        <h2 id="doors-h">Three ways in. <span class="cu">One owner</span> on the call.</h2>
+      </div>
+      <p>Hardwired Electric meets all building codes and standards, and all services comply with the Wisconsin state electrical code. Pick the door that fits your project.</p>
+    </div>
+    <div class="doors">
+      <article class="door">
+        <span class="n" aria-hidden="true">01</span>
+        <h3>Generators</h3>
+        <p>A Generac dealer offering installations, parts and maintenance, starting with the critical-circuit generator, from the essentials to the entire house.</p>
+        <ul><li>Air-cooled generators</li><li>Maintenance program with a simulated outage under load</li><li>Five-year standard warranty on the units</li></ul>
+        <a href="https://hardwiredelectricco.com/generator-installations">Generator details →</a>
+      </article>
+      <article class="door">
+        <span class="n" aria-hidden="true">02</span>
+        <h3>Lighting &amp; controls</h3>
+        <p>Landscape and commercial lighting, plus lighting controls you can run from a phone or tablet. Caseta by Lutron works with old wiring as well as new.</p>
+        <ul><li>Landscape lighting</li><li>Commercial lighting</li><li>Lutron / Caseta with Google, Alexa or Siri</li></ul>
+        <a href="https://hardwiredelectricco.com/lighting-control-system">Lighting controls →</a>
+      </article>
+      <article class="door">
+        <span class="n" aria-hidden="true">03</span>
+        <h3>Service &amp; building</h3>
+        <p>Repairs and upgrades for the house you have, and wiring for the one you're building or remodeling.</p>
+        <ul><li>Electrical repair and service work</li><li>Service upgrades</li><li>Remodeling and new construction</li></ul>
+        <a href="https://hardwiredelectricco.com/electrical-repairs">Repairs &amp; service →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="owner" aria-labelledby="owner-h">
+  <div class="wrap">
+    <div>
+      <span class="label">Family-owned in Lake Country</span>
+      <h2 id="owner-h">You talk to the owner. From the first call.</h2>
+      <p>Nathan Whitt started his electrical career in 1998. He holds master electrician and electrical contractor licenses, became a licensed distributor and technician for Generac, and specializes in Lutron lighting controls. He and his family live in Lake Country.</p>
+      <div class="who">
+        <img src="img/nathan-whitt.jpg" width="296" height="438" alt="Nathan Whitt, owner of Hardwired Electric, smiling in a gray cap and T-shirt.">
+        <div><b>Nathan Whitt</b><span>Master Electrician / Owner</span></div>
+      </div>
+    </div>
+    <ol class="steps" aria-label="How a job works">
+      <li><div><b>A conversation with Nathan</b><span>Every service begins with you and the owner, a master electrician.</span></div></li>
+      <li><div><b>A free estimate</b><span>Free consultations and estimates.</span></div></li>
+      <li><div><b>Open communication</b><span>Direct access to the owner throughout the project.</span></div></li>
+      <li><div><b>Cleaned up as we go</b><span>Cleaning up after ourselves as we go, with a lifetime warranty on labor and workmanship.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="reviews" aria-labelledby="rev-h">
+  <div class="wrap rc">
+    <div>
+      <span class="label">Kind words</span>
+      <h2 id="rev-h">Neighbors <span class="cu">keep the lights on.</span></h2>
+      <div class="rating"><span class="big">5.0</span><span class="star" aria-hidden="true">★</span><a href="https://www.google.com/maps/place/Hardwired+Electric/@43.1927234,-88.0415015,17z/data=!4m6!3m5!1s0x671aebb84545a219:0x9cd923bd90e32105!8m2!3d43.1927234!4d-88.0415015!16s%2Fg%2F11s890km1z">on Google · read the reviews</a></div>
+      <ul class="themes" aria-label="Common review themes"><li>Whole-house Generac installs</li><li>Great communicators</li><li>Thorough clean-up</li></ul>
+      <div class="quotes">
+        <blockquote class="wide"><p>“Hardwired installed my Generac. Not only did they do a wonderful job (the inspector was impressed) but they have been a pleasure with which to work. A slight issue was immediately corrected and they contacted me after several months to make sure all was well. Professional, meticulous and personable. I definitely would recommend them.”</p><cite>B.Z.</cite></blockquote>
+        <blockquote><p>“Nathan Whitt has provided extraordinary service and expertise for our Generac installation. Many thanks to Kristen as well.”</p><cite>M.K.</cite></blockquote>
+        <blockquote><p>“… Nathan and Kristen were very responsive and considerate. The work was done with very high quality and on the timeline and price promised. …”</p><cite>C.G.</cite></blockquote>
+      </div>
+      <p class="note">Testimonials as published on hardwiredelectricco.com.</p>
+    </div>
+    <aside class="card" id="contact" aria-labelledby="c-h">
+      <h3 id="c-h">Free consultations and estimates</h3>
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+12622663687">(262) 266-3687</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:hardwiredllc@outlook.com">hardwiredllc@outlook.com</a></dd></div>
+        <div><dt>Hours of operation</dt><dd>Monday–Friday, 7 A.M. – 5 P.M.</dd></div>
+        <div><dt>Serving</dt><dd>Lake Country and the greater Milwaukee area</dd></div>
+      </dl>
+      <a class="btn btn-dark" href="tel:+12622663687"><svg class="ico"><use href="#i-phone"/></svg>Call (262) 266-3687</a>
+      <a class="btn btn-copper" href="mailto:hardwiredllc@outlook.com?subject=Free%20estimate%20request"><svg class="ico"><use href="#i-mail"/></svg>Email for an estimate</a>
+      <div class="social"><a href="https://www.facebook.com/HardwiredELEC">Facebook</a><a href="https://www.instagram.com/hardwiredelectric/">Instagram</a></div>
+    </aside>
+  </div>
+</section>
+
+<section class="closer" aria-labelledby="close-h">
+  <div class="wrap">
+    <span class="label">A first look</span>
+    <h2 id="close-h">The same family shop, wired for 2026.</h2>
+    <p>This is a first look at a new Hardwired Electric website: the owner, the warranty and the reviews up front, and one tap to call.</p>
+    <div class="ctas">
+      <a class="btn btn-copper" href="tel:+12622663687"><svg class="ico"><use href="#i-phone"/></svg>Call (262) 266-3687</a>
+      <a class="btn btn-line" href="https://hardwiredelectricco.com/meet-our-employees">Meet the team</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand" aria-hidden="true"><svg><use href="#logo"/></svg></span>
+    <p>Website by Cream City Post · Independent website concept, not the official Hardwired Electric site. Logo redrawn; services, hours, testimonials and photos from hardwiredelectricco.com; rating from Google.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-copper" href="tel:+12622663687"><svg class="ico"><use href="#i-phone"/></svg>Call (262) 266-3687</a>
+  <a class="btn btn-line" href="mailto:hardwiredllc@outlook.com?subject=Free%20estimate%20request">Free estimate</a>
+</div>
+
+<script>
+(function(){
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var get=function(t){for(var i=0;i<parts.length;i++){if(parts[i].type===t)return parts[i].value;}return '';};
+    var days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var d=days.indexOf(get('weekday')); var h=parseInt(get('hour'),10)%24; var m=parseInt(get('minute'),10);
+    var mins=h*60+m, weekday=d>=1&&d<=5, open=weekday&&mins>=420&&mins<1020;
+    var box=document.getElementById('status'), st=document.getElementById('state');
+    var li=document.querySelector('#week li[data-d="'+d+'"]'); if(li)li.classList.add('today');
+    var sub;
+    if(open){box.classList.add('open');
+      var left=1020-mins; sub='Closes at 5 P.M. today'+(left<=60?' (in '+left+' min)':'')+'. Call now and talk to the office.';
+      st.firstChild.nodeValue='Open now';
+    }else{
+      var next;
+      if(weekday&&mins<420)next='today at 7 A.M.';
+      else if(d>=1&&d<=4)next='tomorrow at 7 A.M.';
+      else next='Monday at 7 A.M.';
+      st.firstChild.nodeValue='Closed right now';
+      sub='Opens '+next+' (Central time). Email anytime.';
+    }
+    document.getElementById('state-sub').textContent=sub;
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
