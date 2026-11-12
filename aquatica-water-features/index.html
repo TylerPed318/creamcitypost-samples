@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Aquatica — Website concept by Cream City Post</title>
+<meta name="description" content="Ponds, waterfalls and water gardens designed and built by Aquatica of Wales, WI.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#140601; --night-2:#1A1210; --night-3:#261b17;
+  --moss:#577907; --moss-dark:#405a05; --teal:#2E7D7A; --teal-light:#7cc4c0;
+  --stone:#B9B1A3; --glow:#F2C46D; --paper:#F6F3EC; --white:#FFFFFF;
+  --ink:#1f1915; --muted:#5d554d; --on-dark-muted:#c9c1b4;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --radius:18px; --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-variant-numeric:lining-nums;margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--teal)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.eyebrow{font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin:0 0 14px}
+:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:6px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:.75em 1.4em;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-glow{background:var(--glow);color:var(--night)}
+.btn-glow:hover{background:#f7d58f;transform:translateY(-1px)}
+.btn-line{border:1.5px solid rgba(246,243,236,.45);color:var(--paper)}
+.btn-line:hover{border-color:var(--glow);color:var(--glow)}
+.btn-moss{background:var(--moss-dark);color:var(--white)}
+.btn-moss:hover{background:var(--moss)}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(20,6,1,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(185,177,163,.18)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:74px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--paper)}
+.brand svg{width:46px;height:auto;flex:none}
+.brand span{font-family:var(--serif);font-weight:600;font-size:1.65rem;letter-spacing:.24em;padding-top:2px}
+.nav{display:flex;align-items:center;gap:clamp(12px,2vw,26px)}
+.nav a.link{color:var(--on-dark-muted);text-decoration:none;font-size:.93rem;padding:12px 2px}
+.nav a.link:hover{color:var(--glow)}
+.top .btn{min-height:44px;padding:.55em 1.1em;font-size:.95rem}
+@media (max-width:900px){.nav a.link{display:none}}
+@media (max-width:420px){.brand span{font-size:1.3rem;letter-spacing:.18em}.brand svg{width:38px}.top .btn .long{display:none}.top .btn{padding:.55em .8em}}
+
+/* hero */
+.hero{background:var(--night);color:var(--paper);position:relative;overflow:hidden;padding:clamp(48px,7vw,96px) 0 0}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center;position:relative;z-index:1}
+.hero .eyebrow{color:var(--teal-light)}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,5.4vw,4.4rem);line-height:1.02;margin:0 0 22px;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--glow);font-weight:500}
+.hero .sub{color:var(--on-dark-muted);font-size:1.08rem;max-width:34em;margin:0 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.frame{position:relative;justify-self:end;width:100%;max-width:560px}
+.frame .ripples{position:absolute;left:50%;top:50%;width:150%;aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none}
+.frame .ripples circle{fill:none;stroke:var(--glow);stroke-opacity:.16;transform-origin:center;animation:ripple 9s ease-out infinite}
+.frame .ripples circle:nth-child(2){animation-delay:-3s}
+.frame .ripples circle:nth-child(3){animation-delay:-6s}
+@keyframes ripple{from{transform:scale(.55);stroke-opacity:.32}to{transform:scale(1);stroke-opacity:0}}
+.frame figure{margin:0;position:relative;border-radius:50% 50% var(--radius) var(--radius)/38% 38% var(--radius) var(--radius);overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);border:1px solid rgba(242,196,109,.35)}
+.frame img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:42% 50%}
+.frame figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 20px 14px;font-size:.85rem;color:var(--paper);background:linear-gradient(transparent,rgba(20,6,1,.85))}
+.proof{position:relative;z-index:1;margin-top:clamp(48px,6vw,80px);border-top:1px solid rgba(185,177,163,.2);background:var(--night-2)}
+.proof ul{list-style:none;margin:0 auto;padding:22px clamp(16px,4vw,40px);max-width:var(--wrap);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.proof li{display:flex;flex-direction:column;gap:2px;padding-left:16px;border-left:2px solid var(--moss)}
+.proof b{font-family:var(--serif);font-size:1.45rem;font-weight:600;color:var(--paper);line-height:1.15}
+.proof b .star{color:var(--glow)}
+.proof span{font-size:.86rem;color:var(--on-dark-muted)}
+.proof a{color:inherit}
+@media (max-width:860px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.frame{justify-self:center;max-width:460px}.proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* path picker */
+.paths{padding:clamp(64px,8vw,110px) 0;background:var(--paper)}
+.paths .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 60px;align-items:end;margin-bottom:40px}
+.paths .eyebrow{color:var(--moss-dark)}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,4vw,3.2rem);line-height:1.05;margin:0;color:var(--night)}
+.paths .head p{margin:0;color:var(--muted)}
+.stones{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.stone{appearance:none;border:1.5px solid var(--stone);background:var(--white);color:var(--night);font:600 1rem var(--sans);min-height:52px;padding:.6em 1.3em .6em .8em;border-radius:999px;display:inline-flex;align-items:center;gap:.65em;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.stone .dot{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--paper);color:var(--teal)}
+.stone .dot svg{width:18px;height:18px}
+.stone:hover{border-color:var(--teal)}
+.stone[aria-selected="true"]{background:var(--night);border-color:var(--night);color:var(--paper)}
+.stone[aria-selected="true"] .dot{background:var(--glow);color:var(--night)}
+.panel{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);background:var(--white);border-radius:var(--radius);padding:clamp(24px,4vw,48px);box-shadow:0 1px 0 rgba(0,0,0,.04),0 18px 40px -24px rgba(20,6,1,.35);position:relative;overflow:hidden}
+.panel[hidden]{display:none}
+.panel::after{content:"";position:absolute;right:-90px;top:-90px;width:260px;height:260px;border-radius:50%;border:1px solid rgba(46,125,122,.18);box-shadow:0 0 0 30px rgba(46,125,122,.05),0 0 0 62px rgba(46,125,122,.035);pointer-events:none}
+.panel h3{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.2rem);font-weight:600;margin:0 0 10px;color:var(--night);line-height:1.1}
+.panel p{margin:0 0 14px;color:var(--muted)}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;position:relative;z-index:1}
+.panel li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;background:var(--paper);border-radius:12px;font-size:.96rem}
+.panel li::before{content:"";flex:none;width:10px;height:10px;margin-top:.5em;border-radius:50%;border:2px solid var(--teal);box-shadow:0 0 0 3px rgba(46,125,122,.15)}
+.panel .note{font-size:.88rem;color:var(--muted);margin-top:16px}
+.panel .act{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:820px){.paths .head,.panel{grid-template-columns:minmax(0,1fr)}}
+
+/* work */
+.work{background:var(--night-2);color:var(--paper);padding:clamp(64px,8vw,110px) 0}
+.work .eyebrow{color:var(--teal-light)}
+.work h2{color:var(--paper);max-width:16em}
+.grid3{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:40px;align-items:start}
+.grid3 figure{margin:0}
+.grid3 img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.grid3 figure:nth-child(2){margin-top:48px}
+.grid3 figure:nth-child(3){margin-top:96px}
+.grid3 figcaption{font-size:.88rem;color:var(--on-dark-muted);margin-top:10px;padding-left:12px;border-left:2px solid var(--moss)}
+.work .more{margin-top:34px;color:var(--on-dark-muted)}
+.work .more a{color:var(--glow)}
+@media (max-width:820px){.grid3{grid-template-columns:minmax(0,1fr)}.grid3 figure:nth-child(n){margin-top:0}.grid3 img{aspect-ratio:3/2}}
+
+/* specialist + contact */
+.spec{padding:clamp(64px,8vw,110px) 0;background:var(--paper)}
+.spec .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,5vw,64px);align-items:start}
+.spec .eyebrow{color:var(--moss-dark)}
+blockquote{margin:26px 0 8px;font-family:var(--serif);font-style:italic;font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.3;color:var(--night);padding-left:22px;border-left:3px solid var(--glow)}
+.cite{font-size:.85rem;color:var(--muted);padding-left:25px;margin:0 0 30px}
+.rating{display:flex;align-items:center;gap:16px;margin:0 0 26px}
+.rating .num{font-family:var(--serif);font-size:3.4rem;font-weight:700;color:var(--night);line-height:1}
+.rating .num .star{color:#b8860b;font-size:2rem;vertical-align:.4em;margin-left:4px}
+.rating a{display:inline-flex;align-items:center;min-height:44px;color:var(--teal);font-weight:600}
+.promises{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.promises li{background:var(--white);border-radius:14px;padding:16px 18px;border-top:3px solid var(--teal)}
+.promises b{display:block;font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--night);line-height:1.2;margin-bottom:4px}
+.promises span{font-size:.9rem;color:var(--muted)}
+.awards{margin-top:22px;font-size:.9rem;color:var(--muted)}
+.awards b{color:var(--ink)}
+.fine{font-size:.82rem;color:var(--muted);margin-top:14px}
+.card{background:var(--night);color:var(--paper);border-radius:var(--radius);padding:clamp(24px,3.5vw,38px);position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:50%;bottom:-160px;width:420px;height:420px;transform:translateX(-50%);border-radius:50%;border:1px solid rgba(242,196,109,.18);box-shadow:0 0 0 40px rgba(242,196,109,.04),0 0 0 80px rgba(242,196,109,.025);pointer-events:none}
+.card .eyebrow{color:var(--glow)}
+.card h3{font-family:var(--serif);font-size:2rem;font-weight:600;margin:0 0 18px;line-height:1.1}
+.card dl{margin:0 0 24px;display:grid;gap:14px;position:relative}
+.card dt{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stone)}
+.card dd{margin:2px 0 0}
+.card dd a{color:var(--paper);text-decoration-color:rgba(242,196,109,.6);text-underline-offset:3px;display:inline-block;padding:6px 0}
+.card dd a:hover{color:var(--glow)}
+.card .act{display:grid;gap:10px;position:relative}
+@media (max-width:900px){.spec .wrap{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.promises{grid-template-columns:minmax(0,1fr)}}
+
+/* closer + footer */
+.closer{background:var(--night);color:var(--paper);text-align:left;padding:clamp(56px,7vw,90px) 0}
+.closer .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.closer h2{color:var(--paper);font-size:clamp(1.9rem,3.4vw,2.7rem)}
+.closer p{color:var(--on-dark-muted);margin:8px 0 0;max-width:36em}
+footer{background:#0d0400;color:var(--stone);font-size:.84rem;padding:26px 0 30px}
+footer .wrap{display:grid;gap:6px}
+footer a{color:var(--stone)}
+
+/* mobile call bar */
+.callbar{display:none}
+@media (max-width:600px){
+  .callbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,6,1,.97);border-top:1px solid rgba(242,196,109,.3)}
+  .callbar .btn{min-height:48px;padding:.6em .8em;font-size:.95rem}
+  body{padding-bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Aquatica home">
+      <svg viewBox="340 600 1100 950" aria-hidden="true"><path fill="#C9B994" fill-rule="evenodd" d="M 480 624 C 476 625,462 633,459 636 C 455 640,451 648,449 658 C 447 668,446 670,443 671 C 439 674,438 676,439 717 C 439 758,439 767,445 781 C 446 784,447 789,447 793 C 448 801,449 807,453 813 C 454 815,455 819,455 821 C 455 827,456 837,458 839 C 464 849,450 845,438 833 C 430 825,429 824,424 823 C 420 822,417 822,412 822 C 401 823,401 823,399 827 C 398 829,396 831,395 832 C 390 837,390 854,395 866 C 397 869,399 875,399 878 C 400 884,400 885,403 888 C 405 890,407 894,407 896 C 408 899,410 902,411 903 C 413 904,415 907,415 910 C 416 912,418 915,419 917 C 421 919,423 921,423 923 C 423 924,429 931,435 937 C 441 944,447 950,448 952 C 449 953,452 956,455 958 C 458 959,463 964,467 968 C 471 972,475 976,477 977 C 479 978,483 981,487 984 C 491 988,495 991,497 991 C 500 992,502 994,504 996 C 511 1007,513 1009,523 1009 C 530 1010,532 1010,534 1013 C 536 1014,538 1016,539 1016 C 540 1016,542 1017,544 1019 C 547 1022,549 1023,555 1024 C 560 1024,563 1026,565 1028 C 567 1029,570 1031,572 1032 C 574 1033,576 1034,577 1035 C 579 1038,583 1039,593 1040 L 603 1042 609 1047 C 616 1054,617 1055,623 1056 C 625 1056,628 1058,630 1060 C 639 1067,649 1067,657 1059 L 660 1055 668 1056 C 681 1057,683 1052,675 1043 C 665 1031,668 1021,680 1026 C 684 1028,686 1027,688 1021 C 689 1019,690 1018,691 1018 C 693 1017,702 1023,704 1027 C 707 1032,717 1037,721 1036 C 727 1035,730 1029,729 1023 C 728 1017,726 1015,719 1015 C 715 1015,714 1014,712 1011 C 710 1007,708 1006,701 1006 C 692 1006,689 1007,687 1011 C 685 1015,684 1015,681 1013 C 679 1011,679 1009,681 1003 C 683 998,683 997,682 992 C 680 985,680 986,673 979 C 669 976,665 971,663 969 C 662 967,657 963,653 959 C 643 950,616 923,616 922 C 616 921,614 919,613 917 C 611 915,609 912,608 909 C 607 907,605 904,604 904 C 603 904,600 901,597 897 C 593 894,588 888,583 884 C 579 879,575 875,575 874 C 575 872,573 870,572 868 C 571 866,569 862,567 859 C 566 856,564 853,563 853 C 562 852,561 849,560 847 C 558 844,556 841,555 840 C 553 839,544 821,544 819 C 544 818,542 817,541 815 C 536 812,535 808,536 802 C 537 792,544 790,551 797 C 557 802,561 800,561 791 C 561 783,564 783,568 790 C 569 792,570 794,571 794 C 572 795,574 798,575 801 C 576 803,578 806,579 807 C 580 807,582 810,583 812 C 584 815,586 817,587 818 C 589 819,590 821,591 824 C 591 827,593 830,594 831 C 596 832,598 835,599 838 C 600 840,602 843,603 844 C 608 849,613 857,615 860 C 616 862,617 864,619 865 C 621 866,622 868,623 872 C 624 876,625 878,627 879 C 628 880,630 882,631 884 C 632 886,634 888,635 890 C 639 894,645 902,647 906 C 648 909,650 910,658 919 C 660 921,663 925,664 927 C 665 928,667 931,668 932 C 669 934,670 936,670 937 C 671 942,674 944,683 947 L 691 950 694 948 C 696 946,698 946,699 946 C 701 946,710 952,712 955 C 712 957,714 959,716 960 C 717 961,719 962,719 963 C 719 964,723 969,724 969 C 725 969,727 971,730 974 C 735 981,743 989,747 991 C 749 992,753 996,757 1000 C 772 1014,774 1015,776 1007 C 778 1003,776 995,772 989 C 770 987,769 983,768 981 C 768 979,766 976,765 974 C 764 973,761 969,760 966 C 759 963,757 960,755 959 C 754 958,752 956,751 953 C 750 950,748 946,746 944 C 744 940,744 938,744 935 C 744 931,743 929,740 927 C 739 925,737 922,736 921 C 735 919,733 916,732 915 C 730 914,729 911,728 909 C 728 907,726 904,724 901 C 722 899,720 896,719 894 C 718 892,717 890,715 889 C 714 888,712 885,711 883 C 709 881,708 880,707 880 C 707 880,706 878,705 876 C 704 874,701 871,700 870 C 698 868,696 865,695 863 C 694 860,693 858,692 857 C 691 857,690 855,688 852 C 687 850,685 848,684 847 C 682 846,680 844,679 843 C 679 842,677 840,676 838 C 675 837,673 834,672 831 C 671 828,669 825,667 823 C 665 821,662 817,660 814 C 657 811,654 807,652 805 C 650 804,648 801,648 799 C 647 797,645 794,643 792 C 642 790,640 788,640 787 C 640 787,639 784,637 782 C 635 779,633 776,633 774 C 632 769,630 767,622 762 C 619 760,616 757,615 755 C 614 753,613 751,611 750 C 610 748,609 746,609 745 C 609 741,606 737,603 735 C 600 733,599 731,595 718 C 592 708,589 702,588 700 C 586 698,584 695,583 693 C 582 691,580 688,578 687 C 577 685,576 684,576 683 C 576 682,574 680,572 678 C 569 674,567 668,567 664 C 566 662,562 657,557 654 C 555 653,553 651,552 649 C 547 642,539 637,527 636 C 524 635,521 634,520 634 C 518 633,515 632,512 631 C 507 631,506 630,503 627 C 501 624,501 624,491 624 C 486 624,481 624,480 624 M 909 914 C 907 915,905 917,904 920 C 901 926,900 927,890 927 C 882 927,879 929,879 933 C 879 938,875 941,867 943 C 865 943,862 945,860 947 C 858 949,855 951,853 951 C 848 952,846 958,846 968 C 846 970,845 972,843 974 C 841 976,839 979,839 981 C 838 987,839 1002,840 1004 C 842 1006,845 1006,847 1003 C 848 1001,850 998,851 997 C 852 995,854 992,854 990 C 856 982,860 980,863 987 C 865 992,867 993,871 991 C 874 989,878 982,879 977 C 880 971,881 969,884 970 C 886 970,886 971,887 976 C 888 980,889 983,891 984 C 892 985,894 986,894 987 C 894 989,883 1000,873 1009 C 871 1011,871 1012,871 1015 C 871 1017,869 1020,868 1023 C 861 1032,864 1046,873 1048 C 878 1049,879 1047,880 1034 C 880 1021,882 1018,885 1018 C 889 1018,890 1019,890 1024 C 889 1027,890 1028,892 1030 C 894 1032,894 1034,895 1042 C 895 1052,896 1055,901 1056 C 902 1056,905 1058,907 1060 C 909 1062,913 1064,915 1064 C 918 1065,921 1066,922 1067 C 923 1068,928 1069,932 1071 C 943 1073,952 1073,959 1069 C 963 1067,967 1065,969 1064 C 971 1064,974 1062,976 1060 C 979 1057,983 1056,991 1056 C 996 1056,997 1055,999 1052 C 1001 1051,1003 1049,1005 1048 C 1006 1047,1008 1046,1008 1044 C 1010 1041,1013 1040,1021 1039 C 1028 1038,1029 1037,1032 1032 C 1033 1028,1033 1028,1031 1021 L 1028 1014 1030 1007 C 1032 997,1031 983,1028 979 C 1027 977,1025 975,1025 973 C 1025 972,1022 969,1020 967 C 1016 964,1016 963,1015 956 C 1015 952,1014 948,1013 947 C 1012 945,1010 943,1009 941 C 1008 939,1005 935,1002 932 C 997 927,996 927,991 927 C 986 927,985 927,983 930 C 979 933,978 933,976 928 C 973 921,972 921,967 924 C 963 926,962 927,952 927 C 941 927,941 926,938 924 C 935 920,933 919,927 919 C 923 919,922 918,919 916 C 915 912,913 912,909 914 M 904 1025 C 903 1026,903 1033,905 1035 C 908 1039,913 1033,911 1028 C 910 1025,906 1023,904 1025 M 735 1034 C 734 1035,732 1037,730 1038 C 726 1040,725 1044,729 1047 C 731 1049,733 1049,739 1049 C 749 1048,750 1048,752 1045 C 753 1042,752 1039,746 1036 C 740 1032,739 1032,735 1034 M 794 1040 C 791 1041,784 1047,780 1051 C 778 1053,776 1055,774 1055 C 772 1055,759 1066,759 1068 C 759 1068,757 1070,755 1073 C 750 1078,749 1089,754 1091 C 757 1093,765 1088,768 1084 C 772 1078,787 1078,791 1083 C 793 1085,796 1087,799 1089 C 801 1090,804 1092,805 1093 C 806 1094,808 1096,810 1096 C 814 1097,820 1105,818 1108 C 818 1109,816 1110,813 1110 C 810 1111,808 1113,806 1115 C 803 1118,802 1119,797 1119 C 789 1119,786 1120,782 1126 L 778 1131 781 1137 C 784 1142,785 1144,788 1145 C 790 1145,792 1147,794 1148 C 798 1152,802 1152,820 1151 C 832 1151,838 1151,841 1152 C 850 1154,867 1149,870 1144 C 871 1144,871 1138,872 1133 C 872 1124,873 1121,874 1118 C 878 1110,878 1102,875 1097 C 872 1093,872 1093,872 1083 C 873 1070,872 1065,867 1063 C 866 1063,864 1061,862 1059 C 860 1056,856 1055,844 1055 C 832 1055,831 1055,825 1060 C 820 1065,818 1065,811 1054 C 809 1051,806 1049,806 1048 C 805 1048,802 1046,800 1043 C 797 1041,795 1040,795 1040 C 795 1040,794 1040,794 1040 M 700 1120 C 698 1120,696 1122,695 1123 C 694 1124,691 1127,689 1128 C 680 1132,675 1142,682 1144 C 684 1145,686 1144,694 1139 C 698 1136,699 1136,709 1136 C 722 1135,725 1134,726 1128 C 728 1124,727 1121,723 1120 C 718 1119,702 1119,700 1120 M 762 1137 C 757 1139,751 1144,750 1146 C 749 1148,747 1150,745 1151 C 744 1152,743 1153,743 1154 C 743 1155,738 1158,732 1159 C 729 1159,724 1161,722 1163 C 718 1164,715 1166,711 1166 C 703 1167,699 1170,690 1183 C 688 1186,684 1190,683 1190 C 682 1191,680 1193,679 1194 C 678 1196,676 1198,674 1199 C 672 1201,670 1202,670 1205 C 668 1213,663 1215,654 1215 C 649 1216,648 1217,646 1226 C 644 1235,644 1236,646 1238 C 649 1241,655 1240,660 1236 C 664 1233,666 1233,671 1233 C 676 1233,677 1232,680 1228 C 683 1225,685 1224,689 1224 C 692 1223,696 1222,698 1220 C 700 1219,705 1217,709 1216 C 713 1214,717 1213,718 1211 C 720 1210,722 1209,722 1209 C 723 1209,726 1207,728 1204 C 731 1200,732 1200,739 1200 C 745 1199,747 1198,750 1196 C 752 1194,754 1193,755 1193 C 755 1193,758 1190,760 1188 C 763 1185,768 1181,771 1178 C 779 1172,779 1171,778 1162 C 777 1159,777 1154,777 1152 C 777 1147,775 1145,771 1142 C 769 1141,766 1139,765 1138 C 764 1137,762 1137,762 1137 M 666 1151 C 660 1152,657 1154,656 1158 C 654 1162,634 1180,629 1183 C 627 1184,625 1186,624 1187 C 623 1188,621 1190,619 1191 C 618 1191,616 1193,615 1194 C 614 1196,602 1208,601 1208 C 600 1208,599 1209,598 1210 C 598 1212,596 1213,594 1214 C 591 1216,588 1218,577 1227 C 575 1229,572 1232,571 1232 C 570 1232,568 1234,567 1235 C 566 1237,565 1239,564 1239 C 564 1239,561 1240,559 1243 C 555 1247,551 1250,541 1259 C 539 1261,535 1264,533 1266 C 530 1268,527 1271,525 1272 C 521 1276,509 1286,501 1295 C 496 1299,492 1303,491 1303 C 490 1304,488 1306,487 1307 C 486 1309,485 1311,483 1311 C 482 1312,480 1314,479 1315 C 478 1317,477 1319,475 1319 C 474 1320,472 1322,471 1324 C 471 1326,469 1329,467 1330 C 465 1332,463 1335,463 1336 C 461 1339,456 1345,448 1353 C 444 1356,441 1360,440 1361 C 431 1370,419 1381,417 1383 C 410 1387,401 1395,399 1398 C 398 1400,394 1405,390 1410 C 386 1415,383 1418,382 1421 C 382 1424,380 1428,378 1430 C 376 1432,375 1434,375 1435 C 375 1436,373 1438,371 1440 C 369 1442,367 1445,367 1447 C 366 1449,364 1453,363 1455 C 359 1460,359 1471,362 1476 C 368 1483,393 1483,400 1475 C 402 1474,403 1473,404 1473 C 405 1473,407 1471,410 1469 C 419 1461,427 1456,442 1449 C 446 1447,449 1444,452 1441 C 455 1436,457 1434,461 1431 C 463 1430,465 1427,465 1426 C 465 1424,466 1422,467 1422 C 468 1421,469 1418,471 1415 C 472 1411,476 1407,479 1404 C 481 1401,484 1398,485 1398 C 489 1393,496 1385,496 1384 C 496 1382,506 1370,515 1360 C 519 1356,520 1355,519 1351 C 518 1345,520 1338,523 1336 C 525 1334,527 1332,533 1324 C 534 1323,535 1319,535 1315 C 537 1307,539 1305,544 1305 C 549 1305,550 1303,553 1299 C 554 1297,556 1295,557 1295 C 559 1293,567 1276,568 1271 C 569 1267,571 1265,577 1264 C 583 1263,588 1260,600 1248 C 603 1245,608 1242,610 1242 C 614 1240,631 1223,633 1218 C 635 1208,647 1193,653 1191 C 654 1191,660 1185,665 1178 C 671 1172,676 1167,677 1167 C 678 1167,685 1157,685 1155 C 685 1153,677 1149,674 1150 C 672 1150,669 1150,666 1151 M 956 1152 C 951 1154,950 1164,955 1167 C 956 1167,957 1169,958 1172 C 960 1175,970 1184,985 1196 C 987 1198,993 1203,998 1207 C 1003 1211,1008 1215,1010 1216 C 1012 1217,1014 1219,1016 1220 C 1022 1227,1035 1238,1040 1240 C 1041 1241,1046 1245,1050 1248 C 1053 1252,1059 1257,1062 1260 C 1070 1266,1077 1274,1080 1279 C 1081 1281,1083 1283,1083 1283 C 1084 1283,1086 1285,1087 1287 C 1090 1293,1093 1296,1096 1296 C 1097 1296,1099 1297,1102 1299 C 1104 1301,1108 1304,1109 1305 C 1116 1309,1124 1316,1126 1320 C 1127 1322,1133 1329,1139 1335 C 1145 1341,1151 1347,1151 1348 C 1152 1353,1161 1358,1168 1359 C 1174 1359,1175 1360,1179 1363 C 1181 1365,1185 1368,1187 1368 C 1189 1369,1192 1371,1193 1372 C 1194 1373,1197 1374,1200 1375 C 1205 1378,1215 1386,1215 1389 C 1215 1389,1218 1393,1222 1398 C 1230 1405,1232 1409,1231 1412 C 1230 1414,1225 1414,1221 1411 C 1219 1410,1215 1408,1211 1407 C 1190 1399,1186 1397,1182 1392 C 1177 1383,1169 1377,1165 1375 C 1161 1374,1154 1368,1151 1363 C 1150 1361,1149 1359,1147 1359 C 1145 1359,1141 1357,1139 1355 C 1136 1353,1133 1352,1132 1351 C 1131 1351,1130 1349,1129 1348 C 1126 1344,1124 1343,1120 1343 C 1114 1343,1111 1345,1111 1351 C 1111 1355,1112 1356,1118 1362 C 1122 1366,1126 1370,1127 1372 C 1128 1374,1129 1376,1130 1376 C 1130 1376,1134 1379,1138 1383 C 1143 1388,1147 1392,1149 1392 C 1151 1393,1153 1395,1154 1396 C 1155 1397,1158 1399,1160 1400 C 1163 1401,1166 1403,1168 1405 C 1170 1407,1171 1408,1175 1408 C 1178 1408,1179 1408,1182 1411 C 1184 1413,1186 1415,1188 1416 C 1194 1419,1191 1426,1184 1429 C 1180 1431,1171 1431,1168 1429 C 1167 1429,1163 1427,1160 1425 C 1158 1423,1154 1421,1152 1419 C 1150 1417,1148 1415,1146 1414 C 1144 1413,1140 1410,1136 1407 C 1133 1403,1129 1400,1127 1400 C 1123 1399,1123 1399,1117 1392 C 1115 1389,1111 1384,1109 1381 C 1106 1378,1102 1373,1100 1370 C 1091 1359,1087 1355,1083 1352 C 1081 1351,1080 1349,1080 1349 C 1080 1348,1078 1346,1076 1345 C 1075 1343,1072 1340,1071 1338 C 1070 1335,1068 1332,1067 1330 C 1066 1329,1064 1326,1064 1324 C 1064 1321,1062 1317,1060 1315 C 1058 1312,1056 1308,1056 1307 C 1055 1305,1053 1302,1052 1300 C 1050 1298,1048 1294,1048 1291 C 1047 1288,1045 1283,1043 1281 C 1042 1279,1040 1275,1040 1273 C 1039 1267,1038 1264,1032 1262 C 1022 1256,1019 1267,1027 1278 C 1029 1281,1030 1284,1031 1289 C 1031 1295,1032 1296,1034 1299 C 1036 1301,1038 1305,1039 1307 C 1040 1308,1042 1311,1043 1313 C 1045 1315,1047 1318,1047 1321 C 1048 1324,1050 1328,1051 1330 C 1055 1335,1058 1346,1055 1349 C 1052 1352,1051 1352,1049 1349 C 1048 1347,1046 1345,1044 1343 C 1042 1342,1040 1339,1039 1337 C 1038 1335,1036 1332,1034 1330 C 1030 1324,1027 1319,1024 1316 C 1023 1314,1021 1312,1019 1311 C 1017 1310,1015 1308,1014 1307 C 1012 1306,1009 1304,1007 1304 C 1004 1303,1002 1301,1001 1300 C 1000 1299,994 1293,988 1286 C 982 1279,977 1272,976 1270 C 973 1261,962 1253,955 1255 C 949 1257,949 1268,955 1277 C 957 1279,959 1282,959 1283 C 959 1284,960 1286,961 1287 C 965 1292,964 1294,959 1294 C 956 1295,955 1294,947 1285 C 941 1280,937 1275,936 1273 C 934 1269,923 1259,918 1256 C 916 1255,913 1252,911 1251 C 908 1246,901 1243,895 1245 C 892 1246,891 1246,890 1245 C 888 1243,882 1232,881 1228 C 880 1222,872 1220,863 1222 C 856 1224,855 1225,855 1233 C 855 1241,856 1245,859 1248 C 861 1250,863 1252,863 1254 C 863 1257,863 1258,866 1259 C 867 1259,869 1261,870 1262 C 871 1264,873 1266,874 1267 C 875 1267,878 1270,879 1273 C 880 1275,882 1278,883 1279 C 885 1280,890 1288,895 1295 C 896 1297,898 1300,899 1302 C 900 1303,902 1306,903 1308 C 904 1310,907 1313,908 1314 C 909 1316,911 1317,911 1318 C 911 1319,912 1321,914 1323 C 916 1325,918 1329,920 1331 C 921 1334,923 1336,923 1336 C 924 1336,926 1338,927 1340 C 928 1343,930 1346,931 1347 C 932 1347,934 1350,935 1353 C 936 1356,938 1359,939 1359 C 940 1360,942 1362,943 1365 C 944 1367,946 1371,947 1373 C 949 1375,951 1378,951 1380 C 951 1381,953 1383,954 1385 C 956 1387,957 1390,958 1393 C 959 1397,965 1404,971 1408 C 975 1410,976 1412,973 1414 C 971 1416,964 1415,961 1411 C 959 1409,955 1407,953 1407 C 950 1406,947 1404,946 1403 C 945 1402,942 1400,940 1398 C 938 1396,936 1394,935 1390 C 934 1387,933 1383,932 1382 C 931 1381,930 1378,929 1375 C 928 1368,925 1366,919 1367 C 916 1367,915 1367,911 1363 C 899 1351,896 1349,896 1346 C 895 1344,894 1341,892 1339 C 891 1337,889 1334,889 1333 C 888 1331,886 1328,884 1326 C 883 1324,881 1321,880 1318 C 879 1315,877 1312,876 1310 C 873 1308,872 1307,872 1303 C 872 1295,871 1290,868 1286 C 865 1283,865 1283,865 1274 C 865 1268,865 1263,864 1261 L 863 1258 857 1259 C 846 1260,841 1257,839 1249 C 838 1241,823 1223,819 1223 C 816 1223,813 1227,813 1230 C 813 1232,813 1236,814 1239 C 815 1242,816 1247,816 1249 C 816 1251,816 1255,818 1257 C 819 1259,820 1262,820 1266 C 820 1274,823 1285,827 1289 C 830 1292,831 1293,831 1296 C 831 1302,832 1307,836 1311 C 837 1313,839 1316,839 1318 C 839 1323,840 1327,844 1330 C 845 1331,847 1333,847 1335 C 847 1339,848 1343,851 1345 C 852 1346,854 1348,855 1351 C 856 1355,859 1359,867 1368 C 875 1377,877 1380,879 1384 C 880 1386,882 1389,883 1391 C 885 1393,887 1395,887 1396 C 887 1397,888 1399,890 1401 C 892 1403,895 1407,898 1410 C 900 1413,904 1417,905 1419 C 907 1421,909 1424,910 1426 C 911 1427,915 1431,919 1435 C 922 1438,926 1443,927 1444 C 928 1446,929 1448,930 1448 C 932 1448,934 1450,935 1452 C 937 1454,939 1456,940 1456 C 941 1456,945 1460,950 1463 C 955 1468,959 1470,961 1471 C 963 1471,965 1473,967 1476 C 969 1479,970 1480,978 1481 C 980 1481,983 1482,985 1484 C 986 1486,989 1487,994 1488 C 998 1489,1004 1491,1007 1492 C 1015 1496,1042 1498,1052 1496 C 1058 1494,1063 1488,1065 1481 C 1065 1479,1067 1475,1069 1473 C 1079 1461,1080 1461,1080 1456 C 1080 1451,1077 1447,1065 1435 C 1060 1429,1057 1426,1056 1422 C 1055 1419,1053 1417,1052 1416 C 1050 1414,1048 1411,1046 1406 C 1043 1396,1043 1394,1048 1394 C 1051 1393,1052 1394,1057 1400 C 1067 1410,1079 1422,1082 1423 C 1084 1424,1086 1426,1088 1428 C 1090 1429,1093 1431,1095 1432 C 1096 1433,1099 1434,1100 1436 C 1101 1437,1104 1439,1106 1440 C 1108 1441,1110 1443,1111 1444 C 1112 1445,1114 1447,1116 1448 C 1118 1449,1120 1451,1122 1452 C 1123 1453,1127 1455,1130 1456 C 1133 1457,1137 1459,1139 1460 C 1141 1461,1144 1463,1147 1464 C 1149 1465,1153 1467,1155 1468 C 1157 1470,1160 1472,1162 1472 C 1164 1473,1166 1475,1167 1475 C 1169 1478,1171 1479,1179 1480 C 1183 1481,1189 1483,1192 1484 C 1195 1486,1199 1488,1201 1488 C 1203 1488,1205 1488,1207 1491 C 1209 1493,1212 1496,1215 1497 C 1218 1499,1221 1500,1223 1501 C 1226 1503,1264 1506,1293 1506 C 1307 1506,1315 1509,1320 1515 C 1323 1519,1328 1522,1335 1522 C 1338 1522,1342 1522,1344 1523 C 1347 1524,1348 1524,1352 1523 C 1354 1522,1360 1521,1365 1521 C 1376 1520,1380 1519,1384 1516 C 1386 1514,1389 1512,1391 1512 C 1397 1511,1398 1510,1400 1506 C 1400 1504,1402 1500,1404 1497 C 1405 1493,1407 1488,1408 1484 C 1409 1479,1410 1474,1411 1471 C 1413 1464,1413 1463,1411 1458 C 1410 1457,1408 1454,1408 1452 C 1408 1450,1406 1447,1404 1444 C 1402 1442,1401 1440,1401 1440 C 1401 1438,1387 1425,1383 1423 C 1381 1422,1379 1420,1378 1418 C 1377 1417,1374 1415,1371 1414 C 1369 1413,1365 1410,1363 1408 C 1346 1387,1336 1380,1327 1380 C 1325 1380,1323 1379,1322 1377 C 1320 1375,1306 1361,1300 1356 C 1299 1354,1294 1349,1290 1345 C 1283 1336,1280 1335,1271 1335 C 1261 1334,1262 1342,1275 1355 C 1278 1359,1279 1360,1279 1363 C 1278 1366,1275 1365,1273 1362 C 1270 1357,1264 1352,1260 1350 C 1258 1349,1250 1342,1242 1334 C 1231 1323,1227 1319,1224 1319 C 1222 1318,1219 1316,1215 1312 C 1212 1308,1207 1304,1205 1303 C 1202 1302,1198 1299,1196 1296 C 1193 1294,1190 1291,1189 1290 C 1188 1289,1186 1286,1184 1284 C 1181 1282,1178 1279,1176 1278 C 1172 1277,1170 1276,1158 1263 C 1154 1260,1150 1256,1148 1255 C 1146 1254,1144 1252,1143 1250 C 1141 1249,1139 1247,1137 1247 C 1135 1247,1132 1245,1129 1243 C 1124 1239,1121 1239,1113 1244 C 1110 1246,1108 1247,1107 1246 C 1105 1245,1105 1244,1103 1236 C 1101 1228,1086 1217,1074 1215 C 1071 1215,1068 1213,1066 1212 C 1064 1210,1061 1208,1060 1207 C 1058 1206,1055 1204,1053 1203 C 1052 1202,1048 1200,1046 1199 C 1043 1198,1040 1197,1039 1196 C 1038 1195,1035 1193,1032 1191 C 1029 1190,1026 1188,1025 1187 C 1024 1186,1021 1183,1018 1182 C 1011 1178,1004 1174,1000 1170 C 997 1167,996 1167,993 1167 C 989 1167,988 1166,975 1156 C 969 1150,962 1149,956 1152 M 914 1181 C 909 1186,908 1187,910 1192 C 913 1198,914 1200,919 1199 C 925 1199,926 1199,928 1193 C 930 1187,930 1187,927 1183 C 924 1176,920 1176,914 1181 M 924 1205 C 919 1208,918 1211,919 1217 C 921 1221,922 1222,929 1223 C 932 1223,935 1224,935 1225 C 935 1225,935 1228,935 1231 C 935 1237,937 1240,940 1240 C 943 1240,946 1236,946 1231 C 946 1226,944 1225,939 1223 L 935 1222 936 1216 C 936 1211,936 1209,935 1207 C 933 1202,930 1202,924 1205 M 972 1315 C 972 1316,972 1317,973 1318 C 974 1319,975 1322,976 1325 C 977 1330,983 1338,988 1343 C 990 1345,993 1349,996 1352 C 998 1355,1001 1359,1003 1361 C 1005 1363,1007 1366,1008 1368 C 1011 1372,1016 1376,1020 1376 C 1021 1376,1023 1377,1024 1379 C 1027 1382,1028 1383,1030 1382 C 1034 1382,1034 1379,1029 1374 C 1027 1371,1024 1368,1023 1366 C 1023 1365,1020 1362,1018 1360 C 1003 1345,992 1332,990 1329 C 989 1327,988 1326,988 1326 C 987 1326,986 1324,985 1323 C 982 1317,973 1312,972 1315"/></svg>
+      <span>AQUATICA</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="https://www.aquaticaponds.com/services">Services</a>
+      <a class="link" href="https://www.aquaticaponds.com/retail">Retail shop</a>
+      <a class="link" href="https://www.aquaticaponds.com/portfolio">Portfolio</a>
+      <a class="link" href="https://www.aquaticaponds.com/about">About</a>
+      <a class="btn btn-glow" href="tel:+12629685540" aria-label="Call (262) 968-5540"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span class="long">(262) 968-5540</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Aquatica · Wales, Wisconsin · Since 2000</p>
+      <h1 id="hero-h">Ponds, waterfalls &amp; water gardens, <em>designed and built by water specialists.</em></h1>
+      <p class="sub">Koi ponds, pondless waterfalls, streams and bubbling rocks, built across Wisconsin. Our own maintenance department looks after them, and our shop in Wales stocks the fish, plants and parts.</p>
+      <div class="ctas">
+        <a class="btn btn-glow" href="tel:+12629685540"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call (262) 968-5540</a>
+        <a class="btn btn-line" href="mailto:info@aquaticaponds.com?subject=Design%20consultation">Ask about a design consultation</a>
+      </div>
+    </div>
+    <div class="frame">
+      <svg class="ripples" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98"/><circle cx="100" cy="100" r="98"/><circle cx="100" cy="100" r="98"/></svg>
+      <figure>
+        <img src="img/hero-waterfall.webp" width="1400" height="1163" alt="A multi-tier rock waterfall lit at dusk, spilling into a dark pond surrounded by moss and ferns" fetchpriority="high">
+        <figcaption>Multi-tier waterfall with lighting, from Aquatica’s portfolio</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="proof">
+    <ul>
+      <li><b><span class="star" aria-hidden="true">★</span> 4.9 on Google</b><span><a href="https://www.google.com/maps/place/Aquatica/@43.002851,-88.375407,17z/data=!4m8!3m7!1s0x8805ba76d326b11b:0x1a2a64282c4357d1!8m2!3d43.002851!4d-88.375407!9m1!1b1!16s%2Fg%2F1td5xqxp?hl=en&amp;gl=us" target="_blank" rel="noopener">Read the reviews</a></span></li>
+      <li><b>Founded 2000</b><span>by Dean Pipito, in Wisconsin</span></li>
+      <li><b>Master Aquascape</b><span>Certified contractor</span></li>
+      <li><b>Shop in Wales</b><span>Wednesday – Friday: 9am–5pm</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="paths" id="services" aria-labelledby="paths-h">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">Where do you start?</p>
+        <h2 id="paths-h">Build it, keep it running, or stock it.</h2>
+      </div>
+      <p>Aquatica designs and builds the water feature, services it afterward, and sells the koi, plants and parts from the shop in Wales. Pick the one you need.</p>
+    </div>
+
+    <div class="stones" role="tablist" aria-label="Choose a path">
+      <button class="stone" role="tab" id="t-build" aria-controls="p-build" aria-selected="true"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 18c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1 2-1"/><path d="M6 13l3-6 3 4 2-3 4 5"/></svg></span>Build a water feature</button>
+      <button class="stone" role="tab" id="t-service" aria-controls="p-service" aria-selected="false" tabindex="-1"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>Service &amp; maintenance</button>
+      <button class="stone" role="tab" id="t-shop" aria-controls="p-shop" aria-selected="false" tabindex="-1"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12c3-4 7-5 11-3l4-3v12l-4-3c-4 2-8 1-11-3z"/><circle cx="8" cy="11.5" r=".8" fill="currentColor"/></svg></span>Shop: fish, plants &amp; parts</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-build" aria-labelledby="t-build">
+      <div>
+        <h3>Design and build</h3>
+        <p>Ponds, koi and fish ponds, pondless waterfalls, streams, bubbling rocks and water gardens, with pond lighting. Projects start with an on-site design consultation.</p>
+        <p class="note">Optional renderings: 2D with a $500 non-refundable down payment, 3D with $2500. If an installation contract is signed, it’s applied toward the contract price.</p>
+        <div class="act"><a class="btn btn-moss" href="tel:+12629685540">Call to talk about your project</a></div>
+      </div>
+      <ul>
+        <li>Custom artist renderings of your own design concept</li>
+        <li>One full year of covered labor after the installation</li>
+        <li>Lifetime warranty coverage on certain filtration components</li>
+        <li>No dealing with the manufacturer for warranty claims yourself</li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-service" aria-labelledby="t-service" hidden>
+      <div>
+        <h3>Our own maintenance department</h3>
+        <p>For water features Aquatica built and for existing ones that need care, from routine visits to small renovations.</p>
+        <div class="act"><a class="btn btn-moss" href="tel:+12629685540">Call to schedule service</a><a class="btn" style="border:1.5px solid var(--stone);color:var(--night)" href="mailto:info@aquaticaponds.com?subject=Service%20request">Email a service request</a></div>
+      </div>
+      <ul>
+        <li>On-site consultation</li>
+        <li>Weekly and monthly service visits</li>
+        <li>On-call maintenance visits</li>
+        <li>Small renovations, like skimmer or biofalls replacements</li>
+      </ul>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-shop" aria-labelledby="t-shop" hidden>
+      <div>
+        <h3>The water-garden shop in Wales</h3>
+        <p>227 James Street, by the Glacial Drumlin State Trail. Open Wednesday – Friday: 9am–5pm. “If we don’t stock it, we can get it for you within 2-3 business days.”</p>
+        <div class="act"><a class="btn btn-moss" href="https://www.google.com/maps/search/?api=1&amp;query=Aquatica%2C%20227%20James%20St%2C%20Wales%2C%20WI%2053183" target="_blank" rel="noopener">Get directions</a></div>
+      </div>
+      <ul>
+        <li>Koi, butterfly koi, shubunkin, comet, sarasa, golden orf and fancy tail goldfish</li>
+        <li>Aquatic plants: water lilies, grasses, iris, oxygenators, tropicals, rush</li>
+        <li>DIY pond, pondless and bubbling statuary kits</li>
+        <li>Skimmers, biofalls, UV clarifiers, LED lighting and liner</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <p class="eyebrow">From the portfolio</p>
+    <h2 id="work-h">Water that looks like it was always there.</h2>
+    <div class="grid3">
+      <figure><img src="img/commercial-cascade.webp" width="1150" height="762" loading="lazy" alt="A wide, lit stone cascade stepping down into a pool in front of a modern commercial building at dusk"><figcaption>Commercial entrance cascade, lit</figcaption></figure>
+      <figure><img src="img/pavilion-pond.webp" width="1200" height="900" loading="lazy" alt="A lit pond and rock waterfall seen from inside a timber pavilion with string lights at dusk"><figcaption>Pond seen from a timber pavilion</figcaption></figure>
+      <figure><img src="img/koi-pond.webp" width="1150" height="863" loading="lazy" alt="Orange, yellow and white koi gathered in a clear pond beside rounded stones"><figcaption>Koi in a clear pond</figcaption></figure>
+    </div>
+    <p class="more">More projects, plus home-show displays and videos, at <a href="https://www.aquaticaponds.com/portfolio">aquaticaponds.com/portfolio</a>.</p>
+  </div>
+</section>
+
+<section class="spec" id="contact" aria-labelledby="spec-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Why a specialist</p>
+      <h2 id="spec-h">Only water. Built to last.</h2>
+      <blockquote>“Aquatica specializes in building water gardens. We don’t claim to install water gardens as just another service offered in addition to building patios, walls, and maintaining lawns.”</blockquote>
+      <p class="cite">From Aquatica’s About page</p>
+      <div class="rating"><span class="num">4.9<span class="star" aria-hidden="true">★</span></span><div>on Google<br><a href="https://www.google.com/maps/place/Aquatica/@43.002851,-88.375407,17z/data=!4m8!3m7!1s0x8805ba76d326b11b:0x1a2a64282c4357d1!8m2!3d43.002851!4d-88.375407!9m1!1b1!16s%2Fg%2F1td5xqxp?hl=en&amp;gl=us" target="_blank" rel="noopener">Read the reviews on Google</a></div></div>
+      <ul class="promises">
+        <li><b>Quality takes time</b><span>“Aquatica doesn’t advertise that we can build a pond in a day.”</span></li>
+        <li><b>A full year of labor</b><span>Covered after the installation, plus lifetime coverage on certain filtration components.</span></li>
+        <li><b>Service after the build</b><span>Weekly, monthly and on-call visits from our own maintenance department.</span></li>
+        <li><b>Designed for you</b><span>Expert on-site design consultations and custom artist renderings.</span></li>
+      </ul>
+      <p class="awards"><b>Recognition:</b> featured on “The Great Lakes Gardener” with Melinda Myers; Best of Show awards with the Metropolitan Builders Association, The Realtor’s Home &amp; Garden Shows and NARI Association; PondTrade Magazine’s Water Artisans of the Year for Best Overall Design.</p>
+      <p class="fine">Promises and recognition from aquaticaponds.com; rating from Google.</p>
+    </div>
+
+    <aside class="card" aria-labelledby="card-h">
+      <p class="eyebrow">Contact Aquatica</p>
+      <h3 id="card-h">Start with a conversation.</h3>
+      <dl>
+        <div><dt>Call</dt><dd><a href="tel:+12629685540">(262) 968-5540</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@aquaticaponds.com">info@aquaticaponds.com</a></dd></div>
+        <div><dt>Shop &amp; showroom</dt><dd>227 James Street, Wales, WI 53183</dd></div>
+        <div><dt>Hours</dt><dd>Wednesday – Friday: 9am–5pm</dd></div>
+        <div><dt>Installing</dt><dd>Statewide, including Wisconsin Dells, Madison, Milwaukee, Oconomowoc, Mequon, Kenosha, Waukesha, Lake Country, Delafield, Baraboo, Green Bay, Lake Geneva and Wauwatosa</dd></div>
+      </dl>
+      <div class="act">
+        <a class="btn btn-glow" href="tel:+12629685540">Call (262) 968-5540</a>
+        <a class="btn btn-line" href="mailto:info@aquaticaponds.com?subject=Design%20consultation">Email us</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="closer" aria-label="About this preview">
+  <div class="wrap">
+    <div>
+      <h2>A first look at your new site.</h2>
+      <p>What you build, where you build it and how to reach you, all on the first screen and fast on a phone.</p>
+    </div>
+    <a class="btn btn-glow" href="tel:+12629685540">Call (262) 968-5540</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Website by Cream City Post · Independent website concept, not the official Aquatica site. Logo redrawn; services, hours, wording and photos from aquaticaponds.com; rating from Google.</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-glow" href="tel:+12629685540">Call (262) 968-5540</a>
+  <a class="btn btn-line" href="mailto:info@aquaticaponds.com?subject=Design%20consultation">Email</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.stone'));
+  function pick(t,focus){
+    tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+    if(focus)t.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(t)});
+    t.addEventListener('keydown',function(e){
+      var n=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(n){e.preventDefault();pick(tabs[(i+n+tabs.length)%tabs.length],true);}
+    });
+  });
+})();
+</script>
+</body>
+</html>
