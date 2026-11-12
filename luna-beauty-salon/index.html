@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Luna Beauty Salon — Website concept by Cream City Post</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#2A0409; --wine:#4C1B1F; --wine2:#3a0d13;
+  --champ:#DDCD88; --gold:#C9A65A; --bronze:#9D7C4A;
+  --ivory:#FBF6F1; --ivory2:#F3EAE0; --ink:#1E1416; --muted:#6b5a5c;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --caps:'Montserrat',system-ui,sans-serif;
+  --sans:'Lato',system-ui,sans-serif;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+.caps{font:600 12px/1.4 var(--caps);letter-spacing:.22em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font:600 13px/1 var(--caps);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:transform .2s,background .2s,box-shadow .2s;min-height:48px}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--champ);outline-offset:3px}
+.btn-gold{background:var(--gold);color:var(--plum);box-shadow:0 8px 24px -10px rgba(201,166,90,.7)}
+.btn-gold:hover{background:var(--champ);transform:translateY(-2px)}
+.btn-line{border:1px solid rgba(221,205,136,.55);color:var(--champ)}
+.btn-line:hover{background:rgba(221,205,136,.1);transform:translateY(-2px)}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(42,4,9,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(221,205,136,.18)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--champ);min-width:0}
+.brand img{width:46px;height:46px;border-radius:50%}
+.brand b{display:block;font:600 13px/1.25 var(--caps);letter-spacing:.24em}
+.brand small{display:block;font:500 10px/1.3 var(--caps);letter-spacing:.32em;color:var(--gold)}
+.hd-r{display:flex;align-items:center;gap:14px}
+.chip{font:500 11px/1 var(--caps);letter-spacing:.14em;color:var(--champ);border:1px solid rgba(221,205,136,.3);border-radius:999px;padding:9px 13px;white-space:nowrap}
+.hd .btn{padding:12px 18px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 85% 10%,#5a1d24 0%,var(--plum) 48%,#120103 100%);color:var(--ivory)}
+.ring{position:absolute;right:-12%;top:50%;width:min(780px,95vw);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;border:2px solid rgba(221,205,136,.12);pointer-events:none}
+.ring::after{content:"";position:absolute;inset:7%;border-radius:50%;border:1px solid rgba(221,205,136,.08)}
+.hero-g{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:center;padding:84px 0 92px}
+.hero .caps{color:var(--gold)}
+.hero h1{font:500 clamp(44px,6.4vw,84px)/.98 var(--serif);margin:18px 0 22px;color:var(--champ);letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--ivory)}
+.hero p.lede{font-size:clamp(17px,1.6vw,19px);max-width:520px;color:#eadfd6;margin:0 0 32px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.arch{position:relative;justify-self:center;width:min(430px,100%)}
+.arch .f{border-radius:220px 220px var(--r) var(--r);overflow:hidden;border:1px solid rgba(221,205,136,.45);padding:10px;background:rgba(221,205,136,.06)}
+.arch img{border-radius:210px 210px 10px 10px;aspect-ratio:4/5;width:100%;object-fit:cover;object-position:50% 40%}
+.arch .tag{position:absolute;left:-18px;bottom:34px;background:var(--ivory);color:var(--plum);border-radius:12px;padding:12px 16px;box-shadow:0 14px 30px -14px rgba(0,0,0,.6)}
+.arch .tag b{display:block;font:600 20px/1.1 var(--serif)}
+.arch .tag span{font:600 10px/1.3 var(--caps);letter-spacing:.18em;text-transform:uppercase;color:var(--bronze)}
+
+/* proof strip */
+.strip{background:var(--wine);color:var(--champ);border-top:1px solid rgba(221,205,136,.2)}
+.strip ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.strip li{padding:22px 12px;text-align:center;font:600 12px/1.4 var(--caps);letter-spacing:.16em;text-transform:uppercase}
+.strip li+li{border-left:1px solid rgba(221,205,136,.2)}
+.strip li span{display:block;font:500 22px/1.2 var(--serif);letter-spacing:0;text-transform:none;color:var(--ivory);margin-bottom:2px}
+
+/* services + hours */
+section{padding:88px 0}
+.h2{font:500 clamp(34px,4.4vw,54px)/1.05 var(--serif);margin:10px 0 16px;color:var(--plum)}
+.kicker{color:var(--bronze)}
+.svc-g{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;align-items:start}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:30px 0 22px}
+.card{background:#fff;border:1px solid #ecdcce;border-radius:var(--r);padding:26px 22px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px -22px rgba(42,4,9,.45);border-color:var(--gold)}
+.card i{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--plum);color:var(--champ);font:600 18px/1 var(--serif);font-style:normal;margin-bottom:16px}
+.card h3{font:600 24px/1.15 var(--serif);margin:0 0 8px;color:var(--plum)}
+.card p{margin:0;font-size:15.5px;color:var(--muted)}
+.note{font-size:15px;color:var(--muted);margin:0}
+.promise{margin-top:30px;border-left:3px solid var(--gold);padding:6px 0 6px 20px}
+.promise h3{font:italic 500 28px/1.15 var(--serif);margin:0 0 6px;color:var(--plum)}
+.promise p{margin:0;color:var(--ink)}
+
+.hours{position:sticky;top:96px;background:var(--plum);color:var(--ivory);border-radius:24px;padding:28px 26px;box-shadow:0 30px 60px -36px rgba(42,4,9,.8)}
+.hours .caps{color:var(--gold)}
+.status{display:flex;align-items:center;gap:12px;margin:14px 0 4px;font:500 32px/1.1 var(--serif);color:var(--champ)}
+.dot{width:12px;height:12px;border-radius:50%;background:#8a7a7c;flex:none}
+.dot.open{background:#9bd3a0;box-shadow:0 0 0 0 rgba(155,211,160,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(155,211,160,0)}100%{box-shadow:0 0 0 0 rgba(155,211,160,0)}}
+.sub{font-size:15px;color:#d9c9c0;margin:0 0 20px;min-height:24px}
+.week{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:4px}
+.week li{display:flex;justify-content:space-between;padding:9px 12px;border-radius:10px;font-size:15px;color:#e8dcd4}
+.week li.off{color:#a68f90}
+.week li.today{background:rgba(221,205,136,.14);color:var(--champ);font-weight:700}
+.hours .btn{width:100%;justify-content:center}
+.hours small{display:block;margin-top:12px;font-size:12.5px;color:#b9a3a3;text-align:center}
+
+/* photos */
+.photos{background:var(--ivory2)}
+.ph-g{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:20px;align-items:stretch;margin-top:30px}
+.ph{margin:0;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid #e6d6c8;display:flex;flex-direction:column}
+.ph img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.ph figcaption{padding:14px 18px;font-size:14px;color:var(--muted)}
+.ph.word{background:var(--plum);color:var(--champ);justify-content:center;align-items:center;text-align:center;padding:34px 26px;border-color:var(--plum)}
+.ph.word img{width:220px;height:220px;aspect-ratio:1;border-radius:14px;margin:0 auto 22px;box-shadow:0 0 0 1px rgba(221,205,136,.25)}
+.ph.word p{font:italic 500 clamp(26px,3vw,36px)/1.2 var(--serif);margin:0 0 10px}
+.ph.word span{font:600 11px/1.4 var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+
+/* visit */
+.visit-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.panel{border-radius:24px;padding:36px 34px}
+.rev{background:#fff;border:1px solid #ecdcce}
+.big{font:500 64px/1 var(--serif);color:var(--plum);margin:14px 0 6px}
+.big small{font-size:22px;color:var(--bronze);margin-left:6px}
+.themes{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;padding:0;list-style:none}
+.themes li{font-size:14px;padding:7px 13px;border-radius:999px;background:var(--ivory2);color:var(--wine)}
+.lnk{font:600 12px/1 var(--caps);letter-spacing:.16em;text-transform:uppercase;color:var(--wine);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px}
+.lnk:hover{color:var(--bronze)}
+.contact{background:linear-gradient(160deg,var(--wine) 0%,var(--plum) 100%);color:var(--ivory)}
+.contact .caps{color:var(--gold)}
+.contact h3{font:500 34px/1.1 var(--serif);color:var(--champ);margin:12px 0 18px}
+.contact dl{margin:0 0 26px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 18px}
+.contact dt{font:600 11px/1.9 var(--caps);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.contact dd{margin:0}
+.contact dd a{color:var(--ivory);text-decoration-color:rgba(221,205,136,.5)}
+.contact .ctas .btn-line{color:var(--champ)}
+
+/* closer */
+.closer{background:var(--plum);color:var(--ivory);text-align:center;padding:76px 0 40px;position:relative;overflow:hidden}
+.closer h2{font:500 clamp(30px,4vw,46px)/1.1 var(--serif);color:var(--champ);margin:12px auto 14px;max-width:760px}
+.closer p{max-width:600px;margin:0 auto 28px;color:#e2d4cc}
+.closer .ctas{justify-content:center}
+footer{background:#120103;color:#bfa9a8;font-size:13.5px;padding:24px 0 96px;text-align:center}
+footer a{color:var(--champ)}
+
+/* mobile bar */
+.mbar{display:none}
+@media (max-width:960px){
+  .hero-g{grid-template-columns:minmax(0,1fr);gap:44px;padding:56px 0 64px}
+  .arch{width:min(380px,100%)}
+  .svc-g{grid-template-columns:minmax(0,1fr)}
+  .hours{position:static}
+  .visit-g{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .chip,.hd .btn{display:none}
+  .brand b{font-size:12px;letter-spacing:.18em}
+  .strip ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strip li:nth-child(3){border-left:0}
+  .strip li:nth-child(n+3){border-top:1px solid rgba(221,205,136,.2)}
+  section{padding:64px 0}
+  .cards{grid-template-columns:minmax(0,1fr)}
+  .ph-g{grid-template-columns:minmax(0,1fr)}
+  .arch .tag{left:8px}
+  .panel{padding:28px 22px}
+  .ctas .btn{flex:1 1 100%;justify-content:center}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--plum);border-top:1px solid rgba(221,205,136,.3)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:56px;font:600 12px/1 var(--caps);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--champ)}
+  .mbar a:first-child{background:var(--gold);color:var(--plum)}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="Luna Beauty Salon & Barbershop, top of page">
+      <img src="img/mark.jpg" width="160" height="160" alt="Luna Beauty Salon gold L monogram">
+      <span><b>LUNA BEAUTY SALON</b><small>&amp; BARBERSHOP</small></span>
+    </a>
+    <div class="hd-r">
+      <span class="chip">Tue–Sat 9–7</span>
+      <a class="btn btn-gold" href="tel:+14146451016">Call to book</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <div class="ring" aria-hidden="true"></div>
+    <div class="wrap hero-g">
+      <div>
+        <div class="caps">Cuts · Styling · Fades · Braids</div>
+        <h1>Your south side salon <em>&amp; barbershop.</em></h1>
+        <p class="lede">A relaxed, welcoming chair at 3474 S 13th St. Tell us exactly what you want, and we'll talk it through before we start.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="tel:+14146451016">Call to book (414) 645-1016</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Luna+Beauty+Salon+3474+S+13th+St+Milwaukee+WI+53215" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="arch">
+        <div class="f"><img src="img/braid.jpg" width="1200" height="1466" alt="A blonde waterfall braid done at Luna Beauty Salon, seen from above"></div>
+        <div class="tag"><b>Braids &amp; styling</b><span>Real work from the shop</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <ul class="wrap">
+      <li><span>Salon</span>&amp; barbershop</li>
+      <li><span>LGBTQ+</span>friendly</li>
+      <li><span>Tue–Sat</span>9 AM–7 PM</li>
+      <li><span>4.5</span>on Google</li>
+    </ul>
+  </div>
+
+  <section id="services">
+    <div class="wrap svc-g">
+      <div>
+        <div class="caps kicker">What we do</div>
+        <h2 class="h2">Cuts, fades and styling, done in one welcoming chair.</h2>
+        <div class="cards">
+          <article class="card"><i>I</i><h3>Women's cuts &amp; trims</h3><p>From a quick trim to a fresh new shape.</p></article>
+          <article class="card"><i>II</i><h3>Men's cuts &amp; fades</h3><p>Clean fades and classic cuts from the barbershop side.</p></article>
+          <article class="card"><i>III</i><h3>Styling &amp; braids</h3><p>Braids and styling for everyday or a big night out.</p></article>
+        </div>
+        <p class="note">Call for pricing and availability.</p>
+        <div class="promise">
+          <h3>Your length, your call.</h3>
+          <p>Bring a photo or tell us your length goal. Your stylist will confirm it with you before the first cut.</p>
+        </div>
+      </div>
+
+      <aside class="hours" aria-labelledby="hrs">
+        <div class="caps" id="hrs">Are we open?</div>
+        <div class="status"><span class="dot" id="dot"></span><span id="st">Hours</span></div>
+        <p class="sub" id="sub">Tuesday–Saturday, 9 AM–7 PM.</p>
+        <ul class="week" id="week">
+          <li data-d="0" class="off"><span>Sunday</span><span>Closed</span></li>
+          <li data-d="1" class="off"><span>Monday</span><span>Closed</span></li>
+          <li data-d="2"><span>Tuesday</span><span>9 AM–7 PM</span></li>
+          <li data-d="3"><span>Wednesday</span><span>9 AM–7 PM</span></li>
+          <li data-d="4"><span>Thursday</span><span>9 AM–7 PM</span></li>
+          <li data-d="5"><span>Friday</span><span>9 AM–7 PM</span></li>
+          <li data-d="6"><span>Saturday</span><span>9 AM–7 PM</span></li>
+        </ul>
+        <a class="btn btn-gold" href="tel:+14146451016">Call (414) 645-1016</a>
+        <small>Hours as listed on Google. Milwaukee time.</small>
+      </aside>
+    </div>
+  </section>
+
+  <section class="photos" id="shop">
+    <div class="wrap">
+      <div class="caps kicker">Inside Luna</div>
+      <h2 class="h2">A neighborhood shop on S 13th St.</h2>
+      <div class="ph-g">
+        <figure class="ph"><img src="img/interior.jpg" width="720" height="960" alt="Inside the salon: styling chairs, product shelves and a teal back wall" loading="lazy"><figcaption>The shop floor, from our Google photos.</figcaption></figure>
+        <div class="ph word">
+          <img src="img/logo.jpg" width="520" height="520" alt="Luna Beauty Salon &amp; Barbershop logo" loading="lazy">
+          <p>Everyone's welcome in the chair.</p>
+          <span>Salon · Barbershop · LGBTQ+ friendly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap visit-g">
+      <div class="panel rev">
+        <div class="caps kicker">What clients mention</div>
+        <div class="big">4.5<small>on Google</small></div>
+        <ul class="themes">
+          <li>Relaxed atmosphere</li><li>Welcoming staff</li><li>Haircuts</li><li>Hairstyling</li><li>Accommodating</li>
+        </ul>
+        <a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=Luna+Beauty+Salon+3474+S+13th+St+Milwaukee+WI+53215" target="_blank" rel="noopener">Read our reviews on Google →</a>
+      </div>
+      <div class="panel contact">
+        <div class="caps">Visit</div>
+        <h3>Come sit in our chair.</h3>
+        <dl>
+          <dt>Call</dt><dd><a href="tel:+14146451016">(414) 645-1016</a></dd>
+          <dt>Where</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Luna+Beauty+Salon+3474+S+13th+St+Milwaukee+WI+53215" target="_blank" rel="noopener">3474 S 13th St<br>Milwaukee, WI 53215</a></dd>
+          <dt>Hours</dt><dd>Tue–Sat 9 AM–7 PM<br>Sun &amp; Mon closed</dd>
+        </dl>
+        <div class="ctas">
+          <a class="btn btn-gold" href="tel:+14146451016">Call to book</a>
+          <a class="btn btn-line" href="https://www.facebook.com/lunabeautysalon" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closer">
+    <div class="wrap">
+      <div class="caps" style="color:var(--gold)">A first look</div>
+      <h2>This is a first look at what Luna's own website could feel like.</h2>
+      <p>One page, built from your Google listing and logo. Your services, your stylists and your photos, front and center.</p>
+      <div class="ctas"><a class="btn btn-gold" href="tel:+14146451016">Call (414) 645-1016</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Website by Cream City Post · Independent website concept, not the official Luna Beauty Salon site. Logo from <a href="https://www.facebook.com/lunabeautysalon" target="_blank" rel="noopener">facebook.com/lunabeautysalon</a>; photos, hours and rating from their Google listing.</div>
+</footer>
+
+<nav class="mbar" aria-label="Quick actions">
+  <a href="tel:+14146451016">Call to book</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Luna+Beauty+Salon+3474+S+13th+St+Milwaukee+WI+53215" target="_blank" rel="noopener">Directions</a>
+</nav>
+
+<script>
+(function(){
+  var OPEN=9, CLOSE=19, DAYS=[2,3,4,5,6], names=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var p={};
+  try{
+    new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false})
+      .formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+  }catch(e){var d=new Date();p={weekday:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()],hour:String(d.getHours()),minute:String(d.getMinutes())}}
+  var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday), h=(parseInt(p.hour,10)%24)+parseInt(p.minute,10)/60;
+  var li=document.querySelector('#week li[data-d="'+day+'"]'); if(li) li.classList.add('today');
+  var st=document.getElementById('st'), sub=document.getElementById('sub'), dot=document.getElementById('dot');
+  var openDay=DAYS.indexOf(day)>-1;
+  if(openDay && h>=OPEN && h<CLOSE){
+    st.textContent='Open now'; dot.classList.add('open');
+    var left=CLOSE-h; sub.textContent= left<=1 ? 'Closing soon — open until 7 PM today.' : 'Open until 7 PM today. Call to book a chair.';
+  }else{
+    st.textContent='Closed now';
+    var n; if(openDay && h<OPEN){ sub.textContent='Opens today at 9 AM.'; }
+    else{ for(var i=1;i<=7;i++){n=(day+i)%7; if(DAYS.indexOf(n)>-1)break;} sub.textContent='Opens '+(i===1?'tomorrow':names[n])+' at 9 AM.'; }
+  }
+})();
+</script>
+</body>
+</html>
