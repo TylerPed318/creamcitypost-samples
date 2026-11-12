@@ -16,6 +16,7 @@
 
 - Nov 11, ~5:40 PM CT (scheduled run): CCP-023 v2 done, live and emailed (0 credits). Named review quotes removed; stable "5.0 on Google" card, no count. Logged CCP-015/016 v1 approvals. Note: commit 7764af0 ("Sample log: CCP-023 v2 done") accidentally carried the CCP-024 v2 review-copy edits and no log change.
 - Nov 11, ~5:50 PM CT (scheduled run): CCP-024 v2 done, live and emailed (4 credits: bay 4K upscale + sign 2K upscale; door "General Repair & Towing" strip blended back from the original). Review quotes and count removed. Hours kept 8–6 / 8–3 (live Google not checkable). Session ends after 2 revisions. Next up, by brief time: CCP-030 Luna Beauty Salon (a salon, not a trade; still unresolved), CCP-032 Fernandez Auto Service, CCP-022 4Ever Green, CCP-033, CCP-034, CCP-040, then 049–066.
+- in progress — CCP-030 (Nov 11, 6:30 PM CT, scheduled run)
 
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
