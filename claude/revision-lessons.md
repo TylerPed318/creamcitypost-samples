@@ -107,3 +107,4 @@ Approved as final so far: CCP-005 v3, CCP-007 v3, CCP-008 v3, CCP-009 v3, CCP-01
 - **Nov 11, CCP-040 (scheduled run):** `git add -A` for a log commit also sweeps in a half-built sample's `img/` folder, so the images go live before the page. Stage only `claude/` on log commits (`git add claude/`).
 
 - Nov 11, Tyler chat / CCP-055 v2: Use a draggable slider whenever presenting real before-and-after comparisons, rather than toggle buttons. Preserve keyboard/touch operation and original photo geometry; disclose different camera angles. This is Tyler's standing preference for future samples.
+- **Nov 11, CCP-056 (scheduled run):** To hide readable certificates behind a person, don't blur hard rectangles (`-region` leaves blocky patches). Composite a blurred copy through a feathered mask (person polygon black, blur the mask ~18px), which reads as natural depth of field. Also: don't show five full stars beside a non-5.0 rating; use one star.
