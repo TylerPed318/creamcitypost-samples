@@ -130,3 +130,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - done — CCP-060 v1 (Nov 11, 2026 resumed run): live and emailed 1a1cdd8b1d4f31ab, confirmed SENT; 0 credits; sample commit b95964d. Original logo/fonts/colors retained; real team/store photos; one service chooser. Google rating and BBB omitted pending verification.
 
 - in progress — CCP-055 v3 (Nov 11, 2026 9:46 PM America/Chicago, Tyler chat: larger comparison and modern opening)
+
+- in progress — CCP-060 v2 (Nov 11, 2026 9:49 PM America/Chicago, Tyler chat: distinct modern visual revision)
