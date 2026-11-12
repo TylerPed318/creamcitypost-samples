@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Final Conflict Pest Management — Website concept by Cream City Post</title>
+<meta name="description" content="Independent website concept for Final Conflict Pest Management, Milwaukee pest and wildlife control.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#141414; --char2:#1f1f1f; --red:#C8102E; --red-d:#A00D25; --green:#2E7D1F;
+  --navy:#1E2A4A; --warm:#F4F3F0; --line:#dcd9d2; --ink:#1b1b1b; --muted:#5b5853; --white:#fff;
+  --disp:'Oswald',Impact,'Arial Narrow',sans-serif; --body:'Source Sans 3',system-ui,-apple-system,Segoe UI,sans-serif;
+  --r:6px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.55;color:var(--ink);background:var(--warm)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--disp);text-transform:uppercase;letter-spacing:.01em;line-height:1.05;margin:0}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:var(--r);font-family:var(--disp);font-weight:600;font-size:18px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;transition:background .15s,transform .15s,border-color .15s}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d);transform:translateY(-1px)}
+.btn-ghost{border:2px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* header */
+.top{background:var(--char);color:#fff;position:sticky;top:0;z-index:20;border-bottom:3px solid var(--red)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand svg{width:46px;height:46px;flex:none}
+.brand b{display:block;font-family:var(--disp);font-weight:700;font-size:22px;letter-spacing:.03em;line-height:1}
+.brand span{display:block;font-family:var(--disp);font-weight:600;font-size:13px;letter-spacing:.14em;color:#5fbf4a;margin-top:3px}
+.top .call{display:flex;align-items:center;gap:14px}
+.top .store{font-size:14px;color:#cfcac2;text-align:right;line-height:1.3}
+.top .store a{color:#fff;text-decoration:none;font-weight:600}
+.top .btn{min-height:44px;padding:9px 16px;font-size:17px}
+
+/* hero */
+.hero{background:var(--char);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px) 0 0/100% 64px,
+  linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px) 0 0/64px 100%;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:center;padding:64px 0 72px}
+.kick{display:inline-flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-size:14px;color:#ff5a6e}
+.kick::before{content:"";width:28px;height:2px;background:var(--red)}
+.hero h1{font-size:clamp(40px,6vw,72px);margin:18px 0 20px}
+.hero h1 em{font-style:normal;color:var(--red);position:relative;white-space:nowrap}
+.hero p.lede{font-size:19px;color:#d9d5ce;max-width:34em;margin:0 0 28px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hours-line{margin-top:22px;font-size:15px;color:#a9a49b}
+.hours-line strong{color:#fff;font-weight:600}
+.scope{position:relative;justify-self:end;width:min(440px,100%)}
+.scope .frame{position:relative;border-radius:50% 50% var(--r) var(--r);overflow:hidden;border:6px solid #fff;box-shadow:0 30px 60px rgba(0,0,0,.45);aspect-ratio:4/5;background:#333}
+.scope .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.scope .ring{position:absolute;inset:-26px -26px auto;aspect-ratio:1;border:2px solid rgba(200,16,46,.75);border-radius:50%;pointer-events:none}
+.scope .cross{position:absolute;left:50%;top:-40px;bottom:-30px;width:2px;background:rgba(255,255,255,.18);pointer-events:none}
+.scope figcaption{position:absolute;left:-18px;bottom:28px;background:var(--red);color:#fff;font-family:var(--disp);text-transform:uppercase;letter-spacing:.06em;padding:10px 16px;border-radius:var(--r);font-size:15px;line-height:1.2;box-shadow:0 10px 20px rgba(0,0,0,.3)}
+.scope figcaption small{display:block;font-family:var(--body);text-transform:none;letter-spacing:0;font-size:13px;opacity:.9}
+
+/* proof strip */
+.proof{background:#fff;border-bottom:1px solid var(--line)}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 18px;display:flex;gap:12px;align-items:center;border-left:1px solid var(--line);font-weight:600;line-height:1.25}
+.proof li:first-child{border-left:0}
+.proof .ic{width:38px;height:38px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--warm);color:var(--red)}
+.proof .ic svg{width:20px;height:20px}
+.proof .star{color:var(--red);font-family:var(--disp);font-size:20px}
+.proof small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+
+/* picker */
+.sec{padding:84px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(32px,4.4vw,52px)}
+.sec-head p{max-width:30em;margin:0;color:var(--muted)}
+.eyebrow{font-family:var(--disp);letter-spacing:.16em;text-transform:uppercase;font-size:14px;color:var(--red);margin-bottom:10px;display:block}
+.picker{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:22px}
+.tabs{display:grid;gap:12px;align-content:start}
+.tab{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;gap:16px;padding:18px 20px;background:#fff;border:2px solid var(--line);border-radius:var(--r);transition:border-color .15s,background .15s}
+.tab:hover{border-color:#b9b4ab}
+.tab:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
+.tab .tg{width:44px;height:44px;flex:none}
+.tab b{display:block;font-family:var(--disp);font-size:24px;text-transform:uppercase;letter-spacing:.02em;line-height:1.1}
+.tab span{color:var(--muted);font-size:15px}
+.tab[aria-selected="true"]{border-color:var(--char);background:var(--char);color:#fff}
+.tab[aria-selected="true"] span{color:#cfcac2}
+.tab .tg circle.bull{fill:transparent;transition:fill .15s}
+.tab[aria-selected="true"] .tg circle.bull{fill:var(--red)}
+.panel{background:#fff;border:2px solid var(--char);border-radius:var(--r);padding:34px 34px 30px;position:relative;overflow:hidden}
+.panel::after{content:"";position:absolute;right:-90px;top:-90px;width:260px;height:260px;border-radius:50%;border:26px solid var(--warm);box-shadow:0 0 0 26px #fff,0 0 0 52px var(--warm);pointer-events:none}
+.panel h3{font-size:34px;position:relative;z-index:1}
+.panel .say{font-size:19px;margin:12px 0 18px;max-width:28em;position:relative;z-index:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 22px;position:relative;z-index:1}
+.chips li{background:var(--warm);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:15px}
+.panel .note{display:flex;gap:10px;align-items:flex-start;color:var(--green);font-weight:600;margin:0 0 24px}
+.panel .note svg{width:20px;height:20px;flex:none;margin-top:3px}
+.panel[hidden]{display:none}
+
+/* wildlife row */
+.wild{background:var(--navy);color:#fff}
+.wild .sec-head p{color:#c3c9d8}
+.wild .eyebrow{color:#ff8494}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);overflow:hidden}
+.steps .ph{aspect-ratio:4/3;overflow:hidden;background:#111}
+.steps .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.steps li:hover .ph img{transform:scale(1.04)}
+.steps .tx{padding:18px 20px 22px}
+.steps h3{font-size:24px;display:flex;align-items:center;gap:12px}
+.steps h3::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--red);font-size:18px;flex:none}
+.steps p{margin:8px 0 0;color:#d4d9e4;font-size:16px}
+.wild .foot{margin-top:26px;color:#c3c9d8;font-size:15px}
+
+/* bottom: reviews + contact */
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px}
+.rating{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+.rating .big{font-family:var(--disp);font-size:68px;line-height:1;font-weight:700}
+.rating .stars{color:var(--red);font-size:24px;letter-spacing:2px}
+.rating small{display:block;color:var(--muted);font-size:15px}
+.themes{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}
+.themes li{display:flex;gap:12px;align-items:center;font-size:18px;font-weight:600}
+.themes li::before{content:"";width:12px;height:12px;border-radius:50%;border:3px solid var(--red);flex:none}
+.card .lnk{font-weight:600;color:var(--red);text-decoration-thickness:2px;text-underline-offset:3px}
+.card .lnk:hover{color:var(--red-d)}
+.owner{border-top:1px solid var(--line);margin-top:24px;padding-top:22px}
+.owner blockquote{margin:0;font-size:18px;line-height:1.5}
+.owner cite{display:block;margin-top:8px;font-style:normal;color:var(--muted);font-size:15px}
+.contact{background:var(--char);color:#fff;border-color:var(--char)}
+.contact h3{font-size:30px;margin-bottom:6px}
+.contact .sub{color:#cfcac2;margin:0 0 20px}
+.lines{display:grid;gap:12px;margin-bottom:22px}
+.line{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-radius:var(--r);background:var(--char2);border:1px solid #333;text-decoration:none;transition:border-color .15s}
+.line:hover{border-color:var(--red)}
+.line small{display:block;color:#a9a49b;font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+.line b{font-family:var(--disp);font-size:26px;letter-spacing:.03em;font-weight:600}
+.line .go{color:var(--red);font-family:var(--disp);text-transform:uppercase;font-size:15px;letter-spacing:.08em;white-space:nowrap}
+.storebox{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:center;border-top:1px solid #333;padding-top:20px}
+.storebox img{border-radius:var(--r);aspect-ratio:1;object-fit:cover;width:120px}
+.storebox p{margin:0;font-size:15px;color:#d9d5ce}
+.storebox strong{color:#fff;display:block;font-family:var(--disp);text-transform:uppercase;letter-spacing:.04em;font-size:18px;font-weight:600}
+.hrs{margin-top:18px;font-size:15px;color:#cfcac2;display:grid;gap:4px}
+.hrs b{color:#fff}
+
+.closer{background:var(--red);color:#fff;text-align:center;padding:56px 0}
+.closer h2{font-size:clamp(28px,4vw,44px)}
+.closer p{margin:10px auto 22px;max-width:34em;color:#ffe1e5}
+.closer .btn{background:#fff;color:var(--red)}
+.closer .btn:hover{background:var(--char);color:#fff}
+footer{background:var(--char);color:#a9a49b;font-size:14px;padding:26px 0 30px}
+footer p{margin:0}
+footer a{color:#fff}
+
+/* mobile call bar */
+.bar{display:none}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:44px;padding:40px 0 56px}
+  .scope{justify-self:center;width:min(340px,86%)}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid var(--line)}
+  .picker,.duo{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .top .store{display:none}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:68px}
+  .brand b{font-size:19px}
+  .brand span{font-size:11px}
+  .brand svg{width:40px;height:40px}
+  .top .btn .t{display:none}
+  .top .btn{padding:9px 12px}
+  .sec{padding:60px 0}
+  .proof li{padding:16px 12px;font-size:15px}
+  .proof .ic{width:32px;height:32px}
+  .panel{padding:26px 20px 24px}
+  .card{padding:24px 20px}
+  .line b{font-size:22px}
+  .storebox{grid-template-columns:88px minmax(0,1fr)}
+  .storebox img{width:88px}
+  .scope figcaption{left:-8px}
+  .bar{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--char);border-top:2px solid var(--red)}
+  .bar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:60px;text-decoration:none;font-family:var(--disp);text-transform:uppercase;letter-spacing:.04em;font-size:16px;color:#fff}
+  .bar a:first-child{background:var(--red)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Final Conflict Pest Management">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fff"/><circle cx="50" cy="50" r="40" fill="none" stroke="#141414" stroke-width="3"/><circle cx="50" cy="50" r="31" fill="none" stroke="#141414" stroke-width="8"/><circle cx="50" cy="50" r="19" fill="none" stroke="#C8102E" stroke-width="8"/><circle cx="50" cy="50" r="6" fill="none" stroke="#141414" stroke-width="2.5"/><path d="M50 2v96M2 50h96" stroke="#141414" stroke-width="2.5"/></svg>
+      <div><b>FINAL CONFLICT</b><span>PEST MANAGEMENT</span></div>
+    </a>
+    <div class="call">
+      <div class="store">Store &amp; supplies<br><a href="tel:+14146161420">414-616-1420</a></div>
+      <a class="btn btn-red" href="tel:+14147316478"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span class="t">Call&nbsp;</span>414-731-6478</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kick">Milwaukee pest &amp; wildlife control</span>
+      <h1>Pests out. <em>Done right</em> the first time.</h1>
+      <p class="lede">Bed bugs, roaches, ants, mice, rats, bees and wasps, plus humane removal of squirrels, raccoons, possums and skunks. Owner-operated by Rashid Ali, with a pest-supply store on N Teutonia Ave.</p>
+      <div class="ctas">
+        <a class="btn btn-red" href="tel:+14147316478"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call 414-731-6478</a>
+        <a class="btn btn-ghost" href="#problem">What's bugging you?</a>
+      </div>
+      <p class="hours-line"><strong>Service:</strong> Monday – Saturday 8:00 am – 5:00 pm &nbsp;·&nbsp; Call for a quote or to schedule an inspection.</p>
+    </div>
+    <figure class="scope" style="margin:0">
+      <span class="ring" aria-hidden="true"></span><span class="cross" aria-hidden="true"></span>
+      <div class="frame"><img src="img/rashid.jpg" width="1100" height="1183" alt="Rashid Ali, owner, behind the counter at the Final Conflict store on N Teutonia Ave"></div>
+      <figcaption>Rashid Ali<small>Owner</small></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="proof" aria-label="Why Final Conflict">
+  <div class="wrap">
+    <ul>
+      <li><span class="ic star" aria-hidden="true">★</span><span>5.0 on Google<small>Customer rating</small></span></li>
+      <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span><span>Homes &amp; businesses<small>Residential and commercial</small></span></li>
+      <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><span>Over 25 years<small>of experience on staff</small></span></li>
+      <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9h16M9 20v-6h6v6"/></svg></span><span>Walk-in store<small>2984 N Teutonia Ave</small></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="problem">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Pick your problem</span><h2>What's bugging you?</h2></div>
+      <p>Tap a category to see what Final Conflict treats, in their own words. Then call for a quote or to schedule an inspection.</p>
+    </div>
+    <div class="picker">
+      <div class="tabs" role="tablist" aria-label="Pest categories">
+        <button class="tab" role="tab" id="t-ins" aria-controls="p-ins" aria-selected="true">
+          <svg class="tg" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="22" cy="22" r="12" fill="none" stroke="currentColor" stroke-width="4"/><circle class="bull" cx="22" cy="22" r="5"/></svg>
+          <span><b>Insects</b><span>Bed bugs, roaches, ants, bees &amp; more</span></span>
+        </button>
+        <button class="tab" role="tab" id="t-rod" aria-controls="p-rod" aria-selected="false" tabindex="-1">
+          <svg class="tg" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="22" cy="22" r="12" fill="none" stroke="currentColor" stroke-width="4"/><circle class="bull" cx="22" cy="22" r="5"/></svg>
+          <span><b>Rodents</b><span>Mice, rats, chipmunks</span></span>
+        </button>
+        <button class="tab" role="tab" id="t-wild" aria-controls="p-wild" aria-selected="false" tabindex="-1">
+          <svg class="tg" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="22" cy="22" r="12" fill="none" stroke="currentColor" stroke-width="4"/><circle class="bull" cx="22" cy="22" r="5"/></svg>
+          <span><b>Wildlife</b><span>Squirrels, raccoons, possum, skunk</span></span>
+        </button>
+      </div>
+      <div>
+        <div class="panel" role="tabpanel" id="p-ins" aria-labelledby="t-ins">
+          <h3>Insects</h3>
+          <p class="say">Specializing in treatment and removal, for homes and businesses.</p>
+          <ul class="chips"><li>Cockroaches</li><li>Bed bugs</li><li>Fleas</li><li>Spiders</li><li>Bees, wasps, hornets</li><li>Ants &amp; carpenter ants</li><li>Mosquito sprays (seasonal)</li></ul>
+          <a class="btn btn-red" href="tel:+14147316478">Call about insects</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p-rod" aria-labelledby="t-rod" hidden>
+          <h3>Rodents</h3>
+          <p class="say">Elimination and future infestation prevention.</p>
+          <ul class="chips"><li>Mice</li><li>Rats</li><li>Chipmunks</li></ul>
+          <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Bait and traps are also stocked at the Teutonia Ave store.</p>
+          <a class="btn btn-red" href="tel:+14147316478">Call about rodents</a>
+        </div>
+        <div class="panel" role="tabpanel" id="p-wild" aria-labelledby="t-wild" hidden>
+          <h3>Small animals &amp; wildlife</h3>
+          <p class="say">Humane capture and relocation.</p>
+          <ul class="chips"><li>Squirrels</li><li>Raccoons</li><li>Possum</li><li>Skunk</li><li>Muskrat</li></ul>
+          <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Final Conflict will also seal all entry points to prevent reentry.</p>
+          <a class="btn btn-red" href="tel:+14147316478">Call about wildlife</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wild">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Real Final Conflict jobs</span><h2>Wildlife, handled start to finish</h2></div>
+      <p>Squirrels, raccoons, possum, skunk or muskrat: here's how a wildlife job goes.</p>
+    </div>
+    <ol class="steps">
+      <li><div class="ph"><img src="img/capture.jpg" width="1000" height="750" loading="lazy" alt="A raccoon safely held in a live trap in the Final Conflict truck"></div><div class="tx"><h3>Humane capture</h3><p>Humane capture in live traps.</p></div></li>
+      <li><div class="ph"><img src="img/relocate.jpg" width="1000" height="750" loading="lazy" alt="Two caged raccoons in the bed of the Final Conflict truck, ready for relocation"></div><div class="tx"><h3>Relocation</h3><p>Humane relocation, away from your home.</p></div></li>
+      <li><div class="ph"><img src="img/entry.jpg" width="1000" height="750" loading="lazy" alt="A chewed opening at a roof edge where an animal was getting in, with a trap set beside it"></div><div class="tx"><h3>Seal the entry</h3><p>All entry points sealed to prevent reentry.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap duo">
+    <div class="card">
+      <span class="eyebrow">What customers say</span>
+      <div class="rating"><div class="big">5.0</div><div><div class="stars" aria-label="5 out of 5">★★★★★</div><small>Google rating</small></div></div>
+      <ul class="themes"><li>Professional staff</li><li>Efficient and responsive</li><li>Reasonable rates</li></ul>
+      <a class="lnk" href="https://www.google.com/maps/place/Final+Conflict+Pest+Management/data=!4m2!3m1!1s0x880503ce5e0b5009:0xea4499fa4b9a8cec" target="_blank" rel="noopener">Read the reviews on Google →</a>
+      <div class="owner">
+        <blockquote>“When I entered the field of pest management it was with the intent to help others improve their quality of life by eliminating existing pest problems.”</blockquote>
+        <cite>— Mr. Rashid, Owner</cite>
+      </div>
+    </div>
+    <div class="card contact">
+      <h3>Call for a quote or inspection</h3>
+      <p class="sub">Call us today for a quote or to schedule an inspection.</p>
+      <div class="lines">
+        <a class="line" href="tel:+14147316478"><span><small>Service calls</small><b>414-731-6478</b></span><span class="go">Tap to call</span></a>
+        <a class="line" href="tel:+14146161420"><span><small>Store</small><b>414-616-1420</b></span><span class="go">Tap to call</span></a>
+        <a class="line" href="mailto:finalconflictpest@gmail.com"><span><small>Email</small><b style="font-size:19px">finalconflictpest@gmail.com</b></span></a>
+      </div>
+      <div class="storebox">
+        <img src="img/store.jpg" width="700" height="700" loading="lazy" alt="Shelves of professional-strength pest supplies at the Final Conflict store">
+        <p><strong>The pest-supply store</strong>Professional strength supplies the experts use: mice and rat bait and traps, wasp, bed bug and fly products, and everyday prevention, with advice included. 2984 N Teutonia Ave, Milwaukee, WI 53206.</p>
+      </div>
+      <div class="hrs"><span><b>Service hours:</b> Monday – Saturday 8:00 am – 5:00 pm</span><span><b>Store hours:</b> Monday – Saturday 10:00 am – 5:00 pm</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <h2>A first look at a new Final Conflict website</h2>
+    <p>Working tap-to-call, your real job photos, and your 5.0 rating up front. A company that does the job right the first time.</p>
+    <a class="btn" href="tel:+14147316478">Call 414-731-6478</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official Final Conflict Pest Management site. Logo redrawn; services, hours, owner note and photos from finalconflictpestmanagement.com; rating from Google.</p>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Call Final Conflict">
+  <a href="tel:+14147316478">Call 414-731-6478</a>
+  <a href="tel:+14146161420">Store line</a>
+</nav>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function pick(t,focus){
+    tabs.forEach(function(x){
+      var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+    });
+    if(focus)t.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(t)});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowDown'||e.key==='ArrowRight'?1:e.key==='ArrowUp'||e.key==='ArrowLeft'?-1:0;
+      if(d){e.preventDefault();pick(tabs[(i+d+tabs.length)%tabs.length],true)}
+    });
+  });
+})();
+</script>
+</body>
+</html>
