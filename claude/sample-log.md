@@ -26,6 +26,8 @@
 - Nov 11, ~9:00 PM CT (scheduled run): CCP-051 v1 done, live and emailed (0 credits). Open: Saturday hours conflict (coupon says Sat 8–Noon; used contact-page "weekends closed"); no coupon amounts; no named quotes/count ("4.7 on Google"); only one usable interior photo.
 - Nov 11, ~9:15 PM CT (scheduled run): CCP-052 v1 done, live and emailed (0 credits). Session ends after 3 items (049, 051, 052). Open: hours use homepage wording (no 24/7); $249.99 descaling special left out; no named quotes ("4.9 on Google"). Tip: when a grid shares the `.wrap` element, set padding-top/bottom, not `padding:X 0`, or mobile loses its side gutter. Next up, by brief time: CCP-054 Giese's Tree & Landscaping, CCP-055 AKL Resurfacing, CCP-056 Final Conflict Pest, then 057, 058, 060–066.
 
+- in progress — CCP-054 (2026-11-11 21:03 -06:00, scheduled run)
+
 ## Handled emails (don't reprocess)
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
 Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 2 Go, CCP-012 Hernia, CCP-013 Ingrilli, CCP-014 Sparks, CCP-015 Wood Floors Unlimited, CCP-022 Sunset Septic). The real IDs are in the table.
