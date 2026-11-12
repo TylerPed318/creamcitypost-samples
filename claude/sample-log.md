@@ -39,6 +39,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - Nov 11, 2026 ~9:53 PM CT (Tyler chat): last finished CCP-055 v3 and CCP-060 v2 visual revisions, exact deployed commits verified, public assets 200, 1440/390 live renders inspected. Both ready emails confirmed SENT; AKL 4 credits, Whitlow 0. Next eligible remains CCP-061. Open: original photo camera angles differ; other prior fact omissions retained. Model selection unavailable. Design lesson: execute the brief's main visual idea at a confident scale; company-specific, modern compositions are required.
 
 ## Handled emails (don't reprocess)
+CCP-065 creative brief 1a1cce2242a13c73 handled; v1 ready sent 1a1ce3cf4d5ceca1 (Nov 11).
 CCP-064 creative brief 1a1ccb71faa6b425 handled; v1 ready sent 1a1ce0d5a5ed38e8 (Nov 11).
 CCP-063 creative brief 1a1ccb2b3c822a5f handled; v1 ready sent 1a1ce09fcef63028 (Nov 11).
 CCP-062 creative brief 1a1ccaf6044bf09f handled; v1 ready sent 1a1ce061a372fa65 (Nov 11).
@@ -87,6 +88,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-056 | Final Conflict Pest Management | Pest + wildlife control, Milwaukee | brief | v1 | final-conflict-pest/ | v1 emailed Nov 11, ~9:45 PM. 0 credits. |
 | CCP-057 | SWAT Team Pest Control | Pest control, Milwaukee | brief | v1 | swat-team-pest-control/ | v1 emailed Nov 11, ~9:58 PM. 0 credits. Photo-free; pitch decision pending (Ogden). |
 | CCP-058 | Rodriguez Painting LLC | Painting + drywall + carpentry, Milwaukee | brief | v1 | rodriguez-painting/ | v1 emailed Nov 11, ~10:15 PM. 0 credits. |
+| CCP-065 | Giraffe Electric II, LLC | Electrical contractor (design-build + 24-hr service), Waukesha | brief | v1 | giraffe-electric/ | v1 emailed Nov 11, ~11:45 PM. 0 credits. |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
@@ -124,6 +126,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-063 Fox River:** (262) 333-8072; debm@foxriverplumbing.com; 1638 S West Ave, Unit A, Waukesha 53189; hours "7:00 am – 4:30 pm" + "Closed on holidays" (days unstated); Waukesha & Milwaukee Counties; owners Darryl & Debbie Michlig, "over 70 years of combined"; "5.0 on Google" only. All site images are GoDaddy stock (never use). No Kohler logo, 24/7, licensed/insured, builders, Jake/Sherri.
 - **CCP-062 Rogers:** (262) 510-6035 (call or text); Rogerslandscapingtreeservices@gmail.com (site mailto is broken); 1001 Lincoln Ave, Waukesha 53186; no hours; "5.0 on Google" only. Never show the BBB Accredited badge (not accredited) or "Fully Bonded"; no Roger/Jaret in our copy. Own-site testimonial John Fischer OK verbatim. Hero house number 1176 blurred. Skip climber/mower photos (unconfirmed) and stock gallery images.
 - **CCP-058 Rodriguez:** 414-544-4062 used (Google: 414-699-5630, unresolved); rodriguezpaintingllc78@gmail.com; hours Mon–Fri 8–6, Sat 8–12:30; "4.3 on Google" only. No years (seven years vs EST. 2023), no licensed/insured, no Thomas, no N Water St address. Own-site testimonials Jessica/Danny OK verbatim; never credit the commercial one to David. Skip p1 crew-on-ladders (possible Pexels) and the pillowcase/vanity photos; p6 cropped to drop wall drawing.
+- **CCP-065 Giraffe:** (262) 549-6500; gina@giraffeelectric.com; 2025 S West Ave, Waukesha 53189; hours "Monday–Friday 7:00 AM - 3:30 PM CST", Sat/Sun closed; John (President) & Jeff (VP) Jrolf, founder Frank; "5.0 on Google" only. No year/X years, guarantee, BBB, license #, Kenosha/FdL, day-or-night. Suffix LLC vs Inc. unresolved (sample omits it). Lobby cropped to drop Crown of Life sign; ELCA gym and stock house card not used.
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
@@ -157,4 +160,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - Nov 11, ~10:39 PM CT (scheduled run): session ends after 3 items (062, 063, 064), 0 credits total. Next up: CCP-065 Giraffe Electric II, then CCP-066 Alliance Electrical Contractors.
 
 - Nov 11, 2026 ~22:27 CT (resumed run): last finished CCP-061 v1; next CCP-062 already claimed by concurrent run; next unclaimed queue ID CCP-063. Live HTML byte-match and all assets200;1440/390 visually inspected,375 overflow/all5 service choices passed using installed Playwright in Higgsfield sandbox (named script absent). Runtime cannot select Claude models. 0 credits. Original logo retained inside SVG wrapper; one real portrait, project text replaces unconfirmed photography. Open: pitch decision given low Google rating; ZIP unconfirmed. Ready1a1ce013b02b6378 confirmed SENT.
-- in progress — CCP-065 (Nov 11, ~11:30 PM CT, scheduled run)
+- done — CCP-065 v1 (Nov 11, ~11:45 PM CT, scheduled run): live (page + 11 assets 200, byte-identical) and emailed 1a1ce3cf4d5ceca1; 0 credits; commit 3542bb3. Logo potrace-traced from their JPG. Open: LLC vs Inc.; 24-hour service mechanics; photo ownership; no named quotes/count.
+- in progress — CCP-066 (Nov 11, ~11:45 PM CT, scheduled run)
