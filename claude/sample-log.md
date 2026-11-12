@@ -31,6 +31,7 @@
 - Nov 11, 2026 ~9:24 PM CT (resumed scheduled run): last finished CCP-055 AKL Resurfacing v1, 0 credits; next CCP-056 Final Conflict Pest Management. Sample commit 3618777 verified byte-for-byte live; public images/favicon 200; live 1440/390 screenshots inspected and toggle tested using installed Playwright in Higgsfield sandbox (named script unavailable). Email 1a1cdc8921a22a82 confirmed SENT. Open: small original photos; pricing/rating/address omitted. Runtime cannot select Claude Sonnet; original logo typefaces preserved instead of proposed rebrand.
 
 ## Handled emails (don't reprocess)
+CCP-057 creative brief 1a1cc40dbfc9fd66 handled; v1 ready sent 1a1cdd23ce7e3383 (Nov 11).
 CCP-056 creative brief 1a1cc3e108bc9fca handled; v1 ready sent 1a1cdcecb70ac8cc (Nov 11).
 CCP-055 creative brief 1a1cc38c89d60fe2 handled; v1 ready sent 1a1cdc8921a22a82 (Nov 11).
 CCP-054 creative brief 1a1cc293ef95a96f handled; v1 ready sent 1a1cdba7719f6498 (Nov 11).
@@ -66,6 +67,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-055 | AKL Resurfacing | Bathtub/tile refinishing, Milwaukee | brief + master CSV | v1 | akl-resurfacing/ | v1 live and emailed Nov 11; 0 credits. |
 | CCP-054 | Giese's Tree & Landscaping Service LLC | Tree/landscaping, Milwaukee | brief + master CSV | v1 | gieses-tree-landscaping/ | v1 live and emailed Nov 11. 0 credits; photo-free; ISA pending verification. |
 | CCP-056 | Final Conflict Pest Management | Pest + wildlife control, Milwaukee | brief | v1 | final-conflict-pest/ | v1 emailed Nov 11, ~9:45 PM. 0 credits. |
+| CCP-057 | SWAT Team Pest Control | Pest control, Milwaukee | brief | v1 | swat-team-pest-control/ | v1 emailed Nov 11, ~9:58 PM. 0 credits. Photo-free; pitch decision pending (Ogden). |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
@@ -98,6 +100,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - **CCP-051 Gary's:** 703 Main Street, Delafield 53018; 262-646-8507; hours Mon–Thu 7:30–6, Fri 7:30–5, weekends closed (coupon image says Sat 8–Noon; unresolved); est. 1981 / "45 Years"; ASE Master, ASE Certified and LT1 Technicians; BBB Accredited; 2-year/24,000-mile warranty "on most repairs"; "4.7 on Google" only. Make lines are from their specials JPG. Plates pixelated on storefront.jpg. No coupon amounts; no Max/Seth/Brock.
 - **CCP-052 O&W:** 4379 S Howell Ave, Suite 4, Milwaukee 53207; 414-339-2641; hours "Monday – Friday: 6:00 am – 5:00 pm" + "We offer after 5:00 pm or weekend emergency service" (site has 4 conflicting versions); owner Omer (first name only; from their blog); "4.9 on Google" only. Never use the Getty mini-split photo or the Rinnai product render. No licensed/insured claims; no heat pump/mini-split until confirmed.
 - **CCP-056 Final Conflict:** owner Rashid Ali; mobile 414-731-6478 (primary, Google/truck), store 414-616-1420; finalconflictpest@gmail.com; 2984 N Teutonia Ave, Milwaukee 53206; service Mon–Sat 8–5, store Mon–Sat 10–5; "over 25 years of experience on staff" wording only; "5.0 on Google" only. owner photo has certificates blurred. Never use the Adobe Stock pest images; img_2770 shows an unidentified man (not used).
+- **CCP-057 SWAT:** 414.270.1383; services@mkeswat.com; P.O. Box 510800, Milwaukee 53203 only; since 2005; 8 counties (Milwaukee, Waukesha, Ozaukee, Washington, Racine, Kenosha, Sheboygan, Fond du Lac); no hours; "4.6 on Google" only. Never use the Shutterstock hero; no Ogden name until Tyler OKs; "seasoned vets" ≠ veterans.
 - **CCP-014 TPC:** hero cropped to hide the yard sign's 262-751-6135 (don't print that number). Sunday hours on their site read "9:00AM–5:00AM"; omitted. Only phone: 262-818-0960. No email.
 - **CCP-019 Mike Ingrilli Plumbing:** est. 2007; plumber since 1985, Master Plumber since 1989, third generation; Anya = Operations Manager; "We respond 24/7" is on their site. 237 S. Curtis Road, West Allis; 414-213-9617.
 - **CCP-020 Sparks:** 414-536-8500; never publish the 2011 coupon amounts; "*24/7 emergency rates may be higher".
@@ -109,6 +112,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 
 
 - done — CCP-056 v1 (Nov 11, ~9:45 PM CT, scheduled run): live (page + 6 assets 200) and emailed 1a1cdcecb70ac8cc; 0 credits. Open: Tyler to confirm primary phone (mobile 414-731-6478 used); no named review quotes; truck photo skipped.
-- in progress — CCP-057 (Nov 11, 9:46 PM CT, scheduled run)
+- done — CCP-057 v1 (Nov 11, ~9:58 PM CT, scheduled run): live (200) and emailed 1a1cdd23ce7e3383; 0 credits; photo-free. Open: Tyler to decide whether to pitch (Ogden & Company partnership); no hours on site; Ogden not named.
+- in progress — CCP-058 (Nov 11, 9:59 PM CT, scheduled run)
 
 - in progress — CCP-055 v2 (Nov 11, 2026 9:48 PM America/Chicago, Tyler chat slider revision)
