@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>SWAT Team Pest Control — Website concept by Cream City Post</title>
+<meta name="description" content="Independent website concept for SWAT Team Pest Control, Milwaukee residential and commercial pest control since 2005.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#CE1131; --red-d:#A80E28; --char:#1B1B1D; --graph:#4A4D52; --light:#F2F2F3; --white:#fff; --caution:#F2B705;
+  --line:#dedee1; --muted:#5d6066;
+  --disp:'Oswald','Arial Narrow',Impact,sans-serif; --body:'Montserrat',system-ui,-apple-system,Segoe UI,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:16px;line-height:1.6;color:var(--char);background:var(--white)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(--caution);outline-offset:3px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--disp);font-weight:700;text-transform:uppercase;line-height:1.02;margin:0}
+.it{font-style:italic;transform:skewX(-6deg);display:inline-block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 24px;font-family:var(--disp);font-weight:600;font-size:18px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);transition:background .15s,color .15s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-dark{background:var(--char);color:#fff}
+.btn-dark:hover{background:#000}
+.btn svg{width:18px;height:18px}
+
+.topbar{background:var(--red);color:#fff;font-size:14px;font-weight:600}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:7px 0;flex-wrap:wrap}
+.topbar a{text-decoration:none}
+.topbar a:hover{text-decoration:underline}
+header.main{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header.main .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo img{width:50px;height:50px;flex:none}
+.logo .wm{line-height:1}
+.logo .wm b{font-family:var(--disp);font-style:italic;font-size:30px;letter-spacing:.01em;color:var(--red)}
+.logo .wm b i{color:var(--char);font-style:italic;text-transform:none}
+.logo .wm small{display:block;font-family:var(--disp);font-weight:600;font-style:italic;font-size:11.5px;letter-spacing:.06em;color:var(--char);border-top:2px solid var(--char);padding-top:2px;margin-top:2px}
+header.main .r{display:flex;align-items:center;gap:18px}
+.gchip{font-size:14px;font-weight:600;color:var(--graph);white-space:nowrap}
+.gchip span{color:var(--red)}
+
+/* hero */
+.hero{background:var(--light);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:repeating-linear-gradient(-45deg,var(--char) 0 18px,var(--caution) 18px 36px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:40px;align-items:center;padding:70px 0 84px}
+.tag{display:inline-block;background:var(--char);color:#fff;font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:13px;padding:6px 12px 5px}
+.tag b{color:var(--caution);font-weight:600}
+.hero h1{font-size:clamp(40px,6.4vw,82px);margin:20px 0 22px;letter-spacing:-.005em}
+.hero h1 .red{color:var(--red)}
+.hero h1 .since{display:block;font-size:.5em;color:var(--graph);margin-top:10px}
+.hero p{font-size:18px;color:var(--graph);max-width:36em;margin:0 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.badge{justify-self:center;width:min(360px,100%);position:relative}
+.badge svg{width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.15))}
+.badge .stamp{position:absolute;right:-6px;bottom:8%;background:var(--red);color:#fff;font-family:var(--disp);text-transform:uppercase;padding:10px 14px;transform:rotate(-6deg);text-align:center;line-height:1}
+.badge .stamp b{display:block;font-size:34px}
+.badge .stamp small{font-size:12px;letter-spacing:.14em}
+
+/* proof */
+.proof{background:var(--char);color:#fff}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 20px;border-left:1px solid #333;display:flex;flex-direction:column;gap:2px}
+.proof li:first-child{border-left:0}
+.proof b{font-family:var(--disp);font-size:26px;text-transform:uppercase;line-height:1.1}
+.proof b span{color:var(--caution)}
+.proof small{color:#b7b8bc;font-size:13px}
+
+.sec{padding:84px 0}
+.kick{display:block;font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.16em;font-size:14px;color:var(--red);margin-bottom:10px}
+.sec h2{font-size:clamp(32px,4.6vw,54px)}
+.lead{color:var(--muted);max-width:38em;margin:14px 0 0}
+
+/* paths */
+.paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:36px}
+.path{border:2px solid var(--char);padding:30px 30px 28px;position:relative;background:#fff}
+.path::before{content:"";position:absolute;left:-2px;top:-2px;width:64px;height:8px;background:var(--red)}
+.path h3{font-size:30px}
+.path p{color:var(--graph);margin:10px 0 18px}
+.path ul{list-style:none;padding:0;margin:0 0 22px;display:flex;flex-wrap:wrap;gap:8px}
+.path li{background:var(--light);font-weight:600;font-size:14px;padding:6px 12px}
+.path.dark{background:var(--char);color:#fff;border-color:var(--char)}
+.path.dark p{color:#c9cacd}
+.path.dark li{background:#2b2b2e}
+
+/* county checker */
+.check{background:var(--light)}
+.check .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.counties{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;list-style:none;padding:0}
+.counties li{border:2px solid var(--char);font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:6px 12px;font-size:15px;transition:background .15s,color .15s}
+.counties li.on{background:var(--red);border-color:var(--red);color:#fff}
+.tool{background:#fff;border:2px solid var(--char);padding:30px;box-shadow:10px 10px 0 var(--char)}
+.tool label{display:block;font-family:var(--disp);text-transform:uppercase;letter-spacing:.06em;font-size:20px;margin-bottom:10px}
+.tool select{width:100%;font:600 17px var(--body);padding:13px 14px;border:2px solid var(--char);border-radius:0;background:#fff;color:var(--char);min-height:52px}
+.result{margin-top:20px;padding:18px 18px 20px;border-left:6px solid var(--graph);background:var(--light);min-height:112px}
+.result h3{font-size:24px}
+.result p{margin:6px 0 14px;color:var(--graph)}
+.result.yes{border-color:var(--red)}
+.result.other{border-color:var(--caution)}
+
+/* team */
+.team{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;list-style:none;padding:0;margin:34px 0 0}
+.team li{border:1px solid var(--line);padding:20px 14px;text-align:center;background:#fff}
+.mono{width:62px;height:62px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;font-family:var(--disp);font-size:22px;color:#fff;background:var(--char);box-shadow:0 0 0 3px #fff,0 0 0 5px var(--red)}
+.team b{display:block;font-size:15px;line-height:1.3}
+.team small{display:block;color:var(--muted);font-size:13px;line-height:1.35;margin-top:4px}
+
+/* contact */
+.duo{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px}
+.rate{background:var(--red);color:#fff;padding:34px}
+.rate .n{font-family:var(--disp);font-size:88px;line-height:.9}
+.rate .st{font-size:22px;letter-spacing:3px;margin:8px 0 4px}
+.rate p{margin:0 0 18px;color:#ffe0e5}
+.rate ul{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:8px}
+.rate li{font-weight:600;display:flex;gap:10px;align-items:center}
+.rate li::before{content:"";width:16px;height:6px;background:var(--caution);flex:none}
+.rate a{color:#fff;font-weight:700;text-underline-offset:3px}
+.reach{border:2px solid var(--char);padding:34px}
+.reach h3{font-size:34px}
+.reach .rows{display:grid;gap:0;margin:20px 0 24px}
+.reach .row{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+.reach .row:last-child{border-bottom:1px solid var(--line)}
+.reach .row span{font-family:var(--disp);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-size:14px;padding-top:2px}
+.reach .row a,.reach .row div{font-weight:600;word-break:break-word}
+.reach .row a{text-decoration:none}
+.reach .row a:hover{color:var(--red)}
+.reach .big{font-family:var(--disp);font-size:28px;letter-spacing:.02em}
+
+.closer{background:var(--char);color:#fff;padding:60px 0;position:relative}
+.closer::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:repeating-linear-gradient(-45deg,var(--char) 0 16px,var(--caution) 16px 32px)}
+.closer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.closer h2{font-size:clamp(28px,3.6vw,42px)}
+.closer p{margin:6px 0 0;color:#b7b8bc}
+footer{background:#111;color:#9a9ba0;font-size:13.5px;padding:24px 0 28px}
+footer p{margin:0}
+
+.bar{display:none}
+@media (max-width:980px){
+  .team{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr);padding:44px 0 64px;gap:30px}
+  .badge{width:min(230px,70%);order:-1;justify-self:start}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid #333}
+  .paths,.check .grid,.duo{grid-template-columns:minmax(0,1fr)}
+  .gchip{display:none}
+}
+@media (max-width:600px){
+  body{padding-bottom:64px}
+  .topbar .wrap{justify-content:center}
+  .topbar .em{display:none}
+  .logo img{width:42px;height:42px}
+  .logo .wm b{font-size:24px}
+  .logo .wm small{font-size:9.5px}
+  header.main .btn{min-height:44px;padding:8px 14px;font-size:15px}
+  header.main .btn .t{display:none}
+  .sec{padding:60px 0}
+  .path,.tool,.rate,.reach{padding:24px 20px}
+  .tool{box-shadow:6px 6px 0 var(--char)}
+  .team{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .reach .row{grid-template-columns:minmax(0,1fr);gap:2px}
+  .proof li{padding:16px 14px}
+  .proof b{font-size:22px}
+  .bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30}
+  .bar a{min-height:60px;display:flex;align-items:center;justify-content:center;font-family:var(--disp);text-transform:uppercase;letter-spacing:.05em;text-decoration:none;color:#fff;background:var(--char);font-size:16px}
+  .bar a:first-child{background:var(--red)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap"><a class="em" href="mailto:services@mkeswat.com">services@mkeswat.com</a><a href="tel:+14142701383">Call 414.270.1383 for a free estimate</a></div></div>
+<header class="main">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="SWAT Team Pest Control">
+      <img src="img/favicon.svg" width="50" height="50" alt="">
+      <span class="wm"><b>SWAT <i>Team</i></b><small>PEST &amp; INSECT EXTERMINATION</small></span>
+    </a>
+    <div class="r">
+      <span class="gchip"><span>★</span> 4.6 on Google</span>
+      <a class="btn btn-red" href="tel:+14142701383"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span class="t">Call&nbsp;</span>414.270.1383</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">SWAT Team Pest Control <b>·</b> Milwaukee</span>
+      <h1><span class="it">Pest control</span> for Milwaukee <span class="red">homes, rentals &amp; businesses.</span><span class="since">Since 2005.</span></h1>
+      <p>Bed bugs, mice and rats, roaches, ants, bees, fleas and mosquitoes, with a custom treatment plan for every job, so you can rest easy.</p>
+      <div class="ctas">
+        <a class="btn btn-red" href="tel:+14142701383">Call 414.270.1383</a>
+        <a class="btn btn-dark" href="#area">Do you serve my county?</a>
+      </div>
+    </div>
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="#fff"/><g fill="none" stroke-width="16"><path d="M100 18a82 82 0 0 1 82 82" stroke="#1B1B1D"/><path d="M182 100a82 82 0 0 1-82 82" stroke="#CE1131"/><path d="M100 182a82 82 0 0 1-82-82" stroke="#1B1B1D"/><path d="M18 100a82 82 0 0 1 82-82" stroke="#CE1131"/></g><path d="M100 4v22M100 174v22M4 100h22M174 100h22" stroke="#1B1B1D" stroke-width="5"/><ellipse cx="100" cy="110" rx="26" ry="34" fill="#1B1B1D"/><circle cx="100" cy="68" r="13" fill="#1B1B1D"/><path d="M100 80v62" stroke="#4A4D52" stroke-width="2"/><g stroke="#1B1B1D" stroke-width="5" stroke-linecap="round" fill="none"><path d="M75 92l-18-10M74 112H54M76 132l-16 13M125 92l18-10M126 112h20M124 132l16 13M93 58l-8-14M107 58l8-14"/></g><path d="M50 50L150 150" stroke="#CE1131" stroke-width="14" stroke-linecap="round"/></svg>
+      <div class="stamp"><b>2005</b><small>Since</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-label="Quick facts">
+  <div class="wrap"><ul>
+    <li><b>Since <span>2005</span></b><small>Serving Milwaukee</small></li>
+    <li><b><span>★</span> 4.6 Google</b><small>Customer rating</small></li>
+    <li><b>Home + Business</b><small>Residential &amp; commercial</small></li>
+    <li><b><span>8</span> Counties</b><small>Across SE Wisconsin</small></li>
+  </ul></div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="kick">Choose your path</span>
+    <h2>Two kinds of customers. One SWAT Team.</h2>
+    <p class="lead">Complete interior and exterior pest control service, from seasoned techs who strive to exceed your expectations no matter what the issue is.</p>
+    <div class="paths">
+      <div class="path">
+        <h3>Homeowners</h3>
+        <p>Something living where it shouldn't? Tell us what you're seeing. We'll build a custom treatment plan for your home.</p>
+        <ul><li>Bed bugs</li><li>Mice &amp; rats</li><li>Roaches</li><li>Ants</li><li>Bees</li><li>Fleas</li><li>Mosquitos</li><li>And more</li></ul>
+        <a class="btn btn-red" href="tel:+14142701383">Call for a free estimate</a>
+      </div>
+      <div class="path dark">
+        <h3>Property managers &amp; businesses</h3>
+        <p>Immediate results, budget-friendly service, and easy coordination of the work across your buildings.</p>
+        <ul><li>Rentals &amp; multi-unit</li><li>Commercial sites</li><li>Interior &amp; exterior service</li></ul>
+        <a class="btn btn-red" href="mailto:services@mkeswat.com?subject=Commercial%20pest%20control%20quote">Request a commercial quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec check" id="area">
+  <div class="wrap grid">
+    <div>
+      <span class="kick">Service area</span>
+      <h2>Do you serve my county?</h2>
+      <p class="lead">Residential and commercial pest control in eight Wisconsin counties. Pick yours to check.</p>
+      <ul class="counties" id="clist">
+        <li data-c="Milwaukee">Milwaukee</li><li data-c="Waukesha">Waukesha</li><li data-c="Ozaukee">Ozaukee</li><li data-c="Washington">Washington</li><li data-c="Racine">Racine</li><li data-c="Kenosha">Kenosha</li><li data-c="Sheboygan">Sheboygan</li><li data-c="Fond du Lac">Fond du Lac</li>
+      </ul>
+    </div>
+    <div class="tool">
+      <label for="county">My county is…</label>
+      <select id="county">
+        <option value="">Choose a county</option>
+        <option>Milwaukee</option><option>Waukesha</option><option>Ozaukee</option><option>Washington</option><option>Racine</option><option>Kenosha</option><option>Sheboygan</option><option>Fond du Lac</option>
+        <option value="other">Somewhere else</option>
+      </select>
+      <div class="result" id="result" aria-live="polite">
+        <h3>Pick a county above</h3>
+        <p>We'll tell you right away if SWAT Team covers it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="kick">The team</span>
+    <h2>Meet the SWAT Team</h2>
+    <ul class="team">
+      <li><div class="mono" aria-hidden="true">JR</div><b>Jessica Rothweiler</b><small>Director</small></li>
+      <li><div class="mono" aria-hidden="true">MW</div><b>Martha Willett</b><small>Operations Manager</small></li>
+      <li><div class="mono" aria-hidden="true">AF</div><b>Andy Fritsche</b><small>New Business &amp; Quality Assurance Manager</small></li>
+      <li><div class="mono" aria-hidden="true">JF</div><b>Jackson Firer</b><small>Service Manager</small></li>
+      <li><div class="mono" aria-hidden="true">JK</div><b>Joe Kaja</b><small>Field Manager</small></li>
+      <li><div class="mono" aria-hidden="true">RS</div><b>Reginald Sellers</b><small>Technician</small></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" id="contact">
+  <div class="wrap duo">
+    <div class="rate">
+      <div class="n">4.6</div>
+      <div class="st" aria-hidden="true">★ out of 5</div>
+      <p>Google rating</p>
+      <ul><li>Knowledgeable staff</li><li>Thorough work</li><li>Fair pricing</li></ul>
+      <a href="https://www.google.com/maps/place/SWAT+Team+Pest+Control/data=!4m2!3m1!1s0x88051910e80f1b65:0x32f9fb210aebac55" target="_blank" rel="noopener">Read the reviews on Google →</a>
+    </div>
+    <div class="reach">
+      <span class="kick">Get a free estimate</span>
+      <h3>If you have a pest problem, don't hesitate.</h3>
+      <div class="rows">
+        <div class="row"><span>Phone</span><a class="big" href="tel:+14142701383">414.270.1383</a></div>
+        <div class="row"><span>Email</span><a href="mailto:services@mkeswat.com">services@mkeswat.com</a></div>
+        <div class="row"><span>Mail</span><div>P.O. Box 510800, Milwaukee, WI 53203</div></div>
+        <div class="row"><span>Hours</span><div>Call for current hours</div></div>
+      </div>
+      <a class="btn btn-red" href="tel:+14142701383">Get started with SWAT right now</a>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <div><h2>A first look at a new SWAT Team site</h2><p>Your rating, your team and a clear homeowner path, on one fast page.</p></div>
+    <a class="btn btn-red" href="tel:+14142701383">Call 414.270.1383</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><p>Website by Cream City Post · Independent website concept, not the official SWAT Team Pest Control site. Logo redrawn; services, counties, team and contact details from swatteampestcontrol.com; rating from Google.</p></div></footer>
+
+<nav class="bar" aria-label="Contact SWAT Team">
+  <a href="tel:+14142701383">Call 414.270.1383</a>
+  <a href="#area">My county?</a>
+</nav>
+
+<script>
+(function(){
+  var sel=document.getElementById('county'),out=document.getElementById('result'),
+      chips=[].slice.call(document.querySelectorAll('#clist li'));
+  sel.addEventListener('change',function(){
+    var v=sel.value;
+    chips.forEach(function(c){c.classList.toggle('on',c.getAttribute('data-c')===v)});
+    if(!v){out.className='result';out.innerHTML='<h3>Pick a county above</h3><p>We’ll tell you right away if SWAT Team covers it.</p>';return}
+    if(v==='other'){out.className='result other';out.innerHTML='<h3>Not on the list? Still call.</h3><p>Contact us to see if we may be able to service your home or business.</p><a class="btn btn-dark" href="tel:+14142701383">Call 414.270.1383</a>';return}
+    out.className='result yes';
+    out.innerHTML='<h3>Yes, '+v+' County is covered.</h3><p>Residential and commercial pest control. Call for a free estimate.</p><a class="btn btn-red" href="tel:+14142701383">Call 414.270.1383</a>';
+  });
+})();
+</script>
+</body>
+</html>
