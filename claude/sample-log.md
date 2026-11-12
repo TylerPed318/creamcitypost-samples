@@ -46,6 +46,8 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-069 v1 (Nov 12, ~11:36 AM CT, scheduled run): live (page + 2 imgs 200, byte-identical), emailed 1a1d0d4ac887459d; 0 credits; commit b88a2e9. Pergola full-bleed hero, live open-now hours bar, logo potrace SVG. Open: street address, license numbers, pergola ownership, team photos.
 - done — CCP-070 v1 (Nov 12, ~11:42 AM CT, scheduled run): live (page + 5 imgs 200, byte-identical), emailed 1a1d0dab5f463752; 4 credits (2K upscale of the orange-tank before/after pair; tool lettering blended back from originals); commit 5fe067f. Open: years line, ARC/Certified Master Techs, legal name for footer, 414-331-7662.
 - Nov 12, ~11:42 AM CT (scheduled run): session ends after 3 items (068, 069, 070), 4 credits total. Logged the Nov 12 10:30 AM phone approvals. Next up, oldest brief first: CCP-071 D&D Well & Pumps (1a1d0ba3482fca44), CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0).
+- in progress — CCP-068 v2 (Nov 12, 12:30 PM CT, scheduled run)
+- in progress — CCP-069 v2 (Nov 12, 12:30 PM CT, scheduled run)
 ## Handled emails (don't reprocess)
 CCP-070 creative brief 1a1d080fbb748532 handled; v1 ready sent 1a1d0dab5f463752 (Nov 12).
 CCP-069 creative brief 1a1d080e29bb260b handled; v1 ready sent 1a1d0d4ac887459d (Nov 12).
