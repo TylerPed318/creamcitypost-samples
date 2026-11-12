@@ -30,7 +30,10 @@
 
 - Nov 11, 2026 ~9:24 PM CT (resumed scheduled run): last finished CCP-055 AKL Resurfacing v1, 0 credits; next CCP-056 Final Conflict Pest Management. Sample commit 3618777 verified byte-for-byte live; public images/favicon 200; live 1440/390 screenshots inspected and toggle tested using installed Playwright in Higgsfield sandbox (named script unavailable). Email 1a1cdc8921a22a82 confirmed SENT. Open: small original photos; pricing/rating/address omitted. Runtime cannot select Claude Sonnet; original logo typefaces preserved instead of proposed rebrand.
 
+CCP-060 brief 1a1cc517110dab16 handled; v1 ready 1a1cdd8b1d4f31ab confirmed SENT.
 CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
+
+- Nov 11, 2026 ~9:44 PM CT (resumed run): finished CCP-055 v2 slider revision (b9503f0, ready 1a1cdd3cd48a120c) and CCP-060 v1 Whitlow's (b95964d, ready 1a1cdd8b1d4f31ab), both confirmed SENT; 0 credits. Actual deployed sources match commits; public assets 200; 1440/390 live QA passed. Other run delivered 056/057 and claimed/completed 058, so skipped them. Next eligible CCP-061 Hero Plumbing. Open: Whitlow BBB/rating omitted; Waukesha line not a second store. Runtime cannot select Claude models. Slider preference recorded in playbook and lessons.
 
 ## Handled emails (don't reprocess)
 CCP-058 creative brief 1a1cc45ac01db85e handled; v1 ready sent 1a1cdd58326ed92f (Nov 11).
@@ -67,6 +70,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-040 | Filut Electric | Electrician, Oconomowoc | brief | v1 | filut-electric/ | v1 emailed Nov 11, ~8:10 PM. 0 credits. Facebook/Google-only lead. |
 | CCP-049 | Lake Time Services | Marine upholstery + mobile boat service, Pewaukee | brief | v1 | lake-time-services/ | v1 emailed Nov 11, ~8:45 PM. 0 credits. |
 | CCP-051 | Gary's Auto Repair | Auto repair (imports + all makes), Delafield | brief | v1 | garys-auto-repair/ | v1 emailed Nov 11, ~9:00 PM. 0 credits. |
+| CCP-060 | Whitlow's Security Specialists | Locksmith, Milwaukee | brief + master CSV | v1 | whitlows-security/ | Live and emailed Nov 11; 0 credits; original brand retained. |
 | CCP-055 | AKL Resurfacing | Bathtub/tile refinishing, Milwaukee | brief + master CSV | v2 | akl-resurfacing/ | v2 slider revision live and emailed; 0 credits. |
 | CCP-054 | Giese's Tree & Landscaping Service LLC | Tree/landscaping, Milwaukee | brief + master CSV | v1 | gieses-tree-landscaping/ | v1 live and emailed Nov 11. 0 credits; photo-free; ISA pending verification. |
 | CCP-056 | Final Conflict Pest Management | Pest + wildlife control, Milwaukee | brief | v1 | final-conflict-pest/ | v1 emailed Nov 11, ~9:45 PM. 0 credits. |
@@ -123,4 +127,4 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 
 - done — CCP-055 v2 (Nov 11, Tyler chat): slider revision live and emailed 1a1cdd3cd48a120c; 0 credits; commit b9503f0; drag/keyboard and 1440/390 affected-area QA passed.
 
-- in progress — CCP-060 (Nov 11, 2026 9:38 PM America/Chicago, resumed scheduled run; 056/057 delivered, 058 claimed by another run)
+- done — CCP-060 v1 (Nov 11, 2026 resumed run): live and emailed 1a1cdd8b1d4f31ab, confirmed SENT; 0 credits; sample commit b95964d. Original logo/fonts/colors retained; real team/store photos; one service chooser. Google rating and BBB omitted pending verification.

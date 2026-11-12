@@ -28,6 +28,8 @@ Adopted Nov 11, 2026 (Tyler). **This is the one doc to read before building or r
 
 Header with real logo + tap-to-call → hero (headline + one framed real photo) → slim proof strip (3–4 items) → **exactly one** interactive built from real data (before/after slider only if a real matching pair exists; otherwise an open-now hours card, service picker, etc.) → 3-photo row → 1–2 short reviews + contact card → "first look" closer + footer "Website by Cream City Post". Fold extras into one line of copy. Don't mirror their current hero. It must be a clear upgrade over their site and never thinner on proof.
 
+**Tyler, Nov 11 (chat): Whenever showing a real before-and-after comparison, use a draggable slider rather than toggle buttons. Keep it keyboard/touch accessible and disclose different camera angles; never invent a matching pair.**
+
 ## 4. Facts
 
 - Use only facts from their own site (or Facebook/Google listing for no-website leads), or facts the brief marks as verified. **Check About and History.** When they conflict with the homepage, History wins. Never credit a predecessor's achievements to the current company.
