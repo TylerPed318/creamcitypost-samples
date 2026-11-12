@@ -51,6 +51,10 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-075 v1 revision 1a1d1691b5436b69 handled; v2 ready sent 1a1d1787cbcae9b6 (Nov 12).
+CCP-074 v1 revision 1a1d1691960203ac handled; v2 ready sent 1a1d17869063bf7c (Nov 12).
+CCP-073 v1 revision 1a1d1691915552ee handled; v2 ready sent 1a1d17852ed876f0 (Nov 12).
+CCP-070 v1 approval 1a1d10d00b97b620 logged (frozen).
 CCP-075 creative brief 1a1d0eeda30576f6 handled; v1 ready sent 1a1d1484ab013ce8 (Nov 12).
 CCP-074 creative brief 1a1d0c85a19962c0 handled; v1 ready sent 1a1d14419d3d4540 (Nov 12).
 CCP-073 creative brief 1a1d0c411e346c52 handled; v1 ready sent 1a1d143421d7b781 (Nov 12).
@@ -121,9 +125,9 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-069 | Hardwired Electric | Electrical + Generac + lighting, Lake Country | brief | v2 | hardwired-electric/ | v1 emailed Nov 12, ~11:36 AM; v1 revision → v2 emailed ~12:50 PM. 0 credits. |
 | CCP-070 | Dent Spa Wisconsin | Paintless dent repair + detailing, Oconomowoc | brief | v1 | dent-spa-wisconsin/ | v1 emailed Nov 12, ~11:42 AM. 4 credits. |
 | CCP-071 | D&D Well & Pumps LLC | Well drilling + pumps, Oconomowoc | brief | v1 | dd-well-pumps/ | v1 emailed Nov 12, ~1:10 PM. 2 credits. |
-| CCP-073 | Lake Country Project Guy LLC | Handyman + custom carpentry, Delafield | brief | v1 | lake-country-project-guy/ | v1 emailed Nov 12, ~1:36 PM. 0 credits. |
-| CCP-074 | Wood or Water Pier Service (Wood or Water, Inc.) | Piers + boat lifts, Lake Country | brief | v1 | wood-or-water-pier/ | v1 emailed Nov 12, ~1:40 PM. 0 credits. |
-| CCP-075 | Tomasicyk Landscape Design | Landscaping + hardscapes, Hartland | brief | v1 | tomasicyk-landscape-design/ | v1 emailed Nov 12, ~1:42 PM. 0 credits. |
+| CCP-073 | Lake Country Project Guy LLC | Handyman + custom carpentry, Delafield | brief | v2 | lake-country-project-guy/ | v1 emailed Nov 12, ~1:36 PM; v2 (photo re-exports, copy swaps) emailed ~2:50 PM. 0 credits. |
+| CCP-074 | Wood or Water Pier Service (Wood or Water, Inc.) | Piers + boat lifts, Lake Country | brief | v2 | wood-or-water-pier/ | v1 emailed Nov 12, ~1:40 PM; v2 (phone hero, Google link) emailed ~2:50 PM. 0 credits. |
+| CCP-075 | Tomasicyk Landscape Design | Landscaping + hardscapes, Hartland | brief | v2 | tomasicyk-landscape-design/ | v1 emailed Nov 12, ~1:42 PM; v2 (full-res hero) emailed ~2:50 PM. 0 credits. |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
@@ -214,6 +218,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - done — CCP-075 v1 (Nov 12, ~1:42 PM CT, scheduled run): live (page + 7 imgs 200, byte-identical), emailed 1a1d1484ab013ce8; 0 credits; commit e16ffb2. Build/Care switch, flagstone motif; all CTAs phone or mailto (their contact form is broken). Open: no reviews/Google listing; Jake title unconfirmed; Facebook link is Squarespace's.
 
 - Nov 12, ~1:42 PM CT (scheduled run): session ends after 3 items (073, 074, 075 v1), 0 credits total. CCP-072 still claimed by another run (12:32 PM; resumable after 2:02 PM if not finished). Next up, oldest brief first: CCP-076 Bergson Interiors (1a1d0f6d5c15cd81), CCP-077 Great Lakes Sales & Service (1a1d0fbfd817cbdf), CCP-078 Fuerst Electric (1a1d1002c5826a89), CCP-079 Beachside Boat & Bait (1a1d12b861eb80fe), CCP-080 Aquatica (1a1d13009cac81d4), CCP-081 Inside Out Remodeling (1a1d1330482b2a3b), CCP-082 Heating and Cooling Drs (1a1d1367beff6fb2).
-- in progress — CCP-073 (Nov 12, 2:35 PM CT, scheduled run)
-- in progress — CCP-074 (Nov 12, 2:35 PM CT, scheduled run)
-- in progress — CCP-075 (Nov 12, 2:35 PM CT, scheduled run)
+- done — CCP-073 v2 (Nov 12, ~2:50 PM CT, scheduled run): live (page + 10 imgs 200, byte-identical), emailed 1a1d17852ed876f0; 0 credits; commit 8071363. Hero 1536×1920 unscaled crop (1.43× phone); slider 2000×1500 pair (1.86× phone); two own-site copy swaps; garden bed 2000×1500. Open: page >1 MB total (lazy images).
+- done — CCP-074 v2 (Nov 12, ~2:50 PM CT, scheduled run): live (page + 9 imgs 200, byte-identical), emailed 1a1d17869063bf7c; 0 credits; commit 7a8d115. Phone hero capped 672px + 1755×3024 crop (1.50×; shifted left to keep the bench); desktop 2880×2160; Google links → maps search; rail photo 1600×2133; season heading reworded to own-site-safe line.
+- done — CCP-075 v2 (Nov 12, ~2:50 PM CT, scheduled run): live (page + 7 imgs 200, byte-identical), emailed 1a1d1787cbcae9b6; 0 credits; commit c94045d. Hero 2400×1800 (2.23× phone) but 656 KB at q58 (≤450 KB not reachable at that size; 2000×1500 offered); optional stepping-stones 1440×1920 and planting-beds 1800×1350 done.
+- Nov 12, ~2:50 PM CT (scheduled run): session ends after 3 revisions (073, 074, 075 v2), 0 credits. CCP-072 BFH claim (12:32 PM) is stale with no folder or ready email, so the next run should resume it first. Then, oldest brief first: CCP-076, 077, 078, 079, 080, 081, 082, then new briefs 083 Devix, 084 Clear Vision ProWash, 085 Forced Air Systems, 087 Lake Country Clean (no 086 brief seen).
