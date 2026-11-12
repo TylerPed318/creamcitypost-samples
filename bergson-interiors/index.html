@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bergson Interiors Ltd — Website concept by Cream City Post</title>
+<meta name="description" content="Residential interior design and a Stop &amp; Shop showroom on Main Street in Dousman, WI. Founded in 1979.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%236B3A1E'/%3E%3Crect x='5' y='5' width='54' height='54' rx='6' fill='none' stroke='%23B08D57' stroke-width='2'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='40' fill='%23F6F1E9'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Prata&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1C1A18;
+  --walnut:#6B3A1E;
+  --walnut-dk:#4E2914;
+  --brass:#B08D57;
+  --brass-lt:#D9C29A;
+  --linen:#F6F1E9;
+  --linen-dk:#EDE5D8;
+  --stone:#BDB6AC;
+  --sage:#5E6B58;
+  --white:#FFFFFF;
+  --muted:#5A524A;
+  --serif:"Prata",Georgia,"Times New Roman",serif;
+  --sans:"Lato",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --wrap:1180px;
+  --zig:9px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--linen);color:var(--ink);font:400 17px/1.65 var(--sans)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--walnut)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;margin:0}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.eyebrow{font:700 12.5px/1.3 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--walnut)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:12px;top:12px}
+
+/* Motif: pinked (pinking-shear) fabric-swatch edges, from their fabric & wall-covering library */
+.pinked{
+  -webkit-mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/calc(2*var(--zig)) 51% repeat-x,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--zig)) 51% repeat-x;
+          mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/calc(2*var(--zig)) 51% repeat-x,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--zig)) 51% repeat-x;
+}
+.pinked-b{
+  -webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - var(--zig)) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--zig)) calc(var(--zig) + 1px) repeat-x;
+          mask:linear-gradient(#000 0 0) top/100% calc(100% - var(--zig)) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--zig)) calc(var(--zig) + 1px) repeat-x;
+}
+
+/* Header */
+.top{position:sticky;top:0;z-index:50;background:rgba(246,241,233,.96);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--stone)}
+.top .wrap{display:flex;align-items:center;gap:24px;min-height:78px}
+.logo{display:block;width:clamp(168px,22vw,236px);color:var(--ink);flex:none;padding:6px 0}
+.logo svg{display:block;width:100%;height:auto;fill:currentColor}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{color:var(--ink);text-decoration:none;font-size:14.5px;padding:12px 10px;border-radius:3px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{color:var(--walnut);text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--brass)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:2px;font:700 15.5px/1.2 var(--sans);letter-spacing:.02em;text-decoration:none;transition:background .2s,color .2s,box-shadow .2s,transform .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-walnut{background:var(--walnut);color:var(--white)}
+.btn-walnut:hover{background:var(--walnut-dk);box-shadow:0 0 0 3px var(--brass-lt)}
+.btn-line{color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--linen)}
+.top .btn{margin-left:6px;white-space:nowrap}
+
+/* Hero */
+.hero{padding:clamp(40px,6vw,84px) 0 clamp(56px,7vw,96px);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);gap:clamp(32px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(42px,4.9vw,70px);letter-spacing:-.01em;margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--walnut);text-decoration:underline;text-decoration-color:var(--brass);text-decoration-thickness:.05em;text-underline-offset:.16em;text-decoration-skip-ink:none}
+.lede{font-size:clamp(17px,1.5vw,19.5px);color:var(--muted);max-width:33em}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 30px}
+.founders{border-top:1px solid var(--stone);padding-top:20px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:start;max-width:34em}
+.founders .yr{font:400 40px/1 var(--serif);color:var(--brass)}
+.founders p{margin:0;font-size:15.5px;color:var(--muted)}
+.founders b{color:var(--ink);font-weight:700}
+
+.frame{position:relative;margin:0;padding:clamp(10px,1.3vw,16px);background:var(--white);box-shadow:0 0 0 1px var(--brass),0 0 0 7px var(--linen),0 0 0 8px var(--brass),0 30px 60px -28px rgba(60,32,14,.55)}
+.frame img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.swatch{position:absolute;left:-18px;bottom:-26px;background:var(--sage);color:var(--white);padding:18px 22px 20px;max-width:250px;transform:rotate(-2.5deg);box-shadow:0 12px 24px -12px rgba(0,0,0,.45)}
+.swatch span{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#E7E3D6;margin-bottom:4px}
+.swatch strong{font:400 18px/1.25 var(--serif)}
+
+/* Proof strip */
+.proof{background:var(--walnut);color:var(--linen);padding:calc(18px + var(--zig)) 0}
+.proof ul{list-style:none;margin:0 auto;padding:0 24px;max-width:var(--wrap);display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:6px 18px;border-left:1px solid rgba(217,194,154,.45);font-size:15px;line-height:1.35}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof b{display:block;font:400 22px/1.2 var(--serif);color:var(--white);margin-bottom:2px}
+.proof a{display:inline-flex;align-items:center;min-height:44px;color:var(--linen);text-decoration-color:var(--brass);text-underline-offset:4px}
+.proof a:hover{color:var(--white)}
+.star{color:var(--brass-lt)}
+
+/* Showroom + live hours (the one interactive) */
+.showroom{padding:clamp(64px,8vw,112px) 0}
+.showroom .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(36px,5vw,72px);align-items:start}
+.showroom h2,.words h2,.rooms h2{font-size:clamp(32px,4vw,50px);margin:12px 0 18px}
+.showroom .intro{font-size:18px;max-width:34em}
+.svc{list-style:none;padding:0;margin:28px 0 34px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+.svc li{padding:13px 0 13px 30px;border-bottom:1px solid var(--stone);position:relative;font-size:16px}
+.svc li::before{content:"";position:absolute;left:2px;top:21px;width:12px;height:12px;background:var(--brass);transform:rotate(45deg)}
+.lines-h{font:700 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.lines{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.lines li{--zig:5px;background:var(--linen-dk);padding:14px 14px;font:400 15px/1.2 var(--serif);color:var(--ink)}
+.lines li:nth-child(3n+2){background:#E4E3D6}
+.lines li:nth-child(3n){background:#EEDFCF}
+
+.hours{position:sticky;top:104px;background:var(--white);border:1px solid var(--stone);box-shadow:0 24px 48px -30px rgba(60,32,14,.5)}
+.hours .status{--zig:8px;background:var(--sage);color:var(--white);padding:24px 26px calc(24px + var(--zig))}
+.hours .status.closed{background:var(--ink)}
+.status .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#B9D7A8;margin-right:8px;box-shadow:0 0 0 4px rgba(185,215,168,.25)}
+.status.closed .dot{background:var(--brass);box-shadow:0 0 0 4px rgba(176,141,87,.25)}
+.status .now{font:700 12.5px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.status .big{font:400 clamp(26px,2.6vw,32px)/1.15 var(--serif);margin:10px 0 4px}
+.status .sub{font-size:15px;opacity:.92;margin:0}
+.hours .body{padding:20px 26px 26px}
+.week{width:100%;border-collapse:collapse;font-size:15.5px;margin-bottom:6px}
+.week th,.week td{padding:8px 0;border-bottom:1px solid var(--linen-dk);text-align:left;font-weight:400}
+.week td{text-align:right;color:var(--muted)}
+.week tr.today th,.week tr.today td{color:var(--walnut);font-weight:700}
+.week tr.today th::after{content:"Today";margin-left:8px;font:700 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;background:var(--brass-lt);color:var(--ink);padding:3px 6px;border-radius:2px;vertical-align:2px}
+.posted{font-size:13.5px;color:var(--muted);margin:10px 0 18px}
+.addr{font-style:normal;font-size:16px;margin-bottom:18px}
+.addr b{font-family:var(--serif);font-weight:400;font-size:19px;display:block}
+.hours .btn{width:100%}
+.hours .btn+.btn{margin-top:10px}
+
+/* Rooms */
+.rooms{background:var(--white);padding:clamp(64px,8vw,104px) 0 clamp(72px,9vw,120px);border-top:1px solid var(--stone)}
+.rooms .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.rooms .head p{max-width:30em;color:var(--muted);margin:0}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2.4vw,32px);list-style:none;padding:0;margin:0}
+.row3 li:nth-child(2){margin-top:56px}
+.row3 figure{margin:0}
+.row3 .ph{background:var(--linen);padding:10px;box-shadow:0 0 0 1px var(--stone)}
+.row3 img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .5s}
+.row3 .ph{overflow:hidden}
+.row3 li:hover img{transform:scale(1.025)}
+.row3 figcaption{display:flex;gap:12px;align-items:baseline;margin-top:14px;font-size:15.5px}
+.row3 figcaption i{font:400 14px/1 var(--serif);font-style:normal;color:var(--brass)}
+
+/* Words + contact */
+.words{padding:clamp(64px,8vw,112px) 0}
+.words .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(36px,5vw,72px);align-items:start}
+.rating{display:inline-flex;align-items:center;gap:10px;font-size:16px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--brass);padding:8px 0;min-height:44px}
+.rating .star{color:var(--brass);font-size:20px}
+.rating b{font-family:var(--serif);font-weight:400;font-size:22px}
+.rating:hover{color:var(--walnut)}
+blockquote{margin:30px 0 0;padding:0 0 0 30px;border-left:2px solid var(--brass);position:relative}
+blockquote p{font:400 clamp(20px,2vw,25px)/1.45 var(--serif);margin:0}
+blockquote+blockquote p{font-size:clamp(18px,1.6vw,20px)}
+.qsrc{font-size:13.5px;color:var(--muted);margin-top:22px}
+.card{--zig:10px;background:var(--walnut);color:var(--linen);padding:calc(34px + var(--zig)) 32px calc(34px + var(--zig))}
+.card h3{font-size:28px;color:var(--white);margin:6px 0 14px}
+.card .eyebrow{color:var(--brass-lt)}
+.card p{font-size:16px}
+.card dl{margin:20px 0 24px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 18px;font-size:15.5px}
+.card dt{font:700 11.5px/1.9 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass-lt)}
+.card dd{margin:0}
+.card a{color:var(--white)}.card dd a{display:inline-flex;align-items:center;min-height:44px;margin:-12px 0}
+.card .btn{width:100%;background:var(--brass);color:var(--ink)}
+.card .btn:hover{background:var(--brass-lt);box-shadow:none}
+.card .more{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;font-size:15px;text-underline-offset:4px;text-decoration-color:var(--brass)}
+
+/* Closer + footer */
+.closer{text-align:center;padding:52px 0 54px;border-top:1px solid var(--stone)}
+.closer p{font:400 clamp(22px,2.4vw,28px)/1.3 var(--serif);margin:0}
+.closer span{display:block;font-size:15px;color:var(--muted);margin-top:8px}
+footer{background:var(--ink);color:#D8D2C8;font-size:14px;padding:26px 0 30px}
+footer b{color:var(--white)}
+.mbar{display:none}
+
+@media (max-width:1060px){
+  .nav{display:none}
+  .top .btn{margin-left:auto}
+}
+@media (max-width:900px){
+  .hero .wrap,.showroom .wrap,.words .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero .frame{order:-1;margin:6px 8px 26px}
+  .hours{position:relative;top:auto}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:14px}
+  .proof li:nth-child(3){border-left:0;padding-left:0}
+}
+@media (max-width:640px){
+  body{font-size:16.5px;padding-bottom:76px}
+  .wrap{padding:0 18px}
+  .top .wrap{min-height:66px;gap:12px}
+  .logo{width:150px}
+  .top .btn{padding:10px 14px;font-size:14px}
+  .top .btn .full{display:none}
+  .swatch{left:-6px;bottom:-30px;max-width:220px;padding:14px 16px 16px}
+  .swatch strong{font-size:16px}
+  .ctas .btn{flex:1 1 100%}
+  .proof ul{padding:0 18px}
+  .proof li{padding:4px 12px}
+  .proof b{font-size:19px}
+  .svc{grid-template-columns:minmax(0,1fr)}
+  .row3{grid-template-columns:minmax(0,1fr);gap:30px}
+  .row3 li:nth-child(2){margin-top:0}
+  .row3 img{aspect-ratio:4/3}
+  .card{padding-left:22px;padding-right:22px}
+  .mbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(28,26,24,.97)}
+  .mbar a{min-height:50px;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font:700 15px/1.2 var(--sans);border-radius:2px}
+  .mbar svg{width:18px;height:18px}
+  .mbar .c{background:var(--brass);color:var(--ink)}
+  .mbar .d{color:var(--linen);box-shadow:inset 0 0 0 1.5px var(--stone)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Bergson Interiors Limited, home">
+      <svg viewBox="0 0 1920 583" role="img" aria-hidden="true"><path fill-rule="evenodd" d="M 725 3C702 5 675 12 652 20C636 26 605 41 592 50L581 57 573 54C549 43 522 38 486 39C428 41 377 54 322 80C286 98 243 125 213 150L204 158 191 157C142 152 88 167 51 194C-5 236 -17 308 26 349C37 361 57 373 73 378L79 379 79 394C80 403 81 414 81 419C88 461 114 492 152 505C160 508 177 512 182 512C186 512 186 512 189 519C208 561 265 583 354 583C461 583 553 549 638 478C679 444 709 411 748 356C763 335 786 305 794 294C799 288 798 287 792 287C787 287 785 288 778 294L775 297 775 295C775 278 734 290 708 314C703 319 702 322 706 319C708 318 707 319 705 324C701 332 701 339 705 343C708 346 708 346 716 346C725 345 732 343 741 336C750 329 751 329 748 333C702 395 691 410 674 428C589 523 488 573 374 579C295 583 229 563 202 527C198 522 193 514 193 514C193 513 198 513 204 513C277 509 341 454 358 380C361 363 361 337 357 322L354 314 357 311C359 309 365 303 371 298C399 274 435 234 484 175C499 157 518 134 527 124C544 103 580 67 582 67C586 67 595 81 599 91C606 110 603 130 590 152C579 170 562 185 542 195L532 200 529 198C516 189 497 185 485 188C471 193 472 203 486 208C494 210 512 210 522 208C532 206 532 207 535 217C540 233 535 259 523 284C516 298 499 320 487 329C483 332 483 332 479 331C469 326 463 326 445 326C422 326 411 328 399 337C389 343 388 354 397 358C413 366 446 361 478 346L491 340 496 343C507 351 515 362 517 372C517 377 519 378 520 374C522 366 513 352 501 343C498 340 495 338 495 338C495 338 498 335 502 332C535 310 553 282 555 252C556 236 551 222 541 209L537 204 545 201C590 185 619 151 617 115C616 98 610 85 596 70L588 62 596 57C670 5 766 -10 826 20C855 35 869 57 866 85C862 122 828 152 780 161C764 163 740 163 728 160C709 155 695 146 688 134C686 129 686 128 686 118C686 107 686 106 689 100C696 87 710 76 726 72C735 70 733 68 723 70C706 73 688 86 680 103C677 111 676 124 680 133C694 169 767 178 824 150C850 138 868 117 874 95C876 86 877 70 874 62C863 18 802 -6 725 3M469 44C407 49 342 73 274 118C250 134 217 158 217 160C217 160 221 162 226 163C259 173 282 193 288 218C290 225 290 241 288 250C288 253 287 257 288 257C288 257 292 259 296 260C316 266 334 278 344 294L348 299 360 287C383 264 408 236 447 189C495 131 533 93 567 67L576 60 569 57C544 45 511 41 469 44M149 168C66 177 5 228 5 287C5 326 28 356 71 371C80 375 80 375 80 371C81 369 81 364 82 360C84 346 88 330 94 313L97 305 90 298C83 291 77 281 76 273C76 268 78 265 79 270C81 280 87 290 95 297L99 300 100 297C117 257 147 214 183 178C189 173 193 168 192 168C192 167 159 167 149 168M191 185C156 219 132 250 113 287C104 305 104 303 111 307C125 313 143 317 159 317L167 317 171 308C187 276 226 256 271 256L283 256 284 250C293 221 280 197 247 182C237 177 220 171 211 170L206 170 191 185M484 193C477 197 479 201 488 204C497 207 526 205 525 202C524 200 514 194 510 193C503 191 488 191 484 193M1335 201C1332 202 1322 205 1313 207C1271 216 1249 225 1236 237C1227 245 1223 255 1228 263C1229 267 1236 270 1242 270C1246 270 1254 267 1255 264C1256 262 1254 262 1251 264C1242 269 1233 265 1234 256C1235 251 1241 242 1248 236C1255 231 1273 222 1285 218C1295 215 1326 207 1328 207C1329 207 1326 209 1322 212C1309 220 1297 233 1278 257C1232 315 1211 334 1183 343C1165 349 1146 347 1140 339C1137 335 1138 333 1145 325C1150 320 1151 318 1151 316C1151 310 1149 307 1146 306C1135 300 1121 310 1121 324C1121 341 1136 350 1163 350C1182 350 1196 347 1215 337C1243 323 1268 299 1296 256C1317 225 1329 211 1339 206C1343 204 1344 202 1343 200C1343 199 1340 199 1335 201M1464 242C1459 245 1437 267 1426 280L1420 288 1413 288C1400 288 1397 291 1409 292L1416 293 1398 309C1372 332 1358 341 1354 339C1350 337 1353 331 1366 315C1379 300 1381 295 1377 290C1374 287 1364 286 1356 290C1346 294 1330 305 1313 320C1307 325 1303 328 1303 328C1302 328 1306 323 1310 317C1323 299 1325 294 1321 289C1318 287 1313 286 1308 288C1297 292 1264 320 1271 320C1271 320 1277 315 1284 310C1296 299 1304 293 1307 294C1309 295 1308 296 1298 309C1288 323 1277 338 1276 342C1276 345 1277 346 1283 346C1287 345 1290 343 1317 321C1337 304 1355 293 1361 293C1366 293 1365 295 1350 312C1335 330 1331 338 1336 343C1338 346 1340 346 1344 346C1356 346 1370 338 1390 320C1396 314 1402 309 1403 308C1406 306 1406 306 1399 317C1385 338 1388 350 1405 346C1416 344 1426 337 1445 321L1449 318 1447 323C1440 339 1445 347 1462 347C1481 347 1498 337 1527 312C1538 301 1546 296 1550 294C1555 293 1553 297 1542 311C1531 326 1522 340 1522 343C1522 345 1525 346 1530 346C1532 345 1536 342 1547 332C1572 308 1583 300 1592 295C1600 291 1602 293 1597 301C1594 307 1594 309 1597 311C1600 312 1604 310 1608 306C1615 300 1617 292 1613 289C1605 283 1586 292 1564 312C1552 322 1551 323 1555 318C1569 299 1571 294 1567 290C1560 283 1546 289 1526 307C1509 323 1500 330 1488 336C1473 344 1461 343 1461 335C1461 329 1462 328 1474 324C1501 314 1517 302 1513 293C1508 279 1474 291 1442 319C1427 332 1414 340 1411 338C1408 337 1408 334 1409 330C1413 320 1432 292 1436 292C1437 291 1443 291 1449 291C1455 291 1460 291 1461 290C1462 288 1456 287 1447 287C1442 288 1438 288 1438 287C1438 286 1447 275 1462 258C1470 249 1477 241 1477 241C1477 238 1470 239 1464 242M1677 243C1672 245 1668 253 1671 258C1671 261 1673 260 1678 258C1683 255 1687 252 1689 249C1690 245 1690 245 1688 244C1687 242 1682 242 1677 243M247 261C215 267 186 286 174 310L171 316 175 316C178 316 185 315 191 314C222 309 246 298 264 282C272 274 280 263 279 261C279 260 256 260 247 261M281 268C266 298 224 321 180 324C171 324 169 325 168 326C168 327 168 332 167 338C167 343 167 348 167 349C165 350 164 343 164 334L165 325 155 324C139 323 119 317 108 312C102 308 103 308 100 314C92 333 83 373 86 376C87 378 111 382 125 383C141 385 174 384 189 382C244 374 289 351 338 308L342 304 340 300C330 283 311 269 289 262L285 261 281 268M856 277C855 278 851 281 848 284C840 292 832 298 821 305C813 311 810 313 813 313C815 313 822 309 832 301C838 297 842 294 842 294C843 294 840 301 836 309C829 326 823 336 816 340C802 349 790 339 801 329C803 327 805 325 807 324C814 319 813 310 805 310C793 310 783 329 790 339C795 346 797 347 810 346C821 346 824 346 830 344C845 339 856 332 870 321L877 315 875 319C873 322 872 326 871 329C867 350 893 353 920 335C923 332 925 332 929 332C938 332 945 328 964 311C987 291 998 288 984 306C966 327 957 342 959 345C961 346 965 346 969 345C971 344 980 337 989 330C1010 312 1023 302 1033 297C1041 293 1046 292 1046 294C1046 295 1041 302 1035 309C1021 325 1018 331 1017 337C1017 344 1019 346 1029 346C1037 345 1045 342 1057 333C1066 326 1080 313 1080 312C1080 310 1077 311 1068 319C1051 334 1039 341 1036 338C1033 336 1036 331 1048 316C1054 309 1059 302 1060 300C1063 292 1060 287 1050 287C1038 288 1024 296 999 316C992 323 985 328 985 328C985 327 989 322 994 315C1006 298 1008 291 1002 288C994 284 981 290 961 310C948 322 941 327 935 328C932 329 930 329 929 329C929 328 932 325 935 321C947 308 950 297 944 290C939 286 938 286 938 291C939 297 938 300 933 303C928 306 923 313 922 320C920 325 914 331 903 338C893 345 885 345 885 339C885 328 913 297 929 290C933 288 933 287 928 287C915 287 893 298 873 314C863 322 851 330 844 334L840 336 844 330C850 322 851 317 851 302C851 288 851 288 861 282C868 277 869 275 863 275C860 275 857 276 856 277M1895 278C1893 280 1891 282 1890 283C1888 286 1871 299 1862 305C1855 310 1852 313 1855 313C1856 313 1866 307 1875 301C1879 297 1883 294 1884 294C1884 294 1874 319 1871 325C1862 340 1851 347 1842 342C1836 340 1837 333 1843 328C1850 322 1853 319 1853 316C1853 307 1840 308 1834 317C1827 326 1828 337 1834 343C1843 350 1864 348 1885 338C1901 330 1925 311 1919 311C1918 311 1914 314 1908 318C1900 325 1883 336 1881 336C1881 336 1882 334 1884 331C1891 323 1892 317 1892 302C1893 295 1893 289 1894 288C1894 287 1898 285 1901 283C1909 277 1910 275 1904 275C1900 275 1898 276 1895 278M587 290C574 294 556 305 546 314C541 319 540 322 544 319C547 318 546 318 544 323C543 325 542 330 541 333C540 343 546 347 560 347C578 347 596 337 621 314C634 303 646 294 649 294C652 295 651 297 647 303C631 322 627 328 623 334C618 343 618 345 622 346C628 347 631 345 644 332C675 303 692 290 697 294C698 295 698 296 695 301C692 306 692 307 693 309C695 313 704 310 710 302C714 296 714 292 710 289C702 283 685 290 661 312C655 317 650 322 650 321C650 321 652 318 655 315C666 300 668 293 664 289C658 283 643 290 622 309C596 333 573 345 563 341C560 340 558 336 558 334C559 333 559 331 559 330C560 327 561 327 570 324C601 314 618 299 608 289C605 286 597 286 587 290M1647 288C1641 289 1633 295 1619 306C1607 316 1605 318 1606 320C1607 320 1609 319 1621 309C1634 298 1636 297 1626 308C1611 326 1606 334 1608 342C1609 346 1615 347 1622 346C1632 344 1643 337 1659 323C1664 319 1667 316 1667 317C1667 317 1667 318 1666 318C1664 320 1661 332 1662 336C1664 351 1688 351 1711 335C1714 332 1716 332 1720 332C1729 332 1736 328 1756 310C1766 301 1776 294 1779 294C1783 294 1781 298 1772 309C1755 330 1748 342 1750 345C1752 347 1759 346 1763 343C1764 342 1772 335 1781 327C1799 310 1811 300 1818 296C1827 291 1830 293 1825 301C1821 307 1821 309 1824 310C1828 312 1835 309 1840 302C1846 294 1843 287 1834 287C1823 287 1812 294 1786 317C1779 323 1779 323 1787 312C1797 299 1799 293 1794 289C1787 283 1773 290 1755 307C1741 319 1736 324 1732 326C1727 328 1720 330 1720 328C1720 328 1723 325 1726 321C1738 308 1741 296 1734 290C1730 286 1729 286 1729 291C1730 297 1729 300 1724 303C1719 307 1713 315 1712 320C1711 329 1684 347 1678 343C1675 341 1676 335 1681 327C1689 314 1709 295 1719 290C1730 286 1716 286 1703 290C1688 296 1676 304 1652 324C1641 334 1630 340 1628 339C1623 337 1628 328 1648 304C1660 290 1660 289 1660 288C1659 287 1652 287 1647 288M760 292C746 299 719 326 717 336C715 343 724 342 738 333C752 325 772 302 772 295C772 293 769 290 766 290C765 290 762 291 760 292M590 294C583 297 572 309 564 320L563 323 565 323C571 321 586 313 590 309C598 302 601 295 598 293C596 291 596 291 590 294M1493 293C1487 296 1479 304 1472 313C1469 318 1466 322 1466 322C1466 323 1476 320 1483 316C1495 309 1505 296 1501 292C1498 291 1498 291 1493 293M342 322C307 349 268 369 229 379C184 390 136 392 94 383C89 382 84 381 84 381C83 381 85 412 87 421C95 457 114 483 145 498C159 504 186 511 185 507C181 497 180 472 184 460C188 444 200 424 211 414C217 408 224 403 226 403C228 403 228 403 226 405C197 427 180 466 187 497C190 509 190 509 199 509C262 509 322 462 344 396C352 371 355 347 351 329C348 317 348 317 342 322M428 331C408 334 397 344 404 352C411 362 439 359 462 347C469 343 479 336 479 335C479 335 475 333 471 332C460 329 439 328 428 331M1405 428C1405 432 1405 432 1406 431C1407 431 1410 430 1414 430L1421 430 1421 446C1421 457 1421 462 1420 463C1419 464 1420 464 1423 464L1428 464 1427 447L1427 430 1434 430C1438 430 1441 431 1442 431C1443 432 1443 432 1443 428L1443 425 1424 425L1405 425 1405 428M1554 425L1538 425 1538 445L1538 464 1554 464C1563 464 1571 464 1571 465C1573 465 1573 464 1573 460C1573 456 1573 456 1571 457C1570 459 1567 459 1557 459L1545 459 1544 453C1544 449 1544 447 1545 447C1547 446 1559 446 1561 447C1563 448 1563 448 1563 444C1563 440 1563 440 1560 441C1559 442 1554 442 1551 442L1545 442 1545 436L1545 431 1556 430C1564 430 1569 430 1570 431C1571 432 1571 432 1571 428C1571 426 1571 424 1571 424C1571 424 1563 425 1554 425M923 426C924 427 924 433 924 446L924 464 941 464L958 465 958 461C958 457 958 457 957 458C956 459 951 459 943 459L931 459 930 443C930 433 930 427 931 426C932 425 931 425 927 425C923 425 922 425 923 426M1051 426C1052 427 1052 433 1052 446L1052 464 1056 464C1060 464 1060 464 1059 462C1058 461 1058 453 1058 445C1058 436 1058 428 1059 427C1060 425 1060 425 1055 425C1051 425 1050 425 1051 426M1159 445L1159 464 1162 464L1166 464 1165 449L1165 434 1172 448C1176 456 1180 462 1180 462C1181 462 1184 455 1188 447L1196 433 1196 447C1196 457 1196 462 1195 463C1194 464 1195 464 1199 464C1203 464 1204 464 1203 463C1202 462 1202 456 1202 445C1202 433 1202 427 1203 426C1204 425 1203 425 1198 425C1192 425 1191 425 1192 426C1193 427 1191 430 1187 438C1184 444 1181 450 1180 450C1180 450 1177 444 1174 438C1170 430 1168 427 1169 426C1170 425 1169 425 1164 425L1159 425 1159 445M1303 445L1303 464 1307 464L1311 464 1311 445L1311 425 1307 425L1303 425 1303 445M1668 426C1669 427 1669 433 1669 446L1669 464 1681 464C1694 464 1699 463 1703 459C1711 453 1711 437 1703 430C1699 426 1694 425 1680 425C1669 425 1667 425 1668 426M1675 445L1675 459 1685 459C1699 458 1703 455 1703 444C1703 434 1698 430 1684 430L1675 430 1675 445M830 435C828 437 828 440 832 444C836 447 838 447 835 444C832 440 833 436 838 436C840 436 840 436 838 434C833 433 832 433 830 435M1790 435C1789 436 1789 436 1790 435C1795 434 1798 440 1794 443C1793 444 1792 445 1792 446C1792 447 1784 450 1780 450C1776 450 1772 448 1772 445C1772 444 1772 444 1770 446C1768 449 1768 451 1772 453C1775 454 1777 454 1784 452C1791 449 1799 448 1801 450C1802 451 1802 456 1801 458C1799 460 1802 459 1804 457C1807 455 1808 450 1806 448C1805 448 1802 447 1800 447L1796 447 1802 443C1816 436 1827 438 1824 447C1823 450 1823 451 1826 448C1830 444 1830 440 1827 437C1823 434 1816 435 1803 441C1797 444 1793 445 1795 445C1801 440 1802 437 1800 434C1798 432 1791 433 1790 435M803 438C799 441 799 444 802 447C805 451 806 451 805 447C804 439 814 438 827 444C833 447 834 448 831 447C823 446 819 452 825 458C828 461 829 461 828 457C826 452 828 450 833 451C836 451 838 450 837 450C837 449 839 450 842 452C850 455 856 455 859 452C861 450 861 450 860 448C859 445 857 444 857 446C857 447 856 449 854 450C850 452 844 451 829 443C813 435 807 434 803 438"/></svg>
+    </a>
+    <nav class="nav" aria-label="Their current site">
+      <a href="https://www.bergsoninteriorsltd.com/interior-design-service">Design services</a>
+      <a href="https://www.bergsoninteriorsltd.com/fabrics-wall-coverings-and-drapes">Fabrics &amp; drapery</a>
+      <a href="https://www.bergsoninteriorsltd.com/custom-furniture">Furniture</a>
+      <a href="#showroom">Showroom</a>
+      <a href="#visit">Contact</a>
+    </nav>
+    <a class="btn btn-walnut" href="tel:+12629656300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><span class="full">Call </span>(262) 965-6300</span></a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Dousman, WI · Since 1979</p>
+        <h1 id="h1">Timeless interiors, <em>made personal.</em></h1>
+        <p class="lede">For over 40 years, Bergson Interiors has worked with each client’s personal style and tastes to create a custom home — from the floors to the walls.</p>
+        <div class="ctas">
+          <a class="btn btn-walnut" href="tel:+12629656300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call (262) 965-6300</a>
+          <a class="btn btn-line" href="#showroom">Visit the showroom</a>
+        </div>
+        <div class="founders">
+          <span class="yr" aria-hidden="true">1979</span>
+          <p>Founded in 1979 by <b>Magdaline Benson</b>, whose background is in business and design. <b>Michelle Walker</b> joined her in 1991 and holds a bachelor’s degree in Interior Design.</p>
+        </div>
+      </div>
+      <figure class="frame">
+        <img src="img/hero.webp" width="1920" height="1281" alt="Wood-paneled lower-level family room with a beamed ceiling, brown sofa with patterned pillows, two plaid armchairs and ottoman, and an owl print on the wall" fetchpriority="high">
+        <figcaption class="swatch pinked"><span>From the portfolio</span><strong>Lodge-style family room</strong></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof pinked" aria-label="At a glance">
+    <ul>
+      <li><b>Since 1979</b>Residential interior design</li>
+      <li><b>Over 40 years</b>of custom homes</li>
+      <li><b>Stop &amp; Shop</b>showroom on N Main St</li>
+      <li><b><span class="star" aria-hidden="true">★</span> 5.0 on Google</b><a href="https://www.google.com/maps/place/Bergson+Interiors+Limited/@43.0155146,-88.4724797,17z/data=!4m8!3m7!1s0x8805b7fbb8c6af9d:0x885d7b13038d46c0!8m2!3d43.0155146!4d-88.4724797!9m1!1b1!16s%2Fg%2F1td6st9_?hl=en&amp;gl=us" target="_blank" rel="noopener">See the listing</a></li>
+    </ul>
+  </section>
+
+  <section class="showroom" id="showroom" aria-labelledby="sh">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Stop &amp; Shop Showroom</p>
+        <h2 id="sh">Come visit &amp; shop on Main Street.</h2>
+        <p class="intro">Our showroom is a representation of the various lines we offer. We have custom sofas, case goods, lamps, area rugs, art, accessories and more! Buy onsite or schedule a design consultation.</p>
+        <ul class="svc">
+          <li>Drapery, shades &amp; shutters</li>
+          <li>Fabrics &amp; wall coverings</li>
+          <li>Lighting, art &amp; décor</li>
+          <li>Custom furniture &amp; re-upholstery</li>
+          <li>Area rugs &amp; flooring</li>
+          <li>Full interior design</li>
+        </ul>
+        <p class="lines-h">Fabric &amp; wall-covering lines in the library</p>
+        <ul class="lines">
+          <li class="pinked">Schumacher</li>
+          <li class="pinked">Thibaut</li>
+          <li class="pinked">Anna French</li>
+          <li class="pinked">Cowtan &amp; Tout</li>
+          <li class="pinked">Harlequin</li>
+          <li class="pinked">Osborne &amp; Little</li>
+          <li class="pinked">Designers Guild</li>
+          <li class="pinked">Sanderson &amp; more</li>
+        </ul>
+      </div>
+
+      <aside class="hours" aria-label="Showroom hours">
+        <div class="status pinked-b" id="status" aria-live="polite">
+          <p class="now"><span class="dot" aria-hidden="true"></span><span id="st-now">Showroom hours</span></p>
+          <p class="big" id="st-big">Monday – Friday, 9 to 5</p>
+          <p class="sub" id="st-sub">Closed Saturday &amp; Sunday</p>
+        </div>
+        <div class="body">
+          <table class="week" id="week">
+            <tbody>
+              <tr data-d="1"><th scope="row">Monday</th><td>9:00 am – 5:00 pm</td></tr>
+              <tr data-d="2"><th scope="row">Tuesday</th><td>9:00 am – 5:00 pm</td></tr>
+              <tr data-d="3"><th scope="row">Wednesday</th><td>9:00 am – 5:00 pm</td></tr>
+              <tr data-d="4"><th scope="row">Thursday</th><td>9:00 am – 5:00 pm</td></tr>
+              <tr data-d="5"><th scope="row">Friday</th><td>9:00 am – 5:00 pm</td></tr>
+              <tr data-d="6"><th scope="row">Saturday</th><td>Closed</td></tr>
+              <tr data-d="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <p class="posted">Live status in Dousman (Central) time, from the posted hours.</p>
+          <address class="addr"><b>156 N Main St</b>Dousman, WI 53118</address>
+          <a class="btn btn-walnut" href="tel:+12629656300">Call (262) 965-6300</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&amp;destination=156+N+Main+St,+Dousman,+WI+53118" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="rooms" aria-labelledby="rm">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Transformation is what we do</p>
+          <h2 id="rm">Rooms with a point of view.</h2>
+        </div>
+        <p>From the floors to the walls: combined materials with a unique design perspective, made for each client’s individual tastes.</p>
+      </div>
+      <ul class="row3">
+        <li><figure><div class="ph"><img src="img/stone-fireplace.webp" width="1400" height="934" loading="lazy" alt="Living room under a vaulted wood ceiling with a stone fireplace, a heron print pair, leather chairs and a long patterned rug"></div><figcaption><i aria-hidden="true">i.</i>Stone-fireplace living room</figcaption></figure></li>
+        <li><figure><div class="ph"><img src="img/dining-room.webp" width="1400" height="933" loading="lazy" alt="Formal dining room with floral swagged drapery, upholstered dining chairs, a brass chandelier and a lake view"></div><figcaption><i aria-hidden="true">ii.</i>Dining room in floral drapery</figcaption></figure></li>
+        <li><figure><div class="ph"><img src="img/bedroom.webp" width="1400" height="934" loading="lazy" alt="Bedroom with a tufted headboard, floral bedding and matching drapery, a botanical print and a lattice-pattern chaise"></div><figcaption><i aria-hidden="true">iii.</i>Bedroom with matched fabrics</figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="words" id="visit" aria-labelledby="wd">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">In our clients’ words</p>
+        <h2 id="wd">Friends, after the reveal.</h2>
+        <a class="rating" href="https://www.google.com/maps/place/Bergson+Interiors+Limited/@43.0155146,-88.4724797,17z/data=!4m8!3m7!1s0x8805b7fbb8c6af9d:0x885d7b13038d46c0!8m2!3d43.0155146!4d-88.4724797!9m1!1b1!16s%2Fg%2F1td6st9_?hl=en&amp;gl=us" target="_blank" rel="noopener"><span class="star" aria-hidden="true">★</span><b>5.0</b> on Google</a>
+        <blockquote><p>“I have my Taj Mahal and it is all due to Magdaline Benson and Michelle Walker of Bergson Interiors.”</p></blockquote>
+        <blockquote><p>“Bergson’s has earned my loyalty as a client by understanding my needs and wants. Magdaline and Michelle allow choices while guiding and assisting. They follow through, are honest, believe in quality and have become my friends.”</p></blockquote>
+        <p class="qsrc">Client testimonials as published on bergsoninteriorsltd.com.</p>
+      </div>
+      <div class="card pinked">
+        <p class="eyebrow">Book a consultation</p>
+        <h3>Collaborate. Design. Construction. Reveal.</h3>
+        <p>Request a free interior design consultation today, stop by the showroom for ideas, or call for an in-home appointment.</p>
+        <dl>
+          <dt>Phone</dt><dd><a href="tel:+12629656300">(262) 965-6300</a></dd>
+          <dt>Hours</dt><dd>Monday - Friday 9:00 am - 5:00 pm<br>Closed Saturday &amp; Sunday</dd>
+          <dt>Visit</dt><dd>156 N Main St<br>Dousman, WI 53118</dd>
+        </dl>
+        <a class="btn" href="tel:+12629656300">Call (262) 965-6300</a>
+        <a class="more" href="https://www.bergsoninteriorsltd.com/interior-design-service">See the design services page →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="closer" aria-label="About this preview">
+    <div class="wrap">
+      <p>A first look at your new site.</p>
+      <span>Prepared for Bergson Interiors Limited, Dousman, WI.</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><b>Website by Cream City Post</b> · Independent website concept, not the official Bergson Interiors Ltd site. Logo redrawn; services, hours, showroom details, testimonials and room photos from bergsoninteriorsltd.com; rating from Google.</div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="c" href="tel:+12629656300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call (262) 965-6300</a>
+  <a class="d" href="https://www.google.com/maps/dir/?api=1&amp;destination=156+N+Main+St,+Dousman,+WI+53118" target="_blank" rel="noopener">Directions</a>
+</nav>
+
+<script>
+(function(){
+  var OPEN=9*60, CLOSE=17*60;
+  var names=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  function fmt(m){var h=Math.floor(m/60),mm=m%60,ap=h>=12?"pm":"am";h=h%12||12;return h+(mm?":"+String(mm).padStart(2,"0"):"")+" "+ap;}
+  function now(){
+    try{
+      var parts=new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date());
+      var o={};parts.forEach(function(p){o[p.type]=p.value;});
+      var d=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday);
+      var h=parseInt(o.hour,10)%24;
+      return {d:d,m:h*60+parseInt(o.minute,10)};
+    }catch(e){return null;}
+  }
+  function isWeekday(d){return d>=1&&d<=5;}
+  function nextOpen(t){
+    for(var i=0;i<8;i++){
+      var d=(t.d+i)%7;
+      if(isWeekday(d)&&(i>0||t.m<OPEN)){return i===0?"today at "+fmt(OPEN):(i===1?"tomorrow at "+fmt(OPEN):names[d]+" at "+fmt(OPEN));}
+    }
+    return "Monday at "+fmt(OPEN);
+  }
+  function render(){
+    var t=now(); if(!t||t.d<0) return;
+    var rows=document.querySelectorAll("#week tr");
+    for(var i=0;i<rows.length;i++){rows[i].classList.toggle("today",+rows[i].getAttribute("data-d")===t.d);}
+    var box=document.getElementById("status");
+    var open=isWeekday(t.d)&&t.m>=OPEN&&t.m<CLOSE;
+    box.classList.toggle("closed",!open);
+    if(open){
+      document.getElementById("st-now").textContent="Open now";
+      var left=CLOSE-t.m;
+      document.getElementById("st-big").textContent="The showroom is open until "+fmt(CLOSE)+".";
+      document.getElementById("st-sub").textContent=left<=60?"Closing within the hour, so call ahead: (262) 965-6300.":"Stop in to see fabrics, furniture, lighting and rugs.";
+    }else{
+      document.getElementById("st-now").textContent="Closed now";
+      document.getElementById("st-big").textContent="Opens "+nextOpen(t)+".";
+      document.getElementById("st-sub").textContent="Posted hours: Monday - Friday 9:00 am - 5:00 pm. Closed Saturday & Sunday.";
+    }
+  }
+  render(); setInterval(render,60000);
+})();
+</script>
+</body>
+</html>
