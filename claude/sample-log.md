@@ -239,3 +239,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - Nov 12, ~3:45 PM CT (scheduled run): session ends after 3 builds (072, 076, 077 v1), 2 credits total. CCP-073 v2 "revision" awaiting Tyler's clarification (status email sent). Next up, oldest brief first: CCP-078 Fuerst Electric (1a1d1002c5826a89), 079 Beachside Boat & Bait, 080 Aquatica, 081 Inside Out Remodeling, 082 Heating and Cooling Drs, 083–085, 087, 090–093 (no 086/088/089 brief seen).
 
 - in progress — CCP-073 (2026-11-12 16:04 -06:00 America/Chicago, scheduled run); v3 clarified photo revision.
+
+- in progress — CCP-072 (2026-11-12 16:07 -06:00 America/Chicago, scheduled run); v2 photo and factual-copy revision.
