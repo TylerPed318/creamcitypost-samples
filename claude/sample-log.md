@@ -198,3 +198,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 - done — CCP-065 v1 (Nov 11, ~11:45 PM CT, scheduled run): live (page + 11 assets 200, byte-identical) and emailed 1a1ce3cf4d5ceca1; 0 credits; commit 3542bb3. Logo potrace-traced from their JPG. Open: LLC vs Inc.; 24-hour service mechanics; photo ownership; no named quotes/count.
 - done — CCP-066 v1 (Nov 11, ~11:55 PM CT, scheduled run): live (page + 3 assets 200, byte-identical) and emailed 1a1ce3fe78564128; 0 credits; commit a4fc8bd. One real photo (switchgear); Builders/Homeowners switch. Open: hours, association logos, photo ownership, owner job photos.
 - Nov 11, ~11:55 PM CT (scheduled run): session ends after 2 items (065, 066), 0 credits. No open revisions and no unbuilt briefs remain; next run should only check Gmail for new briefs/revisions. Logos traced with npm potrace (scratch install) for faithful SVGs.
+
+- in progress — CCP-072 (Nov 12, 12:32 PM CT, scheduled run)
