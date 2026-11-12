@@ -104,3 +104,5 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 
 - done — CCP-055 v1 (Nov 11, 2026 resumed scheduled run): live and emailed; 0 credits. Original typographic brand retained; real photos shown at 248px; no Google rating, pricing or residential address.
 
+
+- in progress — CCP-056 (Nov 11, 9:30 PM CT, scheduled run)
