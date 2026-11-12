@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>OCD Cleaners — Website concept by Cream City Post</title>
+<meta name="description" content="Website concept for OCD Cleaners, Oconomowoc: residential and business cleaning for greater Lake Country since 2000.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23293D61'/%3E%3Cpath d='M16 44c8-14 18-22 32-26' stroke='%23F3F1EC' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M38 14l12-4-4 12' fill='%2378C2C4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#293D61; --navy-d:#1d2c47; --teal:#125960; --teal-l:#78C2C4; --ink:#132730;
+  --taupe:#646157; --ground:#F3F1EC; --white:#fff; --line:#e1ddd4; --wash:#e7efef;
+  --head:'Poppins',system-ui,sans-serif; --body:'Source Sans 3',system-ui,sans-serif;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 18px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0;letter-spacing:-.015em}
+.kick{display:inline-flex;align-items:center;gap:10px;font:600 13px/1.2 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.kick::before{content:"";width:26px;height:2px;background:currentColor;border-radius:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:12px;font:600 16px/1 var(--head);text-decoration:none;transition:background .15s,transform .15s,border-color .15s,color .15s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-d);transform:translateY(-1px)}
+.btn-ghost{border:2px solid var(--navy);color:var(--navy)}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(243,241,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:20px;min-height:76px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex:none}
+.brand .mark{width:62px;height:auto;color:var(--ink)}
+.brand b{display:block;font:700 21px/1 var(--head);letter-spacing:-.01em}
+.brand small{display:block;font:500 12px/1.3 var(--body);color:var(--taupe);letter-spacing:.04em;margin-top:3px}
+nav.main{display:flex;gap:4px;margin-left:auto}
+nav.main a{white-space:nowrap;font:500 15px/1 var(--head);text-decoration:none;color:var(--ink);padding:12px 10px;border-radius:8px}
+nav.main a:hover{background:var(--wash);color:var(--teal)}
+.hcta{display:flex;gap:10px;flex:none}
+.hcta .btn{min-height:46px;padding:0 18px;font-size:15px}
+.hcta .cl{display:none}
+
+/* hero */
+.hero{padding:64px 0 76px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,74px);font-weight:700;color:var(--navy);margin:18px 0 20px}
+.hero h1 .sweep{position:relative;white-space:nowrap;color:var(--teal)}
+.hero h1 .sweep svg{position:absolute;left:-2%;bottom:-.16em;width:104%;height:.38em;overflow:visible}
+.hero .lead{font-size:clamp(18px,1.6vw,21px);color:#3f4a50;max-width:31em;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.rating{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+.rating span{color:#b8860b;font-size:20px;line-height:1}
+.rating:hover{border-color:currentColor}
+
+/* before/after slider */
+.ba{margin:0;position:relative}
+.ba-box{position:relative;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;box-shadow:0 34px 70px -24px rgba(19,39,48,.45);background:#dfe6e6;touch-action:pan-y}
+.ba-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-box .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(19,39,48,.15);pointer-events:none}
+.ba-knob{position:absolute;top:50%;left:var(--pos,50%);width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.3);pointer-events:none}
+.ba-knob svg{width:28px;height:28px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize}
+.ba input:focus-visible ~ .ba-knob{outline:3px solid var(--teal-l);outline-offset:3px}
+.tag{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font:600 13px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;pointer-events:none}
+.tag.b{left:14px;background:rgba(19,39,48,.82);color:#fff}
+.tag.a{right:14px;background:#fff;color:var(--navy)}
+.ba::before{content:"";position:absolute;inset:-16px 16px 16px -16px;border-radius:calc(var(--r) + 6px);background:repeating-linear-gradient(-45deg,rgba(18,89,96,.12) 0 2px,transparent 2px 12px);z-index:-1}
+.ba figcaption{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin-top:14px;font-size:15px;color:var(--taupe)}
+.ba figcaption b{color:var(--ink);font-weight:600}
+
+/* proof strip */
+.proof{background:var(--navy);color:#dfe6f1}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:24px 20px;border-left:1px solid rgba(255,255,255,.14)}
+.proof li:first-child{border-left:0}
+.proof strong{display:block;font:600 20px/1.2 var(--head);color:#fff}
+.proof span{font-size:15px}
+
+/* services */
+section{padding:88px 0}
+.sh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:36px}
+.sh h2{font-size:clamp(30px,3.6vw,46px);color:var(--navy);margin-top:12px}
+.sh p{margin:0;color:#4a5358}
+.svc{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:border-color .15s,box-shadow .15s}
+.card:hover{border-color:var(--teal-l);box-shadow:0 14px 34px -18px rgba(19,39,48,.35)}
+.card h3{font-size:23px;color:var(--navy);margin-bottom:8px}
+.card p{margin:0;color:#4a5358}
+.card.res{grid-row:span 3;background:var(--wash);border-color:transparent}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;padding:0;list-style:none}
+.chips li{background:#fff;border-radius:999px;padding:7px 14px;font:500 14px/1.2 var(--head);color:var(--teal)}
+.check{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 22px}
+.check h4{margin:0 0 6px;font:600 16px/1.2 var(--head);color:var(--ink)}
+.check p{font-size:15.5px;line-height:1.5}
+.check li{position:relative;padding-left:30px}
+.check li::before{content:"";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:6px;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3.2 3L15 7' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.note{margin-top:22px !important;font-size:15.5px;border-top:1px dashed #b9cfcf;padding-top:16px}
+.more{display:inline-block;margin-top:16px;font:600 15px/1.4 var(--head);color:var(--teal);text-decoration:none}
+.more:hover{text-decoration:underline}
+
+/* gallery band */
+.gal{background:var(--teal);color:#e3f1f1}
+.gal .sh h2{color:#fff}
+.gal .sh p{color:#cfe5e5}
+.gal .kick{color:var(--teal-l)}
+.pairs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pair{margin:0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:12px}
+.pair .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pair .two div{position:relative}
+.pair img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px}
+.pair .two span{position:absolute;left:8px;top:8px;font:600 11px/1 var(--head);letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;border-radius:999px;background:rgba(19,39,48,.8);color:#fff}
+.pair .two div+div span{background:#fff;color:var(--navy)}
+.pair figcaption{padding:12px 4px 2px;font:500 15px/1.3 var(--head);color:#fff}
+.gal .more{color:#fff}
+
+/* story */
+.story .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:64px;align-items:center}
+.port{margin:0;position:relative;max-width:380px}
+.port img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:200px 200px var(--r) var(--r)}
+.port figcaption{margin-top:12px;font-size:15px;color:var(--taupe)}
+.story h2{font-size:clamp(30px,3.6vw,46px);color:var(--navy);margin:12px 0 18px}
+.story p{margin:0 0 16px;color:#3f4a50}
+.story blockquote{margin:26px 0 0;padding:22px 26px;background:#fff;border-left:4px solid var(--teal);border-radius:0 var(--r) var(--r) 0;font-size:18px;color:var(--ink)}
+.story blockquote footer{margin-top:10px;font:600 14px/1.3 var(--head);color:var(--teal)}
+
+/* reviews + contact */
+.rc{background:#fff;border-top:1px solid var(--line)}
+.rc .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px}
+.rev{padding:8px 0}
+.rev h2{font-size:clamp(28px,3.2vw,40px);color:var(--navy);margin:12px 0 20px}
+.rev q{display:block;font:500 clamp(18px,1.7vw,21px)/1.5 var(--head);color:var(--ink);quotes:"\201C" "\201D"}
+.rev .who{margin:12px 0 26px;font-weight:600;color:var(--taupe)}
+.themes{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.themes li{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:16px;background:var(--ground)}
+.rev small{display:block;color:var(--taupe);font-size:15px}
+.rev small a{color:var(--teal);font-weight:600}
+.contact{background:var(--navy);color:#dfe6f1;border-radius:var(--r);padding:34px;display:flex;flex-direction:column;gap:16px}
+.contact h2{font-size:clamp(26px,2.6vw,32px);color:#fff}
+.contact .big{font:700 clamp(26px,2.8vw,34px)/1.1 var(--head);color:#fff;text-decoration:none}
+.contact .big:hover{color:var(--teal-l)}
+.contact a.mail{color:#fff;font-weight:600;overflow-wrap:anywhere}
+.contact dl{margin:0;display:grid;gap:12px}
+.contact dt{font:600 12px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--teal-l);margin-bottom:4px}
+.contact dd{margin:0}
+.contact .btn{background:#fff;color:var(--navy);align-self:flex-start}
+.contact .btn:hover{background:var(--teal-l)}
+
+.closer{padding:64px 0;background:var(--ground)}
+.closer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.closer h2{font-size:clamp(26px,3.2vw,40px);color:var(--navy)}
+.closer p{margin:6px 0 0;color:#4a5358}
+footer.site{background:var(--ink);color:#a9b7bd;font-size:15px;padding:30px 0 34px}
+footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px}
+footer.site a{color:#e3eef0}
+.mbar{display:none}
+
+@media (max-width:1240px){nav.main{display:none}.hcta{margin-left:auto}}
+@media (max-width:900px){
+  .hero{padding:40px 0 64px}
+  .hero .wrap,.story .wrap,.rc .wrap,.sh{grid-template-columns:1fr}
+  .hero .wrap{gap:44px}
+  .ba::before{inset:-10px 10px 10px -10px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.14)}
+  .svc{grid-template-columns:1fr}
+  .card.res{grid-row:auto}
+  .pairs{grid-template-columns:1fr;justify-items:center}
+  .pair{width:100%;max-width:320px}
+  .story .wrap{gap:36px}
+  .port{max-width:300px}
+}
+@media (max-width:640px){
+  body{padding-bottom:74px}
+  header .wrap{min-height:64px}
+  .brand .mark{width:46px}
+  .brand b{font-size:18px}
+  .brand small{display:none}
+  .hcta .est{display:none}
+  .hcta .btn{padding:0 16px}
+  .hcta .num{display:none}
+  .hcta .cl{display:inline}
+  section{padding:64px 0}
+  .card,.contact{padding:24px}
+  .check{grid-template-columns:1fr}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--ink);padding:8px;border-top:1px solid rgba(255,255,255,.1)}
+  .mbar a{min-height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;font:600 15px/1 var(--head);text-decoration:none}
+  .mbar a:first-child{background:#fff;color:var(--navy)}
+  .mbar a:last-child{border:1px solid rgba(255,255,255,.35);color:#fff}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="OCD Cleaners, home"><svg class="mark" viewBox="0 0 1536 1144" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M 211 0 C 211 3,214 6,217 8 C 222 11,222 13,219 17 L 217 20 219 23 C 228 35,227 44,217 41 C 214 41,208 40,204 40 C 196 40,195 40,191 37 C 189 35,185 33,182 32 C 180 30,177 28,176 28 C 175 27,173 25,170 24 C 167 24,162 21,158 20 C 145 13,111 14,107 20 C 106 21,106 23,106 24 C 106 27,104 29,100 31 C 93 34,87 45,90 48 C 92 49,101 49,112 49 C 117 49,119 50,122 51 C 124 53,127 54,129 55 C 133 55,136 57,137 60 C 140 67,137 70,127 70 C 116 70,103 73,100 78 C 99 78,97 80,95 81 C 92 82,88 86,85 89 L 79 95 68 96 C 53 98,43 103,36 112 C 33 115,30 118,28 119 C 23 122,16 129,13 134 C 9 142,10 144,17 140 L 20 138 24 142 C 27 145,27 147,27 149 C 25 157,25 157,28 161 C 32 164,32 166,27 169 C 24 171,22 171,17 171 C 8 170,7 171,10 177 C 12 182,15 184,20 185 C 26 187,26 188,21 191 C 14 195,15 197,23 200 C 28 202,37 210,37 212 C 37 212,36 213,34 214 C 26 215,26 216,25 218 C 25 222,26 222,36 225 C 49 229,52 235,43 240 C 41 242,37 245,34 248 C 29 252,29 253,30 256 C 32 260,29 262,21 264 C 11 266,9 267,9 269 C 9 274,18 276,28 274 C 36 273,39 273,39 276 C 39 277,30 286,26 289 C 17 294,9 306,7 316 C 5 327,7 333,13 339 C 20 345,21 345,23 337 C 26 330,28 329,32 336 C 35 342,37 342,40 337 C 45 330,49 333,50 345 C 51 355,52 356,68 350 C 74 348,75 348,78 349 C 84 352,91 352,99 347 C 106 343,109 342,110 345 C 112 348,111 350,108 353 C 106 356,106 356,107 358 C 110 359,113 359,118 356 C 124 352,135 347,138 347 C 139 347,142 345,147 340 C 151 336,155 333,156 333 C 160 333,161 352,158 360 C 156 364,157 366,162 366 C 167 366,180 355,184 347 C 185 345,187 342,188 341 C 189 340,191 336,191 334 C 194 325,197 324,201 330 C 208 343,211 345,217 344 C 221 344,230 337,232 331 C 234 327,240 323,242 323 C 246 323,254 333,257 340 C 258 344,259 346,261 346 C 263 346,270 340,273 333 C 277 323,283 322,288 329 C 291 333,297 338,306 342 C 308 342,311 343,314 343 C 320 342,320 340,316 332 C 312 325,312 321,315 321 C 315 321,320 321,326 321 C 345 320,348 316,340 307 C 331 298,334 294,346 296 C 360 299,370 295,367 288 C 365 284,366 282,371 281 C 381 279,382 277,379 272 C 378 271,377 268,376 266 C 376 265,375 263,374 262 C 374 260,374 260,377 260 C 381 261,391 265,394 268 C 396 269,399 271,402 272 C 405 273,408 275,409 276 C 410 276,413 278,417 280 C 421 282,428 285,432 288 C 437 291,444 294,447 296 C 450 297,454 299,455 300 C 456 301,460 304,464 305 C 473 310,480 314,483 316 C 485 317,488 319,491 320 C 493 321,496 323,498 324 C 499 325,502 327,505 328 C 508 330,511 331,511 332 C 512 333,514 334,517 336 C 520 337,524 339,526 341 C 528 343,531 344,532 344 C 532 344,535 345,537 347 C 539 349,543 351,545 352 C 549 354,554 357,559 362 C 561 363,561 365,561 369 C 561 373,562 375,564 377 C 567 381,570 387,577 400 C 582 409,586 415,587 415 C 587 415,590 417,593 420 C 600 427,606 431,611 432 C 622 435,626 439,630 452 C 633 461,637 466,652 482 C 664 496,668 501,671 508 C 672 510,674 515,676 517 C 678 522,682 540,685 556 C 686 559,686 575,687 592 C 688 625,689 636,692 646 C 693 650,695 657,696 663 C 696 669,698 677,700 682 L 703 691 701 701 C 700 711,700 711,702 727 C 704 736,706 747,708 751 C 711 763,712 771,712 793 C 712 815,711 826,708 834 C 707 837,705 843,704 846 C 701 863,696 867,686 861 C 683 859,678 857,673 856 C 668 855,663 853,661 852 C 659 851,653 849,648 848 C 643 847,637 845,634 844 C 632 843,625 841,620 840 C 614 839,608 837,606 836 C 604 835,599 833,594 832 C 589 831,583 829,580 828 C 578 826,573 825,571 824 C 568 823,563 822,560 820 C 557 819,553 817,552 817 C 550 816,537 810,528 806 C 526 805,522 802,518 801 C 515 799,512 797,511 796 C 510 795,507 793,504 792 C 492 786,474 770,464 757 C 462 753,458 749,457 748 C 441 727,424 709,412 703 C 410 702,407 700,405 699 C 404 698,400 696,397 695 C 394 694,391 692,390 692 C 389 691,386 689,382 688 C 379 687,374 685,373 684 C 370 682,351 676,345 675 C 337 674,332 683,337 690 C 339 693,350 701,357 705 C 366 709,375 715,376 716 C 377 720,373 721,363 720 C 342 719,330 720,320 724 C 309 729,298 730,268 725 C 252 723,242 724,234 726 C 225 729,224 730,223 736 C 223 742,224 743,232 744 C 246 746,249 750,239 752 C 232 754,230 755,230 760 C 230 762,230 764,231 765 C 232 766,240 771,249 775 C 252 777,256 779,257 780 C 258 782,261 783,262 784 C 263 785,266 787,269 788 C 272 791,275 792,282 794 C 291 795,292 795,298 801 C 308 811,315 813,330 813 C 339 813,344 813,348 812 C 350 811,357 809,364 808 C 370 807,377 805,380 804 C 394 799,415 800,426 805 C 430 807,433 808,434 808 C 435 808,448 815,452 818 C 453 819,456 821,458 823 C 464 826,483 843,498 857 C 505 864,512 870,514 872 C 517 873,519 875,519 876 C 520 876,522 878,525 880 C 527 882,531 884,533 885 C 534 886,537 888,539 889 C 540 890,543 892,545 893 C 547 895,551 898,554 900 C 558 902,562 905,564 907 C 566 908,569 910,570 911 C 572 912,575 914,577 916 C 579 917,583 920,585 921 C 591 925,596 928,600 931 C 601 933,604 935,606 936 C 609 937,612 939,614 941 C 617 943,619 944,619 944 C 620 944,622 946,625 947 C 627 949,630 951,632 952 C 634 953,637 954,638 956 C 640 957,643 959,646 960 C 648 961,651 963,653 964 C 654 965,657 967,660 968 C 664 970,666 973,666 978 C 666 984,662 1002,660 1006 C 658 1009,656 1014,655 1017 C 655 1021,653 1025,652 1027 C 651 1029,649 1035,648 1040 C 647 1045,645 1052,644 1055 C 643 1059,641 1067,640 1074 C 639 1082,637 1091,636 1095 C 634 1102,630 1135,630 1141 L 630 1144 842 1144 C 992 1144,1055 1144,1055 1143 C 1055 1141,1053 1138,1051 1136 C 1047 1131,1041 1124,1036 1117 C 1033 1113,1029 1108,1027 1105 C 1025 1103,1022 1099,1021 1097 C 1019 1095,1016 1091,1015 1089 C 1013 1087,1010 1082,1008 1080 C 1007 1078,1005 1074,1003 1073 C 1002 1072,1000 1069,999 1066 C 998 1064,997 1062,996 1061 C 995 1061,994 1059,992 1056 C 991 1053,989 1049,988 1048 C 986 1046,985 1043,984 1040 C 983 1038,981 1035,980 1033 C 979 1032,978 1029,977 1027 C 976 1025,974 1021,972 1017 C 971 1013,968 1008,968 1004 C 967 1001,965 996,964 994 C 963 991,961 983,959 974 C 957 966,956 958,955 956 C 953 951,952 924,952 915 C 953 910,954 905,955 902 C 957 899,959 893,960 888 C 961 884,963 879,964 878 C 965 876,967 872,968 868 C 968 865,970 860,972 858 C 974 855,975 850,976 848 C 977 846,978 841,980 839 C 982 837,984 832,984 829 C 985 826,987 824,987 823 C 988 823,990 820,992 816 C 994 812,997 805,1000 800 C 1002 796,1005 790,1007 786 C 1008 783,1011 779,1012 778 C 1013 776,1015 773,1016 771 C 1016 768,1018 765,1020 763 C 1021 761,1023 757,1024 754 C 1025 751,1027 747,1028 745 C 1030 742,1031 738,1032 736 C 1033 734,1034 729,1036 726 C 1042 712,1045 685,1042 661 C 1038 634,1038 631,1036 624 C 1034 616,1032 598,1032 579 C 1032 566,1031 550,1029 542 C 1029 540,1030 538,1034 533 C 1040 526,1041 523,1041 514 C 1041 498,1034 481,1026 471 C 1024 469,1022 467,1022 467 C 1022 467,1020 465,1018 464 C 1011 462,1003 463,994 467 C 990 469,985 472,981 472 C 978 473,973 475,970 477 C 964 480,960 479,959 475 C 957 471,960 450,963 445 C 964 442,966 438,968 435 C 971 429,984 415,996 405 C 1015 390,1039 367,1039 365 C 1039 364,1041 362,1043 360 C 1046 356,1049 352,1054 343 C 1061 332,1063 328,1064 324 C 1065 322,1066 318,1068 316 C 1069 313,1071 305,1073 299 C 1074 293,1076 285,1076 283 C 1079 275,1079 272,1080 252 C 1080 234,1081 232,1082 231 C 1084 229,1086 231,1092 240 C 1096 247,1097 251,1096 275 C 1096 296,1095 308,1092 321 C 1086 344,1085 411,1091 425 C 1092 428,1093 433,1095 436 C 1101 455,1120 476,1136 482 C 1154 489,1166 489,1183 482 C 1198 476,1212 466,1216 457 C 1218 451,1218 450,1212 450 C 1203 452,1201 452,1193 450 C 1182 446,1172 438,1167 429 C 1165 425,1163 422,1162 420 C 1158 412,1154 377,1157 362 C 1157 358,1159 348,1160 340 C 1160 331,1162 319,1164 312 C 1170 285,1170 235,1165 221 C 1160 206,1158 201,1155 199 C 1154 197,1153 195,1153 195 C 1153 193,1138 178,1134 176 C 1132 175,1130 173,1128 172 C 1127 171,1121 168,1115 166 L 1104 162 1090 162 C 1076 162,1075 162,1068 165 C 1064 167,1058 169,1056 169 L 1051 169 1044 162 C 1040 157,1035 153,1034 152 C 1032 152,1029 149,1026 148 C 1024 146,1021 144,1020 143 C 1019 143,1016 142,1014 140 C 1012 139,1008 137,1005 136 C 1002 135,997 133,995 132 C 989 129,980 128,960 128 C 942 128,941 127,938 125 C 937 124,932 121,928 119 C 925 118,920 115,918 114 C 916 113,910 111,904 109 C 888 104,866 104,854 108 C 849 110,843 111,840 112 C 836 113,823 119,817 122 C 803 130,793 145,796 151 C 797 152,799 155,800 158 C 803 164,809 166,814 162 C 820 159,824 162,821 169 C 821 172,819 177,817 182 C 815 186,813 192,812 193 C 811 195,809 199,808 202 C 808 206,806 210,804 212 C 803 214,801 217,801 219 C 798 226,781 244,774 248 C 766 252,756 259,755 262 C 753 266,754 267,761 275 C 769 284,769 285,765 290 C 760 295,759 299,759 308 L 760 316 757 320 C 752 325,752 326,756 334 C 761 342,761 353,756 364 C 752 375,752 381,756 386 C 760 391,761 392,769 394 C 781 398,787 399,813 399 C 842 399,844 399,851 406 C 856 412,858 417,858 429 C 858 438,855 457,852 463 C 851 466,849 472,848 478 C 846 487,840 506,838 509 C 837 510,835 511,833 512 C 825 516,808 530,802 538 C 800 539,798 542,796 544 C 788 552,779 565,768 583 C 763 592,757 590,753 579 C 752 576,750 571,748 568 C 746 566,745 562,744 559 C 743 557,742 553,740 551 C 739 549,737 545,737 543 C 736 541,734 537,732 534 C 730 531,728 527,728 525 C 727 523,725 520,725 519 C 723 517,711 493,711 491 C 711 491,710 489,709 487 C 705 481,698 459,697 448 C 696 444,696 434,695 428 C 693 405,683 382,674 377 C 672 376,669 374,666 372 C 664 371,659 368,655 368 C 652 367,646 365,643 363 C 639 361,636 360,635 360 C 634 360,631 359,628 357 C 625 355,621 353,618 352 C 615 352,611 350,608 348 C 606 347,601 345,598 344 C 594 343,589 341,586 340 C 584 338,578 337,574 336 C 571 335,565 333,562 332 C 555 330,554 330,546 331 C 540 332,540 332,533 329 C 529 327,525 324,524 323 C 523 323,520 321,518 320 C 515 319,512 317,511 316 C 509 315,506 313,504 312 C 501 311,498 309,496 308 C 495 306,492 305,490 304 C 488 303,485 301,483 300 C 481 298,478 296,475 296 C 473 295,471 293,470 292 C 468 291,465 289,463 288 C 460 287,458 285,457 284 C 456 284,453 281,450 280 C 442 276,434 271,430 268 C 429 266,426 264,423 263 C 421 262,419 260,418 260 C 417 259,415 257,413 256 C 408 253,401 246,401 244 C 401 243,402 241,404 239 C 409 232,410 226,408 213 C 406 202,405 198,403 195 C 399 192,388 186,384 186 C 379 186,377 183,377 178 C 377 174,376 173,373 170 L 369 166 369 158 C 370 144,364 136,350 130 C 347 129,343 126,341 124 C 338 122,335 120,334 119 C 327 115,321 110,320 107 C 317 100,313 97,306 95 C 298 93,297 91,300 87 C 302 85,303 83,303 79 C 303 75,303 75,296 68 C 289 62,288 61,287 56 C 286 53,285 50,285 49 C 284 49,282 46,281 44 C 272 31,249 11,237 7 C 234 6,232 5,232 3 L 231 -0 221 -0 C 215 -0,211 0,211 0"/></svg><span><b>OCD Cleaners</b><small>Oconomowoc · greater Lake Country</small></span></a>
+    <nav class="main" aria-label="Site">
+      <a href="https://www.ocdcleanerswi.com/residential">Residential</a>
+      <a href="https://www.ocdcleanerswi.com/business">Business</a>
+      <a href="https://www.ocdcleanerswi.com/before-after">Before &amp; After</a>
+      <a href="https://www.ocdcleanerswi.com/reviews">Reviews</a>
+      <a href="https://www.ocdcleanerswi.com/about">About</a>
+      <a href="https://www.ocdcleanerswi.com/careers">Careers</a>
+    </nav>
+    <div class="hcta">
+      <a class="btn btn-ghost est" href="https://form.jotform.com/203435862214047" target="_blank" rel="noopener">Request an estimate</a>
+      <a class="btn btn-navy" href="tel:+12627191306"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span class="num">(262) 719-1306</span><span class="cl">Call</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <span class="kick">Oconomowoc, WI · Lake Country · Since 2000</span>
+        <h1 id="h1">We'll <span class="sweep">obsess<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 22 C 70 8, 170 4, 296 14" fill="none" stroke="#78C2C4" stroke-width="7" stroke-linecap="round" opacity=".7"/></svg></span> so you won't have to.</h1>
+        <p class="lead">Residential and business cleaning for Lake Country homes and workplaces, started in 2000 when Ginger helped a neighbor get ready for dinner.</p>
+        <div class="ctas">
+          <a class="btn btn-navy" href="tel:+12627191306">Call (262) 719-1306</a>
+          <a class="btn btn-ghost" href="https://form.jotform.com/203435862214047" target="_blank" rel="noopener">Request an estimate</a>
+        </div>
+        <a class="rating" href="https://www.google.com/maps/place/OCD+Cleaners,+LLC/@43.1092083,-88.4997864,17z/data=!3m1!4b1!4m6!3m5!1s0x8805cba4dc658e09:0x62de25ecb3ef0dac!8m2!3d43.1092083!4d-88.4997864!16s%2Fg%2F11jmywv979" target="_blank" rel="noopener"><span aria-hidden="true">★</span> 4.9 on Google</a>
+      </div>
+      <figure class="ba" id="ba">
+        <div class="ba-box">
+          <img src="img/freezer-before.jpg" alt="Before: a freezer drawer with spilled red stains, food packages and an ice pack" width="1920" height="1440">
+          <img class="after" src="img/freezer-after.jpg" alt="After: the same freezer drawer emptied and wiped clean" width="1920" height="1440">
+          <span class="tag b">Before</span><span class="tag a">After</span>
+          <input type="range" min="0" max="100" value="50" step="1" aria-label="Before and after comparison: drag to reveal the cleaned freezer">
+          <span class="ba-line" aria-hidden="true"></span>
+          <span class="ba-knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+        </div>
+        <figcaption><span><b>Drag the line.</b> A freezer clean-out from their own gallery.</span><span>Real photos, sharpened for the web</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="proof">
+    <div class="wrap">
+      <ul>
+        <li><strong>Since 2000</strong><span>Started with one neighbor, Mary</span></li>
+        <li><strong>Family owned</strong><span>and operated, based in Oconomowoc</span></li>
+        <li><strong>Background-checked</strong><span>Every employee passes a background test</span></li>
+        <li><strong>★ 4.9 on Google</strong><span>Rated by Lake Country customers</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sh">
+        <div><span class="kick">What we clean</span><h2 id="svc-h">Homes, businesses and job sites.</h2></div>
+        <p>A one-time deep clean, ongoing maintenance help, or getting your home market ready. Plus offices, commercial spaces and new construction.</p>
+      </div>
+      <div class="svc">
+        <article class="card res">
+          <h3>Residential</h3>
+          <p>Start fresh with a deep clean, keep it up with ongoing help, or get your home ready to list.</p>
+          <ul class="chips"><li>Deep clean</li><li>Ongoing maintenance</li><li>Market ready</li></ul>
+          <ul class="check">
+            <li><h4>Kitchen</h4><p>Countertops and appliance faces, stove top, inside the microwave, table, floors.</p></li>
+            <li><h4>Bathrooms</h4><p>Toilet, shower and tub, sink, vanity and mirror.</p></li>
+            <li><h4>Living areas &amp; hallways</h4><p>Floors, fans and fixtures, trim and switch plates, window sills.</p></li>
+            <li><h4>Bedrooms</h4><p>Floors, fans and fixtures, trim, switch plates and sills.</p></li>
+          </ul>
+          <p class="note">Deep clean or maintenance, the list is the same. The difference is how thorough the cleaning is. Light fixtures are evaluated individually.</p>
+          <a class="more" href="https://www.ocdcleanerswi.com/residential-included-services">See what's typically included →</a>
+        </article>
+        <article class="card">
+          <h3>Business &amp; commercial</h3>
+          <p>Cleaning and sanitizing for business and commercial spaces, from small local businesses to larger multi-facility enterprises.</p>
+          <a class="more" href="https://www.ocdcleanerswi.com/business">Business cleaning →</a>
+        </article>
+        <article class="card">
+          <h3>Construction cleaning</h3>
+          <p>Remove the remaining construction materials and restore the site to a clean, inviting home for your clients.</p>
+          <a class="more" href="https://www.ocdcleanerswi.com/construction-included-services">Construction cleaning →</a>
+        </article>
+        <article class="card">
+          <h3>Decluttering &amp; organizing</h3>
+          <p>De-clutter, organize and straighten areas throughout your home, from closets to the pantry.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="gal" aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="sh">
+        <div><span class="kick">Before &amp; after</span><h2 id="gal-h">“Pull up a chair and read our book.”</h2></div>
+        <p>Three more pairs from the OCD Cleaners gallery: a tub, a pantry and a set of shelves.</p>
+      </div>
+      <div class="pairs">
+        <figure class="pair">
+          <div class="two"><div><img src="img/tub-before.jpg" alt="Before: a jetted tub with brown residue around the drain and jets" width="720" height="960" loading="lazy"><span>Before</span></div><div><img src="img/tub-after.jpg" alt="After: the same tub, clean and white" width="720" height="960" loading="lazy"><span>After</span></div></div>
+          <figcaption>Bathtub</figcaption>
+        </figure>
+        <figure class="pair">
+          <div class="two"><div><img src="img/pantry-before.jpg" alt="Before: a walk-in pantry with items piled on the shelves and floor" width="576" height="884" loading="lazy"><span>Before</span></div><div><img src="img/pantry-after.jpg" alt="After: the same pantry with shelves sorted and the floor clear" width="581" height="949" loading="lazy"><span>After</span></div></div>
+          <figcaption>Pantry, organized</figcaption>
+        </figure>
+        <figure class="pair">
+          <div class="two"><div><img src="img/shelf-before.jpg" alt="Before: built-in shelves with clothes and supplies stacked loosely" width="720" height="960" loading="lazy"><span>Before</span></div><div><img src="img/shelf-after.jpg" alt="After: the same shelves with folded linens and sorted baskets" width="720" height="960" loading="lazy"><span>After</span></div></div>
+          <figcaption>Shelves, straightened</figcaption>
+        </figure>
+      </div>
+      <a class="more" href="https://www.ocdcleanerswi.com/before-after">See the full Before &amp; After gallery →</a>
+    </div>
+  </section>
+
+  <section class="story" aria-labelledby="story-h">
+    <div class="wrap">
+      <figure class="port">
+        <img src="img/ginger.jpg" alt="Ginger, the owner, with a backpack beside a stone trail marker on the Camino de Santiago" width="720" height="960" loading="lazy">
+        <figcaption>Ginger hiking the Camino de Santiago in 2018</figcaption>
+      </figure>
+      <div>
+        <span class="kick">Our story</span>
+        <h2 id="story-h">It all began with a neighbor.</h2>
+        <p>“Back in 2000, I saw my neighbor, Mary, standing in her driveway completely frustrated.” Her husband was bringing someone home for dinner, the house was a mess and the kids were underfoot, so Ginger jumped in and helped. “The next morning, Mary came over and asked if I could help her every week and that’s how OCD Cleaners started.”</p>
+        <p>Since then the company has built long-standing relationships with realtors, construction companies, manufacturing businesses, and office building managers, and it still runs as a family owned and operated business.</p>
+        <blockquote>“I chose the name OCD Cleaners because I know firsthand the pain and struggle of living with Obsessive Compulsive Disorder. Rather than letting my diagnosis overwhelm, discourage or embarrass me, I’ve decided to turn my difficulties into skills that help others.”<footer>Ginger, on the About page</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="rc" aria-label="Reviews and contact">
+    <div class="wrap">
+      <div class="rev">
+        <span class="kick">From a customer</span>
+        <h2>“The most caring and thoughtful duo.”</h2>
+        <q>OCD Cleaners lifted that stress and uses products that clean and are safe for kids. Their sizable crew allows the job to be done quickly and efficiently. Aside from their top notch and diligent cleaning, Ginger and Kim are truly the most caring and thoughtful duo.</q>
+        <p class="who">Melissa D, featured on ocdcleanerswi.com</p>
+        <ul class="themes" aria-label="What Google reviewers mention">
+          <li>Thorough, top-to-bottom cleaning</li>
+          <li>Kind, professional crew</li>
+          <li>Takes time to understand the job</li>
+        </ul>
+        <small>Themes from reviews on Google, where OCD Cleaners is rated 4.9. <a href="https://www.ocdcleanerswi.com/reviews">Read the reviews →</a></small>
+      </div>
+      <aside class="contact" aria-labelledby="c-h">
+        <h2 id="c-h">Let's talk about your space.</h2>
+        <a class="big" href="tel:+12627191306">(262) 719-1306</a>
+        <dl>
+          <div><dt>Email</dt><dd><a class="mail" href="mailto:ocdcleanerswi@gmail.com">ocdcleanerswi@gmail.com</a></dd></div>
+          <div><dt>Office</dt><dd>111 W. 2nd Street, Oconomowoc, WI 53066</dd></div>
+          <div><dt>Service area</dt><dd>Greater Lake Country: as far north as Merton, south as Mukwonago, east as West Allis and west as Watertown.</dd></div>
+        </dl>
+        <a class="btn" href="https://form.jotform.com/203435862214047" target="_blank" rel="noopener">Request an estimate</a>
+      </aside>
+    </div>
+  </section>
+
+  <div class="closer">
+    <div class="wrap">
+      <div>
+        <h2>A first look at your new site.</h2>
+        <p>Call OCD Cleaners or request an estimate to set up a visit.</p>
+      </div>
+      <a class="btn btn-navy" href="tel:+12627191306">Call (262) 719-1306</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>OCD Cleaners · 111 W. 2nd Street, Oconomowoc, WI 53066 · <a href="https://www.facebook.com/OCDCleanersLLC" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/ocdcleanerswi/" target="_blank" rel="noopener">Instagram</a></span>
+    <span>Website by Cream City Post · Independent website concept, not the official OCD Cleaners site. Logo redrawn; services, story, testimonial and photos from ocdcleanerswi.com; rating from Google; freezer photos enhanced.</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick actions">
+  <a href="tel:+12627191306">Call (262) 719-1306</a>
+  <a href="https://form.jotform.com/203435862214047" target="_blank" rel="noopener">Estimate</a>
+</nav>
+
+<script>
+(function(){
+  var f=document.getElementById('ba'),r=f.querySelector('input');
+  function set(){f.style.setProperty('--pos',r.value+'%');}
+  r.addEventListener('input',set);set();
+})();
+</script>
+</body>
+</html>
