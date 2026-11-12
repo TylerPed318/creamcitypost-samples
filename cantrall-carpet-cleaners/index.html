@@ -75,8 +75,9 @@ section{padding:84px 0}
 .pm h2{font-size:clamp(28px,3.2vw,38px);color:var(--teal);margin:10px 0 14px}
 .pm p{margin:0 0 24px;color:#3b4a51}
 .pm figure{margin:0;position:relative}
-.pm figure img{width:100%;max-width:420px;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r);box-shadow:0 22px 44px rgba(15,76,92,.18);margin-left:auto}
-.pm figcaption{font-size:14px;color:var(--muted);margin-top:10px;text-align:right}
+.pm figure img{width:100%;max-width:340px;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r);box-shadow:0 22px 44px rgba(15,76,92,.18);margin-left:auto}
+.pm figcaption{font-size:14px;color:var(--muted);margin:10px 0 0 auto;text-align:right;max-width:340px}
+@media (max-width:600px){.pm figure img{max-width:280px;margin-inline:auto}.pm figcaption{text-align:center;margin-inline:auto;max-width:280px}}
 
 /* what to expect: stepper */
 .steps-wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;align-items:start}
@@ -99,9 +100,10 @@ section{padding:84px 0}
 .say{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
 .say h2,.reach h2{font-size:clamp(26px,2.8vw,34px);color:#fff;margin:10px 0 18px}
 .say ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.say li{padding-left:30px;position:relative}
-.say li::before{content:"";position:absolute;left:0;top:.45em;width:14px;height:14px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--aqua)}
-.say .src{margin-top:20px;font-size:15px;color:#a9d3da}
+.say p{margin:0 0 22px;color:#cfe8ec}
+.say li a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:0 18px;border-radius:12px;border:1px solid rgba(255,255,255,.22);color:#fff;font-weight:600;text-decoration:none;transition:border-color .15s,background .15s}
+.say li a:hover{border-color:var(--aqua);background:rgba(255,255,255,.06)}
+.say li a:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
 .reach{background:#fff;color:var(--text)}
 .reach h2{color:var(--teal)}
 .reach .big{display:block;font:700 clamp(26px,3vw,34px)/1.1 var(--head);color:var(--teal);text-decoration:none;margin-bottom:18px}
@@ -234,18 +236,16 @@ footer a{color:#e2f2f4}
     </div>
   </section>
 
-  <section class="contact" aria-label="What customers say and contact">
+  <section class="contact" aria-label="Find them online and contact">
     <div class="wrap">
       <div class="say">
-        <span class="kick" style="color:#7fd0dc">From Google reviews</span>
-        <h2>What customers mention</h2>
+        <span class="kick" style="color:#7fd0dc">Look them up</span>
+        <h2>Cantrall Carpet Cleaners online</h2>
+        <p>Find the business on Facebook and Google, then call with your questions about the job.</p>
         <ul>
-          <li>On time, and a careful job</li>
-          <li>Homes that came out looking practically new, even after smokers</li>
-          <li>Steady work for an apartment complex</li>
-          <li>Customers who have used him for years</li>
+          <li><a href="https://www.facebook.com/146880178690540" target="_blank" rel="noopener">Cantrall Carpet Cleaners on Facebook <span aria-hidden="true">→</span></a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Cantrall+Carpet+Cleaners+Waukesha+WI" target="_blank" rel="noopener">Read the reviews on Google <span aria-hidden="true">→</span></a></li>
         </ul>
-        <p class="src">Themes from reviews on the Cantrall Carpet Cleaners Google listing.</p>
       </div>
       <div class="reach">
         <span class="kick">Call to book</span>
