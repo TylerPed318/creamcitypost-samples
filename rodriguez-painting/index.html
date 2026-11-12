@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Rodriguez Painting LLC — Website concept by Cream City Post</title>
+<meta name="description" content="Independent website concept for Rodriguez Painting LLC, Milwaukee painting, drywall and carpentry.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#6B1E1E; --maroon-d:#521515; --gold:#F2B32A; --gold-d:#D99A12; --ink:#1E1A18; --cream:#FBF6EC; --slate:#5E6770; --white:#fff;
+  --line:#eadfca;
+  --disp:'Bebas Neue','Arial Narrow',Impact,sans-serif; --body:'Nunito Sans',system-ui,-apple-system,Segoe UI,sans-serif;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--cream)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--maroon);outline-offset:3px}
+.wrap{width:min(1140px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--disp);font-weight:400;letter-spacing:.02em;line-height:.95;margin:0}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:12px 24px;border-radius:999px;font-weight:800;font-size:17px;text-decoration:none;transition:background .15s,color .15s,border-color .15s}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-d)}
+.btn-line{border:2px solid currentColor}
+.btn-line:hover{background:var(--maroon);border-color:var(--maroon);color:#fff}
+.btn svg{width:18px;height:18px}
+
+header{background:var(--maroon);color:#fff;position:sticky;top:0;z-index:20}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand img{width:50px;height:50px;flex:none}
+.brand b{font-family:var(--disp);font-weight:400;font-size:30px;letter-spacing:.04em;line-height:1;white-space:nowrap}
+.brand b span{color:var(--gold)}
+header .btn{min-height:44px;padding:9px 18px;font-size:16px}
+
+/* hero */
+.hero{position:relative;padding:56px 0 70px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-12%;top:-30%;width:62%;aspect-ratio:1;border-radius:50%;background:var(--gold);opacity:.18;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:54px;align-items:center}
+.eyebrow{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--maroon);background:#fff;border:2px solid var(--maroon);border-radius:999px;padding:5px 14px}
+.hero h1{font-size:clamp(54px,8vw,108px);color:var(--maroon);margin:20px 0 18px}
+.hero h1 .stroke{display:block;color:var(--ink)}
+.hero h1 .swash{background:linear-gradient(transparent 62%,var(--gold) 62%,var(--gold) 92%,transparent 92%);padding:0 .06em}
+.hero p{font-size:19px;color:#4a423c;max-width:32em;margin:0 0 28px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.shot{position:relative;margin:0}
+.shot .ph{border-radius:200px 200px var(--r) var(--r);overflow:hidden;border:8px solid #fff;box-shadow:0 26px 50px rgba(107,30,30,.22);aspect-ratio:3/4;background:#ddd}
+.shot .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.shot figcaption{position:absolute;left:-14px;bottom:26px;background:var(--maroon);color:#fff;border-radius:10px;padding:10px 14px;font-weight:700;font-size:14px;line-height:1.3;box-shadow:0 10px 20px rgba(0,0,0,.2)}
+.shot figcaption small{display:block;font-weight:400;color:#f4d9a0}
+
+/* proof */
+.proof{background:var(--ink);color:#fff}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:20px 18px;border-left:1px solid #3a3330;font-weight:700;line-height:1.3}
+.proof li:first-child{border-left:0}
+.proof li b{display:block;font-family:var(--disp);font-weight:400;font-size:30px;color:var(--gold);letter-spacing:.03em;line-height:1}
+.proof li small{display:block;color:#cbbfb3;font-weight:400;font-size:14px}
+
+.sec{padding:84px 0}
+.kick{display:block;font-weight:800;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--maroon);margin-bottom:10px}
+.sec h2{font-size:clamp(44px,6vw,72px)}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:34px}
+.svc{background:#fff;border-radius:var(--r);padding:24px 22px;border:1px solid var(--line);position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--gold)}
+.svc h3{font-size:30px;color:var(--maroon)}
+.svc p{margin:8px 0 0;color:#4a423c;font-size:15.5px}
+.also{margin:22px 0 0;color:var(--slate)}
+.also b{color:var(--ink)}
+
+/* work row */
+.work{background:#fff}
+.work-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.work-head p{margin:0;max-width:30em;color:var(--slate)}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:32px}
+.row3 figure{margin:0}
+.row3 .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:#eee}
+.row3 .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.row3 figure:hover img{transform:scale(1.04)}
+.row3 figcaption{margin-top:10px;font-weight:700}
+.row3 figcaption small{display:block;font-weight:400;color:var(--slate);font-size:14.5px}
+
+/* reviews + open */
+.duo{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:22px;align-items:start}
+.quotes{display:grid;gap:16px}
+.q{background:#fff;border-radius:var(--r);padding:26px 26px 22px;border:1px solid var(--line);margin:0}
+.q p{margin:0;font-size:19px;line-height:1.5}
+.q p::before{content:"\201C";font-family:var(--disp);font-size:64px;line-height:0;color:var(--gold);vertical-align:-.42em;margin-right:6px}
+.q footer{margin-top:10px;color:var(--slate);font-size:15px;font-weight:700}
+.g{display:flex;align-items:center;gap:14px;margin-top:4px;font-weight:700}
+.g b{font-family:var(--disp);font-weight:400;font-size:44px;color:var(--maroon);line-height:1}
+.g a{color:var(--maroon);text-underline-offset:3px}
+
+.open{background:var(--maroon);color:#fff;border-radius:var(--r);padding:30px;position:sticky;top:90px}
+.status{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:14px;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.12);padding:6px 14px;border-radius:999px}
+.dot{width:10px;height:10px;border-radius:50%;background:#bbb}
+.open.is-open .dot{background:#59d36b;box-shadow:0 0 0 4px rgba(89,211,107,.25)}
+.open.is-closed .dot{background:var(--gold)}
+.open h3{font-size:44px;margin:16px 0 6px}
+.open .msg{color:#f2dcc8;margin:0 0 18px}
+.hours{list-style:none;padding:0;margin:0 0 22px;border-top:1px solid rgba(255,255,255,.18)}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:9px 2px;border-bottom:1px solid rgba(255,255,255,.18)}
+.hours li.today{color:var(--gold);font-weight:800}
+.open .btn{width:100%;justify-content:center}
+.open .em{display:block;text-align:center;margin-top:14px;color:#f2dcc8;font-size:15px;word-break:break-word}
+.open .em a{color:#fff}
+
+.closer{background:var(--gold);padding:56px 0;text-align:center}
+.closer h2{font-size:clamp(40px,5.4vw,64px);color:var(--maroon)}
+.closer p{margin:8px auto 22px;max-width:34em}
+.closer .btn{background:var(--maroon);color:#fff}
+.closer .btn:hover{background:var(--maroon-d)}
+footer.site{background:var(--ink);color:#b7aca2;font-size:14px;padding:24px 0 28px}
+footer.site p{margin:0}
+
+.bar{display:none}
+@media (max-width:960px){
+  .svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .hero .wrap,.duo{grid-template-columns:minmax(0,1fr)}
+  .hero{padding:36px 0 56px}
+  .shot{width:min(320px,82%);justify-self:center}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid #3a3330}
+  .row3{grid-template-columns:minmax(0,1fr)}
+  .open{position:static}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:64px}
+  .brand b{font-size:21px}
+  header .btn{white-space:nowrap;font-size:15px}
+  header .wrap{gap:8px}
+  header .btn svg{display:none}
+  .brand img{width:42px;height:42px}
+  header .btn .t{display:none}
+  header .btn{padding:9px 14px}
+  .sec{padding:60px 0}
+  .svc-grid{grid-template-columns:minmax(0,1fr)}
+  .q{padding:22px 20px 18px}
+  .q p{font-size:17px}
+  .open{padding:24px 20px}
+  .bar{display:grid;grid-template-columns:1.2fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30}
+  .bar a{min-height:60px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:800;font-size:16px}
+  .bar a:first-child{background:var(--gold);color:var(--ink)}
+  .bar a:last-child{background:var(--maroon);color:#fff}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Rodriguez Painting LLC">
+      <img src="img/favicon.svg" width="50" height="50" alt="">
+      <b>Rodriguez <span>Painting</span></b>
+    </a>
+    <a class="btn btn-gold" href="tel:+14145444062"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span class="t">Call&nbsp;</span>414-544-4062</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Milwaukee · Homes &amp; businesses</span>
+      <h1>Painting, drywall <span class="stroke">&amp; <span class="swash">carpentry</span></span></h1>
+      <p>Interior and exterior painting, drywall installation and repair, carpentry and trim, siding repair, and epoxy floors, from the team that paints your dream. Free estimates.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="tel:+14145444062">Call 414-544-4062</a>
+        <a class="btn btn-line" href="#hours">Are we open now?</a>
+      </div>
+    </div>
+    <figure class="shot">
+      <div class="ph"><img src="img/framing-commercial.jpg" width="1100" height="1789" alt="New wall framing going up inside a Milwaukee commercial space"></div>
+      <figcaption>Commercial framing<small>A recent Rodriguez job</small></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="proof" aria-label="Quick facts">
+  <div class="wrap"><ul>
+    <li><b>Free</b>estimates<small>We'll give you a call right away</small></li>
+    <li><b>4.3 ★</b>on Google<small>Customer rating</small></li>
+    <li><b>Homes</b>&amp; commercial<small>Residential and business jobs</small></li>
+    <li><b>Mon–Sat</b>hours<small>Saturday mornings too</small></li>
+  </ul></div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="kick">What we do</span>
+    <h2>Painting first, and more</h2>
+    <div class="svc-grid">
+      <div class="svc"><h3>Painting</h3><p>Interior and exterior painting for homes and businesses.</p></div>
+      <div class="svc"><h3>Drywall</h3><p>Drywall installation and repair.</p></div>
+      <div class="svc"><h3>Carpentry</h3><p>Carpentry services: custom woodwork and trim.</p></div>
+      <div class="svc"><h3>Siding</h3><p>Siding repair and replacement.</p></div>
+    </div>
+    <p class="also"><b>We also do</b> epoxy flooring application and basement finishing. Ask about your project when you call.</p>
+  </div>
+</section>
+
+<section class="sec work">
+  <div class="wrap">
+    <div class="work-head">
+      <div><span class="kick">Recent work</span><h2>On the job</h2></div>
+      <p>Real Rodriguez Painting projects: commercial drywall and an upstairs remodel.</p>
+    </div>
+    <div class="row3">
+      <figure><div class="ph"><img src="img/drywall.jpg" width="1000" height="750" loading="lazy" alt="A long run of new drywall, taped and mudded, in a commercial space"></div><figcaption>Commercial drywall<small>Hung, taped and mudded</small></figcaption></figure>
+      <figure><div class="ph"><img src="img/framing-upstairs.jpg" width="1000" height="750" loading="lazy" alt="New wall framing in an upstairs room, with floors covered for protection"></div><figcaption>Upstairs framing<small>New walls going up</small></figcaption></figure>
+      <figure><div class="ph"><img src="img/finished-upstairs.jpg" width="1000" height="1000" loading="lazy" alt="The same upstairs remodel with new walls drywalled and painted, and a new doorway"></div><figcaption>Upstairs remodel<small>New walls, drywall and paint</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="hours">
+  <div class="wrap duo">
+    <div>
+      <span class="kick">What clients say</span>
+      <div class="quotes">
+        <blockquote class="q"><p>Did a beautiful job on the exterior of my home. I definitely will be hiring them again for any other jobs that I need done in my home.</p><footer>— Jessica, residential client</footer></blockquote>
+        <blockquote class="q"><p>awesome crew they helped me remodel my home and made my dream vision happen i will be calling them again</p><footer>— Danny, residential client</footer></blockquote>
+      </div>
+      <div class="g" style="margin-top:20px"><b>4.3</b><span>on Google · <a href="https://www.google.com/maps/place/Rodriguez+painting/data=!4m2!3m1!1s0x791ebeb9726716f:0xc5fbdf7a96a77eec" target="_blank" rel="noopener">Read the reviews</a></span></div>
+    </div>
+    <aside class="open" id="openCard" aria-live="polite">
+      <span class="status"><span class="dot"></span><span id="stTxt">Hours</span></span>
+      <h3 id="stHead">Call for a free estimate</h3>
+      <p class="msg" id="stMsg">Getting your free estimate is the first step.</p>
+      <ul class="hours" id="hrs">
+        <li data-d="1,2,3,4,5"><span>Mon – Fri</span><span>8:00am – 6:00pm</span></li>
+        <li data-d="6"><span>Saturday</span><span>8:00am – 12:30pm</span></li>
+        <li data-d="0"><span>Sunday</span><span>Closed</span></li>
+      </ul>
+      <a class="btn btn-gold" href="tel:+14145444062">Call 414-544-4062</a>
+      <span class="em">or email <a href="mailto:rodriguezpaintingllc78@gmail.com">rodriguezpaintingllc78@gmail.com</a></span>
+    </aside>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <h2>A first look at your new site</h2>
+    <p>Finished, ad-free and built around your real work, with one number to call.</p>
+    <a class="btn" href="tel:+14145444062">Call 414-544-4062</a>
+  </div>
+</section>
+</main>
+
+<footer class="site"><div class="wrap"><p>Website by Cream City Post · Independent website concept, not the official Rodriguez Painting LLC site. Logo redrawn; services, hours, testimonials and contact details from rodriguez-painting-llc.webnode.page; job photos and rating from their Google listing.</p></div></footer>
+
+<nav class="bar" aria-label="Contact Rodriguez Painting">
+  <a href="tel:+14145444062">Call 414-544-4062</a>
+  <a href="#hours">Hours</a>
+</nav>
+
+<script>
+(function(){
+  var card=document.getElementById('openCard');
+  var now;
+  try{now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Chicago'}))}catch(e){now=new Date()}
+  var d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+  var sched={1:[480,1080],2:[480,1080],3:[480,1080],4:[480,1080],5:[480,1080],6:[480,750]};
+  function fmt(x){var h=Math.floor(x/60),mm=x%60,ap=h>=12?'pm':'am';h=h%12||12;return h+':'+(mm<10?'0':'')+mm+ap}
+  [].forEach.call(document.querySelectorAll('#hrs li'),function(li){if(li.getAttribute('data-d').split(',').indexOf(String(d))>-1)li.className='today'});
+  var s=sched[d],open=s&&m>=s[0]&&m<s[1];
+  var st=document.getElementById('stTxt'),hd=document.getElementById('stHead'),msg=document.getElementById('stMsg');
+  if(open){card.classList.add('is-open');st.textContent='Open now';hd.textContent='Call while we’re in';msg.textContent='Open until '+fmt(s[1])+' today (Milwaukee time). Getting your free estimate is the first step.'}
+  else{
+    card.classList.add('is-closed');st.textContent='Closed now';
+    var nd=d,k=0,next;
+    if(s&&m<s[0]){next=['today',s[0]]}
+    else{do{nd=(nd+1)%7;k++}while(!sched[nd]&&k<7);next=[k===1?'tomorrow':['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][nd],sched[nd][0]]}
+    hd.textContent='Opens '+next[0]+' at '+fmt(next[1]);
+    msg.textContent='Call during hours or send an email. Free estimates.';
+  }
+})();
+</script>
+</body>
+</html>
