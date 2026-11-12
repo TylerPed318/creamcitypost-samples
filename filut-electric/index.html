@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Filut Electric — Website concept by Cream City Post</title>
+<meta name="description" content="Website concept for Filut Electric, a residential and commercial electrician based in Oconomowoc, WI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23fff' stroke='%232E2E2B' stroke-width='5'/%3E%3Cpath d='M32 13a13 13 0 0 0-8 23v5h16v-5a13 13 0 0 0-8-23z' fill='%23E7B12F' stroke='%232E2E2B' stroke-width='2.5'/%3E%3Cpath d='M34 18l-6 10h5l-3 8 7-11h-5z' fill='%232E2E2B'/%3E%3Cpath d='M26 45h12M27 49h10' stroke='%232E2E2B' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bulb:#E7B12F; --bulb-h:#f2c24a; --char:#2E2E2B; --char-2:#3b3b37; --white:#fff;
+  --warm:#F3F2EE; --steel:#8A8D90; --sky:#2F6FB2; --text:#2E2E2B; --muted:#5f6265; --line:#e3e1db;
+  --head:'Barlow Semi Condensed','Arial Narrow',sans-serif; --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--text);font:400 17px/1.6 var(--body)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1.02;text-transform:uppercase;letter-spacing:.005em}
+.tag{display:inline-flex;align-items:center;gap:8px;font:700 14px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--char)}
+.tag::before{content:"";width:22px;height:3px;background:var(--bulb)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:4px;font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .15s,color .15s,border-color .15s,transform .15s}
+.btn-y{background:var(--bulb);color:var(--char)}
+.btn-y:hover{background:var(--bulb-h);transform:translateY(-1px)}
+.btn-o{border:2px solid var(--char);color:var(--char)}
+.btn-o:hover{background:var(--char);color:#fff}
+
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:62px;height:62px;flex:none}
+.logo b{font:800 24px/1 var(--head);text-transform:uppercase;letter-spacing:.04em}
+.logo small{display:block;font:600 12px/1.3 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--steel)}
+.hcall{display:inline-flex;align-items:center;gap:10px;background:var(--char);color:#fff;text-decoration:none;padding:12px 18px;border-radius:4px;font:700 19px/1 var(--head);letter-spacing:.04em}
+.hcall:hover{background:#000}
+.hcall i{width:10px;height:10px;border-radius:50%;background:var(--bulb);box-shadow:0 0 0 4px rgba(231,177,47,.25)}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--warm) 0%,#fff 100%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center;padding:64px 0 76px}
+.hero h1{font-size:clamp(46px,6.6vw,92px);font-weight:800;margin:18px 0 20px;color:var(--char)}
+.hero h1 .hl{background:linear-gradient(transparent 62%,var(--bulb) 62%,var(--bulb) 92%,transparent 92%);padding:0 .06em}
+.hero p{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:33em;margin:0 0 30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.shot{position:relative;margin:0}
+.shot img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;box-shadow:0 30px 60px rgba(46,46,43,.22)}
+.shot .badge{position:absolute;left:-22px;bottom:34px;background:var(--char);color:#fff;padding:16px 20px;border-radius:6px;display:flex;align-items:center;gap:14px;box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.shot .badge b{font:800 44px/1 var(--head);color:var(--bulb)}
+.shot .badge span{font:600 14px/1.3 var(--body)}
+.shot .badge .stars{color:var(--bulb);letter-spacing:2px;font-size:14px;display:block}
+
+/* strip */
+.strip{background:var(--char);color:#fff}
+.strip ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.strip li{padding:22px 24px;display:flex;align-items:center;gap:14px;border-left:1px solid rgba(255,255,255,.1);font:700 20px/1.15 var(--head);letter-spacing:.04em;text-transform:uppercase}
+.strip li:first-child{border-left:0}
+.strip svg{width:28px;height:28px;flex:none;stroke:var(--bulb)}
+
+/* project picker */
+section{padding:84px 0}
+.top-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:28px}
+.top-h h2{font-size:clamp(36px,4.4vw,56px);font-weight:800;margin-top:12px}
+.top-h p{margin:0;color:var(--muted);max-width:28em}
+.picker{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:24px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+.chips button{appearance:none;border:2px solid var(--line);background:#fff;color:var(--char);font:700 18px/1 var(--head);letter-spacing:.04em;text-transform:uppercase;padding:14px 16px;border-radius:4px;cursor:pointer;min-height:50px;transition:border-color .15s,background .15s}
+.chips button:hover{border-color:var(--char)}
+.chips button[aria-pressed="true"]{background:var(--bulb);border-color:var(--bulb)}
+.answer{background:var(--warm);border-left:6px solid var(--bulb);border-radius:4px;padding:30px 32px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.answer h3{font-size:34px;font-weight:800;margin-bottom:10px}
+.answer p{margin:0;color:#45474a}
+.answer .call{font:700 18px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--sky);text-decoration:none}
+.answer .call:hover{text-decoration:underline}
+
+/* proof + photos */
+.proof{background:var(--warm)}
+.proof .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;align-items:center}
+.proof h2{font-size:clamp(34px,4vw,50px);font-weight:800;margin:12px 0 20px}
+.big5{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+.big5 b{font:800 76px/1 var(--head);color:var(--char)}
+.big5 span{color:var(--muted);font-size:15px;line-height:1.4}
+.big5 .stars{display:block;color:var(--bulb);font-size:20px;letter-spacing:3px}
+.themes{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}
+.themes li{display:flex;gap:12px;align-items:baseline}
+.themes li::before{content:"";flex:none;width:12px;height:12px;background:var(--bulb);clip-path:polygon(55% 0,0 60%,45% 60%,35% 100%,100% 38%,55% 38%)}
+.more{font-weight:600;color:var(--sky);text-decoration:none}
+.more:hover{text-decoration:underline}
+.pics{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:14px}
+.pics figure{margin:0;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 10px 24px rgba(46,46,43,.08)}
+.pics img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.pics .tall img{aspect-ratio:auto;height:100%;max-height:none}
+.pics figcaption{font-size:14px;color:var(--muted);padding:10px 14px}
+.pics .tall{display:flex;flex-direction:column}
+.pics .tall img{flex:1;min-height:0;object-fit:cover;object-position:50% 70%}
+
+/* split + contact */
+.split .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:16px}
+.panel{border:2px solid var(--line);border-radius:6px;padding:28px}
+.panel h3{font-size:28px;font-weight:800;margin-bottom:8px}
+.panel p{margin:0;color:var(--muted)}
+.panel.dark{background:var(--char);border-color:var(--char);color:#fff}
+.panel.dark p{color:#c9c8c2}
+.panel.dark .num{display:block;font:800 clamp(30px,3vw,38px)/1 var(--head);color:var(--bulb);text-decoration:none;margin:14px 0 10px}
+.panel.dark .num:hover{color:var(--bulb-h)}
+.panel .lbl{font:700 13px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--steel);display:block;margin-bottom:12px}
+
+footer{background:#1f1f1d;color:#a7a69f;font-size:14px;padding:28px 0 32px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+footer a{color:#e8e7e1}
+.mbar{display:none}
+
+@media (max-width:920px){
+  .hero .wrap,.picker,.proof .wrap{grid-template-columns:1fr}
+  .shot{max-width:460px}
+  .shot .badge{left:12px}
+  .split .wrap{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  body{padding-bottom:70px}
+  .logo svg{width:50px;height:50px}
+  .logo b{font-size:20px}
+  .logo small{display:none}
+  .hcall{padding:11px 12px;font-size:16px}
+  .hcall i{display:none}
+  .hero .wrap{padding:40px 0 56px;gap:36px}
+  section{padding:60px 0}
+  .strip ul{grid-template-columns:1fr}
+  .strip li{border-left:0;border-top:1px solid rgba(255,255,255,.1);padding:16px 4px}
+  .strip li:first-child{border-top:0}
+  .answer{padding:24px}
+  .pics{grid-template-columns:1fr 1fr}
+  .mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--line);padding:8px}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:4px;background:var(--bulb);color:var(--char);font:700 19px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="roundel" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="55" fill="#fff" stroke="#2E2E2B" stroke-width="5"/>
+      <circle cx="60" cy="60" r="40" fill="none" stroke="#2E2E2B" stroke-width="2"/>
+      <path id="arcTop" d="M18 60a42 42 0 0 1 84 0" fill="none"/>
+      <path id="arcBot" d="M14 60a46 46 0 0 0 92 0" fill="none"/>
+      <text font-family="Barlow Semi Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="14.5" letter-spacing="1.2" fill="#2E2E2B"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">FILUT ELECTRIC</textPath></text>
+      <text font-family="Barlow Semi Condensed,Arial Narrow,sans-serif" font-weight="700" font-size="8.5" letter-spacing="1" fill="#2E2E2B"><textPath href="#arcBot" startOffset="50%" text-anchor="middle">RESIDENTIAL · COMMERCIAL</textPath></text>
+      <path d="M60 36a17 17 0 0 0-10 30.5V73h20v-6.5A17 17 0 0 0 60 36z" fill="#E7B12F" stroke="#2E2E2B" stroke-width="2.5"/>
+      <path d="M63 41l-8 13h6l-4 11 9-14h-6z" fill="#2E2E2B"/>
+      <path d="M52 77h16M54 81h12" stroke="#2E2E2B" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M60 84c0 6 6 6 12 3s14-6 18-14" fill="none" stroke="#2E2E2B" stroke-width="2"/>
+      <rect x="86" y="64" width="9" height="8" rx="1.5" transform="rotate(-35 90 68)" fill="#E7B12F" stroke="#2E2E2B" stroke-width="1.5"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Filut Electric, home">
+      <svg aria-hidden="true"><use href="#roundel"/></svg>
+      <span><b>Filut Electric</b><small>Residential · Commercial</small></span>
+    </a>
+    <a class="hcall" href="tel:+12627193015"><i></i>(262) 719-3015</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1" style="padding:0">
+    <div class="wrap">
+      <div>
+        <span class="tag">Electrician · Oconomowoc &amp; Lake Country</span>
+        <h1 id="h1">Five-star electrical work across <span class="hl">Lake Country.</span></h1>
+        <p>Residential and commercial electrician based in Oconomowoc. Lighting, ceiling fans, hot tubs and saunas, basement wiring, and the emergencies that can't wait.</p>
+        <div class="ctas">
+          <a class="btn btn-y" href="tel:+12627193015">Call (262) 719-3015</a>
+          <a class="btn btn-o" href="#reviews">See what customers say</a>
+        </div>
+      </div>
+      <figure class="shot">
+        <img src="img/vans.jpg" alt="Lettered Filut Electric work van at a job site, rear doors open showing wire spools" width="1400" height="1750">
+        <div class="badge"><b>5.0</b><span><span class="stars" aria-hidden="true">★★★★★</span>on Google</span></div>
+      </figure>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>On time</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Clean, careful work</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg>Residential · Commercial</li>
+      </ul>
+    </div>
+  </div>
+
+  <section aria-labelledby="pick-h">
+    <div class="wrap">
+      <div class="top-h">
+        <div>
+          <span class="tag">What's your project?</span>
+          <h2 id="pick-h">From ceiling fans to hot tubs.</h2>
+        </div>
+        <p>Every job below is one customers have hired Filut Electric for. Pick one.</p>
+      </div>
+      <div class="picker">
+        <div class="chips" role="group" aria-label="Project types">
+          <button aria-pressed="true" data-k="light">Lighting</button>
+          <button aria-pressed="false" data-k="fan">Ceiling fans</button>
+          <button aria-pressed="false" data-k="outlet">Outlets &amp; 240V</button>
+          <button aria-pressed="false" data-k="tub">Hot tubs &amp; saunas</button>
+          <button aria-pressed="false" data-k="base">Basement wiring</button>
+          <button aria-pressed="false" data-k="repair">Wiring repair</button>
+          <button aria-pressed="false" data-k="emerg">Emergency power</button>
+        </div>
+        <div class="answer" aria-live="polite">
+          <div>
+            <h3 id="a-h">Lighting &amp; fixtures</h3>
+            <p id="a-p">LED upgrades, can lights, under-cabinet kitchen lights, outdoor lights and new fixtures throughout the house.</p>
+          </div>
+          <a class="call" href="tel:+12627193015">Call about this project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div>
+        <span class="tag">What customers say</span>
+        <h2 id="rev-h">Rated five stars on Google.</h2>
+        <div class="big5"><b>5.0</b><span><span class="stars" aria-hidden="true">★★★★★</span>out of 5 on Google</span></div>
+        <ul class="themes">
+          <li>Professional, friendly and always on time</li>
+          <li>Clean, meticulous, knowledgeable work</li>
+          <li>Fit in on short notice, including a same-day emergency</li>
+          <li>Customers who call back for job after job</li>
+        </ul>
+        <a class="more" href="https://www.google.com/maps/search/?api=1&amp;query=Filut+Electric+Oconomowoc+WI" target="_blank" rel="noopener">Read the reviews on Google →</a>
+      </div>
+      <div class="pics">
+        <figure class="tall"><img src="img/van-garage.jpg" alt="White Filut Electric van with the bulb logo and 262.719.3015 on the side" width="480" height="480" loading="lazy"><figcaption>One of the Filut Electric vans</figcaption></figure>
+        <figure><img src="img/garage-light.jpg" alt="New garage ceiling light, cord run to a ceiling box" width="640" height="1138" loading="lazy" style="aspect-ratio:3/4;object-position:50% 40%"><figcaption>Garage light install</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="split" aria-label="Residential, commercial and contact">
+    <div class="wrap">
+      <div class="panel">
+        <span class="lbl">Residential</span>
+        <h3>Homes</h3>
+        <p>Lighting, fans, outlets, hot tubs, saunas, basement finishes and repairs around the house.</p>
+      </div>
+      <div class="panel">
+        <span class="lbl">Commercial</span>
+        <h3>Businesses</h3>
+        <p>Commercial work too. Call to talk through your project.</p>
+      </div>
+      <div class="panel dark">
+        <span class="lbl" style="color:#bdbcb5">Call Filut Electric</span>
+        <h3>Based in Oconomowoc</h3>
+        <a class="num" href="tel:+12627193015">(262) 719-3015</a>
+        <p>Serving homes and businesses across Lake Country.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Filut Electric · Oconomowoc, WI · (262) 719-3015 · <a href="https://www.facebook.com/237558940287187" target="_blank" rel="noopener">Facebook</a></span>
+    <span>Website by Cream City Post · Independent website concept, not the official Filut Electric site. Photos from their Google listing and Facebook page; logo redrawn from their van lettering.</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick call"><a href="tel:+12627193015">Call (262) 719-3015</a></nav>
+
+<script>
+(function(){
+  var D={
+    light:["Lighting & fixtures","LED upgrades, can lights, under-cabinet kitchen lights, outdoor lights and new fixtures throughout the house."],
+    fan:["Ceiling fans","New ceiling fans in living rooms, bedrooms and garages, wired and mounted."],
+    outlet:["Outlets & 240V circuits","Extra outlets for the garage or shop, plus 240V outlets and plugs for equipment that needs them."],
+    tub:["Hot tubs & saunas","Power for a new hot tub or sauna heater, wired to what the equipment needs."],
+    base:["Basement & remodel wiring","Wiring for a basement finish, from outlets and switches to lighting across the whole space."],
+    repair:["Wiring repair","Electrical wiring repairs, from simple fixes to the complicated ones."],
+    emerg:["Emergency power runs","When something critical loses power, like well equipment, call and describe the problem."]
+  };
+  var bs=[].slice.call(document.querySelectorAll('.chips button'));
+  bs.forEach(function(b){
+    b.addEventListener('click',function(){
+      bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+      var d=D[b.getAttribute('data-k')];
+      document.getElementById('a-h').textContent=d[0];
+      document.getElementById('a-p').textContent=d[1];
+    });
+  });
+})();
+</script>
+</body>
+</html>
