@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>D&amp;D Well &amp; Pumps LLC — Website concept by Cream City Post</title>
+<meta name="description" content="Well drilling, well pump repair and pressure tanks in Oconomowoc and Southeastern Wisconsin since 1973. 24 hour emergency service: (262) 567-0803.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F7F6F2'/%3E%3Cellipse cx='32' cy='32' rx='29' ry='19' fill='%23131A55'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='21' fill='%23fff'%3ED%26amp;D%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Kalam:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#131A55; --deep:#0C1238; --blue:#1F6FB2; --alert:#E0482B; --alert-dk:#C23A20;
+  --paper:#F7F6F2; --ink:#2B2F3A; --white:#FFFFFF; --muted:#5A6070; --line:#DAD7CE;
+  --sky:#9CC7EA;
+  --display:"Archivo",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.06rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--alert);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);color:var(--navy);line-height:1.05;margin:0}
+.eyebrow{font:700 .82rem/1.2 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 .9rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:50px;padding:.75rem 1.35rem;border-radius:999px;font:800 1rem/1 var(--display);text-decoration:none;border:2px solid transparent;transition:background .15s,color .15s,transform .15s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-alert{background:var(--alert-dk);color:#fff}
+.btn-alert:hover{background:#A9311A;transform:translateY(-1px)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--deep)}
+.btn-line{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-line:hover{background:var(--navy);color:#fff}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--deep);color:#fff;border-bottom:3px solid var(--blue)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:76px}
+.brand{display:block;width:176px;flex:none}
+.brand svg{width:100%;height:auto;display:block}
+nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0}
+nav a{color:#E3E6F3;text-decoration:none;font:600 .95rem/1 var(--body);padding:.6rem 0;display:inline-flex;align-items:center;min-height:44px}
+nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:5px}
+.callbox{display:flex;align-items:center;gap:.9rem}
+.callbox .note{font:700 .72rem/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--sky);text-align:right}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--paper)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);align-items:center;padding:clamp(40px,6vw,84px) 0 clamp(56px,7vw,96px)}
+.hero h1{font-weight:800;font-size:clamp(2.6rem,6.4vw,5.2rem);letter-spacing:-.02em}
+.hero h1 .q{display:block;color:var(--alert-dk)}
+.hero .sub{font-size:clamp(1.08rem,1.6vw,1.24rem);max-width:34rem;margin:1.3rem 0 1.8rem}
+.ctas{display:flex;flex-wrap:wrap;gap:.75rem}
+/* signature motif: the well bore with depth ticks */
+.bore{position:relative;padding-left:46px}
+.bore::before{content:"";position:absolute;left:12px;top:6px;bottom:6px;width:10px;border-radius:6px;background:linear-gradient(var(--navy) 0 62%,var(--blue) 62%)}
+.bore::after{content:"";position:absolute;left:24px;top:6px;bottom:6px;width:12px;background:repeating-linear-gradient(to bottom,var(--navy) 0 2px,transparent 2px 18px);opacity:.55}
+.frame{position:relative}
+.frame figure{margin:0;border-radius:24px;overflow:hidden;border:6px solid #fff;box-shadow:16px 16px 0 var(--navy);aspect-ratio:3/2;background:#cfd6c8}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame .cap{margin:28px 0 0;font-size:.92rem;color:var(--muted);padding-left:4px}
+.oval{position:absolute;left:-26px;bottom:44px;background:var(--navy);color:#fff;border:3px solid #fff;border-radius:50%;width:150px;height:96px;display:grid;place-content:center;text-align:center;box-shadow:0 10px 26px rgba(12,18,56,.3)}
+.oval b{font:800 1.75rem/1 var(--display)}
+.oval span{font:700 .68rem/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--sky)}
+.waterline{display:block;width:100%;height:34px;margin-top:-1px}
+
+/* proof */
+.proof{background:var(--navy);color:#fff}
+.proof ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.proof li{padding:1.35rem 1rem;border-left:1px solid rgba(255,255,255,.16);display:flex;flex-direction:column;gap:.2rem}
+.proof li:first-child{border-left:0}
+.proof b{font:800 1.12rem/1.15 var(--display)}
+.proof span{font-size:.88rem;color:#C9CFE8}
+.proof a{color:#fff;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px;margin:-12px 0}
+
+/* picker */
+.picker{padding:clamp(56px,8vw,104px) 0}
+.pk-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.picker h2{font-size:clamp(2rem,4.2vw,3.2rem);font-weight:800}
+.picker .lead{margin:1rem 0 0;max-width:30rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.chip{min-height:46px;padding:.6rem 1.05rem;border-radius:999px;border:2px solid var(--navy);background:#fff;color:var(--navy);font:700 .98rem/1 var(--body);cursor:pointer;transition:background .15s,color .15s}
+.chip:hover{background:#E8EBF7}
+.chip[aria-pressed="true"]{background:var(--navy);color:#fff}
+.chip.urgent{border-color:var(--alert-dk);color:var(--alert-dk)}
+.chip.urgent[aria-pressed="true"]{background:var(--alert-dk);color:#fff}
+.answer{background:#fff;border-radius:22px;padding:clamp(24px,3.4vw,40px);border:1px solid var(--line);box-shadow:0 18px 40px rgba(12,18,56,.08);position:relative;overflow:hidden}
+.answer::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--blue)}
+.answer.is-urgent::before{background:var(--alert-dk)}
+.answer .tag{font:700 .78rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:0 0 .7rem}
+.answer.is-urgent .tag{color:var(--alert-dk)}
+.answer h3{font-size:clamp(1.5rem,2.6vw,2.1rem);font-weight:800}
+.answer p{margin:.9rem 0 0}
+.answer .btn{margin-top:1.4rem}
+.svc{margin-top:1.6rem;padding-top:1.2rem;border-top:1px dashed var(--line);font-size:.95rem;color:var(--muted)}
+
+/* work */
+.work{background:#fff;padding:clamp(56px,8vw,96px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.work-head{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.work h2{font-size:clamp(1.9rem,3.8vw,2.9rem);font-weight:800}
+.work-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.15fr);gap:20px}
+.work figure{margin:0}
+.work figure .ph{aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:#dfe3d8}
+.work figure img{width:100%;height:100%;object-fit:cover}
+.work figcaption{font-size:.93rem;color:var(--muted);margin-top:.6rem}
+.area{background:var(--deep);color:#fff;border-radius:16px;padding:1.6rem 1.5rem;display:flex;flex-direction:column}
+.area h3{color:#fff;font-size:1.35rem;font-weight:800}
+.area p{margin:.5rem 0 1rem;color:#C9CFE8;font-size:.95rem}
+.area ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.35rem 1rem}
+.area li{font-weight:600;padding-left:1.1rem;position:relative}
+.area li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--sky)}
+
+/* reviews + contact */
+.talk{padding:clamp(56px,8vw,104px) 0}
+.talk-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,48px);align-items:start}
+.talk h2{font-size:clamp(1.9rem,3.8vw,2.9rem);font-weight:800}
+.rating{display:inline-flex;align-items:center;gap:.6rem;margin:1rem 0 1.6rem;padding:.55rem 1rem;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;color:var(--ink);text-decoration:none;min-height:44px}
+.rating b{font:800 1.15rem/1 var(--display);color:var(--navy)}
+.rating .star{color:#B8860B}
+.rating:hover{border-color:var(--navy)}
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.quotes blockquote{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.3rem 1.35rem;display:flex;flex-direction:column;gap:.8rem}
+.quotes blockquote.big{grid-column:1/-1;background:var(--navy);color:#fff;border:0}
+.quotes blockquote.big p{font-size:1.14rem}
+.quotes p{margin:0}
+.quotes cite{font-style:normal;font:700 .9rem/1.2 var(--display);color:var(--navy)}
+.quotes .big cite{color:var(--sky)}
+.src{font-size:.88rem;color:var(--muted);margin:1rem 0 0}
+.card{background:#fff;border-radius:22px;border:1px solid var(--line);overflow:hidden;position:sticky;top:100px}
+.card-top{background:var(--alert-dk);color:#fff;padding:1.4rem 1.5rem}
+.card-top p{margin:0;font:700 .78rem/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase}
+.card-top a{display:block;color:#fff;text-decoration:none;font:800 clamp(1.7rem,3vw,2.1rem)/1.1 var(--display);margin-top:.4rem;min-height:44px}
+.card-top a:hover{text-decoration:underline}
+.card dl{margin:0;padding:1.3rem 1.5rem 1.5rem;display:grid;gap:1rem}
+.card dt{font:700 .75rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+.card dd{margin:0}
+.card dd a{display:inline-block;padding:.6rem 0;min-height:44px;word-break:break-word}
+
+/* closer */
+.closer{background:var(--deep);color:#fff;padding:clamp(48px,7vw,84px) 0;text-align:left}
+.closer-in{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.closer h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:800;max-width:24ch}
+.closer p{color:#C9CFE8;margin:.7rem 0 0;max-width:40rem}
+footer{background:#070B24;color:#AEB4CF;font-size:.9rem;padding:1.6rem 0 1.8rem}
+footer p{margin:0}
+footer a{color:#DDE2F5}
+
+.mbar{display:none}
+
+@media (max-width:980px){
+  nav{display:none}
+  .hero-grid,.pk-grid,.talk-grid{grid-template-columns:minmax(0,1fr)}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li{border-left:0;border-top:1px solid rgba(255,255,255,.16)}
+  .proof li:nth-child(even){border-left:1px solid rgba(255,255,255,.16)}
+  .proof li:nth-child(-n+2){border-top:0}
+  .proof li:last-child{grid-column:1/-1;border-left:0}
+  .work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .area{grid-column:1/-1}
+  .card{position:relative;top:auto}
+  .frame{max-width:560px}
+}
+@media (max-width:600px){
+  body{padding-bottom:76px}
+  .bar{min-height:64px}
+  .brand{width:132px}
+  .callbox .note{display:none}
+  .callbox .btn{padding:.6rem 1rem;min-height:46px;font-size:.92rem}
+  .callbox .btn .long{display:none}
+  .bore{padding-left:30px}
+  .bore::before{left:4px;width:8px}
+  .bore::after{left:14px;width:9px}
+  .oval{left:-8px;bottom:40px;width:118px;height:76px}
+  .oval b{font-size:1.35rem}
+  .oval span{font-size:.6rem}
+  .frame figure{box-shadow:10px 10px 0 var(--navy)}
+  .quotes{grid-template-columns:minmax(0,1fr)}
+  .work-grid{gap:12px}
+  .area ul{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .mbar{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--deep);border-top:2px solid var(--blue)}
+  .mbar .btn{min-height:52px;padding:.6rem .5rem;font-size:.95rem;border-radius:12px}
+  .mbar .btn-line{border-color:#fff;color:#fff}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.3V17h16V7.3l-8 5.2zM5.4 7l6.6 4.3L18.6 7z"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="D&amp;D Well &amp; Pumps LLC, home">
+      <svg viewBox="0 0 220 96" role="img" aria-label="D&amp;D Well &amp; Pumps LLC logo">
+        <ellipse cx="110" cy="27" rx="58" ry="24" fill="#131A55" stroke="#fff" stroke-width="2.5"/>
+        <text x="110" y="38" text-anchor="middle" font-family="Archivo, Arial Black, sans-serif" font-weight="800" font-size="31" fill="#fff" stroke="#131A55" stroke-width=".6">D&amp;D</text>
+        <text x="104" y="84" text-anchor="middle" font-family="Kalam, 'Comic Sans MS', cursive" font-weight="700" font-size="32" fill="#fff">Well &amp; Pumps</text>
+        <text x="197" y="85" font-family="Kalam, cursive" font-weight="700" font-size="11" fill="#fff">LLC</text>
+      </svg>
+    </a>
+    <nav aria-label="Page sections">
+      <ul>
+        <li><a href="#help">Pump trouble?</a></li>
+        <li><a href="#work">Our work</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="callbox">
+      <span class="note">24 hour<br>emergency service</span>
+      <a class="btn btn-alert" href="tel:+12625670803"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="long">Call&nbsp;</span>(262) 567-0803</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div class="bore">
+      <p class="eyebrow">Oconomowoc · Southeastern Wisconsin · Since 1973</p>
+      <h1 id="h1">No water?<span class="q">Call D&amp;D, day or night.</span></h1>
+      <p class="sub">Water well drilling, new construction and replacement wells, well repairs, pump installation and maintenance, and well abandonment, for homes, farms and businesses. 24 hour emergency service.</p>
+      <div class="ctas">
+        <a class="btn btn-alert" href="tel:+12625670803"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (262) 567-0803</a>
+        <a class="btn btn-line" href="mailto:ddwellpumps06@wi.rr.com?subject=Well%20or%20pump%20question"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email for a quote</a>
+      </div>
+    </div>
+    <div class="frame">
+      <figure>
+        <img src="img/rig-house.jpg" width="1440" height="960" alt="Aerial view of a D&amp;D drill rig and truck set up on the lawn beside a gray two-story house, drilling a well.">
+      </figure>
+      <p class="oval" aria-hidden="true"><span>Since</span><b>1973</b></p>
+      <p class="cap">Drilling a residential well. Photo from danddwellandpumpsllc.com.</p>
+    </div>
+  </div>
+  <svg class="waterline" viewBox="0 0 1440 34" preserveAspectRatio="none" aria-hidden="true"><path d="M0 18c120-14 240-14 360 0s240 14 360 0 240-14 360 0 240 14 360 0v16H0z" fill="#131A55"/></svg>
+</section>
+
+<section class="proof" aria-label="At a glance">
+  <ul class="wrap">
+    <li><b>Since 1973</b><span>Serving Oconomowoc and surrounding areas</span></li>
+    <li><b>24 hour</b><span>Emergency service, every day</span></li>
+    <li><b>WI DNR Lic# 7181</b><span>Certification</span></li>
+    <li><b>Fully insured</b><span>Homes, farms and businesses</span></li>
+    <li><b><a href="https://www.google.com/maps/place/D%26D+Well+%26+Pumps+LLC/@43.0727855,-88.5982856,17z/data=!4m8!3m7!1s0x8805b5485a55064d:0xcde27adbb712a2c5!8m2!3d43.0727855!4d-88.5982856!9m1!1b1" rel="noopener">4.6 ★ on Google</a></b><span>Read the reviews</span></li>
+  </ul>
+</section>
+
+<section class="picker" id="help" aria-labelledby="h-help">
+  <div class="wrap pk-grid">
+    <div>
+      <p class="eyebrow">Is it your well or pump?</p>
+      <h2 id="h-help">What's your water doing?</h2>
+      <p class="lead">Pick the closest match. Low pressure, sputtering, strange noises or no water at all are common signs a well pump needs attention. If your water quits at night, call anyway.</p>
+      <div class="chips" role="group" aria-label="Choose what is happening">
+        <button class="chip urgent" type="button" data-k="none" aria-pressed="true">No water at all</button>
+        <button class="chip" type="button" data-k="pressure" aria-pressed="false">Low pressure</button>
+        <button class="chip" type="button" data-k="sputter" aria-pressed="false">Sputtering water</button>
+        <button class="chip" type="button" data-k="noise" aria-pressed="false">Strange noises</button>
+        <button class="chip" type="button" data-k="new" aria-pressed="false">Need a new well</button>
+        <button class="chip" type="button" data-k="old" aria-pressed="false">Old well to seal</button>
+      </div>
+    </div>
+    <div class="answer is-urgent" id="answer" aria-live="polite">
+      <p class="tag" id="a-tag">Call now · 24 hour emergency service</p>
+      <h3 id="a-h">Water stopped? Don't wait for morning.</h3>
+      <p id="a-p">A complete loss of water is the clearest sign of well pump trouble. D&amp;D offers 24 hour emergency service for well repairs and pump installation, so call (262) 567-0803 whenever it happens.</p>
+      <a class="btn btn-alert" id="a-btn" href="tel:+12625670803"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (262) 567-0803</a>
+      <p class="svc">D&amp;D also handles water well drilling, new construction and replacement wells, well pumps and tanks, and well abandonment. D&amp;D recommends an inspection of your well and pump system at least once a year.</p>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work" aria-labelledby="h-work">
+  <div class="wrap">
+    <div class="work-head">
+      <div>
+        <p class="eyebrow">On the job</p>
+        <h2 id="h-work">Our rig, on site.</h2>
+      </div>
+      <p style="margin:0;max-width:30rem">From site evaluation to completion: water well drilling for residential, agricultural and commercial needs.</p>
+    </div>
+    <div class="work-grid">
+      <figure>
+        <div class="ph"><img src="img/rig-site.jpg" width="720" height="539" loading="lazy" alt="A D&amp;D drill rig with its mast raised on an open grassy site next to a small stone building."></div>
+        <figcaption>Drill rig set up on an open site.</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img src="img/driller.jpg" width="720" height="539" loading="lazy" alt="A driller in a cap and work clothes standing at the rig, beside the drill pipe."></div>
+        <figcaption>At the rig, working a well.</figcaption>
+      </figure>
+      <div class="area" aria-labelledby="h-area">
+        <h3 id="h-area">Where we work</h3>
+        <p>Southeastern Wisconsin, from our shop on County Road F in Oconomowoc.</p>
+        <ul>
+          <li>Waukesha</li><li>Dodge</li><li>Washington</li><li>Jefferson</li><li>Ozaukee</li><li>Racine</li><li>Milwaukee</li><li>Kenosha</li><li>Walworth</li>
+        </ul>
+        <p style="margin:1rem 0 0">Counties, Wisconsin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="talk" id="reviews" aria-labelledby="h-rev">
+  <div class="wrap talk-grid">
+    <div>
+      <p class="eyebrow">What customers say</p>
+      <h2 id="h-rev">They pick up. They show up.</h2>
+      <a class="rating" href="https://www.google.com/maps/place/D%26D+Well+%26+Pumps+LLC/@43.0727855,-88.5982856,17z/data=!4m8!3m7!1s0x8805b5485a55064d:0xcde27adbb712a2c5!8m2!3d43.0727855!4d-88.5982856!9m1!1b1" rel="noopener"><b>4.6</b><span class="star" aria-hidden="true">★</span>on Google · Read the reviews</a>
+      <div class="quotes">
+        <blockquote class="big">
+          <p>“I called Darren yesterday when my water abruptly stopped running late in the afternoon. He had a haircut scheduled that evening but said he could come after around 8pm. Showed up on time and had my water running again in 20 minutes. Just needed a new control panel on the well pump. Can not say enough about how grateful I am the he made a late evening call. Could have easily told me to wait until morning. Would not hesitate again to use him if necessary, and will recommend him to anyone in need of well services. Thanks so much D&amp;D!!!!”</p>
+          <cite>Megan Duncan · 8/9/2023</cite>
+        </blockquote>
+        <blockquote>
+          <p>“We woke up on a Saturday morning to a well system that had stopped functioning. Darren was out and had it up and running again that same morning.”</p>
+          <cite>Dan · 5/14/2022</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Great service. Call at 5am guys was fixing my well pump by 9am.Highly recommend d and d.great guy”</p>
+          <cite>Chris Knapp · 9/16/2022</cite>
+        </blockquote>
+      </div>
+      <p class="src">Testimonials as published on danddwellandpumpsllc.com.</p>
+    </div>
+    <aside class="card" id="contact" aria-labelledby="h-contact">
+      <div class="card-top">
+        <p id="h-contact">Call any hour</p>
+        <a href="tel:+12625670803">(262) 567-0803</a>
+      </div>
+      <dl>
+        <div><dt>Hours</dt><dd>Open 24 hours, Monday–Sunday.<br>24 Hour Emergency Service. Holiday Hours May Vary. Please Call For Details.</dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:ddwellpumps06@wi.rr.com">ddwellpumps06@wi.rr.com</a></dd></div>
+        <div><dt>Shop</dt><dd>N6331 County Road F<br>Oconomowoc, WI 53066</dd></div>
+        <div><dt>License</dt><dd>WI DNR Lic# 7181 · Fully insured</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="closer" aria-labelledby="h-close">
+  <div class="wrap closer-in">
+    <div>
+      <h2 id="h-close">A first look at your new site.</h2>
+      <p>Since 1973, the 24 hour number under every thumb, and your own customers' words, on a site that looks like D&amp;D's.</p>
+    </div>
+    <a class="btn btn-alert" href="tel:+12625670803"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (262) 567-0803</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official D&amp;D Well &amp; Pumps LLC site. Logo redrawn; services, hours, license, testimonials and photos from danddwellandpumpsllc.com; main photo enhanced; rating from Google.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-alert" href="tel:+12625670803"><svg aria-hidden="true"><use href="#i-phone"/></svg>No water? Call now</a>
+  <a class="btn btn-line" href="mailto:ddwellpumps06@wi.rr.com?subject=Well%20or%20pump%20question"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+</div>
+
+<script>
+(function(){
+  var data={
+    none:{u:1,tag:"Call now · 24 hour emergency service",h:"Water stopped? Don't wait for morning.",p:"A complete loss of water is the clearest sign of well pump trouble. D&D offers 24 hour emergency service for well repairs and pump installation, so call (262) 567-0803 whenever it happens."},
+    pressure:{tag:"Well pump repair",h:"Low water pressure",p:"Low water pressure is one of the common signs of well pump trouble. D&D repairs and installs well pumps and tanks. Call and tell us what you're seeing."},
+    sputter:{tag:"Well pump repair",h:"Sputtering water",p:"Sputtering water is one of the common signs of well pump trouble. D&D handles well repairs and pump maintenance for homes, farms and businesses."},
+    noise:{tag:"Pump installation & maintenance",h:"Strange noises",p:"Strange noises are one of the common signs of well pump trouble. Call D&D for well repairs, pump installation and maintenance."},
+    "new":{tag:"Water well drilling",h:"A new or replacement well",p:"New construction wells and replacement wells for residential, agricultural and commercial needs, from site evaluation to completion. Call for a quote, or email the details."},
+    old:{tag:"Well abandonment",h:"An old well to close",p:"D&D Well & Pumps provides well abandonment along with drilling and pump work. Call to talk through your property."}
+  };
+  var chips=document.querySelectorAll('.chip'),box=document.getElementById('answer');
+  var tag=document.getElementById('a-tag'),h=document.getElementById('a-h'),p=document.getElementById('a-p'),b=document.getElementById('a-btn');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    var d=data[c.getAttribute('data-k')];
+    chips.forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false')});
+    tag.textContent=d.tag;h.textContent=d.h;p.textContent=d.p;
+    box.classList.toggle('is-urgent',!!d.u);
+    b.className='btn '+(d.u?'btn-alert':'btn-navy');
+  });});
+})();
+</script>
+</body>
+</html>
