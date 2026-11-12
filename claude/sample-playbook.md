@@ -30,6 +30,8 @@ Header with real logo + tap-to-call → hero (headline + one framed real photo) 
 
 **Tyler, Nov 11 (chat): Whenever showing a real before-and-after comparison, use a draggable slider rather than toggle buttons. Keep it keyboard/touch accessible and disclose different camera angles; never invent a matching pair.**
 
+**Tyler, Nov 11 (visual revision): Every sample needs a modern, distinct composition rooted in its own brief and business. Execute the brief’s strongest visual idea at a confident scale; factual compliance alone does not satisfy the design bar. Preserve the original brand.**
+
 ## 4. Facts
 
 - Use only facts from their own site (or Facebook/Google listing for no-website leads), or facts the brief marks as verified. **Check About and History.** When they conflict with the homepage, History wins. Never credit a predecessor's achievements to the current company.
