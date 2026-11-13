@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Kettle Moraine Tree Services — Website concept by Cream City Post</title>
+<meta name="description" content="Tree removal, pruning and clearing in Southeastern Wisconsin from a family-owned Summit crew with low-impact lifts built for lakefronts. Call (262) 269-4900.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1C4E26;      /* their hero panel green */
+  --forest-deep:#123619;
+  --logo-green:#0F4521;  /* logo canopy */
+  --oak:#8A5A2B;         /* logo trunk family */
+  --oak-light:#BB6B29;   /* logo trunk */
+  --lift:#C8202F;        /* their red spider lift */
+  --lift-dark:#A5141F;
+  --lake:#97C3E9;
+  --lake-soft:#DCEBF8;
+  --birch:#F4F1EA;
+  --white:#FFFFFF;
+  --ink:#1F2421;
+  --muted:#4C5550;
+  --line:#DDD6C8;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1200px;
+  --gut:clamp(16px,4vw,40px);
+  --radius:6px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--birch);color:var(--ink);font:400 18px/1.6 var(--body);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;margin:0;letter-spacing:.005em}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+.eyebrow{font:600 14px/1.2 var(--display);letter-spacing:.16em;text-transform:uppercase}
+.skip{position:absolute;left:-999px;top:8px;background:var(--white);padding:10px 14px;z-index:100}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--lake);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:var(--radius);font:600 17px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-red{background:var(--lift);color:var(--white)}
+.btn-red:hover{background:var(--lift-dark);transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:var(--white)}
+.btn-ghost:hover{background:var(--white);color:var(--forest)}
+.btn-green{background:var(--forest);color:var(--white)}
+.btn-green:hover{background:var(--forest-deep)}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.brand img{width:62px;height:auto}
+.brand b{display:block;font:600 21px/1 var(--display);color:var(--logo-green);letter-spacing:.02em;text-transform:uppercase}
+.brand small{display:block;font:600 12px/1.3 var(--display);color:var(--oak);letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font:500 15px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink);padding:14px 10px;border-radius:4px}
+.nav a:hover{color:var(--lift)}
+.top .btn{flex:none}
+@media (max-width:1080px){.nav{display:none}.top .btn{margin-left:auto}}
+@media (max-width:520px){.brand b{font-size:17px}.brand small{font-size:10px;letter-spacing:.12em}.brand img{width:48px}.top .btn{padding:10px 12px;font-size:15px}.top .btn .num{display:none}}
+
+/* hero */
+.hero{position:relative;background:var(--forest);color:var(--white);overflow:hidden}
+.contours{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:center;padding-top:clamp(40px,6vw,88px);padding-bottom:clamp(48px,7vw,96px)}
+.hero .eyebrow{color:var(--lake);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.hero .eyebrow:before{content:"";width:34px;height:3px;background:var(--lift)}
+.hero h1{font-size:clamp(46px,7.4vw,96px);font-weight:700;text-transform:uppercase;letter-spacing:-.005em;line-height:.95}
+.hero h1 em{font-style:normal;color:var(--lake);display:block}
+.hero .sub{font-size:clamp(18px,1.6vw,21px);max-width:34em;margin:24px 0 30px;color:#E7EFE8}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.frame{position:relative;justify-self:end;width:min(100%,440px)}
+.frame .ph{position:relative;border:8px solid var(--white);border-radius:4px;box-shadow:18px 18px 0 var(--lift);background:var(--white)}
+.frame .ph img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 60%}
+.reach{position:absolute;left:-34px;top:0;bottom:0;width:22px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end}
+.reach i{display:block;height:2px;width:10px;background:rgba(255,255,255,.55)}
+.reach i:nth-child(4n+1){width:22px;background:var(--lake)}
+.frame figcaption{margin-top:30px;font-size:15px;color:#D5E2D7}
+.frame figcaption b{color:var(--white);font-weight:600}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr)}
+  .frame{justify-self:start;width:min(calc(100% - 30px),400px);margin-left:30px}
+}
+
+/* proof strip */
+.proof{background:var(--white);border-bottom:1px solid var(--line)}
+.proof ul{list-style:none;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-top:0;padding-bottom:0}
+.proof li{padding:22px 18px;border-left:1px solid var(--line);font-size:15.5px;line-height:1.35;color:var(--muted)}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof strong{display:block;font:600 19px/1.15 var(--display);color:var(--forest);letter-spacing:.02em;margin-bottom:4px}
+.proof a{color:var(--forest);text-underline-offset:3px}
+.star{color:var(--lift)}
+@media (max-width:860px){.proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}.proof li{border-left:0;border-top:1px solid var(--line);padding:16px 12px 16px 0}.proof li:nth-child(-n+2){border-top:0}}
+
+/* lakefront */
+.lake{position:relative;padding:clamp(64px,8vw,112px) 0;background:linear-gradient(180deg,var(--birch) 0,var(--birch) 62%,var(--lake-soft) 62%,var(--lake-soft) 100%)}
+.lake .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.lake .eyebrow{color:var(--lift)}
+.lake h2{font-size:clamp(36px,4.8vw,62px);color:var(--forest);text-transform:uppercase;margin:12px 0 22px}
+.quote{font:400 clamp(21px,2vw,26px)/1.4 var(--body);font-style:italic;color:var(--ink);border-left:5px solid var(--lift);padding:4px 0 4px 20px;margin:0 0 26px}
+.quote cite{display:block;font:600 13px/1.4 var(--display);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.points{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:14px}
+.points li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:start}
+.points svg{width:28px;height:28px;color:var(--forest);margin-top:1px}
+.lake .pics{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:16px;align-items:end}
+.lake figure{margin:0}
+.lake .pics img{border-radius:4px;width:100%;object-fit:cover}
+.lake .wide{grid-column:1 / -1}
+.lake .wide img{aspect-ratio:4/3}
+.lake .tall img{aspect-ratio:3/4}
+.lake figcaption{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.4}
+.lake .tag{background:var(--forest);color:var(--white);padding:16px;min-width:0;border-radius:4px;align-self:stretch;display:flex;flex-direction:column;justify-content:flex-end}
+.lake .tag b{font:600 clamp(17px,2.2vw,22px)/1.1 var(--display);overflow-wrap:anywhere;text-transform:uppercase;letter-spacing:.02em;margin-bottom:8px}
+.lake .tag span{font-size:15.5px;color:#DCE7DE;line-height:1.45}
+@media (max-width:900px){.lake .wrap{grid-template-columns:minmax(0,1fr)}.lake{background:var(--birch)}}
+
+/* family + services */
+.family{background:var(--forest-deep);color:var(--white);position:relative;overflow:hidden;padding:clamp(64px,8vw,104px) 0}
+.family .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px)}
+.family .eyebrow{color:var(--lake)}
+.family h2{font-size:clamp(34px,4.4vw,56px);text-transform:uppercase;margin:12px 0 18px}
+.family .lead{color:#DCE7DE;max-width:32em}
+.people{display:grid;gap:16px;margin-top:28px}
+.person{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-left:5px solid var(--oak-light);border-radius:4px;padding:20px 22px}
+.person h3{font-size:26px;text-transform:uppercase;letter-spacing:.03em}
+.person .role{font:500 14px/1.3 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--lake);margin:4px 0 12px}
+.person ul{margin:0;padding-left:18px;color:#E7EFE8;font-size:16.5px;line-height:1.5}
+.svc h3{font-size:20px;text-transform:uppercase;letter-spacing:.05em;color:var(--lake);margin-bottom:16px}
+.svc ol{list-style:none;margin:0;padding:0;counter-reset:s;border-top:1px solid rgba(255,255,255,.18)}
+.svc li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:8px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.svc li:before{content:counter(s,decimal-leading-zero);font:600 18px/1.4 var(--display);color:var(--oak-light)}
+.svc b{display:block;font:600 21px/1.2 var(--display);text-transform:uppercase;letter-spacing:.03em}
+.svc span{display:block;color:#D3DFD5;font-size:16.5px;line-height:1.45;margin-top:4px}
+.svc .more{display:inline-block;margin-top:18px;color:var(--white);font:500 15px/1 var(--display);letter-spacing:.1em;text-transform:uppercase;padding:12px 0;text-underline-offset:5px}
+@media (max-width:900px){.family .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* firewood picker */
+.wood{padding:clamp(64px,8vw,104px) 0;background:var(--birch)}
+.wood .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.wood .eyebrow{color:var(--oak)}
+.wood h2{font-size:clamp(34px,4.4vw,56px);color:var(--forest);text-transform:uppercase;margin:12px 0 16px}
+.wood .photo img{border-radius:4px;aspect-ratio:4/3;object-fit:cover;width:100%;box-shadow:-14px 14px 0 var(--oak)}
+.wood .photo figcaption{font-size:14.5px;color:var(--muted);margin-top:14px}
+.picker{background:var(--white);border:1px solid var(--line);border-top:6px solid var(--forest);border-radius:4px;padding:clamp(20px,3vw,32px)}
+.picker fieldset{border:0;margin:0 0 18px;padding:0;min-width:0}
+.picker legend{font:600 14px/1.2 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:2px solid var(--line);border-radius:999px;font-weight:600;font-size:16px;background:var(--white);transition:border-color .15s,background .15s,color .15s}
+.chips label:hover span{border-color:var(--forest)}
+.chips input:checked+span{background:var(--forest);border-color:var(--forest);color:var(--white)}
+.chips input:focus-visible+span{outline:3px solid var(--lift);outline-offset:2px}
+.result{margin-top:6px;background:var(--forest);color:var(--white);border-radius:4px;padding:20px 22px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 20px;align-items:center}
+.result .price{font:700 clamp(44px,5vw,60px)/1 var(--display);letter-spacing:.01em}
+.result .what{font-size:16.5px;line-height:1.4;color:#E7EFE8}
+.result .what b{color:var(--white);display:block;font-size:18px}
+.result .deliv{grid-column:1 / -1;border-top:1px solid rgba(255,255,255,.22);padding-top:12px;margin-top:8px;font-size:16px;color:#E7EFE8}
+.result .deliv b{color:var(--lake)}
+.picker .fine{font-size:14px;color:var(--muted);margin:14px 0 16px}
+@media (max-width:900px){.wood .wrap{grid-template-columns:minmax(0,1fr)}.wood .photo{order:2}}
+@media (max-width:420px){.result{grid-template-columns:minmax(0,1fr)}}
+
+/* photo row */
+.row{padding:0 0 clamp(64px,8vw,104px);background:var(--birch)}
+.row h2{font-size:clamp(30px,3.6vw,44px);color:var(--forest);text-transform:uppercase;margin-bottom:22px}
+.row .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.row figure{margin:0}
+.row img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.row figcaption{font-size:15px;color:var(--muted);margin-top:10px;line-height:1.4}
+@media (max-width:760px){.row .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.row figure:last-child{grid-column:1 / -1}.row figure:last-child img{aspect-ratio:16/10}}
+
+/* trust + contact */
+.trust{background:var(--white);padding:clamp(64px,8vw,104px) 0;border-top:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,64px);align-items:start}
+.trust .eyebrow{color:var(--lift)}
+.trust h2{font-size:clamp(34px,4.2vw,54px);color:var(--forest);text-transform:uppercase;margin:12px 0 20px}
+.rating{display:inline-flex;align-items:center;gap:12px;text-decoration:none;border:2px solid var(--forest);border-radius:4px;padding:10px 16px;margin-bottom:26px;min-height:48px}
+.rating b{font:700 30px/1 var(--display);color:var(--forest)}
+.rating span{font-weight:600}
+.rating:hover{background:var(--birch)}
+.promises{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.promises li{background:var(--birch);border-radius:4px;padding:16px 18px 16px 20px;border-left:4px solid var(--forest);font-style:italic;font-size:17px;line-height:1.5}
+.trust .src{font-size:14px;color:var(--muted);margin-top:14px}
+.card{background:var(--forest);color:var(--white);border-radius:4px;padding:clamp(22px,3vw,34px);position:relative;overflow:hidden}
+.card h3{font-size:28px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px}
+.card .tel{display:inline-block;font:700 clamp(32px,3.4vw,42px)/1.1 var(--display);color:var(--white);text-decoration:none;margin:8px 0 18px;letter-spacing:.01em;padding:4px 0}
+.card .tel:hover{color:var(--lake)}
+.card dl{margin:0 0 22px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 18px;font-size:16.5px}
+.card dt{font:600 13px/1.6 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--lake)}
+.card dd{margin:0;color:#E7EFE8}
+.card .soc{display:flex;gap:6px;flex-wrap:wrap;margin-top:18px}
+.card .soc a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border:1px solid rgba(255,255,255,.35);border-radius:4px;text-decoration:none;font-size:15px}
+.card .soc a:hover{background:rgba(255,255,255,.1)}
+.card .ctas .btn{flex:1 1 auto}
+@media (max-width:900px){.trust .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* closer + footer */
+.closer{background:var(--forest);color:var(--white);position:relative;overflow:hidden;text-align:left}
+.closer .wrap{position:relative;padding-top:clamp(48px,6vw,80px);padding-bottom:clamp(48px,6vw,80px);display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
+.closer h2{font-size:clamp(30px,3.6vw,46px);text-transform:uppercase;max-width:18em}
+.closer p{margin:10px 0 0;color:#DCE7DE}
+footer{background:var(--forest-deep);color:#C9D6CC;font-size:14.5px;line-height:1.55}
+footer .wrap{padding-top:26px;padding-bottom:26px}
+footer a{color:var(--white)}
+@media (max-width:600px){footer{padding-bottom:76px}}
+
+/* mobile call bar */
+.callbar{display:none}
+@media (max-width:600px){
+  .callbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--white);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(0,0,0,.08)}
+  .callbar .btn{min-height:50px;padding:10px 8px;font-size:15.5px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="ring" d="M300 92c78-6 160 22 196 86 30 54 12 116-28 158-44 46-118 66-186 58-70-8-140-40-170-98-26-52-4-112 40-150 40-34 90-50 148-54z"/>
+    <g id="moraine">
+      <use href="#ring" fill="#3E7DB3" fill-opacity=".28" transform="translate(300 245) scale(.22) translate(-300 -245)"/>
+      <use href="#ring" fill="none" stroke="currentColor" stroke-width="2.6" transform="translate(300 245) scale(.38) translate(-300 -245)"/>
+      <use href="#ring" fill="none" stroke="currentColor" stroke-width="1.6" transform="translate(300 245) scale(.56) translate(-300 -245)"/>
+      <use href="#ring" fill="none" stroke="currentColor" stroke-width="1.3" transform="translate(300 245) scale(.76) translate(-300 -245)"/>
+      <use href="#ring" fill="none" stroke="currentColor" stroke-width="1.1" transform="translate(300 245) scale(1) translate(-300 -245)"/>
+      <use href="#ring" fill="none" stroke="currentColor" stroke-width="1" transform="translate(300 245) scale(1.28) rotate(6) translate(-300 -245)"/>
+      <use href="#ring" fill="none" stroke="currentColor" stroke-width=".9" transform="translate(300 245) scale(1.6) rotate(-4) translate(-300 -245)"/>
+      <use href="#ring" fill="none" stroke="currentColor" stroke-width=".8" transform="translate(300 245) scale(1.96) rotate(9) translate(-300 -245)"/>
+      <use href="#ring" fill="none" stroke="currentColor" stroke-width=".7" transform="translate(300 245) scale(2.4) rotate(-2) translate(-300 -245)"/>
+    </g>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 28 28"><circle cx="14" cy="14" r="12.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 14.5l3.6 3.6 7.4-7.6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Kettle Moraine Tree Services, home">
+      <img src="img/logo.svg" width="560" height="544" alt="KM Tree Services LLC logo: an oak tree over the letters KM">
+      <span><b>Kettle Moraine</b><small>Tree Services · Summit, WI</small></span>
+    </a>
+    <nav class="nav" aria-label="Their current site">
+      <a href="https://kettlemorainetreeservice.com/services">Services</a>
+      <a href="https://kettlemorainetreeservice.com/lakefront-services">Lakefront</a>
+      <a href="https://kettlemorainetreeservice.com/firewood">Firewood</a>
+      <a href="https://kettlemorainetreeservice.com/about-us">About</a>
+      <a href="https://kettlemorainetreeservice.com/faqs-1">FAQs</a>
+    </nav>
+    <a class="btn btn-red" href="tel:+12622694900"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="lbl">Call&nbsp;</span><span class="num">(262)&nbsp;269-4900</span></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <svg class="contours" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="color:rgba(151,195,233,.22)">
+    <use href="#moraine" transform="translate(-60 300) scale(1.05)"/>
+    <use href="#moraine" transform="translate(760 -170) scale(.9) rotate(18 300 245)"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Lakefront &amp; hard-to-reach tree work</p>
+      <h1>The trees other crews <em>can't reach.</em></h1>
+      <p class="sub">Tree removal, pruning and clearing for Lake Country homes, with low ground-impact lifts that get to lakefronts and tight yards. Family-owned in Summit since 2018, serving all of Southeastern Wisconsin.</p>
+      <div class="ctas">
+        <a class="btn btn-red" href="tel:+12622694900"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (262) 269-4900</a>
+        <a class="btn btn-ghost" href="https://kettlemorainetreeservice.com/contact-us">Get a free quote</a>
+      </div>
+    </div>
+    <figure class="frame">
+      <div class="reach" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="ph"><img src="img/hero-lakefront-lift.webp" width="1080" height="1440" alt="KM's red tracked spider lift set up on a lakefront lawn, outriggers down, with the lake and boat lifts behind it"></div>
+      <figcaption><b>Set up on the shoreline.</b> Their spider lift on a lakefront lawn.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="proof" aria-label="At a glance">
+  <ul class="wrap">
+    <li><strong><span class="star" aria-hidden="true">★</span> 5.0 on Google</strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Kettle+Moraine+Tree+Services+740+N+Griffith+Rd+Summit+WI">See the listing</a></li>
+    <li><strong>ISA Certified Arborist on staff</strong>Lic# WI-336613A</li>
+    <li><strong>Fully insured</strong>Certificates available upon request</li>
+    <li><strong>Established 2018</strong>Family-owned in the Village of Summit</li>
+  </ul>
+</section>
+
+<section class="lake" id="lakefront" aria-labelledby="lake-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Lakefront tree services</p>
+      <h2 id="lake-h">Built for the shoreline, not just the driveway.</h2>
+      <blockquote class="quote">“Our low ground impact equipment can get to all of those hard to reach places that other companies simply cannot.”<cite>From their Lakefront Services page</cite></blockquote>
+      <ul class="points">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Low ground impact</b> on lawns, slopes and shoreline.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>Piece by piece:</b> “Our ISA-certified arborist uses specialized equipment to remove the tree piece by piece, ensuring the safety of your home and our crew.”</span></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b>The newest lift in the fleet:</b> a 2026 CMC 90 HD, “just the lift to get to all the hard-to-reach places.”</span></li>
+      </ul>
+      <a class="btn btn-green" href="tel:+12622694900"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call for a lakefront quote</a>
+    </div>
+    <div class="pics">
+      <figure class="wide"><img src="img/lift-lake-home.webp" width="1140" height="855" loading="lazy" alt="The red spider lift parked on a wide green lawn beside a blue-gray two-story home, under a large shade tree"><figcaption>Set up on the lawn without tearing it up.</figcaption></figure>
+      <figure class="tall"><img src="img/lift-full-reach.webp" width="840" height="1120" loading="lazy" alt="The lift's boom at full reach, with a worker in the bucket up among tall bare trees in winter"><figcaption>At full reach in the canopy.</figcaption></figure>
+      <div class="tag"><b>Southeastern Wisconsin</b><span>Lakefront homes, tight yards, wooded lots. Ask about the lift for the hard-to-reach ones.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="family" id="family" aria-labelledby="fam-h">
+  <svg class="contours" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="color:rgba(187,107,41,.2)">
+    <use href="#moraine" transform="translate(620 260) scale(1.1) rotate(-12 300 245)"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Meet the Kadows</p>
+      <h2 id="fam-h">A firefighter's eye for safety. A forester's eye for trees.</h2>
+      <p class="lead">“Jessica &amp; Chris reside in the Village of Summit… As long time residents of the Lake Country area, they have a rural perspective and vested interest in preserving and protecting trees native to our Region.”</p>
+      <div class="people">
+        <article class="person">
+          <h3>Chris Kadow</h3>
+          <p class="role">Owner / Operator</p>
+          <ul>
+            <li>Retired Professional Firefighter/Paramedic/Equipment Operator, 30 years</li>
+            <li>CK Services/KM Tree Services Owner/Operator, 20 years</li>
+            <li>Sawyer Custom Milling Owner/Operator, 22 years</li>
+          </ul>
+        </article>
+        <article class="person">
+          <h3>Emil Kadow</h3>
+          <p class="role">State of Wisconsin Certified Arborist</p>
+          <ul>
+            <li>B.S., University of Wisconsin–Stevens Point (Urban and Community Forestry)</li>
+            <li>Turf and landscape pesticide applicator licensed</li>
+            <li>7 years with Kettle Moraine Tree Services</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+    <div class="svc">
+      <h3>What the crew does</h3>
+      <ol>
+        <li><div><b>Tree removal &amp; pruning</b><span>“Remove or prune just about any tree in any location,” especially lakefronts.</span></div></li>
+        <li><div><b>Forestry &amp; brush mowing</b><span>Buckthorn, trails and overgrown property, with low ground-impact equipment and a new 2026 Cat 275 XE.</span></div></li>
+        <li><div><b>New home lot clearing</b><span>Clearing out new home construction lots.</span></div></li>
+        <li><div><b>Emergency tree services</b><span>After a big storm or a tornado: “Just give us a call and we can be there right away.”</span></div></li>
+        <li><div><b>Custom milling</b><span>“Let us turn tree trunks into specialty lumber,” plus milling to repurpose barn lumber.</span></div></li>
+        <li><div><b>Stump grinding &amp; ash treatment</b><span>Stumps ground and chips cleaned up. Ash trees treated.</span></div></li>
+      </ol>
+      <a class="more" href="https://kettlemorainetreeservice.com/services">All services on their site →</a>
+    </div>
+  </div>
+</section>
+
+<section class="wood" id="firewood" aria-labelledby="wood-h">
+  <div class="wrap">
+    <figure class="photo">
+      <img src="img/firewood-racks.webp" width="1080" height="810" loading="lazy" alt="Two wooden racks stacked with split firewood on a lawn, with KM firewood signs in front">
+      <figcaption>Firewood racks out front, with KM's own signs.</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow">Firewood &amp; wood chips</p>
+      <h2 id="wood-h">Price your firewood in three taps.</h2>
+      <form class="picker" id="picker" onsubmit="return false" aria-describedby="wood-note">
+        <fieldset>
+          <legend>1 · What size?</legend>
+          <div class="chips">
+            <label><input type="radio" name="size" value="face" checked><span>Face cord</span></label>
+            <label><input type="radio" name="size" value="full"><span>Full cord</span></label>
+            <label><input type="radio" name="size" value="burner"><span>Outdoor wood burner</span></label>
+          </div>
+        </fieldset>
+        <fieldset id="f-wood">
+          <legend>2 · Which wood?</legend>
+          <div class="chips">
+            <label><input type="radio" name="wood" value="oak" checked><span>All oak</span></label>
+            <label><input type="radio" name="wood" value="mixed"><span>Mixed hardwoods (mostly ash)</span></label>
+          </div>
+        </fieldset>
+        <fieldset id="f-burn" hidden>
+          <legend>2 · Split or whole? How many cords?</legend>
+          <div class="chips">
+            <label><input type="radio" name="cut" value="split" checked><span>Split 3'–4'</span></label>
+            <label><input type="radio" name="cut" value="whole"><span>Whole 3'–4'</span></label>
+          </div>
+          <div class="chips" style="margin-top:8px">
+            <label><input type="radio" name="qty" value="one" checked><span>One cord</span></label>
+            <label><input type="radio" name="qty" value="multi"><span>2+ cords</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>3 · How far from 740 N. Griffith Rd?</legend>
+          <div class="chips">
+            <label><input type="radio" name="dist" value="near" checked><span>Within 10 miles</span></label>
+            <label><input type="radio" name="dist" value="mid"><span>Up to 20 miles</span></label>
+            <label><input type="radio" name="dist" value="far"><span>Farther</span></label>
+          </div>
+        </fieldset>
+        <div class="result" aria-live="polite">
+          <div class="price" id="w-price">$205</div>
+          <div class="what" id="w-what"><b>Face cord · all oak</b>Posted price on their Firewood page</div>
+          <div class="deliv" id="w-deliv"><b>Free delivery</b> within 10 miles of 740 N. Griffith Rd, Oconomowoc.</div>
+        </div>
+        <p class="fine" id="wood-note">Prices as posted on kettlemorainetreeservice.com/firewood (November 2026); confirm with KM when you order. Outdoor wood burner wood is mixed hardwoods only. Wood chips are available too.</p>
+        <a class="btn btn-red" href="tel:+12622694900"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call to order</a>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="row" aria-labelledby="row-h">
+  <div class="wrap">
+    <h2 id="row-h">Equipment and home base</h2>
+    <div class="grid">
+      <figure><img src="img/cat-loader.webp" width="900" height="1125" loading="lazy" alt="A new yellow Cat compact track loader with a bucket, parked on bare dirt beside a pile of logs"><figcaption>The new Cat for clearing and forestry mowing.</figcaption></figure>
+      <figure><img src="img/lift-winter-trail.webp" width="900" height="1125" loading="lazy" alt="The red tracked lift folded up for travel on a snowy wooded trail, with a crew member beside it"><figcaption>The tracked lift, folded to travel a snowy trail.</figcaption></figure>
+      <figure><img src="img/new-shop.webp" width="900" height="1125" loading="lazy" alt="KM's new shop building with a dark red metal exterior, white overhead door and fresh paving under a blue sky"><figcaption>KM's new shop.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="trust" id="contact" aria-labelledby="trust-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">How they work</p>
+      <h2 id="trust-h">Brush chipped. Wood hauled. Yard cleaned up.</h2>
+      <a class="rating" href="https://www.google.com/maps/search/?api=1&amp;query=Kettle+Moraine+Tree+Services+740+N+Griffith+Rd+Summit+WI"><b><span class="star" aria-hidden="true">★</span> 5.0</b><span>on Google · read the reviews</span></a>
+      <ul class="promises">
+        <li>“Typically, we will chip all brush, remove all wood and carefully clean up the area following the removal process.”</li>
+        <li>“If you would like your wood left on site or cut to a specific firewood length - we will work to accommodate that request.”</li>
+        <li>“We start every project by providing a thorough consultation to understand your goals and the needs of the project.”</li>
+      </ul>
+      <p class="src">Promises from kettlemorainetreeservice.com; rating from Google.</p>
+    </div>
+    <aside class="card" aria-label="Contact Kettle Moraine Tree Services">
+      <h3>Schedule a free quote</h3>
+      <a class="tel" href="tel:+12622694900">(262) 269-4900</a>
+      <dl>
+        <dt>Address</dt><dd>740 North Griffith Road<br>Oconomowoc, WI 53066</dd>
+        <dt>Hours</dt><dd>Monday - Friday: 8am - 6pm<br>Saturday: By appointment<br>Sunday: Closed</dd>
+        <dt>Serving</dt><dd>All of Southeastern Wisconsin</dd>
+      </dl>
+      <div class="ctas">
+        <a class="btn btn-red" href="tel:+12622694900"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call now</a>
+        <a class="btn btn-ghost" href="https://kettlemorainetreeservice.com/contact-us">Quote form</a>
+      </div>
+      <div class="soc">
+        <a href="https://www.facebook.com/KettleMoraineTreeService/">Facebook</a>
+        <a href="https://www.instagram.com/kmtreeservices">Instagram</a>
+        <a href="https://www.tiktok.com/@kmtreeservices">TikTok</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="closer" aria-labelledby="close-h">
+  <svg class="contours" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="color:rgba(151,195,233,.2)">
+    <use href="#moraine" transform="translate(700 -60) scale(.85)"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <h2 id="close-h">A first look at your new site.</h2>
+      <p>Lakefront work up front, the family story on the home page, and firewood pricing anyone can use.</p>
+    </div>
+    <a class="btn btn-red" href="tel:+12622694900"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (262) 269-4900</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Website by Cream City Post · Independent website concept, not the official Kettle Moraine Tree Services site. Logo redrawn; services, credentials, hours, firewood prices and photos from kettlemorainetreeservice.com; rating from Google.</div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+12622694900"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (262) 269-4900</a>
+  <a class="btn btn-green" href="https://kettlemorainetreeservice.com/contact-us">Free quote</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('picker');
+  if(!f) return;
+  var P={face:{oak:205,mixed:165},full:{oak:415,mixed:365},burner:{split:{one:315,multi:290},whole:{one:200,multi:180}}};
+  var N={oak:'all oak',mixed:'mixed hardwoods, mostly ash',split:'split 3’–4’ pieces',whole:'whole 3’–4’ pieces',one:'one cord',multi:'2+ cords'};
+  function v(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:null;}
+  function upd(){
+    var s=v('size'),burn=s==='burner',price,label,sub='Posted price on their Firewood page';
+    document.getElementById('f-wood').hidden=burn;
+    document.getElementById('f-burn').hidden=!burn;
+    if(burn){var c=v('cut'),q=v('qty');price=P.burner[c][q];label='Outdoor wood burner · '+N[q]+' · '+N[c];if(q==='multi')sub='Posted 2+ cord price; mixed hardwoods only';else sub='Posted one-cord price; mixed hardwoods only';}
+    else{var w=v('wood');price=P[s][w];label=(s==='face'?'Face cord':'Full cord')+' · '+N[w];}
+    var d=v('dist'),dl;
+    if(d==='near')dl='<b>Free delivery</b> within 10 miles of 740 N. Griffith Rd, Oconomowoc.';
+    else if(d==='mid')dl='<b>+$30 per load</b> for delivery up to 20 miles from their location.';
+    else dl='<b>Call to ask.</b> Their posted delivery covers up to 20 miles.';
+    document.getElementById('w-price').textContent='$'+price;
+    document.getElementById('w-what').innerHTML='<b>'+label+'</b>'+sub;
+    document.getElementById('w-deliv').innerHTML=dl;
+  }
+  f.addEventListener('change',upd);upd();
+})();
+</script>
+</body>
+</html>
