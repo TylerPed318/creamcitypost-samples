@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-085 creative brief 1a1d168495bbf706 handled; v1 ready 1a1d2727a929825a confirmed SENT (Nov 12).
 CCP-084 creative brief 1a1d166bd8b6b2a6 handled; v1 ready sent 1a1d25551339d5cc (Nov 12).
 CCP-083 creative brief 1a1d16525bb36ea6 handled; v1 ready sent 1a1d251d2f85ea40 (Nov 12).
 CCP-081 creative brief 1a1d1330482b2a3b handled; v1 ready sent 1a1d2208e1b596db (Nov 12).
@@ -149,6 +150,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-080 | Dean Pipito Water Features (Aquatica) | Ponds, waterfalls + water-garden shop, Wales | brief | v1 | aquatica-water-features/ | v1 emailed Nov 12, ~5:55 PM. 0 credits. |
 | CCP-081 | Inside Out Remodeling LLC | Turnkey remodeling, Wales | brief | v1 | inside-out-remodeling/ | v1 emailed Nov 12, ~6:10 PM. 0 credits. Google 1.0 (2) — pitch decision. |
 | CCP-083 | Devix Heating & Cooling | HVAC, West Allis | brief | v1 | devix-heating-cooling/ | v1 emailed Nov 12, ~6:50 PM. 0 credits. |
+| CCP-085 | Forced Air Systems | HVAC, Greendale | brief | v1 | forced-air-systems/ | v1 emailed Nov 12; 0 credits. |
 | CCP-084 | Clear Vision ProWash | Exterior cleaning, Waukesha | brief | v1 | clear-vision-prowash/ | v1 emailed Nov 12, ~7:00 PM. 0 credits. |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
@@ -280,4 +282,6 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-084 v1 (Nov 12, ~7:00 PM CT, scheduled run): live (page + 4 imgs 200, byte-identical), emailed 1a1d25551339d5cc; 0 credits; commits 3e127b8, c3fbf0a; slug clear-vision-prowash/. Swoosh/droplet motif, town checker from posted list, main-site promises. Open: no Google rating (no Waukesha listing), embedded-widget review quotes left out pending Tyler, since-2003 vs 20+ years, van photo skipped (plate).
 - Nov 12, ~7:00 PM CT (scheduled run): session ends after 2 builds (083, 084 v1), 0 credits. CCP-082 still claimed by the 6:07 PM run (built, email blocked; recover delivery only, no rebuild). Next up, oldest brief first: CCP-085 Forced Air Systems (1a1d168495bbf706), 087 Lake Country Clean (1a1d169b6a3ee7a5), 090 Rescue (1a1d1955b3667fb0), then 091–095, 098, 099, 101, 102, 104, 105.
 
-- in progress — CCP-085 (2026-11-12 19:03 -06:00 America/Chicago, scheduled run)
+- done — CCP-085 v1 (Nov 12, 19:08 CT, scheduled run): live commit44e55a3 exact HTML/logo HTTP200; ready1a1d2727a929825a confirmed SENT. 0credits;50134bytes. Original logo PNG retained inside SVG; photo-free (no real jobs); slanted airflow motif; America/Chicago office status. Installed Playwright in Higgsfield used (named script absent),1440/390 visually inspected,375 overflow and weekday/weekend status pass. Existing-site section navigation only (no separate pages found). Unconfirmed photo quotes, towns, labor warranty and review quotes omitted.
+
+- Nov 12, 19:09 CT (scheduled run): last finished CCP-085 v1; next eligible CCP-087 then090–095,098,099,101,102,104,105. CCP-082 published/awaiting email remains protected by its 18:07 claim until19:37; recover existing delivery after checking sent mail, never rebuild. Claude selection unavailable; supported runtime used. 0credits this run.
