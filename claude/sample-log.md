@@ -99,10 +99,13 @@ CCP-054 creative brief 1a1cc293ef95a96f handled; v1 ready sent 1a1cdba7719f6498 
 CCP-005/007/008/009 revisions & approvals; CCP-018 approval; CCP-020 v1 revision (→v2) and v2 approval; CCP-021 v1 revision (→v2); CCP-112 v2 approval; CCP-012 v1 approval; CCP-011 v1 revision (→v2); CCP-114 v1 revision (→v2); CCP-011 v2 and CCP-114 v2 approvals (Nov 11); CCP-015 v1 and CCP-016 v1 approvals (Nov 11); CCP-023 v1 revision (→v2); CCP-024 v1 revision (→v2).
 Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 2 Go, CCP-012 Hernia, CCP-013 Ingrilli, CCP-014 Sparks, CCP-015 Wood Floors Unlimited, CCP-022 Sunset Septic). The real IDs are in the table.
 
+CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confirmed SENT.
+
 ## Samples
 
 | CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | v1 published 5faef20; ready emailed Nov 12, ~7:40 PM (1a1d28e1a25b5db4) by recovery run. 0 credits. |
 
+| CCP-094 | CNC Cleaning & Hauling | Junk removal, Milwaukee | brief + master CSV | v1 | cnc-cleaning-hauling/ | Live 2afdb40; ready 1a1d3366e86da9ec SENT; 0 credits. |
 | ID | Business | Trade / City | Source lead | Latest | Folder | Status |
 |---|---|---|---|---|---|---|
 | CCP-005 | Dale's Tree Service | Tree, Hartland | 10-20 #1 | v3 | dales/ | **Approved v3.** |
@@ -303,4 +306,6 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-092 v1 (Nov 12, ~8:55 PM CT, scheduled run): live commit add92cc exact HTML + 6 imgs HTTP200; ready 1a1d2c3421599772 SENT. 0 credits (brief: no Higgsfield); ~0.88 MB; slug costa-tree-service/. Tree-ring motif, arched hero (gallery24 winter oak), town checker (16 towns), logo potrace SVG. Open: no review count (guidelines), crew photo permission, no family names/Josh/Mike, no arborist number.
 - Nov 12, ~8:55 PM CT (scheduled run): session ends after 2 builds (091, 092 v1), 0 credits. No open revisions. Next up, oldest brief first: CCP-093 Kettle Moraine Tree (1a1d1a67c129bf1b), 094 CNC Cleaning & Hauling, 095 Custom Construction, 098 Garage Door Guy, 099 WIY, 101 A Plus Cleaning, 102 Jung Electric, 104 Hometown Cleaning, 105 A Better Way Heating.
 - in progress — CCP-093 (Nov 12, 9:30 PM CT, scheduled run)
-- in progress — CCP-094 (Nov 12, 10:37 PM CT, scheduled run)
+- done — CCP-094 v1 (Nov 12, 22:43 CT, scheduled run): live 2afdb40 exact HTML and 4 assets HTTP200; ready 1a1d3366e86da9ec confirmed SENT. 0 credits; ~645KB. Original PNG logo retained rather than approximate redraw, Poppins/Roboto, real photos, six-option picker, existing page navigation. Installed Playwright in Higgsfield used (named render absent); 1440/390 visually inspected,375 overflow/all choices passed. Open: photo permission/contact confirmation; no same-day/photo-quote/years claims. Claude selection unavailable.
+
+- Nov 12, 22:43 CT (scheduled run): last finished CCP-094 v1,0credits; next unclaimed CCP-095 then098,099,101,102,104,105. CCP-093 remains another run claim (21:30CT), existing folder without ready email; recovery only after overlap expiry and recheck. No open revisions. Model selection unavailable; actual supported Playwright QA used. Open CNC photo permission/contact confirmation.
