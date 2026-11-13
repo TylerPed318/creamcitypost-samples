@@ -102,6 +102,8 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 
 CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confirmed SENT.
 
+CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738562 confirmed SENT (delivery recovery Nov 13).
+
 ## Samples
 
 | CCP-095 | Custom Construction of Wisconsin | Concrete, Waukesha | brief + master CSV | v1 | custom-construction-wisconsin/ | Live 8db22cc; ready 1a1d387e1f5deac1 SENT; 0 credits. |
@@ -109,6 +111,7 @@ CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confi
 | CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | v1 published 5faef20; ready emailed Nov 12, ~7:40 PM (1a1d28e1a25b5db4) by recovery run. 0 credits. |
 
 | CCP-094 | CNC Cleaning & Hauling | Junk removal, Milwaukee | brief + master CSV | v1 | cnc-cleaning-hauling/ | Live 2afdb40; ready 1a1d3366e86da9ec SENT; 0 credits. |
+| CCP-093 | Kettle Moraine Tree Services | Tree service, Summit/Oconomowoc | brief + previously verified master CSV | v1 | kettle-moraine-tree-services/ | Existing live v1 delivery recovered Nov 13; ready 1a1d3b9b2f738562 SENT; 0 credits. |
 | ID | Business | Trade / City | Source lead | Latest | Folder | Status |
 |---|---|---|---|---|---|---|
 | CCP-005 | Dale's Tree Service | Tree, Hartland | 10-20 #1 | v3 | dales/ | **Approved v3.** |
@@ -308,13 +311,15 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-091 v1 (Nov 12, ~8:50 PM CT, scheduled run): live commit 699baee exact HTML + 9 imgs HTTP200; ready 1a1d2bd9971200d5 SENT. 0 credits (brief: no Higgsfield); ~0.97 MB; slug clear-difference/. Logo-bracket motif, service picker from own gallery photos. Open: no rating/quotes per brief, no town list, ladder worker unidentified, commercial tile text-only, #1466AD button blue for AA.
 - done — CCP-092 v1 (Nov 12, ~8:55 PM CT, scheduled run): live commit add92cc exact HTML + 6 imgs HTTP200; ready 1a1d2c3421599772 SENT. 0 credits (brief: no Higgsfield); ~0.88 MB; slug costa-tree-service/. Tree-ring motif, arched hero (gallery24 winter oak), town checker (16 towns), logo potrace SVG. Open: no review count (guidelines), crew photo permission, no family names/Josh/Mike, no arborist number.
 - Nov 12, ~8:55 PM CT (scheduled run): session ends after 2 builds (091, 092 v1), 0 credits. No open revisions. Next up, oldest brief first: CCP-093 Kettle Moraine Tree (1a1d1a67c129bf1b), 094 CNC Cleaning & Hauling, 095 Custom Construction, 098 Garage Door Guy, 099 WIY, 101 A Plus Cleaning, 102 Jung Electric, 104 Hometown Cleaning, 105 A Better Way Heating.
-- in progress — CCP-093 (Nov 12, 9:30 PM CT, scheduled run)
+- superseded stale claim — CCP-093 (Nov 12, 9:30 PM CT); v1 delivery recovered Nov 13, 01:06 CT.
 - done — CCP-094 v1 (Nov 12, 22:43 CT, scheduled run): live 2afdb40 exact HTML and 4 assets HTTP200; ready 1a1d3366e86da9ec confirmed SENT. 0 credits; ~645KB. Original PNG logo retained rather than approximate redraw, Poppins/Roboto, real photos, six-option picker, existing page navigation. Installed Playwright in Higgsfield used (named render absent); 1440/390 visually inspected,375 overflow/all choices passed. Open: photo permission/contact confirmation; no same-day/photo-quote/years claims. Claude selection unavailable.
 
 - Nov 12, 22:43 CT (scheduled run): last finished CCP-094 v1,0credits; next unclaimed CCP-095 then098,099,101,102,104,105. CCP-093 remains another run claim (21:30CT), existing folder without ready email; recovery only after overlap expiry and recheck. No open revisions. Model selection unavailable; actual supported Playwright QA used. Open CNC photo permission/contact confirmation.
-- in progress — CCP-093 (Nov 12, 11:03 PM CT, scheduled run; stale claim recovery of published v1)
+- superseded stale recovery claim — CCP-093 (Nov 12, 11:03 PM CT); v1 delivery confirmed Nov 13, 01:06 CT.
 - done — CCP-095 v1 (Nov 13, 00:12 CT, scheduled run): published 8db22cc, exact live HTML and 5 assets HTTP200; ready 1a1d387e1f5deac1 confirmed SENT. 0 credits; 514862 bytes. Original logo PNG retained inside SVG; family story, real project photos, town checker and verified existing page navigation. Installed Playwright in Higgsfield (named script unavailable), 1440/390 visually inspected, 375 overflow and all 14 choices passed. Open: photo permission/current family roles; no hours/email/named Google quotes. Claude model selection unavailable.
 
 - Nov 13, 00:12 CT (scheduled run): last finished CCP-095 v1, 0 credits; next unbuilt CCP-098 then099/101/102/104/105. CCP-093 remains protected by 23:03 CT recovery claim until00:33; recover existing delivery after recheck. No open revisions identified. Open: original logo retained rather than vector redraw; photo permission/current family roles. Claude selection unavailable. Prospect server rejects plain HTTP clients but Chromium retrieves original pages/assets successfully.
 
-- in progress — CCP-093 (Nov 13, 01:04 AM CT, scheduled run; recover existing published v1 delivery)
+- done — CCP-093 v1 (Nov 13, 01:06 CT, scheduled run): recovered existing published v1 delivery; ready 1a1d3b9b2f738562 confirmed SENT. 0 credits. Exact committed HTML hash matches public page; all 6 referenced assets HTTP200. Prior installed Playwright 1440/390 renders inspected and 375 overflow/picker results reviewed; no repeat render. Open: photo permission, current firewood prices/credentials, site versus Google hours. Claude selection unavailable.
+
+- Nov 13, 01:06 CT (scheduled run): last finished CCP-093 v1 delivery recovery, 0 credits; next verified unbuilt CCP-098 then099/101/102/104/105. No open revisions identified; prior builds preserved. Open: KM photo permission, firewood prices/credentials and hours conflict. Runtime cannot select Claude; existing Higgsfield Playwright QA reused after exact byte-match verification.
