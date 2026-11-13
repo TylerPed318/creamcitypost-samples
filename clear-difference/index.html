@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>The Clear Difference — Website concept by Cream City Post</title>
+<meta name="description" content="Residential and commercial window cleaning, plus chandeliers, gutters and pressure washing, serving the greater Milwaukee and Waukesha areas. Call Jeff Eppers at (262) 366-9927.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffffff'/%3E%3Cpath d='M8 30V8h26' fill='none' stroke='%23585858' stroke-width='6'/%3E%3Cpath d='M56 34v22H30' fill='none' stroke='%23585858' stroke-width='6'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='30' fill='%231F8CE2' text-anchor='middle'%3Ec%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Julius+Sans+One&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --clear:#1F8CE2;      /* logo "clear" */
+  --sky:#45A9E1;        /* logo DIFFERENCE / highlights */
+  --deep:#1466AD;       /* AA-safe button blue derived from the logo blue */
+  --deeper:#0F5390;
+  --slate:#585858;      /* logo frame + text */
+  --ink:#1E2730;
+  --ink-2:#2A3541;
+  --glass:#F2F7FB;
+  --white:#FFFFFF;
+  --line:#D9E4EE;
+  --muted:#4F5A66;
+  --display:"Montserrat",system-ui,sans-serif;
+  --label:"Julius Sans One",system-ui,sans-serif;
+  --body:"Inter",system-ui,sans-serif;
+  --wrap:1200px;
+  --gut:clamp(16px,4vw,40px);
+  --radius:6px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--deep)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--clear);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+.label{font-family:var(--label);letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;color:var(--slate)}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:.75em 1.35em;border-radius:var(--radius);font-family:var(--display);font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--deep);color:#fff}
+.btn-primary:hover{background:var(--deeper)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--slate)}
+.btn-ghost:hover{border-color:var(--deep);color:var(--deep)}
+
+/* Signature motif: the logo's two slate bracket corners */
+.bracket{position:relative}
+.bracket::before,.bracket::after{content:"";position:absolute;width:clamp(60px,22%,150px);height:clamp(60px,30%,150px);border:0 solid var(--slate);pointer-events:none}
+.bracket::before{top:calc(var(--bo,14px) * -1);left:calc(var(--bo,14px) * -1);border-top-width:var(--bw,7px);border-left-width:var(--bw,7px)}
+.bracket::after{bottom:calc(var(--bo,14px) * -1);right:calc(var(--bo,14px) * -1);border-bottom-width:var(--bw,7px);border-right-width:var(--bw,7px)}
+
+/* Header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+.logo{display:block;width:150px;flex:none}
+.logo svg{display:block;width:100%;height:auto}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a.nl{font-family:var(--display);font-weight:600;font-size:.92rem;color:var(--ink);text-decoration:none;padding:12px 12px;border-radius:4px}
+.nav a.nl:hover{color:var(--deep);background:var(--glass)}
+.top .btn{min-height:46px;padding:.6em 1.05em;font-size:.95rem}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--glass)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 2px,transparent 2px),linear-gradient(90deg,var(--line) 2px,transparent 2px);background-size:120px 150px;opacity:.55;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(36px,6vw,80px);align-items:center;padding-top:clamp(48px,7vw,96px);padding-bottom:clamp(64px,8vw,110px)}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.6rem);font-weight:800;letter-spacing:-.02em;margin:18px 0 22px}
+.hero h1 .c{color:var(--deep);position:relative;white-space:nowrap}
+.hero h1 .c::after{content:"";position:absolute;left:-2%;right:-2%;bottom:.06em;height:.16em;background:linear-gradient(90deg,transparent,rgba(69,169,225,.55) 15%,rgba(69,169,225,.55) 85%,transparent);border-radius:99px;z-index:-1}
+.hero .sub{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--muted);max-width:34em;margin:0 0 28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.jeff-chip{display:flex;align-items:center;gap:14px;margin-top:30px}
+.jeff-chip img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 4px 14px rgba(30,39,48,.18)}
+.jeff-chip p{margin:0;font-size:.95rem;line-height:1.35;color:var(--muted)}
+.jeff-chip strong{display:block;color:var(--ink);font-family:var(--display);font-size:1.02rem}
+.hero-photo{--bo:18px;--bw:8px;margin:18px}
+.hero-photo img{width:100%;aspect-ratio:4/3.25;object-fit:cover;object-position:62% 40%;border-radius:2px;box-shadow:0 24px 50px -20px rgba(30,39,48,.45)}
+.hero-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(30,39,48,.82);color:#fff;font-size:.8rem;padding:6px 10px;border-radius:3px;max-width:75%}
+
+/* Proof strip */
+.proof{background:var(--ink);color:#fff}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:24px 22px;border-left:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column;gap:4px}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof b{font-family:var(--display);font-size:1.08rem;font-weight:700}
+.proof span{color:#C9D5E1;font-size:.92rem;line-height:1.4}
+
+/* Service picker */
+.services{padding:clamp(64px,9vw,120px) 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 60px;align-items:end;margin-bottom:44px}
+.sec-head h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:800;letter-spacing:-.015em;margin-top:12px}
+.sec-head p{margin:0;color:var(--muted);max-width:32em}
+.picker{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px);align-items:start}
+.tabs{display:flex;flex-direction:column;gap:8px}
+.tab{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;padding:14px 18px;border:2px solid var(--line);border-radius:var(--radius);font-family:var(--display);font-weight:700;font-size:1.08rem;color:var(--ink);background:#fff;transition:border-color .2s,background-color .2s}
+.tab small{font-family:var(--body);font-weight:500;font-size:.85rem;color:var(--muted)}
+.tab:hover{border-color:var(--sky)}
+.tab[aria-selected="true"]{border-color:var(--deep);background:var(--glass);box-shadow:inset 6px 0 0 var(--deep)}
+.tab:focus-visible{outline:3px solid var(--clear);outline-offset:3px}
+.panel{--bo:12px;--bw:6px;margin:12px}
+.panel[hidden]{display:none}
+.panel .shot{position:relative;background:var(--ink);border-radius:2px;overflow:hidden}
+.panel img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.panel img.tall{object-position:50% 70%}
+.panel .copy{background:#fff;border:1px solid var(--line);border-top:0;padding:22px 24px}
+.panel h3{font-size:1.45rem;margin-bottom:6px}
+.panel p{margin:0;color:var(--muted)}
+.panel .cap{display:block;margin-top:10px;font-size:.85rem;color:var(--slate)}
+.biz{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;padding:30px;background:linear-gradient(135deg,var(--ink),var(--ink-2));color:#fff}
+.biz .label{color:#C9D5E1}
+.biz strong{display:block;font-family:var(--display);font-size:clamp(1.6rem,3vw,2.3rem);margin:10px 0 6px}
+
+/* Gallery row */
+.gallery{background:var(--glass);padding:clamp(64px,9vw,110px) 0}
+.grid3{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr) minmax(0,1fr);gap:18px;align-items:stretch}
+.grid3 figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.grid3 img{width:100%;height:100%;min-height:0;object-fit:cover;border-radius:2px;aspect-ratio:auto;flex:1}
+.grid3 .ph{flex:1;min-height:340px;display:flex}
+.grid3 figcaption{font-size:.9rem;color:var(--muted)}
+.grid3 figure:nth-child(2) .ph{margin-top:40px}
+.more{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;justify-content:space-between}
+.more p{margin:0;color:var(--muted)}
+
+/* Meet Jeff + contact */
+.meet{padding:clamp(64px,9vw,120px) 0}
+.meet .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,72px);align-items:center}
+.jeff{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:28px;align-items:center}
+.jeff-pic{--bo:10px;--bw:5px;margin:10px}
+.jeff-pic img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px}
+.jeff h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;margin:10px 0 12px}
+.jeff p{margin:0 0 10px;color:var(--muted)}
+.quote-line{font-family:var(--display);font-weight:700;color:var(--ink);font-size:1.15rem}
+.card{background:var(--ink);color:#fff;border-radius:10px;padding:clamp(26px,4vw,40px);position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;right:-30px;bottom:-30px;width:140px;height:140px;border-right:10px solid rgba(255,255,255,.08);border-bottom:10px solid rgba(255,255,255,.08)}
+.card .label{color:#C9D5E1}
+.card h3{color:#fff;font-size:1.7rem;margin:10px 0 22px}
+.card dl{margin:0 0 26px;display:grid;gap:16px}
+.card dt{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#AFC0D1;margin-bottom:2px}
+.card dd{margin:0;font-size:1.05rem}
+.card dd a{color:#fff;font-weight:600;text-decoration-color:var(--sky);text-underline-offset:4px;display:inline-block;padding:6px 0;word-break:break-word}
+.card dd a:hover{color:var(--sky)}
+.card .btn-primary{background:var(--sky);color:var(--ink)}
+.card .btn-primary:hover{background:#7CC4EC}
+.card .cta-row .btn-ghost{color:#fff;border-color:rgba(255,255,255,.5)}
+.card .cta-row .btn-ghost:hover{border-color:#fff;color:#fff}
+
+/* Closer + footer */
+.closer{background:var(--deep);color:#fff;text-align:left}
+.closer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-top:44px;padding-bottom:44px}
+.closer h2{color:#fff;font-size:clamp(1.6rem,3vw,2.2rem)}
+.closer p{margin:6px 0 0;color:#DCEBF8}
+.closer .btn{background:#fff;color:var(--deep)}
+.closer .btn:hover{background:var(--glass)}
+footer{background:var(--ink);color:#C9D5E1;font-size:.9rem}
+footer .wrap{padding-top:28px;padding-bottom:28px}
+footer p{margin:0}
+footer a{color:#fff}
+
+.callbar{display:none}
+
+@media (max-width:980px){
+  .nav a.nl{display:none}
+  .hero .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero-photo{max-width:640px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li{padding:20px 18px}
+  .proof li:nth-child(3){border-left:0;padding-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.12)}
+  .sec-head,.picker,.meet .wrap{grid-template-columns:minmax(0,1fr)}
+  .tabs{flex-direction:row;flex-wrap:wrap}
+  .tab{flex:1 1 auto;min-height:48px;padding:10px 16px;font-size:1rem}
+  .tab small{display:none}
+  .tab[aria-selected="true"]{box-shadow:inset 0 -4px 0 var(--deep)}
+}
+@media (max-width:700px){
+  .grid3{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .grid3 figure:first-child{grid-column:1/-1}
+  .grid3 .ph{min-height:220px}
+  .grid3 figure:nth-child(2) .ph{margin-top:0}
+  .jeff{grid-template-columns:minmax(0,120px) minmax(0,1fr);gap:20px;align-items:start}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:72px}
+  .top .wrap{min-height:64px}
+  .logo{width:118px}
+  .top .btn .full{display:none}
+  .hero h1 .c{white-space:normal}
+  .hero-photo{margin:14px;--bo:12px;--bw:6px}
+  .proof ul{grid-template-columns:minmax(0,1fr)}
+  .proof li,.proof li:nth-child(3){border-left:0;padding:16px 0;border-top:1px solid rgba(255,255,255,.12)}
+  .proof li:first-child{border-top:0}
+  .jeff{grid-template-columns:minmax(0,1fr)}
+  .jeff-pic{max-width:180px}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(30,39,48,.97);box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+  .callbar .btn{min-height:48px;padding:.6em .7em;font-size:.95rem}
+  .callbar .btn-ghost{color:#fff;border-color:rgba(255,255,255,.55)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="The Clear Difference, home">
+      <svg viewBox="0 0 306 160" role="img" aria-hidden="true" focusable="false">
+        <path d="M14 112V14h134" fill="none" stroke="#585858" stroke-width="13"/>
+        <path d="M292 62v84H158" fill="none" stroke="#585858" stroke-width="13"/>
+        <text x="40" y="88" font-family="Montserrat,Arial,sans-serif" font-weight="600" font-size="25" fill="#585858">THE</text>
+        <text x="100" y="91" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="66" letter-spacing="-1" fill="#45A9E1">clear</text>
+        <text x="38" y="127" font-family="Montserrat,Arial,sans-serif" font-weight="600" font-size="31" letter-spacing="1" fill="#45A9E1">DIFFERENCE</text>
+      </svg>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="nl" href="https://www.thecleardifferencellc.com/services.htm">Services</a>
+      <a class="nl" href="https://www.thecleardifferencellc.com/gallery.htm">Gallery</a>
+      <a class="nl" href="https://www.thecleardifferencellc.com/contact.htm">Contact</a>
+      <a class="btn btn-primary" href="tel:+12623669927"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call Jeff<span class="full"> (262) 366-9927</span></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <p class="label">Professional window cleaning and more</p>
+        <h1 id="h1">Call Jeff.<br> See the <span class="c">difference.</span></h1>
+        <p class="sub">Residential and commercial window cleaning, plus chandeliers, gutters and pressure washing, serving the greater Milwaukee and Waukesha areas.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+12623669927"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call (262) 366-9927</a>
+          <a class="btn btn-ghost" href="mailto:thecleardifferencellc@gmail.com?subject=Window%20cleaning%20estimate">Email for a quote</a>
+        </div>
+        <div class="jeff-chip">
+          <img src="img/jeff.webp" width="480" height="480" alt="Jeff Eppers smiling in front of a house window">
+          <p><strong>Jeff Eppers</strong>Owner, The Clear Difference</p>
+        </div>
+      </div>
+      <figure class="hero-photo bracket">
+        <img src="img/great-room.webp" width="1600" height="1200" alt="Arched great room with tall wood-framed windows, a chandelier, and a window cleaner working from a ladder" fetchpriority="high">
+        <figcaption>Arched great-room windows, from the company gallery</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li><b>Homes &amp; businesses</b><span>Residential and commercial window cleaning</span></li>
+        <li><b>More than windows</b><span>Chandeliers, gutters, pressure washing</span></li>
+        <li><b>Talk to the owner</b><span>Call Jeff Eppers directly</span></li>
+        <li><b>Local</b><span>Greater Milwaukee and Waukesha areas</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="label">Our services</p>
+          <h2 id="svc-h">What needs a clear difference?</h2>
+        </div>
+        <p>Pick a job to see real work from The Clear Difference gallery. Not sure what you need? Call Jeff and describe it.</p>
+      </div>
+      <div class="picker">
+        <div class="tabs" role="tablist" aria-label="Services">
+          <button class="tab" role="tab" id="t-win" aria-controls="p-win" aria-selected="true">Windows <small>Inside the home</small></button>
+          <button class="tab" role="tab" id="t-chan" aria-controls="p-chan" aria-selected="false" tabindex="-1">Chandeliers <small>High fixtures</small></button>
+          <button class="tab" role="tab" id="t-gut" aria-controls="p-gut" aria-selected="false" tabindex="-1">Gutters <small>Roof edge</small></button>
+          <button class="tab" role="tab" id="t-pw" aria-controls="p-pw" aria-selected="false" tabindex="-1">Pressure washing <small>Walks &amp; patios</small></button>
+          <button class="tab" role="tab" id="t-biz" aria-controls="p-biz" aria-selected="false" tabindex="-1">Businesses <small>Commercial</small></button>
+        </div>
+        <div>
+          <div class="panel bracket" role="tabpanel" id="p-win" aria-labelledby="t-win">
+            <div class="shot"><img src="img/window-wall.webp" width="1000" height="747" alt="Tall multi-pane window wall looking out on green woods and birch trees"></div>
+            <div class="copy"><h3>Windows</h3><p>Residential and commercial window cleaning, from big multi-pane window walls to lake-view living rooms.</p><span class="cap">Photo: a window wall from the company gallery.</span></div>
+          </div>
+          <div class="panel bracket" role="tabpanel" id="p-chan" aria-labelledby="t-chan" hidden>
+            <div class="shot"><img src="img/chandelier.webp" width="1200" height="900" alt="Round crystal chandelier glowing against a dark ceiling" loading="lazy"></div>
+            <div class="copy"><h3>Chandeliers</h3><p>Chandelier cleaning is on the service list alongside windows. Ask Jeff about yours.</p><span class="cap">Photo: a crystal chandelier from the company gallery.</span></div>
+          </div>
+          <div class="panel bracket" role="tabpanel" id="p-gut" aria-labelledby="t-gut" hidden>
+            <div class="shot"><img class="tall" src="img/gutter.webp" width="800" height="1067" alt="Looking down a shingled roof edge along a cleared gutter above a green yard" loading="lazy"></div>
+            <div class="copy"><h3>Gutters</h3><p>Gutters are on the service list too, along with windows and pressure washing.</p><span class="cap">Photo: a gutter run from the company gallery.</span></div>
+          </div>
+          <div class="panel bracket" role="tabpanel" id="p-pw" aria-labelledby="t-pw" hidden>
+            <div class="shot"><img src="img/sidewalk.webp" width="1100" height="825" alt="Concrete patio half pressure-washed, showing a clean line between washed and unwashed slabs" loading="lazy"></div>
+            <div class="copy"><h3>Pressure washing</h3><p>Concrete walks and patios. You can see the line where the washing stops.</p><span class="cap">Photo: a patio mid-job, from the company gallery.</span></div>
+          </div>
+          <div class="panel bracket" role="tabpanel" id="p-biz" aria-labelledby="t-biz" hidden>
+            <div class="shot biz"><div><span class="label">Commercial</span><strong>Businesses, too.</strong><span>Commercial window cleaning.</span></div></div>
+            <div class="copy"><h3>Businesses</h3><p>The Clear Difference does commercial as well as residential window cleaning. Call Jeff to talk through your building.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="label">Recent work</p>
+          <h2 id="gal-h">Homes that deserve clear glass.</h2>
+        </div>
+        <p>Real photos from The Clear Difference gallery.</p>
+      </div>
+      <div class="grid3">
+        <figure><div class="ph"><img src="img/lake-view.webp" width="1200" height="896" alt="Lake view through three clean double-hung windows, with a white picket fence and pier" loading="lazy"></div><figcaption>Lake view through clean windows</figcaption></figure>
+        <figure><div class="ph"><img src="img/rotunda.webp" width="1000" height="1333" alt="White rotunda with curved windows and a cupola under a blue sky" loading="lazy"></div><figcaption>Rotunda windows</figcaption></figure>
+        <figure><div class="ph"><img src="img/modern-house.webp" width="1000" height="747" alt="Modern red and stone house with large windows and a balcony" loading="lazy"></div><figcaption>Modern home, large windows</figcaption></figure>
+      </div>
+      <div class="more">
+        <p>More photos are in the full gallery.</p>
+        <a class="btn btn-ghost" href="https://www.thecleardifferencellc.com/gallery.htm">See the gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="meet" aria-labelledby="meet-h" id="contact">
+    <div class="wrap">
+      <div class="jeff">
+        <figure class="jeff-pic bracket" style="margin:10px"><img src="img/jeff.webp" width="480" height="480" alt="Portrait of Jeff Eppers, owner of The Clear Difference" loading="lazy"></figure>
+        <div>
+          <p class="label">Meet the owner</p>
+          <h2 id="meet-h">Meet Jeff Eppers.</h2>
+          <p>When you call The Clear Difference, you talk with Jeff Eppers, the owner. Tell him what needs cleaning: windows, chandeliers, gutters or pressure washing.</p>
+          <p class="quote-line">“Call us to see the DIFFERENCE.”</p>
+        </div>
+      </div>
+      <aside class="card" aria-labelledby="card-h">
+        <p class="label">Contact</p>
+        <h3 id="card-h">Call Jeff today.</h3>
+        <dl>
+          <div><dt>Phone</dt><dd><a href="tel:+12623669927">(262) 366-9927</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:thecleardifferencellc@gmail.com">thecleardifferencellc@gmail.com</a></dd></div>
+          <div><dt>Service area</dt><dd>Serving the greater Milwaukee and Waukesha areas</dd></div>
+        </dl>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+12623669927">Call (262) 366-9927</a>
+          <a class="btn btn-ghost" href="mailto:thecleardifferencellc@gmail.com?subject=Window%20cleaning%20estimate">Email Jeff</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="closer" aria-label="About this preview">
+    <div class="wrap">
+      <div>
+        <h2>A first look at your new site.</h2>
+        <p>Your photos and your name up front, with one tap to call from any phone.</p>
+      </div>
+      <a class="btn" href="tel:+12623669927">Call (262) 366-9927</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official The Clear Difference site. Logo redrawn; services, contact details and photos from thecleardifferencellc.com.</p>
+  </div>
+</footer>
+
+<div class="callbar" role="navigation" aria-label="Quick contact">
+  <a class="btn btn-primary" href="tel:+12623669927">Call (262) 366-9927</a>
+  <a class="btn btn-ghost" href="mailto:thecleardifferencellc@gmail.com">Email</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(t,focus){
+    tabs.forEach(function(x){
+      var on=x===t;
+      x.setAttribute('aria-selected',on?'true':'false');
+      x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+    });
+    if(focus)t.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t)});
+    t.addEventListener('keydown',function(e){
+      var k=e.key,n=null;
+      if(k==='ArrowRight'||k==='ArrowDown')n=tabs[(i+1)%tabs.length];
+      else if(k==='ArrowLeft'||k==='ArrowUp')n=tabs[(i-1+tabs.length)%tabs.length];
+      else if(k==='Home')n=tabs[0];
+      else if(k==='End')n=tabs[tabs.length-1];
+      if(n){e.preventDefault();select(n,true)}
+    });
+  });
+})();
+</script>
+</body>
+</html>
