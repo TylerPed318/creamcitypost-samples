@@ -310,3 +310,4 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - Nov 12, 22:43 CT (scheduled run): last finished CCP-094 v1,0credits; next unclaimed CCP-095 then098,099,101,102,104,105. CCP-093 remains another run claim (21:30CT), existing folder without ready email; recovery only after overlap expiry and recheck. No open revisions. Model selection unavailable; actual supported Playwright QA used. Open CNC photo permission/contact confirmation.
 - in progress — CCP-093 (Nov 12, 11:03 PM CT, scheduled run; stale claim recovery of published v1)
+- in progress — CCP-095 (Nov 13, 00:05 AM CT, scheduled run)
