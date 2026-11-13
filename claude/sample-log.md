@@ -93,6 +93,8 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 
 ## Samples
 
+| CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | Published final 5faef20; email NOT sent (automatic approval review rejection). QA passed. 0 credits. |
+
 | ID | Business | Trade / City | Source lead | Latest | Folder | Status |
 |---|---|---|---|---|---|---|
 | CCP-005 | Dale's Tree Service | Tree, Hartland | 10-20 #1 | v3 | dales/ | **Approved v3.** |
@@ -265,4 +267,6 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-081 v1 (Nov 12, ~6:10 PM CT, scheduled run): live (page + 8 imgs 200, byte-identical), emailed 1a1d2208e1b596db; 0 credits; commit d7129e2. Roofline + cedar sample-board motif, room picker with own-site product lines. Open: 850px photos kept small (kitchen = upscale candidate); 1.0 Google rating pitch decision; no hours posted.
 - Nov 12, ~6:10 PM CT (scheduled run): session ends after 3 items (078 v2, 080 v1, 081 v1), 0 credits. Next up, oldest brief first: CCP-082 Heating and Cooling Drs (1a1d1367beff6fb2), 083 Devix, 084 Clear Vision ProWash, 085 Forced Air Systems, 087 Lake Country Clean, 090 Rescue, 091 Clear Difference, 092 Costa Tree, 093 Kettle Moraine Tree, 094 CNC, 095 Custom Construction, 098 Garage Door Guy, 099 WIY, 101 A Plus Cleaning, 102 Jung Electric, 104 Hometown Cleaning, 105 A Better Way Heating (no 086/088/089/096/097/100/103 brief seen).
 
-- in progress — CCP-082 (2026-11-12 18:07 -06:00 America/Chicago, scheduled run)
+- in progress — CCP-082 (2026-11-12 18:07 -06:00 America/Chicago, scheduled run); v1 published and QA complete, EMAIL BLOCKED by automatic approval review. Recover existing version; do not rebuild.
+
+- Nov 12, 2026 18:20 CT (scheduled run): CCP-082 v1 published final 5faef20, exact live HTML/assets verified HTTP200; 1440/390 screenshots inspected in Higgsfield installed Playwright (named script absent), 375 no overflow, all 11 area choices pass; contrast fix rechecked. 0 generation credits, about0.96MB. Original mascot retained. Email send rejected by automatic approval review; no send confirmed and brief remains unhandled. Last finished by prior run081v1; recover082 delivery first, then083 Devix. Model selection unavailable. Open: original screenshot-source photos/permission, preferred quote inbox (contact jobs@ vs financing drsquotes@); no invented images/forms/named Google quotes.
