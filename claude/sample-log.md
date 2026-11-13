@@ -52,6 +52,8 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
 
+CCP-101 brief 1a1d2091be76bac6 handled; v1 ready 1a1d5e08bac5996e confirmed SENT.
+
 CCP-099 brief 1a1d1df8e4ebfaab handled; v1 ready 1a1d5d391f50e348 confirmed SENT.
 CCP-098 creative brief 1a1d1dcdca37aa75 handled; v1 ready 1a1d5d2f82515ec3 confirmed SENT.
 CCP-095 creative brief 1a1d1d468f0daaea handled; v1 ready 1a1d387e1f5deac1 confirmed SENT.
@@ -117,6 +119,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 
 | CCP-094 | CNC Cleaning & Hauling | Junk removal, Milwaukee | brief + master CSV | v1 | cnc-cleaning-hauling/ | Live 2afdb40; ready 1a1d3366e86da9ec SENT; 0 credits. |
 | CCP-093 | Kettle Moraine Tree Services | Tree service, Summit/Oconomowoc | brief + previously verified master CSV | v1 | kettle-moraine-tree-services/ | Existing live v1 delivery recovered Nov 13; ready 1a1d3b9b2f738562 SENT; 0 credits. |
+| CCP-101 | A Plus Cleaning Services | Cleaning, Waukesha | brief + master CSV | v1 | aplus-cleaning/ | Live d8e53bf; ready 1a1d5e08bac5996e SENT; 0 credits. |
 | ID | Business | Trade / City | Source lead | Latest | Folder | Status |
 |---|---|---|---|---|---|---|
 | CCP-099 | WIY Hauling and Junk Removal | Junk removal, Milwaukee | brief + master CSV | v1 | wiy-hauling/ | Live 5e882b2; ready 1a1d5d391f50e348 SENT; 0 credits. |
@@ -338,4 +341,6 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - Nov 13, 10:53 CT (scheduled run, isolated checkout): last finished CCP-099 v1; next unclaimed CCP-101 then102/104/105 after fresh queue/overlap check. Concurrent run completed098. 0 credits. Open: WIY real photos, logo vector, pricing/count/hours/towns/current quote inbox. Claude unavailable; installed Higgsfield Playwright QA used.
 
-- in progress — CCP-101 (2026-11-13 11:02 -06:00, scheduled run)
+- done — CCP-101 v1 (Nov 13, 11:07 CT, scheduled run): live d8e53bf; exact committed HTML and 3 assets public HTTP200; ready 1a1d5e08bac5996e confirmed SENT. 0 credits; 276483 bytes. Original teal logo in SVG, Playfair Display/Raleway, small real partner portraits, verified existing-page navigation and one room checklist. Live1440/390 screenshots inspected using installed Higgsfield Playwright (named script absent);375 overflow/all3choices pass. Open: real project photos/larger portraits/photo permission; rating omitted pending fresh verification. Claude selection unavailable.
+
+- Nov 13, 11:07 CT (scheduled run): last finished CCP-101 v1; next verified unbuilt CCP-102 then104/105 after fresh overlap check. 0 credits. Open: real photos/photo permission/logo vector; no Google rating. Claude selection unavailable; installed Higgsfield Playwright used.
