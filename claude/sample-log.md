@@ -51,6 +51,8 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+
+CCP-099 brief 1a1d1df8e4ebfaab handled; v1 ready 1a1d5d391f50e348 confirmed SENT.
 CCP-098 creative brief 1a1d1dcdca37aa75 handled; v1 ready 1a1d5d2f82515ec3 confirmed SENT.
 CCP-095 creative brief 1a1d1d468f0daaea handled; v1 ready 1a1d387e1f5deac1 confirmed SENT.
 CCP-092 creative brief 1a1d1a0feb249cc2 handled; v1 ready 1a1d2c3421599772 confirmed SENT (Nov 12).
@@ -117,6 +119,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-093 | Kettle Moraine Tree Services | Tree service, Summit/Oconomowoc | brief + previously verified master CSV | v1 | kettle-moraine-tree-services/ | Existing live v1 delivery recovered Nov 13; ready 1a1d3b9b2f738562 SENT; 0 credits. |
 | ID | Business | Trade / City | Source lead | Latest | Folder | Status |
 |---|---|---|---|---|---|---|
+| CCP-099 | WIY Hauling and Junk Removal | Junk removal, Milwaukee | brief + master CSV | v1 | wiy-hauling/ | Live 5e882b2; ready 1a1d5d391f50e348 SENT; 0 credits. |
 | CCP-005 | Dale's Tree Service | Tree, Hartland | 10-20 #1 | v3 | dales/ | **Approved v3.** |
 | CCP-006 | OnTime Handyman | Handyman, Sussex | 10-20 #2 | v1 | ontime-handyman/ | Awaiting review. |
 | CCP-007 | Urban Loggers LLC | Tree, Pewaukee | 10-20 #3 | v3 | urban-loggers/ | **Approved v3.** |
@@ -329,6 +332,8 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - done — CCP-098 v1 (Nov 13, 10:53 CT, scheduled run): live e124f71, exact HTML + 6 assets HTTP200; ready 1a1d5d2f82515ec3 confirmed SENT. 0 credits; 942476 bytes. Original logo/colors/Cairo/Roboto, door-frame motif, four real installs, service selector and existing-page navigation. Installed Playwright in Higgsfield used (named absent),1440/390 visually inspected,375 overflow/all4choices pass. Open: logo vector/photo permission; no Google rating/hours/towns/texting/service-speed promises. Claude selection unavailable.
 
-- in progress — CCP-099 (2026-11-13 10:54 America/Chicago, scheduled run; isolated checkout)
+- done — CCP-099 v1 (Nov 13, 10:53 CT, scheduled run): live 5e882b2 exact HTML/logo HTTP200; ready 1a1d5d391f50e348 confirmed SENT. 0 credits; 315860 bytes. Photo-free original yellow/black brand, original PNG in SVG, five-choice removal selector, own-site testimonial, existing-page navigation. Installed Higgsfield Playwright (named absent),1440/390 visually inspected,375 no overflow/errors/all choices pass. Open: real photos/logo vector, project count/pricing/hours/towns/current quote inbox; omitted. Claude selection unavailable.
 
 - Nov 13, 10:53 CT (scheduled run): last finished CCP-098 v1; next unclaimed CCP-101 then102/104/105; CCP-099 concurrent claim protected, published folder now exists (delivery belongs to that run). 0 credits. Open: original logo retained/photo permission; rating/hours/towns omitted. Claude unavailable; installed Higgsfield Playwright QA used.
+
+- Nov 13, 10:53 CT (scheduled run, isolated checkout): last finished CCP-099 v1; next unclaimed CCP-101 then102/104/105 after fresh queue/overlap check. Concurrent run completed098. 0 credits. Open: WIY real photos, logo vector, pricing/count/hours/towns/current quote inbox. Claude unavailable; installed Higgsfield Playwright QA used.
