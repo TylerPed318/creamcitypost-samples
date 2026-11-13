@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Devix Heating &amp; Cooling — Website concept by Cream City Post</title>
+<meta name="description" content="Website concept for Devix Heating & Cooling LLC, West Allis, WI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23D7263D'/%3E%3Cstop offset='.5' stop-color='%23C9B8C9'/%3E%3Cstop offset='1' stop-color='%232B3A8F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' fill='%23FAF8F5'/%3E%3Cpath d='M12 8h18c14 0 22 8 22 20s-8 20-22 20H12z' fill='%23141414'/%3E%3Cpath d='M22 17h7c7 0 11 4 11 11s-4 11-11 11h-7z' fill='%23FAF8F5'/%3E%3Crect x='8' y='52' width='48' height='6' fill='url(%23g)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414;
+  --heat:#D7263D;
+  --heat-dk:#B01C30;
+  --cool:#2B3A8F;
+  --mist:#C9B8C9;
+  --paper:#FAF8F5;
+  --card:#FFFFFF;
+  --steel:#5E6670;
+  --line:#E4DFD8;
+  --night:#121626;
+  --bar:linear-gradient(90deg,var(--heat) 0%,var(--mist) 50%,var(--cool) 100%);
+  --display:'Archivo Black','Arial Black',Impact,sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --script:'Pacifico','Brush Script MT',cursive;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--cool)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--cool);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100%);margin:0 auto;padding-left:20px;padding-right:20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* striped temperature bar: the logo's own motif */
+.stripes{background:repeating-linear-gradient(90deg,transparent 0 9px,var(--paper) 9px 12px),var(--bar)}
+.rule{height:8px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.96);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:20px;min-height:76px}
+.logo{display:block;flex:0 0 auto;text-decoration:none}
+.logo svg{width:200px;height:auto;display:block}
+nav{margin-left:auto;display:flex;gap:4px}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;padding:12px 12px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center}
+nav a:hover{background:#EFEBE5}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font:700 16px/1.2 var(--body);text-decoration:none;border:2px solid transparent;transition:transform .15s ease,background .15s ease,color .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-heat{background:var(--heat);color:#fff}
+.btn-heat:hover{background:var(--heat-dk)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px;flex:0 0 auto}
+.hd .btn{padding:10px 18px}
+
+/* hero */
+.hero{padding:clamp(36px,6vw,72px) 0 clamp(40px,6vw,80px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,64px);align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);margin:0 0 18px}
+.kicker i{width:46px;height:10px;border-radius:2px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(40px,6.4vw,82px);line-height:.98;letter-spacing:-.01em;margin:0 0 22px;text-transform:uppercase}
+h1 .hot{color:var(--heat)}
+h1 .cold{color:var(--cool)}
+.sub{font-size:clamp(17px,1.6vw,20px);color:#2E3238;max-width:36em;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cell{margin:18px 0 0;color:var(--steel);font-size:15px}
+.cell a{font-weight:700}
+
+.thermo{position:relative;display:grid;grid-template-columns:22px minmax(0,1fr);gap:14px;max-width:440px;justify-self:end;width:100%}
+.thermo .tube{border-radius:12px;background:repeating-linear-gradient(180deg,transparent 0 9px,var(--paper) 9px 12px),linear-gradient(180deg,var(--heat),var(--mist) 50%,var(--cool))}
+.thermo figure{margin:0;position:relative}
+.thermo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:14px 14px 0 var(--ink)}
+.thermo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(18,22,38,.86);color:#fff;font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px}
+
+/* proof strip */
+.proof{background:var(--night);color:#fff}
+.proof ul{list-style:none;margin:0;padding:22px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.proof li{display:flex;flex-direction:column;gap:2px;padding-left:16px;border-left:3px solid var(--mist)}
+.proof li:nth-child(1){border-color:var(--heat)}
+.proof li:nth-child(4){border-color:#8E9BE0}
+.proof b{font-family:var(--display);font-weight:400;font-size:20px;letter-spacing:.01em}
+.proof span{font-size:14px;color:#C9CDD8}
+.proof a{color:#fff;text-decoration:none}
+.proof a:hover b{text-decoration:underline}
+
+/* dial / picker */
+.dial{padding:clamp(56px,8vw,104px) 0}
+.sec-h{font-family:var(--display);font-weight:400;font-size:clamp(30px,4vw,48px);line-height:1.04;margin:0 0 10px;text-transform:uppercase}
+.sec-p{color:var(--steel);margin:0 0 32px;max-width:40em}
+.track{position:relative;border-radius:14px;padding:6px;background:#fff;border:1px solid var(--line)}
+.track .stripes{position:absolute;inset:6px;border-radius:10px;opacity:.95}
+.stops{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.stops button{appearance:none;border:0;cursor:pointer;min-height:76px;border-radius:10px;background:rgba(250,248,245,.0);color:var(--ink);font:700 15px/1.2 var(--body);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;transition:background .2s ease,box-shadow .2s ease}
+.stops button span{font-family:var(--display);font-weight:400;font-size:clamp(17px,2.2vw,24px);text-transform:uppercase;letter-spacing:.02em;background:rgba(250,248,245,.92);padding:4px 12px;border-radius:6px}
+.stops button small{font:600 12px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;background:rgba(250,248,245,.92);padding:4px 8px;border-radius:4px;color:#3A3F46}
+.stops button:hover span{background:#fff}
+.stops button[aria-selected="true"]{background:rgba(255,255,255,.0);box-shadow:inset 0 0 0 4px var(--ink)}
+.stops button[aria-selected="true"] span{background:var(--ink);color:#fff}
+.panel{margin-top:22px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,3.4vw,40px);border-top:8px solid var(--accent,var(--heat))}
+.panel h3{font-family:var(--display);font-weight:400;font-size:clamp(24px,2.6vw,32px);text-transform:uppercase;margin:0 0 10px;line-height:1.05}
+.panel blockquote{margin:0;font-size:18px;color:#2E3238}
+.panel blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:13px;color:var(--steel)}
+.panel ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;align-content:start}
+.panel li{display:flex;gap:12px;align-items:center;font-weight:600;padding:12px 14px;border-radius:10px;background:var(--paper)}
+.panel li::before{content:"";width:10px;height:10px;border-radius:2px;flex:0 0 auto;background:var(--accent,var(--heat))}
+.panel .both{grid-column:1/-1;margin:0;padding-top:18px;border-top:1px dashed var(--line);color:var(--steel);font-size:15px}
+.panel .both a{font-weight:700}
+@media (prefers-reduced-motion:no-preference){.panel.swap{animation:rise .35s ease}}
+@keyframes rise{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* promises + contact */
+.close{padding:0 0 clamp(56px,8vw,104px)}
+.duo{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:24px;align-items:stretch}
+.words{background:var(--night);color:#fff;border-radius:var(--r);padding:clamp(24px,3.6vw,44px);position:relative;overflow:hidden}
+.words .rate{display:inline-flex;align-items:center;gap:10px;font-weight:700;color:#fff;text-decoration:none;background:rgba(255,255,255,.1);padding:10px 16px;border-radius:999px;min-height:44px}
+.words .rate:hover{background:rgba(255,255,255,.18)}
+.words .rate b{font-family:var(--display);font-weight:400;font-size:22px}
+.words .star{color:#FFC94D}
+.words h2{font-family:var(--display);font-weight:400;font-size:clamp(26px,3vw,38px);line-height:1.05;text-transform:uppercase;margin:22px 0 18px}
+.words ol{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:p}
+.words li{position:relative;padding-left:44px;font-size:17px;color:#E7E9F0;counter-increment:p}
+.words li::before{content:counter(p,decimal-leading-zero);position:absolute;left:0;top:1px;font-family:var(--display);font-size:15px;color:var(--mist)}
+.words .src{margin:20px 0 0;font-size:13px;color:#AEB4C4}
+.words .rule{position:absolute;left:0;right:0;bottom:0;height:8px}
+.words .rule.stripes{background:repeating-linear-gradient(90deg,transparent 0 9px,var(--night) 9px 12px),var(--bar)}
+
+.contact{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3.6vw,44px);display:flex;flex-direction:column;gap:16px}
+.contact h2{font-family:var(--display);font-weight:400;font-size:clamp(26px,3vw,38px);line-height:1.05;text-transform:uppercase;margin:0}
+.lines{display:grid;gap:10px}
+.line{display:grid;grid-template-columns:78px minmax(0,1fr);gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.line:last-child{border-bottom:0}
+.line dt{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+.line dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.line dd a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.line dd a:hover{text-decoration:underline}
+.line .big{font-family:var(--display);font-weight:400;font-size:clamp(22px,2.6vw,28px);color:var(--heat)}
+.contact .note{margin:0;font-size:14px;color:var(--steel)}
+
+.first{padding:clamp(48px,7vw,88px) 0;text-align:center;border-top:1px solid var(--line)}
+.first .tag{font-family:var(--script);color:var(--cool);font-size:clamp(26px,3.4vw,38px);margin:0 0 6px}
+.first h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,46px);text-transform:uppercase;margin:0 0 24px;line-height:1.05}
+.first .cta{justify-content:center}
+
+footer{background:var(--ink);color:#C8CBD1;font-size:14px;padding:26px 0 30px}
+footer p{margin:0;max-width:62em}
+footer a{color:#fff}
+
+.mbar{display:none}
+
+@media (max-width:980px){
+  nav{display:none}
+  .hd{justify-content:space-between}
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .thermo{justify-self:start;max-width:520px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .duo,.panel{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:600px){
+  body{padding-bottom:76px}
+  .wrap{padding-left:16px;padding-right:16px}
+  .logo svg{width:140px}
+  .hd{min-height:64px}
+  .hd .btn{padding:10px 14px;font-size:15px}
+  .hd .btn .t-long{display:none}
+  .thermo{grid-template-columns:14px minmax(0,1fr);gap:10px}
+  .thermo img{box-shadow:8px 8px 0 var(--ink)}
+  .stops button{min-height:68px}
+  .stops button small{display:none}
+  .stops button span{font-size:15px;padding:4px 7px;letter-spacing:0}
+  .proof b{font-size:17px}
+  .proof ul{gap:16px 12px}
+  .proof li{padding-left:10px}
+  .line{grid-template-columns:minmax(0,1fr);gap:0}
+  .mbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--ink);border-top:4px solid transparent;border-image:var(--bar) 1}
+  .mbar a{min-height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;text-decoration:none;color:#fff;font-size:15px}
+  .mbar .c{background:var(--heat)}
+  .mbar .e{background:#2A2F3A}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top" aria-label="Devix Heating &amp; Cooling LLC — Your Comfort Solution">
+      <svg viewBox="0 0 300 150" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#D7263D"/><stop offset=".5" stop-color="#C9B8C9"/><stop offset="1" stop-color="#2B3A8F"/></linearGradient>
+          <pattern id="lp" width="7.5" height="40" patternUnits="userSpaceOnUse"><rect width="6" height="40" fill="#fff"/></pattern>
+          <mask id="lm"><rect x="4" y="62" width="292" height="36" fill="url(#lp)"/></mask>
+        </defs>
+        <text x="150" y="56" text-anchor="middle" font-family="Archivo Black, Arial Black, sans-serif" font-size="66" letter-spacing="4" fill="#141414">DEVIX</text>
+        <rect x="4" y="62" width="292" height="36" fill="url(#lg)" mask="url(#lm)"/>
+        <text x="150" y="118" text-anchor="middle" font-family="Archivo Black, Arial Black, sans-serif" font-size="17.5" letter-spacing="1.2" fill="#141414">HEATING &amp; COOLING LLC</text>
+        <text x="150" y="144" text-anchor="middle" font-family="Pacifico, Brush Script MT, cursive" font-size="19" fill="#2B3A8F">Your Comfort Solution</text>
+      </svg>
+    </a>
+    <nav aria-label="Page">
+      <a href="#services">Services</a>
+      <a href="#why">Why Devix</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-heat" href="tel:+14145439000"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span><span class="t-long">Call </span>(414) 543-9000</span></a>
+  </div>
+  <div class="rule stripes" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker"><i class="stripes" aria-hidden="true"></i>West Allis · Milwaukee County</p>
+        <h1>Furnace out? <span class="hot">AC down?</span> <span class="cold">Call Devix.</span></h1>
+        <p class="sub">Heating and cooling for homes and businesses: expert installation, maintenance and repair, from our office at 6316 W. Burnham St. in West Allis.</p>
+        <div class="cta">
+          <a class="btn btn-heat" href="tel:+14145439000"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call (414) 543-9000</a>
+          <a class="btn btn-line" href="mailto:devixheating@gmail.com?subject=HVAC%20quote%20request">Email for a quote</a>
+        </div>
+        <p class="cell">Or call the cell: <a href="tel:+14146283993">(414) 628-3993</a></p>
+      </div>
+      <div class="thermo">
+        <div class="tube" aria-hidden="true"></div>
+        <figure>
+          <img src="img/bryant-furnace.jpg" width="1200" height="1500" alt="A newly installed gray Bryant gas furnace in a basement, with new galvanized ductwork and a vent pipe above it" fetchpriority="high">
+          <figcaption>New furnace install · photo from devixheatandcool.com</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li><a href="https://www.google.com/maps/place/Devix+Heating+and+Cooling/@43.010389,-87.991524,17z/data=!4m8!3m7!1s0x88051a986d25f947:0x41209375641a52f5!8m2!3d43.010389!4d-87.991524!9m1!1b1!16s%2Fg%2F1x5qtbtv?hl=en&amp;gl=us" target="_blank" rel="noopener"><b>★ 4.9 on Google</b></a><span>Rating from their Google listing</span></li>
+        <li><b>Homes + businesses</b><span>Residential &amp; commercial HVAC</span></li>
+        <li><b>Furnaces + central air</b><span>Installation, maintenance, repair</span></li>
+        <li><b>W. Burnham St.</b><span>Local office in West Allis</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="dial" id="services">
+    <div class="wrap">
+      <h2 class="sec-h">Slide from heat to cool</h2>
+      <p class="sec-p">Pick a spot on the Devix bar to see what they handle there.</p>
+      <div class="track">
+        <div class="stripes" aria-hidden="true"></div>
+        <div class="stops" role="tablist" aria-label="Services">
+          <button role="tab" id="t-heat" aria-controls="panel" aria-selected="true" data-k="heat"><span>Heating</span><small>Furnaces</small></button>
+          <button role="tab" id="t-tune" aria-controls="panel" aria-selected="false" data-k="tune" tabindex="-1"><span>Tune-ups</span><small>Maintenance</small></button>
+          <button role="tab" id="t-cool" aria-controls="panel" aria-selected="false" data-k="cool" tabindex="-1"><span>Cooling</span><small>Central air</small></button>
+        </div>
+      </div>
+      <div class="panel" id="panel" role="tabpanel" aria-labelledby="t-heat" aria-live="polite">
+        <div>
+          <h3 id="p-h">Furnace repair &amp; replacement</h3>
+          <blockquote><p id="p-q" style="margin:0">“We provide tailored heating and cooling solutions for homes, ensuring year-round comfort and maximum energy efficiency.”</p><cite>— devixheatandcool.com</cite></blockquote>
+        </div>
+        <ul id="p-l"><li>Gas furnace repair</li><li>Furnace replacement</li><li>New furnace installation</li></ul>
+        <p class="both">Run a business? “Our commercial HVAC services focus on large-scale installations and maintenance for businesses, prioritizing reliability and air quality.” <a href="tel:+14145439000">Call the office</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" id="why">
+    <div class="wrap duo">
+      <div class="words">
+        <a class="rate" href="https://www.google.com/maps/place/Devix+Heating+and+Cooling/@43.010389,-87.991524,17z/data=!4m8!3m7!1s0x88051a986d25f947:0x41209375641a52f5!8m2!3d43.010389!4d-87.991524!9m1!1b1!16s%2Fg%2F1x5qtbtv?hl=en&amp;gl=us" target="_blank" rel="noopener"><span class="star" aria-hidden="true">★</span><b>4.9</b> on Google · read the reviews</a>
+        <h2>What Devix promises</h2>
+        <ol>
+          <li>“Peak comfort and energy efficiency through expert installation, maintenance, and repair.”</li>
+          <li>“Regular maintenance is key to longevity.”</li>
+          <li>“Whether you need a routine maintenance check or an urgent repair, our team is ready to provide expert HVAC solutions.”</li>
+        </ol>
+        <p class="src">Promises from devixheatandcool.com; rating from Google.</p>
+        <div class="rule stripes" aria-hidden="true"></div>
+      </div>
+      <div class="contact" id="contact">
+        <h2>Call the office</h2>
+        <dl class="lines">
+          <div class="line"><dt>Office</dt><dd><a class="big" href="tel:+14145439000">(414) 543-9000</a></dd></div>
+          <div class="line"><dt>Cell</dt><dd><a href="tel:+14146283993">(414) 628-3993</a></dd></div>
+          <div class="line"><dt>Email</dt><dd><a href="mailto:devixheating@gmail.com">devixheating@gmail.com</a></dd></div>
+          <div class="line"><dt>Address</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=6316+W+Burnham+St+West+Allis+WI+53219" target="_blank" rel="noopener">6316 W. Burnham St.<br>West Allis, WI 53219</a></dd></div>
+          <div class="line"><dt>Social</dt><dd><a href="https://www.facebook.com/share/1CXgLG4yuY/" target="_blank" rel="noopener">Devix on Facebook</a></dd></div>
+        </dl>
+        <p class="note">Homes and businesses across Milwaukee County.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="first">
+    <div class="wrap">
+      <p class="tag">Your Comfort Solution</p>
+      <h2>A first look at your new site</h2>
+      <div class="cta">
+        <a class="btn btn-heat" href="tel:+14145439000">Call (414) 543-9000</a>
+        <a class="btn btn-line" href="mailto:devixheating@gmail.com">devixheating@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official Devix Heating &amp; Cooling site. Logo redrawn from their business card; services, contact details, promises and furnace photo from devixheatandcool.com; rating from Google.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="c" href="tel:+14145439000">Call (414) 543-9000</a>
+  <a class="e" href="mailto:devixheating@gmail.com">Email</a>
+</div>
+
+<script>
+(function(){
+  var data={
+    heat:{c:'var(--heat)',h:'Furnace repair & replacement',q:'“We provide tailored heating and cooling solutions for homes, ensuring year-round comfort and maximum energy efficiency.”',l:['Gas furnace repair','Furnace replacement','New furnace installation']},
+    tune:{c:'#8A7A92',h:'Inspection & tune-ups',q:'“Regular maintenance is key to longevity. We offer comprehensive inspection and tune-up programs to keep your systems running smoothly.”',l:['Furnace tune-ups','Central-air tune-ups','System inspections']},
+    cool:{c:'var(--cool)',h:'Central air repair & installs',q:'“We provide comprehensive HVAC solutions for residential and commercial properties, ensuring peak comfort and energy efficiency through expert installation, maintenance, and repair.”',l:['Air conditioner repair','New central air','AC replacement']}
+  };
+  var tabs=[].slice.call(document.querySelectorAll('.stops button'));
+  var panel=document.getElementById('panel');
+  function pick(btn,focus){
+    var d=data[btn.dataset.k];
+    tabs.forEach(function(t){var on=t===btn;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;});
+    panel.setAttribute('aria-labelledby',btn.id);
+    panel.style.setProperty('--accent',d.c);
+    document.getElementById('p-h').textContent=d.h;
+    document.getElementById('p-q').textContent=d.q;
+    document.getElementById('p-l').innerHTML=d.l.map(function(x){return '<li>'+x+'</li>';}).join('');
+    panel.classList.remove('swap');void panel.offsetWidth;panel.classList.add('swap');
+    if(focus)btn.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(t);});
+    t.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];
+      if(e.key==='ArrowLeft')n=tabs[(i+tabs.length-1)%tabs.length];
+      if(e.key==='Home')n=tabs[0];
+      if(e.key==='End')n=tabs[tabs.length-1];
+      if(n){e.preventDefault();pick(n,true);}
+    });
+  });
+})();
+</script>
+</body>
+</html>
