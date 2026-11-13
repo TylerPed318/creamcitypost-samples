@@ -357,3 +357,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-104 v1 (Nov 13, 14:10 CT, scheduled run): live d4ddae2 exact HTML byte-match public200; ready1a1d6866d45ee64f confirmed SENT. 0 credits;12740bytes. Photo-free original text wordmark/cocoa/taupe/Montserrat/Raleway/Open Sans; floor-plan motif, three-part cleaning explorer, verified existing-page navigation. Installed Higgsfield Playwright (named absent),1440/390 visually inspected,375 overflow/all3choices pass,no errors. Open: real team/job photos,current offers/history; family image excluded. Claude selection unavailable.
 
 - Nov 13, 14:10 CT (scheduled run): last finished CCP-104 v1; next verified unbuilt CCP-105 A Better Way Heating after fresh overlap/source checks. One sample completed;0credits. Open: Hometown real job/team photos,current offers/history. Original brand typefaces retained over brief proposals. Claude selection unavailable; installed Higgsfield Playwright used.
+
+- in progress — CCP-105 (2026-11-13 15:04 -06:00 America/Chicago, scheduled run)
