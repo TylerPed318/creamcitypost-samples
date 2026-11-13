@@ -344,3 +344,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-101 v1 (Nov 13, 11:07 CT, scheduled run): live d8e53bf; exact committed HTML and 3 assets public HTTP200; ready 1a1d5e08bac5996e confirmed SENT. 0 credits; 276483 bytes. Original teal logo in SVG, Playfair Display/Raleway, small real partner portraits, verified existing-page navigation and one room checklist. Live1440/390 screenshots inspected using installed Higgsfield Playwright (named script absent);375 overflow/all3choices pass. Open: real project photos/larger portraits/photo permission; rating omitted pending fresh verification. Claude selection unavailable.
 
 - Nov 13, 11:07 CT (scheduled run): last finished CCP-101 v1; next verified unbuilt CCP-102 then104/105 after fresh overlap check. 0 credits. Open: real photos/photo permission/logo vector; no Google rating. Claude selection unavailable; installed Higgsfield Playwright used.
+
+- in progress — CCP-102 (2026-11-13 13:00 -06:00 America/Chicago, scheduled run)
