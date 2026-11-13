@@ -270,3 +270,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - in progress — CCP-082 (2026-11-12 18:07 -06:00 America/Chicago, scheduled run); v1 published and QA complete, EMAIL BLOCKED by automatic approval review. Recover existing version; do not rebuild.
 
 - Nov 12, 2026 18:20 CT (scheduled run): CCP-082 v1 published final 5faef20, exact live HTML/assets verified HTTP200; 1440/390 screenshots inspected in Higgsfield installed Playwright (named script absent), 375 no overflow, all 11 area choices pass; contrast fix rechecked. 0 generation credits, about0.96MB. Original mascot retained. Email send rejected by automatic approval review; no send confirmed and brief remains unhandled. Last finished by prior run081v1; recover082 delivery first, then083 Devix. Model selection unavailable. Open: original screenshot-source photos/permission, preferred quote inbox (contact jobs@ vs financing drsquotes@); no invented images/forms/named Google quotes.
+
+- in progress — CCP-083 (2026-11-12 18:27 CT, scheduled run)
