@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-098 creative brief 1a1d1dcdca37aa75 handled; v1 ready 1a1d5d2f82515ec3 confirmed SENT.
 CCP-095 creative brief 1a1d1d468f0daaea handled; v1 ready 1a1d387e1f5deac1 confirmed SENT.
 CCP-092 creative brief 1a1d1a0feb249cc2 handled; v1 ready 1a1d2c3421599772 confirmed SENT (Nov 12).
 CCP-091 creative brief 1a1d19c19c136832 handled; v1 ready 1a1d2bd9971200d5 confirmed SENT (Nov 12).
@@ -105,6 +106,8 @@ CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confi
 CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738562 confirmed SENT (delivery recovery Nov 13).
 
 ## Samples
+
+| CCP-098 | The Garage Door Guy LLC | Garage doors, Waukesha area | brief + master CSV | v1 | garage-door-guy/ | Live e124f71; ready 1a1d5d2f82515ec3 SENT; 0 credits. |
 
 | CCP-095 | Custom Construction of Wisconsin | Concrete, Waukesha | brief + master CSV | v1 | custom-construction-wisconsin/ | Live 8db22cc; ready 1a1d387e1f5deac1 SENT; 0 credits. |
 
@@ -324,6 +327,8 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - Nov 13, 01:06 CT (scheduled run): last finished CCP-093 v1 delivery recovery, 0 credits; next verified unbuilt CCP-098 then099/101/102/104/105. No open revisions identified; prior builds preserved. Open: KM photo permission, firewood prices/credentials and hours conflict. Runtime cannot select Claude; existing Higgsfield Playwright QA reused after exact byte-match verification.
 
-- in progress — CCP-098 (2026-11-13 10:48 America/Chicago, scheduled run)
+- done — CCP-098 v1 (Nov 13, 10:53 CT, scheduled run): live e124f71, exact HTML + 6 assets HTTP200; ready 1a1d5d2f82515ec3 confirmed SENT. 0 credits; 942476 bytes. Original logo/colors/Cairo/Roboto, door-frame motif, four real installs, service selector and existing-page navigation. Installed Playwright in Higgsfield used (named absent),1440/390 visually inspected,375 overflow/all4choices pass. Open: logo vector/photo permission; no Google rating/hours/towns/texting/service-speed promises. Claude selection unavailable.
 
 - in progress — CCP-099 (2026-11-13 10:54 America/Chicago, scheduled run; isolated checkout)
+
+- Nov 13, 10:53 CT (scheduled run): last finished CCP-098 v1; next unclaimed CCP-101 then102/104/105; CCP-099 concurrent claim protected, published folder now exists (delivery belongs to that run). 0 credits. Open: original logo retained/photo permission; rating/hours/towns omitted. Claude unavailable; installed Higgsfield Playwright QA used.
