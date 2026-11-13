@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Clear Vision ProWash — Website concept by Cream City Post</title>
+<meta name="description" content="Website concept for Clear Vision ProWash, exterior cleaning for Waukesha and the Milwaukee area.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F2747'/%3E%3Cpath d='M32 9C24 21 17 30 17 39a15 15 0 0 0 30 0c0-9-7-18-15-30z' fill='%233FA9F5'/%3E%3Cpath d='M26 40a7 7 0 0 0 7 7' stroke='%23fff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1E5AA8;
+  --blue-dk:#174A8C;
+  --sky:#3FA9F5;
+  --slate:#6B7480;
+  --slate-tx:#56606B;
+  --navy:#0F2747;
+  --white:#FFFFFF;
+  --mist:#F2F6FA;
+  --line:#DCE5EF;
+  --yellow:#F5B700;
+  --head:'Montserrat',system-ui,sans-serif;
+  --body:'Open Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--navy);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.wrap{width:min(1200px,100%);margin:0 auto;padding-left:24px;padding-right:24px}
+h1,h2,h3{font-family:var(--head);line-height:1.08;letter-spacing:-.015em;margin:0}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:22px;min-height:80px}
+.logo{flex:0 0 auto;display:block}
+.logo svg{width:190px;height:auto;display:block}
+nav{margin-left:auto;display:flex;gap:2px}
+nav a{color:var(--navy);text-decoration:none;font:600 15px/1 var(--head);padding:14px 12px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
+nav a:hover{background:var(--mist);color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 24px;border-radius:12px;font:700 16px/1.2 var(--head);text-decoration:none;border:2px solid transparent;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:0 0 auto}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-dk)}
+.btn-yel{background:var(--yellow);color:var(--navy)}
+.btn-yel:hover{background:#FFC72C}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hd .btn{min-height:46px;padding:10px 18px;font-size:15px}
+
+/* hero */
+.hero{position:relative;background:var(--mist);overflow:hidden}
+.hero::before{content:"";position:absolute;right:-12%;top:-40%;width:78%;aspect-ratio:1;border-radius:50%;border:38px solid rgba(63,169,245,.16);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(-8deg)}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(28px,4vw,56px);align-items:center;padding-top:clamp(40px,6vw,80px);padding-bottom:clamp(48px,7vw,96px)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:700 13px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 18px}
+.eyebrow svg{width:14px;height:18px}
+h1{font-weight:800;font-size:clamp(36px,5.2vw,64px);margin-bottom:20px}
+h1 em{font-style:normal;color:var(--blue);background:linear-gradient(transparent 70%,rgba(63,169,245,.28) 70%)}
+.sub{font-size:clamp(17px,1.5vw,19px);color:#2F3F55;margin:0 0 28px;max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hrs{margin:18px 0 0;font-size:15px;color:var(--slate-tx)}
+.hrs b{color:var(--navy)}
+.shot{position:relative;margin:0}
+.shot img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:120px var(--r) var(--r) var(--r);box-shadow:0 30px 60px -30px rgba(15,39,71,.55)}
+.shot figcaption{position:absolute;right:16px;bottom:16px;background:rgba(15,39,71,.88);color:#fff;font:600 13px/1.3 var(--body);padding:8px 14px;border-radius:999px}
+.swoosh{position:absolute;left:-6%;bottom:-34px;width:70%;height:auto;pointer-events:none}
+
+/* proof */
+.proof{background:var(--navy);color:#fff}
+.proof ul{list-style:none;margin:0;padding:26px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.proof li{display:flex;gap:14px;align-items:center}
+.proof .drop{flex:0 0 auto;width:34px;height:42px}
+.proof b{display:block;font:800 20px/1.15 var(--head)}
+.proof span{font-size:14px;color:#B9C7DA}
+
+/* services */
+.svc{padding:clamp(60px,8vw,104px) 0}
+.split-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:end;margin-bottom:34px}
+.split-h h2{font-weight:800;font-size:clamp(30px,3.8vw,46px)}
+.split-h p{margin:0;color:var(--slate-tx);font-size:17px}
+.grid6{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--line);border:2px solid var(--line);border-radius:var(--r);overflow:hidden}
+.card{background:#fff;padding:26px 26px 28px;display:flex;flex-direction:column;gap:8px}
+.card .n{font:800 13px/1 var(--head);color:var(--sky);letter-spacing:.12em}
+.card h3{font-weight:700;font-size:21px}
+.card p{margin:0;color:var(--slate-tx);font-size:15px}
+.card:hover{background:var(--mist)}
+
+/* photos */
+.work{padding:0 0 clamp(60px,8vw,104px)}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.row3 figure{margin:0}
+.row3 img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.row3 figure:first-child img{border-radius:var(--r) var(--r) var(--r) 90px}
+.row3 figcaption{font-size:14px;color:var(--slate-tx);margin-top:10px;font-weight:600}
+
+/* town checker */
+.area{background:linear-gradient(160deg,var(--blue) 0%,var(--navy) 85%);color:#fff;padding:clamp(60px,8vw,100px) 0;position:relative;overflow:hidden}
+.area::after{content:"";position:absolute;left:-10%;bottom:-55%;width:60%;aspect-ratio:1;border-radius:50%;border:34px solid rgba(63,169,245,.22);border-right-color:transparent;border-top-color:transparent}
+.area-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.area h2{font-weight:800;font-size:clamp(30px,3.8vw,46px);margin-bottom:12px}
+.area p{color:#D6E4F5;margin:0 0 22px}
+.check{background:#fff;color:var(--navy);border-radius:var(--r);padding:clamp(20px,3vw,32px);box-shadow:0 24px 50px -24px rgba(0,0,0,.45)}
+.check label{display:block;font:700 15px/1.2 var(--head);margin-bottom:10px}
+.check input{width:100%;min-height:54px;border:2px solid var(--line);border-radius:12px;padding:12px 16px;font:600 18px/1.2 var(--body);color:var(--navy);background:var(--mist)}
+.check input:focus{border-color:var(--sky);background:#fff}
+.result{margin-top:16px;min-height:56px;padding:14px 16px;border-radius:12px;background:var(--mist);font-weight:600;display:flex;gap:12px;align-items:center}
+.result.yes{background:#E3F2FE;color:#0D4A85}
+.result.no{background:#FFF6DA;color:#5C4500}
+.result .ic{flex:0 0 auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:#fff}
+.result a{color:inherit;font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chips button{appearance:none;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);color:#fff;font:600 14px/1 var(--body);padding:0 14px;min-height:44px;border-radius:999px;cursor:pointer}
+.chips button:hover{background:rgba(255,255,255,.2)}
+.chips button[aria-pressed="true"]{background:#fff;color:var(--navy)}
+.note{font-size:13px;color:#B9CDE6;margin:14px 0 0}
+
+/* promises + contact */
+.why{padding:clamp(60px,8vw,104px) 0}
+.duo{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:24px}
+.prom{background:var(--mist);border-radius:var(--r);padding:clamp(24px,3.6vw,44px)}
+.prom h2{font-weight:800;font-size:clamp(28px,3.2vw,40px);margin-bottom:22px}
+.prom ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.prom li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:14px;font-size:17px}
+.prom li svg{width:26px;height:32px;margin-top:2px}
+.prom .src{margin:22px 0 0;font-size:13px;color:var(--slate-tx)}
+.contact{border:2px solid var(--navy);border-radius:var(--r);padding:clamp(24px,3.6vw,40px);display:flex;flex-direction:column;gap:14px}
+.contact h2{font-weight:800;font-size:clamp(26px,3vw,36px)}
+.contact .ph{font:800 clamp(26px,3vw,34px)/1 var(--head);color:var(--blue);text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
+.contact .ph:hover{text-decoration:underline}
+.contact dl{margin:0;display:grid;gap:12px}
+.contact dt{font:700 12px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--slate-tx);margin-bottom:4px}
+.contact dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.contact dd a{display:inline-flex;min-height:44px;align-items:center}
+
+.first{background:var(--mist);text-align:center;padding:clamp(50px,7vw,88px) 0}
+.first p{margin:0 0 8px;font:700 13px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.first h2{font-weight:800;font-size:clamp(28px,4vw,46px);margin-bottom:24px}
+.first .cta{justify-content:center}
+footer{background:var(--navy);color:#B9C7DA;font-size:14px;padding:28px 0 32px}
+footer p{margin:0;max-width:64em}
+footer a{color:#fff}
+.mbar{display:none}
+
+@media (max-width:1020px){
+  nav{display:none}
+  .hd{justify-content:space-between}
+  .hero-grid,.area-grid,.duo,.split-h{grid-template-columns:minmax(0,1fr)}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid6{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  body{padding-bottom:76px}
+  .wrap{padding-left:16px;padding-right:16px}
+  .logo svg{width:150px}
+  .hd{min-height:66px}
+  .hd .btn{padding:10px 14px}
+  .hd .btn .lg{display:none}
+  .shot img{border-radius:60px var(--r) var(--r) var(--r)}
+  .proof ul{grid-template-columns:minmax(0,1fr);gap:14px}
+  .grid6{grid-template-columns:minmax(0,1fr)}
+  .row3{grid-template-columns:minmax(0,1fr)}
+  .mbar{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--navy)}
+  .mbar a{min-height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;font:700 15px/1 var(--head);text-decoration:none}
+  .mbar .c{background:var(--blue);color:#fff}
+  .mbar .t{background:var(--yellow);color:var(--navy)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="drop" viewBox="0 0 34 42"><path d="M17 1C11 10 3 19 3 27a14 14 0 0 0 28 0C31 19 23 10 17 1z" fill="#3FA9F5"/><path d="M10 28a7 7 0 0 0 7 7" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top" aria-label="Clear Vision ProWash home">
+      <svg viewBox="0 0 330 150" aria-hidden="true">
+        <defs><linearGradient id="sw" x1="0" x2="1"><stop offset="0" stop-color="#1E5AA8"/><stop offset="1" stop-color="#3FA9F5"/></linearGradient></defs>
+        <path d="M70 34C120 6 196 2 236 18c14 6 18 16 14 26-6-16-40-26-90-24-36 2-66 8-90 14z" fill="url(#sw)"/>
+        <path d="M84 44c36-14 92-18 114-8-30-4-70 0-114 8z" fill="#9AA3AD"/>
+        <text x="8" y="94" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="44" fill="#1E3F8F" letter-spacing="-1">CLEARVISI</text>
+        <path d="M268 52c-6 9-13 17-13 25a13 13 0 0 0 26 0c0-8-7-16-13-25z" fill="#3FA9F5"/>
+        <path d="M262 79a6 6 0 0 0 6 6" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <text x="284" y="94" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="44" fill="#1E5AA8">N</text>
+        <text x="132" y="122" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="17" fill="#6B7480" letter-spacing="9">PROWASH</text>
+        <path d="M10 112c10 22 60 30 120 22-40 4-90 0-108-14z" fill="#9AA3AD"/>
+        <path d="M14 126c30 26 120 22 170 2-50 30-150 26-170-2z" fill="url(#sw)"/>
+      </svg>
+    </a>
+    <nav aria-label="Page">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-blue" href="tel:+12622045653"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span><span class="lg">Call or text </span>(262) 204-5653</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow"><svg aria-hidden="true"><use href="#drop"/></svg>Waukesha &amp; the Milwaukee area · Since 2003</p>
+        <h1>Exterior cleaning, done by a <em>23-person crew</em> that comes back if anything was missed.</h1>
+        <p class="sub">House washing, windows, gutters, roofs, decks and commercial buildings, with 7 to 8 Clear Vision trucks in the field every day.</p>
+        <div class="cta">
+          <a class="btn btn-blue" href="tel:+12622045653"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call (262) 204-5653</a>
+          <a class="btn btn-yel" href="sms:+12622045653">Text for a free quote</a>
+        </div>
+        <p class="hrs"><b>Office hours:</b> Mon–Fri 7a–5p, Sat &amp; Sun closed · <a href="mailto:info@waukeshapressurewashing.com">info@waukeshapressurewashing.com</a></p>
+      </div>
+      <figure class="shot">
+        <img src="img/hero-two-story.jpg" width="1600" height="901" alt="A Clear Vision ProWash technician washing the stone front of a two-story home while a branded Clear Vision pickup with hose reels waits in the driveway" fetchpriority="high">
+        <figcaption>A Clear Vision crew on a two-story home</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li><svg class="drop" aria-hidden="true"><use href="#drop"/></svg><div><b>Since 2003</b><span>Pressure washing experience</span></div></li>
+        <li><svg class="drop" aria-hidden="true"><use href="#drop"/></svg><div><b>23-person team</b><span>Plus an office that answers</span></div></li>
+        <li><svg class="drop" aria-hidden="true"><use href="#drop"/></svg><div><b>7–8 trucks a day</b><span>Crews in the field daily</span></div></li>
+        <li><svg class="drop" aria-hidden="true"><use href="#drop"/></svg><div><b>Licensed &amp; insured</b><span>Locally owned &amp; operated</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="svc" id="services">
+    <div class="wrap">
+      <div class="split-h">
+        <h2>Everything on the outside, washed right.</h2>
+        <p>Homes and businesses: the same eight kinds of work you can pick on their quote form, grouped into six.</p>
+      </div>
+      <div class="grid6">
+        <article class="card"><span class="n">01</span><h3>House &amp; siding washing</h3><p>Exterior home cleaning for siding, trim, soffits and entries.</p></article>
+        <article class="card"><span class="n">02</span><h3>Window cleaning</h3><p>Window cleaning for homes and businesses.</p></article>
+        <article class="card"><span class="n">03</span><h3>Gutter cleaning</h3><p>Clogged gutters and covers cleared so rainwater runs again.</p></article>
+        <article class="card"><span class="n">04</span><h3>Roof cleaning</h3><p>Roof cleaning for homes and commercial buildings.</p></article>
+        <article class="card"><span class="n">05</span><h3>Decks, fences &amp; stone</h3><p>Deck, fence, stone and concrete cleaning for patios, walks and drives.</p></article>
+        <article class="card"><span class="n">06</span><h3>Commercial</h3><p>Commercial buildings, parking lots, garages and awnings.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap row3">
+      <figure><img src="img/waterfront-patio.jpg" width="1100" height="619" loading="lazy" alt="A Clear Vision technician in a blue shirt using a pole on a waterfront home's patio, with the lake behind"><figcaption>Waterfront home, patio and siding</figcaption></figure>
+      <figure><img src="img/balcony-wash.jpg" width="1100" height="619" loading="lazy" alt="A technician in a Clear Vision ProWash shirt spraying the underside of a modern home's balcony"><figcaption>Modern two-story, balcony and soffits</figcaption></figure>
+      <figure><img src="img/stone-garage.jpg" width="1100" height="619" loading="lazy" alt="A technician in a Clear Vision hoodie washing the stone wall of a garage, with the wet driveway in front"><figcaption>Stone garage and driveway</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="area" id="area">
+    <div class="wrap area-grid">
+      <div>
+        <h2>Do they wash in my town?</h2>
+        <p>Type your town to check it against the service-area lists on their own sites.</p>
+        <div class="chips" role="group" aria-label="Try a town">
+          <button type="button" data-t="Waukesha" aria-pressed="false">Waukesha</button>
+          <button type="button" data-t="Brookfield" aria-pressed="false">Brookfield</button>
+          <button type="button" data-t="Wauwatosa" aria-pressed="false">Wauwatosa</button>
+          <button type="button" data-t="Mequon" aria-pressed="false">Mequon</button>
+          <button type="button" data-t="Muskego" aria-pressed="false">Muskego</button>
+          <button type="button" data-t="Oconomowoc" aria-pressed="false">Oconomowoc</button>
+        </div>
+      </div>
+      <div class="check">
+        <label for="town">Your town</label>
+        <input id="town" type="text" inputmode="text" autocomplete="off" placeholder="e.g. New Berlin" list="towns">
+        <datalist id="towns"></datalist>
+        <div class="result" id="res" aria-live="polite"><span class="ic" aria-hidden="true">?</span><span>Start typing a town name.</span></div>
+        <p class="note" style="color:var(--slate-tx)">Nothing you type is sent anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="contact">
+    <div class="wrap duo">
+      <div class="prom">
+        <h2>How Clear Vision works</h2>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#drop"/></svg><span>“A dedicated office team that handles scheduling, customer calls, invoicing, and administrative support.”</span></li>
+          <li><svg aria-hidden="true"><use href="#drop"/></svg><span>“7 to 8 trucks in the field each day.”</span></li>
+          <li><svg aria-hidden="true"><use href="#drop"/></svg><span>“Returning within a couple of days to address something if it was missed.”</span></li>
+          <li><svg aria-hidden="true"><use href="#drop"/></svg><span>“Consistency, accountability, and doing the work the right way.”</span></li>
+        </ul>
+        <p class="src">In their words, from clearvisionwashing.com.</p>
+      </div>
+      <div class="contact">
+        <h2>Call any time</h2>
+        <a class="ph" href="tel:+12622045653">(262) 204-5653</a>
+        <dl>
+          <div><dt>Call or text</dt><dd><a href="sms:+12622045653">Text (262) 204-5653</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@waukeshapressurewashing.com">info@waukeshapressurewashing.com</a></dd></div>
+          <div><dt>Office hours</dt><dd>Mon–Fri 7a–5p · Sat &amp; Sun closed</dd></div>
+          <div><dt>Service area</dt><dd>Waukesha and the Milwaukee area. Also serving Madison: <a href="https://clearvisionwashing.com/" target="_blank" rel="noopener">clearvisionwashing.com</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="first">
+    <div class="wrap">
+      <p>Clear Vision ProWash</p>
+      <h2>A first look at your new site</h2>
+      <div class="cta">
+        <a class="btn btn-blue" href="tel:+12622045653">Call (262) 204-5653</a>
+        <a class="btn btn-yel" href="sms:+12622045653">Text for a free quote</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official Clear Vision ProWash site. Logo redrawn; services, hours, contact details and service area from waukeshapressurewashing.com; company facts, quotes and photos from clearvisionwashing.com.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="c" href="tel:+12622045653">Call (262) 204-5653</a>
+  <a class="t" href="sms:+12622045653">Text us</a>
+</div>
+
+<script>
+(function(){
+  var towns=["Waukesha","Brookfield","West Allis","Elm Grove","Mukwonago","East Troy","Elkhorn","Wauwatosa","Mequon","Shorewood","Whitefish Bay","Glendale","Brown Deer","Cedarburg","Thiensville","Menomonee Falls","Germantown","Richfield","Hubertus","Sussex","Pewaukee","New Berlin","Greenfield","Greendale","Cudahy","Fox Point","Franklin","Hales Corners","Muskego","St. Francis","Oak Creek","River Hills","Colgate","Lannon","Lisbon","Butler","Oconomowoc"];
+  var dl=document.getElementById('towns');
+  dl.innerHTML=towns.map(function(t){return '<option value="'+t+'">';}).join('');
+  var inp=document.getElementById('town'),res=document.getElementById('res');
+  var chips=[].slice.call(document.querySelectorAll('.chips button'));
+  function norm(s){return s.toLowerCase().replace(/^saint /,'st. ').replace(/^st /,'st. ').replace(/[^a-z. ]/g,'').replace(/\s+/g,' ').trim();}
+  function show(cls,ic,html){res.className='result'+(cls?' '+cls:'');res.innerHTML='<span class="ic" aria-hidden="true">'+ic+'</span><span>'+html+'</span>';}
+  function check(){
+    var v=norm(inp.value);
+    chips.forEach(function(c){c.setAttribute('aria-pressed',norm(c.dataset.t)===v);});
+    if(!v){show('','?','Start typing a town name.');return;}
+    var hit=towns.filter(function(t){return norm(t)===v;})[0];
+    if(hit){show('yes','✓','Yes, '+hit+' is on their service list. <a href="tel:+12622045653">Call or text (262) 204-5653</a>.');return;}
+    var part=towns.filter(function(t){return norm(t).indexOf(v)===0;});
+    if(part.length&&v.length<4){show('','…','Keep typing: '+part.slice(0,4).join(', ')+'…');return;}
+    if(part.length===1){show('yes','✓','Yes, '+part[0]+' is on their service list. <a href="tel:+12622045653">Call or text (262) 204-5653</a>.');return;}
+    show('no','?','Not on the posted list. <a href="tel:+12622045653">Call (262) 204-5653</a> to ask.');
+  }
+  inp.addEventListener('input',check);
+  chips.forEach(function(c){c.addEventListener('click',function(){inp.value=c.dataset.t;check();});});
+})();
+</script>
+</body>
+</html>
