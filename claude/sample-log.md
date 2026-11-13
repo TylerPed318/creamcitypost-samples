@@ -303,3 +303,4 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-092 v1 (Nov 12, ~8:55 PM CT, scheduled run): live commit add92cc exact HTML + 6 imgs HTTP200; ready 1a1d2c3421599772 SENT. 0 credits (brief: no Higgsfield); ~0.88 MB; slug costa-tree-service/. Tree-ring motif, arched hero (gallery24 winter oak), town checker (16 towns), logo potrace SVG. Open: no review count (guidelines), crew photo permission, no family names/Josh/Mike, no arborist number.
 - Nov 12, ~8:55 PM CT (scheduled run): session ends after 2 builds (091, 092 v1), 0 credits. No open revisions. Next up, oldest brief first: CCP-093 Kettle Moraine Tree (1a1d1a67c129bf1b), 094 CNC Cleaning & Hauling, 095 Custom Construction, 098 Garage Door Guy, 099 WIY, 101 A Plus Cleaning, 102 Jung Electric, 104 Hometown Cleaning, 105 A Better Way Heating.
 - in progress — CCP-093 (Nov 12, 9:30 PM CT, scheduled run)
+- in progress — CCP-094 (Nov 12, 10:37 PM CT, scheduled run)
