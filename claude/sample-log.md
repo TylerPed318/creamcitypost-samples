@@ -337,3 +337,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - Nov 13, 10:53 CT (scheduled run): last finished CCP-098 v1; next unclaimed CCP-101 then102/104/105; CCP-099 concurrent claim protected, published folder now exists (delivery belongs to that run). 0 credits. Open: original logo retained/photo permission; rating/hours/towns omitted. Claude unavailable; installed Higgsfield Playwright QA used.
 
 - Nov 13, 10:53 CT (scheduled run, isolated checkout): last finished CCP-099 v1; next unclaimed CCP-101 then102/104/105 after fresh queue/overlap check. Concurrent run completed098. 0 credits. Open: WIY real photos, logo vector, pricing/count/hours/towns/current quote inbox. Claude unavailable; installed Higgsfield Playwright QA used.
+
+- in progress — CCP-101 (2026-11-13 11:02 -06:00, scheduled run)
