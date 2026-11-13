@@ -323,3 +323,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-093 v1 (Nov 13, 01:06 CT, scheduled run): recovered existing published v1 delivery; ready 1a1d3b9b2f738562 confirmed SENT. 0 credits. Exact committed HTML hash matches public page; all 6 referenced assets HTTP200. Prior installed Playwright 1440/390 renders inspected and 375 overflow/picker results reviewed; no repeat render. Open: photo permission, current firewood prices/credentials, site versus Google hours. Claude selection unavailable.
 
 - Nov 13, 01:06 CT (scheduled run): last finished CCP-093 v1 delivery recovery, 0 credits; next verified unbuilt CCP-098 then099/101/102/104/105. No open revisions identified; prior builds preserved. Open: KM photo permission, firewood prices/credentials and hours conflict. Runtime cannot select Claude; existing Higgsfield Playwright QA reused after exact byte-match verification.
+
+- in progress — CCP-098 (2026-11-13 10:48 America/Chicago, scheduled run)
