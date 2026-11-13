@@ -82,6 +82,7 @@ CCP-033 v1 revision 1a1d07fcdd007384 handled; v2 ready sent 1a1d0963cbf623df (No
 CCP-034 v1 revision 1a1d07f980712d19 handled; v2 ready sent 1a1d0964f1d07a5b (Nov 12).
 CCP-066 creative brief 1a1cce654b6cc626 handled; v1 ready sent 1a1ce3fe78564128 (Nov 11).
 CCP-065 creative brief 1a1cce2242a13c73 handled; v1 ready sent 1a1ce3cf4d5ceca1 (Nov 11).
+CCP-090 creative brief 1a1d1955b3667fb0 handled; v1 ready 1a1d28a7a7db8637 confirmed SENT.
 CCP-087 creative brief 1a1d169b6a3ee7a5 handled; v1 ready 1a1d28740ce02b50 confirmed SENT.
 CCP-064 creative brief 1a1ccb71faa6b425 handled; v1 ready sent 1a1ce0d5a5ed38e8 (Nov 11).
 CCP-063 creative brief 1a1ccb2b3c822a5f handled; v1 ready sent 1a1ce09fcef63028 (Nov 11).
@@ -140,6 +141,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 | CCP-069 | Hardwired Electric | Electrical + Generac + lighting, Lake Country | brief | v2 | hardwired-electric/ | v1 emailed Nov 12, ~11:36 AM; v1 revision → v2 emailed ~12:50 PM. 0 credits. |
 | CCP-070 | Dent Spa Wisconsin | Paintless dent repair + detailing, Oconomowoc | brief | v1 | dent-spa-wisconsin/ | v1 emailed Nov 12, ~11:42 AM. 4 credits. |
 | CCP-087 | Lake Country Clean | Eco home cleaning + organizing, Waukesha County | brief 1a1d169b6a3ee7a5 | v1 | lake-country-clean/ | v1 emailed Nov 12, ~7:30 PM (1a1d28740ce02b50). 0 credits. One real photo. |
+| CCP-090 | Rescue Heating and Cooling | HVAC, West Allis | brief 1a1d1955b3667fb0 | v1 | rescue-heating-cooling/ | v1 emailed Nov 12, ~7:45 PM (1a1d28a7a7db8637). 0 credits. Photo-free. |
 | CCP-071 | D&D Well & Pumps LLC | Well drilling + pumps, Oconomowoc | brief | v1 | dd-well-pumps/ | v1 emailed Nov 12, ~1:10 PM. 2 credits. |
 | CCP-072 | BFH Services | Stump grinding, mowing, small engine, auto + welding | brief | v2 | bfh-services/ | v1 emailed Nov 12, ~3:45 PM. 0 credits. |
 | CCP-073 | Lake Country Project Guy LLC | Handyman + custom carpentry, Delafield | brief | v3 | lake-country-project-guy/ | v1 emailed Nov 12, ~1:36 PM; v2 (photo re-exports, copy swaps) emailed ~2:50 PM. 0 credits. |
@@ -290,4 +292,4 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - done — CCP-087 v1 (Nov 12, ~7:30 PM CT, scheduled run): live commit dceff83 exact HTML + 3 imgs HTTP200; ready 1a1d28740ce02b50 SENT. 0 credits; ~0.36 MB; slug lake-country-clean/. Fountain-spray + taupe ring motif, service picker (booking-page typical hours + verbatim checklist lines), own-banner capacity pill. Open: no count/named Google quotes (guidelines over brief), Racine omitted, single real photo used twice, capacity wording to confirm, logo vector.
 
-- in progress — CCP-090 (2026-11-12 19:31 CT, scheduled run)
+- done — CCP-090 v1 (Nov 12, ~7:45 PM CT, scheduled run): live commit c381413 exact HTML HTTP200 (no image files; inline SVG only, ~25 KB); ready 1a1d28a7a7db8637 SENT. 0 credits; slug rescue-heating-cooling/. Life-ring motif + 5.0 stamp, thermostat-readout problem picker from own-site service lines. Open: no real photos (site images are AI), no count/named quotes, John not named, no hours/24-7/weekend claims, towns unconfirmed.
