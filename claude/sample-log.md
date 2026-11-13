@@ -82,6 +82,7 @@ CCP-033 v1 revision 1a1d07fcdd007384 handled; v2 ready sent 1a1d0963cbf623df (No
 CCP-034 v1 revision 1a1d07f980712d19 handled; v2 ready sent 1a1d0964f1d07a5b (Nov 12).
 CCP-066 creative brief 1a1cce654b6cc626 handled; v1 ready sent 1a1ce3fe78564128 (Nov 11).
 CCP-065 creative brief 1a1cce2242a13c73 handled; v1 ready sent 1a1ce3cf4d5ceca1 (Nov 11).
+CCP-082 creative brief 1a1d1367beff6fb2 handled; v1 ready 1a1d28e1a25b5db4 confirmed SENT (delayed delivery).
 CCP-090 creative brief 1a1d1955b3667fb0 handled; v1 ready 1a1d28a7a7db8637 confirmed SENT.
 CCP-087 creative brief 1a1d169b6a3ee7a5 handled; v1 ready 1a1d28740ce02b50 confirmed SENT.
 CCP-064 creative brief 1a1ccb71faa6b425 handled; v1 ready sent 1a1ce0d5a5ed38e8 (Nov 11).
@@ -98,7 +99,7 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 
 ## Samples
 
-| CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | Published final 5faef20; email NOT sent (automatic approval review rejection). QA passed. 0 credits. |
+| CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | v1 published 5faef20; ready emailed Nov 12, ~7:40 PM (1a1d28e1a25b5db4) by recovery run. 0 credits. |
 
 | ID | Business | Trade / City | Source lead | Latest | Folder | Status |
 |---|---|---|---|---|---|---|
@@ -277,7 +278,7 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-081 v1 (Nov 12, ~6:10 PM CT, scheduled run): live (page + 8 imgs 200, byte-identical), emailed 1a1d2208e1b596db; 0 credits; commit d7129e2. Roofline + cedar sample-board motif, room picker with own-site product lines. Open: 850px photos kept small (kitchen = upscale candidate); 1.0 Google rating pitch decision; no hours posted.
 - Nov 12, ~6:10 PM CT (scheduled run): session ends after 3 items (078 v2, 080 v1, 081 v1), 0 credits. Next up, oldest brief first: CCP-082 Heating and Cooling Drs (1a1d1367beff6fb2), 083 Devix, 084 Clear Vision ProWash, 085 Forced Air Systems, 087 Lake Country Clean, 090 Rescue, 091 Clear Difference, 092 Costa Tree, 093 Kettle Moraine Tree, 094 CNC, 095 Custom Construction, 098 Garage Door Guy, 099 WIY, 101 A Plus Cleaning, 102 Jung Electric, 104 Hometown Cleaning, 105 A Better Way Heating (no 086/088/089/096/097/100/103 brief seen).
 
-- in progress — CCP-082 (2026-11-12 19:38 CT, scheduled run); delivery recovery only (18:07 claim expired). v1 already published 5faef20; sending ready email, no rebuild.
+- done — CCP-082 v1 (Nov 12, ~7:40 PM CT, scheduled run): delivery recovered, no rebuild. Live 5faef20 HTML + 4 imgs HTTP200, byte-identical; live 1440/390/375 recheck clean. Ready 1a1d28e1a25b5db4 SENT (notes the delay). 0 credits.
 
 - Nov 12, 2026 18:20 CT (scheduled run): CCP-082 v1 published final 5faef20, exact live HTML/assets verified HTTP200; 1440/390 screenshots inspected in Higgsfield installed Playwright (named script absent), 375 no overflow, all 11 area choices pass; contrast fix rechecked. 0 generation credits, about0.96MB. Original mascot retained. Email send rejected by automatic approval review; no send confirmed and brief remains unhandled. Last finished by prior run081v1; recover082 delivery first, then083 Devix. Model selection unavailable. Open: original screenshot-source photos/permission, preferred quote inbox (contact jobs@ vs financing drsquotes@); no invented images/forms/named Google quotes.
 
@@ -293,3 +294,4 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-087 v1 (Nov 12, ~7:30 PM CT, scheduled run): live commit dceff83 exact HTML + 3 imgs HTTP200; ready 1a1d28740ce02b50 SENT. 0 credits; ~0.36 MB; slug lake-country-clean/. Fountain-spray + taupe ring motif, service picker (booking-page typical hours + verbatim checklist lines), own-banner capacity pill. Open: no count/named Google quotes (guidelines over brief), Racine omitted, single real photo used twice, capacity wording to confirm, logo vector.
 
 - done — CCP-090 v1 (Nov 12, ~7:45 PM CT, scheduled run): live commit c381413 exact HTML HTTP200 (no image files; inline SVG only, ~25 KB); ready 1a1d28a7a7db8637 SENT. 0 credits; slug rescue-heating-cooling/. Life-ring motif + 5.0 stamp, thermostat-readout problem picker from own-site service lines. Open: no real photos (site images are AI), no count/named quotes, John not named, no hours/24-7/weekend claims, towns unconfirmed.
+- Nov 12, ~7:42 PM CT (scheduled run): session ends after 3 items (087 v1, 090 v1 built; 082 v1 ready email recovered), 0 credits. No open revisions. Next up, oldest brief first: CCP-091 The Clear Difference (1a1d19c19c136832), 092 Costa Tree, 093 Kettle Moraine Tree, 094 CNC, 095 Custom Construction, 098 Garage Door Guy, 099 WIY, 101 A Plus Cleaning, 102 Jung Electric, 104 Hometown Cleaning, 105 A Better Way Heating.
