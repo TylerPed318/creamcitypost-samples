@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-095 creative brief 1a1d1d468f0daaea handled; v1 ready 1a1d387e1f5deac1 confirmed SENT.
 CCP-092 creative brief 1a1d1a0feb249cc2 handled; v1 ready 1a1d2c3421599772 confirmed SENT (Nov 12).
 CCP-091 creative brief 1a1d19c19c136832 handled; v1 ready 1a1d2bd9971200d5 confirmed SENT (Nov 12).
 CCP-085 creative brief 1a1d168495bbf706 handled; v1 ready 1a1d2727a929825a confirmed SENT (Nov 12).
@@ -102,6 +103,8 @@ Ignore the void early "Sample ready" emails that used wrong IDs (CCP-011 A Pest 
 CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confirmed SENT.
 
 ## Samples
+
+| CCP-095 | Custom Construction of Wisconsin | Concrete, Waukesha | brief + master CSV | v1 | custom-construction-wisconsin/ | Live 8db22cc; ready 1a1d387e1f5deac1 SENT; 0 credits. |
 
 | CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | v1 published 5faef20; ready emailed Nov 12, ~7:40 PM (1a1d28e1a25b5db4) by recovery run. 0 credits. |
 
@@ -310,4 +313,6 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - Nov 12, 22:43 CT (scheduled run): last finished CCP-094 v1,0credits; next unclaimed CCP-095 then098,099,101,102,104,105. CCP-093 remains another run claim (21:30CT), existing folder without ready email; recovery only after overlap expiry and recheck. No open revisions. Model selection unavailable; actual supported Playwright QA used. Open CNC photo permission/contact confirmation.
 - in progress — CCP-093 (Nov 12, 11:03 PM CT, scheduled run; stale claim recovery of published v1)
-- in progress — CCP-095 (Nov 13, 00:05 AM CT, scheduled run)
+- done — CCP-095 v1 (Nov 13, 00:12 CT, scheduled run): published 8db22cc, exact live HTML and 5 assets HTTP200; ready 1a1d387e1f5deac1 confirmed SENT. 0 credits; 514862 bytes. Original logo PNG retained inside SVG; family story, real project photos, town checker and verified existing page navigation. Installed Playwright in Higgsfield (named script unavailable), 1440/390 visually inspected, 375 overflow and all 14 choices passed. Open: photo permission/current family roles; no hours/email/named Google quotes. Claude model selection unavailable.
+
+- Nov 13, 00:12 CT (scheduled run): last finished CCP-095 v1, 0 credits; next unbuilt CCP-098 then099/101/102/104/105. CCP-093 remains protected by 23:03 CT recovery claim until00:33; recover existing delivery after recheck. No open revisions identified. Open: original logo retained rather than vector redraw; photo permission/current family roles. Claude selection unavailable. Prospect server rejects plain HTTP clients but Chromium retrieves original pages/assets successfully.
