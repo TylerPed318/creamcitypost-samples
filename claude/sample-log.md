@@ -279,3 +279,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - done — CCP-084 v1 (Nov 12, ~7:00 PM CT, scheduled run): live (page + 4 imgs 200, byte-identical), emailed 1a1d25551339d5cc; 0 credits; commits 3e127b8, c3fbf0a; slug clear-vision-prowash/. Swoosh/droplet motif, town checker from posted list, main-site promises. Open: no Google rating (no Waukesha listing), embedded-widget review quotes left out pending Tyler, since-2003 vs 20+ years, van photo skipped (plate).
 - Nov 12, ~7:00 PM CT (scheduled run): session ends after 2 builds (083, 084 v1), 0 credits. CCP-082 still claimed by the 6:07 PM run (built, email blocked; recover delivery only, no rebuild). Next up, oldest brief first: CCP-085 Forced Air Systems (1a1d168495bbf706), 087 Lake Country Clean (1a1d169b6a3ee7a5), 090 Rescue (1a1d1955b3667fb0), then 091–095, 098, 099, 101, 102, 104, 105.
+
+- in progress — CCP-085 (2026-11-12 19:03 -06:00 America/Chicago, scheduled run)
