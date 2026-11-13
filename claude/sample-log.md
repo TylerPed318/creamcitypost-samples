@@ -325,3 +325,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - Nov 13, 01:06 CT (scheduled run): last finished CCP-093 v1 delivery recovery, 0 credits; next verified unbuilt CCP-098 then099/101/102/104/105. No open revisions identified; prior builds preserved. Open: KM photo permission, firewood prices/credentials and hours conflict. Runtime cannot select Claude; existing Higgsfield Playwright QA reused after exact byte-match verification.
 
 - in progress — CCP-098 (2026-11-13 10:48 America/Chicago, scheduled run)
+
+- in progress — CCP-099 (2026-11-13 10:54 America/Chicago, scheduled run; isolated checkout)
