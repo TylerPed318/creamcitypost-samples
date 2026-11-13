@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-105 brief 1a1d20e0ad0340c4 handled; v1 ready 1a1d6bf98776c69a confirmed SENT.
 CCP-104 brief 1a1d20c792075277 handled; v1 ready 1a1d6866d45ee64f confirmed SENT.
 
 CCP-102 brief 1a1d20a56bab4364 handled; v1 ready 1a1d64d8bf46e127 confirmed SENT.
@@ -113,6 +114,8 @@ CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confi
 CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738562 confirmed SENT (delivery recovery Nov 13).
 
 ## Samples
+
+| CCP-105 | A Better Way Heating and Air Conditioning, LLC | HVAC, Cudahy | brief + master CSV | v1 | a-better-way-heating/ | Live 006af64; ready 1a1d6bf98776c69a SENT; 0 credits. |
 
 | CCP-098 | The Garage Door Guy LLC | Garage doors, Waukesha area | brief + master CSV | v1 | garage-door-guy/ | Live e124f71; ready 1a1d5d2f82515ec3 SENT; 0 credits. |
 
@@ -358,4 +361,6 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - Nov 13, 14:10 CT (scheduled run): last finished CCP-104 v1; next verified unbuilt CCP-105 A Better Way Heating after fresh overlap/source checks. One sample completed;0credits. Open: Hometown real job/team photos,current offers/history. Original brand typefaces retained over brief proposals. Claude selection unavailable; installed Higgsfield Playwright used.
 
-- in progress — CCP-105 (2026-11-13 15:04 -06:00 America/Chicago, scheduled run)
+- done — CCP-105 v1 (Nov 13, 15:11 CT, scheduled run): live 006af64 exact HTML and all3 assets public200/hash-match; ready1a1d6bf98776c69a confirmed SENT. 0credits; about0.8MB. Original van lettering retained inside SVG, blue/red/Barlow Condensed/Inter, real installation photos, five-system picker and Facebook About navigation. Installed Higgsfield Playwright (named absent),1440/390 inspected,375 overflow/all5 choices passed; logo/framing/mobile targets fixed and affected parts rechecked. Open: photo permission/vector logo/current rating/hours/towns/owner role/second phone; omitted. Source site and Facebook could not be reopened; verified brief/master used.
+
+- Nov 13, 15:11 CT (scheduled run): last finished CCP-105 v1; next ID none in verified Gmail brief queue. No open revisions or recovery items. One sample completed,0credits. Open owner confirmations above; no working standalone business page URLs verified, About uses existing Facebook About URL. Runtime cannot select Claude Sonnet; actual installed Playwright used.
