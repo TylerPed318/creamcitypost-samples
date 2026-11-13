@@ -285,3 +285,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-085 v1 (Nov 12, 19:08 CT, scheduled run): live commit44e55a3 exact HTML/logo HTTP200; ready1a1d2727a929825a confirmed SENT. 0credits;50134bytes. Original logo PNG retained inside SVG; photo-free (no real jobs); slanted airflow motif; America/Chicago office status. Installed Playwright in Higgsfield used (named script absent),1440/390 visually inspected,375 overflow and weekday/weekend status pass. Existing-site section navigation only (no separate pages found). Unconfirmed photo quotes, towns, labor warranty and review quotes omitted.
 
 - Nov 12, 19:09 CT (scheduled run): last finished CCP-085 v1; next eligible CCP-087 then090–095,098,099,101,102,104,105. CCP-082 published/awaiting email remains protected by its 18:07 claim until19:37; recover existing delivery after checking sent mail, never rebuild. Claude selection unavailable; supported runtime used. 0credits this run.
+
+- in progress — CCP-087 (2026-11-12 19:28 CT, scheduled run)
