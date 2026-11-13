@@ -351,3 +351,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-102 v1 (Nov 13, 13:07 CT, scheduled run): live ba7779a exact HTML/logo public200; ready1a1d64d8bf46e127 confirmed SENT. 0credits;14184bytes. Photo-free original logo inside SVG, red/black/yellow, credentials/timeline, nine-service estimate picker and verified existing-page navigation. Installed Higgsfield Playwright (named absent),1440/390 visually inspected,375 overflow/all9 choices pass. Open: vector logo/real photos/current work availability; no rating/unconfirmed towns/hours. Claude selection unavailable.
 
 - Nov 13, 13:07 CT (scheduled run): last finished CCP-102 v1,0credits; next verified unbuilt CCP-104 then105. Open: real photos/vector logo/current work availability. Claude selection unavailable; actual installed Higgsfield Playwright used. Direct-main claim/publish/delivery workflow succeeded this run.
+
+- in progress — CCP-104 (2026-11-13 14:03 -06:00 America/Chicago, scheduled run)
