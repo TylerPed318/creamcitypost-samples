@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-164 brief 1a1eaf22ee83c7f0 handled; v1 ready 1a1eba7ce96da91e confirmed SENT (Nov 17).
 CCP-162 brief 1a1ea906dd58a0a3 handled; v1 ready 1a1eba3f6dfd6eff confirmed SENT (Nov 17).
 CCP-094 v1 revision 1a1ea93742632cbd handled; v2 ready 1a1eb701453a294a confirmed SENT (Nov 17).
 CCP-106 v1 revision 1a1eabbad041fd8e handled; v2 ready 1a1eb702670ef92e confirmed SENT (Nov 17).
@@ -132,6 +133,8 @@ CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confi
 CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738562 confirmed SENT (delivery recovery Nov 13).
 
 ## Samples
+
+| CCP-164 | Lake Country Concrete Specialists | Concrete, Hartland / Waukesha County | brief | v1 | lake-country-concrete/ | Live 8aa7255; ready 1a1eba7ce96da91e SENT; 0 credits. |
 
 | CCP-162 | Prime Electric LLC | Electrician, Milwaukee | brief | v1 | prime-electric/ | Live 2962539; ready 1a1eba3f6dfd6eff SENT; 0 credits. |
 
@@ -440,4 +443,5 @@ CCP-090 revision1a1ea936e9a2824e handled; v2 ready1a1eb2336af06177 confirmed SEN
 CCP-111 revision1a1eabbae8ffb275 handled; v2 ready1a1eb8f13d5e6f53 confirmed SENT.
 - Nov17 scheduled handoff: last finished CCP-111 v2,6quoted credits; next verified unbuilt brief CCP-162 Prime Electric (1a1ea906dd58a0a3), then164/165/166/167; refresh Gmail and overlap guard first. Ending after revision; no remaining open revisions identified. Open: photo permission/street address and1.19MB size exception; Claude selection unavailable; installed Higgsfield Playwright used. Only Tyler emailed.
 - done — CCP-162 v1 (Nov 17, ~4:50 PM CT, scheduled run): live 2962539, HTML byte-identical, page + 4 imgs 200; ready 1a1eba3f6dfd6eff SENT (only Tyler). 0 credits. Breaker-panel services, town checker (40 posted towns), fleet hero with front plate blurred, logo redrawn as SVG globe rings + Playfair wordmark. Open: no named Google quotes/count per guidelines; generator service, Benny's Cafe, billing address omitted; photo permission; Troy/Brandon photo for v2.
-- in progress — CCP-164 (Nov 17, 4:52 PM CT, scheduled run)
+- done — CCP-164 v1 (Nov 17, ~4:36 PM CT, scheduled run): live 8aa7255, HTML byte-identical, page + 7 imgs 200; ready 1a1eba7ce96da91e SENT (only Tyler). 0 credits. Control-joint slab motif, 5-photo finish picker, WebP ~0.94 MB. Original logo file used (mixer-truck/flag mark not SVG-redrawn). Open: which phone to publish (206-2490 used; site shows 538-1797), SMS, hours, street address, email; Tom not named; no $500 amount.
+- in progress — CCP-165 (Nov 17, 4:36 PM CT, scheduled run)
