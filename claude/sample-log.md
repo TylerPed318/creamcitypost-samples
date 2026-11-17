@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-110 brief 1a1ea7fc83839d0d handled; v1 ready 1a1ea91210990744 confirmed SENT (Nov 17).
 CCP-106 brief 1a1ea782018862b3 handled; v1 ready 1a1ea83736ddaee4 confirmed SENT (Nov 17).
 
 CCP-105 brief 1a1d20e0ad0340c4 handled; v1 ready 1a1d6bf98776c69a confirmed SENT.
@@ -132,6 +133,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-101 | A Plus Cleaning Services | Cleaning, Waukesha | brief + master CSV | v1 | aplus-cleaning/ | Live d8e53bf; ready 1a1d5e08bac5996e SENT; 0 credits. |
 | ID | Business | Trade / City | Source lead | Latest | Folder | Status |
 |---|---|---|---|---|---|---|
+| CCP-110 | Classic Seamless Gutters | Gutters, Ixonia | brief + master CSV | v1 | classic-seamless-gutters/ | Live 8a17fa2; ready 1a1ea91210990744 SENT; 4 credits. |
 | CCP-106 | A and A Plumbing | Plumbing, Milwaukee | brief + master CSV; updated domain verified | v1 | a-and-a-plumbing/ | Live a11693a; ready 1a1ea83736ddaee4 SENT; 0 credits. |
 | CCP-099 | WIY Hauling and Junk Removal | Junk removal, Milwaukee | brief + master CSV | v1 | wiy-hauling/ | Live 5e882b2; ready 1a1d5d391f50e348 SENT; 0 credits. |
 | CCP-005 | Dale's Tree Service | Tree, Hartland | 10-20 #1 | v3 | dales/ | **Approved v3.** |
@@ -372,4 +374,6 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - Nov 17, 11:18 CT (scheduled run): last finished CCP-106 v1; next ID none in verified brief queue. No open revisions/recovery identified. 0credits. Owner confirmations above; current domain explicitly supplied in brief and matched by phone. Original logo extracted rather than approximated. Claude model unavailable; installed Higgsfield Playwright used. Public deployment initially pending, then exact hash-match verified before delivery.
 
-- in progress — CCP-110 (Nov 17, 11:26 CT, scheduled run)
+- done — CCP-110 v1 (Nov 17, scheduled run): live 8a17fa2 byte-identical, page + 8 imgs 200; ready 1a1ea91210990744 SENT. 4 credits (2K upscales of album 01 hero + 17 Tudor copper). Guard picker interactive; logo SVG redraw. Open: address (County Rd F vs American St), since-year, financing terms, guard photo product, Versa Pro colors, photo permission; no named Google quotes/count per design rules.
+
+- in progress — CCP-111 (Nov 17, 11:32 CT, scheduled run)
