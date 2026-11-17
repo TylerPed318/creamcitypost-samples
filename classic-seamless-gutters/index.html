@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Classic Seamless Gutters — Website concept by Cream City Post</title>
+<meta name="description" content="Website concept for Classic Seamless Gutters: seamless aluminum, steel and hand-soldered copper gutters, cut and shaped on site across Waukesha, Jefferson, Dodge and Milwaukee counties.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2331353E'/%3E%3Cpath d='M14 18h30c0 6 4 6 4 12s-4 6-4 10v12' fill='none' stroke='%23D08A52' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 18v6h26' fill='none' stroke='%23FAF8F5' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --graphite:#31353E;
+  --graphite-2:#596070;
+  --graphite-deep:#24272E;
+  --copper:#B5652B;
+  --copper-dark:#8E4B1C;
+  --copper-light:#D08A52;
+  --patina:#5E8C7E;
+  --green:#72C02C;
+  --green-ink:#14260A;
+  --paper:#FAF8F5;
+  --paper-2:#F1ECE5;
+  --ink:#1E2126;
+  --muted:#545A66;
+  --white:#FFFFFF;
+  --line:#DDD5CB;
+  --radius:6px;
+  --wrap:1180px;
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --cap:"Cinzel","Trajan Pro",Georgia,serif;
+  --sans:"Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--copper-light);outline-offset:3px;border-radius:3px}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding-left:24px;padding-right:24px}
+.skip{position:absolute;left:-999px;top:0;background:var(--white);color:var(--ink);padding:10px 14px;z-index:99}
+.skip:focus{left:12px;top:12px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:var(--radius);font:700 16px/1.2 var(--sans);text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-copper{background:var(--copper);color:var(--white)}
+.btn-copper:hover{background:var(--copper-dark)}
+.btn-green{background:var(--green);color:var(--green-ink)}
+.btn-green:hover{background:#86d43f}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:var(--white)}
+.btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
+.btn-line{border-color:var(--graphite);color:var(--graphite)}
+.btn-line:hover{background:var(--graphite);color:var(--white)}
+
+/* header */
+.top{background:var(--graphite-deep);color:#D9DCE2;font-size:14px}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;align-items:center;min-height:38px;flex-wrap:wrap}
+.top a{color:var(--white);text-decoration:none;font-weight:600}
+.top a:hover{text-decoration:underline}
+header.site{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,var(--graphite-2) -60%,var(--graphite) 70%);box-shadow:0 1px 0 rgba(0,0,0,.25)}
+header.site .wrap{display:flex;align-items:center;gap:24px;min-height:84px}
+.logo{display:block;width:196px;flex:none;text-decoration:none}
+.logo svg{width:100%;height:auto;display:block}
+nav.main{display:flex;gap:4px;margin-left:auto}
+nav.main a{color:#E8EAEE;text-decoration:none;font-weight:600;font-size:15px;padding:12px 12px;border-radius:4px}
+nav.main a:hover{color:var(--white);background:rgba(255,255,255,.08)}
+.head-cta{display:flex;gap:10px;flex:none}
+.head-cta .btn{min-height:46px;padding:10px 16px;font-size:15px}
+
+/* hero */
+.hero{background:var(--graphite);color:var(--white);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:10px;background:linear-gradient(90deg,var(--copper-dark),var(--copper-light) 40%,var(--copper) 70%,var(--copper-dark))}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center;padding-top:64px;padding-bottom:80px}
+.eyebrow{font:600 13px/1.3 var(--cap);letter-spacing:.18em;text-transform:uppercase;color:var(--copper-light);margin:0 0 18px}
+.hero h1{font:700 clamp(42px,6vw,76px)/.98 var(--serif);margin:0 0 22px;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--copper-light)}
+.hero .sub{font-size:clamp(17px,1.6vw,19px);color:#DADDE3;max-width:34em;margin:0 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.hero .note{font-size:14px;color:#C5C9D1;margin:0}
+.hero .note a{color:var(--white)}
+.frame{position:relative;margin:0}
+.frame .ph{border-radius:4px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);aspect-ratio:552/442;background:#222}
+.frame .ph img{width:100%;height:100%;object-fit:cover}
+.frame figcaption{margin-top:14px;font-size:14px;color:#C5C9D1;display:flex;gap:10px;align-items:center}
+.frame figcaption::before{content:"";width:28px;height:2px;background:var(--copper-light);flex:none}
+/* gutter profile drawn over the photo frame */
+.profile{position:absolute;top:-26px;right:-22px;width:120px;height:auto;pointer-events:none}
+
+/* proof */
+.proof{background:var(--paper-2);border-bottom:1px solid var(--line)}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 18px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.proof li:first-child{border-left:0}
+.proof b{font:700 22px/1.15 var(--serif);color:var(--graphite)}
+.proof span{font-size:14px;color:var(--muted)}
+.proof a{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.proof a:hover b{color:var(--copper-dark)}
+
+/* section scaffolding */
+section{scroll-margin-top:96px}
+.sec{padding-top:88px;padding-bottom:88px}
+.kicker{font:600 13px/1.3 var(--cap);letter-spacing:.16em;text-transform:uppercase;color:var(--copper-dark);margin:0 0 12px}
+h2{font:700 clamp(32px,4.2vw,50px)/1.04 var(--serif);margin:0 0 18px;color:var(--graphite)}
+.lede{font-size:18px;color:var(--muted);max-width:40em;margin:0}
+/* signature rule: a gutter run ending in a downspout */
+.run{display:block;width:180px;height:34px;margin:0 0 22px}
+
+/* copper spotlight */
+.copper{background:linear-gradient(160deg,#2B241F 0%,#3A2A1F 55%,#2B241F 100%);color:#F3E9DF}
+.copper h2{color:var(--white)}
+.copper .kicker{color:var(--copper-light)}
+.copper .grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:start}
+.copper .big{margin:0}
+.copper .big .ph{aspect-ratio:552/442;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px rgba(208,138,82,.35),0 24px 50px -24px rgba(0,0,0,.7)}
+.copper .big img{width:100%;height:100%;object-fit:cover}
+.copper figcaption{font-size:14px;color:#D9C6B5;margin-top:10px}
+.quote{font:600 italic clamp(24px,2.6vw,32px)/1.25 var(--serif);color:var(--white);margin:22px 0 10px;padding-left:22px;border-left:3px solid var(--copper-light)}
+.quote-src{font-size:14px;color:#D9C6B5;margin:0 0 28px;padding-left:25px}
+.minis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 28px}
+.minis figure{margin:0}
+.minis .ph{aspect-ratio:1/1;border-radius:4px;overflow:hidden}
+.minis img{width:100%;height:100%;object-fit:cover}
+.minis figcaption{font-size:13px;color:#D9C6B5;margin-top:6px;line-height:1.4}
+.spec-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+.spec-chips li{border:1px solid rgba(208,138,82,.55);color:#F3E9DF;font-size:14px;padding:6px 12px;border-radius:999px}
+
+/* what we install: spec sheet */
+.sheet{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.specs{border-top:2px solid var(--graphite)}
+.specs .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:18px;padding:16px 0;border-bottom:1px solid var(--line)}
+.specs dt{font-weight:700;color:var(--graphite)}
+.specs dd{margin:0;color:var(--ink)}
+.specs dd small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.sheet .aside{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-top:28px}
+.sheet .aside h3{font:700 22px/1.2 var(--serif);margin:0 0 8px;color:var(--graphite)}
+.sheet .aside p{margin:0 0 14px;color:var(--muted);font-size:16px}
+.sheet .aside p:last-child{margin-bottom:0}
+
+/* guard picker */
+.guards{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.picker{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;margin-top:40px;align-items:start}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:58px;padding:12px 18px;border:2px solid var(--line);border-radius:var(--radius);background:var(--paper);font:600 17px/1.25 var(--sans);color:var(--ink);text-align:left;cursor:pointer;transition:border-color .2s,background .2s}
+.opt:hover{border-color:var(--copper)}
+.opt[aria-pressed="true"]{border-color:var(--graphite);background:var(--graphite);color:var(--white)}
+.opt .tag{font-size:13px;font-weight:600;color:var(--copper-dark);white-space:nowrap}
+.opt[aria-pressed="true"] .tag{color:var(--copper-light)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.card .ph{aspect-ratio:800/504;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:26px}
+.card h3{font:700 30px/1.1 var(--serif);margin:0 0 6px;color:var(--graphite)}
+.card .said{font-style:italic;color:var(--copper-dark);margin:0 0 18px}
+.card dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 18px;margin:0}
+.card dt{font-weight:700;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.card dd{margin:0}
+.card .photo-note{font-size:13px;color:var(--muted);padding:10px 26px 0}
+.live{min-height:1px}
+
+/* photos */
+.photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:36px}
+.photos figure{margin:0}
+.photos .ph{aspect-ratio:552/442;border-radius:4px;overflow:hidden;background:var(--paper-2)}
+.photos img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.photos figure:hover img{transform:scale(1.03)}
+.photos figcaption{font-size:15px;color:var(--muted);margin-top:10px}
+.more{margin-top:26px}
+.more a{font-weight:700;color:var(--copper-dark)}
+
+/* reviews + contact */
+.rc{background:var(--paper-2);border-top:1px solid var(--line)}
+.rc .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.rating{display:flex;align-items:baseline;gap:14px;margin:6px 0 20px}
+.rating .num{font:700 72px/1 var(--serif);color:var(--graphite)}
+.rating .lbl{font-size:16px;color:var(--muted)}
+.rating .lbl a{color:var(--copper-dark);font-weight:700}
+.themes{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:12px}
+.themes li{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--copper);border-radius:var(--radius);padding:14px 18px}
+.themes b{display:block;font:700 21px/1.2 var(--serif);color:var(--graphite)}
+.themes span{font-size:15px;color:var(--muted)}
+.builders{background:var(--graphite);color:#E3E5E9;border-radius:var(--radius);padding:24px}
+.builders h3{font:700 24px/1.15 var(--serif);color:var(--white);margin:0 0 8px}
+.builders p{margin:0 0 14px;font-size:16px}
+.builders a{color:var(--white);font-weight:700}
+.contact{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:12px 12px 0 var(--copper)}
+.contact h3{font:700 32px/1.1 var(--serif);margin:0 0 6px;color:var(--graphite)}
+.contact .free{margin:0 0 20px;color:var(--muted)}
+.lines{list-style:none;margin:0 0 22px;padding:0;border-top:1px solid var(--line)}
+.lines li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.lines .where{font-weight:700;color:var(--graphite)}
+.lines .where small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+.lines a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--copper-dark);text-decoration:none;font-size:18px}
+.lines a:hover{text-decoration:underline}
+.contact .ctas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:22px}
+.area h4{font:600 13px/1.3 var(--cap);letter-spacing:.14em;text-transform:uppercase;color:var(--copper-dark);margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 10px;padding:0}
+.chips li{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px}
+.chips.county li{background:var(--graphite);border-color:var(--graphite);color:var(--white)}
+.fine{font-size:14px;color:var(--muted);margin:16px 0 0}
+
+/* closer + footer */
+.closer{background:var(--graphite);color:var(--white);text-align:left}
+.closer .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;padding-top:56px;padding-bottom:56px}
+.closer h2{color:var(--white);margin:0 0 6px;font-size:clamp(28px,3.4vw,40px)}
+.closer p{margin:0;color:#C9CDD4}
+.closer .ctas{display:flex;gap:12px;flex-wrap:wrap}
+footer{background:var(--graphite-deep);color:#B9BEC7;font-size:14px}
+footer .wrap{padding-top:26px;padding-bottom:30px}
+footer p{margin:0;max-width:70em}
+footer a{color:var(--white)}
+
+/* mobile call bar */
+.callbar{display:none}
+
+@media (max-width:1060px){
+  nav.main{display:none}
+  .head-cta{margin-left:auto}
+}
+@media (max-width:900px){
+  .hero .wrap,.copper .grid,.sheet,.picker,.rc .grid{grid-template-columns:minmax(0,1fr)}
+  .hero .wrap{gap:40px;padding-top:44px;padding-bottom:64px}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li:nth-child(3){border-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid var(--line)}
+  .profile{width:84px;right:-6px;top:-22px}
+  .photos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .photos figure:last-child{grid-column:1/-1}
+  .photos figure:last-child .ph{aspect-ratio:16/9}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{padding-left:16px;padding-right:16px}
+  .top .hide-sm{display:none}
+  header.site .wrap{min-height:68px;gap:12px}
+  .logo{width:150px}
+  .head-cta .btn-green{display:none}
+  .head-cta .btn{padding:10px 14px}
+  .sec{padding-top:60px;padding-bottom:60px}
+  .proof li{padding:16px 12px}
+  .proof b{font-size:19px}
+  .specs .row{grid-template-columns:minmax(0,1fr);gap:4px}
+  .photos{grid-template-columns:minmax(0,1fr)}
+  .photos figure:last-child .ph{aspect-ratio:552/442}
+  .contact{padding:22px;box-shadow:8px 8px 0 var(--copper)}
+  .contact .ctas{grid-template-columns:minmax(0,1fr)}
+  .rating .num{font-size:60px}
+  .card .body{padding:20px}
+  .callbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--graphite-deep);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+  .callbar .btn{min-height:50px;padding:10px 12px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="top">
+  <div class="wrap">
+    <span><a href="tel:+12625690990">Call/text (262) 569-0990</a> <span class="hide-sm">for a free estimate</span></span>
+    <a class="hide-sm" href="mailto:sales@csgutters.com">sales@csgutters.com</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Classic Seamless Gutters, home">
+      <svg viewBox="0 0 196 73" role="img" aria-hidden="true">
+        <text x="2" y="38" fill="#fff" font-family="Cinzel,'Trajan Pro',Georgia,serif" font-weight="600" font-size="40" letter-spacing="-.5" textLength="152" lengthAdjust="spacingAndGlyphs">CLASSIC</text>
+        <line x1="4" y1="45.5" x2="162" y2="45.5" stroke="#C9CCD3" stroke-width="1.2"/>
+        <text x="7" y="62" fill="#E2E4E8" font-family="'Open Sans',Arial,sans-serif" font-weight="400" font-size="11.5" letter-spacing="2.6" textLength="146" lengthAdjust="spacing">SEAMLESS GUTTERS</text>
+        <line x1="4" y1="70" x2="161" y2="70" stroke="#C9CCD3" stroke-width="1.2"/>
+        <!-- gutter profile + downspout mark -->
+        <path d="M164 9h26v3c-4 0-6 3-6 7v6c0 4-3 7-7 9-4 2-5 5-5 9v24c0 2-1 3-3 3" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M164 9v5c0 3 2 5 5 5h7c3 0 5-2 5-5" fill="#fff"/>
+        <path d="M169 43v24c0 1.5-1 2.4-2.6 2.4" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#copper">Copper</a>
+      <a href="#gutters">Gutters</a>
+      <a href="#guards">Gutter guards</a>
+      <a href="#work">Our work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="head-cta">
+      <a class="btn btn-copper" href="tel:+12625690990"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg>(262) 569-0990</a>
+      <a class="btn btn-green" href="sms:+12625690990">Text for a free estimate</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Seamless gutters · Southeastern Wisconsin</p>
+      <h1 id="h1">Seamless gutters, made on site. <em>Copper done right.</em></h1>
+      <p class="sub">Heavy .032 gauge aluminum, 24-gauge steel and 20 oz copper gutters, cut and shaped on location at your home or building across Waukesha, Jefferson, Dodge and Milwaukee counties.</p>
+      <div class="ctas">
+        <a class="btn btn-copper" href="tel:+12625690990"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg>Call (262) 569-0990</a>
+        <a class="btn btn-ghost" href="sms:+12625690990">Text us for a free estimate</a>
+      </div>
+      <p class="note">Free estimates for both commercial and residential customers.</p>
+    </div>
+    <figure class="frame">
+      <div class="ph"><img src="img/hero-copper-halfround.jpg" width="1400" height="1116" alt="Copper half-round gutter with soldered corner and round copper downspout on a brick and half-timbered home" fetchpriority="high"></div>
+      <svg class="profile" viewBox="0 0 120 120" aria-hidden="true"><path d="M8 20h78c0 10 14 10 14 24s-14 12-14 24v44" fill="none" stroke="#D08A52" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <figcaption>Copper half-round and round downspout, brick home. Classic Seamless Gutters project photo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="proof">
+  <div class="wrap">
+    <ul>
+      <li><a href="https://www.google.com/maps/place/Classic+Seamless+Gutters/@43.1409537,-88.5929594,17z/data=!4m8!3m7!1s0x8805ca41dd9c56ad:0x37762eb51a96138f" target="_blank" rel="noopener"><b>★ 4.7 on Google</b></a><span>See the reviews</span></li>
+      <li><b>.032 gauge</b><span>Heaviest gauge aluminum used</span></li>
+      <li><b>Cut on location</b><span>Custom designed for each project</span></li>
+      <li><b>Homes &amp; builders</b><span>Residential, commercial, contractor work</span></li>
+    </ul>
+  </div>
+</div>
+
+<section class="copper sec" id="copper" aria-labelledby="h-copper">
+  <div class="wrap grid">
+    <figure class="big">
+      <div class="ph"><img src="img/copper-tudor.jpg" width="1400" height="1116" loading="lazy" alt="Copper half-round gutter with hand-soldered fittings and decorative hangers along a Tudor-style brick home"></div>
+      <figcaption>Copper half-round with soldered fittings on a Tudor-style home.</figcaption>
+    </figure>
+    <div>
+      <svg class="run" viewBox="0 0 180 34" aria-hidden="true"><path d="M2 6h150c10 0 12 6 12 12v14" fill="none" stroke="#D08A52" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p class="kicker">Copper gutters</p>
+      <h2 id="h-copper">Copper that's fit and soldered by hand.</h2>
+      <p class="quote">“All copper gutter fittings are hand fit and soldered to assure decades of beauty and value for your home.”</p>
+      <p class="quote-src">From the Classic Seamless Gutters services page</p>
+      <ul class="spec-chips" aria-label="Copper options">
+        <li>K-style 5", 6" and 7" seamless</li>
+        <li>Half-round 20 oz, 6"</li>
+        <li>7" K-style in 20 oz copper</li>
+      </ul>
+      <div class="minis">
+        <figure><div class="ph"><img src="img/copper-outlet.jpg" width="552" height="442" loading="lazy" alt="Copper half-round gutter with gutter screen and copper outlet under cedar shakes"></div><figcaption>Outlet and hanger detail, cedar shake roof.</figcaption></figure>
+        <figure><div class="ph"><img src="img/copper-cedar.jpg" width="552" height="442" loading="lazy" alt="Long run of copper gutter beneath a cedar shake roof edge"></div><figcaption>A copper run beneath cedar shakes.</figcaption></figure>
+      </div>
+      <a class="btn btn-copper" href="tel:+12625690990">Ask about copper: (262) 569-0990</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="gutters" aria-labelledby="h-gutters">
+  <div class="wrap sheet">
+    <div>
+      <svg class="run" viewBox="0 0 180 34" aria-hidden="true"><path d="M2 6h150c10 0 12 6 12 12v14" fill="none" stroke="#B5652B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p class="kicker">Seamless gutters &amp; downspouts</p>
+      <h2 id="h-gutters">Custom designed. Cut and shaped on location.</h2>
+      <p class="lede">Each Classic Seamless Gutter project is custom designed to meet the client's needs, with materials cut and shaped right at the job.</p>
+      <div class="aside">
+        <h3>Wisconsin winters: ask about ice dams.</h3>
+        <p>“We also have answers to any ice dam or ice build-up situations that can occur in Wisconsin winters.” Versa Pro guards can be fitted with a heated cable.</p>
+        <p>Financing is available through third-party lenders, OAC. Ask when you call.</p>
+      </div>
+    </div>
+    <dl class="specs">
+      <div class="row"><dt>Aluminum gutters</dt><dd>K-style 5", 6" and 7" · Half-round seamless 6"<small>.032 gauge with a baked enamel finish, dozens of colors, 20yr finish warranty</small></dd></div>
+      <div class="row"><dt>Steel gutters</dt><dd>7" K-style, heavy 24 ga.<small>Most colors available, 2 week lead time</small></dd></div>
+      <div class="row"><dt>Copper gutters</dt><dd>K-style 5", 6" and 7" seamless · Half-round 20 oz, 6"<small>Fittings hand fit and soldered</small></dd></div>
+      <div class="row"><dt>Downspouts</dt><dd>Rectangular, round, corrugated<small>Sizes of 3", 4" and 5"</small></dd></div>
+      <div class="row"><dt>7" K-style</dt><dd>For larger commercial buildings, tile and metal roofs<small>Steel, aluminum (White and Royal Brown in stock) or copper</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="guards sec" id="guards" aria-labelledby="h-guards">
+  <div class="wrap">
+    <svg class="run" viewBox="0 0 180 34" aria-hidden="true"><path d="M2 6h150c10 0 12 6 12 12v14" fill="none" stroke="#B5652B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p class="kicker">Gutter protection</p>
+    <h2 id="h-guards">Five gutter guards. Pick one to compare.</h2>
+    <p class="lede">Maple helicopters, pine needles, or just leaves? Each guard below is described in Classic's own words, with only the warranties they state.</p>
+    <div class="picker">
+      <div class="opts" role="group" aria-label="Gutter guard options">
+        <button class="opt" type="button" data-g="0" aria-pressed="true">Stainless Steel Micro Mesh <span class="tag">20yr factory</span></button>
+        <button class="opt" type="button" data-g="1" aria-pressed="false">Versa Pro <span class="tag">10yr</span></button>
+        <button class="opt" type="button" data-g="2" aria-pressed="false">RainDrop <span class="tag">20yr</span></button>
+        <button class="opt" type="button" data-g="3" aria-pressed="false">Fine Black Screen <span class="tag">Steel screen</span></button>
+        <button class="opt" type="button" data-g="4" aria-pressed="false">Solid cover with side slots <span class="tag">Solid cover</span></button>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/gutter-guard.jpg" width="800" height="504" loading="lazy" alt="Gutter guard installed over a gutter beneath a clay tile roof"></div>
+        <p class="photo-note">Photo: a Classic gutter guard install under a tile roof.</p>
+        <div class="body live" aria-live="polite">
+          <h3 id="g-name">Stainless Steel Micro Mesh</h3>
+          <p class="said" id="g-said">“Our best product,” including pine needles.</p>
+          <dl>
+            <dt>Material</dt><dd id="g-mat">Stainless steel micro mesh</dd>
+            <dt>Sizes</dt><dd id="g-size">5" or 6"</dd>
+            <dt>Colors</dt><dd id="g-col">White, Black, Brown, Bronze, Cream, Mill</dd>
+            <dt>Warranty</dt><dd id="g-war">20yr factory warranty</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="h-work">
+  <div class="wrap">
+    <p class="kicker">Recent work</p>
+    <h2 id="h-work">Big homes, stone and slate, done in seamless.</h2>
+    <div class="photos">
+      <figure><div class="ph"><img src="img/copper-turret.jpg" width="552" height="442" loading="lazy" alt="Copper gutters on a stone home with a round turret"></div><figcaption>Copper on a stone home with a turret.</figcaption></figure>
+      <figure><div class="ph"><img src="img/stone-home.jpg" width="552" height="442" loading="lazy" alt="Seamless gutters on a large stone and siding home with timber-frame entry"></div><figcaption>Seamless gutters on a stone and timber home.</figcaption></figure>
+      <figure><div class="ph"><img src="img/garage-home.jpg" width="552" height="442" loading="lazy" alt="Seamless gutters along a three-car garage wing with stone base and tile roof"></div><figcaption>Gutters along a garage wing with a tile roof.</figcaption></figure>
+    </div>
+    <p class="more"><a href="https://www.csgutters.com/gallery.htm" target="_blank" rel="noopener">See the full gallery on csgutters.com →</a></p>
+  </div>
+</section>
+
+<section class="rc sec" id="contact" aria-labelledby="h-contact">
+  <div class="wrap grid">
+    <div>
+      <p class="kicker">What customers say</p>
+      <div class="rating"><span class="num">4.7</span><span class="lbl">★ on Google<br><a href="https://www.google.com/maps/place/Classic+Seamless+Gutters/@43.1409537,-88.5929594,17z/data=!4m8!3m7!1s0x8805ca41dd9c56ad:0x37762eb51a96138f" target="_blank" rel="noopener">Read the reviews</a></span></div>
+      <ul class="themes">
+        <li><b>Quick quote, quick install</b><span>Reviewers describe fast estimates and fast turnarounds.</span></li>
+        <li><b>A crew that cleans up</b><span>Courteous installers and a tidy job site come up again and again.</span></li>
+        <li><b>Trusted by builders</b><span>A home builder reviewer says they've partnered with Classic for many years.</span></li>
+      </ul>
+      <div class="builders">
+        <h3>Builders &amp; contractors</h3>
+        <p>Send job details by email or call the office. Classic now offers 7" K-style for larger commercial buildings and tile or metal roofs.</p>
+        <p><a href="mailto:sales@csgutters.com">sales@csgutters.com</a> · <a href="tel:+12625690990">(262) 569-0990</a></p>
+      </div>
+    </div>
+    <div class="contact">
+      <h3 id="h-contact">Get a free estimate</h3>
+      <p class="free">Call or text the main line. Free estimates for homes and businesses.</p>
+      <div class="ctas">
+        <a class="btn btn-copper" href="tel:+12625690990">Call (262) 569-0990</a>
+        <a class="btn btn-line" href="sms:+12625690990">Text us</a>
+      </div>
+      <ul class="lines">
+        <li><span class="where">Oconomowoc<small>Main line, voice and text</small></span><a href="tel:+12625690990">(262) 569-0990</a></li>
+        <li><span class="where">Waukesha</span><a href="tel:+12625478320">(262) 547-8320</a></li>
+        <li><span class="where">Jefferson</span><a href="tel:+19202069450">(920) 206-9450</a></li>
+        <li><span class="where">Email</span><a href="mailto:sales@csgutters.com">sales@csgutters.com</a></li>
+      </ul>
+      <div class="area">
+        <h4>Counties served</h4>
+        <ul class="chips county"><li>Waukesha</li><li>Jefferson</li><li>Dodge</li><li>Milwaukee</li></ul>
+        <h4>Including</h4>
+        <ul class="chips"><li>Waukesha</li><li>Oconomowoc</li><li>Watertown</li><li>Milwaukee</li><li>Ixonia</li><li>Delafield</li><li>Chenequa</li><li>Sussex</li></ul>
+      </div>
+      <p class="fine">Based in Ixonia. Your Southeastern Wisconsin rain gutter experts.</p>
+    </div>
+  </div>
+</section>
+
+<section class="closer" aria-label="About this preview">
+  <div class="wrap">
+    <div>
+      <h2>A first look at your new site.</h2>
+      <p>Your copper work, front and center, with a call button on every screen.</p>
+    </div>
+    <div class="ctas">
+      <a class="btn btn-copper" href="tel:+12625690990">Call (262) 569-0990</a>
+      <a class="btn btn-ghost" href="sms:+12625690990">Text</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Website by Cream City Post · Independent website concept, not the official Classic Seamless Gutters site. Logo redrawn; services, gutter-guard details, phone numbers, service area and photos from csgutters.com; rating from Google; two copper photos enhanced.</p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-copper" href="tel:+12625690990">Call (262) 569-0990</a>
+  <a class="btn btn-green" href="sms:+12625690990">Text</a>
+</div>
+
+<script>
+(function(){
+  var G=[
+    {n:"Stainless Steel Micro Mesh",s:"“Our best product,” including pine needles.",m:"Stainless steel micro mesh",z:"5\" or 6\"",c:"White, Black, Brown, Bronze, Cream, Mill",w:"20yr factory warranty"},
+    {n:"Versa Pro",s:"“Will stand up well to most debris including maple seeds (helicopters).” Can be fitted with a heated cable.",m:".040 perforated aluminum",z:"5\", 6\" and 7\"",c:"Ask when you call",w:"10yr warranty"},
+    {n:"RainDrop",s:"A polypropylene guard.",m:"Polypropylene",z:"5\" and 6\"",c:"Black",w:"20yr warranty"},
+    {n:"Fine Black Screen",s:"A powder-coated steel screen.",m:"Powder-coated steel",z:"5\" and 6\"",c:"Black (copper by special order)",w:"Ask when you call"},
+    {n:"Solid cover with side slots",s:"A solid cover with side slots.",m:"Solid cover",z:"Ask when you call",c:"Ask when you call",w:"Ask when you call"}
+  ];
+  var btns=document.querySelectorAll('.opt');
+  function show(i){
+    var g=G[i];
+    document.getElementById('g-name').textContent=g.n;
+    document.getElementById('g-said').textContent=g.s;
+    document.getElementById('g-mat').textContent=g.m;
+    document.getElementById('g-size').textContent=g.z;
+    document.getElementById('g-col').textContent=g.c;
+    document.getElementById('g-war').textContent=g.w;
+    btns.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-g')==String(i)?'true':'false');});
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){show(+b.getAttribute('data-g'));});});
+})();
+</script>
+</body>
+</html>
