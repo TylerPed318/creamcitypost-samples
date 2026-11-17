@@ -364,3 +364,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-105 v1 (Nov 13, 15:11 CT, scheduled run): live 006af64 exact HTML and all3 assets public200/hash-match; ready1a1d6bf98776c69a confirmed SENT. 0credits; about0.8MB. Original van lettering retained inside SVG, blue/red/Barlow Condensed/Inter, real installation photos, five-system picker and Facebook About navigation. Installed Higgsfield Playwright (named absent),1440/390 inspected,375 overflow/all5 choices passed; logo/framing/mobile targets fixed and affected parts rechecked. Open: photo permission/vector logo/current rating/hours/towns/owner role/second phone; omitted. Source site and Facebook could not be reopened; verified brief/master used.
 
 - Nov 13, 15:11 CT (scheduled run): last finished CCP-105 v1; next ID none in verified Gmail brief queue. No open revisions or recovery items. One sample completed,0credits. Open owner confirmations above; no working standalone business page URLs verified, About uses existing Facebook About URL. Runtime cannot select Claude Sonnet; actual installed Playwright used.
+
+- in progress — CCP-106 (2026-11-17 11:07 -06:00, scheduled run)
