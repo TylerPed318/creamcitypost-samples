@@ -455,3 +455,6 @@ CCP-111 revision1a1eabbae8ffb275 handled; v2 ready1a1eb8f13d5e6f53 confirmed SEN
 
 CCP-166 brief1a1eaf4dce76d8d1 handled; v1 ready1a1ebbee2dbecea4 confirmed SENT.
 - Nov17 scheduled handoff: last finished CCP-166 v1,0credits; next verified unbuilt brief CCP-167 Killer B's Total Pest Control (1a1eaf6148809d5a). Refresh queue/claims before starting. Open: obtain real job/team photos; no named Google quotes/count, SMS, forms or unsupported promises. Original brand preserved; Claude unavailable; supported Higgsfield Playwright used. Ending after1item.
+
+in progress — CCP-162 v2 (Nov 17, 5:30 PM CT, scheduled run)
+in progress — CCP-167 v1 (Nov 17, 5:30 PM CT, scheduled run)
