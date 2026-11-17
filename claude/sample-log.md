@@ -51,6 +51,9 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-091 v1 revision 1a1ea937160bd41a handled; v2 ready 1a1eb33bb0528825 confirmed SENT (Nov 17).
+CCP-092 v1 revision 1a1ea9371df9651f handled; v2 ready 1a1eb3c256902d9d confirmed SENT (Nov 17).
+CCP-093 v1 revision 1a1ea9372a8db6be handled; v2 ready 1a1eb3ccdbb96c01 confirmed SENT (Nov 17).
 CCP-083 v1 revision 1a1ea903e4047895 handled; v2 ready 1a1eb0f70e128007 confirmed SENT (Nov17). 
 CCP-080 v1 revision 1a1ea9034f190831 handled; v2 ready 1a1eafebd810608b confirmed SENT (Nov 17).
 CCP-081 v1 revision 1a1ea9035217a363 handled; v2 ready 1a1eb00601f983b6 confirmed SENT (Nov 17).
@@ -135,7 +138,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | v2 live d4577d9; ready 1a1eafea05c5516b SENT (Nov 17); 0 credits. Footer build note removed. |
 
 | CCP-094 | CNC Cleaning & Hauling | Junk removal, Milwaukee | brief + master CSV | v1 | cnc-cleaning-hauling/ | Live 2afdb40; ready 1a1d3366e86da9ec SENT; 0 credits. |
-| CCP-093 | Kettle Moraine Tree Services | Tree service, Summit/Oconomowoc | brief + previously verified master CSV | v1 | kettle-moraine-tree-services/ | Existing live v1 delivery recovered Nov 13; ready 1a1d3b9b2f738562 SENT; 0 credits. |
+| CCP-093 | Kettle Moraine Tree Services | Tree service, Summit/Oconomowoc | brief + previously verified master CSV | v2 | kettle-moraine-tree-services/ | v2 live d3a0e80; ready 1a1eb3ccdbb96c01 SENT (Nov 17); 0 credits. Full-size own-site photos; firewood prices rechecked live (unchanged); Kadow family wording. |
 | CCP-102 | Jung Electric LLC | Electrical, Wauwatosa | brief + master CSV | v1 | jung-electric/ | Live ba7779a; ready 1a1d64d8bf46e127 SENT; 0 credits. |
 | CCP-104 | Hometown Cleaning LLC | House cleaning, Waukesha | brief + master CSV | v1 | hometown-cleaning/ | Live d4ddae2; ready 1a1d6866d45ee64f SENT; 0 credits. |
 | CCP-101 | A Plus Cleaning Services | Cleaning, Waukesha | brief + master CSV | v1 | aplus-cleaning/ | Live d8e53bf; ready 1a1d5e08bac5996e SENT; 0 credits. |
@@ -185,8 +188,8 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-070 | Dent Spa Wisconsin | Paintless dent repair + detailing, Oconomowoc | brief | v1 | dent-spa-wisconsin/ | v1 emailed Nov 12, ~11:42 AM. 4 credits. |
 | CCP-087 | Lake Country Clean | Eco home cleaning + organizing, Waukesha County | brief 1a1d169b6a3ee7a5 | v1 | lake-country-clean/ | v1 emailed Nov 12, ~7:30 PM (1a1d28740ce02b50). 0 credits. One real photo. |
 | CCP-090 | Rescue Heating and Cooling | HVAC, West Allis | brief 1a1d1955b3667fb0 | v2 | rescue-heating-cooling/ | v2 live; ready 1a1eb2336af06177 SENT Nov17; 0credits. |
-| CCP-091 | The Clear Difference | Window cleaning, Waukesha | brief 1a1d19c19c136832 | v1 | clear-difference/ | v1 emailed Nov 12, ~8:50 PM (1a1d2bd9971200d5). 0 credits. |
-| CCP-092 | Costa Tree Service, LLC | Tree service, Hartland | brief 1a1d1a0feb249cc2 | v1 | costa-tree-service/ | v1 emailed Nov 12, ~8:55 PM (1a1d2c3421599772). 0 credits. |
+| CCP-091 | The Clear Difference | Window cleaning, Waukesha | brief 1a1d19c19c136832 | v2 | clear-difference/ | v2 live 2ceac1c; ready 1a1eb33bb0528825 SENT (Nov 17); 0 credits. Full-size own-site photos; "owner" removed. |
+| CCP-092 | Costa Tree Service, LLC | Tree service, Hartland | brief 1a1d1a0feb249cc2 | v2 | costa-tree-service/ | v2 live 4bcaadc; ready 1a1eb3c256902d9d SENT (Nov 17); 2 credits (4K hero upscale, lettering blended back). |
 | CCP-071 | D&D Well & Pumps LLC | Well drilling + pumps, Oconomowoc | brief | v1 | dd-well-pumps/ | v1 emailed Nov 12, ~1:10 PM. 2 credits. |
 | CCP-072 | BFH Services | Stump grinding, mowing, small engine, auto + welding | brief | v2 | bfh-services/ | v1 emailed Nov 12, ~3:45 PM. 0 credits. |
 | CCP-073 | Lake Country Project Guy LLC | Handyman + custom carpentry, Delafield | brief | v3 | lake-country-project-guy/ | v1 emailed Nov 12, ~1:36 PM; v2 (photo re-exports, copy swaps) emailed ~2:50 PM. 0 credits. |
@@ -417,6 +420,7 @@ CCP-084 revision1a1ea903e0113e6e handled; v2 ready1a1eb1f3f04635e5 SENT, folder 
 CCP-090 revision1a1ea936e9a2824e handled; v2 ready1a1eb2336af06177 confirmed SENT.
 - Nov17 scheduled handoff: last finished CCP-090 v2, preceded084v2; next verified open revision CCP-091 then092/093/094/106/110/111; new briefs162/164/165/166/167 follow revisions. Refresh claims/Gmail before next item. Total2credits;084 size exception disclosed. Only Tyler emailed per current-run instruction. Claude unavailable; supported installed Higgsfield Playwright used.
 
-- in progress — CCP-091 (14:28 CT, scheduled run)
-- in progress — CCP-092 (14:28 CT, scheduled run)
-- in progress — CCP-093 (14:28 CT, scheduled run)
+- done — CCP-091 v2 (Nov 17, ~2:45 PM CT, scheduled run): live 2ceac1c byte-identical, page + 9 imgs 200; ready 1a1eb33bb0528825 SENT. 0 credits. Hero, picker and work photos from own gallery originals at 1920 q88; Jeff 1080 crop from gallery/13; "owner" removed (also label "Meet the owner" → "Who you'll talk to" and portrait alt). Open: images ~3.4 MB (offered 1600px cap).
+- done — CCP-092 v2 (Nov 17, ~2:50 PM CT, scheduled run): live 4bcaadc byte-identical, page + 6 imgs 200; ready 1a1eb3c256902d9d SENT. 2 credits (4K upscale of gallery24 → 2880x2160 → 1960x2160 arch crop; garbled boom "Costa Tree Service" lettering blended back from the original). Crew/lakefront/removal full-size; snowy-lake 1440 as-is. Footer adds "main photo enhanced". Images ~3.5 MB.
+- done — CCP-093 v2 (Nov 17, ~2:55 PM CT, scheduled run): live d3a0e80 byte-identical, page + 6 assets 200; ready 1a1eb3ccdbb96c01 SENT. 0 credits. Hero IMG_0809 full 1536x2048; lift-lake-home IMG_1158 1680w, lift-full-reach IMG_3377 1080x1440 (full frame, slightly wider than v1), firewood IMG_6792 1440w. Live firewood prices re-read and unchanged. Kadow wording in subhead, tile and meta. Images ~3.2 MB.
+- Nov 17, ~2:55 PM CT (scheduled run): session ends after 3 items (091 v2 0 credits, 092 v2 2, 093 v2 0). Still open, oldest first: revisions CCP-094 (1a1ea93742632cbd), 110 (1a1ea96730a759be), 106 (1a1eabbad041fd8e), 111 (1a1eabbae8ffb275); then unbuilt briefs CCP-162, 164, 165, 166, 167. Emailed only Tyler (no grokbot CC; the scheduled prompt says to email Tyler, and the CC address is outside, so it stays unconfirmed for unattended runs). Tip: GoDaddy galleries load via JS; render the page in Chromium and log wsimg requests to find originals. Use a venv for Pillow (the system PIL is broken).
