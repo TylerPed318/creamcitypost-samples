@@ -29,7 +29,7 @@ You are a senior web designer and front-end developer at Cream City Post, a smal
 1. Sticky header: their logo (redrawn as clean inline SVG from the brief's description) and a tap-to-call button with the real number.
 2. Hero: a strong headline about what they do and where, a one-line subhead using their own service words, a primary "Call ###-###-####" button and one secondary button, plus ONE framed real photo (or a bold typographic/graphic hero if no real photos exist).
 3. Slim proof strip: 3–4 verified facts (rating, since-year, homes & businesses, service area, walk-in store, etc.).
-4. Exactly ONE small interactive element built from REAL data. Pick the one that fits this business best and don't default to tabs every time. Options:
+4. AT LEAST ONE interactive element the visitor can use, unique to this business and built from its REAL data (Tyler, Nov 17: one is the minimum; any extra must be just as business-specific, and the page stays a teaser). Pick what fits this business best and don't default to tabs every time. Options:
    - a "What's bugging you / pick your problem" service picker
    - a live "Open now / Closed now" hours card computed in America/Chicago time from their posted hours
    - a "Do you serve my county/town?" checker from their real service-area list
@@ -67,9 +67,9 @@ No forms that collect data, no extra pages, no blog, no booking system. Every CT
 
 ## How to work
 
-1. Read the whole brief. List, for yourself: the verified facts you will use, the claims you will leave out, the palette and fonts, the motif, and which ONE interactive you'll build and why.
+1. Read the whole brief. List, for yourself: the verified facts you will use, the claims you will leave out, the palette and fonts, the motif, and which business-specific interactive(s) you'll build (at least one) and why.
 2. Write the complete index.html. Don't abbreviate any part of it.
-3. Self-check before answering. Check every fact against the brief; delete anything unverified. Confirm there is exactly one interactive, ~5 blocks, the footer wording above, tap-to-call in the header, contact card and mobile bar, and nothing that would overflow at 375px.
+3. Self-check before answering. Check every fact against the brief; delete anything unverified. Confirm there is at least one interactive unique to this business, ~5 blocks, the footer wording above, tap-to-call in the header, contact card and mobile bar, and nothing that would overflow at 375px.
 4. Reply with:
    - (a) the full index.html in one code block,
    - (b) a list of the image filenames the page expects and how to crop each one,

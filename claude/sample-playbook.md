@@ -30,7 +30,9 @@ Read [sample-design-guidelines.md](sample-design-guidelines.md) fully before eve
 
 ## 3. Shape: a short teaser (about 5 blocks)
 
-Header with real logo + tap-to-call → hero (headline + one framed real photo) → slim proof strip (3–4 items) → **exactly one** interactive built from real data (before/after slider only if a real matching pair exists; otherwise an open-now hours card, service picker, etc.) → 3-photo row → 1–2 short reviews + contact card → "first look" closer + footer "Website by Cream City Post". Fold extras into one line of copy. Don't mirror their current hero. It must be a clear upgrade over their site and never thinner on proof.
+Header with real logo + tap-to-call → hero (headline + one framed real photo) → slim proof strip (3–4 items) → **at least one** interactive built from this business's real data (before/after slider only if a real matching pair exists; otherwise an open-now hours card, service picker, etc.) → 3-photo row → 1–2 short reviews + contact card → "first look" closer + footer "Website by Cream City Post". Fold extras into one line of copy. Don't mirror their current hero. It must be a clear upgrade over their site and never thinner on proof.
+
+**Tyler, Nov 17 (chat): Every sample must have at least one interactive element the visitor can actually use, and it must be unique to that business: built from that company's own real data (their services, towns, hours, photos, before/after pairs, etc.), not a generic widget reused across samples. One is the minimum; add more only if each one is just as specific to the business and the page stays a teaser.**
 
 **Tyler, Nov 11 (chat): Whenever showing a real before-and-after comparison, use a draggable slider rather than toggle buttons. Keep it keyboard/touch accessible and disclose different camera angles; never invent a matching pair.**
 
@@ -68,7 +70,7 @@ Header with real logo + tap-to-call → hero (headline + one framed real photo) 
 ## 8. Pre-send checklist
 
 - [ ] ID from the sheet; brief read and cross-checked
-- [ ] ~5 blocks, one interactive, unique design for this client
+- [ ] ~5 blocks, at least one interactive unique to this business (built from its own data), unique design for this client
 - [ ] Hours and every claim match their site (homepage + About/History)
 - [ ] Original full-res photos that pass the sharpness math; lettering checked; no stock/AI; clean crops
 - [ ] Real logo + favicon; page < 1 MB
