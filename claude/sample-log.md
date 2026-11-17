@@ -154,6 +154,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-102 | Jung Electric LLC | Electrical, Wauwatosa | brief + master CSV | v1 | jung-electric/ | Live ba7779a; ready 1a1d64d8bf46e127 SENT; 0 credits. |
 | CCP-104 | Hometown Cleaning LLC | House cleaning, Waukesha | brief + master CSV | v1 | hometown-cleaning/ | Live d4ddae2; ready 1a1d6866d45ee64f SENT; 0 credits. |
 | CCP-101 | A Plus Cleaning Services | Cleaning, Waukesha | brief + master CSV | v1 | aplus-cleaning/ | Live d8e53bf; ready 1a1d5e08bac5996e SENT; 0 credits. |
+| CCP-166 | Black Cat Plumbing | Plumbing, Milwaukee | brief + master CSV | v1 | black-cat-plumbing/ | Live682190c; ready1a1ebbee2dbecea4 confirmed SENT; 0credits. |
 | ID | Business | Trade / City | Source lead | Latest | Folder | Status |
 |---|---|---|---|---|---|---|
 | CCP-111 | ProKleen Wisconsin, LLC | Duct & dryer vent cleaning, Waukesha | brief + master CSV | v2 | prokleen-wisconsin/ | Live 796e0bb; ready 1a1eb8f13d5e6f53 confirmed SENT; 6 quoted credits. |
@@ -450,4 +451,7 @@ CCP-111 revision1a1eabbae8ffb275 handled; v2 ready1a1eb8f13d5e6f53 confirmed SEN
 - done — CCP-165 v1 (Nov 17, ~4:41 PM CT, scheduled run): live ad8a7b5, HTML byte-identical, page + 6 assets 200; ready 1a1ebac5946f1281 SENT (only Tyler). 0 credits. Real logo SVG from their CDN; before/after slider from gallery composite IMG_4658 (angles differ, disclosed); house numbers blurred on two homes. Open: no named quotes/count; nothing from hidden for-bots block; 24/7 claims, IL/Madison omitted; photo permission/towns; team photos for v2.
 - Nov 17, ~4:41 PM CT (scheduled run): session ends after 3 items (CCP-162 v1, 164 v1, 165 v1; 0 credits total). No open revisions. Next up, oldest brief first: CCP-166 Black Cat Plumbing (1a1eaf4dce76d8d1), then CCP-167 Killer B's Total Pest Control (1a1eaf6148809d5a). Emailed only Tyler (no grokbot CC, same call as earlier unattended runs). Tip: brief photo labels can be swapped (CCP-165 'dark-door' file was the beige before shot), so look at every file before captioning.
 
-- in progress — CCP-166 (2026-11-17 16:57 -06:00 America/Chicago, scheduled run)
+- done — CCP-166 v1 (Nov17 scheduled run): live682190c exact HTML SHA256 match; page/logo/cat/favicon200; ready1a1ebbee2dbecea4 confirmed SENT only Tyler. 0credits. Original wordmark/cat retained, six services, own-site promises, verified separate-page nav, David/Shaun and cats introduction. Single Central-time hours card boundary checks passed; live1440/390 visually inspected,375 no overflow/errors. No job/team imagery supplied; original brand files used rather than approximate redraw. Installed Higgsfield Playwright/existingChromium used because named render script absent. Claude selection unavailable.
+
+CCP-166 brief1a1eaf4dce76d8d1 handled; v1 ready1a1ebbee2dbecea4 confirmed SENT.
+- Nov17 scheduled handoff: last finished CCP-166 v1,0credits; next verified unbuilt brief CCP-167 Killer B's Total Pest Control (1a1eaf6148809d5a). Refresh queue/claims before starting. Open: obtain real job/team photos; no named Google quotes/count, SMS, forms or unsupported promises. Original brand preserved; Claude unavailable; supported Higgsfield Playwright used. Ending after1item.
