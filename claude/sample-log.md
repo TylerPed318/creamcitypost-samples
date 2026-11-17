@@ -398,3 +398,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - Nov 17, ~1:45 PM CT (scheduled run): session ends after 3 items (082 v2 0 credits, 080 v2 2, 081 v2 14). Still open, oldest first: revisions CCP-083, 084, 090, 091, 092, 093, 094, 106, 110, 111 (095 claimed 12:18 CT by another run, no ready email yet; resumable after 1:48 PM CT); then unbuilt briefs CCP-162 Prime Electric (1a1ea906dd58a0a3), CCP-164 (1a1eaf22ee83c7f0), CCP-165 (1a1eaf38a0b59ff4), CCP-166 (1a1eaf4dce76d8d1), CCP-167 (1a1eaf6148809d5a). Higgsfield 2K now returns ~3981x2160 from 850px sources.
 
 - in progress — CCP-083 (2026-11-17 13:41 -06:00, scheduled run)
+
+- in progress — CCP-098 (2026-11-17 13:45 -06:00, scheduled run)
