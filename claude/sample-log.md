@@ -201,6 +201,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-083 | Devix Heating & Cooling | HVAC, West Allis | brief + revision | v2 | devix-heating-cooling/ | v2 dce2a56; ready 1a1eb0f70e128007 SENT; 2 credits. |
 | CCP-085 | Forced Air Systems | HVAC, Greendale | brief | v1 | forced-air-systems/ | v1 emailed Nov 12; 0 credits. |
 | CCP-084 | Clear Vision ProWash | Exterior cleaning, Waukesha | brief | v1 | clear-vision-prowash/ | v1 emailed Nov 12, ~7:00 PM. 0 credits. |
+
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
 | CCP-018 | Hernia Movers Inc. | Movers, Milwaukee | 10-20 #8 | v1 | hernia-movers/ | **Approved v1.** |
@@ -407,4 +408,8 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 CCP-095 revision1a1ea8cf2d221932 handled by v2 ready1a1eb1180bafe48a confirmed SENT.
 - Nov17 13:53 CT handoff: last finished CCP-095 v2; next verified pending revision084 then090/091/092/093/094/106/110/111 (refresh queue/claims before starting); new briefs162/164/165/166/167 follow revisions. Ending with concurrent builder active. Only Tyler emailed. Open:3.09MB size exception and failed-job charges; Claude selection unavailable; installed Higgsfield Playwright used.
 
-- in progress — CCP-084 (2026-11-17 14:01 -06:00, scheduled run)
+- done — CCP-084 v2 (Nov17 scheduled run): live e0d573a exact deployed HTML; all5 referenced images200; ready1a1eb1f3f04635e5 confirmed SENT only Tyler. 2credits, upscale e042fbb6-968f-4176-8e32-f5d270682e83;4096x2313 original faithful upscale, q88 phone2148x1344/desktop2400. All requested copy/town corrections; verified existing-page nav. Live1440/390 inspected,375 overflow/New Berlin and removed-town checks pass,no errors. Named script absent; installed Higgsfield Playwright/existing Chromium used. Size exception2.06MB referenced set,1.22–1.31MB per device disclosed; Claude unavailable.
+
+CCP-084 revision1a1ea903e0113e6e handled; v2 ready1a1eb1f3f04635e5 SENT, folder clear-vision-prowash/.
+
+- in progress — CCP-090 (11/17/2026, 2:07:57 PM CT, scheduled run)
