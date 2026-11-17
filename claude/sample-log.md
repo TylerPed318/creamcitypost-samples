@@ -386,3 +386,4 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - in progress — CCP-095 (2026-11-17 12:18 -06:00, scheduled run)
 - done — CCP-098 v2 (Nov 17, ~12:40 PM CT, scheduled run): live 645d3b5 byte-identical, page + 7 imgs 200; ready 1a1eac65a7694748 SENT. 2 credits (4K upscale of own Garage-Door-02.jpg → 2880×2160 hero.webp via <picture>, jpg fallback; 2.98× on phone). Footer adds "main photo enhanced". Open: alt says "arched windows" (they are rectangular), left per keep-unchanged.
 - done — CCP-099 v2 (Nov 17, ~12:40 PM CT, scheduled run): live 0f96de8 byte-identical, page + logo 200; ready 1a1eac66cb987630 SENT. 0 credits. Header logo on #f7f7f2 plate, viewBox 40 420 2264 660, 190×62 / 160×52 ≤760px. Open: yellow lines lower-contrast on light plate; trimmed-PNG alternative offered.
+- in progress — CCP-079 (2026-11-17 12:45 -06:00, scheduled run)
