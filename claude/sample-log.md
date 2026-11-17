@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-083 v1 revision 1a1ea903e4047895 handled; v2 ready 1a1eb0f70e128007 confirmed SENT (Nov17). 
 CCP-080 v1 revision 1a1ea9034f190831 handled; v2 ready 1a1eafebd810608b confirmed SENT (Nov 17).
 CCP-081 v1 revision 1a1ea9035217a363 handled; v2 ready 1a1eb00601f983b6 confirmed SENT (Nov 17).
 CCP-082 v1 revision 1a1ea903b81d150a handled; v2 ready 1a1eafea05c5516b confirmed SENT (Nov 17).
@@ -197,7 +198,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-079 | Beachside Boat & Bait | Boat rentals + bait, Pewaukee Lake | brief | v2 | beachside-boat-bait/ | v1 emailed Nov 12, ~16:37, 2 credits (kayak upscale). v2 live ece5d46; ready 1a1eac8990ad1248 SENT; 0 credits (own-site promises). |
 | CCP-080 | Dean Pipito Water Features (Aquatica) | Ponds, waterfalls + water-garden shop, Wales | brief | v2 | aquatica-water-features/ | v2 live ca7fc87; ready 1a1eafebd810608b SENT (Nov 17); 2 credits (4K hero upscale). |
 | CCP-081 | Inside Out Remodeling LLC | Turnkey remodeling, Wales | brief | v2 | inside-out-remodeling/ | v2 live 594e541; ready 1a1eb00601f983b6 SENT (Nov 17); 14 credits (7 upscales, approved). Google 1.0 (2) — pitch decision. |
-| CCP-083 | Devix Heating & Cooling | HVAC, West Allis | brief | v1 | devix-heating-cooling/ | v1 emailed Nov 12, ~6:50 PM. 0 credits. |
+| CCP-083 | Devix Heating & Cooling | HVAC, West Allis | brief + revision | v2 | devix-heating-cooling/ | v2 dce2a56; ready 1a1eb0f70e128007 SENT; 2 credits. |
 | CCP-085 | Forced Air Systems | HVAC, Greendale | brief | v1 | forced-air-systems/ | v1 emailed Nov 12; 0 credits. |
 | CCP-084 | Clear Vision ProWash | Exterior cleaning, Waukesha | brief | v1 | clear-vision-prowash/ | v1 emailed Nov 12, ~7:00 PM. 0 credits. |
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
@@ -397,6 +398,8 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-081 v2 (Nov 17, ~1:45 PM CT, scheduled run): live 594e541 byte-identical, page + 8 imgs 200; ready 1a1eb00601f983b6 SENT. 14 credits (4K: home-2/8/3/10 → 3400x1844; 2K: home-1/7/4 → 1700x922; approved in revision). Footer adds "photos enhanced"; BBB not added (unconfirmed). Page ~1.2 MB.
 - Nov 17, ~1:45 PM CT (scheduled run): session ends after 3 items (082 v2 0 credits, 080 v2 2, 081 v2 14). Still open, oldest first: revisions CCP-083, 084, 090, 091, 092, 093, 094, 106, 110, 111 (095 claimed 12:18 CT by another run, no ready email yet; resumable after 1:48 PM CT); then unbuilt briefs CCP-162 Prime Electric (1a1ea906dd58a0a3), CCP-164 (1a1eaf22ee83c7f0), CCP-165 (1a1eaf38a0b59ff4), CCP-166 (1a1eaf4dce76d8d1), CCP-167 (1a1eaf6148809d5a). Higgsfield 2K now returns ~3981x2160 from 850px sources.
 
-- in progress — CCP-083 (2026-11-17 13:41 -06:00, scheduled run)
+- done — CCP-083 v2 (2026-11-17 13:50 -06:00, scheduled run): live dce2a56 exact HTML/image match; ready 1a1eb0f70e128007 confirmed SENT; 2 credits. Original PDF furnace photo upscaled 3072x4096, quality-88 crop2340x2925 shared by phone/desktop picture; 700556bytes. Badge/louvers inspected; live1440/390 visually checked,375 no overflow/all3 picker choices pass. Installed Higgsfield Playwright used; named script absent. Claude selection unavailable. Open: previous factual omissions retained.
 
 - in progress — CCP-098 (2026-11-17 13:45 -06:00, scheduled run)
+
+- Nov17 13:50 CT (scheduled run): last finished CCP-083 v2,2credits; next verified revision CCP-084, then090/091/092/093/094/106/110/111; CCP-095 and098 have other-session claims/local work, preserved. New briefs162/164/165/166/167 await revisions. Ending after one item with concurrent builder active. Only Tyler emailed per current run instruction; repository CC instruction does not override it. Runtime cannot select Claude; installed Higgsfield Playwright used.
