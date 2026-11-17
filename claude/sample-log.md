@@ -130,7 +130,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 
 | CCP-098 | The Garage Door Guy LLC | Garage doors, Waukesha area | brief + master CSV | v2 | garage-door-guy/ | v1 e124f71 (1a1d5d2f82515ec3). v2 live 645d3b5; ready 1a1eac65a7694748 SENT; 2 credits (hero upscale). |
 
-| CCP-095 | Custom Construction of Wisconsin | Concrete, Waukesha | brief + master CSV | v1 | custom-construction-wisconsin/ | Live 8db22cc; ready 1a1d387e1f5deac1 SENT; 0 credits. |
+| CCP-095 | Custom Construction of Wisconsin | Concrete, Waukesha | brief + master CSV | v2 | custom-construction-wisconsin/ | Live12c3c9b; ready1a1eb1180bafe48a SENT; 10 quoted successful credits; failed-job charge unverified. |
 
 | CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | v2 live d4577d9; ready 1a1eafea05c5516b SENT (Nov 17); 0 credits. Footer build note removed. |
 
@@ -388,7 +388,7 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-111 v1 (Nov 17, scheduled run): live 77fdbd9 byte-identical, page + 5 imgs 200; ready 1a1ea96215dc0158 SENT. 0 credits. Hero drag slider (Google dryer-vent before/after pair); logo SVG redraw. Open: Google photo uploader, photo permission, street address, process steps; family photo skipped; no named quotes/counts per design rules.
 - Nov 17, ~11:45 AM CT (scheduled run): session ends after 2 items (CCP-110 v1, 4 credits; CCP-111 v1, 0 credits). No other open revisions or unbuilt briefs. Open: a mid-run message asked to CC an outside grokbot address on every email; the CCP-110 ready email included it, but the safety classifier blocked adding that rule to the playbook, so the CCP-111 email didn't CC it. Tyler confirmed live in chat; CCP-111 ready resent with the CC, and the rule is now in the playbook (section 6).
 
-- in progress — CCP-095 (2026-11-17 12:18 -06:00, scheduled run)
+- done — CCP-095 v2 (Nov17 scheduled run): live12c3c9b exact HTML and all9 assets public200; ready1a1eb1180bafe48a confirmed SENT. Four real photos WebP q85 (1920x1440; wall1660x1440), original logo862x268 with original alpha restored; internal brief wording removed. Five successful Higgsfield upscales quoted10credits; initial transparent-logo job failed, charge/refund unverified. 3090005bytes including JPG fallbacks, disclosed. Installed Higgsfield Playwright1440/390 visually inspected;375 overflow/all14 town choices pass. Claude selection unavailable. Owner photo permission/current family roles remain open.
 - done — CCP-098 v2 (Nov 17, ~12:40 PM CT, scheduled run): live 645d3b5 byte-identical, page + 7 imgs 200; ready 1a1eac65a7694748 SENT. 2 credits (4K upscale of own Garage-Door-02.jpg → 2880×2160 hero.webp via <picture>, jpg fallback; 2.98× on phone). Footer adds "main photo enhanced". Open: alt says "arched windows" (they are rectangular), left per keep-unchanged.
 - done — CCP-099 v2 (Nov 17, ~12:40 PM CT, scheduled run): live 0f96de8 byte-identical, page + logo 200; ready 1a1eac66cb987630 SENT. 0 credits. Header logo on #f7f7f2 plate, viewBox 40 420 2264 660, 190×62 / 160×52 ≤760px. Open: yellow lines lower-contrast on light plate; trimmed-PNG alternative offered.
 - done — CCP-079 v2 (Nov 17, ~12:55 PM CT, scheduled run): live ece5d46 byte-identical, page + 4 imgs 200; ready 1a1eac8990ad1248 SENT. 0 credits. Review themes replaced by 4 own-site promises (verified verbatim on beachsideboat.com), caption/footer "rating from Google", "downtown" removed (hero + meta).
@@ -400,6 +400,9 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 - done — CCP-083 v2 (2026-11-17 13:50 -06:00, scheduled run): live dce2a56 exact HTML/image match; ready 1a1eb0f70e128007 confirmed SENT; 2 credits. Original PDF furnace photo upscaled 3072x4096, quality-88 crop2340x2925 shared by phone/desktop picture; 700556bytes. Badge/louvers inspected; live1440/390 visually checked,375 no overflow/all3 picker choices pass. Installed Higgsfield Playwright used; named script absent. Claude selection unavailable. Open: previous factual omissions retained.
 
-- in progress — CCP-098 (2026-11-17 13:45 -06:00, scheduled run)
+- superseded redundant claim — CCP-098 (Nov17 13:45 CT): v2 already delivered by concurrent run; no sample edits or duplicate email. Extra upscale6f18b92d-7dd4-4245-844e-7671a39704be failed; charge/refund unverified.
 
 - Nov17 13:50 CT (scheduled run): last finished CCP-083 v2,2credits; next verified revision CCP-084, then090/091/092/093/094/106/110/111; CCP-095 and098 have other-session claims/local work, preserved. New briefs162/164/165/166/167 await revisions. Ending after one item with concurrent builder active. Only Tyler emailed per current run instruction; repository CC instruction does not override it. Runtime cannot select Claude; installed Higgsfield Playwright used.
+
+CCP-095 revision1a1ea8cf2d221932 handled by v2 ready1a1eb1180bafe48a confirmed SENT.
+- Nov17 13:53 CT handoff: last finished CCP-095 v2; next verified pending revision084 then090/091/092/093/094/106/110/111 (refresh queue/claims before starting); new briefs162/164/165/166/167 follow revisions. Ending with concurrent builder active. Only Tyler emailed. Open:3.09MB size exception and failed-job charges; Claude selection unavailable; installed Higgsfield Playwright used.
