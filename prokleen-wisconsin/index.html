@@ -74,21 +74,15 @@ nav.main a:hover{background:var(--sky)}
 .hero .after{font-size:15px;color:var(--slate);margin:0}
 .hero .after b{color:var(--navy)}
 
-/* before/after slider (the one interactive) */
-.ba{margin:0;justify-self:center;width:100%;max-width:440px}
-.ba-box{position:relative;aspect-ratio:3/4;border-radius:22px;overflow:hidden;background:#ccd;box-shadow:0 30px 60px -28px rgba(11,53,80,.55),0 0 0 8px var(--white);touch-action:pan-y;user-select:none;cursor:ew-resize}
-.ba-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
-.ba-before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
-.ba-line{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:4px;margin-left:-2px;background:var(--white);box-shadow:0 0 0 1px rgba(11,53,80,.25)}
-.ba-knob{position:absolute;top:50%;left:var(--pos,50%);width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:var(--orange);color:var(--orange-ink);display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.3)}
-.ba-knob svg{width:26px;height:26px}
-.ba-tag{position:absolute;top:14px;padding:5px 12px;border-radius:999px;font:800 13px/1.2 var(--display);letter-spacing:.08em;text-transform:uppercase}
-.ba-tag.l{left:14px;background:var(--navy);color:var(--white)}
-.ba-tag.r{right:14px;background:var(--white);color:var(--navy)}
-.ba-range{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
-.ba-box:focus-within{outline:3px solid var(--orange);outline-offset:6px}
-.ba figcaption{font-size:14px;color:var(--slate);margin-top:16px;text-align:center}
-
+/* Own-site comparison, different camera angles */
+.furnace-pair{margin:0;width:100%;max-width:620px;justify-self:center}
+.pair-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pair-grid div{position:relative}
+.pair-grid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;box-shadow:0 16px 32px -20px var(--navy)}
+.pair-grid b{position:absolute;top:10px;left:10px;background:var(--navy);color:var(--white);border-radius:20px;padding:4px 12px;font-size:13px}
+.furnace-pair figcaption{font-size:14px;color:var(--slate);margin-top:14px}
+.hours-status{padding:12px 16px;border:1px solid var(--line);border-radius:12px;margin:18px 0;color:var(--white)}
+.photos{max-width:300px}
 /* proof */
 .proof{background:var(--navy);color:var(--white)}
 .proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
@@ -268,17 +262,10 @@ footer p{margin:0;max-width:70em}
       </div>
       <p class="after"><b>No Hidden Charges, Guaranteed Work, Fully Insured.</b> Phones are answered after hours, including Sundays.</p>
     </div>
-    <figure class="ba">
-      <div class="ba-box" id="ba" style="--pos:50%">
-        <img src="img/vent-after.jpg" width="900" height="1200" alt="After: the same dryer vent box cleaned out, with the metal visible and the lint gone">
-        <img class="ba-before" src="img/vent-before.jpg" width="900" height="1200" alt="Before: a dryer vent box packed with gray lint spilling onto the floor">
-        <span class="ba-tag l">Before</span><span class="ba-tag r">After</span>
-        <span class="ba-line" aria-hidden="true"></span>
-        <span class="ba-knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
-        <input class="ba-range" id="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the dryer vent before and after cleaning">
-      </div>
-      <figcaption>Drag to compare: a clogged dryer vent opening, before and after. Photos from the ProKleen Google listing.</figcaption>
-    </figure>
+    <figure class="furnace-pair"><div class="pair-grid">
+<div><img src="img/furnace-before.webp" width="1440" height="1920" alt="Before: open furnace cabinet containing debris and a cleaning hose"><b>Before</b></div>
+<div><img src="img/furnace-after.webp" width="1440" height="1920" alt="After: furnace cabinet with debris cleaned out"><b>After</b></div>
+</div><figcaption>Before and after: a furnace cabinet cleaned out. Photos from prokleenwisconsin.com. Camera angles differ slightly.</figcaption></figure>
   </div>
 </section>
 
@@ -287,7 +274,7 @@ footer p{margin:0;max-width:70em}
     <ul>
       <li><a href="https://www.google.com/maps/place/ProKleen+Wisconsin,+LLC/@43.0082122,-88.2814796,17z/data=!4m8!3m7!1s0x8805aff97be25549:0xe9b45f90b88810ad" target="_blank" rel="noopener"><b>★ 4.9 on Google</b><span>Read the reviews</span></a></li>
       <li><b>Since 1987</b><span>Family owned and operated</span></li>
-      <li><b>Neighborhood Favorite</b><span>Nextdoor, 2021</span></li>
+      <li><b>After-hours calls</b><span>Phones answered after hours, including Sundays.</span></li>
       <li><b>Fully insured</b><span>Guaranteed work, no hidden charges</span></li>
     </ul>
   </div>
@@ -297,26 +284,26 @@ footer p{margin:0;max-width:70em}
   <div class="wrap">
     <p class="kicker">Two services, done well</p>
     <h2 id="h-svc">Air quality is our specialty.</h2>
-    <p class="lede">Keep your family comfortable and safe with professional air duct and dryer vent cleaning, quoted free and priced fairly.</p>
+    <p class="lede">Keep your family comfortable and safe with professional air duct and dryer vent cleaning, with a free estimate.</p>
     <div class="svc">
       <article>
         <svg class="louver" viewBox="0 0 120 120" aria-hidden="true"><g stroke="#0B3550" stroke-width="8"><path d="M10 20h100M10 44h100M10 68h100M10 92h100"/></g></svg>
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 12h10M7 15h10"/></svg></div>
         <h3>Air duct cleaning</h3>
-        <p>Whole-home duct cleaning, including homes whose ducts have never been cleaned. Tell Ben your home type and square footage for a free estimate.</p>
+        <p>Build up of dust, debris, and pollutants inside your air ducts and air vents can create allergies and illness, and rob your pocket book from rising energy costs. Tell Ben your home type and square footage for a free estimate.</p>
       </article>
       <article>
         <svg class="louver" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="8"><circle cx="60" cy="60" r="44"/><circle cx="60" cy="60" r="22"/></g></svg>
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1F1305" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M8 6.5h2"/></svg></div>
         <h3>Dryer vent cleaning</h3>
-        <p>The full dryer vent line, out to the vent on the outside of your home. Clothes taking too long to dry? That lint has to go somewhere.</p>
+        <p>Build up of dust and debris in dryer vents poses serious risks to you and your family if neglected. Keep your family comfortable and safe.</p>
       </article>
     </div>
     <ol class="steps" aria-label="How it works">
-      <li>Call for a free estimate, with instant quotes from Ben during business hours</li>
-      <li>Ben explains the process and answers your questions</li>
-      <li>The cleaning gets done when he says it will</li>
-      <li>Before and after: see the difference yourself</li>
+      <li>Call for a free estimate, with instant quotes from Ben during business hours.</li>
+      <li>Tell Ben your type of residence and square footage.</li>
+      <li>No hidden charges.</li>
+      <li>Guaranteed work, fully insured.</li>
     </ol>
   </div>
 </section>
@@ -341,13 +328,7 @@ footer p{margin:0;max-width:70em}
   <div class="wrap">
     <p class="kicker">From the job</p>
     <h2 id="h-work">What comes out of your system.</h2>
-    <div class="photos">
-      <figure><div class="ph"><img src="img/furnace-before.jpg" width="720" height="960" loading="lazy" alt="Open furnace cabinet with debris in the bottom and a large black cleaning hose inserted"></div><figcaption><b>Before:</b> furnace cabinet with the cleaning hose in.</figcaption></figure>
-      <figure><div class="ph"><img src="img/furnace-after.jpg" width="720" height="960" loading="lazy" alt="The same furnace cabinet after cleaning, bare clean metal inside"></div><figcaption><b>After:</b> the cabinet cleaned out. Camera angle differs slightly.</figcaption></figure>
-      <figure><div class="ph"><img src="img/lint-pile.jpg" width="640" height="861" loading="lazy" alt="A large pile of dryer lint on the grass below an exterior dryer vent on beige siding"></div><figcaption><b>Dryer vent:</b> lint cleared from the line, piled under the outside vent.</figcaption></figure>
-    </div>
-  </div>
-</section>
+    <div class="photos" style="display:block"><figure><div class="ph"><img src="img/lint-pile.webp" width="1428" height="1920" loading="lazy" alt="Dryer lint on the grass beneath an exterior dryer vent on beige siding"></div><figcaption><b>Dryer vent:</b> lint cleared from the line, piled under the outside vent.</figcaption></figure></div></div></section>
 
 <section class="rc sec" id="contact" aria-labelledby="h-contact">
   <div class="wrap grid">
@@ -359,10 +340,7 @@ footer p{margin:0;max-width:70em}
         <li><div><b>On time and professional</b><span>Friendly, prepared and finished when he said he would be.</span></div></li>
         <li><div><b>Reasonably priced</b><span>Fair prices come up again and again in reviews.</span></div></li>
       </ul>
-      <div class="badge">
-        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#E6F3FA" stroke="#007CBC" stroke-width="2"/><path d="M11 21l6 6 12-13" fill="none" stroke="#007CBC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span><b>2021 Neighborhood Favorite</b> on Nextdoor, as shown on <a href="https://www.facebook.com/ProKleenWisconsin/" target="_blank" rel="noopener">their Facebook page</a>.</span>
-      </div>
+
     </div>
     <div class="contact">
       <h3 id="h-contact">Get your free estimate.</h3>
@@ -371,7 +349,7 @@ footer p{margin:0;max-width:70em}
         <a class="btn btn-orange" href="tel:+12628751690">Call (262) 875-1690</a>
         <a class="btn btn-blue" href="mailto:ben.prokleenwi@gmail.com?subject=Free%20estimate%20request">Email Ben</a>
       </div>
-      <table class="hours" aria-label="Business hours">
+      <p class="hours-status" id="hours-status" role="status">Business hours · Central time</p><table class="hours" aria-label="Business hours">
         <tbody>
           <tr data-d="1,2,3,4,5"><th scope="row">Mon–Fri</th><td>8:00 am – 6:00 pm</td></tr>
           <tr data-d="6"><th scope="row">Saturday</th><td>8:00 am – 12:00 pm</td></tr>
@@ -383,10 +361,7 @@ footer p{margin:0;max-width:70em}
         <a href="tel:+12628751690">(262) 875-1690</a>
         <a href="mailto:ben.prokleenwi@gmail.com">ben.prokleenwi@gmail.com</a>
       </div>
-      <div class="towns">
-        <h4>Based in Waukesha, WI 53188 · serving</h4>
-        <ul><li>Waukesha</li><li>Brookfield</li><li>New Berlin</li><li>Pewaukee</li><li>Delafield</li><li>Watertown</li><li>Hartford</li><li>Cedarburg</li><li>Racine</li><li>Delavan</li></ul>
-      </div>
+      <div class="towns"><h4>Waukesha, Wisconsin 53188</h4></div>
     </div>
   </div>
 </section>
@@ -407,7 +382,7 @@ footer p{margin:0;max-width:70em}
 
 <footer>
   <div class="wrap">
-    <p>Website by Cream City Post · Independent website concept, not the official ProKleen Wisconsin site. Logo redrawn; story, promises, hours and furnace/lint photos from prokleenwisconsin.com; service area, email and Nextdoor badge from their Facebook page; rating and dryer-vent before/after photos from their Google listing.</p>
+    <p>Website by Cream City Post · Independent website concept, not the official ProKleen Wisconsin site. Logo redrawn; Story, promises, hours and job photos from prokleenwisconsin.com; email from their Facebook page; rating from their Google listing. Job photos enhanced.</p>
   </div>
 </footer>
 
@@ -418,9 +393,14 @@ footer p{margin:0;max-width:70em}
 
 <script>
 (function(){
-  var box=document.getElementById('ba'),r=document.getElementById('ba-range');
-  function set(v){box.style.setProperty('--pos',v+'%');}
-  r.addEventListener('input',function(){set(r.value);});
+  function updateHours(now){
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(now);
+    var v={};parts.forEach(function(p){v[p.type]=p.value;});
+    var day=v.weekday, minutes=Number(v.hour)*60+Number(v.minute),close=day==='Sat'?720:1080;
+    var open=day!=='Sun'&&minutes>=480&&minutes<close;
+    document.getElementById('hours-status').textContent=(open?'Open now · Business hours':'Outside business hours · Phones answered after hours, including Sundays.')+' · Central time';
+  }
+  updateHours(new Date());setInterval(function(){updateHours(new Date());},60000);
 })();
 </script>
 </body>
