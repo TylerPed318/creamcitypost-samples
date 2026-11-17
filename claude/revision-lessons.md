@@ -124,3 +124,5 @@ Approved as final so far: CCP-005 v3, CCP-007 v3, CCP-008 v3, CCP-009 v3, CCP-01
 - Nov17 CCP-083 v2: Extract the original embedded job photo from company PDFs before enhancement. Check louvers and brand lettering at full size; a shared high-resolution WebP for desktop/phone can satisfy both sharpness targets without duplicate page weight.
 
 - Nov17 CCP-095 v2: Higgsfield uploads require the returned Content-Type AND signed If-None-Match: * header. Missing either causes SignatureDoesNotMatch403. Confirm only after actual200. Upscaler may flatten alpha; restore original logo alpha mask after faithful enhancement. Re-read the COMPLETE current log and sent history immediately before each claim/job; concurrent runs can finish an ID while another item is processing.
+
+- Nov17 CCP-084/090 v2: Treat the stated team size as including office staff when the company says so. Verify town lists rather than inferring nearby coverage. Quality88 foliage exports may exceed1MB; disclose actual per-device transfer and responsive source selection. Existing /ms-playwright Chromium can be launched explicitly when the installed Playwright expects a missing newer build.

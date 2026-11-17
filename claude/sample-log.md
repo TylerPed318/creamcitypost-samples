@@ -184,7 +184,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-069 | Hardwired Electric | Electrical + Generac + lighting, Lake Country | brief | v2 | hardwired-electric/ | v1 emailed Nov 12, ~11:36 AM; v1 revision → v2 emailed ~12:50 PM. 0 credits. |
 | CCP-070 | Dent Spa Wisconsin | Paintless dent repair + detailing, Oconomowoc | brief | v1 | dent-spa-wisconsin/ | v1 emailed Nov 12, ~11:42 AM. 4 credits. |
 | CCP-087 | Lake Country Clean | Eco home cleaning + organizing, Waukesha County | brief 1a1d169b6a3ee7a5 | v1 | lake-country-clean/ | v1 emailed Nov 12, ~7:30 PM (1a1d28740ce02b50). 0 credits. One real photo. |
-| CCP-090 | Rescue Heating and Cooling | HVAC, West Allis | brief 1a1d1955b3667fb0 | v1 | rescue-heating-cooling/ | v1 emailed Nov 12, ~7:45 PM (1a1d28a7a7db8637). 0 credits. Photo-free. |
+| CCP-090 | Rescue Heating and Cooling | HVAC, West Allis | brief 1a1d1955b3667fb0 | v2 | rescue-heating-cooling/ | v2 live; ready 1a1eb2336af06177 SENT Nov17; 0credits. |
 | CCP-091 | The Clear Difference | Window cleaning, Waukesha | brief 1a1d19c19c136832 | v1 | clear-difference/ | v1 emailed Nov 12, ~8:50 PM (1a1d2bd9971200d5). 0 credits. |
 | CCP-092 | Costa Tree Service, LLC | Tree service, Hartland | brief 1a1d1a0feb249cc2 | v1 | costa-tree-service/ | v1 emailed Nov 12, ~8:55 PM (1a1d2c3421599772). 0 credits. |
 | CCP-071 | D&D Well & Pumps LLC | Well drilling + pumps, Oconomowoc | brief | v1 | dd-well-pumps/ | v1 emailed Nov 12, ~1:10 PM. 2 credits. |
@@ -200,7 +200,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-081 | Inside Out Remodeling LLC | Turnkey remodeling, Wales | brief | v2 | inside-out-remodeling/ | v2 live 594e541; ready 1a1eb00601f983b6 SENT (Nov 17); 14 credits (7 upscales, approved). Google 1.0 (2) — pitch decision. |
 | CCP-083 | Devix Heating & Cooling | HVAC, West Allis | brief + revision | v2 | devix-heating-cooling/ | v2 dce2a56; ready 1a1eb0f70e128007 SENT; 2 credits. |
 | CCP-085 | Forced Air Systems | HVAC, Greendale | brief | v1 | forced-air-systems/ | v1 emailed Nov 12; 0 credits. |
-| CCP-084 | Clear Vision ProWash | Exterior cleaning, Waukesha | brief | v1 | clear-vision-prowash/ | v1 emailed Nov 12, ~7:00 PM. 0 credits. |
+| CCP-084 | Clear Vision ProWash | Exterior cleaning, Waukesha | brief | v2 | clear-vision-prowash/ | v2 live; ready 1a1eb1f3f04635e5 SENT Nov17; 2credits. |
 
 | CCP-052 | O&W Heating and Cooling LLC | HVAC + water heaters, Milwaukee | brief | v1 | ow-heating-cooling/ | v1 emailed Nov 11, ~9:15 PM. 0 credits. |
 | CCP-017 | A Pest 2 Go | Pest control | 10-20 #7 | v1 | a-pest-2-go/ | Awaiting review. Photo-free. |
@@ -412,4 +412,7 @@ CCP-095 revision1a1ea8cf2d221932 handled by v2 ready1a1eb1180bafe48a confirmed S
 
 CCP-084 revision1a1ea903e0113e6e handled; v2 ready1a1eb1f3f04635e5 SENT, folder clear-vision-prowash/.
 
-- in progress — CCP-090 (11/17/2026, 2:07:57 PM CT, scheduled run)
+- done — CCP-090 v2 (Nov17 scheduled run): live eaaed69 exact deployed HTML; ready1a1eb2336af06177 confirmed SENT only Tyler. Replaced Google themes with4 verified own-site promises,heading/caption/footer; layout and all6 picker choices retained. Live1440/390 inspected,375/390/1440 no overflow/no page errors;0credits;26051bytes. Installed Higgsfield Playwright/existing Chromium used,named script absent;Claude unavailable.
+
+CCP-090 revision1a1ea936e9a2824e handled; v2 ready1a1eb2336af06177 confirmed SENT.
+- Nov17 scheduled handoff: last finished CCP-090 v2, preceded084v2; next verified open revision CCP-091 then092/093/094/106/110/111; new briefs162/164/165/166/167 follow revisions. Refresh claims/Gmail before next item. Total2credits;084 size exception disclosed. Only Tyler emailed per current-run instruction. Claude unavailable; supported installed Higgsfield Playwright used.
