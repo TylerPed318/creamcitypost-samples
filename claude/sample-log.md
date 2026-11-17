@@ -406,3 +406,5 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 
 CCP-095 revision1a1ea8cf2d221932 handled by v2 ready1a1eb1180bafe48a confirmed SENT.
 - Nov17 13:53 CT handoff: last finished CCP-095 v2; next verified pending revision084 then090/091/092/093/094/106/110/111 (refresh queue/claims before starting); new briefs162/164/165/166/167 follow revisions. Ending with concurrent builder active. Only Tyler emailed. Open:3.09MB size exception and failed-job charges; Claude selection unavailable; installed Higgsfield Playwright used.
+
+- in progress — CCP-084 (2026-11-17 14:01 -06:00, scheduled run)
