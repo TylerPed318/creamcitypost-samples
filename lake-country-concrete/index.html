@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Lake Country Concrete Specialists — Website concept by Cream City Post</title>
+<meta name="description" content="Driveways, stamped patios, walkways, stairs and retaining walls in Waukesha County since 1987. Family and veteran-owned.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23222222'/%3E%3Cpath d='M8 22h48M8 42h48M24 8v48M44 8v48' stroke='%238A8D91' stroke-width='2'/%3E%3Crect x='24' y='22' width='20' height='20' fill='%23951313'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brick:#951313;        /* their nav-bar red */
+  --brick-dark:#6E0E0E;
+  --brick-soft:#F3E3E1;
+  --charcoal:#222222;
+  --concrete:#8A8D91;
+  --concrete-ink:#5E6166; /* grey text that passes AA on light concrete */
+  --slab:#F2F1EE;         /* light concrete */
+  --slab-2:#E6E4DF;
+  --joint:#D3D0C9;
+  --white:#FFFFFF;
+  --gold:#FFC834;         /* rating star only */
+  --head:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3","Source Sans Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:var(--charcoal);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brick);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:clamp(16px,4vw,32px);padding-right:clamp(16px,4vw,32px)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:99;background:#fff;padding:10px}
+h1,h2,h3{font-family:var(--head);font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1.02;margin:0}
+
+/* saw-cut control joints: the page motif */
+.joints{background-color:var(--slab);background-image:linear-gradient(var(--joint) 2px,transparent 2px),linear-gradient(90deg,var(--joint) 2px,transparent 2px);background-size:180px 180px;background-position:-1px -1px}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:50;background:var(--charcoal);color:#fff;border-bottom:4px solid var(--brick)}
+.top .wrap{display:flex;align-items:center;gap:18px;min-height:76px}
+.logo{display:block;flex:0 1 auto;min-width:0}
+.logo img{height:56px;width:auto}
+.nav{display:flex;gap:2px;margin-left:auto}
+.nav a{font-family:var(--head);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:1rem;text-decoration:none;padding:10px 12px;min-height:44px;display:inline-flex;align-items:center;color:#E9E7E2}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 22px;font-family:var(--head);font-weight:700;font-size:1.12rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-brick{background:var(--brick);color:#fff}
+.btn-brick:hover{background:var(--brick-dark)}
+.btn-line{border-color:var(--charcoal);color:var(--charcoal);background:transparent}
+.btn-line:hover{background:var(--charcoal);color:#fff}
+.btn-white{border-color:#fff;color:#fff}
+.btn-white:hover{background:#fff;color:var(--charcoal)}
+.top .btn{min-height:46px;padding:10px 16px;font-size:1.02rem}
+@media (max-width:1000px){.nav{display:none}.top .btn{margin-left:auto}}
+@media (max-width:600px){.logo img{height:42px}.top .btn .long{display:none}.top .wrap{min-height:66px}}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(40px,6vw,80px) 0 clamp(48px,7vw,96px);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(28px,5vw,64px);align-items:center}
+.tag{display:inline-block;background:var(--charcoal);color:#fff;font-family:var(--head);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.95rem;padding:6px 12px;margin-bottom:18px}
+h1{font-size:clamp(2.8rem,6.4vw,5.2rem)}
+h1 span{color:var(--brick);display:block}
+.lede{font-size:clamp(1.05rem,1.5vw,1.2rem);margin:18px 0 26px;max-width:34em;color:#3A3A3A}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.creds{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.creds li{font-size:.9rem;font-weight:600;background:#fff;border:1px solid var(--joint);padding:6px 10px}
+.slab{position:relative;margin:0}
+.frame{position:relative}
+.frame::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--brick);z-index:0}
+.slab img{position:relative;z-index:1;width:100%;aspect-ratio:1600/843;object-fit:cover;border:6px solid #fff;box-shadow:0 18px 40px rgba(34,34,34,.2)}
+.slab figcaption{position:relative;z-index:1;margin-top:28px;font-size:.88rem;color:var(--concrete-ink)}
+@media (max-width:900px){.hero-grid{grid-template-columns:minmax(0,1fr)}.slab{margin-right:18px}}
+@media (max-width:600px){.slab img{aspect-ratio:4/3}}
+
+/* ---------- proof strip ---------- */
+.proof{background:var(--charcoal);color:#fff}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 18px;border-left:1px solid #3A3A3A;display:flex;flex-direction:column}
+.proof li:first-child{border-left:0}
+.proof b{font-family:var(--head);font-size:1.9rem;line-height:1.05;text-transform:uppercase}
+.proof b .star{color:var(--gold)}
+.proof span{font-size:.92rem;color:#C9C7C2}
+.proof a{color:#fff}
+@media (max-width:800px){.proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}.proof li:nth-child(3){border-left:0}.proof li:nth-child(-n+2){border-bottom:1px solid #3A3A3A}}
+@media (max-width:400px){.proof li{padding:16px 12px}.proof b{font-size:1.55rem}}
+
+/* ---------- finish picker (the one interactive) ---------- */
+.section{padding:clamp(56px,8vw,100px) 0}
+.eyebrow{font-family:var(--head);font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brick);font-size:1rem;margin:0 0 8px}
+h2{font-size:clamp(2.2rem,4.6vw,3.6rem);margin-bottom:12px}
+.intro{max-width:40em;margin:0 0 32px;color:#3A3A3A}
+.picker{display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,1fr);gap:clamp(18px,3vw,32px);align-items:start}
+.choices{display:grid;gap:8px}
+.choice{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;align-items:center;width:100%;text-align:left;font:inherit;color:inherit;background:#fff;border:2px solid var(--slab-2);padding:8px 12px 8px 8px;cursor:pointer;min-height:64px;transition:border-color .2s,background .2s}
+.choice img{width:64px;height:48px;object-fit:cover}
+.choice b{font-family:var(--head);text-transform:uppercase;font-size:1.15rem;letter-spacing:.02em;line-height:1.1;display:block}
+.choice small{display:block;font-size:.84rem;color:var(--concrete-ink);line-height:1.3}
+.choice:hover{border-color:var(--concrete)}
+.choice[aria-selected="true"]{border-color:var(--brick);background:var(--brick-soft)}
+.stage{margin:0;background:#fff;border:1px solid var(--slab-2);padding:10px}
+.stage img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.stage figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;padding:12px 6px 4px;font-size:.95rem}
+.stage figcaption b{font-family:var(--head);text-transform:uppercase;font-size:1.3rem;letter-spacing:.02em}
+.stage figcaption span{color:var(--concrete-ink)}
+@media (max-width:820px){
+  .picker{grid-template-columns:minmax(0,1fr)}
+  .stage{order:-1}
+  .choices{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .choice{grid-template-columns:minmax(0,1fr);padding:6px;gap:6px}
+  .choice img{width:100%;height:auto;aspect-ratio:4/3}
+  .choice small{display:none}
+  .choice b{font-size:1rem;padding:0 4px 4px}
+  .choice:last-child{grid-column:1/-1}
+  .choice:last-child img{aspect-ratio:8/3}
+}
+
+/* ---------- services ---------- */
+.pour{background:var(--white)}
+.pour-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,64px);align-items:start}
+.list{list-style:none;margin:0;padding:0;border-top:3px solid var(--charcoal)}
+.list li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--joint)}
+.list .n{font-family:var(--head);font-weight:700;font-size:1.6rem;color:var(--brick);line-height:1}
+.list b{font-family:var(--head);text-transform:uppercase;font-size:1.35rem;letter-spacing:.02em;display:block;line-height:1.1}
+.list span{font-size:.95rem;color:#444}
+.note{margin-top:20px;background:var(--slab);border-left:5px solid var(--brick);padding:16px 18px;font-size:.98rem}
+@media (max-width:860px){.pour-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- reviews + contact ---------- */
+.rc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(24px,4vw,48px);align-items:stretch}
+.rating{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:6px 0 22px}
+.rating .big{font-family:var(--head);font-weight:700;font-size:4rem;line-height:1}
+.rating .big .star{color:var(--brick);font-size:2.6rem;vertical-align:.3em;margin-right:4px}
+.rating a{font-weight:700;color:var(--brick)}
+.themes{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.themes li{background:#fff;border:1px solid var(--slab-2);border-left:5px solid var(--charcoal);padding:14px 16px}
+.themes b{font-family:var(--head);text-transform:uppercase;font-size:1.25rem;letter-spacing:.02em;display:block;line-height:1.1}
+.themes span{font-size:.95rem;color:#444}
+.card{background:var(--charcoal);color:#fff;padding:clamp(24px,3.5vw,40px);position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;background-image:linear-gradient(#3A3A3A 2px,transparent 2px),linear-gradient(90deg,#3A3A3A 2px,transparent 2px);background-size:55px 55px;opacity:.7;pointer-events:none}
+.card h3{font-size:2.3rem;margin-bottom:8px}
+.card > p{color:#D6D4CF;margin:0 0 22px}
+.card dl{margin:0 0 24px;display:grid;gap:14px;position:relative;z-index:1}
+.card dt{font-family:var(--head);text-transform:uppercase;letter-spacing:.14em;font-size:.92rem;color:#E8A9A9}
+.card dd{margin:0;font-size:1.05rem}
+.card dd a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+.card dd a:hover{border-color:#fff}
+.card .cta-row{position:relative;z-index:1}
+@media (max-width:900px){.rc{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- closer / footer ---------- */
+.closer{background:var(--brick);color:#fff;padding:clamp(34px,5vw,54px) 0}
+.closer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+.closer h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:0}
+.closer p{margin:4px 0 0;color:#F6DCDC}
+footer{background:#161616;color:#B8B6B1;font-size:.9rem;padding:28px 0 36px}
+footer .wrap{display:grid;gap:10px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+footer .links a{color:#fff;min-height:44px;display:inline-flex;align-items:center}
+
+/* ---------- mobile call bar ---------- */
+.callbar{display:none}
+@media (max-width:600px){
+  .callbar{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--charcoal);padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:3px solid var(--brick)}
+  .callbar .btn{min-height:48px;padding:10px;font-size:1.02rem}
+  body{padding-bottom:78px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+</defs></svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main"><img src="img/logo.webp" width="445" height="124" alt="Lake Country Concrete Specialists, Inc."></a>
+    <nav class="nav" aria-label="Lake Country Concrete pages">
+      <a href="#finishes">Finishes</a>
+      <a href="#services">Services</a>
+      <a href="https://www.lakecountryconcretespecialists.com/gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-brick" href="tel:+12622062490"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="long">Call&nbsp;</span>(262) 206-2490</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero joints" aria-labelledby="h1">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">Waukesha County · Since 1987</span>
+        <h1 id="h1">Driveways &amp; stamped patios <span>built right.</span></h1>
+        <p class="lede">Family and veteran-owned concrete contractor serving Waukesha County and the surrounding area. Free estimates, available within 24 hours.</p>
+        <div class="cta-row">
+          <a class="btn btn-brick" href="tel:+12622062490"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call for a free estimate</a>
+          <a class="btn btn-line" href="#finishes">See our work</a>
+        </div>
+        <ul class="creds" aria-label="Credentials">
+          <li>Licensed, bonded &amp; insured</li>
+          <li>Dwelling Contractor Certification #129352</li>
+          <li>Pulse of the City Award Winner</li>
+        </ul>
+      </div>
+      <figure class="slab">
+        <div class="frame"><img src="img/hero-patio.webp" width="1600" height="843" alt="Stamped concrete patio in a slate-tile pattern, wrapped by a curved block seat wall with pillars"></div>
+        <figcaption>Stamped patio with a curved seat wall · From lakecountryconcretespecialists.com</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li><b><span class="star" aria-hidden="true">★</span> 4.7</b><span>on <a href="https://www.google.com/maps/place/Lake+Country+Concrete+Specialists/data=!4m2!3m1!1s0x8805ad67a90fc821:0xe2195159cd65b725?hl=en">Google</a></span></li>
+        <li><b>Since 1987</b><span>40+ years of experience</span></li>
+        <li><b>Family &amp; veteran</b><span>owned business</span></li>
+        <li><b>BBB A+</b><span>Rating</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section joints" id="finishes" aria-labelledby="fin-h">
+    <div class="wrap">
+      <p class="eyebrow">Pick a finish</p>
+      <h2 id="fin-h">Real jobs. Real finishes.</h2>
+      <p class="intro">Every photo here is Lake Country Concrete's own work, straight from their gallery. Tap a finish to take a closer look.</p>
+      <div class="picker">
+        <div class="choices" role="tablist" aria-label="Finishes">
+          <button class="choice" role="tab" aria-selected="true" aria-controls="stage" data-src="img/driveway-brick-border.webp" data-title="Broom-finish driveway" data-note="With a red brick-pattern border" data-alt="Long broom-finish concrete driveway with saw-cut joints and a red stamped brick-pattern border, leading to a brick home's garage"><img src="img/driveway-brick-border.webp" width="1080" height="810" alt=""><span><b>Driveway</b><small>Broom finish, brick-pattern border</small></span></button>
+          <button class="choice" role="tab" aria-selected="false" aria-controls="stage" data-src="img/stamped-walkway.webp" data-title="Stamped walkway" data-note="Stone-look stamped concrete" data-alt="Curved stamped concrete walkway in a stone-tile pattern with warm tan coloring"><img src="img/stamped-walkway.webp" width="1080" height="810" alt=""><span><b>Stamped walkway</b><small>Stone-look stamp</small></span></button>
+          <button class="choice" role="tab" aria-selected="false" aria-controls="stage" data-src="img/stamped-closeup.webp" data-title="Stamped texture" data-note="Close-up next to a smooth border" data-alt="Close-up of stamped concrete in a slate pattern meeting a smooth concrete border"><img src="img/stamped-closeup.webp" width="1080" height="810" alt=""><span><b>Stamped texture</b><small>Close-up of the stamp</small></span></button>
+          <button class="choice" role="tab" aria-selected="false" aria-controls="stage" data-src="img/seat-wall-fire-pit.webp" data-title="Patio &amp; fire pit" data-note="Seat wall wrapping a fire pit" data-alt="Backyard patio with a curved block seat wall and a round block fire pit, patio chairs and a glass table"><img src="img/seat-wall-fire-pit.webp" width="1080" height="810" alt=""><span><b>Patio &amp; fire pit</b><small>Seat wall and fire pit</small></span></button>
+          <button class="choice" role="tab" aria-selected="false" aria-controls="stage" data-src="img/stone-steps.webp" data-title="Stone steps &amp; wall" data-note="Outdoor stairs with a retaining wall" data-alt="Wide natural stone steps beside a stacked stone retaining wall with hydrangeas"><img src="img/stone-steps.webp" width="1080" height="810" alt=""><span><b>Steps &amp; walls</b><small>Stone stairs, retaining wall</small></span></button>
+        </div>
+        <figure class="stage" id="stage" role="tabpanel" aria-live="polite">
+          <img id="stage-img" src="img/driveway-brick-border.webp" width="1080" height="810" alt="Long broom-finish concrete driveway with saw-cut joints and a red stamped brick-pattern border, leading to a brick home's garage">
+          <figcaption><b id="stage-title">Broom-finish driveway</b><span id="stage-note">With a red brick-pattern border</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pour" id="services" aria-labelledby="svc-h">
+    <div class="wrap pour-grid">
+      <div>
+        <p class="eyebrow">What we pour</p>
+        <h2 id="svc-h">Ordinary concrete, extraordinary spaces.</h2>
+        <p class="intro">Our team works directly with homeowners through every step of the process. We believe in keeping our job sites spotless and our communication clear.</p>
+        <p class="note"><b>Veterans and first responders:</b> ask about our discount when you schedule.</p>
+      </div>
+      <ol class="list">
+        <li><span class="n">01</span><div><b>Driveways</b><span>Installation and repair.</span></div></li>
+        <li><span class="n">02</span><div><b>Patios &amp; outdoor living</b><span>Concrete and stone patios, outdoor kitchens, fire pits.</span></div></li>
+        <li><span class="n">03</span><div><b>Decorative concrete</b><span>Stamped, colored and acid-stained, with color options and samples.</span></div></li>
+        <li><span class="n">04</span><div><b>Retaining walls &amp; stairs</b><span>Block and stone walls, concrete and stone stairs.</span></div></li>
+        <li><span class="n">05</span><div><b>Curbs</b><span>Curb installation and repair.</span></div></li>
+        <li><span class="n">06</span><div><b>Specialty work</b><span>Demolition, leveling and sealing.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section joints" id="contact" aria-labelledby="rev-h">
+    <div class="wrap rc">
+      <div>
+        <p class="eyebrow">What customers say</p>
+        <h2 id="rev-h">They show up when they say they will.</h2>
+        <div class="rating">
+          <span class="big"><span class="star" aria-hidden="true">★</span>4.7</span>
+          <span>on Google · <a href="https://www.google.com/maps/place/Lake+Country+Concrete+Specialists/data=!4m2!3m1!1s0x8805ad67a90fc821:0xe2195159cd65b725?hl=en">Read the reviews</a></span>
+        </div>
+        <ul class="themes">
+          <li><b>The owner is on site</b><span>Reviewers mention the owner working right alongside the crew.</span></li>
+          <li><b>On time, clear communication</b><span>Crews arrive in the windows promised, and questions get answered.</span></li>
+          <li><b>Beautiful finished work</b><span>Stamped patios and driveways that customers call beyond expectations.</span></li>
+        </ul>
+      </div>
+      <aside class="card" aria-labelledby="contact-h">
+        <h3 id="contact-h">Get a free estimate.</h3>
+        <p>Call to talk through your driveway, patio or wall. Free estimates, available within 24 hours.</p>
+        <dl>
+          <div><dt>Phone</dt><dd><a href="tel:+12622062490">(262) 206-2490</a></dd></div>
+          <div><dt>Based in</dt><dd>Hartland, WI</dd></div>
+          <div><dt>Serving</dt><dd>Waukesha County and the surrounding area</dd></div>
+        </dl>
+        <div class="cta-row">
+          <a class="btn btn-brick" href="tel:+12622062490"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call now</a>
+          <a class="btn btn-white" href="https://www.lakecountryconcretespecialists.com/gallery">Full gallery</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="closer" aria-label="First look">
+    <div class="wrap">
+      <div>
+        <h2>A first look at your new site.</h2>
+        <p>Your real work, front and center.</p>
+      </div>
+      <a class="btn btn-white" href="tel:+12622062490"><svg aria-hidden="true"><use href="#i-phone"/></svg>(262) 206-2490</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="https://www.lakecountryconcretespecialists.com/gallery">Gallery</a>
+      <a href="https://www.yelp.com/biz/lake-country-concrete-specialists-hartland">Yelp</a>
+    </div>
+    <p>Website by Cream City Post · Independent website concept, not the official Lake Country Concrete Specialists site. Logo, services, credentials and photos from lakecountryconcretespecialists.com; rating from Google.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-brick" href="tel:+12622062490"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (262) 206-2490</a>
+  <a class="btn btn-white" href="#finishes">Our work</a>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.choice')),img=document.getElementById('stage-img'),t=document.getElementById('stage-title'),n=document.getElementById('stage-note');
+  function pick(b){
+    tabs.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false');x.tabIndex=x===b?0:-1;});
+    img.src=b.dataset.src;img.alt=b.dataset.alt;t.innerHTML=b.dataset.title;n.textContent=b.dataset.note;
+  }
+  tabs.forEach(function(b,i){
+    b.tabIndex=i===0?0:-1;
+    b.addEventListener('click',function(){pick(b);});
+    b.addEventListener('keydown',function(e){
+      var k=e.key,j=null;
+      if(k==='ArrowDown'||k==='ArrowRight')j=(i+1)%tabs.length;
+      if(k==='ArrowUp'||k==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;
+      if(j!==null){e.preventDefault();tabs[j].focus();pick(tabs[j]);}
+    });
+  });
+})();
+</script>
+</body>
+</html>
