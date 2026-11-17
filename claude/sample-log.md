@@ -389,3 +389,6 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-099 v2 (Nov 17, ~12:40 PM CT, scheduled run): live 0f96de8 byte-identical, page + logo 200; ready 1a1eac66cb987630 SENT. 0 credits. Header logo on #f7f7f2 plate, viewBox 40 420 2264 660, 190×62 / 160×52 ≤760px. Open: yellow lines lower-contrast on light plate; trimmed-PNG alternative offered.
 - done — CCP-079 v2 (Nov 17, ~12:55 PM CT, scheduled run): live ece5d46 byte-identical, page + 4 imgs 200; ready 1a1eac8990ad1248 SENT. 0 credits. Review themes replaced by 4 own-site promises (verified verbatim on beachsideboat.com), caption/footer "rating from Google", "downtown" removed (hero + meta).
 - Nov 17, ~12:55 PM CT (scheduled run): session ends after 3 items (CCP-098 v2 2 credits, CCP-099 v2 0, CCP-079 v2 0). Still open, oldest first: revisions CCP-080, 081, 082, 083, 084, 090, 091, 092, 093, 094, 110, 106, 111 (095 claimed by another run 12:18 CT); then unbuilt brief CCP-162 Prime Electric (1a1ea906dd58a0a3). Did not CC the grokbot address (still unconfirmed).
+- in progress — CCP-080 (2026-11-17 13:30 CT, scheduled run)
+- in progress — CCP-081 (2026-11-17 13:30 CT, scheduled run)
+- in progress — CCP-082 (2026-11-17 13:30 CT, scheduled run)
