@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Killer B's Total Pest Control — Website concept by Cream City Post</title>
+<meta name="description" content="Killer B's Total Pest Control: locally owned and operated pest control based in Waukesha, serving southeastern Wisconsin. Call Bill at 414-651-5641.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23231F20'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23ED1C24' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23ED1C24'/%3E%3Cpath d='M32 6v14M32 44v14M6 32h14M44 32h14' stroke='%23ED1C24' stroke-width='5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#ED1C24;        /* logo red: fills, buttons with dark text avoided */
+  --red-ink:#C8141B;    /* red for text on white */
+  --red-btn:#C8141B;
+  --black:#231F20;      /* logo black */
+  --black-2:#2E2A2B;
+  --honey:#F6B21B;      /* accent: stars + small marks only */
+  --paper:#F7F5F2;
+  --white:#FFFFFF;
+  --grey:#5E5E62;
+  --line:#E3DED8;
+  --display:"Anton",Impact,"Arial Narrow",sans-serif;
+  --body:"Lato",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);color:var(--black);background:var(--white);line-height:1.6;font-size:17px}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--honey);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.01em;line-height:1.02;margin:0;text-transform:uppercase}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:900;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red-ink)}
+.eyebrow svg{width:16px;height:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:900;text-decoration:none;font-size:1rem;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;border:2px solid transparent}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-red{background:var(--red-btn);color:#fff;box-shadow:0 6px 0 #8f0e13}
+.btn-red:hover{background:#B01117;transform:translateY(-2px);box-shadow:0 8px 0 #8f0e13}
+.btn-ghost{border-color:var(--black);color:var(--black);background:transparent}
+.btn-ghost:hover{background:var(--black);color:#fff}
+.btn-light{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-light:hover{background:#fff;color:var(--black)}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}
+.logo{display:block;width:clamp(150px,18vw,200px);text-decoration:none}
+.logo svg{display:block;width:100%;height:auto}
+.nav{display:flex;gap:4px;align-items:center}
+.nav a{font-weight:700;font-size:.92rem;text-decoration:none;padding:12px 10px;border-radius:8px;color:var(--black)}
+.nav a:hover{color:var(--red-ink)}
+.top .btn{min-height:46px;padding:10px 18px}
+@media (max-width:980px){.nav{display:none}}
+@media (max-width:600px){.top .btn .long{display:none}.top .wrap{min-height:66px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--paper)}
+.hero::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cpath d='M28 1 55 16.5v31L28 63 1 47.5v-31z M28 63v34 M1 16.5 -26 1 M55 16.5 82 1' fill='none' stroke='%23231F20' stroke-opacity='.06' stroke-width='1.5'/%3E%3C/svg%3E");pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(28px,5vw,64px);align-items:center;padding-block:clamp(40px,7vw,88px)}
+.hero h1{font-size:clamp(2.7rem,6.6vw,5.4rem);margin:14px 0 18px}
+.hero h1 .hit{color:var(--red-ink);position:relative;white-space:nowrap}
+.hero h1 .hit svg{position:absolute;width:.62em;height:.62em;right:-.42em;top:-.18em;color:var(--red)}
+.lede{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--black-2);max-width:34em;margin:0 0 26px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.photo{position:relative;justify-self:center;width:min(100%,500px)}
+.photo .frame{position:relative;border-radius:22px;overflow:hidden;background:var(--black);box-shadow:16px 16px 0 var(--black)}
+.photo img{width:100%;aspect-ratio:1320/1426;object-fit:cover}
+.photo figcaption{margin-top:30px;font-size:.88rem;color:var(--grey);display:flex;gap:8px;align-items:center}
+.photo figcaption b{color:var(--black)}
+.reticle{position:absolute;z-index:2;pointer-events:none;color:var(--red);filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+.reticle.r1{width:92px;height:92px;left:-26px;top:-26px;color:var(--honey)}
+@media (prefers-reduced-motion:no-preference){.reticle.r1{animation:lock 1.4s cubic-bezier(.2,.8,.2,1) .2s both}}
+@keyframes lock{from{transform:scale(1.8) rotate(-45deg);opacity:0}to{transform:none;opacity:1}}
+@media (max-width:860px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.photo{width:min(100%,460px)}}
+@media (max-width:600px){.reticle.r1{width:64px;height:64px;left:-12px;top:-14px}.photo .frame{box-shadow:10px 10px 0 var(--black)}}
+
+/* proof strip */
+.proof{background:var(--black);color:#fff}
+.proof ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{display:flex;align-items:center;gap:12px;padding:20px 18px;border-left:1px solid rgba(255,255,255,.12);font-weight:700;line-height:1.3}
+.proof li:first-child{border-left:0}
+.proof .big{font-family:var(--display);font-size:1.9rem;line-height:1}
+.proof .star{color:var(--honey);font-size:1.5rem;line-height:1}
+.proof a{text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:3px}
+.proof a:hover{text-decoration-color:var(--honey)}
+.proof svg{width:26px;height:26px;flex:none;color:var(--red)}
+@media (max-width:860px){.proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}.proof li:nth-child(3){border-left:0}.proof li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.12)}}
+
+/* picker */
+.bugs{padding-block:clamp(56px,8vw,100px)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px 40px;margin-bottom:30px}
+.sec-head h2{font-size:clamp(2.2rem,4.6vw,3.6rem);margin-top:10px}
+.sec-head p{max-width:30em;margin:0;color:var(--grey)}
+.picker{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(18px,3vw,36px);align-items:start}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tile{position:relative;display:flex;align-items:center;gap:14px;min-height:84px;padding:14px 16px;background:var(--white);border:2px solid var(--line);border-radius:var(--r);font:inherit;font-weight:900;font-size:1.02rem;color:var(--black);text-align:left;cursor:pointer;transition:border-color .15s,transform .15s,background .15s}
+.tile:hover{border-color:var(--black);transform:translateY(-2px)}
+.tile .ic{width:44px;height:44px;flex:none;color:var(--black)}
+.tile .lock{position:absolute;right:10px;top:10px;width:22px;height:22px;color:var(--red);opacity:0;transform:scale(1.6) rotate(-30deg);transition:opacity .2s,transform .25s}
+.tile[aria-selected="true"]{border-color:var(--red);background:#FFF5F5}
+.tile[aria-selected="true"] .ic{color:var(--red-ink)}
+.tile[aria-selected="true"] .lock{opacity:1;transform:none}
+.panel{background:var(--black);color:#fff;border-radius:22px;padding:clamp(24px,3.4vw,40px);position:relative;overflow:hidden;min-height:100%}
+.panel::after{content:"";position:absolute;right:-60px;bottom:-60px;width:240px;height:240px;border-radius:50%;border:2px solid rgba(237,28,36,.35);box-shadow:0 0 0 30px rgba(237,28,36,.08),0 0 0 62px rgba(237,28,36,.05);pointer-events:none}
+.panel .kicker{font-weight:900;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--honey)}
+.panel h3{font-size:clamp(2rem,3.6vw,2.8rem);margin:8px 0 14px}
+.panel .list{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;padding:0;list-style:none}
+.panel .list li{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;font-size:.9rem;font-weight:700}
+.panel blockquote{margin:0 0 22px;padding:14px 0 0 18px;border-left:4px solid var(--red);font-size:1.02rem;color:#EDEAE6}
+.panel blockquote cite{display:block;margin-top:8px;font-style:normal;font-size:.86rem;color:#BDB7B1}
+.panel .note{color:#D6D1CC;margin:0 0 22px}
+.panel .actions{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.panel .more{color:#fff;font-weight:700;font-size:.95rem;padding:12px 4px;text-underline-offset:3px}
+.panel .more:hover{color:var(--honey)}
+@media (max-width:860px){.picker{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:420px){.tile{min-height:72px;padding:12px;gap:10px;font-size:.95rem}.tile .ic{width:36px;height:36px}}
+
+/* how bill works */
+.how{background:var(--paper);padding-block:clamp(56px,8vw,100px);position:relative}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;left:28px;right:25%;top:27px;border-top:3px dashed rgba(35,31,32,.25)}
+.steps li{position:relative;padding-right:22px}
+.steps .dot{position:relative;width:56px;height:56px;border-radius:50%;background:var(--white);border:3px solid var(--black);display:grid;place-items:center;font-family:var(--display);font-size:1.5rem;margin-bottom:18px}
+.steps li:last-child .dot{background:var(--red-btn);border-color:var(--red-btn);color:#fff}
+.steps h3{font-size:1.55rem;margin-bottom:8px}
+.steps p{margin:0;color:var(--black-2)}
+@media (max-width:860px){.steps{grid-template-columns:minmax(0,1fr);gap:26px}.steps::before{left:27px;right:auto;top:28px;bottom:28px;border-top:0;border-left:3px dashed rgba(35,31,32,.25)}.steps li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:0 18px;padding:0}.steps .dot{grid-row:span 2;margin:0}}
+
+/* words + contact */
+.talk{padding-block:clamp(56px,8vw,100px)}
+.talk .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,48px);align-items:start}
+.rating{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:18px 0 22px}
+.rating .score{font-family:var(--display);font-size:clamp(2.3rem,6vw,3.4rem);line-height:1}
+.rating .score span{color:var(--honey)}
+.rating a{font-weight:700;color:var(--red-ink);text-underline-offset:3px}
+.themes{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.themes li{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-weight:700;font-size:.92rem}
+.quotes{display:grid;gap:14px}
+.quote{margin:0;background:var(--white);border:2px solid var(--black);border-radius:var(--r);padding:20px 22px;box-shadow:6px 6px 0 var(--red)}
+.quote p{margin:0}
+.quote footer{margin-top:10px;font-weight:900;font-size:.9rem;color:var(--grey)}
+.card{background:var(--black);color:#fff;border-radius:22px;padding:clamp(24px,3vw,34px);position:sticky;top:96px}
+.card h2{font-size:clamp(2rem,3.4vw,2.6rem);margin-bottom:6px}
+.card .sub{color:#D6D1CC;margin:0 0 20px}
+.card .phone{display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:clamp(2rem,4vw,2.5rem);color:#fff;text-decoration:none;line-height:1.1;min-height:48px}
+.card .phone:hover{color:var(--honey)}
+.card .phone svg{width:30px;height:30px;color:var(--red)}
+.card dl{margin:20px 0 22px;display:grid;gap:14px}
+.card dt{font-size:.74rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--honey)}
+.card dd{margin:2px 0 0;overflow-wrap:anywhere}
+.card dd a{color:#fff;text-underline-offset:3px;display:inline-block;padding:6px 0}
+.card dd a:hover{color:var(--honey)}
+.card .btns{display:grid;gap:10px}
+@media (max-width:860px){.talk .wrap{grid-template-columns:minmax(0,1fr)}.card{position:static}}
+
+/* closer + footer */
+.closer{background:var(--red-btn);color:#fff;padding-block:clamp(40px,6vw,64px);position:relative;overflow:hidden}
+.closer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
+.closer h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+.closer p{margin:6px 0 0;max-width:36em}
+.closer .btn{background:#fff;color:var(--black);box-shadow:0 6px 0 #7d0b10}
+.closer .btn:hover{transform:translateY(-2px)}
+footer.site{background:var(--black);color:#C9C3BD;font-size:.9rem;padding:28px 0 32px}
+footer.site .wrap{display:grid;gap:10px}
+footer.site a{color:#fff}
+@media (max-width:600px){footer.site{padding-bottom:110px}}
+
+/* mobile call bar */
+.callbar{display:none}
+@media (max-width:600px){
+  .callbar{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--black);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+  .callbar .btn{min-height:50px;padding:10px 12px;font-size:.98rem;box-shadow:none}
+  .hero .cta-row .btn{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="reticle" viewBox="0 0 64 64"><circle cx="32" cy="32" r="18" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="32" cy="32" r="5" fill="currentColor"/><path d="M32 2v16M32 46v16M2 32h16M46 32h16" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5h18v14H3z M3 6l9 7 9-7"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Killer B's Total Pest Control, home">
+      <svg viewBox="6 11 486 147" role="img" aria-hidden="true"><path fill="#ED1C24" fill-rule="evenodd" d="M249.0 103.8L248.8 103.3L248.8 59.0C248.8 34.7 248.8 14.6 248.9 14.4L249.1 14.0L287.4 14.0L325.8 14.0L326.7 14.7C327.2 15.1 327.7 15.4 327.8 15.5C327.8 15.6 330.3 17.6 333.2 20.0C336.2 22.4 338.9 24.6 339.2 25.0L339.7 25.6L339.7 37.6C339.7 44.3 339.7 49.7 339.5 50.0C339.4 50.2 337.9 51.5 336.1 52.9C334.4 54.3 333.0 55.5 333.0 55.7C333.0 55.9 333.2 56.2 333.4 56.4C333.9 56.8 337.5 59.6 338.6 60.4C340.1 61.5 340.8 62.1 341.5 62.8L342.2 63.5L342.2 78.1L342.2 92.7L340.4 94.3C339.4 95.1 336.5 97.5 334.0 99.5C331.5 101.6 329.2 103.5 329.1 103.7L328.7 104.1L289.0 104.2L249.3 104.3L249.0 103.8ZM402.5 103.9L402.2 103.6L402.3 90.8L402.4 78.1L424.5 78.1C436.7 78.0 446.7 77.9 446.8 77.8C447.0 77.6 447.1 72.6 447.0 71.3L447.0 71.0L429.7 71.0L412.4 71.0L407.3 66.8C402.2 62.7 400.7 61.6 399.1 60.2L398.2 59.4L398.2 42.5L398.2 25.5L398.8 24.9C399.1 24.6 401.5 22.6 404.1 20.5C406.7 18.4 409.5 16.2 410.2 15.5C410.9 14.9 411.7 14.3 411.9 14.2C412.1 14.1 428.5 14.0 448.4 14.1L484.6 14.1L484.6 27.0L484.6 39.9L462.6 40.0C450.5 40.1 440.5 40.2 440.4 40.3C440.3 40.4 440.2 41.9 440.1 43.5L440.1 46.6L440.5 46.9L440.8 47.3L457.9 47.2L475.1 47.2L479.3 50.7C481.7 52.6 483.7 54.3 483.9 54.5C484.3 54.8 487.9 57.7 489.0 58.5L489.5 58.9L489.5 75.7L489.5 92.6L489.3 92.7C489.0 92.8 486.3 94.9 485.6 95.6C485.4 95.8 484.8 96.3 484.3 96.7C483.8 97.1 483.3 97.4 483.2 97.5C483.2 97.6 481.6 98.9 479.6 100.5C477.7 102.1 476.0 103.5 475.8 103.7L475.5 104.1L439.2 104.2L402.8 104.3L402.5 103.9ZM76.9 102.6C76.8 102.5 76.8 101.4 76.8 100.1L76.8 97.8L76.2 97.4C75.9 97.2 75.3 97.0 74.9 97.0C73.7 97.0 71.3 95.9 69.5 94.6C67.0 92.7 65.1 90.0 64.5 87.1C64.3 86.4 64.1 85.6 64.0 85.3L63.8 84.8L61.4 84.8L59.1 84.8L58.8 84.4C58.6 84.2 58.6 83.9 58.6 83.7L58.8 83.2L61.3 83.2L63.8 83.2L64.0 82.7C64.1 82.4 64.3 81.6 64.5 80.9C65.1 78.0 67.5 74.7 69.9 73.0C71.4 72.0 73.8 71.0 74.7 71.0C75.1 71.0 75.7 70.9 76.0 70.7L76.6 70.4L76.8 67.9L76.9 65.4L77.4 65.3L78.0 65.2L78.0 67.7L78.0 70.2L78.3 70.5C78.5 70.6 79.2 70.8 79.8 70.9C81.2 71.1 83.4 72.0 84.8 73.0C87.4 74.7 90.0 78.6 90.4 81.2C90.5 81.8 90.7 82.6 90.9 82.8L91.3 83.2L93.6 83.2L95.9 83.2L96.1 83.7C96.2 83.9 96.1 84.2 96.0 84.4L95.7 84.8L93.5 84.8L91.3 84.8L90.9 85.1C90.7 85.4 90.5 85.8 90.5 86.1C90.5 86.8 89.9 88.8 89.3 89.9C87.4 93.6 83.2 96.6 79.5 97.1C78.9 97.1 78.4 97.3 78.3 97.4C78.2 97.5 78.1 98.7 78.0 100.1L77.9 102.6L77.5 102.7C77.3 102.7 77.0 102.7 76.9 102.6ZM81.4 95.1C85.8 93.4 88.2 90.6 89.1 85.8L89.5 83.9L89.3 82.8C89.1 82.3 89.0 81.5 89.0 81.2C89.0 80.8 88.6 79.7 88.1 78.7L87.2 76.9L85.7 75.5C81.0 70.9 73.7 70.9 69.0 75.5C67.2 77.3 66.4 78.7 65.7 81.6L65.2 83.8L65.6 85.8C66.6 90.5 69.1 93.6 73.2 95.1C75.4 95.9 75.8 96.0 78.0 95.9L79.9 95.7L81.4 95.1ZM75.9 87.1C75.5 87.0 74.9 86.4 74.5 86.0L73.9 85.1L73.9 84.0L73.9 82.8L74.5 82.0C75.2 81.0 76.2 80.5 77.5 80.5L78.4 80.5L79.3 81.1C79.7 81.4 80.3 82.0 80.6 82.5L81.0 83.4L80.9 84.3C80.6 86.7 78.1 88.1 75.9 87.1ZM300.1 87.0C300.2 86.9 300.3 81.8 300.3 75.6C300.3 69.5 300.2 64.4 300.1 64.2C300.0 64.1 298.6 64.0 296.9 64.0C295.1 64.0 293.7 64.1 293.6 64.2C293.5 64.4 293.5 69.5 293.5 75.7L293.5 86.8L293.8 87.0C294.3 87.3 299.9 87.3 300.1 87.0ZM350.9 53.7C350.7 53.4 350.9 51.0 351.3 49.3C351.5 48.2 352.2 43.9 352.8 40.4C353.1 38.4 353.9 33.5 354.4 30.8C354.6 29.6 354.9 27.6 355.1 26.2C355.3 24.9 355.8 22.2 356.1 20.1C356.5 18.1 356.9 15.9 356.9 15.3C357.0 14.7 357.1 14.2 357.2 14.1C357.3 14.1 365.0 14.0 374.2 14.0L390.9 14.0L390.9 14.4C391.0 14.7 390.6 15.8 390.0 16.9C389.5 18.1 389.0 19.0 389.0 19.1C389.0 19.2 388.3 20.6 387.5 22.4C386.7 24.1 386.0 25.6 386.0 25.6C386.0 25.7 385.5 26.8 384.8 28.2C383.4 31.3 381.8 34.7 381.4 35.6C380.9 36.7 379.4 39.8 378.5 41.8C376.5 46.2 375.7 47.8 375.0 49.5C374.5 50.5 373.8 51.9 373.5 52.6L372.9 53.9L362.0 53.9L351.0 54.0L350.9 53.7ZM8.7 51.8C8.6 51.7 8.5 43.2 8.5 32.8L8.5 13.9L8.8 13.6L9.1 13.2L18.1 13.3L27.2 13.3L27.5 13.6L27.8 14.0L27.8 19.3L27.8 24.5L28.3 25.0L28.8 25.5L29.4 25.3C29.8 25.3 30.3 25.1 30.4 24.9L30.8 24.7L30.8 19.3L30.8 13.9L31.1 13.6L31.4 13.2L40.3 13.2L49.2 13.2L49.5 13.6L49.8 14.0L49.8 19.7L49.8 25.4L49.2 26.0C48.8 26.4 47.4 27.7 46.0 28.9C44.6 30.1 43.5 31.2 43.5 31.4C43.5 31.6 44.2 32.4 45.1 33.2C45.9 34.0 47.3 35.3 48.2 36.1L49.8 37.7L49.8 44.6C49.8 48.5 49.8 51.7 49.8 51.8C49.8 51.9 45.5 52.0 40.3 51.9L30.9 51.9L30.8 45.1L30.7 38.4L30.5 38.1C30.3 37.9 29.8 37.7 29.2 37.8L28.3 37.8L28.0 38.2L27.7 38.7L27.8 45.0C27.8 48.5 27.8 51.5 27.8 51.7L27.8 52.0L18.3 52.0C13.1 52.0 8.8 51.9 8.7 51.8ZM53.7 51.8C53.6 51.7 53.5 49.3 53.5 46.4L53.5 41.1L53.9 40.7L54.3 40.4L55.3 40.6L56.4 40.7L56.8 40.3L57.3 39.8L57.2 32.5L57.1 25.1L55.6 25.0C54.8 25.0 54.0 24.9 53.8 24.7L53.5 24.4L53.5 19.3C53.5 16.3 53.6 14.0 53.8 13.7L54.0 13.3L65.7 13.2L77.4 13.2L77.7 13.6L78.0 13.9L77.9 19.4L77.9 24.9L76.8 24.9C76.1 25.0 75.4 25.1 75.1 25.1L74.5 25.3L74.5 32.6L74.5 39.9L74.9 40.3C75.1 40.5 75.9 40.6 76.6 40.6L77.9 40.6L77.9 46.3L78.0 52.0L65.9 52.0C59.3 52.0 53.8 51.9 53.7 51.8ZM81.4 51.6C81.3 51.4 81.2 42.9 81.2 32.6L81.2 14.1L81.7 13.7L82.2 13.2L91.0 13.3L99.9 13.3L100.2 13.6L100.5 13.9L100.5 26.4L100.5 38.9L100.8 39.3L101.1 39.7L108.0 39.8L114.9 39.9L114.9 45.9L114.9 51.9L98.2 51.9L81.6 52.0L81.4 51.6ZM118.7 51.8C118.6 51.7 118.5 43.2 118.5 32.9L118.5 14.2L118.8 13.7L119.0 13.3L128.0 13.2L137.0 13.2L137.4 13.6L137.8 14.0L137.8 26.5C137.8 33.4 137.8 39.1 137.9 39.4L138.1 39.8L144.9 39.8L151.7 39.8L151.9 40.0C152.0 40.2 152.1 49.4 152.0 51.7L152.0 52.0L135.4 52.0C126.3 52.0 118.8 51.9 118.7 51.8ZM155.9 51.8C155.8 51.6 155.7 43.1 155.7 32.7L155.7 13.9L156.0 13.6L156.3 13.3L174.5 13.3L192.7 13.2L192.9 13.5L193.2 13.8L193.2 19.7L193.2 25.5L193.0 25.6C192.8 25.7 188.8 25.8 184.1 25.8L175.5 25.7L175.1 26.0C174.6 26.4 174.6 28.3 175.1 28.7L175.4 29.0L183.0 29.0C187.1 29.0 190.6 29.0 190.7 29.1L191.0 29.3L191.0 32.5C191.0 34.3 190.9 36.0 190.7 36.3L190.5 36.8L182.9 36.8L175.3 36.8L175.1 37.0C174.7 37.4 174.7 38.8 175.1 39.3L175.4 39.7L184.2 39.8L193.1 39.9L193.1 45.9L193.1 51.9L174.6 51.9L156.0 52.0L155.9 51.8ZM196.9 51.8C196.8 51.6 196.7 43.1 196.7 32.7L196.7 13.9L197.0 13.6L197.3 13.3L214.5 13.3L231.6 13.3L234.1 15.3C235.5 16.4 236.9 17.6 237.3 18.0L238.0 18.7L238.0 26.4L238.0 34.1L237.6 34.7C237.4 35.0 236.6 35.7 235.7 36.4L234.2 37.6L234.3 38.0C234.4 38.2 234.7 39.0 235.0 39.8C235.3 40.5 235.7 41.6 235.9 42.1C236.1 42.7 236.4 43.5 236.6 43.9C236.8 44.3 237.0 44.8 237.0 45.0C237.0 45.1 237.2 45.6 237.4 46.1C238.5 48.5 239.5 51.5 239.4 51.7L239.2 52.0L229.6 52.0L220.0 52.0L219.7 51.4C219.5 51.1 219.2 50.4 219.1 49.9C219.1 49.3 218.8 47.9 218.5 46.8C218.2 45.6 217.8 43.5 217.5 42.2C217.0 39.8 216.6 39.2 216.0 39.8L215.8 40.2L215.7 46.0L215.6 51.9L206.3 51.9L197.0 52.0L196.9 51.8ZM300.0 49.1L300.3 48.8L300.3 40.0C300.3 35.2 300.2 31.1 300.1 31.0C299.9 30.7 294.3 30.7 293.8 31.0L293.5 31.2L293.5 40.0L293.5 48.8L293.8 49.1L294.1 49.5L296.9 49.5L299.7 49.5L300.0 49.1ZM218.4 30.4L218.8 30.2L218.8 25.6L218.8 21.0L218.1 20.7C217.2 20.4 216.6 20.4 216.1 20.9L215.8 21.3L215.8 25.6L215.8 30.0L216.3 30.5L216.8 31.0L217.4 30.8C217.8 30.8 218.3 30.6 218.4 30.4Z"/><path fill="#231F20" fill-rule="evenodd" d="M10.9 155.4C10.7 154.8 10.7 117.2 11.0 116.8L11.1 116.5L28.6 116.5L46.1 116.5L47.0 117.1C47.5 117.4 48.2 118.0 48.5 118.3C48.9 118.6 49.7 119.3 50.4 119.9C51.0 120.4 51.7 121.0 51.9 121.2L52.3 121.5L52.3 131.0L52.2 140.5L51.9 140.8C51.1 141.6 48.3 144.0 47.2 144.8L45.9 145.8L38.2 145.7C34.0 145.7 30.4 145.8 30.3 145.9L30.0 146.0L30.0 150.6L30.0 155.1L29.7 155.4L29.4 155.8L20.2 155.8L11.1 155.8L10.9 155.4ZM55.8 155.4L55.5 155.2L55.5 136.1L55.5 117.1L55.8 116.8L56.2 116.5L74.5 116.5L92.8 116.5L93.2 116.8L93.5 117.2L93.5 122.8C93.6 125.9 93.5 128.6 93.4 128.7L93.2 129.0L84.3 129.0L75.3 129.0L75.0 129.3C74.7 129.6 74.6 130.9 74.9 131.6L75.1 132.0L82.9 132.0L90.7 132.0L90.9 132.3C91.1 132.6 91.1 139.4 90.9 139.7L90.7 140.0L83.0 140.0L75.3 140.0L75.0 140.3C74.7 140.6 74.6 141.9 74.9 142.6L75.1 143.0L84.1 143.0L93.2 143.0L93.4 143.3C93.5 143.4 93.5 146.1 93.5 149.3L93.5 155.0L93.2 155.4L92.9 155.8L74.5 155.8L56.1 155.8L55.8 155.4ZM98.3 155.3C97.9 154.7 97.9 145.0 98.2 144.5L98.4 144.2L107.5 144.2L116.5 144.3L117.0 144.0L117.5 143.7L117.5 142.8C117.5 142.3 117.4 141.7 117.3 141.5L117.0 141.2L109.9 141.2L102.8 141.3L102.1 140.9C101.7 140.7 101.0 140.2 100.6 139.8C100.2 139.4 99.3 138.7 98.6 138.1C97.9 137.6 97.1 136.9 96.8 136.6L96.2 136.0L96.2 128.8L96.2 121.6L97.1 120.8C98.3 119.7 101.5 117.1 102.2 116.8L102.7 116.5L117.9 116.5L133.2 116.5L133.4 116.8L133.8 117.1L133.8 122.2L133.8 127.4L133.4 127.7L133.2 128.0L124.0 128.0L114.8 128.0L114.5 128.3C114.2 128.7 114.4 130.5 114.9 130.8C115.0 130.9 118.4 131.0 122.3 131.0L129.5 131.0L132.4 133.3C134.0 134.6 135.3 135.8 135.4 136.0C135.5 136.3 135.5 139.7 135.5 143.5L135.6 150.5L135.0 151.1C134.6 151.4 133.2 152.6 131.9 153.7L129.4 155.7L113.9 155.7L98.5 155.8L98.3 155.3ZM147.2 155.6C147.1 155.5 147.0 149.6 147.0 142.5L147.0 129.6L146.7 129.3L146.3 129.0L142.0 128.9L137.6 128.9L137.6 123.0L137.5 117.1L137.8 116.8L138.2 116.5L156.6 116.5L175.1 116.5L175.4 116.9L175.8 117.3L175.8 122.9L175.8 128.4L175.4 128.7L175.2 129.0L170.8 129.0L166.5 129.0L166.4 129.3C166.3 129.4 166.2 135.2 166.2 142.1L166.3 154.8L166.0 155.3L165.7 155.8L156.5 155.8C151.5 155.8 147.3 155.7 147.2 155.6ZM193.6 154.8C192.9 154.3 192.0 153.6 191.6 153.2C191.2 152.9 190.3 152.1 189.7 151.5L188.5 150.4L188.5 136.2L188.5 122.0L188.8 121.5C189.0 121.0 193.5 117.3 194.4 116.8L195.0 116.5L209.4 116.5L223.8 116.5L224.3 116.8C224.8 117.1 228.2 119.8 229.4 120.9L230.0 121.4L230.0 127.6L230.1 133.8L229.7 134.0C229.3 134.3 211.7 134.3 211.3 134.0L210.9 133.8L211.0 129.2L211.0 124.5L210.6 124.1C210.2 123.7 208.8 123.6 208.3 124.0L208.0 124.2L208.0 136.0C208.0 142.4 208.0 147.9 208.1 148.0C208.2 148.1 208.8 148.2 209.4 148.2L210.5 148.2L210.7 147.8L211.0 147.3L211.0 142.8C210.9 140.4 211.0 138.2 211.1 138.0L211.3 137.8L220.5 137.8L229.7 137.8L229.9 138.0C230.0 138.2 230.0 141.1 230.0 144.5L230.0 150.6L229.2 151.4C228.2 152.3 226.5 153.7 225.0 154.9L223.9 155.7L209.3 155.7L194.8 155.8L193.6 154.8ZM237.1 153.7C235.8 152.6 234.3 151.4 233.9 151.0L233.2 150.2L233.2 136.1L233.2 122.0L233.5 121.5C233.7 121.2 237.3 118.1 239.2 116.7C239.3 116.6 246.0 116.5 254.1 116.5L268.8 116.5L269.3 116.8C269.6 116.9 270.1 117.3 270.3 117.5C270.5 117.8 271.2 118.3 271.7 118.7C272.6 119.3 273.9 120.5 274.7 121.2L275.0 121.5L275.0 136.1L275.0 150.6L274.4 151.1C273.4 152.0 271.2 153.9 269.9 154.8L268.7 155.8L254.2 155.7L239.6 155.7L237.1 153.7ZM278.9 155.3C278.7 154.8 278.7 117.1 278.9 116.7L279.0 116.5L288.4 116.5L297.8 116.5L298.3 117.6C298.7 118.7 299.1 120.0 299.8 122.5C300.7 126.2 301.2 127.4 301.7 126.9C301.8 126.8 301.8 124.6 301.8 122.0L301.7 117.2L302.0 116.9L302.3 116.5L311.5 116.5L320.7 116.5L320.8 116.9C320.9 117.1 321.0 125.8 321.0 136.2L321.0 155.1L320.7 155.4L320.4 155.8L311.3 155.8L302.1 155.8L301.7 155.1C301.4 154.4 300.9 153.1 299.4 147.9C298.2 143.7 297.9 144.2 298.0 150.1L298.0 154.7L297.8 155.2L297.5 155.8L288.3 155.8L279.1 155.8L278.9 155.3ZM333.2 155.6C333.1 155.5 333.0 149.6 333.0 142.5L333.0 129.6L332.7 129.3L332.3 129.0L328.0 128.9L323.6 128.9L323.6 123.0L323.5 117.1L323.8 116.8L324.2 116.5L342.6 116.5L361.1 116.5L361.4 116.9L361.8 117.3L361.8 122.9L361.8 128.4L361.4 128.7L361.1 129.0L356.8 129.0C354.4 129.0 352.5 129.1 352.4 129.2C352.3 129.4 352.2 135.2 352.2 142.1L352.2 154.8L352.0 155.3L351.7 155.8L342.5 155.8C337.5 155.8 333.3 155.7 333.2 155.6ZM364.1 155.4L363.8 155.2L363.8 136.2C363.8 125.8 363.8 117.1 363.9 116.9L364.1 116.5L381.6 116.5L399.2 116.5L400.4 117.4C401.1 117.9 401.7 118.4 401.8 118.5C401.8 118.6 402.6 119.2 403.4 119.9C404.2 120.6 405.0 121.2 405.1 121.4C405.2 121.5 405.2 125.2 405.2 129.7L405.2 137.7L404.8 138.3C404.5 138.6 403.8 139.2 403.2 139.6C402.7 140.0 402.1 140.6 402.0 140.9L401.8 141.4L402.2 142.2C402.4 142.7 402.7 143.7 403.0 144.4C403.2 145.1 403.7 146.4 404.1 147.4C404.5 148.3 404.9 149.5 405.0 149.9C405.2 150.4 405.4 151.0 405.6 151.4C405.8 151.8 406.0 152.3 406.0 152.4C406.0 152.6 406.2 153.2 406.5 153.7C406.8 154.3 407.0 154.9 407.0 155.2L406.9 155.6L397.2 155.7L387.5 155.8L387.2 155.2C386.7 154.5 385.8 150.8 384.7 145.4C384.4 143.5 384.1 143.0 383.5 143.0L383.0 143.0L383.0 143.4C383.0 143.7 383.0 146.4 383.0 149.5L383.0 155.1L382.7 155.4L382.4 155.8L373.4 155.8L364.4 155.8L364.1 155.4ZM414.8 154.8C413.2 153.6 411.0 151.8 410.3 151.1L409.8 150.5L409.8 136.0L409.8 121.5L410.5 120.8C411.0 120.4 411.5 120.0 411.7 119.8C412.9 118.7 414.9 117.0 415.4 116.8L416.0 116.5L430.5 116.5L445.0 116.5L445.6 116.8C446.1 117.1 449.5 119.7 450.7 120.9L451.3 121.4L451.2 136.1L451.1 150.9L448.1 153.3L445.1 155.8L430.6 155.8L416.0 155.8L414.8 154.8ZM455.3 155.4L455.0 155.2L455.0 136.2C455.0 125.8 455.1 117.1 455.2 116.9L455.3 116.5L464.5 116.5L473.7 116.5L474.0 116.8L474.2 117.2L474.3 130.0L474.4 142.9L481.6 143.0C485.6 143.1 489.0 143.2 489.2 143.3L489.5 143.5L489.5 149.3L489.5 155.0L488.9 155.4L488.4 155.8L472.0 155.8L455.6 155.8L455.3 155.4ZM255.4 147.9L255.8 147.7L255.8 136.0L255.8 124.4L255.5 124.1C255.3 123.9 254.7 123.8 254.2 123.8C253.8 123.8 253.2 123.9 253.0 124.1L252.8 124.4L252.8 136.0L252.8 147.7L253.1 147.9C253.2 148.1 253.8 148.2 254.2 148.2C254.7 148.2 255.3 148.1 255.4 147.9ZM431.9 136.0L431.9 123.9L430.8 123.8C430.2 123.8 429.6 123.9 429.4 124.0L429.0 124.3L429.0 136.0L429.0 147.7L429.3 148.0C429.5 148.1 430.1 148.2 430.7 148.2L431.9 148.1L431.9 136.0ZM32.7 137.9L33.0 137.7L33.0 131.0L33.0 124.3L32.6 124.0C32.4 123.9 31.8 123.8 31.2 123.8L30.1 123.9L30.1 130.9L30.0 137.8L30.3 138.0C30.8 138.3 32.4 138.3 32.7 137.9ZM385.9 129.2L386.0 124.4L385.7 124.1C385.4 123.7 383.7 123.6 383.3 124.1L383.0 124.4L383.0 128.9L383.0 133.4L383.3 133.7C383.5 133.9 384.1 134.0 384.7 133.9L385.9 133.9L385.9 129.2ZM19.7 105.7L19.4 105.5L19.2 90.8L19.1 76.1L14.1 76.0L9.0 75.9L8.7 75.5C8.6 75.3 8.5 72.4 8.5 68.8L8.5 62.5L8.9 62.1L9.3 61.7L30.0 61.8L50.8 61.8L51.3 62.0L51.8 62.3L51.8 68.9L51.8 75.4L51.4 75.7L51.1 76.0L46.1 76.1L41.1 76.1L41.1 90.7C41.0 98.8 40.9 105.5 40.8 105.6C40.5 105.8 20.1 106.0 19.7 105.7ZM58.3 103.3C56.6 101.9 55.0 100.5 54.8 100.2L54.5 99.6L54.5 83.6L54.5 67.6L55.7 66.5C56.3 65.9 57.8 64.6 59.0 63.6L61.1 61.9L77.8 61.8L94.4 61.7L95.4 62.4C96.4 63.1 98.3 64.7 100.4 66.6L101.3 67.4L101.3 83.7C101.3 92.7 101.2 100.2 101.1 100.4C101.0 100.5 99.5 101.8 97.7 103.2L94.6 105.8L78.0 105.8L61.5 105.9L58.3 103.3ZM114.7 105.6C114.6 105.4 114.5 99.0 114.4 90.7L114.4 76.1L109.2 76.0L104.1 75.9L104.1 69.0L104.0 62.2L104.3 62.0C104.7 61.7 146.0 61.7 146.5 62.0L146.8 62.2L146.8 68.9L146.8 75.6L146.4 75.8C146.3 75.9 144.0 76.0 141.3 76.0C138.5 76.0 136.5 76.1 136.4 76.2C136.3 76.4 136.2 82.9 136.2 90.8C136.2 98.7 136.2 105.3 136.0 105.4L135.8 105.8L125.4 105.8L115.0 105.9L114.7 105.6ZM149.6 105.6L149.2 105.4L149.3 86.4L149.4 67.4L151.0 66.0C151.9 65.3 153.3 64.1 154.1 63.4C154.9 62.7 155.9 62.0 156.3 61.9C156.7 61.8 164.3 61.8 173.2 61.8L189.4 61.9L192.5 64.4C194.3 65.8 195.8 67.1 195.9 67.2C196.0 67.5 196.1 105.5 195.9 105.7C195.8 105.7 191.1 105.8 185.4 105.8L174.9 105.8L174.6 105.3L174.2 104.9L174.2 98.5C174.2 94.9 174.2 91.9 174.1 91.6L173.9 91.2L172.8 91.2C172.1 91.2 171.5 91.4 171.3 91.5L171.0 91.8L171.0 98.7L171.0 105.5L170.6 105.7C170.4 105.7 165.7 105.8 160.1 105.8L149.9 105.9L149.6 105.6ZM200.6 105.5L200.2 105.2L200.2 83.7L200.2 62.3L200.7 62.0L201.2 61.8L211.2 61.8C216.7 61.8 221.4 61.8 221.6 61.9L222.0 62.1L222.0 76.6L222.0 91.2L222.3 91.5L222.6 91.8L230.4 91.8L238.2 91.8L238.4 92.0C238.6 92.4 238.6 105.3 238.3 105.5C238.2 105.7 230.5 105.8 219.5 105.8L200.9 105.9L200.6 105.5ZM78.1 102.6C78.2 102.4 78.2 101.2 78.2 100.0L78.2 97.8L78.6 97.6C78.7 97.4 79.4 97.3 80.0 97.2C84.6 96.6 89.3 91.9 90.6 86.8C90.8 85.9 91.1 85.1 91.3 85.0C91.4 84.9 92.3 84.9 93.3 84.9C95.9 85.1 96.9 84.7 96.2 83.5L96.0 83.0L93.6 83.0L91.3 83.0L91.1 82.7C91.0 82.5 90.7 81.6 90.4 80.7C89.2 75.9 84.2 71.2 80.0 70.8C79.3 70.7 78.6 70.6 78.5 70.4C78.4 70.2 78.2 69.0 78.2 67.6L78.1 65.1L77.5 65.0C76.7 64.9 76.5 65.4 76.5 67.9L76.5 70.2L76.1 70.5C75.8 70.6 75.1 70.7 74.6 70.8C70.0 71.4 64.4 77.3 63.9 82.1L63.9 82.9L61.4 82.9L58.9 83.0L58.6 83.4C58.2 84.0 58.2 84.1 58.7 84.6L59.1 85.0L61.3 85.0C63.8 84.9 64.0 85.0 64.0 86.0C64.0 87.1 65.0 89.4 66.2 91.3C68.1 94.2 71.9 96.8 74.7 97.2C75.3 97.3 76.0 97.4 76.2 97.6L76.5 97.8L76.5 100.1L76.5 102.4L76.8 102.7C77.2 103.1 77.9 103.1 78.1 102.6ZM74.1 95.3C69.6 93.9 66.6 90.4 65.8 85.7L65.4 83.8L65.8 82.0C66.0 81.0 66.5 79.5 66.9 78.7L67.5 77.3L69.0 75.8C73.1 71.7 79.2 71.1 84.0 74.3C86.7 76.1 88.4 78.7 89.0 82.2L89.3 84.0L88.9 85.9C88.2 89.5 86.7 91.9 84.0 93.7C82.0 95.0 80.4 95.5 77.8 95.6L75.6 95.7L74.1 95.3ZM78.9 87.3C79.5 87.0 80.1 86.4 80.5 85.9L81.1 85.0L81.1 83.9L81.0 82.8L80.5 82.0C79.7 80.9 78.5 80.2 77.4 80.2C75.5 80.2 73.7 82.1 73.7 84.0L73.7 85.0L74.3 85.9C75.4 87.6 77.3 88.1 78.9 87.3ZM174.0 80.0L174.3 79.8L174.3 75.1C174.3 72.5 174.2 70.3 174.1 70.2C173.9 70.1 173.2 70.0 172.5 70.0L171.1 70.1L171.1 74.8L171.0 79.6L171.3 79.9C171.6 80.3 173.4 80.4 174.0 80.0Z"/></svg>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#pests">Pests</a>
+      <a href="#how">How Bill works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="https://killerbpestcontrol.com/residential/">Homes</a>
+      <a href="https://killerbpestcontrol.com/commercial/">Businesses</a>
+      <a href="https://killerbpestcontrol.com/about/">About</a>
+    </nav>
+    <a class="btn btn-red" href="tel:+14146515641"><svg aria-hidden="true"><use href="#phone"/></svg><span><span class="long">Call Bill: </span>414-651-5641</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><svg aria-hidden="true"><use href="#reticle"/></svg>Waukesha pest control · locally owned</span>
+        <h1 id="h1">Mice, wasps or bugs? <span class="hit">Call Bill.<svg aria-hidden="true"><use href="#reticle"/></svg></span></h1>
+        <p class="lede">Killer B's is locally owned and operated, based out of Waukesha and serving southeastern Wisconsin. Whether you've got bees, rodents or spiders, Bill Knopf can help with your pest problem.</p>
+        <div class="cta-row">
+          <a class="btn btn-red" href="tel:+14146515641"><svg aria-hidden="true"><use href="#phone"/></svg>Call 414-651-5641</a>
+          <a class="btn btn-ghost" href="#pests">What's bugging you?</a>
+        </div>
+      </div>
+      <figure class="photo">
+        <svg class="reticle r1" aria-hidden="true"><use href="#reticle"/></svg>
+        <div class="frame">
+          <picture><source srcset="img/bill-van.webp" type="image/webp"><img src="img/bill-van.jpg" width="1320" height="1426" alt="Bill Knopf smiling beside his black work truck in the snow; the door sign reads Mosquito &amp; Total Pest Control, Killer B's, 414-651-5641" fetchpriority="high"></picture>
+        </div>
+        <figcaption><b>Bill Knopf</b> · founder of Killer B's</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="Quick facts">
+    <ul class="wrap">
+      <li><span class="star" aria-hidden="true">★</span><span><span class="big">5.0</span> <a href="https://www.google.com/maps/place/Killer+B's+Total+Pest+Control/@43.0102487,-88.2755197,17z/data=!4m8!3m7!1s0x8805af7cb593ffff:0xac2f99b89e68060?hl=en">on Google</a></span></li>
+      <li><svg aria-hidden="true"><use href="#reticle"/></svg>Locally owned &amp; operated</li>
+      <li><svg aria-hidden="true"><use href="#reticle"/></svg>Based out of Waukesha</li>
+      <li><svg aria-hidden="true"><use href="#reticle"/></svg>Free consultation by phone</li>
+    </ul>
+  </section>
+
+  <section class="bugs" id="pests" aria-labelledby="pests-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#reticle"/></svg>Pick your pest</span>
+          <h2 id="pests-h">What's bugging you?</h2>
+        </div>
+        <p>Tap a pest to see what Killer B's covers, what their customers say, and where to read more.</p>
+      </div>
+      <div class="picker">
+        <div class="tiles" role="tablist" aria-label="Pests">
+          <button class="tile" role="tab" id="t-rodents" aria-controls="panel" aria-selected="true" data-k="rodents">
+            <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 31c0-8 7-14 16-14 7 0 12 4 13 9l4 2c1 1 1 3-1 3H12c-2 0-4 0-4 0z"/><circle cx="20" cy="15" r="4.5"/><circle cx="33" cy="27" r="1" fill="currentColor"/><path d="M8 31c-3 0-5 2-4 5s6 3 9 1"/><path d="M18 31v4M28 31v4"/></g></svg>
+            Mice &amp; rats<svg class="lock" aria-hidden="true"><use href="#reticle"/></svg></button>
+          <button class="tile" role="tab" id="t-stinging" aria-controls="panel" aria-selected="false" data-k="stinging" tabindex="-1">
+            <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="26" cy="29" rx="9" ry="6.5" transform="rotate(-25 26 29)"/><path d="M21 26.5l3 7M26 24.5l3 7"/><circle cx="15" cy="34" r="4"/><path d="M34 25l6-3M12 37l-3 2"/><path d="M24 22c-3-9-11-11-14-7s4 9 12 8M28 21c2-9 10-12 13-8s-4 9-11 9"/></g></svg>
+            Wasps, bees &amp; hornets<svg class="lock" aria-hidden="true"><use href="#reticle"/></svg></button>
+          <button class="tile" role="tab" id="t-mosquitoes" aria-controls="panel" aria-selected="false" data-k="mosquitoes" tabindex="-1">
+            <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 24c6-2 14-2 22 4"/><circle cx="12" cy="24" r="3"/><path d="M9 25L3 30"/><path d="M20 23c-2-8 2-15 8-17M24 23c3-7 9-11 15-10"/><path d="M18 26l-5 12M24 26l-2 14M30 27l4 12"/></g></svg>
+            Mosquitoes &amp; ticks<svg class="lock" aria-hidden="true"><use href="#reticle"/></svg></button>
+          <button class="tile" role="tab" id="t-bedbugs" aria-controls="panel" aria-selected="false" data-k="bedbugs" tabindex="-1">
+            <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="27" rx="10" ry="12"/><circle cx="24" cy="12" r="4"/><path d="M24 17v20M14 22l-6-3M14 30l-7 1M15 36l-5 4M34 22l6-3M34 30l7 1M33 36l5 4M22 8l-3-4M26 8l3-4"/></g></svg>
+            Bed bugs<svg class="lock" aria-hidden="true"><use href="#reticle"/></svg></button>
+          <button class="tile" role="tab" id="t-general" aria-controls="panel" aria-selected="false" data-k="general" tabindex="-1">
+            <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="26" r="6"/><circle cx="24" cy="16" r="3.5"/><path d="M18 22l-8-6-2-6M18 26H8l-4 4M19 30l-7 6-1 6M30 22l8-6 2-6M30 26h10l4 4M29 30l7 6 1 6"/></g></svg>
+            Ants, spiders &amp; more<svg class="lock" aria-hidden="true"><use href="#reticle"/></svg></button>
+          <button class="tile" role="tab" id="t-wildlife" aria-controls="panel" aria-selected="false" data-k="wildlife" tabindex="-1">
+            <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 40h36M8 40V20l16-12 16 12v20"/><path d="M18 40V28h12v12"/><path d="M22 28v12M26 28v12"/></g></svg>
+            Wildlife trapping<svg class="lock" aria-hidden="true"><use href="#reticle"/></svg></button>
+        </div>
+        <div class="panel" id="panel" role="tabpanel" aria-labelledby="t-rodents" aria-live="polite">
+          <div class="kicker" id="p-kicker"></div>
+          <h3 id="p-title"></h3>
+          <ul class="list" id="p-list"></ul>
+          <div id="p-body"></div>
+          <div class="actions">
+            <a class="btn btn-red" href="tel:+14146515641"><svg aria-hidden="true"><use href="#phone"/></svg>Call Bill</a>
+            <a class="more" id="p-more" href="https://killerbpestcontrol.com/rodent-control/">Read more on their site →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#reticle"/></svg>Owner, start to finish</span>
+          <h2 id="how-h">How Bill works</h2>
+        </div>
+        <p>It's what his customers keep describing: one person from the first call through the final check.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="dot">1</span><h3>You call Bill</h3><p>Call 414-651-5641 for a free consultation. Reviewers say the owner picks up.</p></li>
+        <li><span class="dot">2</span><h3>He inspects</h3><p>A thorough look at the problem, and a clear explanation of how he'll treat it.</p></li>
+        <li><span class="dot">3</span><h3>He fixes the way in</h3><p>Treatment or traps, plus fixing how pests and animals are getting into the house.</p></li>
+        <li><span class="dot">4</span><h3>He follows up</h3><p>Bill comes back to make sure the problem is taken care of.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="talk" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><svg aria-hidden="true"><use href="#reticle"/></svg>What customers say</span>
+        <h2 id="rev-h" style="font-size:clamp(2.2rem,4.6vw,3.6rem);margin-top:10px">Bill answers. Bill comes back.</h2>
+        <div class="rating">
+          <div class="score"><span aria-hidden="true">★</span> 5.0 on Google</div>
+          <a href="https://www.google.com/maps/place/Killer+B's+Total+Pest+Control/@43.0102487,-88.2755197,17z/data=!4m8!3m7!1s0x8805af7cb593ffff:0xac2f99b89e68060?hl=en">Read the reviews on Google</a>
+        </div>
+        <ul class="themes" aria-label="What Google reviewers mention">
+          <li>The owner answers the phone</li>
+          <li>Seals up entry points</li>
+          <li>Comes back to check traps</li>
+          <li>Doesn't nickel and dime you</li>
+        </ul>
+        <div class="quotes">
+          <blockquote class="quote"><p>“Bill has helped us with a couple insect problems and did so in a timely manner. He is effective and knowledgeable about insects, how animals get into our house, and how to fix problems so animals do not reenter the house.”</p><footer>Hanna and Greg Bakken, WI</footer></blockquote>
+          <blockquote class="quote"><p>“His customer service was outstanding, everything from my initial call to Bill coming out to my house. He was thorough in evaluating our bug situation and explaining how he would treat our house.”</p><footer>Mel and Cathy Brown, WI</footer></blockquote>
+        </div>
+      </div>
+      <aside class="card" aria-labelledby="contact-h" id="contact">
+        <h2 id="contact-h">Call for a free consultation</h2>
+        <p class="sub">Talk to Bill about what you're seeing.</p>
+        <a class="phone" href="tel:+14146515641"><svg aria-hidden="true"><use href="#phone"/></svg>414-651-5641</a>
+        <dl>
+          <div><dt>Email</dt><dd><a href="mailto:bknopf@killerbpestcontrol.com">bknopf@killerbpestcontrol.com</a></dd></div>
+          <div><dt>Based at</dt><dd>2909 Lander Lane<br>Waukesha, WI 53188</dd></div>
+          <div><dt>Serving</dt><dd>Waukesha and southeastern Wisconsin · homes and businesses</dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn btn-red" href="tel:+14146515641"><svg aria-hidden="true"><use href="#phone"/></svg>Call Bill</a>
+          <a class="btn btn-light" href="mailto:bknopf@killerbpestcontrol.com"><svg aria-hidden="true"><use href="#mail"/></svg>Email Bill</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="closer" aria-label="A first look">
+    <div class="wrap">
+      <div>
+        <h2>A first look at your new site</h2>
+        <p>Built around Bill, his real truck and his customers' own words. Pests don't stand a chance.</p>
+      </div>
+      <a class="btn" href="tel:+14146515641"><svg aria-hidden="true"><use href="#phone"/></svg>414-651-5641</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>© 2026 Killer B's Total Pest Control · 2909 Lander Lane, Waukesha, WI 53188 · <a href="tel:+14146515641">414-651-5641</a></div>
+    <div>Website by Cream City Post · Independent website concept, not the official Killer B's Total Pest Control site. Logo redrawn; photo, pest list, testimonials and contact details from killerbpestcontrol.com; rating from Google.</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+14146515641"><svg aria-hidden="true"><use href="#phone"/></svg>Call 414-651-5641</a>
+  <a class="btn btn-light" href="mailto:bknopf@killerbpestcontrol.com">Email</a>
+</div>
+
+<script>
+(function(){
+  var S="https://killerbpestcontrol.com/";
+  var D={
+    rodents:{k:"Rodent control",t:"Mice & rats",l:["Mice","Rats","Entry points"],
+      q:"We bought a house that had a mouse problem.  Bill took care of the issues.",c:"Kim and Dave Pluess, WI",u:"rodent-control/"},
+    stinging:{k:"Stinging insects",t:"Wasps, bees & hornets",l:["Wasps","Bees","Hornets"],
+      n:"Whether you've got bees, rodents or spiders, Killer B's can assist with your pest problem. Tell Bill where the nest is when you call.",u:"stinging-insects/"},
+    mosquitoes:{k:"Mosquitoes",t:"Mosquitoes & ticks",l:["Mosquitoes","Ticks","Yard treatments"],
+      q:"He also treated for Mosquitos that helped greatly and sprayed the house to help with stink bugs.",c:"Kim and Dave Pluess, WI",u:"mosquitos/"},
+    bedbugs:{k:"Bed bugs",t:"Bed bugs",l:["Bed bugs"],
+      n:"Bed bugs are on Killer B's pest list. Call Bill to talk through what you're finding and how he'd treat it.",u:"bed-bugs/"},
+    general:{k:"General pests",t:"Ants, spiders & more",l:["Ants","Cockroaches","Spiders","Silverfish","Millipedes","Earwigs","Centipedes","Pillbugs / sowbugs"],
+      q:"He was thorough in evaluating our bug situation and explaining how he would treat our house.",c:"Mel and Cathy Brown, WI",u:"general-pests/"},
+    wildlife:{k:"Wildlife trapping",t:"Animals getting in",l:["Trapping","Entry points"],
+      q:"He is effective and knowledgeable about insects, how animals get into our house, and how to fix problems so animals do not reenter the house.",c:"Hanna and Greg Bakken, WI",u:"wildlife-trapping/"}
+  };
+  var tabs=[].slice.call(document.querySelectorAll('.tile')),panel=document.getElementById('panel');
+  function el(id){return document.getElementById(id)}
+  function show(btn,focus){
+    var d=D[btn.getAttribute('data-k')];
+    tabs.forEach(function(b){var on=b===btn;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1});
+    panel.setAttribute('aria-labelledby',btn.id);
+    el('p-kicker').textContent=d.k;el('p-title').textContent=d.t;
+    el('p-list').innerHTML=d.l.map(function(x){return '<li>'+x+'</li>'}).join('');
+    var b=el('p-body');b.innerHTML='';
+    if(d.q){var bq=document.createElement('blockquote');bq.textContent='“'+d.q+'”';var c=document.createElement('cite');c.textContent='— '+d.c+', on killerbpestcontrol.com';bq.appendChild(c);b.appendChild(bq)}
+    else{var p=document.createElement('p');p.className='note';p.textContent=d.n;b.appendChild(p)}
+    el('p-more').href=S+d.u;
+    if(focus)btn.focus();
+  }
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){show(b)});
+    b.addEventListener('keydown',function(e){
+      var j=null;
+      if(e.key==='ArrowRight'||e.key==='ArrowDown')j=(i+1)%tabs.length;
+      else if(e.key==='ArrowLeft'||e.key==='ArrowUp')j=(i-1+tabs.length)%tabs.length;
+      else if(e.key==='Home')j=0;else if(e.key==='End')j=tabs.length-1;
+      if(j!==null){e.preventDefault();show(tabs[j],true)}
+    });
+  });
+  show(tabs[0]);
+})();
+</script>
+</body>
+</html>
