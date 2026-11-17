@@ -51,6 +51,9 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-080 v1 revision 1a1ea9034f190831 handled; v2 ready 1a1eafebd810608b confirmed SENT (Nov 17).
+CCP-081 v1 revision 1a1ea9035217a363 handled; v2 ready 1a1eb00601f983b6 confirmed SENT (Nov 17).
+CCP-082 v1 revision 1a1ea903b81d150a handled; v2 ready 1a1eafea05c5516b confirmed SENT (Nov 17).
 CCP-079 v1 revision 1a1ea903345d027d handled; v2 ready 1a1eac8990ad1248 confirmed SENT (Nov 17).
 CCP-098 v1 revision 1a1ea8cf2dd29369 handled; v2 ready 1a1eac65a7694748 confirmed SENT (Nov 17).
 CCP-099 v1 revision 1a1ea8cf62b21d70 handled; v2 ready 1a1eac66cb987630 confirmed SENT (Nov 17).
@@ -128,7 +131,7 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 
 | CCP-095 | Custom Construction of Wisconsin | Concrete, Waukesha | brief + master CSV | v1 | custom-construction-wisconsin/ | Live 8db22cc; ready 1a1d387e1f5deac1 SENT; 0 credits. |
 
-| CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | v1 published 5faef20; ready emailed Nov 12, ~7:40 PM (1a1d28e1a25b5db4) by recovery run. 0 credits. |
+| CCP-082 | Heating and Cooling Drs of West Allis, Milwaukee and New Berlin LLC | HVAC, Milwaukee | brief 1a1d1367beff6fb2 | v1 | heating-cooling-drs/ | v2 live d4577d9; ready 1a1eafea05c5516b SENT (Nov 17); 0 credits. Footer build note removed. |
 
 | CCP-094 | CNC Cleaning & Hauling | Junk removal, Milwaukee | brief + master CSV | v1 | cnc-cleaning-hauling/ | Live 2afdb40; ready 1a1d3366e86da9ec SENT; 0 credits. |
 | CCP-093 | Kettle Moraine Tree Services | Tree service, Summit/Oconomowoc | brief + previously verified master CSV | v1 | kettle-moraine-tree-services/ | Existing live v1 delivery recovered Nov 13; ready 1a1d3b9b2f738562 SENT; 0 credits. |
@@ -192,8 +195,8 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 | CCP-077 | Great Lakes Sales & Service | Auto repair, Nashotah | brief | v1 | great-lakes-sales-service/ | v1 emailed Nov 12, ~3:45 PM. 2 credits (hero upscale). |
 | CCP-078 | Fuerst Electric | Electrician (residential/commercial/new construction), Wales | brief | v2 | fuerst-electric/ | v1 emailed Nov 12, ~4:31 PM; v2 (own-site promises replace Google themes) emailed ~5:40 PM. 0 credits. Photo-free. |
 | CCP-079 | Beachside Boat & Bait | Boat rentals + bait, Pewaukee Lake | brief | v2 | beachside-boat-bait/ | v1 emailed Nov 12, ~16:37, 2 credits (kayak upscale). v2 live ece5d46; ready 1a1eac8990ad1248 SENT; 0 credits (own-site promises). |
-| CCP-080 | Dean Pipito Water Features (Aquatica) | Ponds, waterfalls + water-garden shop, Wales | brief | v1 | aquatica-water-features/ | v1 emailed Nov 12, ~5:55 PM. 0 credits. |
-| CCP-081 | Inside Out Remodeling LLC | Turnkey remodeling, Wales | brief | v1 | inside-out-remodeling/ | v1 emailed Nov 12, ~6:10 PM. 0 credits. Google 1.0 (2) — pitch decision. |
+| CCP-080 | Dean Pipito Water Features (Aquatica) | Ponds, waterfalls + water-garden shop, Wales | brief | v2 | aquatica-water-features/ | v2 live ca7fc87; ready 1a1eafebd810608b SENT (Nov 17); 2 credits (4K hero upscale). |
+| CCP-081 | Inside Out Remodeling LLC | Turnkey remodeling, Wales | brief | v2 | inside-out-remodeling/ | v2 live 594e541; ready 1a1eb00601f983b6 SENT (Nov 17); 14 credits (7 upscales, approved). Google 1.0 (2) — pitch decision. |
 | CCP-083 | Devix Heating & Cooling | HVAC, West Allis | brief | v1 | devix-heating-cooling/ | v1 emailed Nov 12, ~6:50 PM. 0 credits. |
 | CCP-085 | Forced Air Systems | HVAC, Greendale | brief | v1 | forced-air-systems/ | v1 emailed Nov 12; 0 credits. |
 | CCP-084 | Clear Vision ProWash | Exterior cleaning, Waukesha | brief | v1 | clear-vision-prowash/ | v1 emailed Nov 12, ~7:00 PM. 0 credits. |
@@ -389,6 +392,7 @@ CCP-072 revision 1a1d1bd56d8ff283 handled by v2 ready 1a1d1d433b2e8792.
 - done — CCP-099 v2 (Nov 17, ~12:40 PM CT, scheduled run): live 0f96de8 byte-identical, page + logo 200; ready 1a1eac66cb987630 SENT. 0 credits. Header logo on #f7f7f2 plate, viewBox 40 420 2264 660, 190×62 / 160×52 ≤760px. Open: yellow lines lower-contrast on light plate; trimmed-PNG alternative offered.
 - done — CCP-079 v2 (Nov 17, ~12:55 PM CT, scheduled run): live ece5d46 byte-identical, page + 4 imgs 200; ready 1a1eac8990ad1248 SENT. 0 credits. Review themes replaced by 4 own-site promises (verified verbatim on beachsideboat.com), caption/footer "rating from Google", "downtown" removed (hero + meta).
 - Nov 17, ~12:55 PM CT (scheduled run): session ends after 3 items (CCP-098 v2 2 credits, CCP-099 v2 0, CCP-079 v2 0). Still open, oldest first: revisions CCP-080, 081, 082, 083, 084, 090, 091, 092, 093, 094, 110, 106, 111 (095 claimed by another run 12:18 CT); then unbuilt brief CCP-162 Prime Electric (1a1ea906dd58a0a3). Did not CC the grokbot address (still unconfirmed).
-- in progress — CCP-080 (2026-11-17 13:30 CT, scheduled run)
-- in progress — CCP-081 (2026-11-17 13:30 CT, scheduled run)
-- in progress — CCP-082 (2026-11-17 13:30 CT, scheduled run)
+- done — CCP-082 v2 (Nov 17, ~1:35 PM CT, scheduled run): live d4577d9 byte-identical, page + 4 imgs 200; ready 1a1eafea05c5516b SENT. 0 credits. Footer now ends "...from drsheatingcoolingllc.services. Rating from Google."; brief date, CCP-082 and Design v1 removed.
+- done — CCP-080 v2 (Nov 17, ~1:40 PM CT, scheduled run): live ca7fc87 byte-identical, page + 6 imgs 200; ready 1a1eafebd810608b SENT. 2 credits (4K upscale of IMG_9449 → 4096x3413; <picture> phone 4:5 crop 2400x3000 ≈2.25x at 390/DPR3, desktop 2400x2000). Tiles full-size q88; wording fixes; also dropped "streams" from Design card. Open: page ~3.1 MB (cascade tile 1.27 MB), offered to cap tiles at 1600px.
+- done — CCP-081 v2 (Nov 17, ~1:45 PM CT, scheduled run): live 594e541 byte-identical, page + 8 imgs 200; ready 1a1eb00601f983b6 SENT. 14 credits (4K: home-2/8/3/10 → 3400x1844; 2K: home-1/7/4 → 1700x922; approved in revision). Footer adds "photos enhanced"; BBB not added (unconfirmed). Page ~1.2 MB.
+- Nov 17, ~1:45 PM CT (scheduled run): session ends after 3 items (082 v2 0 credits, 080 v2 2, 081 v2 14). Still open, oldest first: revisions CCP-083, 084, 090, 091, 092, 093, 094, 106, 110, 111 (095 claimed 12:18 CT by another run, no ready email yet; resumable after 1:48 PM CT); then unbuilt briefs CCP-162 Prime Electric (1a1ea906dd58a0a3), CCP-164 (1a1eaf22ee83c7f0), CCP-165 (1a1eaf38a0b59ff4), CCP-166 (1a1eaf4dce76d8d1), CCP-167 (1a1eaf6148809d5a). Higgsfield 2K now returns ~3981x2160 from 850px sources.
