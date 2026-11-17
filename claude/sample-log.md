@@ -416,3 +416,7 @@ CCP-084 revision1a1ea903e0113e6e handled; v2 ready1a1eb1f3f04635e5 SENT, folder 
 
 CCP-090 revision1a1ea936e9a2824e handled; v2 ready1a1eb2336af06177 confirmed SENT.
 - Nov17 scheduled handoff: last finished CCP-090 v2, preceded084v2; next verified open revision CCP-091 then092/093/094/106/110/111; new briefs162/164/165/166/167 follow revisions. Refresh claims/Gmail before next item. Total2credits;084 size exception disclosed. Only Tyler emailed per current-run instruction. Claude unavailable; supported installed Higgsfield Playwright used.
+
+- in progress — CCP-091 (14:28 CT, scheduled run)
+- in progress — CCP-092 (14:28 CT, scheduled run)
+- in progress — CCP-093 (14:28 CT, scheduled run)
