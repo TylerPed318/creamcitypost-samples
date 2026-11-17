@@ -459,4 +459,7 @@ CCP-166 brief1a1eaf4dce76d8d1 handled; v1 ready1a1ebbee2dbecea4 confirmed SENT.
 - done — CCP-162 v2 (Nov 17, ~5:40 PM CT, scheduled run): live 6b2394c, HTML byte-identical, page + 6 imgs 200; ready 1a1ebd8458059e3f SENT (only Tyler). 0 credits. Fleet hero re-exported from own-site original 5296x1894: phone <picture> 2133x1600 WebP q88 (1.99x at 390/DPR3, was 0.96x), desktop 2400x858 WebP q88 + jpg fallback; plate re-blurred. Open: page >1 MB (phone webp 782 KB), lower quality offered.
 
 CCP-162 v1 revision 1a1ebd04c69d9fa3 handled; v2 ready 1a1ebd8458059e3f confirmed SENT (Nov 17).
-in progress — CCP-167 v1 (Nov 17, 5:30 PM CT, scheduled run)
+- done — CCP-167 v1 (Nov 17, ~5:50 PM CT, scheduled run): live e3c454d, HTML byte-identical, page + 2 imgs 200; ready 1a1ebdd684c81e58 SENT (only Tyler). 0 credits. Bill-and-truck hero (own-site 2200px original, 3.8x on phone); logo potrace-traced to inline SVG; crosshair + business-card hex motif; pest picker (6 tiles, each with own-site pest list, own-site testimonial and a link to their pest page); 4-step 'How Bill works'. Page ~256 KB. Open: no named Google quotes/count; licensed/insured, hours, towns, SMS, 2-hour promise omitted; more photos from Bill.
+
+CCP-167 brief 1a1eaf6148809d5a handled; v1 ready 1a1ebdd684c81e58 confirmed SENT (Nov 17).
+- Nov 17, ~5:50 PM CT (scheduled run): session ends after 2 items (CCP-162 v2, CCP-167 v1; 0 credits). No open revisions or unbuilt briefs left as of 5:50 PM CT. Emailed only Tyler (no grokbot CC, same call as earlier unattended runs). Tip: potracer's Bitmap treats True as background, so pass ~mask or the logo traces inverted.
