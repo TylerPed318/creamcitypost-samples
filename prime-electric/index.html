@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Prime Electric LLC — Website concept by Cream City Post</title>
+<meta name="description" content="Residential and commercial electrical contractor serving southeastern Wisconsin since 2009. Owned and operated by master electrician Troy Poppe.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231F2328'/%3E%3Cg fill='none' stroke='%23E1261C' stroke-width='4'%3E%3Cellipse cx='32' cy='16' rx='15' ry='4'/%3E%3Cellipse cx='32' cy='25' rx='22' ry='5'/%3E%3Cellipse cx='32' cy='34' rx='25' ry='5.5'/%3E%3Cellipse cx='32' cy='43' rx='21' ry='5'/%3E%3Cellipse cx='32' cy='52' rx='14' ry='4'/%3E%3C/g%3E%3Cpath d='M30 6l4 10-5 4 6 10-4 6 6 10-3 12' fill='none' stroke='%23E8FBFF' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#E1261C;          /* Prime red (logo, toned for screens) */
+  --red-deep:#C81E15;     /* red for small text/buttons on white */
+  --stripe:#9E1B16;       /* van-stripe dark red */
+  --red-on-dark:#FF6B5E;  /* red text on charcoal (AA) */
+  --charcoal:#1F2328;
+  --charcoal-2:#2A2F36;
+  --steel:#5B6470;
+  --cloud:#F4F5F7;
+  --white:#FFFFFF;
+  --spark:#E8FBFF;        /* the pale bolt in their globe */
+  --line:#DADDE2;
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --body:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--charcoal);background:var(--white);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:clamp(16px,4vw,32px);padding-right:clamp(16px,4vw,32px)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;z-index:100;background:#fff;padding:10px 14px}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:saturate(1.4) blur(6px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:72px}
+.brand{display:flex;align-items:center;text-decoration:none;flex:0 1 auto;min-width:0}
+.brand svg{height:40px;width:auto;max-width:100%}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font-size:.86rem;font-weight:600;text-decoration:none;color:var(--charcoal);padding:12px 10px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover{color:var(--red-deep);background:var(--cloud)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.95rem;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-red{background:var(--red-deep);color:#fff}
+.btn-red:hover{background:var(--stripe)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--charcoal)}
+.btn-dark{background:var(--charcoal);color:#fff}
+.btn-dark:hover{background:#000}
+.top .btn{min-height:46px;padding:10px 18px;font-size:.9rem}
+@media (max-width:980px){.nav{display:none}.top .btn{margin-left:auto}}
+@media (max-width:600px){.top .btn .long{display:none}.brand svg{height:30px}}
+
+/* ---------- hero ---------- */
+.hero{background:var(--charcoal);color:#fff;position:relative;overflow:hidden;padding-top:clamp(48px,7vw,88px)}
+.rings{position:absolute;right:-120px;top:-40px;width:min(640px,70vw);opacity:.22;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,56px);align-items:end}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:700;color:var(--red-on-dark);margin:0 0 18px}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--red);border-radius:2px}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(2.2rem,5.4vw,4.1rem);line-height:1.05;margin:0 0 20px;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--red-on-dark)}
+.lede{font-size:clamp(1.02rem,1.6vw,1.18rem);color:#D9DDE3;max-width:40em;margin:0 0 28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.owner-card{background:var(--charcoal-2);border:1px solid rgba(255,255,255,.12);border-left:4px solid var(--red);border-radius:var(--radius);padding:22px 24px;margin-bottom:6px}
+.owner-card p{margin:0}
+.owner-card .q{font-family:var(--display);font-size:1.22rem;line-height:1.35;font-weight:700}
+.owner-card .by{margin-top:12px;font-size:.84rem;color:#B9C0C9}
+.owner-card .by b{color:#fff}
+.fleet{position:relative;margin-top:clamp(40px,6vw,64px)}
+.fleet::before{content:"";position:absolute;inset:auto 0 0 0;height:50%;background:var(--white)}
+.fleet figure{position:relative;margin:0;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.fleet img{width:100%;aspect-ratio:2160/772;object-fit:cover}
+.fleet figcaption{position:absolute;left:16px;bottom:14px;background:rgba(31,35,40,.82);color:#fff;font-size:.78rem;font-weight:600;padding:6px 12px;border-radius:999px}
+@media (max-width:860px){.hero-grid{grid-template-columns:minmax(0,1fr)}.owner-card{max-width:560px}}
+@media (max-width:600px){
+  .fleet img{aspect-ratio:4/3;object-position:55% 50%}
+  .fleet figcaption{left:10px;bottom:10px}
+}
+
+/* ---------- proof strip ---------- */
+.proof{padding:clamp(28px,4vw,40px) 0 8px}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.proof li{padding:18px 20px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.proof li:last-child{border-right:0}
+.proof b{font-family:var(--display);font-size:1.45rem;line-height:1.15}
+.proof b .star{color:var(--red)}
+.proof span{font-size:.84rem;color:var(--steel)}
+.proof a{color:var(--red-deep);font-weight:600}
+@media (max-width:860px){.proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}.proof li:nth-child(2){border-right:0}.proof li:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media (max-width:420px){.proof li{padding:14px}.proof b{font-size:1.2rem}}
+
+/* ---------- panel (services) ---------- */
+.section{padding:clamp(56px,8vw,96px) 0}
+.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:700;color:var(--red-deep);margin:0 0 10px}
+h2{font-family:var(--display);font-weight:900;font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1.1;margin:0 0 14px}
+.intro{max-width:44em;color:var(--steel);margin:0 0 34px}
+.panel-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:clamp(20px,3vw,36px);align-items:start}
+.panel{background:linear-gradient(180deg,#3A4049,#2A2F36);border-radius:20px;padding:18px;box-shadow:inset 0 0 0 2px #4A515B,0 18px 40px rgba(31,35,40,.18);position:relative}
+.panel::before,.panel::after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#8A929C;box-shadow:inset 0 0 0 2px #5D646D;top:10px}
+.panel::before{left:10px}.panel::after{right:10px}
+.panel-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;background:#1B1F24;border-radius:12px;padding:16px;position:relative}
+.panel-inner::before{content:"";position:absolute;left:50%;top:16px;bottom:16px;width:6px;margin-left:-3px;background:linear-gradient(180deg,#B9A27A,#8F7A55);border-radius:3px;opacity:.55}
+.col h3{font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#C9CED6;margin:2px 4px 12px;display:flex;justify-content:space-between;gap:8px}
+.col h3 span{color:var(--red-on-dark)}
+.breaker{display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;align-items:center;background:#F7F4EC;border-radius:8px;padding:10px 12px;margin-bottom:8px;position:relative;z-index:1}
+.breaker:last-child{margin-bottom:0}
+.switch{width:38px;height:44px;border-radius:6px;background:#2B2F35;position:relative;box-shadow:inset 0 0 0 2px #444B54}
+.switch::after{content:"";position:absolute;left:9px;right:9px;top:6px;height:18px;border-radius:4px;background:var(--red);box-shadow:0 2px 0 var(--stripe)}
+.breaker .no{position:absolute;top:6px;right:8px;font-size:.66rem;font-weight:700;color:#8A8270}
+.breaker b{display:block;font-size:.93rem;line-height:1.25;padding-right:18px}
+.breaker small{display:block;font-size:.8rem;color:#575043;line-height:1.4;margin-top:2px}
+@media (max-width:980px){.panel-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.panel-inner{grid-template-columns:minmax(0,1fr)}.panel-inner::before{display:none}.col+.col{margin-top:8px}}
+
+/* town checker: the one interactive */
+.directory{background:#FBF8F0;border:1px solid #E4DCC8;border-radius:16px;padding:24px;box-shadow:0 10px 30px rgba(31,35,40,.08)}
+.directory h3{font-family:var(--display);font-size:1.45rem;margin:0 0 6px;line-height:1.2}
+.directory p{margin:0 0 16px;font-size:.92rem;color:#4F4A3E}
+.checker{display:flex;gap:8px;flex-wrap:wrap}
+.checker label{width:100%;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6B6455}
+.checker input{flex:1 1 160px;min-width:0;min-height:48px;padding:10px 14px;border:2px solid #CFC5AE;border-radius:10px;font:inherit;background:#fff}
+.checker button{min-height:48px;padding:10px 18px;border:0;border-radius:10px;background:var(--charcoal);color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.checker button:hover{background:#000}
+.result{margin-top:14px;min-height:3.2em;font-size:.95rem;border-radius:10px;padding:12px 14px;background:#fff;border:1px dashed #CFC5AE}
+.result.yes{border:1px solid #2E7D4F;background:#EEF8F1}
+.result.no{border:1px solid var(--red-deep);background:#FDF0EF}
+.result a{color:var(--red-deep);font-weight:700}
+details.towns{margin-top:14px;font-size:.88rem}
+details.towns summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chips button{font:inherit;font-size:.8rem;padding:6px 10px;min-height:34px;border-radius:999px;border:1px solid #D9CFB8;background:#fff;cursor:pointer}
+.chips button:hover{border-color:var(--red-deep);color:var(--red-deep)}
+.chips .more{padding:6px 10px;font-size:.8rem;font-style:italic;color:#6B6455}
+
+/* ---------- photos ---------- */
+.work{background:var(--cloud)}
+.photos{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);grid-template-rows:auto auto;gap:16px}
+.photos figure{margin:0;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 24px rgba(31,35,40,.08);display:flex;flex-direction:column}
+.photos figure:first-child{grid-row:span 2}
+.photos img{width:100%;object-fit:cover;aspect-ratio:3/2;flex:1 1 auto}
+.photos figure:first-child img{aspect-ratio:auto;height:100%;min-height:320px}
+.photos figure:last-child img{object-position:50% 15%}
+.photos figcaption{padding:12px 16px;font-size:.86rem;color:var(--steel);border-top:3px solid var(--red)}
+.photos figcaption b{color:var(--charcoal)}
+@media (max-width:760px){.photos{grid-template-columns:minmax(0,1fr)}.photos figure:first-child{grid-row:auto}.photos figure:first-child img{aspect-ratio:4/3;height:auto;min-height:0}}
+
+/* ---------- reviews + contact ---------- */
+.rc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(24px,4vw,48px);align-items:start}
+.rating{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:6px 0 22px}
+.rating .big{font-family:var(--display);font-weight:900;font-size:3.2rem;line-height:1}
+.rating .big .star{color:var(--red);font-size:2.2rem;vertical-align:.25em;margin-right:4px}
+.rating a{font-weight:700;color:var(--red-deep)}
+.themes{list-style:none;padding:0;margin:0 0 26px;display:grid;gap:10px}
+.themes li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:start;padding:14px 16px;border:1px solid var(--line);border-radius:12px}
+.themes li svg{width:24px;height:24px;color:var(--red)}
+.themes b{display:block}
+.themes span{font-size:.9rem;color:var(--steel)}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.steps li{counter-increment:s;font-size:.88rem;padding:12px 14px 12px 46px;position:relative;background:var(--cloud);border-radius:10px}
+.steps li::before{content:counter(s);position:absolute;left:12px;top:11px;width:24px;height:24px;border-radius:50%;background:var(--charcoal);color:#fff;font-weight:700;font-size:.78rem;display:grid;place-items:center}
+@media (max-width:480px){.steps{grid-template-columns:minmax(0,1fr)}}
+.contact{background:var(--charcoal);color:#fff;border-radius:20px;padding:clamp(24px,3.4vw,36px);position:relative;overflow:hidden}
+.contact .rings{width:360px;right:-140px;top:-90px;opacity:.18}
+.contact h3{font-family:var(--display);font-size:1.7rem;margin:0 0 6px;position:relative}
+.contact > p{color:#C9CED6;margin:0 0 20px;position:relative}
+.contact dl{margin:0 0 22px;display:grid;gap:14px;position:relative}
+.contact dt{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red-on-dark);font-weight:700}
+.contact dd{margin:2px 0 0;font-weight:500;overflow-wrap:anywhere}
+.contact dd a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+.contact dd a:hover{border-color:#fff}
+.contact .cta-row{position:relative}
+@media (max-width:900px){.rc{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- closer / footer ---------- */
+.closer{background:linear-gradient(90deg,var(--stripe),var(--red-deep));color:#fff;padding:clamp(36px,5vw,56px) 0}
+.closer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.closer h2{color:#fff;margin:0;font-size:clamp(1.5rem,3vw,2.2rem)}
+.closer p{margin:6px 0 0;color:#FBE3E1}
+.closer .btn{background:#fff;color:var(--stripe)}
+.closer .btn:hover{background:var(--charcoal);color:#fff}
+footer{background:var(--charcoal);color:#B9C0C9;font-size:.84rem;padding:28px 0 36px}
+footer .wrap{display:grid;gap:10px}
+footer a{color:#fff}
+footer .links{display:flex;flex-wrap:wrap;gap:6px 18px}
+footer .links a{min-height:44px;display:inline-flex;align-items:center}
+
+/* ---------- mobile call bar ---------- */
+.callbar{display:none}
+@media (max-width:600px){
+  .callbar{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(31,35,40,.97);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+  .callbar .btn{min-height:48px;padding:10px 12px;font-size:.92rem}
+  body{padding-bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-text" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2zm3 6v2h10V9zm0 4v2h7v-2z" transform="translate(-2 0)"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5l5 5L20 6.5"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+    <symbol id="rings" viewBox="0 0 200 200"><g fill="none" stroke="#E1261C" stroke-width="7"><ellipse cx="100" cy="40" rx="52" ry="12"/><ellipse cx="100" cy="72" rx="80" ry="16"/><ellipse cx="100" cy="104" rx="94" ry="18"/><ellipse cx="100" cy="136" rx="78" ry="16"/><ellipse cx="100" cy="166" rx="50" ry="12"/></g><path d="M92 6l12 26-14 10 18 26-12 14 18 30-14 18 14 28-8 36" fill="none" stroke="#E8FBFF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Prime Electric LLC, home">
+      <svg viewBox="0 0 520 74" role="img" aria-label="Prime Electric logo">
+        <g fill="none" stroke="#E1261C" stroke-width="4.2">
+          <ellipse cx="37" cy="15" rx="20" ry="4.6"/>
+          <ellipse cx="37" cy="26" rx="29" ry="5.6"/>
+          <ellipse cx="37" cy="37" rx="33" ry="6.2"/>
+          <ellipse cx="37" cy="48" rx="28" ry="5.6"/>
+          <ellipse cx="37" cy="59" rx="19" ry="4.6"/>
+        </g>
+        <path d="M33 2l5 9-4 4 7 10-5 5 7 11-5 6 6 10-3 14M38 30l12-6 6 3M34 44l-14 3-6-4M42 56l10 5" fill="none" stroke="#9FDCE6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <text x="86" y="52" fill="#E1261C" font-family="'Playfair Display',Georgia,serif" font-weight="900" font-size="44" letter-spacing="2.5">PRIME ELECTRIC</text>
+      </svg>
+    </a>
+    <nav class="nav" aria-label="Prime Electric pages">
+      <a href="https://www.primeelectricwi.com/electrical-services/residential-electrician/">Residential</a>
+      <a href="https://www.primeelectricwi.com/electrical-services/commercial-electrician/">Commercial</a>
+      <a href="https://www.primeelectricwi.com/photo-gallery/">Gallery</a>
+      <a href="https://www.primeelectricwi.com/careers/">Careers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-red" href="tel:+14142347690"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="long">Call or text&nbsp;</span>414-234-7690</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><use href="#rings"/></svg>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Milwaukee · Since 2009</p>
+        <h1 id="h1">Honest electrical work from a <em>master-electrician-owned</em> shop.</h1>
+        <p class="lede">Residential and commercial electrical service across southeastern Wisconsin. We'll meet with you free of charge and recommend the most cost-effective solution.</p>
+        <div class="cta-row">
+          <a class="btn btn-red" href="tel:+14142347690"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call 414-234-7690</a>
+          <a class="btn btn-ghost" href="sms:+14142347690"><svg aria-hidden="true"><use href="#i-text"/></svg>Text us</a>
+        </div>
+      </div>
+      <aside class="owner-card" aria-label="About the owner">
+        <p class="q">“Our customer's home should always look the same as when we arrived.”</p>
+        <p class="by">Owned and operated by <b>Troy Poppe</b>, a master electrician with over 20 years experience in the electrical field.</p>
+      </aside>
+    </div>
+    <div class="fleet">
+      <div class="wrap">
+        <figure>
+          <img src="img/fleet.jpg" width="2160" height="772" alt="Three white Prime Electric vans with red side stripes and roof ladders parked on a lawn under trees">
+          <figcaption>The Prime Electric fleet</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li><b><span class="star" aria-hidden="true">★</span> 4.9</b><span>on <a href="https://www.google.com/maps/place/Prime+Electric+LLC/@42.9855683,-88.0271405,17z/data=!4m8!3m7!1s0x880511c0ed7484d9:0x320f7ccabd4cc098">Google</a></span></li>
+        <li><b>Since 2009</b><span>Serving southeastern Wisconsin</span></li>
+        <li><b>Master electrician</b><span>Owner Troy Poppe, 20+ years</span></li>
+        <li><b>Trade Ally</b><span>with Focus on Energy</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <p class="kicker">Homes &amp; businesses</p>
+      <h2 id="svc-h">One shop, both sides of the panel.</h2>
+      <p class="intro">From residential service changes to full-scale commercial building construction. Here's what's on the directory.</p>
+      <div class="panel-grid">
+        <div class="panel" role="group" aria-label="Services">
+          <div class="panel-inner">
+            <div class="col">
+              <h3>For your home <span>Res.</span></h3>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">1</span><div><b>Service upgrades</b><small>Usually 1 day to complete; inspection and power hook-up scheduled the same day when possible.</small></div></div>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">3</span><div><b>Panels, sub-panels &amp; branch circuits</b><small>Sub-panel installs and branch circuit problems.</small></div></div>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">5</span><div><b>Interior lighting &amp; ceiling fans</b><small>Recessed (canned) lights, fixtures, fans.</small></div></div>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">7</span><div><b>Exterior lighting</b><small>Security, landscape and festoon lights.</small></div></div>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">9</span><div><b>EV home charging</b><small>A proposal on what your home can commit power-wise, no matter the brand.</small></div></div>
+            </div>
+            <div class="col">
+              <h3>For your business <span>Com.</span></h3>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">2</span><div><b>LED retrofits</b><small>Fluorescent to LED. As a Focus on Energy Trade Ally, we can facilitate rebates.</small></div></div>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">4</span><div><b>Exterior &amp; parking-lot lighting</b><small>Up-lighting and pole lighting.</small></div></div>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">6</span><div><b>Tenant build-outs</b><small>Commercial tenant build-out wiring.</small></div></div>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">8</span><div><b>New building construction</b><small>We work off blueprints.</small></div></div>
+              <div class="breaker"><span class="switch" aria-hidden="true"></span><span class="no" aria-hidden="true">10</span><div><b>Low voltage</b><small>Cameras, security, data cabling and fire alarm systems.</small></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="directory" id="area">
+          <h3>Do we serve your town?</h3>
+          <p>Prime Electric's posted service list covers 40 towns across southeastern Wisconsin. Type yours to check.</p>
+          <form class="checker" id="checker" novalidate>
+            <label for="town">Your town</label>
+            <input id="town" name="town" list="townlist" autocomplete="off" placeholder="e.g. Greenfield">
+            <datalist id="townlist"></datalist>
+            <button type="submit">Check</button>
+          </form>
+          <div class="result" id="result" aria-live="polite">Start typing, or pick from the list below.</div>
+          <details class="towns">
+            <summary>See every town on the list</summary>
+            <div class="chips" id="chips"></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section work" aria-labelledby="work-h">
+    <div class="wrap">
+      <p class="kicker">From the gallery</p>
+      <h2 id="work-h">Lighting that shows off the work.</h2>
+      <p class="intro">Real Prime Electric projects, from the company's own photo gallery.</p>
+      <div class="photos">
+        <figure>
+          <img src="img/kitchen-pendants.jpg" width="1200" height="926" loading="lazy" alt="Kitchen with three copper pendant lights over a granite island, recessed ceiling lights and under-cabinet lighting">
+          <figcaption><b>Kitchen lighting.</b> Copper pendants, recessed cans and under-cabinet lights.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/commercial-lighting.jpg" width="1200" height="800" loading="lazy" alt="Two-story commercial building at dusk with warm exterior wall lights along the facade">
+          <figcaption><b>Commercial exterior.</b> Wall lighting on a commercial building at dusk.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/patio-lights.jpg" width="1200" height="730" loading="lazy" alt="Backyard patio at dusk with festoon string lights strung between a brick house and a garage">
+          <figcaption><b>Outdoor lighting.</b> Festoon string lights over a backyard patio.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="rev-h">
+    <div class="wrap rc">
+      <div>
+        <p class="kicker">What customers say</p>
+        <h2 id="rev-h">Fast to respond. Straight answers.</h2>
+        <div class="rating">
+          <span class="big"><span class="star" aria-hidden="true">★</span>4.9</span>
+          <span>on Google · <a href="https://www.google.com/maps/place/Prime+Electric+LLC/@42.9855683,-88.0271405,17z/data=!4m8!3m7!1s0x880511c0ed7484d9:0x320f7ccabd4cc098">Read the reviews</a></span>
+        </div>
+        <ul class="themes">
+          <li><svg aria-hidden="true"><use href="#i-bolt"/></svg><div><b>Quick to respond</b><span>Customers mention fast scheduling and quick visits.</span></div></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><b>Options, not upsells</b><span>Repairs explained clearly, with the choice left to the customer.</span></div></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><b>Fair pricing, clean finish</b><span>Reviewers point to fair prices and a tidy job site.</span></div></li>
+        </ul>
+        <p class="kicker">How we work</p>
+        <ol class="steps">
+          <li>We meet with you free of charge.</li>
+          <li>We walk you through the scope in plain English.</li>
+          <li>We recommend the most cost-effective solution.</li>
+          <li>We clean up, so your home looks the same as when we arrived.</li>
+        </ol>
+      </div>
+
+      <aside class="contact" aria-labelledby="contact-h">
+        <svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><use href="#rings"/></svg>
+        <h3 id="contact-h">Call, text or email.</h3>
+        <p>Tell us about the project. A free consultation is the first step.</p>
+        <dl>
+          <div><dt>Phone &amp; text</dt><dd><a href="tel:+14142347690">414-234-7690</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:prime.poppe@gmail.com">prime.poppe@gmail.com</a></dd></div>
+          <div><dt>Hours</dt><dd>M–F 7:00am – 5:00 pm</dd></div>
+          <div><dt>Address</dt><dd>3238 S 92nd Street, Milwaukee WI 53227</dd></div>
+        </dl>
+        <div class="cta-row">
+          <a class="btn btn-red" href="tel:+14142347690"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call now</a>
+          <a class="btn btn-ghost" href="mailto:prime.poppe@gmail.com">Email</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="closer" aria-label="First look">
+    <div class="wrap">
+      <div>
+        <h2>A first look at your new site.</h2>
+        <p>Built around what Prime Electric already does well.</p>
+      </div>
+      <a class="btn" href="tel:+14142347690"><svg aria-hidden="true"><use href="#i-phone"/></svg>414-234-7690</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="https://www.facebook.com/PrimeElectricLLC/">Facebook</a>
+      <a href="https://www.primeelectricwi.com/careers/">Careers</a>
+      <a href="https://www.primeelectricwi.com/contact/">Contact page</a>
+    </div>
+    <p>Website by Cream City Post · Independent website concept, not the official Prime Electric LLC site. Logo redrawn; services, hours, owner details and photos from primeelectricwi.com; rating from Google.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+14142347690"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call 414-234-7690</a>
+  <a class="btn btn-ghost" href="sms:+14142347690">Text</a>
+</div>
+
+<script>
+(function(){
+  var towns=["Bayview","Bayside","Big Bend","Brookfield","Brown Deer","Caledonia","Cedarburg","Cudahy","Delafield","Elm Grove","Fox Point","Franklin","Germantown","Glendale","Greendale","Greenfield","Hales Corners","Hartland","Kenosha","Menomonee Falls","Mequon","Milwaukee","Mount Pleasant","Mukwonago","Muskego","New Berlin","Oak Creek","Oconomowoc","Pewaukee","Racine","Shorewood","South Milwaukee","St. Francis","Sussex","Union Grove","Waterford","Waukesha","West Allis","Whitefish Bay","Wind Lake"];
+  var norm=function(s){return s.toLowerCase().replace(/^saint\s+/,"st ").replace(/[^a-z]/g,"").replace(/^mt/,"mount");};
+  var map={};towns.forEach(function(t){map[norm(t)]=t;});
+  map["bayview"]="Bayview";
+  var dl=document.getElementById("townlist"),chips=document.getElementById("chips"),input=document.getElementById("town"),out=document.getElementById("result");
+  towns.forEach(function(t){
+    var o=document.createElement("option");o.value=t;dl.appendChild(o);
+    var b=document.createElement("button");b.type="button";b.textContent=t;
+    b.addEventListener("click",function(){input.value=t;check();});
+    chips.appendChild(b);
+  });
+  var m=document.createElement("span");m.className="more";m.textContent="…and more!";chips.appendChild(m);
+  function check(){
+    var v=input.value.trim();
+    if(!v){out.className="result";out.textContent="Type a town name to check.";return;}
+    var hit=map[norm(v)];
+    if(hit){out.className="result yes";out.innerHTML="<b>Yes, "+hit+" is on the list.</b> Call or text <a href=\"tel:+14142347690\">414-234-7690</a> to set up a free consultation.";}
+    else{out.className="result no";out.innerHTML="<b>Not on the posted list.</b> The list ends with “and More!”, so call or text <a href=\"tel:+14142347690\">414-234-7690</a> to ask.";out.querySelector("b").textContent="“"+v.slice(0,40)+"” isn't on the posted list.";}
+  }
+  document.getElementById("checker").addEventListener("submit",function(e){e.preventDefault();check();});
+  input.addEventListener("change",function(){if(map[norm(input.value)])check();});
+})();
+</script>
+</body>
+</html>
