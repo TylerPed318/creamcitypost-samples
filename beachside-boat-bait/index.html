@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Beachside Boat &amp; Bait — Website concept by Cream City Post</title>
-<meta name="description" content="Pontoon, tri-toon, fishing boat and kayak rentals plus live bait on Pewaukee Lake, 129 Park Ave in downtown Pewaukee.">
+<meta name="description" content="Pontoon, tri-toon, fishing boat and kayak rentals plus live bait on Pewaukee Lake, 129 Park Ave, Pewaukee.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='32' rx='30' ry='24' fill='%23163E90'/%3E%3Cpath d='M12 26a22 16 0 0 1 40 0z' fill='%23FEBE10'/%3E%3Cpath d='M15 40q8-5 17 0t17 0' stroke='%23fff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -155,9 +155,9 @@ input[type=range]{width:100%;accent-color:var(--lake);height:44px;margin:0;curso
 .rate .big .st{color:var(--sun);font-size:2.6rem;vertical-align:.35em;margin-left:.08em;-webkit-text-stroke:1px #d99c00}
 .rate a{font-family:var(--display);font-weight:700;color:var(--navy);text-underline-offset:3px;display:inline-block;padding:10px 0}
 .rate p{margin:0;color:var(--muted)}
-.themes{display:flex;flex-wrap:wrap;gap:10px}
+.themes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px}.themes div{min-width:0}.themes span{display:inline-block}.themes p{margin:.55em 0 0 .3em;font-size:.88rem;line-height:1.45}@media(max-width:600px){.themes{grid-template-columns:minmax(0,1fr)}}
 .themes span{font-family:var(--display);font-weight:700;font-size:.95rem;color:var(--navy);background:var(--white);border:2px solid var(--navy);border-radius:999px;padding:.5em 1em}
-.themes span:nth-child(2n){background:var(--sun);border-color:var(--sun)}
+.themes div:nth-child(2n) span{background:var(--sun);border-color:var(--sun)}
 .say .fine{color:var(--muted);font-size:.86rem;margin-top:14px}
 .card{background:var(--navy);color:var(--white);border-radius:28px;padding:clamp(24px,3.5vw,38px);position:relative;overflow:hidden}
 .card::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;border:18px solid var(--lake);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(20deg);opacity:.9}
@@ -234,7 +234,7 @@ input[type=range]{width:100%;accent-color:var(--lake);height:44px;margin:0;curso
     <div>
       <p class="kicker">On Pewaukee Lake · 129 Park Ave</p>
       <h1 id="h1">Your day on <span>Pewaukee Lake</span> starts here.</h1>
-      <p class="sub">Pontoons, tri-toons, fishing boats and kayaks: clean, full of fuel and ready at the dock on Park Ave in downtown Pewaukee. Plus live bait &amp; tackle.</p>
+      <p class="sub">Pontoons, tri-toons, fishing boats and kayaks: clean, full of fuel and ready at the dock at 129 Park Ave, Pewaukee. Plus live bait &amp; tackle.</p>
       <div class="ctas">
         <a class="btn btn-sun" href="tel:+12626952628">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
@@ -328,19 +328,19 @@ input[type=range]{width:100%;accent-color:var(--lake);height:44px;margin:0;curso
 <section class="say" id="contact" aria-labelledby="say-h">
   <div class="wrap">
     <div>
-      <p class="kicker">What renters say</p>
-      <h2 id="say-h">Easy from booking to docking.</h2>
+      <p class="kicker">Why choose us</p>
+      <h2 id="say-h">Rated 4.5 on Google. Here&rsquo;s our promise.</h2>
       <div class="rate">
         <span class="big">4.5<span class="st" aria-hidden="true">★</span></span>
         <div><p>on Google</p><a href="https://www.google.com/maps/place/Beachside+Boat+%26+Bait/@43.0824593,-88.2641079,17z/data=!4m8!3m7!1s0x8805aea046a28e8d:0x8ced9200daee31e6!8m2!3d43.0824593!4d-88.2641079!9m1!1b1!16s%2Fg%2F11cly69zwk?hl=en&amp;gl=us" target="_blank" rel="noopener">Read the reviews</a></div>
       </div>
       <div class="themes">
-        <span>Helpful, friendly staff</span>
-        <span>Boats that look like new</span>
-        <span>Quick check-in &amp; check-out</span>
-        <span>Cooler of ice &amp; water</span>
+        <div><span>Friendly, knowledgeable team</span><p>&ldquo;Here to make your experience easy, safe, and memorable from the moment you arrive.&rdquo;</p></div>
+        <div><span>Clean, well-maintained boats</span><p>&ldquo;Every rental is clean, well-maintained, and ready to go.&rdquo;</p></div>
+        <div><span>Simple online booking, quick check-in</span><p>&ldquo;From simple online booking to quick check-in at the dock.&rdquo;</p></div>
+        <div><span>Cooler of ice &amp; water</span><p>&ldquo;Large cooler with complimentary ice and water.&rdquo;</p></div>
       </div>
-      <p class="fine">Themes summarized from Beachside's public Google reviews.</p>
+      <p class="fine">Promises from beachsideboat.com; rating from Google.</p>
     </div>
     <aside class="card" aria-labelledby="card-h">
       <h3 id="card-h">Find us on Park Ave.</h3>
@@ -373,7 +373,7 @@ input[type=range]{width:100%;accent-color:var(--lake);height:44px;margin:0;curso
 <footer class="foot">
   <div class="wrap">
     <div><b>Beachside Boat &amp; Bait, LLC</b> · 129 Park Ave, Pewaukee, WI 53072 · <a href="tel:+12626952628">(262) 695-2628</a> · <a href="mailto:beachsidewi@gmail.com">beachsidewi@gmail.com</a></div>
-    <div>Website by Cream City Post · Independent website concept, not the official Beachside Boat &amp; Bait site. Logo redrawn; boat photos, fleet, inclusions and policies from beachsideboat.com; kayak photo enhanced; rating and review themes from Google.</div>
+    <div>Website by Cream City Post · Independent website concept, not the official Beachside Boat &amp; Bait site. Logo redrawn; boat photos, fleet, inclusions and policies from beachsideboat.com; kayak photo enhanced; rating from Google.</div>
   </div>
 </footer>
 
