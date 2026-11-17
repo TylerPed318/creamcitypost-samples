@@ -76,11 +76,12 @@ h1 em{font-style:normal;color:var(--red-on-dark)}
 .fleet{position:relative;margin-top:clamp(40px,6vw,64px)}
 .fleet::before{content:"";position:absolute;inset:auto 0 0 0;height:50%;background:var(--white)}
 .fleet figure{position:relative;margin:0;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
-.fleet img{width:100%;aspect-ratio:2160/772;object-fit:cover}
+.fleet picture{display:contents}
+.fleet img{width:100%;height:auto;aspect-ratio:2400/858;object-fit:cover;display:block}
 .fleet figcaption{position:absolute;left:16px;bottom:14px;background:rgba(31,35,40,.82);color:#fff;font-size:.78rem;font-weight:600;padding:6px 12px;border-radius:999px}
 @media (max-width:860px){.hero-grid{grid-template-columns:minmax(0,1fr)}.owner-card{max-width:560px}}
 @media (max-width:600px){
-  .fleet img{aspect-ratio:4/3;object-position:55% 50%}
+  .fleet img{aspect-ratio:4/3;object-position:50% 50%}
   .fleet figcaption{left:10px;bottom:10px}
 }
 
@@ -261,7 +262,7 @@ footer .links a{min-height:44px;display:inline-flex;align-items:center}
     <div class="fleet">
       <div class="wrap">
         <figure>
-          <img src="img/fleet.jpg" width="2160" height="772" alt="Three white Prime Electric vans with red side stripes and roof ladders parked on a lawn under trees">
+          <picture><source media="(max-width:600px)" srcset="img/fleet-phone.webp" width="2133" height="1600" type="image/webp"><source srcset="img/fleet.webp" type="image/webp" width="2400" height="858"><img src="img/fleet.jpg" width="2400" height="858" alt="Three white Prime Electric vans with red side stripes and roof ladders parked on a lawn under trees"></picture>
           <figcaption>The Prime Electric fleet</figcaption>
         </figure>
       </div>
