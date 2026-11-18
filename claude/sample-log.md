@@ -137,8 +137,9 @@ CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738
 
 ## Samples
 
-| CCP-169 | Mammoth Snow & Ice Control | Snow & ice, Waukesha | brief | v1 | mammoth-snow-ice-control/ | Live 38370dc; ready 1a1eee178a2dceea SENT; 0 credits. |
+| CCP-169 | Mammoth Snow & Ice Control | Snow & ice, Waukesha | brief | v2 | mammoth-snow-ice-control/ | Live88da18c; ready1a1f019c343407b1 SENT; 2credits successful, first failure charge unknown. |
 
+| CCP-167 | Killer B's Total Pest Control | Pest control, Waukesha | brief | v2 | killer-b-pest-control/ | Live888dcc3; ready1a1f00cae81095a1 SENT; 0credits. |
 | CCP-168 | Cardinal Tree Service | Tree service, Mukwonago | brief | v1 | cardinal-tree-service/ | Live bbe3467; ready 1a1eedc4149457e9 SENT; 0 credits. Photo-free. |
 
 | CCP-165 | Garage Door Professional LLC | Garage doors, Brookfield | brief | v1 | garage-door-pro/ | Live ad8a7b5; ready 1a1ebac5946f1281 SENT; 0 credits. |
@@ -477,4 +478,7 @@ CCP-167 brief 1a1eaf6148809d5a handled; v1 ready 1a1ebdd684c81e58 confirmed SENT
 
 CCP-167 revision1a1efe5ba834dd29 handled; v2 ready1a1f00cae81095a1 confirmed SENT.
 
-- in progress — CCP-169 (2026-11-18 13:06 -06:00, scheduled run)
+- done — CCP-169 v2 (Nov18 scheduled run): live88da18c exact deployed HTML; page/truck WebP+PNG/favicon200; ready1a1f019c343407b1 confirmed SENT only Tyler. 429250bytes. Homepage six-area list per revision (Locations differs); origin claim replaced with address. Same truck upscale d0184271-da61-4282-acfb-8c250e85b5ec completed, quoted2credits; first24cdeed7-79ba-4b2c-8099-031313355f42 failed,2credit charge/refund unconfirmed. Original alpha retained;1800x604 q88WebP/1600x537PNG. Live1440/390 visually inspected,390DPR3 truck1.68x inspected;375overflow/sixareas/Sussex negative/both tabs pass. Installed Higgsfield Playwright; Claude unavailable.
+
+CCP-169 revision1a1efe5bc5c17d6a handled; v2 ready1a1f019c343407b1 confirmed SENT.
+- Nov18 scheduled handoff: last finished CCP-169 v2 and CCP-167 v2; next ID none in verified queue. Open: Mammoth homepage/Locations mismatch, failed upscale charge/refund and existing phone/name/ZIP confirmations. Only Tyler emailed per scheduler instruction; no outside CC. Claude unavailable; installed Higgsfield Playwright used.

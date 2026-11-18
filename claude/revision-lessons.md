@@ -135,3 +135,5 @@ Approved as final so far: CCP-005 v3, CCP-007 v3, CCP-008 v3, CCP-009 v3, CCP-01
 - CCP-162 v2 (Nov 17): a wide hero (2.8:1) shown at 4:3 on phones is cropped on its short side, so the source height is what counts: 772px tall gave 0.96x at DPR 3. Use the full-size original with a <picture> phone crop (≥1600 tall), and re-blur plates on every re-export from the original.
 
 - Nov18 CCP-167 v2: verify every pest in interactive data arrays as well as visible tile labels. Use own-site testimonial themes for review chips; remove Google-summary wording and unsupported service names throughout.
+
+- Nov18 CCP-169 v2: Mammoth homepage and Locations lists differ; explicit revision matches homepage. Preserve original alpha after truck upscale; inspect lettering before export. ByteDance remove_bg=true job failed; false succeeded. Wait for Pages HTML hash to match before live QA.
