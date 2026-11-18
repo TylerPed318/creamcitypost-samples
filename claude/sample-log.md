@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-169 brief 1a1eec2b23f817cb handled; v1 ready 1a1eee178a2dceea confirmed SENT (Nov 18).
 CCP-168 brief 1a1eec226b4e0d5d handled; v1 ready 1a1eedc4149457e9 confirmed SENT (Nov 18).
 CCP-165 brief 1a1eaf38a0b59ff4 handled; v1 ready 1a1ebac5946f1281 confirmed SENT (Nov 17).
 CCP-164 brief 1a1eaf22ee83c7f0 handled; v1 ready 1a1eba7ce96da91e confirmed SENT (Nov 17).
@@ -135,6 +136,8 @@ CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confi
 CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738562 confirmed SENT (delivery recovery Nov 13).
 
 ## Samples
+
+| CCP-169 | Mammoth Snow & Ice Control | Snow & ice, Waukesha | brief | v1 | mammoth-snow-ice-control/ | Live 38370dc; ready 1a1eee178a2dceea SENT; 0 credits. |
 
 | CCP-168 | Cardinal Tree Service | Tree service, Mukwonago | brief | v1 | cardinal-tree-service/ | Live bbe3467; ready 1a1eedc4149457e9 SENT; 0 credits. Photo-free. |
 
@@ -466,5 +469,6 @@ CCP-162 v1 revision 1a1ebd04c69d9fa3 handled; v2 ready 1a1ebd8458059e3f confirme
 
 CCP-167 brief 1a1eaf6148809d5a handled; v1 ready 1a1ebdd684c81e58 confirmed SENT (Nov 17).
 - Nov 17, ~5:50 PM CT (scheduled run): session ends after 2 items (CCP-162 v2, CCP-167 v1; 0 credits). No open revisions or unbuilt briefs left as of 5:50 PM CT. Emailed only Tyler (no grokbot CC, same call as earlier unattended runs). Tip: potracer's Bitmap treats True as background, so pass ~mask or the logo traces inverted.
-- done — CCP-168 v1 (Nov 18, ~7:45 AM CT, scheduled run): live bbe3467, HTML byte-identical, page + favicon 200; ready 1a1eedc4149457e9 SENT (only Tyler). 0 credits. Photo-free: tree-ring cross-section hero (one ring per year since 1985), cardinal logo potrace-traced to inline SVG, 5-situation service picker from own-site one-liners, removal process, live hours card. Open: no estimate form, no placeholder/AI imagery (brief allowed it; guidelines forbid), licensed/insured left out (brief claim, not marked verified), no towns/reviews; ask for crew/truck photos.
-- in progress — CCP-169 (Nov 18, 7:33 AM CT, scheduled run)
+- done — CCP-168 v1 (Nov 18, ~7:30 AM CT, scheduled run): live bbe3467, HTML byte-identical, page + favicon 200; ready 1a1eedc4149457e9 SENT (only Tyler). 0 credits. Photo-free: tree-ring cross-section hero (one ring per year since 1985), cardinal logo potrace-traced to inline SVG, 5-situation service picker from own-site one-liners, removal process, live hours card. Open: no estimate form, no placeholder/AI imagery (brief allowed it; guidelines forbid), licensed/insured left out (brief claim, not marked verified), no towns/reviews; ask for crew/truck photos.
+- done — CCP-169 v1 (Nov 18, ~7:40 AM CT, scheduled run): live 38370dc, HTML byte-identical, page + truck + favicon 200; ready 1a1eee178a2dceea SENT (only Tyler). 0 credits. Mammoth mark potrace-traced from own PNG; own-slogan hero with own plow-truck cutout (900px, ~2.5x on phone); commercial/residential switch + 6-town plow-zone checker; own 3 steps. Site is Cloudflare-blocked to curl; read it via Playwright Chromium. Open: phone (875-3714 used; 894-2057 top bar), brand name (Snow & Ice Control vs Pro Services), ZIP 53286 omitted, 24/7/eco/guarantee omitted, Brookfield not on Locations page, job photos.
+- Nov 18, ~7:40 AM CT (scheduled run): session ends after 2 items (CCP-168 v1, CCP-169 v1; 0 credits). No open revisions or unbuilt briefs left. Emailed only Tyler (no grokbot CC, same call as earlier unattended runs).
