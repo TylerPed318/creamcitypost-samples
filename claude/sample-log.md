@@ -473,4 +473,6 @@ CCP-167 brief 1a1eaf6148809d5a handled; v1 ready 1a1ebdd684c81e58 confirmed SENT
 - done — CCP-169 v1 (Nov 18, ~7:40 AM CT, scheduled run): live 38370dc, HTML byte-identical, page + truck + favicon 200; ready 1a1eee178a2dceea SENT (only Tyler). 0 credits. Mammoth mark potrace-traced from own PNG; own-slogan hero with own plow-truck cutout (900px, ~2.5x on phone); commercial/residential switch + 6-town plow-zone checker; own 3 steps. Site is Cloudflare-blocked to curl; read it via Playwright Chromium. Open: phone (875-3714 used; 894-2057 top bar), brand name (Snow & Ice Control vs Pro Services), ZIP 53286 omitted, 24/7/eco/guarantee omitted, Brookfield not on Locations page, job photos.
 - Nov 18, ~7:40 AM CT (scheduled run): session ends after 2 items (CCP-168 v1, CCP-169 v1; 0 credits). No open revisions or unbuilt briefs left. Emailed only Tyler (no grokbot CC, same call as earlier unattended runs).
 
-- in progress — CCP-167 (2026-11-18 13:01 -06:00, scheduled run)
+- done — CCP-167 v2 (Nov18 scheduled run): live888dcc3 exact deployed Git HTML match; page and both image formats public200; ready1a1f00cae81095a1 confirmed SENT only Tyler. 0credits. Own-site testimonial themes/process line; Mosquitos/General Pests labels and verified pest lists. Live1440/390 visually inspected,375 no overflow/all6 choices passed,no errors. Installed Higgsfield Playwright used; named script absent; Claude selection unavailable.
+
+CCP-167 revision1a1efe5ba834dd29 handled; v2 ready1a1f00cae81095a1 confirmed SENT.

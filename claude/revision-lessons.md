@@ -133,3 +133,5 @@ Approved as final so far: CCP-005 v3, CCP-007 v3, CCP-008 v3, CCP-009 v3, CCP-01
 - Nov 17 (CCP-165 v1 build): brief photo labels can be wrong. The brief's "new dark door" URL was actually the beige *before* shot of the same home, so look at every file before captioning. Gallery composites with baked-in "Before/After" labels can be split into a slider pair: crop the two halves on the white gutters, crop off the label corners, and say so if the camera angles differ. Blur house numbers on customer homes.
 
 - CCP-162 v2 (Nov 17): a wide hero (2.8:1) shown at 4:3 on phones is cropped on its short side, so the source height is what counts: 772px tall gave 0.96x at DPR 3. Use the full-size original with a <picture> phone crop (≥1600 tall), and re-blur plates on every re-export from the original.
+
+- Nov18 CCP-167 v2: verify every pest in interactive data arrays as well as visible tile labels. Use own-site testimonial themes for review chips; remove Google-summary wording and unsupported service names throughout.
