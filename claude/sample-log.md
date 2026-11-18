@@ -463,3 +463,4 @@ CCP-162 v1 revision 1a1ebd04c69d9fa3 handled; v2 ready 1a1ebd8458059e3f confirme
 
 CCP-167 brief 1a1eaf6148809d5a handled; v1 ready 1a1ebdd684c81e58 confirmed SENT (Nov 17).
 - Nov 17, ~5:50 PM CT (scheduled run): session ends after 2 items (CCP-162 v2, CCP-167 v1; 0 credits). No open revisions or unbuilt briefs left as of 5:50 PM CT. Emailed only Tyler (no grokbot CC, same call as earlier unattended runs). Tip: potracer's Bitmap treats True as background, so pass ~mask or the logo traces inverted.
+- in progress — CCP-168 (Nov 18, 7:27 AM CT, scheduled run)
