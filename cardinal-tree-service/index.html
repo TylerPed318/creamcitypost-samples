@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Cardinal Tree Service — Website concept by Cream City Post</title>
+<meta name="description" content="Family-owned tree care since 1985: tree and stump removal, trimming and pruning, cabling and bracing, tree health and stump grinding across Waukesha County. Mukwonago, WI.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cardinal:#8B1A2B;
+  --cardinal-dk:#6E1221;
+  --green:#1E5B2E;
+  --green-dk:#143F20;
+  --cream:#F7F4EE;
+  --paper:#FFFDF8;
+  --wood:#E9DCC4;
+  --wood-ln:#B89A6E;
+  --charcoal:#222222;
+  --ink-2:#4A4540;
+  --line:#DCD3C3;
+  --on-dark:#F7F4EE;
+  --on-dark-2:#CFDCCF;
+  --radius:14px;
+  --display:"Alegreya", Georgia, serif;
+  --body:"Libre Franklin", Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--charcoal);font-family:var(--body);font-size:17px;line-height:1.6}
+img,svg{max-width:100%}
+a{color:var(--cardinal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;color:var(--charcoal)}
+p{margin:0}
+.eyebrow{font:700 13px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font:700 16px/1.1 var(--body);text-decoration:none;border:2px solid transparent;transition:background .18s,color .18s,border-color .18s,transform .18s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-red{background:var(--cardinal);color:#fff}
+.btn-red:hover{background:var(--cardinal-dk);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--charcoal);color:var(--charcoal);background:transparent}
+.btn-ghost:hover{background:var(--charcoal);color:var(--cream)}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(255,253,248,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+.brand{display:flex;align-items:center;gap:10px;min-height:48px;text-decoration:none;color:var(--cardinal);min-width:0}
+.brand svg{width:50px;height:53px;flex:none}
+.brand b{display:block;font:800 clamp(18px,2.3vw,24px)/1 var(--body);letter-spacing:-.01em;color:var(--cardinal);white-space:nowrap}
+.brand i{display:block;font:500 14px/1.3 var(--body);font-style:normal;color:var(--cardinal);margin-top:3px}
+.nav{display:flex;align-items:center;gap:22px}
+.nav a.l{color:var(--charcoal);text-decoration:none;font-weight:600;font-size:15px;padding:12px 0}
+.nav a.l:hover{color:var(--cardinal)}
+.top .btn{min-height:46px;padding:10px 18px;font-size:15px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(44px,7vw,92px) 0 clamp(40px,6vw,72px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(42px,6.4vw,82px);font-weight:800;letter-spacing:-.015em;margin:14px 0 20px}
+.hero h1 em{font-style:italic;color:var(--cardinal)}
+.hero .sub{font-size:clamp(17px,1.6vw,20px);color:var(--ink-2);max-width:34em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .note{margin-top:16px;font-size:15px;color:var(--ink-2)}
+.hero .note strong{color:var(--charcoal)}
+.stump{position:relative;margin:0}
+.stump svg{display:block;width:100%;height:auto;filter:drop-shadow(0 22px 30px rgba(34,34,34,.18))}
+.stump figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:14px;font-size:14px;color:var(--ink-2)}
+.stump figcaption b{color:var(--cardinal)}
+.tag{position:absolute;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:600 14px/1.25 var(--body);box-shadow:0 6px 18px rgba(34,34,34,.10)}
+.tag small{display:block;font-weight:500;color:var(--ink-2);font-size:12.5px}
+.tag.t1{left:0;bottom:16%}
+.tag.t2{right:0;top:4%}
+.tag b{color:var(--cardinal)}
+
+/* proof */
+.proof{background:var(--green);color:var(--on-dark)}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:22px 22px;border-left:1px solid rgba(247,244,238,.18);display:flex;flex-direction:column;gap:2px}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof b{font:800 22px/1.15 var(--display);color:#fff}
+.proof span{font-size:14.5px;color:var(--on-dark-2)}
+
+/* picker */
+.pick{padding:clamp(56px,8vw,104px) 0}
+.pick-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:34px}
+.pick-head h2{font-size:clamp(32px,4.4vw,52px);margin-top:10px}
+.pick-head p{color:var(--ink-2)}
+.pick-body{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px;align-items:start}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:center;gap:14px;width:100%;min-height:60px;text-align:left;padding:12px 18px;border-radius:12px;border:1.5px solid var(--line);background:var(--paper);font:600 16.5px/1.3 var(--body);color:var(--charcoal);cursor:pointer;transition:border-color .18s,background .18s,transform .18s}
+.opt:hover{border-color:var(--wood-ln);transform:translateX(3px)}
+.opt .ring{flex:none;width:26px;height:26px;border-radius:50%;border:2px solid var(--wood-ln);box-shadow:inset 0 0 0 4px var(--paper),inset 0 0 0 6px var(--wood-ln);transition:all .18s}
+.opt[aria-selected="true"]{border-color:var(--cardinal);background:#fff}
+.opt[aria-selected="true"] .ring{border-color:var(--cardinal);background:var(--cardinal);box-shadow:inset 0 0 0 4px #fff,inset 0 0 0 7px var(--cardinal)}
+.card{position:relative;background:var(--charcoal);color:var(--on-dark);border-radius:var(--radius);padding:clamp(26px,3.6vw,42px);overflow:hidden;min-height:100%}
+.card::before{content:"";position:absolute;right:-120px;bottom:-140px;width:360px;height:360px;border-radius:50%;background:repeating-radial-gradient(circle,rgba(247,244,238,.07) 0 2px,transparent 2px 13px);pointer-events:none}
+.card .svc{font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#F1A9B4}
+.card h3{color:#fff;font-size:clamp(28px,3.2vw,40px);margin:12px 0 14px}
+.card p{color:#E7E2D9;max-width:36em}
+.card p + p{margin-top:12px}
+.card q{display:block;font:italic 600 20px/1.4 var(--display);color:#fff;quotes:"\201C" "\201D"}
+.card .src{font-size:13.5px;color:#BDB6AA;margin-top:8px}
+.card .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;position:relative}
+.card .btn-ghost{border-color:rgba(247,244,238,.55);color:#fff}
+.card .btn-ghost:hover{background:#fff;color:var(--charcoal)}
+.fade{animation:fade .28s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* process */
+.process{background:var(--wood);padding:clamp(56px,8vw,96px) 0;position:relative;overflow:hidden}
+.process .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px);align-items:start}
+.process h2{font-size:clamp(32px,4.2vw,50px);margin-top:10px}
+.process .lead{margin-top:16px;color:var(--ink-2)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;padding:20px 0;border-top:1.5px solid var(--wood-ln)}
+.steps li:last-child{border-bottom:1.5px solid var(--wood-ln)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:800 34px/1 var(--display);color:var(--cardinal)}
+.steps b{display:block;font:700 19px/1.25 var(--body);margin-bottom:4px}
+.steps span{color:var(--ink-2)}
+
+/* contact */
+.contact{padding:clamp(56px,8vw,104px) 0}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px);align-items:stretch}
+.why h2{font-size:clamp(32px,4.2vw,50px);margin:10px 0 22px}
+.why ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.why li{display:grid;grid-template-columns:38px minmax(0,1fr);gap:14px;align-items:start}
+.why li svg{width:38px;height:38px}
+.why b{display:block;font-weight:700}
+.why span{color:var(--ink-2);font-size:16px}
+.why .src{margin-top:20px;font-size:14px;color:var(--ink-2)}
+.cc{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius);padding:clamp(24px,3.4vw,38px);box-shadow:10px 10px 0 var(--green)}
+.status{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;font:700 14.5px/1.2 var(--body);background:#E7F0E8;color:var(--green-dk)}
+.status i{width:10px;height:10px;border-radius:50%;background:var(--green);flex:none}
+.status.closed{background:#F6E5E8;color:var(--cardinal-dk)}
+.status.closed i{background:var(--cardinal)}
+.cc h3{font-size:30px;margin:16px 0 4px}
+.cc .when{color:var(--ink-2);font-size:15.5px}
+.hrs{width:100%;border-collapse:collapse;margin:20px 0 6px;font-size:16px}
+.hrs th,.hrs td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}
+.hrs th{font-weight:600}
+.hrs td{text-align:right}
+.hrs tr.today th,.hrs tr.today td{color:var(--cardinal);font-weight:700}
+.hrs tr.em th,.hrs tr.em td{border-bottom:0}
+.lines{display:grid;gap:12px;margin-top:22px}
+.line{display:flex;align-items:center;gap:14px;min-height:52px;padding:10px 14px;border-radius:12px;background:var(--cream);color:var(--charcoal);text-decoration:none;font-weight:600;overflow-wrap:anywhere}
+.line svg{width:22px;height:22px;flex:none;color:var(--cardinal)}
+.line small{display:block;font-weight:500;color:var(--ink-2);font-size:13.5px}
+a.line:hover{background:var(--wood)}
+
+/* closer + footer */
+.closer{background:var(--cardinal);color:#fff;padding:clamp(48px,7vw,80px) 0;text-align:left}
+.closer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.closer h2{color:#fff;font-size:clamp(30px,4vw,48px);max-width:16em}
+.closer p{color:#F6DDE1;margin-top:10px;max-width:36em}
+.closer .btn-light{background:#fff;color:var(--cardinal)}
+.closer .btn-light:hover{background:var(--cream)}
+footer{background:var(--charcoal);color:#CFC8BC;padding:34px 0 40px;font-size:14px}
+footer .wrap{display:grid;gap:14px}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+footer nav a{display:inline-flex;align-items:center;min-height:44px;color:#fff;text-decoration:none}
+footer nav a:hover{text-decoration:underline}
+footer a{color:#fff}
+
+.callbar{display:none}
+@media (max-width:960px){
+  .nav a.l{display:none}
+  .hero .wrap,.pick-head,.pick-body,.process .wrap,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+  .stump{max-width:520px;margin-inline:auto;width:100%}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li{padding:18px 16px}
+  .proof li:nth-child(odd){border-left:0;padding-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid rgba(247,244,238,.18)}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{width:calc(100% - 32px)}
+  .top .wrap{min-height:66px}
+  .brand svg{width:40px;height:42px}
+  .brand i{font-size:12.5px}
+  .top .btn .num{display:none}
+  .top .btn{padding:10px 16px}
+  .tag{font-size:12.5px;padding:6px 9px}
+  .tag small{font-size:11.5px}
+  .proof b{font-size:19px}
+  .proof span{font-size:13.5px}
+  .opt{font-size:16px}
+  .steps li{grid-template-columns:48px minmax(0,1fr);gap:12px}
+  .steps li::before{font-size:28px}
+  .cc{box-shadow:6px 6px 0 var(--green)}
+  .callbar{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(34,34,34,.10)}
+  .callbar .btn{min-height:48px;padding:10px 12px;font-size:15px}
+}
+@media (max-width:380px){
+  .brand b{font-size:17px}
+  .top .btn{padding:10px 13px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Cardinal Tree Service, home">
+      <svg viewBox="0 0 760 800" aria-hidden="true"><path fill="currentColor" d="M628 742C623 739 617 733 612 725C609 721 607 718 606 717C605 716 603 713 602 709C602 705 599 697 597 692C593 682 593 681 592 664C591 645 590 638 585 618C583 609 582 602 581 591C580 583 580 573 579 568C578 563 578 558 578 556C578 547 579 529 580 522C582 514 580 508 576 504C571 501 554 499 528 499C514 499 500 499 496 499C486 498 484 500 483 510C483 514 482 521 481 525C480 529 480 534 479 536C479 538 477 541 475 544C473 547 471 552 470 555C469 558 466 563 463 566C455 576 455 576 455 596C454 612 454 616 452 620C451 623 449 628 449 630C448 634 447 636 444 640C442 642 440 646 439 649C436 658 425 661 422 654C419 649 420 639 424 638C425 637 427 634 428 630C430 627 433 620 436 615C443 601 441 590 430 592C429 593 424 597 420 601C415 605 410 609 408 610C403 612 394 622 390 630C389 634 386 637 385 638C384 639 382 642 382 644C380 647 378 651 376 654C374 656 371 660 371 662C368 668 362 672 355 672C352 672 350 671 346 663L344 656L336 655C325 653 319 653 315 656C313 657 309 659 306 661C304 662 300 664 298 666C288 673 277 674 273 668C270 664 278 656 290 650C293 649 297 646 299 645C301 643 304 640 306 639C307 638 309 636 310 634C311 633 312 631 314 630C318 627 319 625 317 622C314 620 308 622 307 626C307 627 302 628 296 630C283 634 281 633 278 624C277 622 275 618 273 615C268 608 267 605 270 602C272 599 309 580 317 578C325 576 337 563 339 555C340 550 342 531 343 516L343 504L340 500C337 496 333 495 331 498C330 501 326 517 326 521C326 523 325 527 324 528C323 530 322 534 321 536C319 542 317 546 311 553C306 558 306 559 300 559C297 560 294 561 292 561C289 563 283 571 282 574C282 575 280 579 279 583C276 590 276 590 262 591C254 592 253 592 252 595C250 596 248 599 246 601C244 603 242 608 240 615C237 624 236 626 232 631C225 638 223 638 218 630C214 624 214 620 219 610C223 601 225 588 223 584C218 578 214 579 209 586C207 589 205 592 204 592C203 593 202 596 200 604C199 606 197 610 196 612C194 614 191 618 190 620C179 636 167 644 161 638C158 635 160 623 165 618C168 615 169 612 166 612C165 612 163 613 162 616C160 618 159 619 156 619C149 619 146 615 148 608C150 602 154 600 160 600C165 600 166 600 171 607C174 611 177 609 182 598C185 592 187 587 187 586C187 584 183 582 179 582C171 582 170 574 176 570C179 568 181 566 182 564C183 561 184 560 190 560C196 559 200 556 200 552C200 551 199 550 197 550C194 550 184 553 181 556C180 556 176 558 171 559C162 562 160 563 158 565C158 566 155 568 153 570C150 572 148 574 147 574C146 577 137 583 135 583C132 583 127 578 127 575C127 572 140 562 146 560C148 560 151 558 152 556C154 554 158 552 161 550C165 548 169 546 170 544C172 542 176 540 179 539C182 538 186 535 188 534C190 532 193 530 196 529C198 528 201 526 203 525C204 524 208 522 212 521C217 519 220 517 223 515C226 513 229 510 231 509C236 506 237 505 235 503C232 501 212 501 204 504C175 514 173 514 162 508C155 505 155 505 147 512C143 516 138 520 135 521C133 522 131 524 130 524C129 525 126 528 123 529C119 531 114 534 112 537C107 541 107 541 101 541C94 541 90 539 90 535C90 532 93 529 94 529C96 529 114 516 119 513C121 511 125 508 128 505C130 503 135 500 137 499C140 498 142 496 143 495C144 492 141 485 138 482C134 478 124 480 116 485C114 487 110 489 107 490C104 491 100 494 97 496C90 503 78 504 75 498C74 495 74 494 76 490L79 484L77 481C74 476 75 469 78 465C82 463 92 460 107 459C114 458 119 458 121 456C129 452 128 448 118 447C115 446 109 445 104 443C99 442 92 440 88 439C79 438 75 435 74 430C71 418 80 416 101 424C117 429 138 432 142 428C145 426 144 423 137 420C134 419 130 416 128 415C126 413 122 412 118 411C115 410 109 408 105 406C101 404 96 402 92 402C82 399 80 396 82 391C84 387 88 386 97 386C107 387 114 389 118 393C120 394 127 399 134 402C143 406 148 410 151 413C154 415 158 418 161 420C164 422 168 424 170 426C175 429 179 430 190 431C198 432 204 433 211 435C217 437 225 439 228 439C232 440 237 440 241 441C250 442 253 437 248 429C244 423 239 421 226 420C216 420 213 419 211 417C210 416 205 414 202 412C197 409 193 407 191 404C190 402 187 400 185 399C184 398 182 397 181 396C181 394 178 388 174 382C169 371 168 369 168 362C168 356 167 352 165 350C160 342 163 334 171 332C173 332 176 331 176 330C178 327 178 317 176 312C174 304 174 304 176 300C180 296 185 295 191 298C195 300 196 300 200 298C210 295 215 297 225 308C230 313 234 318 236 319C238 320 240 323 242 325C245 330 247 330 248 325C248 319 247 315 244 311C242 309 240 305 240 303C238 296 237 293 233 291C224 285 226 271 236 271C241 271 247 277 250 286C254 297 258 300 263 293C269 283 274 282 279 288C282 292 287 304 287 310C287 312 288 316 289 318C292 324 295 337 295 342C295 347 299 357 302 359C305 362 306 361 313 355C316 353 320 350 323 349C330 346 330 346 330 336C331 329 333 325 340 324C345 324 347 325 351 331C358 343 363 337 359 320C356 306 356 303 362 300C371 295 377 306 380 333C381 338 382 347 383 352C385 365 386 385 386 389C385 394 388 405 393 412C396 416 396 417 396 420C395 422 396 424 397 428C401 437 403 443 403 449C403 455 404 457 410 459C415 461 427 460 430 458C434 456 432 448 425 441C423 439 420 436 420 433C419 430 417 426 415 424C412 419 410 416 409 410C408 408 407 403 405 400C400 390 399 381 399 332C399 324 403 306 406 299C410 289 412 279 412 260C412 237 410 234 397 230C393 230 389 228 387 226C385 225 380 223 376 222C366 220 365 219 361 214C354 205 354 203 362 198C364 197 372 191 378 185C385 178 391 173 395 171C403 167 417 157 419 154C420 152 423 150 426 148C432 145 446 132 457 120C460 116 465 112 466 111C473 106 488 95 491 90C493 88 497 84 500 83C506 78 517 68 520 64C525 57 533 54 544 54C558 54 564 58 564 70C564 75 564 75 559 81C553 87 551 91 543 113C538 126 538 152 543 162C544 164 545 168 545 170C545 172 546 176 547 180C548 184 549 190 550 198C550 206 551 213 552 214C553 217 559 222 568 227C571 229 575 232 576 234C578 236 582 238 584 240C587 241 593 245 596 248C606 256 608 257 616 258C624 260 624 260 646 281C662 296 665 299 667 302C668 305 673 310 686 323C695 332 699 336 700 340C701 342 703 346 704 350C706 353 708 358 710 361C710 364 713 368 715 370C716 372 719 376 720 379C722 384 723 386 726 388C733 393 738 401 740 409C743 420 752 430 758 430L760 430L760 451L760 472L744 472C736 472 724 472 718 473C712 473 704 473 701 473C696 473 693 474 691 474C675 482 699 490 751 493L760 493L760 507L760 521L750 520C745 520 736 520 730 520C721 519 718 519 712 516C697 509 687 512 692 521C692 522 694 528 695 533C698 546 698 545 702 551C705 554 708 559 709 561C710 564 712 569 714 573C716 577 719 583 720 587C722 591 725 597 726 600C728 602 731 607 733 611C734 614 738 619 741 622C744 624 748 629 751 632C754 635 756 637 758 637L760 637L760 664L760 691L757 691C755 692 753 694 751 697C746 702 741 707 736 710C734 710 731 713 729 714C725 718 718 721 712 723C710 724 706 725 703 726C700 728 695 730 692 731C688 732 682 734 680 736C672 740 665 742 651 743C634 744 633 744 628 742ZM662 714C665 711 669 707 671 705C673 702 676 701 680 699C687 696 688 695 688 688C687 684 686 681 683 676C675 664 676 654 686 651C688 650 691 649 693 646C696 642 697 642 700 642C706 642 708 644 710 652C715 666 726 679 734 679C739 679 742 668 738 661C737 659 735 655 733 651C731 647 728 643 726 641C723 639 720 635 719 632C718 629 716 625 714 623C710 618 705 609 698 595C694 586 691 582 687 578C684 576 681 571 679 568C678 566 675 562 673 560C670 557 669 556 668 552C668 549 666 544 665 542C663 540 661 535 660 531C658 524 652 516 644 511C642 510 638 507 636 503C633 500 629 497 627 496C624 494 624 494 621 497C619 499 615 501 613 502C605 505 607 507 620 509C626 510 632 513 632 516C632 516 634 518 636 519C645 524 644 541 634 549C631 551 631 552 631 557C631 563 632 567 635 571C638 575 640 580 640 589C642 601 638 606 630 602C626 600 626 600 625 602C624 605 624 611 626 617C626 620 628 628 629 636C630 643 632 651 633 655C637 666 638 670 639 683C640 703 643 714 648 716C652 719 656 718 662 714ZM325 601C329 600 335 596 335 593C335 590 327 589 321 591C317 593 314 596 314 600C314 603 316 603 325 601ZM379 573C382 571 386 568 389 565C391 562 395 559 398 558C407 553 404 550 391 552C385 552 383 553 381 555C379 556 375 559 373 560C366 563 362 572 366 575C368 578 373 577 379 573ZM272 555C275 546 275 546 274 544C269 537 263 536 260 543C258 547 261 563 264 565C266 566 267 565 272 555ZM383 538C394 533 399 528 398 526C398 523 393 524 389 526C387 527 382 528 378 528C365 530 361 533 364 540C365 542 365 542 371 542C374 541 380 540 383 538ZM303 537C307 532 309 527 308 522C306 516 304 515 298 519C291 522 290 525 290 532C291 542 296 544 303 537ZM382 508C387 507 393 505 396 504C398 503 406 501 411 500C422 498 429 496 429 494C429 491 418 488 407 488C398 487 396 487 392 484C388 482 387 482 377 482C364 482 363 482 361 486C359 491 359 504 361 507C365 513 368 513 382 508ZM284 501C302 492 305 479 289 480C284 481 283 481 278 487C272 493 270 498 274 502C276 505 276 504 284 501ZM589 475C606 470 610 465 600 459C598 458 589 454 581 451C573 448 566 445 564 444C563 443 557 440 552 437C546 434 542 430 539 427C537 425 533 421 530 418C524 415 519 407 519 403C519 401 508 380 505 374C502 370 502 369 501 360C501 353 501 349 499 344C498 340 497 333 496 324C495 317 495 311 494 310C494 308 495 293 498 278C498 272 499 264 500 260C501 254 502 250 504 246C510 234 513 221 512 208C512 198 512 196 514 191C517 184 517 178 513 171C508 161 509 148 515 134C518 127 519 116 517 113C515 110 506 110 501 113C484 126 471 137 468 142C466 145 466 146 467 151C469 162 470 192 468 204C467 211 466 220 466 225C466 234 466 236 463 241C459 248 456 257 452 269C450 274 447 280 446 283C444 285 442 289 441 292C438 300 438 300 429 312L421 323L421 334C421 357 422 366 428 383C431 392 435 400 436 402C437 404 439 409 440 414C443 420 444 423 450 430C454 434 459 440 460 443C464 448 465 448 473 450C476 451 481 453 485 455C491 458 504 465 508 466C510 467 516 468 522 469C531 470 536 471 539 472C543 474 546 475 550 475C554 475 559 476 562 476C570 479 576 478 589 475ZM343 453C346 450 345 448 342 440C340 436 338 431 337 430C335 425 327 421 324 424C319 429 324 444 332 452C336 456 341 456 343 453ZM375 449C378 447 378 442 373 433C371 428 369 423 368 422C366 415 358 414 356 420C354 424 354 424 356 428C358 431 360 435 360 439C362 447 362 449 366 450C371 451 372 451 375 449ZM687 447C710 443 712 438 702 417C699 411 695 404 694 402C692 400 690 396 689 393C686 386 684 384 678 382C672 380 666 376 660 370C654 364 655 361 663 360C672 359 673 353 666 346C664 344 660 341 659 338C657 336 653 332 650 331C647 329 643 326 642 324C639 320 624 312 620 312C618 312 618 312 612 305C606 298 601 298 601 304C601 309 603 311 608 312C610 313 612 314 612 315C612 318 608 319 594 319C579 320 578 320 579 310C579 300 582 294 587 291C596 287 596 286 586 275C582 271 577 266 575 264C573 261 571 260 567 259C564 258 561 257 559 255C555 252 553 252 543 255C528 258 526 263 521 298C519 311 520 336 522 341C526 349 536 351 547 346C558 341 562 343 564 353C564 358 564 358 566 358C575 356 575 356 578 358C582 362 587 371 587 374C587 378 585 380 581 380C574 382 572 380 568 371C563 362 561 360 556 363C553 366 553 370 558 377C561 380 563 384 563 386C563 391 557 398 554 397C552 396 544 384 541 377C538 371 534 368 531 370C528 373 531 386 536 388C538 389 540 391 541 394C542 396 544 399 546 400C547 401 550 403 552 405C554 408 554 408 560 408C568 407 573 409 581 415C590 423 595 425 608 426C614 426 621 428 624 428C627 429 631 430 632 430C636 430 639 432 642 436C646 441 653 444 663 447C674 449 676 449 687 447ZM284 437C284 431 272 424 271 429C268 435 273 440 279 440C283 440 284 439 284 437ZM312 416C314 414 312 388 309 383C307 378 304 378 302 381C300 386 300 410 302 413C304 417 310 419 312 416ZM247 401C248 401 248 399 248 397C248 394 247 394 244 394C241 394 240 397 243 400C244 402 245 402 247 401ZM344 395C345 394 339 384 336 383C331 382 329 387 333 393C335 396 336 396 339 396C342 396 344 396 344 395ZM208 391C210 386 205 380 200 382C197 382 198 386 201 390C205 394 207 394 208 391ZM190 361C191 358 187 349 185 349C183 349 182 354 182 357C184 362 188 365 190 361ZM644 356C640 353 643 350 647 350C650 351 652 355 651 357C649 358 646 358 644 356ZM604 347C601 346 599 340 599 336C599 329 608 324 613 329C616 332 618 341 616 344C615 348 608 349 604 347ZM209 329C209 322 207 316 204 316C200 316 200 327 203 332C206 337 208 335 209 329ZM268 310C269 305 268 302 265 300C262 298 261 300 261 304C263 314 265 316 268 310Z"/></svg>
+      <span><b>Cardinal Tree Service</b><i>We're the tree experts!</i></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="l" href="#services">Services</a>
+      <a class="l" href="#removal">How a removal goes</a>
+      <a class="l" href="#contact">Hours &amp; contact</a>
+      <a class="btn btn-red" href="tel:+12625484274"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span>Call<span class="num"> (262) 548-4274</span></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Mukwonago, WI · Waukesha County</p>
+      <h1>Family-owned tree care since <em>1985.</em></h1>
+      <p class="sub">Tree and stump removal, trimming &amp; pruning, cabling &amp; bracing, tree health and stump grinding for homes and businesses across Waukesha County and surrounding areas.</p>
+      <div class="ctas">
+        <a class="btn btn-red" href="tel:+12625484274"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call (262) 548-4274</a>
+        <a class="btn btn-ghost" href="#services">What does my tree need?</a>
+      </div>
+      <p class="note"><strong>Estimates are always free.</strong> Office Mon–Fri 8am–5pm, with a 24-hour emergency line.</p>
+    </div>
+    <figure class="stump" aria-label="Illustration: a tree cross-section with one growth ring for every year since 1985">
+      <svg viewBox="-34 -34 668 636" role="img" aria-hidden="true">
+        <defs>
+          <radialGradient id="wd" cx="48%" cy="48%" r="55%"><stop offset="0" stop-color="#F3E8D3"/><stop offset=".75" stop-color="#E9DCC4"/><stop offset="1" stop-color="#D9C39E"/></radialGradient>
+        </defs>
+        <path d="M592.1 300.0 L592.9 312.0 L588.2 323.7 L581.4 334.8 L579.2 346.3 L581.3 358.6 L581.0 370.8 L575.6 381.7 L570.1 392.4 L569.2 404.8 L569.5 418.1 L564.5 429.4 L554.9 438.4 L546.8 447.8 L542.2 459.4 L536.0 470.3 L524.9 477.4 L512.0 482.6 L502.5 490.3 L495.4 500.5 L486.2 508.6 L473.7 512.8 L461.9 517.3 L453.1 526.0 L444.9 535.9 L433.9 541.7 L421.0 543.9 L409.3 548.1 L399.2 556.2 L388.2 562.8 L375.2 563.9 L362.0 563.0 L349.9 566.2 L338.2 572.5 L325.6 575.5 L312.7 573.8 L300.0 573.1 L287.1 577.5 L273.7 582.7 L260.4 582.8 L247.6 579.2 L234.5 577.8 L220.3 579.6 L206.5 578.7 L194.8 571.6 L184.4 562.3 L172.9 556.2 L160.7 551.5 L150.8 542.9 L144.1 530.1 L137.3 518.4 L127.9 510.9 L118.1 503.7 L111.8 493.1 L107.6 480.9 L101.0 471.4 L91.2 464.7 L82.8 456.7 L78.9 445.5 L76.0 434.2 L69.3 425.2 L60.8 417.1 L56.1 406.9 L55.8 395.1 L54.0 384.2 L47.5 374.8 L40.8 365.3 L38.8 354.4 L39.2 343.2 L35.7 332.7 L28.1 322.4 L23.1 311.4 L23.6 300.0 L24.9 288.7 L22.1 277.1 L18.4 265.1 L19.9 253.6 L26.6 243.0 L32.1 232.5 L33.7 221.1 L36.3 209.8 L44.2 200.4 L54.0 192.2 L59.9 182.5 L62.6 171.1 L67.4 160.7 L76.4 152.8 L84.8 144.8 L89.4 133.9 L93.2 121.9 L100.9 112.8 L111.6 106.7 L121.0 99.4 L128.0 89.3 L136.2 80.2 L148.0 75.7 L160.8 73.3 L171.4 67.9 L180.9 59.9 L191.9 54.8 L204.8 54.1 L217.2 53.0 L228.1 47.7 L239.0 41.5 L251.2 40.1 L263.9 42.5 L276.1 42.9 L287.9 39.7 L300.0 38.6 L311.9 43.3 L323.3 49.8 L334.7 52.4 L346.4 52.4 L357.7 55.6 L367.6 62.8 L377.7 68.5 L389.5 68.9 L402.1 68.3 L413.3 71.6 L423.4 77.2 L435.2 79.9 L449.6 79.3 L463.4 80.6 L474.0 86.8 L483.7 94.2 L496.0 99.0 L509.8 102.8 L520.4 110.1 L527.0 121.0 L534.1 131.2 L545.0 138.8 L555.9 146.7 L562.2 157.7 L565.5 170.1 L571.8 180.9 L581.7 190.3 L589.0 201.1 L590.4 213.9 L590.5 226.8 L594.5 238.6 L599.9 250.3 L600.0 262.9 L594.8 275.8 L591.0 288.1 L592.1 300.0Z" fill="#1E5B2E" stroke="#143F20" stroke-width="6"/>
+        <path d="M575.8 300.0 L570.4 322.2 L565.4 344.0 L561.2 365.8 L557.0 387.9 L550.9 410.0 L541.4 431.0 L527.9 450.0 L511.3 466.7 L493.0 481.4 L474.1 495.0 L455.1 508.2 L435.7 520.9 L415.2 532.3 L393.5 541.5 L370.7 548.2 L347.4 552.8 L323.9 556.4 L300.0 559.9 L275.5 563.1 L250.4 564.6 L225.2 562.6 L201.0 555.6 L179.2 543.5 L160.4 527.3 L144.2 509.2 L129.8 490.6 L116.4 472.6 L103.5 455.0 L91.5 437.2 L81.2 418.7 L72.7 399.6 L65.7 380.1 L59.2 360.6 L52.4 341.0 L45.4 320.9 L39.5 300.0 L36.4 278.3 L37.7 256.5 L43.7 235.4 L53.3 215.6 L64.9 197.0 L76.8 178.9 L88.6 160.8 L100.6 142.7 L114.0 125.1 L129.7 109.2 L147.8 95.6 L167.7 84.6 L188.7 75.6 L210.1 67.9 L232.0 61.3 L254.3 56.4 L277.1 54.2 L300.0 55.6 L322.3 60.5 L343.6 67.6 L364.1 75.1 L384.6 81.5 L406.0 86.3 L428.6 90.6 L451.9 96.1 L474.6 104.4 L495.7 116.0 L514.5 130.8 L531.2 147.8 L546.1 166.5 L559.3 186.3 L570.4 207.5 L578.0 230.0 L581.2 253.4 L580.1 277.0 L575.8 300.0Z" fill="url(#wd)"/>
+        <g fill="none" stroke="#B89A6E" stroke-width="1.6" stroke-linejoin="round"><path d="M321.6 300.0 L321.1 301.7 L320.4 303.4 L319.7 305.0 L319.0 306.5 L318.3 308.0 L317.4 309.5 L316.4 310.8 L315.3 312.1 L314.2 313.3 L313.0 314.6 L311.8 315.9 L310.5 317.1 L309.0 318.2 L307.3 319.0 L305.5 319.4 L303.7 319.5 L301.8 319.5 L300.0 319.4 L298.2 319.3 L296.4 319.2 L294.6 319.0 L292.8 318.6 L291.1 317.8 L289.6 316.9 L288.2 315.8 L286.9 314.7 L285.7 313.5 L284.6 312.2 L283.6 310.8 L283.0 309.2 L282.6 307.6 L282.4 306.0 L282.2 304.5 L282.0 303.0 L281.6 301.5 L281.2 300.0 L280.8 298.4 L280.6 296.8 L280.7 295.1 L281.1 293.5 L281.7 292.0 L282.5 290.5 L283.4 289.1 L284.5 287.7 L285.7 286.5 L287.1 285.6 L288.7 284.8 L290.3 284.2 L291.9 283.7 L293.5 283.2 L295.1 282.7 L296.6 282.1 L298.3 281.7 L300.0 281.4 L301.7 281.5 L303.4 281.8 L305.0 282.3 L306.6 282.9 L308.2 283.4 L309.8 284.0 L311.4 284.7 L312.9 285.6 L314.2 286.6 L315.5 287.8 L316.7 289.0 L318.0 290.2 L319.2 291.6 L320.4 293.0 L321.3 294.6 L321.9 296.4 L321.9 298.2 L321.6 300.0Z"/><path d="M328.2 300.0 L327.5 302.3 L326.6 304.4 L325.7 306.5 L324.9 308.5 L323.9 310.5 L322.8 312.4 L321.5 314.2 L320.1 315.8 L318.6 317.5 L317.1 319.1 L315.5 320.8 L313.8 322.4 L311.8 323.8 L309.6 324.8 L307.2 325.3 L304.8 325.5 L302.4 325.4 L300.0 325.3 L297.7 325.2 L295.3 325.1 L292.9 324.8 L290.6 324.3 L288.4 323.4 L286.4 322.1 L284.6 320.7 L282.9 319.2 L281.3 317.6 L279.8 315.9 L278.6 314.1 L277.8 312.1 L277.3 310.0 L277.0 307.9 L276.8 305.8 L276.5 303.9 L276.0 302.0 L275.4 300.0 L274.9 297.9 L274.6 295.8 L274.8 293.6 L275.3 291.6 L276.1 289.5 L277.2 287.6 L278.3 285.7 L279.7 284.0 L281.3 282.4 L283.2 281.1 L285.2 280.2 L287.3 279.4 L289.5 278.8 L291.5 278.1 L293.5 277.3 L295.6 276.6 L297.8 276.0 L300.0 275.7 L302.3 275.8 L304.5 276.2 L306.6 276.9 L308.7 277.6 L310.7 278.4 L312.8 279.2 L314.8 280.1 L316.8 281.2 L318.6 282.5 L320.3 284.0 L321.9 285.6 L323.5 287.2 L325.2 289.0 L326.7 290.9 L327.9 293.0 L328.6 295.3 L328.7 297.6 L328.2 300.0Z"/><path d="M334.8 300.0 L333.9 302.8 L332.8 305.4 L331.7 308.0 L330.7 310.5 L329.5 312.9 L328.2 315.3 L326.6 317.5 L324.8 319.6 L323.0 321.6 L321.1 323.6 L319.1 325.7 L317.0 327.7 L314.6 329.3 L311.8 330.6 L308.9 331.2 L305.9 331.4 L302.9 331.4 L300.0 331.3 L297.1 331.2 L294.2 331.0 L291.3 330.7 L288.4 330.0 L285.7 328.9 L283.2 327.4 L280.9 325.6 L278.8 323.7 L276.9 321.7 L275.1 319.6 L273.7 317.3 L272.6 314.9 L272.0 312.3 L271.6 309.7 L271.4 307.2 L271.0 304.8 L270.3 302.4 L269.6 300.0 L268.9 297.4 L268.6 294.8 L268.8 292.1 L269.5 289.6 L270.5 287.1 L271.8 284.7 L273.3 282.4 L275.0 280.3 L276.9 278.3 L279.2 276.7 L281.8 275.5 L284.4 274.6 L287.0 273.8 L289.5 272.9 L292.0 272.0 L294.6 271.1 L297.2 270.3 L300.0 270.0 L302.8 270.1 L305.5 270.7 L308.1 271.5 L310.7 272.4 L313.2 273.3 L315.8 274.3 L318.3 275.4 L320.7 276.8 L323.0 278.4 L325.1 280.2 L327.1 282.2 L329.1 284.2 L331.1 286.4 L333.0 288.7 L334.5 291.3 L335.3 294.2 L335.4 297.1 L334.8 300.0Z"/><path d="M341.4 300.0 L340.3 303.3 L339.0 306.5 L337.7 309.5 L336.5 312.5 L335.1 315.4 L333.6 318.2 L331.7 320.9 L329.6 323.3 L327.4 325.7 L325.1 328.2 L322.8 330.6 L320.2 332.9 L317.3 334.9 L314.1 336.3 L310.6 337.1 L307.0 337.4 L303.5 337.3 L300.0 337.2 L296.5 337.1 L293.1 336.9 L289.6 336.6 L286.2 335.7 L282.9 334.4 L280.0 332.6 L277.3 330.5 L274.8 328.2 L272.5 325.9 L270.4 323.3 L268.7 320.6 L267.4 317.7 L266.7 314.6 L266.3 311.5 L265.9 308.6 L265.4 305.7 L264.7 302.9 L263.7 300.0 L263.0 297.0 L262.6 293.8 L262.9 290.6 L263.7 287.6 L264.9 284.6 L266.5 281.8 L268.2 279.1 L270.2 276.5 L272.6 274.2 L275.3 272.3 L278.3 270.9 L281.4 269.7 L284.5 268.8 L287.5 267.7 L290.5 266.6 L293.5 265.5 L296.7 264.6 L300.0 264.2 L303.3 264.4 L306.5 265.1 L309.7 266.1 L312.7 267.2 L315.7 268.3 L318.8 269.4 L321.8 270.8 L324.7 272.4 L327.3 274.3 L329.8 276.5 L332.3 278.8 L334.7 281.2 L337.1 283.7 L339.3 286.6 L341.0 289.7 L342.0 293.0 L342.1 296.5 L341.4 300.0Z"/><path d="M354.6 300.0 L353.0 304.4 L351.3 308.5 L349.7 312.5 L348.1 316.5 L346.4 320.3 L344.3 324.1 L341.9 327.6 L339.1 330.9 L336.2 334.1 L333.2 337.2 L330.1 340.4 L326.7 343.4 L322.8 346.0 L318.5 347.9 L313.9 348.9 L309.2 349.2 L304.6 349.1 L300.0 349.0 L295.4 348.9 L290.9 348.8 L286.2 348.3 L281.7 347.3 L277.4 345.5 L273.5 343.1 L270.0 340.3 L266.7 337.3 L263.7 334.1 L261.0 330.8 L258.8 327.1 L257.2 323.3 L256.2 319.2 L255.6 315.2 L255.1 311.3 L254.4 307.6 L253.3 303.8 L252.1 300.0 L251.0 296.0 L250.6 291.8 L250.9 287.6 L252.0 283.6 L253.7 279.7 L255.8 276.0 L258.1 272.5 L260.8 269.1 L263.9 266.1 L267.5 263.6 L271.4 261.6 L275.5 260.1 L279.5 258.7 L283.5 257.3 L287.4 255.8 L291.4 254.4 L295.6 253.2 L300.0 252.7 L304.4 253.0 L308.6 254.0 L312.7 255.3 L316.7 256.8 L320.7 258.3 L324.7 259.8 L328.7 261.5 L332.5 263.6 L336.1 266.1 L339.4 268.9 L342.7 271.9 L345.9 275.1 L349.0 278.5 L351.9 282.2 L354.2 286.4 L355.4 290.8 L355.5 295.4 L354.6 300.0Z"/><path d="M361.1 300.0 L359.4 304.9 L357.5 309.5 L355.7 314.0 L353.9 318.4 L352.0 322.8 L349.7 327.0 L347.0 330.9 L343.9 334.7 L340.7 338.2 L337.3 341.8 L333.8 345.3 L329.9 348.7 L325.6 351.6 L320.8 353.6 L315.6 354.7 L310.3 355.1 L305.1 355.0 L300.0 354.9 L294.9 354.8 L289.7 354.7 L284.5 354.2 L279.5 353.1 L274.7 351.1 L270.3 348.4 L266.3 345.2 L262.7 341.8 L259.3 338.2 L256.3 334.5 L253.8 330.4 L252.0 326.0 L250.9 321.5 L250.3 317.0 L249.7 312.7 L248.8 308.5 L247.6 304.3 L246.2 300.0 L245.0 295.5 L244.5 290.8 L244.9 286.1 L246.2 281.6 L248.1 277.3 L250.5 273.1 L253.1 269.1 L256.1 265.4 L259.6 262.0 L263.6 259.2 L267.9 257.0 L272.5 255.2 L277.0 253.7 L281.5 252.1 L285.9 250.4 L290.4 248.8 L295.1 247.5 L300.0 247.0 L304.9 247.3 L309.7 248.4 L314.3 250.0 L318.7 251.6 L323.2 253.3 L327.7 254.9 L332.2 256.8 L336.5 259.2 L340.5 261.9 L344.2 265.1 L347.9 268.5 L351.5 272.1 L355.0 275.9 L358.3 280.1 L360.8 284.7 L362.1 289.7 L362.1 294.9 L361.1 300.0Z"/><path d="M367.6 300.0 L365.7 305.4 L363.6 310.5 L361.6 315.5 L359.7 320.4 L357.6 325.3 L355.2 329.9 L352.2 334.3 L348.7 338.4 L345.1 342.4 L341.4 346.3 L337.4 350.3 L333.1 354.0 L328.3 357.1 L323.0 359.3 L317.3 360.6 L311.4 361.0 L305.7 360.9 L300.0 360.8 L294.3 360.7 L288.6 360.6 L282.9 360.1 L277.2 358.9 L271.9 356.7 L267.0 353.7 L262.6 350.1 L258.6 346.3 L254.9 342.4 L251.6 338.2 L248.9 333.6 L246.9 328.8 L245.7 323.8 L244.9 318.8 L244.3 314.0 L243.3 309.4 L241.9 304.8 L240.3 300.0 L239.0 295.0 L238.5 289.8 L238.9 284.6 L240.4 279.6 L242.5 274.8 L245.2 270.2 L248.1 265.8 L251.5 261.7 L255.3 258.0 L259.7 254.8 L264.5 252.3 L269.5 250.4 L274.5 248.7 L279.4 246.9 L284.3 245.0 L289.3 243.2 L294.6 241.8 L300.0 241.2 L305.4 241.6 L310.7 242.9 L315.8 244.6 L320.7 246.5 L325.7 248.3 L330.6 250.1 L335.6 252.2 L340.4 254.8 L344.9 257.8 L349.1 261.3 L353.1 265.0 L357.1 269.0 L361.0 273.2 L364.6 277.9 L367.3 283.0 L368.8 288.6 L368.8 294.3 L367.6 300.0Z"/><path d="M374.1 300.0 L372.0 305.9 L369.8 311.6 L367.6 317.0 L365.5 322.4 L363.3 327.7 L360.6 332.9 L357.3 337.7 L353.6 342.3 L349.6 346.6 L345.4 350.9 L341.1 355.2 L336.4 359.2 L331.1 362.6 L325.2 365.1 L318.9 366.4 L312.5 366.8 L306.2 366.8 L300.0 366.7 L293.8 366.7 L287.5 366.6 L281.2 366.1 L275.0 364.7 L269.1 362.3 L263.8 359.0 L259.0 355.1 L254.6 350.9 L250.6 346.5 L247.0 341.8 L244.0 336.9 L241.8 331.6 L240.4 326.1 L239.6 320.7 L238.8 315.4 L237.7 310.3 L236.2 305.2 L234.4 300.0 L233.0 294.5 L232.4 288.8 L232.9 283.1 L234.5 277.6 L236.9 272.4 L239.9 267.4 L243.1 262.6 L246.8 258.0 L251.0 253.9 L255.8 250.5 L261.1 247.7 L266.6 245.5 L272.0 243.6 L277.4 241.7 L282.8 239.6 L288.3 237.6 L294.0 236.1 L300.0 235.5 L306.0 235.9 L311.8 237.3 L317.3 239.3 L322.7 241.3 L328.1 243.3 L333.6 245.3 L339.0 247.6 L344.3 250.3 L349.3 253.7 L353.9 257.5 L358.3 261.6 L362.8 265.9 L367.1 270.6 L371.0 275.7 L373.9 281.4 L375.5 287.5 L375.5 293.8 L374.1 300.0Z"/><path d="M387.1 300.0 L384.6 307.0 L382.0 313.6 L379.5 320.0 L377.1 326.4 L374.6 332.7 L371.5 338.8 L367.6 344.5 L363.2 349.9 L358.5 355.0 L353.6 360.0 L348.4 365.0 L342.8 369.7 L336.5 373.6 L329.6 376.5 L322.2 378.0 L314.7 378.5 L307.3 378.5 L300.0 378.4 L292.7 378.5 L285.3 378.5 L277.8 378.0 L270.4 376.3 L263.5 373.5 L257.3 369.6 L251.6 364.9 L246.5 359.9 L241.9 354.7 L237.7 349.2 L234.2 343.3 L231.6 337.1 L230.0 330.7 L229.0 324.3 L228.0 318.1 L226.6 312.2 L224.7 306.2 L222.6 300.0 L220.9 293.5 L220.2 286.8 L220.9 280.1 L222.9 273.6 L225.8 267.5 L229.3 261.6 L233.2 256.0 L237.5 250.7 L242.4 245.9 L248.0 241.8 L254.2 238.5 L260.6 235.8 L267.0 233.5 L273.3 231.2 L279.7 228.7 L286.2 226.3 L293.0 224.6 L300.0 223.9 L307.0 224.6 L313.8 226.3 L320.3 228.6 L326.7 231.1 L333.0 233.4 L339.5 235.7 L345.9 238.3 L352.2 241.5 L358.1 245.4 L363.6 249.8 L368.9 254.7 L374.1 259.8 L379.1 265.3 L383.7 271.4 L387.1 278.1 L388.8 285.3 L388.7 292.7 L387.1 300.0Z"/><path d="M393.6 300.0 L390.9 307.5 L388.1 314.6 L385.4 321.5 L382.9 328.4 L380.2 335.2 L376.9 341.7 L372.8 347.9 L368.1 353.7 L363.0 359.2 L357.7 364.6 L352.1 369.9 L346.0 374.9 L339.3 379.1 L331.8 382.1 L323.9 383.8 L315.8 384.3 L307.9 384.3 L300.0 384.3 L292.1 384.5 L284.1 384.5 L276.1 383.9 L268.2 382.2 L260.7 379.1 L254.0 374.9 L248.0 369.8 L242.5 364.4 L237.5 358.7 L233.0 352.8 L229.3 346.5 L226.6 339.8 L224.8 333.0 L223.6 326.1 L222.5 319.5 L221.0 313.1 L218.9 306.7 L216.6 300.0 L214.8 293.0 L214.1 285.8 L214.9 278.6 L217.0 271.6 L220.2 265.0 L224.0 258.8 L228.2 252.7 L232.8 247.0 L238.1 241.8 L244.1 237.4 L250.7 233.8 L257.6 231.0 L264.5 228.4 L271.3 225.9 L278.1 223.2 L285.1 220.7 L292.4 218.8 L300.0 218.2 L307.5 218.9 L314.9 220.8 L321.9 223.3 L328.7 226.0 L335.5 228.5 L342.4 230.9 L349.4 233.7 L356.1 237.1 L362.5 241.2 L368.5 246.0 L374.2 251.2 L379.8 256.7 L385.2 262.7 L390.0 269.2 L393.6 276.4 L395.4 284.2 L395.3 292.2 L393.6 300.0Z"/><path d="M400.0 300.0 L397.2 308.0 L394.1 315.6 L391.4 323.0 L388.7 330.4 L385.9 337.7 L382.4 344.7 L378.0 351.4 L373.0 357.6 L367.5 363.4 L361.8 369.2 L355.8 374.8 L349.2 380.1 L342.0 384.6 L334.0 387.8 L325.5 389.5 L316.9 390.2 L308.4 390.2 L300.0 390.2 L291.6 390.4 L283.0 390.5 L274.4 389.9 L265.9 388.1 L257.9 384.8 L250.7 380.2 L244.3 374.8 L238.5 368.9 L233.2 362.8 L228.4 356.5 L224.5 349.7 L221.5 342.6 L219.6 335.2 L218.3 327.9 L217.1 320.9 L215.4 314.0 L213.1 307.1 L210.7 300.0 L208.7 292.5 L208.0 284.7 L208.9 277.0 L211.2 269.6 L214.7 262.6 L218.8 255.9 L223.3 249.5 L228.2 243.4 L233.9 237.8 L240.2 233.1 L247.3 229.2 L254.6 226.1 L262.0 223.3 L269.2 220.6 L276.5 217.7 L284.1 215.0 L291.9 213.1 L300.0 212.4 L308.1 213.2 L315.9 215.3 L323.4 218.0 L330.6 220.9 L337.9 223.5 L345.4 226.2 L352.8 229.1 L360.1 232.7 L366.9 237.1 L373.3 242.1 L379.5 247.7 L385.5 253.6 L391.2 260.0 L396.4 267.0 L400.2 274.8 L402.1 283.1 L401.9 291.6 L400.0 300.0Z"/><path d="M406.4 300.0 L403.4 308.5 L400.2 316.6 L397.3 324.5 L394.6 332.4 L391.6 340.1 L387.9 347.7 L383.3 354.8 L377.9 361.4 L372.0 367.7 L365.8 373.8 L359.4 379.8 L352.4 385.4 L344.7 390.1 L336.2 393.4 L327.2 395.3 L318.0 396.0 L308.9 396.0 L300.0 396.1 L291.0 396.4 L281.9 396.5 L272.7 395.9 L263.6 394.0 L255.1 390.4 L247.5 385.5 L240.6 379.7 L234.5 373.4 L228.8 366.9 L223.8 360.1 L219.6 352.9 L216.5 345.3 L214.4 337.5 L213.0 329.8 L211.7 322.3 L209.8 314.9 L207.3 307.6 L204.7 300.0 L202.6 292.0 L201.9 283.7 L202.8 275.5 L205.4 267.6 L209.1 260.2 L213.5 253.1 L218.3 246.2 L223.6 239.7 L229.6 233.8 L236.4 228.7 L243.8 224.6 L251.6 221.2 L259.4 218.2 L267.2 215.3 L275.0 212.2 L283.0 209.3 L291.4 207.3 L300.0 206.6 L308.6 207.6 L316.9 209.8 L324.9 212.8 L332.6 215.8 L340.4 218.6 L348.3 221.4 L356.3 224.5 L364.0 228.3 L371.4 232.9 L378.2 238.3 L384.8 244.2 L391.2 250.5 L397.3 257.4 L402.7 264.9 L406.7 273.1 L408.7 282.0 L408.5 291.1 L406.4 300.0Z"/><path d="M419.2 300.0 L415.9 309.5 L412.3 318.6 L409.2 327.5 L406.2 336.3 L403.0 345.1 L398.9 353.7 L393.7 361.7 L387.7 369.1 L381.0 376.1 L374.0 382.9 L366.7 389.6 L358.8 395.8 L350.1 401.0 L340.5 404.7 L330.4 406.8 L320.2 407.5 L310.0 407.7 L300.0 407.9 L289.9 408.3 L279.6 408.6 L269.2 407.9 L259.0 405.8 L249.5 401.8 L240.9 396.2 L233.3 389.5 L226.5 382.4 L220.2 375.0 L214.6 367.3 L209.9 359.3 L206.4 350.8 L204.0 342.1 L202.4 333.4 L200.7 325.0 L198.6 316.8 L195.7 308.6 L192.7 300.0 L190.4 291.0 L189.6 281.7 L190.8 272.5 L193.8 263.7 L198.1 255.3 L203.1 247.4 L208.5 239.8 L214.4 232.5 L221.1 225.8 L228.6 220.0 L236.9 215.3 L245.6 211.4 L254.4 208.0 L263.1 204.6 L271.8 201.1 L280.9 198.0 L290.3 195.8 L300.0 195.1 L309.7 196.3 L319.0 198.9 L327.9 202.3 L336.5 205.7 L345.2 208.8 L354.2 211.8 L363.2 215.2 L372.0 219.4 L380.3 224.5 L388.1 230.5 L395.4 237.2 L402.6 244.3 L409.4 252.0 L415.4 260.5 L419.8 269.8 L421.9 279.8 L421.6 290.0 L419.2 300.0Z"/><path d="M425.6 300.0 L422.1 310.0 L418.4 319.6 L415.1 329.0 L412.1 338.3 L408.7 347.7 L404.4 356.7 L399.0 365.2 L392.6 373.0 L385.5 380.4 L378.1 387.5 L370.4 394.5 L362.0 400.9 L352.8 406.4 L342.7 410.3 L332.1 412.5 L321.3 413.3 L310.6 413.6 L300.0 413.8 L289.4 414.3 L278.5 414.6 L267.5 414.0 L256.8 411.7 L246.7 407.4 L237.7 401.5 L229.7 394.4 L222.5 386.9 L215.9 379.0 L210.1 370.9 L205.1 362.4 L201.4 353.5 L198.9 344.3 L197.1 335.2 L195.3 326.4 L192.9 317.8 L189.9 309.1 L186.7 300.0 L184.2 290.5 L183.5 280.7 L184.8 271.0 L188.0 261.7 L192.6 252.9 L197.9 244.6 L203.6 236.5 L209.8 228.9 L216.8 221.8 L224.7 215.7 L233.4 210.6 L242.6 206.5 L251.8 202.9 L261.0 199.3 L270.2 195.6 L279.8 192.3 L289.8 190.0 L300.0 189.4 L310.2 190.7 L320.0 193.5 L329.3 197.1 L338.5 200.7 L347.7 203.9 L357.1 207.1 L366.6 210.6 L376.0 214.9 L384.8 220.3 L393.0 226.6 L400.8 233.7 L408.3 241.2 L415.5 249.4 L421.8 258.3 L426.3 268.2 L428.5 278.7 L428.1 289.5 L425.6 300.0Z"/><path d="M432.0 300.0 L428.3 310.5 L424.4 320.6 L421.0 330.5 L417.9 340.3 L414.4 350.2 L410.0 359.7 L404.3 368.6 L397.5 376.9 L390.0 384.6 L382.2 392.1 L374.0 399.3 L365.2 406.1 L355.5 411.8 L344.9 415.9 L333.7 418.2 L322.3 419.1 L311.1 419.4 L300.0 419.7 L288.8 420.3 L277.4 420.7 L265.8 420.1 L254.5 417.6 L243.9 413.1 L234.4 406.8 L226.0 399.3 L218.5 391.3 L211.6 383.1 L205.5 374.5 L200.3 365.6 L196.4 356.2 L193.7 346.6 L191.7 337.0 L189.8 327.8 L187.2 318.7 L184.0 309.5 L180.6 300.0 L178.1 290.0 L177.3 279.7 L178.8 269.5 L182.2 259.7 L187.1 250.5 L192.7 241.8 L198.7 233.3 L205.3 225.3 L212.6 217.8 L220.9 211.3 L230.0 206.0 L239.6 201.6 L249.3 197.7 L258.9 193.9 L268.7 190.1 L278.7 186.6 L289.2 184.2 L300.0 183.7 L310.7 185.1 L321.0 188.1 L330.8 191.9 L340.4 195.6 L350.1 199.0 L360.0 202.3 L370.1 205.9 L379.9 210.5 L389.3 216.1 L397.9 222.7 L406.2 230.1 L414.1 238.1 L421.6 246.7 L428.1 256.2 L432.8 266.5 L435.1 277.6 L434.6 288.9 L432.0 300.0Z"/><path d="M438.3 300.0 L434.4 311.1 L430.5 321.6 L427.0 332.0 L423.8 342.4 L420.2 352.7 L415.5 362.7 L409.6 372.1 L402.4 380.8 L394.5 388.9 L386.3 396.7 L377.6 404.2 L368.3 411.3 L358.1 417.2 L347.0 421.4 L335.3 423.9 L323.4 424.9 L311.7 425.2 L300.0 425.7 L288.2 426.3 L276.2 426.8 L264.0 426.1 L252.2 423.6 L241.1 418.8 L231.1 412.1 L222.3 404.3 L214.5 395.8 L207.4 387.1 L201.0 378.1 L195.5 368.8 L191.4 358.9 L188.5 348.9 L186.4 338.9 L184.3 329.1 L181.6 319.6 L178.1 310.0 L174.6 300.0 L171.9 289.5 L171.2 278.6 L172.8 267.9 L176.4 257.7 L181.6 248.1 L187.5 238.9 L193.8 230.1 L200.7 221.7 L208.3 213.8 L217.0 207.0 L226.5 201.3 L236.5 196.7 L246.7 192.6 L256.8 188.5 L267.1 184.5 L277.7 180.9 L288.7 178.5 L300.0 177.9 L311.2 179.5 L322.0 182.7 L332.3 186.7 L342.4 190.6 L352.5 194.2 L362.9 197.5 L373.5 201.3 L383.9 206.0 L393.8 211.9 L402.9 218.8 L411.5 226.6 L419.8 235.0 L427.6 244.0 L434.4 254.0 L439.3 264.9 L441.6 276.5 L441.1 288.4 L438.3 300.0Z"/><path d="M451.0 300.0 L446.8 312.1 L442.6 323.6 L438.9 335.0 L435.6 346.4 L431.7 357.7 L426.7 368.8 L420.2 379.1 L412.3 388.6 L403.6 397.4 L394.4 405.8 L384.9 414.0 L374.7 421.5 L363.5 427.9 L351.3 432.5 L338.5 435.2 L325.6 436.4 L312.7 436.9 L300.0 437.6 L287.1 438.4 L273.9 439.0 L260.6 438.3 L247.5 435.5 L235.4 430.2 L224.6 422.8 L215.1 414.0 L206.6 404.7 L198.9 395.1 L191.9 385.3 L186.0 375.0 L181.4 364.4 L178.2 353.4 L175.7 342.5 L173.3 331.9 L170.2 321.5 L166.3 311.0 L162.4 300.0 L159.6 288.5 L158.9 276.6 L160.8 264.9 L164.9 253.8 L170.7 243.3 L177.2 233.4 L184.1 223.7 L191.6 214.5 L199.8 205.9 L209.2 198.3 L219.5 192.0 L230.5 186.8 L241.6 182.2 L252.7 177.7 L263.9 173.3 L275.5 169.5 L287.6 166.9 L300.0 166.5 L312.3 168.3 L324.0 171.9 L335.3 176.3 L346.2 180.6 L357.3 184.4 L368.8 188.0 L380.5 192.0 L391.9 197.0 L402.8 203.4 L412.9 211.0 L422.3 219.5 L431.3 228.7 L439.8 238.7 L447.1 249.7 L452.3 261.6 L454.6 274.4 L454.0 287.3 L451.0 300.0Z"/><path d="M457.3 300.0 L452.9 312.6 L448.6 324.6 L444.9 336.5 L441.5 348.4 L437.5 360.3 L432.3 371.8 L425.5 382.6 L417.3 392.5 L408.1 401.6 L398.5 410.4 L388.5 418.8 L377.8 426.7 L366.1 433.3 L353.5 438.1 L340.2 440.9 L326.7 442.2 L313.3 442.8 L300.0 443.5 L286.6 444.5 L272.8 445.1 L258.8 444.4 L245.2 441.5 L232.6 435.9 L221.3 428.1 L211.4 418.9 L202.6 409.1 L194.6 399.1 L187.4 388.8 L181.2 378.2 L176.4 367.1 L173.0 355.7 L170.3 344.4 L167.7 333.3 L164.4 322.5 L160.4 311.5 L156.3 300.0 L153.4 287.9 L152.7 275.6 L154.8 263.4 L159.2 251.8 L165.2 240.9 L172.1 230.6 L179.3 220.6 L187.0 210.9 L195.6 201.9 L205.3 193.9 L216.0 187.3 L227.4 181.8 L239.0 177.0 L250.6 172.3 L262.3 167.7 L274.4 163.8 L287.1 161.2 L300.0 160.8 L312.8 162.8 L325.0 166.6 L336.7 171.2 L348.2 175.6 L359.7 179.6 L371.7 183.2 L383.9 187.3 L396.0 192.5 L407.3 199.1 L417.9 207.0 L427.7 215.9 L437.1 225.6 L445.9 236.1 L453.4 247.5 L458.8 260.0 L461.1 273.3 L460.4 286.8 L457.3 300.0Z"/><path d="M463.6 300.0 L459.1 313.1 L454.7 325.6 L450.9 338.0 L447.4 350.4 L443.4 362.8 L438.0 374.9 L430.8 386.1 L422.2 396.4 L412.6 405.9 L402.6 414.9 L392.1 423.6 L380.9 431.8 L368.8 438.6 L355.6 443.6 L341.8 446.5 L327.7 447.9 L313.8 448.6 L300.0 449.5 L286.0 450.6 L271.6 451.3 L257.1 450.6 L242.9 447.5 L229.7 441.6 L218.0 433.4 L207.8 423.8 L198.7 413.5 L190.4 403.0 L182.9 392.4 L176.5 381.3 L171.5 369.8 L167.8 357.9 L165.0 346.2 L162.2 334.7 L158.7 323.4 L154.5 312.0 L150.2 300.0 L147.2 287.4 L146.6 274.6 L148.8 261.9 L153.5 249.9 L159.8 238.6 L167.0 227.8 L174.5 217.4 L182.5 207.3 L191.4 197.9 L201.4 189.6 L212.5 182.6 L224.3 176.8 L236.4 171.7 L248.5 166.9 L260.7 162.1 L273.4 158.0 L286.5 155.4 L300.0 155.1 L313.3 157.2 L326.0 161.2 L338.2 166.0 L350.1 170.7 L362.2 174.7 L374.7 178.4 L387.4 182.6 L400.0 188.0 L411.9 194.8 L422.9 203.1 L433.1 212.4 L442.9 222.5 L451.9 233.4 L459.7 245.4 L465.2 258.4 L467.6 272.2 L466.8 286.3 L463.6 300.0Z"/><path d="M469.8 300.0 L465.2 313.6 L460.7 326.6 L456.9 339.5 L453.3 352.5 L449.2 365.4 L443.6 377.9 L436.2 389.6 L427.2 400.3 L417.2 410.1 L406.7 419.5 L395.7 428.5 L384.0 436.8 L371.4 443.9 L357.7 449.1 L343.4 452.2 L328.8 453.7 L314.4 454.5 L300.0 455.5 L285.4 456.7 L270.5 457.5 L255.3 456.7 L240.6 453.5 L226.9 447.3 L214.8 438.7 L204.2 428.6 L194.8 417.9 L186.2 407.0 L178.4 395.9 L171.8 384.4 L166.5 372.5 L162.6 360.2 L159.6 348.0 L156.6 336.1 L152.9 324.4 L148.5 312.5 L144.1 300.0 L141.1 286.9 L140.5 273.6 L142.8 260.4 L147.8 247.9 L154.4 236.2 L161.9 225.0 L169.7 214.2 L177.9 203.7 L187.1 193.9 L197.5 185.2 L209.0 177.9 L221.3 171.8 L233.8 166.5 L246.3 161.4 L259.1 156.5 L272.3 152.3 L286.0 149.7 L300.0 149.5 L313.8 151.7 L327.0 155.9 L339.6 160.9 L352.0 165.7 L364.6 169.8 L377.6 173.7 L390.9 177.9 L404.0 183.5 L416.4 190.6 L427.9 199.1 L438.6 208.8 L448.6 219.3 L458.0 230.7 L466.0 243.2 L471.6 256.8 L474.1 271.1 L473.2 285.8 L469.8 300.0Z"/><path d="M482.4 300.0 L477.5 314.6 L472.9 328.6 L468.9 342.5 L465.2 356.5 L460.9 370.5 L454.9 384.1 L446.9 396.7 L437.1 408.1 L426.2 418.6 L414.8 428.6 L402.9 438.1 L390.3 447.0 L376.6 454.5 L362.0 460.0 L346.6 463.4 L331.0 465.2 L315.5 466.3 L300.0 467.5 L284.3 468.9 L268.1 469.9 L251.8 469.1 L235.9 465.5 L221.3 458.7 L208.3 449.3 L197.0 438.3 L186.9 426.7 L177.8 414.9 L169.5 402.9 L162.3 390.6 L156.5 377.9 L152.2 364.8 L148.8 351.7 L145.4 338.9 L141.3 326.3 L136.5 313.4 L131.9 300.0 L128.7 285.9 L128.2 271.5 L130.9 257.4 L136.4 244.0 L143.7 231.5 L151.7 219.5 L160.1 207.9 L168.9 196.6 L178.6 185.9 L189.7 176.4 L202.0 168.4 L215.1 161.8 L228.6 156.0 L242.1 150.5 L255.9 145.3 L270.2 140.9 L284.9 138.3 L300.0 138.2 L314.8 140.7 L329.0 145.3 L342.6 150.7 L355.8 155.8 L369.4 160.1 L383.5 164.1 L397.9 168.5 L412.2 174.4 L425.6 182.0 L438.0 191.2 L449.4 201.6 L460.2 213.1 L470.1 225.4 L478.5 238.9 L484.4 253.5 L486.9 269.0 L486.0 284.7 L482.4 300.0Z"/><path d="M488.6 300.0 L483.7 315.1 L478.9 329.7 L474.9 344.1 L471.2 358.6 L466.8 373.1 L460.6 387.2 L452.3 400.2 L442.1 412.1 L430.7 422.9 L418.8 433.1 L406.4 442.9 L393.4 452.0 L379.3 459.8 L364.1 465.5 L348.2 469.1 L332.1 471.0 L316.0 472.2 L300.0 473.5 L283.7 475.1 L267.0 476.1 L250.0 475.3 L233.6 471.5 L218.4 464.4 L205.0 454.6 L193.4 443.2 L183.0 431.0 L173.6 418.8 L165.0 406.4 L157.6 393.7 L151.6 380.6 L147.0 367.1 L143.4 353.6 L139.8 340.3 L135.5 327.3 L130.5 313.9 L125.7 300.0 L122.5 285.4 L122.1 270.5 L125.0 255.9 L130.7 242.1 L138.3 229.1 L146.6 216.8 L155.3 204.7 L164.3 193.0 L174.4 181.9 L185.8 172.0 L198.4 163.7 L212.0 156.7 L225.9 150.7 L240.0 145.0 L254.3 139.7 L269.1 135.2 L284.4 132.5 L300.0 132.5 L315.3 135.3 L330.0 140.1 L344.0 145.6 L357.8 150.8 L371.8 155.2 L386.4 159.3 L401.5 163.8 L416.2 169.8 L430.2 177.6 L443.0 187.2 L454.9 198.1 L466.0 209.9 L476.2 222.8 L484.8 236.8 L490.8 251.9 L493.3 268.0 L492.3 284.2 L488.6 300.0Z"/><path d="M494.8 300.0 L489.8 315.6 L485.0 330.7 L480.9 345.6 L477.2 360.6 L472.7 375.7 L466.3 390.3 L457.7 403.8 L447.1 416.0 L435.2 427.1 L422.8 437.6 L410.0 447.6 L396.4 457.0 L381.9 465.0 L366.2 471.0 L349.8 474.7 L333.2 476.7 L316.6 478.1 L300.0 479.6 L283.1 481.2 L265.8 482.3 L248.3 481.4 L231.3 477.5 L215.6 470.1 L201.8 459.9 L189.8 448.0 L179.2 435.4 L169.5 422.7 L160.6 409.9 L152.9 396.9 L146.6 383.3 L141.8 369.3 L138.0 355.4 L134.2 341.8 L129.7 328.2 L124.5 314.4 L119.6 300.0 L116.3 284.9 L116.0 269.5 L119.0 254.4 L125.1 240.2 L133.0 226.8 L141.6 214.0 L150.5 201.6 L159.8 189.4 L170.1 177.9 L181.8 167.6 L194.9 158.9 L208.9 151.7 L223.3 145.4 L237.9 139.6 L252.7 134.1 L268.0 129.5 L283.9 126.8 L300.0 126.9 L315.8 129.8 L331.0 134.8 L345.5 140.5 L359.7 145.9 L374.2 150.4 L389.4 154.4 L405.0 159.1 L420.3 165.2 L434.8 173.3 L448.1 183.2 L460.3 194.5 L471.7 206.8 L482.2 220.1 L491.0 234.6 L497.1 250.3 L499.7 266.9 L498.6 283.7 L494.8 300.0Z"/><path d="M501.1 300.0 L496.0 316.1 L491.1 331.7 L487.0 347.1 L483.2 362.7 L478.6 378.3 L472.0 393.4 L463.1 407.3 L452.0 419.9 L439.7 431.3 L426.8 442.1 L413.5 452.4 L399.5 462.0 L384.5 470.3 L368.3 476.4 L351.4 480.3 L334.2 482.5 L317.1 484.0 L300.0 485.6 L282.6 487.4 L264.6 488.6 L246.5 487.7 L228.9 483.5 L212.8 475.8 L198.5 465.2 L186.2 452.8 L175.3 439.7 L165.3 426.6 L156.2 413.4 L148.1 400.0 L141.6 386.0 L136.6 371.6 L132.5 357.3 L128.5 343.2 L123.8 329.2 L118.5 314.9 L113.4 300.0 L110.1 284.4 L109.9 268.5 L113.1 252.9 L119.5 238.2 L127.6 224.4 L136.6 211.3 L145.7 198.4 L155.3 185.9 L165.9 173.9 L177.9 163.2 L191.3 154.1 L205.8 146.6 L220.7 140.1 L235.8 134.1 L251.1 128.5 L267.0 123.8 L283.4 121.2 L300.0 121.3 L316.3 124.4 L332.0 129.6 L346.9 135.5 L361.6 140.9 L376.6 145.5 L392.4 149.6 L408.5 154.3 L424.4 160.6 L439.4 168.9 L453.2 179.2 L465.8 190.9 L477.5 203.7 L488.2 217.5 L497.2 232.5 L503.5 248.7 L506.1 265.8 L505.0 283.1 L501.1 300.0Z"/><path d="M513.5 300.0 L508.3 317.1 L503.3 333.7 L499.2 350.2 L495.3 366.8 L490.5 383.5 L483.5 399.6 L473.9 414.4 L462.0 427.8 L448.7 439.8 L434.8 451.1 L420.6 461.9 L405.6 472.0 L389.6 480.7 L372.5 487.3 L354.6 491.6 L336.4 494.1 L318.2 495.9 L300.0 497.8 L281.4 499.9 L262.3 501.1 L243.0 500.1 L224.3 495.6 L207.1 487.2 L192.1 475.7 L179.1 462.3 L167.6 448.3 L157.1 434.4 L147.3 420.4 L138.7 406.1 L131.6 391.4 L126.1 376.2 L121.6 361.0 L117.1 346.1 L112.1 331.1 L106.4 315.9 L101.1 300.0 L97.7 283.4 L97.7 266.5 L101.4 250.0 L108.3 234.4 L117.0 219.8 L126.5 205.9 L136.2 192.2 L146.2 178.7 L157.3 165.9 L170.0 154.3 L184.2 144.5 L199.5 136.4 L215.4 129.4 L231.5 123.1 L247.9 117.2 L264.8 112.4 L282.3 109.8 L300.0 110.2 L317.4 113.6 L333.9 119.1 L349.8 125.4 L365.4 131.1 L381.5 135.7 L398.3 139.9 L415.6 144.8 L432.7 151.4 L448.7 160.2 L463.3 171.2 L476.7 183.7 L489.0 197.4 L500.2 212.2 L509.6 228.3 L516.1 245.6 L518.8 263.7 L517.6 282.1 L513.5 300.0Z"/><path d="M519.7 300.0 L514.4 317.6 L509.4 334.7 L505.3 351.7 L501.4 368.9 L496.5 386.1 L489.3 402.7 L479.3 418.0 L466.9 431.7 L453.2 444.0 L438.8 455.5 L424.1 466.6 L408.7 476.9 L392.2 485.9 L374.6 492.7 L356.2 497.2 L337.5 499.9 L318.8 501.9 L300.0 503.9 L280.8 506.1 L261.1 507.4 L241.2 506.3 L221.9 501.6 L204.3 492.9 L188.9 480.9 L175.5 467.1 L163.8 452.6 L153.0 438.2 L142.9 423.9 L134.0 409.2 L126.6 394.1 L120.8 378.5 L116.1 362.9 L111.4 347.5 L106.2 332.1 L100.3 316.4 L94.9 300.0 L91.6 282.9 L91.6 265.5 L95.5 248.5 L102.7 232.5 L111.8 217.5 L121.5 203.1 L131.4 189.0 L141.7 175.1 L153.0 161.8 L166.0 149.9 L180.6 139.7 L196.4 131.3 L212.7 124.1 L229.4 117.6 L246.3 111.6 L263.8 106.8 L281.8 104.2 L300.0 104.6 L317.9 108.2 L334.9 113.9 L351.2 120.3 L367.3 126.1 L383.9 130.8 L401.3 135.1 L419.2 140.0 L436.8 146.7 L453.4 155.8 L468.4 167.1 L482.2 180.1 L494.8 194.3 L506.2 209.6 L515.8 226.2 L522.4 244.0 L525.1 262.7 L523.9 281.6 L519.7 300.0Z"/><path d="M526.0 300.0 L520.6 318.1 L515.6 335.7 L511.4 353.3 L507.5 371.0 L502.5 388.8 L495.0 405.8 L484.7 421.5 L471.9 435.6 L457.7 448.2 L442.8 460.0 L427.6 471.3 L411.7 481.9 L394.8 491.1 L376.7 498.2 L357.8 502.8 L338.6 505.7 L319.3 507.9 L300.0 510.1 L280.2 512.4 L259.9 513.7 L239.4 512.6 L219.6 507.6 L201.5 498.6 L185.7 486.2 L172.0 471.8 L159.9 456.9 L148.9 442.1 L138.5 427.3 L129.3 412.3 L121.6 396.8 L115.5 380.9 L110.6 364.8 L105.7 348.9 L100.3 333.1 L94.3 316.9 L88.8 300.0 L85.4 282.4 L85.5 264.5 L89.7 247.0 L97.1 230.6 L106.5 215.2 L116.5 200.4 L126.7 185.9 L137.1 171.6 L148.7 157.8 L162.0 145.4 L177.0 134.9 L193.2 126.2 L210.1 118.7 L227.2 112.0 L244.7 106.0 L262.7 101.1 L281.3 98.6 L300.0 99.1 L318.4 102.8 L335.9 108.7 L352.6 115.3 L369.2 121.2 L386.3 125.9 L404.3 130.2 L422.8 135.2 L441.0 142.1 L458.0 151.4 L473.6 163.1 L487.6 176.5 L500.5 191.2 L512.2 207.0 L521.9 224.1 L528.6 242.4 L531.4 261.7 L530.1 281.1 L526.0 300.0Z"/><path d="M532.2 300.0 L526.8 318.7 L521.7 336.8 L517.6 354.8 L513.6 373.1 L508.5 391.4 L500.8 409.0 L490.1 425.1 L476.8 439.5 L462.1 452.4 L446.8 464.4 L431.1 476.0 L414.7 486.8 L397.4 496.3 L378.8 503.6 L359.4 508.5 L339.7 511.6 L319.9 513.9 L300.0 516.2 L279.6 518.7 L258.7 520.0 L237.6 518.8 L217.3 513.6 L198.7 504.2 L182.5 491.4 L168.5 476.5 L156.1 461.2 L144.8 445.9 L134.2 430.8 L124.6 415.4 L116.6 399.5 L110.3 383.2 L105.0 366.7 L100.0 350.4 L94.3 334.1 L88.2 317.4 L82.6 300.0 L79.2 281.8 L79.5 263.5 L83.9 245.6 L91.6 228.7 L101.3 212.9 L111.6 197.7 L121.9 182.8 L132.6 168.0 L144.4 153.8 L158.0 140.9 L173.4 130.0 L190.1 121.0 L207.4 113.4 L225.1 106.5 L243.1 100.4 L261.6 95.5 L280.7 92.9 L300.0 93.6 L318.8 97.5 L336.8 103.6 L354.1 110.3 L371.2 116.2 L388.8 121.0 L407.3 125.3 L426.4 130.4 L445.1 137.4 L462.7 147.0 L478.7 159.1 L493.1 172.9 L506.2 188.1 L518.1 204.4 L528.1 222.0 L534.9 240.8 L537.6 260.6 L536.4 280.6 L532.2 300.0Z"/><path d="M544.6 300.0 L539.2 319.7 L534.1 338.8 L529.9 357.9 L525.9 377.3 L520.5 396.7 L512.4 415.2 L500.9 432.2 L486.7 447.3 L471.0 460.7 L454.6 473.2 L438.0 485.3 L420.8 496.6 L402.5 506.6 L383.0 514.4 L362.6 519.8 L341.9 523.2 L321.0 525.9 L300.0 528.6 L278.5 531.3 L256.3 532.7 L234.1 531.3 L212.6 525.7 L193.1 515.5 L176.1 501.7 L161.5 485.9 L148.6 469.6 L136.6 453.6 L125.4 437.7 L115.2 421.6 L106.6 405.0 L99.6 387.8 L93.9 370.5 L88.4 353.3 L82.4 336.1 L76.0 318.4 L70.2 300.0 L66.9 280.8 L67.5 261.5 L72.3 242.6 L80.6 224.9 L90.8 208.3 L101.6 192.3 L112.4 176.5 L123.5 160.8 L135.8 145.7 L150.0 131.9 L166.1 120.3 L183.7 110.7 L202.1 102.6 L220.8 95.5 L239.9 89.2 L259.5 84.2 L279.7 81.8 L300.0 82.7 L319.8 86.9 L338.8 93.3 L356.9 100.2 L375.0 106.3 L393.7 111.2 L413.3 115.5 L433.6 120.7 L453.5 128.0 L472.1 138.2 L488.9 151.0 L504.0 165.7 L517.7 181.9 L530.0 199.2 L540.2 217.8 L547.3 237.7 L550.1 258.5 L548.9 279.5 L544.6 300.0Z"/><path d="M550.8 300.0 L545.4 320.2 L540.3 339.8 L536.2 359.5 L532.1 379.4 L526.6 399.3 L518.2 418.4 L506.3 435.8 L491.7 451.2 L475.4 464.9 L458.6 477.6 L441.4 489.9 L423.8 501.5 L405.0 511.8 L385.1 519.8 L364.3 525.4 L343.0 529.1 L321.6 532.0 L300.0 534.8 L277.9 537.6 L255.2 539.1 L232.3 537.6 L210.3 531.7 L190.3 521.1 L172.9 506.9 L158.0 490.6 L144.8 473.9 L132.6 457.4 L121.0 441.2 L110.5 424.7 L101.5 407.7 L94.3 390.2 L88.3 372.4 L82.6 354.8 L76.4 337.1 L69.9 318.9 L64.1 300.0 L60.8 280.3 L61.5 260.5 L66.5 241.2 L75.1 223.0 L85.6 206.0 L96.7 189.6 L107.6 173.4 L118.9 157.2 L131.5 141.6 L145.9 127.4 L162.5 115.4 L180.5 105.5 L199.4 97.2 L218.7 90.0 L238.3 83.6 L258.5 78.6 L279.2 76.2 L300.0 77.2 L320.3 81.6 L339.7 88.1 L358.4 95.2 L376.9 101.4 L396.1 106.2 L416.4 110.5 L437.2 115.8 L457.7 123.3 L476.8 133.8 L494.0 147.0 L509.4 162.1 L523.4 178.8 L535.9 196.6 L546.3 215.7 L553.4 236.2 L556.4 257.5 L555.1 279.0 L550.8 300.0Z"/><path d="M557.1 300.0 L551.6 320.7 L546.5 340.9 L542.4 361.1 L538.3 381.5 L532.7 402.0 L524.0 421.5 L511.7 439.4 L496.6 455.1 L479.8 469.0 L462.5 482.0 L444.9 494.5 L426.8 506.4 L407.6 516.9 L387.2 525.2 L365.9 531.1 L344.1 535.0 L322.2 538.1 L300.0 541.1 L277.3 544.0 L254.0 545.5 L230.5 543.8 L208.0 537.7 L187.5 526.7 L169.8 512.0 L154.5 495.3 L141.0 478.1 L128.5 461.2 L116.6 444.6 L105.8 427.9 L96.5 410.5 L88.9 392.5 L82.7 374.3 L76.8 356.2 L70.4 338.0 L63.8 319.4 L57.9 300.0 L54.7 279.8 L55.5 259.5 L60.8 239.7 L69.6 221.2 L80.4 203.7 L91.7 187.0 L102.9 170.3 L114.4 153.6 L127.1 137.5 L141.9 122.9 L158.8 110.5 L177.3 100.3 L196.7 91.8 L216.5 84.4 L236.7 78.0 L257.4 73.0 L278.7 70.7 L300.0 71.8 L320.8 76.3 L340.7 83.0 L359.8 90.2 L378.8 96.4 L398.6 101.3 L419.4 105.6 L440.9 110.9 L461.9 118.6 L481.5 129.4 L499.2 142.9 L514.9 158.6 L529.1 175.7 L541.8 194.0 L552.3 213.7 L559.6 234.6 L562.6 256.5 L561.4 278.5 L557.1 300.0Z"/><path d="M563.3 300.0 L557.8 321.2 L552.8 341.9 L548.7 362.6 L544.5 383.7 L538.7 404.6 L529.8 424.7 L517.1 442.9 L501.5 458.9 L484.2 473.2 L466.4 486.4 L448.3 499.1 L429.7 511.2 L410.2 522.0 L389.3 530.7 L367.5 536.8 L345.2 540.9 L322.7 544.2 L300.0 547.4 L276.7 550.3 L252.8 551.8 L228.7 550.1 L205.7 543.6 L184.8 532.3 L166.6 517.1 L151.1 499.9 L137.3 482.3 L124.5 465.0 L112.2 448.1 L101.0 431.0 L91.4 413.2 L83.6 394.9 L77.1 376.3 L70.9 357.7 L64.4 339.0 L57.7 319.9 L51.8 300.0 L48.6 279.3 L49.5 258.5 L55.1 238.3 L64.2 219.3 L75.2 201.5 L86.7 184.3 L98.1 167.1 L109.8 150.0 L122.8 133.4 L137.8 118.3 L155.1 105.5 L174.1 95.1 L194.1 86.4 L214.4 78.9 L235.1 72.4 L256.4 67.5 L278.1 65.2 L300.0 66.4 L321.3 71.0 L341.7 77.9 L361.2 85.2 L380.8 91.4 L401.0 96.3 L422.5 100.6 L444.5 106.0 L466.2 113.9 L486.3 124.9 L504.3 138.9 L520.3 155.0 L534.8 172.6 L547.7 191.4 L558.4 211.6 L565.7 233.1 L568.8 255.4 L567.6 278.0 L563.3 300.0Z"/></g>
+        <g fill="none" stroke="#8C6E45" stroke-width="2.6" stroke-linejoin="round"><path d="M348.0 300.0 L346.7 303.8 L345.2 307.5 L343.7 311.0 L342.3 314.5 L340.8 317.9 L338.9 321.1 L336.8 324.2 L334.4 327.1 L331.8 329.9 L329.2 332.7 L326.4 335.5 L323.5 338.2 L320.1 340.5 L316.3 342.1 L312.3 343.0 L308.1 343.3 L304.0 343.2 L300.0 343.1 L296.0 343.0 L292.0 342.9 L287.9 342.4 L283.9 341.5 L280.2 340.0 L276.7 337.9 L273.6 335.4 L270.7 332.8 L268.1 330.0 L265.7 327.1 L263.7 323.9 L262.3 320.5 L261.4 316.9 L260.9 313.4 L260.5 309.9 L259.9 306.6 L259.0 303.4 L257.9 300.0 L257.0 296.5 L256.6 292.8 L256.9 289.1 L257.9 285.6 L259.3 282.2 L261.1 278.9 L263.2 275.8 L265.5 272.8 L268.3 270.2 L271.4 268.0 L274.8 266.2 L278.4 264.9 L282.0 263.7 L285.5 262.5 L289.0 261.2 L292.5 259.9 L296.2 258.9 L300.0 258.5 L303.8 258.7 L307.6 259.5 L311.2 260.7 L314.7 262.0 L318.2 263.3 L321.8 264.6 L325.2 266.1 L328.6 268.0 L331.7 270.2 L334.6 272.7 L337.4 275.4 L340.3 278.2 L343.1 281.1 L345.6 284.4 L347.6 288.0 L348.7 291.9 L348.8 296.0 L348.0 300.0Z"/><path d="M380.6 300.0 L378.3 306.4 L375.9 312.6 L373.5 318.5 L371.3 324.4 L368.9 330.2 L366.0 335.8 L362.5 341.1 L358.4 346.1 L354.0 350.8 L349.5 355.5 L344.8 360.1 L339.6 364.5 L333.8 368.1 L327.4 370.8 L320.6 372.2 L313.6 372.7 L306.8 372.6 L300.0 372.5 L293.2 372.6 L286.4 372.6 L279.5 372.0 L272.7 370.5 L266.3 367.9 L260.5 364.3 L255.3 360.0 L250.6 355.4 L246.2 350.6 L242.3 345.5 L239.1 340.1 L236.7 334.3 L235.2 328.4 L234.3 322.5 L233.4 316.8 L232.2 311.2 L230.4 305.7 L228.5 300.0 L226.9 294.0 L226.3 287.8 L226.9 281.6 L228.7 275.6 L231.4 269.9 L234.6 264.5 L238.1 259.3 L242.1 254.4 L246.7 249.9 L251.9 246.1 L257.6 243.1 L263.6 240.7 L269.5 238.6 L275.4 236.4 L281.2 234.1 L287.2 231.9 L293.5 230.3 L300.0 229.7 L306.5 230.3 L312.8 231.8 L318.8 233.9 L324.7 236.2 L330.6 238.3 L336.5 240.5 L342.5 243.0 L348.3 245.9 L353.7 249.5 L358.7 253.7 L363.6 258.1 L368.4 262.9 L373.1 268.0 L377.3 273.6 L380.5 279.7 L382.1 286.4 L382.1 293.2 L380.6 300.0Z"/><path d="M412.8 300.0 L409.6 309.0 L406.3 317.6 L403.2 326.0 L400.4 334.3 L397.3 342.6 L393.4 350.7 L388.5 358.2 L382.7 365.3 L376.5 371.9 L369.9 378.3 L363.1 384.7 L355.6 390.6 L347.4 395.5 L338.4 399.1 L328.8 401.0 L319.1 401.8 L309.5 401.9 L300.0 402.0 L290.5 402.3 L280.8 402.5 L270.9 401.9 L261.3 399.9 L252.3 396.1 L244.2 390.8 L237.0 384.6 L230.5 377.9 L224.5 371.0 L219.2 363.7 L214.8 356.1 L211.5 348.1 L209.2 339.8 L207.7 331.6 L206.2 323.6 L204.2 315.9 L201.5 308.1 L198.7 300.0 L196.5 291.5 L195.7 282.7 L196.8 274.0 L199.6 265.6 L203.6 257.7 L208.3 250.2 L213.4 243.0 L219.0 236.1 L225.3 229.8 L232.5 224.4 L240.4 219.9 L248.6 216.3 L256.9 213.1 L265.1 209.9 L273.4 206.7 L281.9 203.7 L290.8 201.5 L300.0 200.9 L309.1 201.9 L317.9 204.4 L326.4 207.5 L334.6 210.7 L342.8 213.7 L351.2 216.6 L359.7 219.8 L368.0 223.8 L375.8 228.7 L383.1 234.4 L390.1 240.7 L396.9 247.4 L403.4 254.7 L409.1 262.7 L413.3 271.5 L415.3 280.9 L415.0 290.5 L412.8 300.0Z"/><path d="M444.6 300.0 L440.6 311.6 L436.5 322.6 L433.0 333.5 L429.7 344.4 L426.0 355.2 L421.1 365.7 L414.9 375.6 L407.4 384.7 L399.1 393.1 L390.4 401.2 L381.3 409.1 L371.5 416.4 L360.8 422.6 L349.2 427.0 L336.9 429.5 L324.5 430.6 L312.2 431.1 L300.0 431.6 L287.7 432.4 L275.1 432.9 L262.3 432.2 L249.8 429.5 L238.2 424.5 L227.8 417.5 L218.7 409.1 L210.5 400.2 L203.1 391.1 L196.4 381.7 L190.8 371.9 L186.4 361.6 L183.3 351.1 L181.1 340.7 L178.8 330.5 L175.9 320.6 L172.2 310.5 L168.5 300.0 L165.8 289.0 L165.0 277.6 L166.7 266.4 L170.7 255.8 L176.1 245.7 L182.3 236.1 L189.0 226.9 L196.1 218.1 L204.1 209.8 L213.1 202.6 L223.0 196.7 L233.5 191.7 L244.1 187.4 L254.7 183.1 L265.5 178.9 L276.6 175.2 L288.2 172.7 L300.0 172.2 L311.7 173.9 L323.0 177.3 L333.8 181.5 L344.3 185.6 L354.9 189.3 L365.9 192.8 L377.0 196.6 L387.9 201.5 L398.3 207.6 L407.9 214.9 L416.9 223.0 L425.6 231.9 L433.7 241.4 L440.8 251.8 L445.8 263.3 L448.1 275.4 L447.5 287.9 L444.6 300.0Z"/><path d="M476.1 300.0 L471.4 314.1 L466.8 327.6 L462.9 341.0 L459.3 354.5 L455.0 368.0 L449.3 381.0 L441.5 393.2 L432.1 404.2 L421.7 414.4 L410.7 424.0 L399.3 433.3 L387.2 441.9 L374.0 449.2 L359.9 454.6 L345.0 457.8 L329.9 459.4 L314.9 460.4 L300.0 461.5 L284.8 462.8 L269.3 463.7 L253.6 462.9 L238.3 459.5 L224.1 453.0 L211.5 444.1 L200.6 433.5 L190.8 422.3 L182.0 410.9 L174.0 399.4 L167.0 387.5 L161.5 375.2 L157.4 362.5 L154.2 349.9 L151.0 337.5 L147.1 325.3 L142.5 313.0 L138.0 300.0 L134.9 286.4 L134.3 272.5 L136.9 258.9 L142.1 246.0 L149.0 233.8 L156.8 222.3 L164.9 211.0 L173.4 200.1 L182.9 189.9 L193.6 180.8 L205.5 173.2 L218.2 166.8 L231.2 161.2 L244.2 156.0 L257.5 150.9 L271.2 146.6 L285.5 144.0 L300.0 143.8 L314.3 146.2 L328.0 150.6 L341.1 155.8 L353.9 160.7 L367.0 165.0 L380.5 168.9 L394.4 173.2 L408.1 178.9 L421.0 186.3 L432.9 195.2 L444.0 205.2 L454.4 216.2 L464.1 228.1 L472.3 241.1 L478.0 255.2 L480.5 270.1 L479.6 285.2 L476.1 300.0Z"/><path d="M507.3 300.0 L502.1 316.6 L497.2 332.7 L493.1 348.6 L489.3 364.8 L484.6 380.9 L477.8 396.5 L468.5 410.9 L457.0 423.8 L444.2 435.6 L430.8 446.6 L417.1 457.1 L402.6 467.0 L387.1 475.5 L370.4 481.9 L353.0 486.0 L335.3 488.3 L317.7 490.0 L300.0 491.7 L282.0 493.6 L263.5 494.8 L244.7 493.9 L226.6 489.5 L209.9 481.5 L195.3 470.4 L182.6 457.6 L171.4 444.0 L161.2 430.5 L151.8 416.9 L143.4 403.1 L136.6 388.7 L131.3 373.9 L127.1 359.2 L122.8 344.6 L118.0 330.2 L112.4 315.4 L107.3 300.0 L103.9 283.9 L103.8 267.5 L107.3 251.5 L113.8 236.3 L122.3 222.1 L131.5 208.6 L140.9 195.3 L150.8 182.3 L161.6 169.9 L173.9 158.8 L187.8 149.3 L202.7 141.5 L218.0 134.8 L233.6 128.6 L249.5 122.8 L265.9 118.1 L282.8 115.5 L300.0 115.7 L316.8 119.0 L333.0 124.3 L348.3 130.4 L363.5 136.0 L379.1 140.6 L395.3 144.8 L412.1 149.6 L428.5 156.0 L444.1 164.6 L458.2 175.2 L471.2 187.3 L483.3 200.5 L494.2 214.9 L503.4 230.4 L509.8 247.2 L512.4 264.8 L511.3 282.6 L507.3 300.0Z"/><path d="M538.4 300.0 L533.0 319.2 L527.9 337.8 L523.8 356.4 L519.8 375.2 L514.5 394.0 L506.6 412.1 L495.5 428.7 L481.8 443.4 L466.6 456.6 L450.7 468.8 L434.5 480.6 L417.8 491.7 L399.9 501.4 L380.9 509.0 L361.0 514.1 L340.8 517.4 L320.5 519.9 L300.0 522.4 L279.1 525.0 L257.5 526.4 L235.8 525.1 L215.0 519.7 L195.9 509.9 L179.3 496.5 L165.0 481.3 L152.3 465.4 L140.7 449.8 L129.8 434.3 L119.9 418.5 L111.6 402.3 L104.9 385.5 L99.5 368.6 L94.2 351.8 L88.4 335.1 L82.1 317.9 L76.4 300.0 L73.1 281.3 L73.5 262.5 L78.1 244.1 L86.1 226.8 L96.0 210.6 L106.6 195.0 L117.1 179.6 L128.1 164.4 L140.1 149.7 L154.0 136.4 L169.8 125.2 L186.9 115.8 L204.8 108.0 L222.9 101.0 L241.5 94.8 L260.6 89.8 L280.2 87.4 L300.0 88.1 L319.3 92.2 L337.8 98.4 L355.5 105.2 L373.1 111.3 L391.2 116.1 L410.3 120.4 L430.0 125.5 L449.3 132.7 L467.4 142.6 L483.8 155.0 L498.5 169.3 L512.0 185.0 L524.1 201.8 L534.2 219.9 L541.1 239.3 L543.9 259.6 L542.6 280.0 L538.4 300.0Z"/><path d="M569.6 300.0 L564.1 321.7 L559.1 342.9 L554.9 364.2 L550.8 385.8 L544.8 407.3 L535.6 427.8 L522.5 446.5 L506.4 462.8 L488.6 477.3 L470.2 490.7 L451.7 503.7 L432.7 516.1 L412.7 527.2 L391.4 536.1 L369.1 542.5 L346.3 546.8 L323.3 550.3 L300.0 553.6 L276.1 556.7 L251.6 558.2 L226.9 556.3 L203.3 549.6 L182.0 537.9 L163.5 522.3 L147.6 504.5 L133.6 486.4 L120.4 468.8 L107.9 451.5 L96.3 434.1 L86.3 416.0 L78.2 397.2 L71.4 378.2 L65.1 359.2 L58.4 340.0 L51.5 320.4 L45.6 300.0 L42.5 278.8 L43.6 257.5 L49.4 236.9 L58.7 217.5 L70.1 199.2 L81.8 181.6 L93.3 164.0 L105.2 146.3 L118.4 129.3 L133.8 113.8 L151.5 100.6 L170.9 89.9 L191.4 81.0 L212.3 73.4 L233.5 66.8 L255.3 61.9 L277.6 59.7 L300.0 61.0 L321.8 65.8 L342.6 72.8 L362.7 80.1 L382.7 86.5 L403.5 91.3 L425.5 95.6 L448.2 101.1 L470.4 109.1 L491.0 120.5 L509.4 134.8 L525.7 151.4 L540.4 169.5 L553.5 188.9 L564.4 209.5 L571.9 231.5 L575.0 254.4 L573.8 277.5 L569.6 300.0Z"/></g>
+        <path d="M575.8 300.0 L570.4 322.2 L565.4 344.0 L561.2 365.8 L557.0 387.9 L550.9 410.0 L541.4 431.0 L527.9 450.0 L511.3 466.7 L493.0 481.4 L474.1 495.0 L455.1 508.2 L435.7 520.9 L415.2 532.3 L393.5 541.5 L370.7 548.2 L347.4 552.8 L323.9 556.4 L300.0 559.9 L275.5 563.1 L250.4 564.6 L225.2 562.6 L201.0 555.6 L179.2 543.5 L160.4 527.3 L144.2 509.2 L129.8 490.6 L116.4 472.6 L103.5 455.0 L91.5 437.2 L81.2 418.7 L72.7 399.6 L65.7 380.1 L59.2 360.6 L52.4 341.0 L45.4 320.9 L39.5 300.0 L36.4 278.3 L37.7 256.5 L43.7 235.4 L53.3 215.6 L64.9 197.0 L76.8 178.9 L88.6 160.8 L100.6 142.7 L114.0 125.1 L129.7 109.2 L147.8 95.6 L167.7 84.6 L188.7 75.6 L210.1 67.9 L232.0 61.3 L254.3 56.4 L277.1 54.2 L300.0 55.6 L322.3 60.5 L343.6 67.6 L364.1 75.1 L384.6 81.5 L406.0 86.3 L428.6 90.6 L451.9 96.1 L474.6 104.4 L495.7 116.0 L514.5 130.8 L531.2 147.8 L546.1 166.5 L559.3 186.3 L570.4 207.5 L578.0 230.0 L581.2 253.4 L580.1 277.0 L575.8 300.0Z" fill="none" stroke="#8B1A2B" stroke-width="5"/>
+        <path d="M300 300 L318 232 L312 196 L331 150" fill="none" stroke="#8C6E45" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="300" cy="300" r="9" fill="#8B1A2B"/>
+      </svg>
+      <span class="tag t1"><b>●</b> Center ring: 1985<small>Cardinal Tree Service starts</small></span>
+      <span class="tag t2"><b style="color:var(--cardinal)">◯</b> Outer ring: today<small>Over 35 years of experience</small></span>
+      <figcaption><span>One ring for every year in business.</span><b>Since 1985</b></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="proof" aria-label="At a glance">
+  <div class="wrap">
+    <ul>
+      <li><b>Since 1985</b><span>Family-owned business</span></li>
+      <li><b>35+ years</b><span>Of industry experience</span></li>
+      <li><b>Davey Institute</b><span>Owner is a graduate of its tree science program</span></li>
+      <li><b>Free estimates</b><span>On every service, homes and businesses</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="pick" id="services">
+  <div class="wrap">
+    <div class="pick-head">
+      <div>
+        <p class="eyebrow">Our tree services</p>
+        <h2>What's going on with your tree?</h2>
+      </div>
+      <p>Pick the closest match. We'll show you which Cardinal service fits, in their own words, and you can call for a free estimate from there.</p>
+    </div>
+    <div class="pick-body">
+      <div class="opts" role="tablist" aria-label="Pick your tree situation" aria-orientation="vertical">
+        <button class="opt" role="tab" id="o-remove" aria-controls="svc-card" aria-selected="true" data-k="remove"><span class="ring" aria-hidden="true"></span>A tree is dead, diseased or storm-damaged</button>
+        <button class="opt" role="tab" id="o-trim" aria-controls="svc-card" aria-selected="false" tabindex="-1" data-k="trim"><span class="ring" aria-hidden="true"></span>Branches are overgrown and need shaping</button>
+        <button class="opt" role="tab" id="o-cable" aria-controls="svc-card" aria-selected="false" tabindex="-1" data-k="cable"><span class="ring" aria-hidden="true"></span>A big tree looks weak and I want to keep it</button>
+        <button class="opt" role="tab" id="o-health" aria-controls="svc-card" aria-selected="false" tabindex="-1" data-k="health"><span class="ring" aria-hidden="true"></span>My trees just don't look healthy</button>
+        <button class="opt" role="tab" id="o-stump" aria-controls="svc-card" aria-selected="false" tabindex="-1" data-k="stump"><span class="ring" aria-hidden="true"></span>There's an old stump in the way</button>
+      </div>
+      <div class="card" id="svc-card" role="tabpanel" aria-live="polite" aria-labelledby="o-remove">
+        <div id="svc-inner">
+          <p class="svc">Tree &amp; Stump Removal</p>
+          <h3>Take down what's become a hazard.</h3>
+          <q>Safely eliminate hazardous or unwanted trees and stumps.</q>
+          <p class="src">From cardinaltreeservicewi.com</p>
+          <p style="margin-top:16px">Dead, diseased or storm-damaged trees can become dangerous liabilities for your home, business or family. Every removal is customized to the tree's condition and location.</p>
+          <div class="acts"><a class="btn btn-red" href="tel:+12625484274">Call for a free estimate</a><a class="btn btn-ghost" href="https://www.cardinaltreeservicewi.com/tree-stump-removal">Read more</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="removal">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Tree &amp; stump removal</p>
+      <h2>How a removal goes, start to finish.</h2>
+      <p class="lead">Their four-step process for residential and commercial properties in Mukwonago and the surrounding areas.</p>
+    </div>
+    <ol class="steps">
+      <li><div><b>Comprehensive evaluation</b><span>They assess the tree's condition, location and removal requirements.</span></div></li>
+      <li><div><b>Safe and efficient removal</b><span>A safe, clean removal using advanced equipment.</span></div></li>
+      <li><div><b>Thorough stump grinding</b><span>Stumps are ground below ground level, leaving your yard smooth and ready for new landscaping.</span></div></li>
+      <li><div><b>Post-removal cleanup</b><span>Your property is left clean and debris-free, ready to use.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="why">
+      <p class="eyebrow">Your local tree experts</p>
+      <h2>Why Waukesha County calls Cardinal.</h2>
+      <ul>
+        <li><svg viewBox="0 0 38 38" aria-hidden="true"><circle cx="19" cy="19" r="17" fill="none" stroke="#8B1A2B" stroke-width="2"/><circle cx="19" cy="19" r="11" fill="none" stroke="#8B1A2B" stroke-width="2"/><circle cx="19" cy="19" r="4" fill="#8B1A2B"/></svg><div><b>Rooted here since 1985</b><span>A family-owned business serving Waukesha County and surrounding areas.</span></div></li>
+        <li><svg viewBox="0 0 38 38" aria-hidden="true"><circle cx="19" cy="19" r="17" fill="none" stroke="#1E5B2E" stroke-width="2"/><path d="M12 19.5l5 5 9-11" fill="none" stroke="#1E5B2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Trained in tree science</b><span>The owner is a graduate of the Davey Institute of Tree Science in Kent, Ohio.</span></div></li>
+        <li><svg viewBox="0 0 38 38" aria-hidden="true"><circle cx="19" cy="19" r="17" fill="none" stroke="#8B1A2B" stroke-width="2"/><path d="M19 9v20M12 16l7-7 7 7M13 23l6-5 6 5" fill="none" stroke="#8B1A2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Every part of the job</b><span>From trimming to stump grinding, residential and commercial.</span></div></li>
+      </ul>
+      <p class="src">Facts from cardinaltreeservicewi.com.</p>
+    </div>
+    <aside class="cc" aria-label="Hours and contact">
+      <span class="status" id="status"><i></i><span id="status-t">Office hours Mon–Fri 8am–5pm</span></span>
+      <h3>Call for a free estimate</h3>
+      <p class="when" id="when">Office hours are Central Time.</p>
+      <table class="hrs" aria-label="Business hours">
+        <tbody>
+          <tr data-d="1,2,3,4,5"><th scope="row">Monday – Friday</th><td>8am – 5pm</td></tr>
+          <tr data-d="6,0"><th scope="row">Saturday &amp; Sunday</th><td>Closed</td></tr>
+          <tr class="em"><th scope="row">Emergencies</th><td>24-hour emergency</td></tr>
+        </tbody>
+      </table>
+      <div class="lines">
+        <a class="line" href="tel:+12625484274"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span>(262) 548-4274<small>Tap to call</small></span></a>
+        <a class="line" href="mailto:cardinaltree1@wi.rr.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>cardinaltree1@wi.rr.com<small>Email the office</small></span></a>
+        <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>S88W32400 Prairie Ln<small>Mukwonago, WI 53149 · serving Waukesha County and surrounding areas</small></span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <div>
+      <h2>A first look at your new site.</h2>
+      <p>Built around Cardinal Tree Service's story since 1985, and ready for your own crew and job photos.</p>
+    </div>
+    <a class="btn btn-light" href="tel:+12625484274">Call (262) 548-4274</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Pages on cardinaltreeservicewi.com">
+      <a href="https://www.cardinaltreeservicewi.com/tree-stump-removal">Tree &amp; stump removal</a>
+      <a href="https://www.cardinaltreeservicewi.com/tree-trimming-pruning">Trimming &amp; pruning</a>
+      <a href="https://www.cardinaltreeservicewi.com/tree-cabling-bracing">Cabling &amp; bracing</a>
+      <a href="https://www.cardinaltreeservicewi.com/tree-health-maintenance">Tree health &amp; maintenance</a>
+      <a href="https://www.cardinaltreeservicewi.com/stump-grinding-services">Stump grinding</a>
+      <a href="https://www.cardinaltreeservicewi.com/contact-cardinal-tree">Contact</a>
+    </nav>
+    <p>Website by Cream City Post · Independent website concept, not the official Cardinal Tree Service site. Logo redrawn; services, hours, history and process from cardinaltreeservicewi.com. Tree-ring artwork is an illustration, not a photo.</p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-red" href="tel:+12625484274">Call (262) 548-4274</a>
+  <a class="btn btn-ghost" href="mailto:cardinaltree1@wi.rr.com">Email</a>
+</div>
+
+<script>
+(function(){
+  var site="https://www.cardinaltreeservicewi.com/";
+  var S={
+    remove:{svc:"Tree &amp; Stump Removal",h:"Take down what's become a hazard.",q:"Safely eliminate hazardous or unwanted trees and stumps.",p:"Dead, diseased or storm-damaged trees can become dangerous liabilities for your home, business or family. Every removal is customized to the tree's condition and location.",u:"tree-stump-removal"},
+    trim:{svc:"Tree Trimming &amp; Pruning",h:"Shape it back, keep it healthy.",q:"Maintain the health and beauty of your trees with precision trimming.",p:"Routine maintenance for residential properties and commercial landscapes across Waukesha County.",u:"tree-trimming-pruning"},
+    cable:{svc:"Tree Cabling &amp; Bracing",h:"Support the tree you want to save.",q:"Protect and stabilize weakened trees to extend their life.",p:"For a weakened tree you'd rather keep than take down. Call to set up a free estimate.",u:"tree-cabling-bracing"},
+    health:{svc:"Tree Health &amp; Maintenance",h:"Care that keeps trees thriving.",q:"Expert care to keep your trees thriving.",p:"Unhealthy trees can pose risks to other trees, wildlife, and even your property. The owner trained at the Davey Institute of Tree Science.",u:"tree-health-maintenance"},
+    stump:{svc:"Stump Grinding",h:"Get your yard back.",q:"Remove unsightly stumps efficiently.",p:"Stumps are ground below ground level, leaving your yard smooth and ready for new landscaping.",u:"stump-grinding-services"}
+  };
+  var opts=[].slice.call(document.querySelectorAll('.opt')),card=document.getElementById('svc-card'),inner=document.getElementById('svc-inner');
+  function show(btn,focus){
+    var d=S[btn.dataset.k];
+    opts.forEach(function(o){var on=o===btn;o.setAttribute('aria-selected',on);o.tabIndex=on?0:-1;});
+    card.setAttribute('aria-labelledby',btn.id);
+    inner.innerHTML='<p class="svc">'+d.svc+'</p><h3>'+d.h+'</h3><q>'+d.q+'</q><p class="src">From cardinaltreeservicewi.com</p><p style="margin-top:16px">'+d.p+'</p><div class="acts"><a class="btn btn-red" href="tel:+12625484274">Call for a free estimate</a><a class="btn btn-ghost" href="'+site+d.u+'">Read more</a></div>';
+    inner.classList.remove('fade');void inner.offsetWidth;inner.classList.add('fade');
+    if(focus)btn.focus();
+  }
+  opts.forEach(function(o,i){
+    o.addEventListener('click',function(){show(o)});
+    o.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowDown'||e.key==='ArrowRight')n=opts[(i+1)%opts.length];
+      if(e.key==='ArrowUp'||e.key==='ArrowLeft')n=opts[(i-1+opts.length)%opts.length];
+      if(e.key==='Home')n=opts[0]; if(e.key==='End')n=opts[opts.length-1];
+      if(n){e.preventDefault();show(n,true);}
+    });
+  });
+
+  // Live office status, America/Chicago, from posted hours: Mon–Fri 8am–5pm; Sat & Sun closed; 24-hour emergency.
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var get=function(t){for(var i=0;i<parts.length;i++)if(parts[i].type===t)return parts[i].value;};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    var h=parseInt(get('hour'),10)%24,m=parseInt(get('minute'),10),mins=h*60+m;
+    var weekday=day>=1&&day<=5,open=weekday&&mins>=480&&mins<1020;
+    var st=document.getElementById('status'),tt=document.getElementById('status-t'),w=document.getElementById('when');
+    if(open){tt.textContent='Office open now · until 5pm';w.textContent='Call now and the office can set up your free estimate.';}
+    else{
+      st.classList.add('closed');tt.textContent='Office closed now';
+      var next=(weekday&&mins<480)?'today at 8am':(day>=1&&day<=4)?'tomorrow at 8am':'Monday at 8am';
+      w.textContent='Office reopens '+next+'. For a tree emergency, call: they list a 24-hour emergency line.';
+    }
+    [].forEach.call(document.querySelectorAll('.hrs tr[data-d]'),function(r){if(r.dataset.d.split(',').indexOf(String(day))>-1)r.classList.add('today');});
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
