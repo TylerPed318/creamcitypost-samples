@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Mammoth Snow &amp; Ice Control — Website concept by Cream City Post</title>
+<meta name="description" content="Commercial and residential snow removal, ice control and ice dam removal from Waukesha, WI. Serving Waukesha, Brookfield, Menomonee Falls, New Berlin, Pewaukee and Sussex.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700;800&family=Nunito:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#121924;
+  --night-2:#1B2533;
+  --night-3:#26334A;
+  --ice:#4FE3F5;
+  --ice-dk:#0E7C8C;
+  --ice-ink:#06606C;
+  --frost:#EAF8FB;
+  --white:#FFFFFF;
+  --plow:#D7262E;
+  --ink:#121924;
+  --ink-2:#4A5568;
+  --on-night:#E6EEF6;
+  --on-night-2:#A9B7C8;
+  --line:#D5E4EA;
+  --radius:16px;
+  --display:"Unbounded", "Arial Black", sans-serif;
+  --body:"Figtree", Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+img,svg{max-width:100%}
+a{color:var(--ice-ink)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--ice);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.06;margin:0;letter-spacing:-.02em}
+p{margin:0}
+.eyebrow{font:700 13px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--ice-ink)}
+.dark .eyebrow{color:var(--ice)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 24px;border-radius:10px;font:800 16px/1.1 var(--body);text-decoration:none;border:2px solid transparent;transition:background .18s,color .18s,border-color .18s,transform .18s;cursor:pointer}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-ice{background:var(--ice);color:var(--night)}
+.btn-ice:hover{background:#86EDF9;transform:translateY(-1px)}
+.btn-line{border-color:rgba(230,238,246,.5);color:var(--white);background:transparent}
+.btn-line:hover{border-color:var(--ice);color:var(--ice)}
+.btn-night{background:var(--night);color:#fff}
+.btn-night:hover{background:var(--night-3)}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(18,25,36,.97);border-bottom:1px solid rgba(79,227,245,.18)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:74px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;min-height:48px}
+.brand svg{width:58px;height:38px;flex:none}
+.brand b{display:block;font:900 26px/1 "Nunito",var(--body);letter-spacing:-.01em}
+.brand i{display:block;font:italic 700 13.5px/1.2 "Nunito",var(--body);color:var(--on-night);margin-top:2px}
+.nav{display:flex;align-items:center;gap:24px}
+.nav a.l{color:var(--on-night);text-decoration:none;font-weight:600;font-size:15px;padding:12px 0}
+.nav a.l:hover{color:var(--ice)}
+.top .btn{min-height:46px;padding:10px 18px;font-size:15px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--night);color:var(--on-night);padding:clamp(48px,7vw,96px) 0 0}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(1px 1px at 12% 18%,rgba(255,255,255,.55) 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 28% 62%,rgba(255,255,255,.4) 50%,transparent 51%),
+  radial-gradient(1px 1px at 47% 30%,rgba(255,255,255,.5) 50%,transparent 51%),
+  radial-gradient(2px 2px at 66% 12%,rgba(255,255,255,.35) 50%,transparent 51%),
+  radial-gradient(1px 1px at 82% 44%,rgba(255,255,255,.5) 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 92% 20%,rgba(255,255,255,.4) 50%,transparent 51%),
+  radial-gradient(1px 1px at 38% 85%,rgba(255,255,255,.4) 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 6% 78%,rgba(255,255,255,.35) 50%,transparent 51%);
+  pointer-events:none}
+.flake{position:absolute;right:-90px;top:-70px;width:420px;height:420px;color:rgba(79,227,245,.10);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:end}
+.hero .copy{padding-bottom:clamp(40px,6vw,88px)}
+.hero h1{color:#fff;font-size:clamp(32px,4.6vw,58px);font-weight:800;margin:16px 0 22px}
+.hero h1 span{color:var(--ice)}
+.hero .sub{font-size:clamp(17px,1.5vw,19px);color:var(--on-night);max-width:33em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .note{margin-top:16px;color:var(--on-night-2);font-size:15px}
+.truck{position:relative;margin:0;align-self:end;padding-bottom:20px}
+.truck .band{position:absolute;left:-10%;right:-40%;bottom:72px;height:110px;background:linear-gradient(100deg,transparent 0 6%,var(--ice) 6% 58%,transparent 58% 62%,rgba(255,255,255,.9) 62% 76%,transparent 76%);transform:skewY(-6deg);opacity:.95}
+.truck img{position:relative;display:block;width:100%;max-width:600px;height:auto;margin-left:auto;filter:drop-shadow(0 18px 18px rgba(0,0,0,.45))}
+.truck figcaption{position:relative;text-align:right;font-size:13.5px;color:var(--on-night-2);margin-top:10px}
+
+/* proof */
+.proof{background:var(--ice);color:var(--night)}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.proof li{padding:20px 20px;border-left:2px solid rgba(18,25,36,.14);display:flex;flex-direction:column}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof b{font:700 16px/1.25 var(--display);letter-spacing:-.01em}
+.proof span{font-size:14.5px;font-weight:500;color:#0F2A33}
+
+/* switch */
+.who{padding:clamp(56px,8vw,104px) 0;background:linear-gradient(180deg,var(--frost),#fff 70%)}
+.who-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px 40px;margin-bottom:30px}
+.who-head h2{font-size:clamp(28px,3.8vw,46px);margin-top:12px;max-width:14em}
+.seg{display:inline-flex;padding:6px;border-radius:14px;background:var(--night);gap:4px}
+.seg button{min-height:48px;padding:10px 22px;border:0;border-radius:10px;background:transparent;color:var(--on-night);font:700 16px/1 var(--body);cursor:pointer;transition:background .18s,color .18s}
+.seg button[aria-selected="true"]{background:var(--ice);color:var(--night)}
+.seg button:hover:not([aria-selected="true"]){color:var(--ice)}
+.panel{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:24px;align-items:stretch}
+.panel[hidden]{display:none}
+.main{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:clamp(24px,3.4vw,40px);box-shadow:0 18px 40px rgba(18,25,36,.07)}
+.main .k{font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--plow)}
+.main h3{font-size:clamp(22px,2.4vw,30px);margin:12px 0 14px}
+.main p{color:var(--ink-2)}
+.checks{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600}
+.checks li::before{content:"";flex:none;width:20px;height:20px;margin-top:3px;border-radius:6px;background:var(--ice) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3.2 3L15 6.5' fill='none' stroke='%23121924' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.main .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.main .more{display:inline-flex;align-items:center;min-height:50px;font-weight:700}
+.side{background:var(--night);color:var(--on-night);border-radius:var(--radius);padding:clamp(24px,3vw,34px);position:relative;overflow:hidden}
+.side h3{color:#fff;font-size:18px;margin-bottom:6px}
+.side p{color:var(--on-night-2);font-size:15px}
+.side ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:8px;position:relative}
+.side a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;padding:10px 14px;border-radius:10px;background:var(--night-2);border:1px solid var(--night-3);color:#fff;text-decoration:none;font-weight:600}
+.side a:hover{border-color:var(--ice);color:var(--ice)}
+.side a span{color:var(--ice)}
+.fade{animation:fade .28s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* zone */
+.zone{background:var(--night);color:var(--on-night);padding:clamp(56px,8vw,100px) 0;position:relative;overflow:hidden}
+.zone .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center;position:relative}
+.zone h2{color:#fff;font-size:clamp(28px,3.8vw,46px);margin:12px 0 16px}
+.zone .lead{color:var(--on-night-2)}
+.checker{background:var(--night-2);border:1px solid var(--night-3);border-radius:var(--radius);padding:clamp(22px,3vw,32px)}
+.checker label{display:block;font-weight:700;color:#fff;margin-bottom:10px}
+.checker input{width:100%;min-height:54px;padding:12px 16px;border-radius:10px;border:2px solid var(--night-3);background:var(--night);color:#fff;font:600 17px/1.2 var(--body)}
+.checker input::placeholder{color:#7F8EA3}
+.checker input:focus{border-color:var(--ice);outline:none}
+.result{min-height:52px;margin-top:14px;font-weight:600;color:var(--on-night)}
+.result.yes{color:var(--ice)}
+.result a{color:var(--ice)}
+.towns{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;padding:0;list-style:none}
+.towns button{min-height:44px;padding:8px 14px;border-radius:999px;border:1.5px solid var(--night-3);background:transparent;color:var(--on-night);font:600 15px/1 var(--body);cursor:pointer}
+.towns button:hover,.towns button.on{border-color:var(--ice);color:var(--night);background:var(--ice)}
+.zone .src{margin-top:14px;font-size:13.5px;color:#8D9BB0}
+
+/* contact */
+.contact{padding:clamp(56px,8vw,104px) 0}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,56px);align-items:start}
+.contact h2{font-size:clamp(28px,3.8vw,46px);margin:12px 0 26px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:14px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;align-items:center;padding:16px 18px;border-radius:14px;background:var(--frost)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:56px;height:56px;border-radius:12px;background:var(--night);color:var(--ice);font:800 22px/1 var(--display)}
+.steps b{display:block;font:700 18px/1.2 var(--body)}
+.steps span{color:var(--ink-2);font-size:15.5px}
+.contact .src{margin-top:14px;font-size:13.5px;color:var(--ink-2)}
+.cc{border-radius:var(--radius);border:1.5px solid var(--line);padding:clamp(24px,3.2vw,36px);background:#fff;box-shadow:12px 12px 0 var(--ice)}
+.cc h3{font-size:24px;margin-bottom:6px}
+.cc .sub{color:var(--ink-2)}
+.cc dl{margin:20px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 18px}
+.cc dt{font-weight:700}
+.cc dd{margin:0;color:var(--ink-2);overflow-wrap:anywhere}
+.cc dd a{color:var(--ice-ink);font-weight:700;display:inline-flex;align-items:center;min-height:44px;margin:-12px 0}
+.cc .btn{width:100%;margin-top:24px}
+
+/* closer, footer */
+.closer{background:var(--night);color:var(--on-night);padding:clamp(48px,7vw,80px) 0;border-top:6px solid var(--ice)}
+.closer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.closer h2{color:#fff;font-size:clamp(26px,3.4vw,40px)}
+.closer p{margin-top:10px;color:var(--on-night-2);max-width:36em}
+footer{background:#0B1018;color:#AEBACB;padding:30px 0 40px;font-size:14px}
+footer .wrap{display:grid;gap:12px}
+footer nav{display:flex;flex-wrap:wrap;gap:0 18px}
+footer nav a{display:inline-flex;align-items:center;min-height:44px;color:#fff;text-decoration:none}
+footer nav a:hover{color:var(--ice)}
+.callbar{display:none}
+
+@media (max-width:960px){
+  .nav a.l{display:none}
+  .hero .wrap,.panel,.zone .wrap,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero .copy{padding-bottom:0}
+  .truck{max-width:620px;width:100%;margin-inline:auto}
+  .proof ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof li{padding:16px}
+  .proof li:nth-child(odd){border-left:0;padding-left:0}
+  .proof li:nth-child(n+3){border-top:2px solid rgba(18,25,36,.14)}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:74px}
+  .wrap{width:calc(100% - 32px)}
+  .top .wrap{min-height:64px}
+  .brand svg{width:46px;height:30px}
+  .brand b{font-size:22px}
+  .brand i{font-size:12px}
+  .top .btn .num{display:none}
+  .truck .band{height:70px;bottom:62px}
+  .seg{display:flex;width:100%}
+  .seg button{flex:1;padding:10px 8px}
+  .checks{grid-template-columns:minmax(0,1fr)}
+  .proof b{font-size:14.5px}
+  .proof span{font-size:13.5px}
+  .steps li{grid-template-columns:48px minmax(0,1fr);gap:12px;padding:14px}
+  .steps li::before{width:48px;height:48px;font-size:19px}
+  .cc{box-shadow:6px 6px 0 var(--ice)}
+  .cc dl{grid-template-columns:minmax(0,1fr);gap:2px}
+  .cc dd{margin-bottom:10px}
+  .cc dd a{font-size:14.5px}
+  .callbar{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--night);border-top:1px solid var(--night-3)}
+  .callbar .btn{min-height:50px;padding:10px 12px;font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Mammoth Snow &amp; Ice Control, home">
+      <svg viewBox="0 0 1024 667" aria-hidden="true"><path fill="#fff" fill-rule="evenodd" d="M273 662C272 662 277 658 283 654C350 614 399 565 424 512C429 501 434 486 434 481C434 476 436 474 446 474C458 473 475 470 482 469C488 467 489 467 491 469C496 473 509 506 512 524C513 532 514 535 515 535C520 536 553 513 574 496C611 464 636 421 651 363C656 343 661 308 659 307C659 306 655 310 650 315C598 376 513 420 416 435C334 449 250 446 190 428C116 407 62 358 40 292C35 277 37 275 47 286C71 310 78 318 86 324C127 357 179 374 244 374C284 375 294 366 288 338C264 227 296 136 380 71C420 42 468 21 526 10C581 -1 612 2 640 21C667 38 690 77 697 113C699 126 699 150 696 162C694 177 693 175 704 178C773 195 837 236 904 305C945 346 978 391 1003 439C1013 457 1019 471 1019 472C1018 472 1009 470 998 468C978 463 976 462 977 467C979 471 984 509 986 524C992 574 991 612 982 647C981 654 979 659 978 660C976 662 973 662 900 662C857 662 824 662 823 661C822 660 822 659 824 652C826 639 826 612 823 601C812 559 783 533 745 528C719 525 689 536 671 557C651 579 640 606 638 640C637 650 637 655 636 656C635 657 622 657 564 657C525 657 493 657 492 656C490 656 489 654 488 642C487 628 485 622 482 610C480 600 474 585 473 584C473 584 468 589 462 595C443 615 421 635 398 650C378 664 386 662 325 663C292 663 273 663 273 662ZM179 616C131 610 92 591 60 557C36 533 21 505 10 468C7 455 7 454 8 452C9 451 15 451 30 449C41 449 57 447 65 447C84 445 83 444 88 457C107 500 141 526 185 531C208 534 228 530 252 517C269 509 282 500 294 488L304 478L313 478C318 479 335 479 351 480C367 481 381 482 381 482C382 483 382 485 379 493C351 576 268 626 179 616ZM401 279C428 268 451 247 460 224C463 216 466 205 466 197L467 191L463 192C455 194 447 197 435 202C402 218 385 240 382 272C380 286 381 287 388 284C391 284 397 281 401 279Z"/></svg>
+      <span><b>Mammoth</b><i>Snow &amp; Ice Control</i></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="l" href="#who">Commercial &amp; residential</a>
+      <a class="l" href="#zone">Service area</a>
+      <a class="l" href="#contact">Contact</a>
+      <a class="btn btn-ice" href="tel:+12628753714"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span>Call<span class="num"> 262-875-3714</span></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero dark">
+  <svg class="flake" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><g id="arm"><path d="M50 50V6M50 18l-8-8M50 18l8-8M50 30l-10-10M50 30l10-10"/></g><use href="#arm" transform="rotate(60 50 50)"/><use href="#arm" transform="rotate(120 50 50)"/><use href="#arm" transform="rotate(180 50 50)"/><use href="#arm" transform="rotate(240 50 50)"/><use href="#arm" transform="rotate(300 50 50)"/></g></svg>
+  <div class="wrap">
+    <div class="copy">
+      <p class="eyebrow">Waukesha, WI · Snow &amp; ice management</p>
+      <h1>The snow may be relentless. <span>We will not be defeated.</span></h1>
+      <p class="sub">Commercial snow removal for parking lots, drives &amp; roads, plus driveways, sidewalks and steps at home. Ice control and ice dam removal, from a crew that started small in Waukesha.</p>
+      <div class="ctas">
+        <a class="btn btn-ice" href="tel:+12628753714"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call 262-875-3714</a>
+        <a class="btn btn-line" href="#zone">Do you plow my town?</a>
+      </div>
+      <p class="note">Free quotes · Office Mon–Fri 8 AM – 4 PM</p>
+    </div>
+    <figure class="truck">
+      <div class="band" aria-hidden="true"></div>
+      <img src="img/truck.webp" width="900" height="302" alt="Mammoth Snow &amp; Ice Control's black pickup with a red front plow, the mammoth logo and a snowflake on the doors">
+      <figcaption>Their plow truck · from mammothsnowandice.com</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="proof" aria-label="At a glance">
+  <div class="wrap">
+    <ul>
+      <li><b>Waukesha-grown</b><span>Started small in Waukesha, Wisconsin</span></li>
+      <li><b>Lots to driveways</b><span>Commercial and residential</span></li>
+      <li><b>Systems licensed</b><span>To other snow &amp; ice companies</span></li>
+      <li><b>Free quotes</b><span>Call or email the office</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="who" id="who">
+  <div class="wrap">
+    <div class="who-head">
+      <div>
+        <p class="eyebrow">Who are we clearing for?</p>
+        <h2>Two kinds of winter. One crew.</h2>
+      </div>
+      <div class="seg" role="tablist" aria-label="Property type">
+        <button role="tab" id="t-com" aria-controls="p-com" aria-selected="true">Commercial</button>
+        <button role="tab" id="t-res" aria-controls="p-res" aria-selected="false" tabindex="-1">Residential</button>
+      </div>
+    </div>
+
+    <div class="panel" id="p-com" role="tabpanel" aria-labelledby="t-com">
+      <div class="main">
+        <p class="k">Commercial snow removal</p>
+        <h3>Parking lots, drives &amp; roads.</h3>
+        <p>For businesses that need to stay open, safe and accessible for employees, customers and visitors, even in the harshest winter weather. Plows, salt spreaders and shovels to clear lots and walkways fast.</p>
+        <ul class="checks">
+          <li>Prompt and reliable service</li>
+          <li>Safety and accessibility</li>
+          <li>Customizable solutions</li>
+          <li>Professional equipment and techniques</li>
+          <li>Competitive pricing</li>
+        </ul>
+        <div class="acts"><a class="btn btn-night" href="tel:+12628753714">Call for a free quote</a><a class="more" href="https://mammothsnowandice.com/commercial-snow-removal-service/">Commercial details →</a></div>
+      </div>
+      <aside class="side">
+        <h3>Also for your property</h3>
+        <p>Ice control with salting and de-icing, and winter weather consulting.</p>
+        <ul>
+          <li><a href="https://mammothsnowandice.com/ice-control/">Ice control <span>→</span></a></li>
+          <li><a href="https://mammothsnowandice.com/pressure-washing/">Exterior cleaning <span>→</span></a></li>
+          <li><a href="https://mammothsnowandice.com/christmas-lights/">Christmas lights <span>→</span></a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="panel" id="p-res" role="tabpanel" aria-labelledby="t-res" hidden>
+      <div class="main">
+        <p class="k">Residential snow removal</p>
+        <h3>Driveways, sidewalks &amp; steps.</h3>
+        <p>A clear, safe path to your front door. Whether it's shoveling your driveway, clearing your sidewalks or de-icing your steps, they handle the hard work with plows, salt spreaders and snow blowers.</p>
+        <ul class="checks">
+          <li>Driveway snow removal</li>
+          <li>Sidewalk clearing</li>
+          <li>De-icing steps and walks</li>
+          <li>Ice dam removal from roofs</li>
+        </ul>
+        <div class="acts"><a class="btn btn-night" href="tel:+12628753714">Call for a free quote</a><a class="more" href="https://mammothsnowandice.com/residential-snow-removal-service/">Residential details →</a></div>
+      </div>
+      <aside class="side">
+        <h3>Also for your home</h3>
+        <p>Ice dams removed safely to help prevent damage and leaks, plus exterior cleaning.</p>
+        <ul>
+          <li><a href="https://mammothsnowandice.com/ice-dam-removal/">Ice dam removal <span>→</span></a></li>
+          <li><a href="https://mammothsnowandice.com/window-cleaning/">Window cleaning <span>→</span></a></li>
+          <li><a href="https://mammothsnowandice.com/gutter-cleaning/">Gutter cleaning <span>→</span></a></li>
+          <li><a href="https://mammothsnowandice.com/christmas-lights/">Christmas lights <span>→</span></a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="zone dark" id="zone">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Service area</p>
+      <h2>Is your property in the plow zone?</h2>
+      <p class="lead">Mammoth works out of 722 N Grand Ave in Waukesha and lists six communities on its site. Type yours or tap a town.</p>
+    </div>
+    <div class="checker">
+      <label for="town">Your city or village</label>
+      <input id="town" type="text" inputmode="text" autocomplete="off" placeholder="e.g. Pewaukee" aria-describedby="result">
+      <p class="result" id="result" aria-live="polite">Six towns on the list. Not sure? Call 262-875-3714.</p>
+      <ul class="towns" aria-label="Listed service areas">
+        <li><button type="button">Waukesha</button></li>
+        <li><button type="button">Brookfield</button></li>
+        <li><button type="button">Menomonee Falls</button></li>
+        <li><button type="button">New Berlin</button></li>
+        <li><button type="button">Pewaukee</button></li>
+        <li><button type="button">Sussex</button></li>
+      </ul>
+      <p class="src">Service areas as listed on mammothsnowandice.com.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps to a clear lot.</h2>
+      <ol class="steps">
+        <li><div><b>Get a quote</b><span>Call or email the office for a free quote on your property.</span></div></li>
+        <li><div><b>Get scheduled</b><span>Your property goes on their snow and ice schedule.</span></div></li>
+        <li><div><b>Wait and relax</b><span>Let the Mammoth crew handle the snow and ice.</span></div></li>
+      </ol>
+      <p class="src">Steps from mammothsnowandice.com.</p>
+    </div>
+    <aside class="cc" aria-label="Contact">
+      <h3>Talk to the office</h3>
+      <p class="sub">Free quotes for commercial and residential properties.</p>
+      <dl>
+        <dt>Phone</dt><dd><a href="tel:+12628753714">262-875-3714</a></dd>
+        <dt>Email</dt><dd><a href="mailto:ashleydemark@mammothsnowandice.com">ashleydemark@mammothsnowandice.com</a></dd>
+        <dt>Office hours</dt><dd>Mon–Fri 8 AM – 4 PM</dd>
+        <dt>Location</dt><dd>722 N Grand Ave, Waukesha, WI</dd>
+      </dl>
+      <a class="btn btn-ice" href="tel:+12628753714">Call 262-875-3714</a>
+    </aside>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <div>
+      <h2>A first look at your new site.</h2>
+      <p>One phone number, a clear commercial and residential split, and room for your own job photos.</p>
+    </div>
+    <a class="btn btn-ice" href="tel:+12628753714">Call 262-875-3714</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Pages on mammothsnowandice.com">
+      <a href="https://mammothsnowandice.com/commercial-snow-removal-service/">Commercial</a>
+      <a href="https://mammothsnowandice.com/residential-snow-removal-service/">Residential</a>
+      <a href="https://mammothsnowandice.com/ice-control/">Ice control</a>
+      <a href="https://mammothsnowandice.com/ice-dam-removal/">Ice dam removal</a>
+      <a href="https://mammothsnowandice.com/locations/">Locations</a>
+      <a href="https://mammothsnowandice.com/licensing-opportunities/">Licensing opportunities</a>
+      <a href="https://mammothsnowandice.com/about-us/">About us</a>
+    </nav>
+    <p>Website by Cream City Post · Independent website concept, not the official Mammoth Snow &amp; Ice Control site. Logo mark redrawn; truck photo, services, service areas and hours from mammothsnowandice.com.</p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn btn-ice" href="tel:+12628753714">Call 262-875-3714</a>
+  <a class="btn btn-line" href="mailto:ashleydemark@mammothsnowandice.com">Email</a>
+</div>
+
+<script>
+(function(){
+  // Commercial / residential switch
+  var tabs=[].slice.call(document.querySelectorAll('.seg [role=tab]'));
+  function sel(t,focus){
+    tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));p.hidden=!on;if(on){p.classList.remove('fade');void p.offsetWidth;p.classList.add('fade');}});
+    if(focus)t.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(t)});
+    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();sel(tabs[(i+1)%2],true);}});
+  });
+
+  // Service-area checker: the six communities listed on mammothsnowandice.com
+  var towns=['Waukesha','Brookfield','Menomonee Falls','New Berlin','Pewaukee','Sussex'];
+  var input=document.getElementById('town'),out=document.getElementById('result'),chips=[].slice.call(document.querySelectorAll('.towns button'));
+  function norm(s){return s.toLowerCase().replace(/\b(city|town|village)\s+of\s+/g,'').replace(/,?\s*(wi|wisconsin)\.?$/,'').replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();}
+  function check(v){
+    var n=norm(v);chips.forEach(function(c){c.classList.toggle('on',norm(c.textContent)===n)});
+    if(!n){out.className='result';out.textContent='Six towns on the list. Not sure? Call 262-875-3714.';return;}
+    var hit=towns.filter(function(t){return norm(t)===n})[0];
+    if(hit){out.className='result yes';out.innerHTML='Yes: '+hit+' is on Mammoth’s service list. <a href="tel:+12628753714">Call 262-875-3714</a> for a free quote.';}
+    else{
+      var part=towns.filter(function(t){return norm(t).indexOf(n)===0});
+      if(part.length&&n.length<norm(part[0]).length){out.className='result';out.textContent='Keep typing… '+part.join(', ')+'?';return;}
+      out.className='result';out.innerHTML='That town isn’t on their posted list, but it doesn’t hurt to ask: <a href="tel:+12628753714">call 262-875-3714</a>.';
+    }
+  }
+  input.addEventListener('input',function(){check(input.value)});
+  chips.forEach(function(c){c.addEventListener('click',function(){input.value=c.textContent;check(c.textContent);})});
+})();
+</script>
+</body>
+</html>
