@@ -476,3 +476,5 @@ CCP-167 brief 1a1eaf6148809d5a handled; v1 ready 1a1ebdd684c81e58 confirmed SENT
 - done — CCP-167 v2 (Nov18 scheduled run): live888dcc3 exact deployed Git HTML match; page and both image formats public200; ready1a1f00cae81095a1 confirmed SENT only Tyler. 0credits. Own-site testimonial themes/process line; Mosquitos/General Pests labels and verified pest lists. Live1440/390 visually inspected,375 no overflow/all6 choices passed,no errors. Installed Higgsfield Playwright used; named script absent; Claude selection unavailable.
 
 CCP-167 revision1a1efe5ba834dd29 handled; v2 ready1a1f00cae81095a1 confirmed SENT.
+
+- in progress — CCP-169 (2026-11-18 13:06 -06:00, scheduled run)
