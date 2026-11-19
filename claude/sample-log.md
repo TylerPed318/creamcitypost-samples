@@ -51,6 +51,7 @@ CCP-055 chat slider revision handled; v2 ready 1a1cdd3cd48a120c, confirmed SENT.
 - done — CCP-071 v1 (Nov 12, ~1:10 PM CT, scheduled run): live (page + 3 imgs 200, byte-identical), emailed 1a1d10a6d78b3d17; 2 credits (2K upscale of the aerial rig photo; truck-door lettering blended back); commit 8038462. Typographic hero + bore-gauge motif, "What's your water doing?" picker. Open: photo permission, family-truck photo skipped (child), Darren's title, 262-965-4668.
 - Nov 12, ~1:10 PM CT (scheduled run): session ends after 3 items (068 v2, 069 v2, 071 v1), 2 credits total. Next up, oldest brief first: CCP-072 BFH Services (1a1d0bea7f964d48), CCP-073 Lake Country Project Guy (1a1d0c411e346c52), CCP-074 Wood or Water Pier Service (1a1d0c85a19962c0), then CCP-075–078.
 ## Handled emails (don't reprocess)
+CCP-170 brief1a1f00b22ff985f0 handled; v1 ready1a1f132a9d909371 confirmed SENT only Tyler (Nov18).
 CCP-169 brief 1a1eec2b23f817cb handled; v1 ready 1a1eee178a2dceea confirmed SENT (Nov 18).
 CCP-168 brief 1a1eec226b4e0d5d handled; v1 ready 1a1eedc4149457e9 confirmed SENT (Nov 18).
 CCP-165 brief 1a1eaf38a0b59ff4 handled; v1 ready 1a1ebac5946f1281 confirmed SENT (Nov 17).
@@ -136,6 +137,8 @@ CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confi
 CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738562 confirmed SENT (delivery recovery Nov 13).
 
 ## Samples
+
+| CCP-170 | Mercado Painting L.L.C. | Painting, Milwaukee metro | brief | v1 | mercado-painting/ | Live4b2e0b9; ready1a1f132a9d909371 SENT; 0credits; photo-free. |
 
 | CCP-169 | Mammoth Snow & Ice Control | Snow & ice, Waukesha | brief | v2 | mammoth-snow-ice-control/ | Live88da18c; ready1a1f019c343407b1 SENT; 2credits successful, first failure charge unknown. |
 
@@ -483,4 +486,6 @@ CCP-167 revision1a1efe5ba834dd29 handled; v2 ready1a1f00cae81095a1 confirmed SEN
 CCP-169 revision1a1efe5bc5c17d6a handled; v2 ready1a1f019c343407b1 confirmed SENT.
 - Nov18 scheduled handoff: last finished CCP-169 v2 and CCP-167 v2; next ID none in verified queue. Open: Mammoth homepage/Locations mismatch, failed upscale charge/refund and existing phone/name/ZIP confirmations. Only Tyler emailed per scheduler instruction; no outside CC. Claude unavailable; installed Higgsfield Playwright used.
 
-- in progress — CCP-170 (2026-11-18 18:17 -06:00 America/Chicago, scheduled run)
+- done — CCP-170 v1 (Nov18 scheduled run): live4b2e0b9 exact deployed LF-normalized HTML SHA256 match; page/logo/favicon public200; ready1a1f132a9d909371 confirmed SENT only Tyler. 0credits;74757 local bytes. Original logo plus readable brand lettering, navy/orange Montserrat/Inter; photo-free paint-swatch typography; six-service explorer; own-site commitments and verified existing-page navigation. Live1440/390 visually inspected;375 no overflow/all6choices pass/no errors. Mobile graphic clipping/header identity fixed and affected top rechecked. Installed Higgsfield Playwright used; named script absent; Claude selection unavailable. Open: obtain full-size real photos from Cruz. No template testimonials/unverified rating/data-collecting form/invented process.
+
+- Nov18 scheduled handoff: last finished CCP-170 v1; next ID none in audited14d brief/7d state queue (older075 revision handled and v2 approved). Open: Cruz full-size real job photos. 0credits; only Tyler emailed. Direct-main publishing access succeeded this run; prior approval blocker did not recur. Claude unavailable; actual installed Higgsfield Playwright used.
