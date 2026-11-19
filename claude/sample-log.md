@@ -482,3 +482,5 @@ CCP-167 revision1a1efe5ba834dd29 handled; v2 ready1a1f00cae81095a1 confirmed SEN
 
 CCP-169 revision1a1efe5bc5c17d6a handled; v2 ready1a1f019c343407b1 confirmed SENT.
 - Nov18 scheduled handoff: last finished CCP-169 v2 and CCP-167 v2; next ID none in verified queue. Open: Mammoth homepage/Locations mismatch, failed upscale charge/refund and existing phone/name/ZIP confirmations. Only Tyler emailed per scheduler instruction; no outside CC. Claude unavailable; installed Higgsfield Playwright used.
+
+- in progress — CCP-170 (2026-11-18 18:17 -06:00 America/Chicago, scheduled run)
