@@ -515,3 +515,5 @@ CCP-173 brief1a20ef54eb97d41e handled; v1 ready1a20f279490eea6a confirmed SENT.
 
 CCP-174 brief1a20ef5d4fa71a41 handled; v1 ready1a20f660c20e2a93 confirmed SENT.
 - Nov24 scheduled handoff: last finished CCP-174 v1,0credits; next verified brief CCP-176 Tallboy Home Improvement (1a20ef66ea287be1). No open revisions found. Open: Air Solutions original raster logo and unconfirmed Brian role/hours/emergency availability; section navigation because source has no separate business pages. Claude unavailable; installed Higgsfield Playwright used; only Tyler emailed. Ending after1item.
+
+- in progress — CCP-176 (2026-11-24T15:57:30.9469138-06:00, scheduled run)
