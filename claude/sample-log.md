@@ -503,3 +503,5 @@ CCP-169 revision1a1efe5bc5c17d6a handled; v2 ready1a1f019c343407b1 confirmed SEN
 - done — CCP-172 v1 (Nov24 scheduled run): live7f4ee93 exact deployed HTML SHA256; page/logo/favicon public200; ready1a20f02031fa2532 confirmed SENT only Tyler. 0credits;99723bytes. Original raster logo/colors/Kumbh Sans+Mulish retained; photo-free heritage layout; six-service explorer and existing-page navigation. Live1440/390 visually inspected;375/390/1440 no overflow/errors,all6choices pass. Installed Higgsfield Playwright used; named script absent; Claude selection unavailable. Open: obtain real job/van/crew photos; no Google rating/quotes/counts, old offers or quote form.
 
 - Nov24 scheduled handoff: last finished CCP-172 v1,0credits; next verified brief CCP-173 Happy Day Carpet Care (1a20ef54eb97d41e), then174 Air Solutions (1a20ef5d4fa71a41),176 Tallboy (1a20ef66ea287be1). Refresh claims/Gmail before building. No open revisions. Open: J&S real photos; original raster logo preserved. Claude unavailable; installed Higgsfield Playwright used; only Tyler emailed.
+
+- in progress — CCP-173 (2026-11-24T13:59:07.7680068-06:00, America/Chicago, scheduled run)
