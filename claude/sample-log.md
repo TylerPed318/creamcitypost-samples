@@ -516,4 +516,10 @@ CCP-173 brief1a20ef54eb97d41e handled; v1 ready1a20f279490eea6a confirmed SENT.
 CCP-174 brief1a20ef5d4fa71a41 handled; v1 ready1a20f660c20e2a93 confirmed SENT.
 - Nov24 scheduled handoff: last finished CCP-174 v1,0credits; next verified brief CCP-176 Tallboy Home Improvement (1a20ef66ea287be1). No open revisions found. Open: Air Solutions original raster logo and unconfirmed Brian role/hours/emergency availability; section navigation because source has no separate business pages. Claude unavailable; installed Higgsfield Playwright used; only Tyler emailed. Ending after1item.
 
-- in progress — CCP-176 (2026-11-24T15:57:30.9469138-06:00, scheduled run)
+- done — CCP-176 v1 (Nov24 scheduled run): live3ce657d exact HTML SHA256685d4b3f03e9cefd33762748a438a564a2a88b6eed1992f2e908d6faff282e8b; page/3photos/favicon public200; ready1a20f994f1308d5f confirmed SENT only Tyler. Original text wordmark/Futura PT/Minion Pro/charcoal-coral preserved; real cabinet/shower photos; five-project selector with exclusions; existing separate-page nav. Live1440/390 visually inspected;375 no overflow/all5choices pass/no pageerrors. Original font loader failed on preview domain; original public font references loaded successfully after fix. 873126bytes,0credits. Installed Higgsfield Playwright; named script absent; Claude unavailable. Open: original warm-filtered photo treatment retained; no hours/unverified rating/form.
+
+
+| CCP-176 | Tallboy Home Improvement | Handyman, Cedarburg | brief | v1 | tallboy-home-improvement/ | Live3ce657d; ready1a20f994f1308d5f SENT; 0credits. |
+
+CCP-176 brief1a20ef66ea287be1 handled; v1 ready1a20f994f1308d5f confirmed SENT.
+- Nov24 scheduled handoff: last finished CCP-176 v1,0credits; next ID none in verified queue. No open revisions. Open: warm-filtered originals retained; hours omitted without live confirmation. Original branding/fonts preserved; Claude unavailable; installed Higgsfield Playwright used. Only Tyler emailed per scheduler. Private lead CSV transfer to Higgsfield rejected; identity safely verified locally without external transfer.
