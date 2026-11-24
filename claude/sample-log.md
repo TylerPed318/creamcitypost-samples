@@ -495,3 +495,5 @@ CCP-169 revision1a1efe5bc5c17d6a handled; v2 ready1a1f019c343407b1 confirmed SEN
 - done — CCP-171 v1 (Nov19 scheduled run): live f40fb9e exact SHA256 match; page and all assets public200; ready1a1f44d08c8b1500 confirmed SENT only Tyler. 0credits; original logo retained, own hallway slider, three services, owner story, existing-page nav. Live1440/390 visually inspected;375overflow and keyboard Home/End pass; no pageerrors. Installed Higgsfield Playwright used; named script absent; Claude selection unavailable. Photos1200px at529desktop/354phone meet sharpness targets. Open: original logo raster, no estimate form/invented process/unverified ratings.
 
 - Nov19 scheduled handoff: last finished CCP-171 v1; next ID none identified in audited14d briefs/7d state queue. All revisions have later next-version ready. Open: retain original raster logo; extra soft photo pairs omitted. 0credits; only Tyler emailed; Claude unavailable; installed Higgsfield Playwright used.
+
+- in progress — CCP-172 (2026-11-24 13:16 -06:00, scheduled run)
