@@ -137,7 +137,11 @@ CCP-094 creative brief 1a1d1d085772fe80 handled; v1 ready 1a1d3366e86da9ec confi
 
 CCP-093 creative brief 1a1d1a67c129bf1b handled; existing v1 ready 1a1d3b9b2f738562 confirmed SENT (delivery recovery Nov 13).
 
+CCP-172 brief1a20ef4d7f6e0780 handled; v1 ready1a20f02031fa2532 confirmed SENT.
+
 ## Samples
+
+| CCP-172 | J & S Carpet Cleaning | Carpet cleaning, Waukesha | brief + master CSV | v1 | j-and-s-carpet-cleaning/ | Live7f4ee93; ready1a20f02031fa2532 SENT; 0credits;photo-free. |
 
 | CCP-170 | Mercado Painting L.L.C. | Painting, Milwaukee metro | brief | v1 | mercado-painting/ | Live4b2e0b9; ready1a1f132a9d909371 SENT; 0credits; photo-free. |
 | CCP-171 | AAA Cleaning | Carpet cleaning, Waukesha | brief | v1 | aaa-cleaning/ | Live f40fb9e; ready1a1f44d08c8b1500 SENT; 0credits. |
@@ -496,4 +500,6 @@ CCP-169 revision1a1efe5bc5c17d6a handled; v2 ready1a1f019c343407b1 confirmed SEN
 
 - Nov19 scheduled handoff: last finished CCP-171 v1; next ID none identified in audited14d briefs/7d state queue. All revisions have later next-version ready. Open: retain original raster logo; extra soft photo pairs omitted. 0credits; only Tyler emailed; Claude unavailable; installed Higgsfield Playwright used.
 
-- in progress — CCP-172 (2026-11-24 13:16 -06:00, scheduled run)
+- done — CCP-172 v1 (Nov24 scheduled run): live7f4ee93 exact deployed HTML SHA256; page/logo/favicon public200; ready1a20f02031fa2532 confirmed SENT only Tyler. 0credits;99723bytes. Original raster logo/colors/Kumbh Sans+Mulish retained; photo-free heritage layout; six-service explorer and existing-page navigation. Live1440/390 visually inspected;375/390/1440 no overflow/errors,all6choices pass. Installed Higgsfield Playwright used; named script absent; Claude selection unavailable. Open: obtain real job/van/crew photos; no Google rating/quotes/counts, old offers or quote form.
+
+- Nov24 scheduled handoff: last finished CCP-172 v1,0credits; next verified brief CCP-173 Happy Day Carpet Care (1a20ef54eb97d41e), then174 Air Solutions (1a20ef5d4fa71a41),176 Tallboy (1a20ef66ea287be1). Refresh claims/Gmail before building. No open revisions. Open: J&S real photos; original raster logo preserved. Claude unavailable; installed Higgsfield Playwright used; only Tyler emailed.
