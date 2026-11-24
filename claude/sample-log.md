@@ -141,6 +141,7 @@ CCP-172 brief1a20ef4d7f6e0780 handled; v1 ready1a20f02031fa2532 confirmed SENT.
 
 ## Samples
 
+| CCP-173 | Happy Day Carpet Care | Carpet cleaning, Waukesha | brief + master CSV | v1 | happy-day-carpet-care/ | Live1594a6e; ready1a20f279490eea6a SENT;0credits;photo-free. |
 | CCP-172 | J & S Carpet Cleaning | Carpet cleaning, Waukesha | brief + master CSV | v1 | j-and-s-carpet-cleaning/ | Live7f4ee93; ready1a20f02031fa2532 SENT; 0credits;photo-free. |
 
 | CCP-170 | Mercado Painting L.L.C. | Painting, Milwaukee metro | brief | v1 | mercado-painting/ | Live4b2e0b9; ready1a1f132a9d909371 SENT; 0credits; photo-free. |
@@ -504,4 +505,7 @@ CCP-169 revision1a1efe5bc5c17d6a handled; v2 ready1a1f019c343407b1 confirmed SEN
 
 - Nov24 scheduled handoff: last finished CCP-172 v1,0credits; next verified brief CCP-173 Happy Day Carpet Care (1a20ef54eb97d41e), then174 Air Solutions (1a20ef5d4fa71a41),176 Tallboy (1a20ef66ea287be1). Refresh claims/Gmail before building. No open revisions. Open: J&S real photos; original raster logo preserved. Claude unavailable; installed Higgsfield Playwright used; only Tyler emailed.
 
-- in progress — CCP-173 (2026-11-24T13:59:07.7680068-06:00, America/Chicago, scheduled run)
+- done — CCP-173 v1 (Nov24 scheduled run): live1594a6e exact deployed HTML SHA2560228e7d0a75893d476e8e0b0eca8d91e540a90f6dc4f3289cc5147a53daabec6; page/logo/favicon200; ready1a20f279490eea6a confirmed SENT only Tyler. Original raster logo/navy-red/Montserrat+Source Sans preserved; photo-free heart composition, existing separate-page navigation,14-town interactive. Live1440/390 visually inspected;375/390/1440 no overflow,pageerrors;all14choices pass. 0credits. Installed Higgsfield Playwright used; named script absent; Claude selection unavailable. Open: real photos and higher-resolution original logo.
+
+CCP-173 brief1a20ef54eb97d41e handled; v1 ready1a20f279490eea6a confirmed SENT.
+- Nov24 scheduled handoff: last finished CCP-173 v1,0credits; next verified brief CCP-174 Air Solutions (1a20ef5d4fa71a41), then176 Tallboy (1a20ef66ea287be1). No open revisions found. Open: Happy Day real photos/high-resolution original logo. Original branding preserved; installed Higgsfield Playwright; Claude unavailable; only Tyler emailed. Ending after1item.
