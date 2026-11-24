@@ -509,4 +509,9 @@ CCP-169 revision1a1efe5bc5c17d6a handled; v2 ready1a1f019c343407b1 confirmed SEN
 
 CCP-173 brief1a20ef54eb97d41e handled; v1 ready1a20f279490eea6a confirmed SENT.
 - Nov24 scheduled handoff: last finished CCP-173 v1,0credits; next verified brief CCP-174 Air Solutions (1a20ef5d4fa71a41), then176 Tallboy (1a20ef66ea287be1). No open revisions found. Open: Happy Day real photos/high-resolution original logo. Original branding preserved; installed Higgsfield Playwright; Claude unavailable; only Tyler emailed. Ending after1item.
-- in progress — CCP-174 (2026-11-24 15:06 America/Chicago, scheduled run)
+- done — CCP-174 v1 (Nov24 scheduled run): live9f52c78 exact deployed HTML SHA256fe3e55629eafb90d4f7a1fce44fda553f84ecfbe8ed9278c07fb38a4fdc2c5a7; page/logo/favicon/both photos200; ready1a20f660c20e2a93 confirmed SENT only Tyler. Original logo/red/Poppins+Open Sans; real furnace/van, eight-system interactive. Live1440/390 visually inspected;375/390/1440 no overflow, all8choices pass,no pageerrors. 302584bytes,0credits. Installed Higgsfield Playwright used; named script absent;Claude selection unavailable. Open: original raster logo retained, Brian role/hours/emergency/years/licenses unconfirmed omitted; composite omitted. No separate business pages exposed, section nav and verified client portal used.
+
+| CCP-174 | Air Solutions Heating & Cooling | HVAC, Milwaukee | brief | v1 | air-solutions-heating-cooling/ | Live9f52c78; ready1a20f660c20e2a93 SENT; 0credits. |
+
+CCP-174 brief1a20ef5d4fa71a41 handled; v1 ready1a20f660c20e2a93 confirmed SENT.
+- Nov24 scheduled handoff: last finished CCP-174 v1,0credits; next verified brief CCP-176 Tallboy Home Improvement (1a20ef66ea287be1). No open revisions found. Open: Air Solutions original raster logo and unconfirmed Brian role/hours/emergency availability; section navigation because source has no separate business pages. Claude unavailable; installed Higgsfield Playwright used; only Tyler emailed. Ending after1item.
