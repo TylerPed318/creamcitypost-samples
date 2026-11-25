@@ -541,3 +541,5 @@ CCP-179 brief1a212d14b7df318a handled; v1 ready1a214655010bd3be confirmed SENT.
 | CCP-183 | Roa Tree Services LLC | Tree care, Hartland/Waukesha | brief + master CSV | v1 | roa-tree-services/ | Live7e8951d; ready1a214cd9edaf1b50 SENT;0credits. |
 CCP-183 brief1a212d1704c646a5 handled; v1 ready1a214cd9edaf1b50 confirmed SENT.
 - Nov25 scheduled handoff: last finished183v1; next185 then186/187/189/190, refresh overlap/Gmail. Open: only one sharp real photo used; no verified matching comparison, reviews or extra towns. Original logo retained as PNG; photo402730bytes,total under1MB. No media credits. Claude unavailable.
+
+- in progress — CCP-185 (2026-11-25 17:58 -06:00 America/Chicago, scheduled run)
