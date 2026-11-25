@@ -137,3 +137,5 @@ Approved as final so far: CCP-005 v3, CCP-007 v3, CCP-008 v3, CCP-009 v3, CCP-01
 - Nov18 CCP-167 v2: verify every pest in interactive data arrays as well as visible tile labels. Use own-site testimonial themes for review chips; remove Google-summary wording and unsupported service names throughout.
 
 - Nov18 CCP-169 v2: Mammoth homepage and Locations lists differ; explicit revision matches homepage. Preserve original alpha after truck upscale; inspect lettering before export. ByteDance remove_bg=true job failed; false succeeded. Wait for Pages HTML hash to match before live QA.
+
+- Nov25 CCP-178: even brief-listed full-resolution photos described as real can contain Shutterstock watermarks. Inspect full-size corners before use; omit stock imagery and deliver a deliberate photo-free homepage when genuine originals cannot be verified.
