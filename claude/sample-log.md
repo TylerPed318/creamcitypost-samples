@@ -526,4 +526,4 @@ CCP-176 brief1a20ef66ea287be1 handled; v1 ready1a20f994f1308d5f confirmed SENT.
 - in progress — CCP-178 (2026-11-25 12:51 -06:00, scheduled run)
 - in progress — CCP-179 (2026-11-25 12:54 -06:00, scheduled run)
 
-- in progress — CCP-178 (2026-11-25 14:26 -06:00, scheduled run; resuming stale 12:51 claim, assets only, no ready email)
+- stopped — CCP-178 (2026-11-25 14:28 -06:00, scheduled run): resume claim038afbc released after observed concurrent shared-checkout mutations: concrete-by-will assets disappeared and drm-electrical appeared then disappeared without this run changing either folder. No sample published or ready email sent; 0credits. Older178/179 claim lines preserved; inspect actual workspace/process ownership before recovery. Last finished176v1; next recovery178/179, then new183/185/186/187/189/190. Claude model selection unavailable.
