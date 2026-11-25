@@ -535,3 +535,5 @@ CCP-178 brief1a212d0fe57f3867 handled; v1 ready1a21464d34c069af confirmed SENT.
 | CCP-179 | DRM Electrical LLC | Electrical, West Allis | brief + master CSV | v1 | drm-electrical/ | Livebc40760; ready1a214655010bd3be SENT; 0credits. |
 CCP-179 brief1a212d14b7df318a handled; v1 ready1a214655010bd3be confirmed SENT.
 - Nov25 scheduled handoff: last finished179v1; next verified unclaimed183 then185/186/187/189/190, refresh overlap guard and Gmail first. Concurrent178 delivery recorded by its run. Open: DRM real owner/work photos;0credits; only Tyler emailed. Claude unavailable; installed Higgsfield Playwright used. Ending after1item.
+
+- in progress — CCP-183 (2026-11-25 16:17 -06:00, scheduled run)
