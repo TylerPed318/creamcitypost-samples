@@ -547,3 +547,5 @@ CCP-183 brief1a212d1704c646a5 handled; v1 ready1a214cd9edaf1b50 confirmed SENT.
 | CCP-185 | Dr Bug Pest Control | Pest control, Oconomowoc | brief + master CSV | v1 | dr-bug-pest-control/ | Live23cf488; ready1a215294a9080105 SENT;0credits. |
 CCP-185 brief1a212d19202704fb handled; v1 ready1a215294a9080105 confirmed SENT.
 - Nov25 scheduled handoff: last finished185v1; next186 then187/189/190 from verified briefs, refresh overlap/Gmail. Open: original raster logo retained; only one photo used; no unverified hours/rating/towns/pricing. 0credits; only Tyler emailed. Claude unavailable; installed Higgsfield Playwright used. Prior direct-main approval blocker did not recur.
+
+- in progress — CCP-186 (2026-11-25 18:57 -06:00, scheduled run)
