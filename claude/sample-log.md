@@ -542,4 +542,8 @@ CCP-179 brief1a212d14b7df318a handled; v1 ready1a214655010bd3be confirmed SENT.
 CCP-183 brief1a212d1704c646a5 handled; v1 ready1a214cd9edaf1b50 confirmed SENT.
 - Nov25 scheduled handoff: last finished183v1; next185 then186/187/189/190, refresh overlap/Gmail. Open: only one sharp real photo used; no verified matching comparison, reviews or extra towns. Original logo retained as PNG; photo402730bytes,total under1MB. No media credits. Claude unavailable.
 
-- in progress — CCP-185 (2026-11-25 17:58 -06:00 America/Chicago, scheduled run)
+- done — CCP-185 v1 (Nov25 scheduled run): live23cf488; ready1a215294a9080105 confirmed SENT only Tyler;0credits. Original logo/blue-lime/Archivo+Ubuntu preserved; real original truck photo1800px at540desktop/326phone; four-service interactive and existing separate-page nav. Master CSV185 name/phone/site matched. Public HTML SHA25682d40b8f6f487766f1576f82f19cfa8e7f97d4838b9de2389acb4577cf4e1423 matches commit; assets/favicon200; live1440/390 visually inspected;375 no overflow;all4choices pass;no pageerrors. Named render absent; installed Higgsfield Playwright used;Claude unavailable. Original PNG logo retained; one real photo, under1MB; no unverified rating/hours/towns/pricing/form. Brief says no enhancement.
+
+| CCP-185 | Dr Bug Pest Control | Pest control, Oconomowoc | brief + master CSV | v1 | dr-bug-pest-control/ | Live23cf488; ready1a215294a9080105 SENT;0credits. |
+CCP-185 brief1a212d19202704fb handled; v1 ready1a215294a9080105 confirmed SENT.
+- Nov25 scheduled handoff: last finished185v1; next186 then187/189/190 from verified briefs, refresh overlap/Gmail. Open: original raster logo retained; only one photo used; no unverified hours/rating/towns/pricing. 0credits; only Tyler emailed. Claude unavailable; installed Higgsfield Playwright used. Prior direct-main approval blocker did not recur.
