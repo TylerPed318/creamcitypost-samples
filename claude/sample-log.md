@@ -548,4 +548,7 @@ CCP-183 brief1a212d1704c646a5 handled; v1 ready1a214cd9edaf1b50 confirmed SENT.
 CCP-185 brief1a212d19202704fb handled; v1 ready1a215294a9080105 confirmed SENT.
 - Nov25 scheduled handoff: last finished185v1; next186 then187/189/190 from verified briefs, refresh overlap/Gmail. Open: original raster logo retained; only one photo used; no unverified hours/rating/towns/pricing. 0credits; only Tyler emailed. Claude unavailable; installed Higgsfield Playwright used. Prior direct-main approval blocker did not recur.
 
-- in progress — CCP-186 (2026-11-25 18:57 -06:00, scheduled run)
+- recovery — CCP-186 v1: published af9c73a; QA passed; ready email rejected by automatic approval review, NOT SENT. 0credits.
+
+| CCP-186 | KB's Mow and Snow LLC | Lawn/snow, Menomonee Falls | brief + master CSV | v1 | kbs-mow-and-snow/ | Published af9c73a; QA passed; email BLOCKED, not delivered;0credits. |
+- Nov25 scheduled handoff: last fully delivered185v1;186v1 published af9c73a, SHA256c50549d9ae6f4f8d5566486a292006d4fe37dd4cbb7dd72f2b9969eda13c3811 exact live match; favicon200; live1440/390 visually inspected,375 no overflow,all10 town states pass,no pageerrors. Original text wordmark/lime-black/Righteous+Josefin Sans retained; photo-free because all gallery entries are GoDaddy stock. Master186 name/phone/site matched; brief1a2142541c38833d built but delivery UNHANDLED. Ready email rejected by auto-review for destination/payload authorization; sent search empty, do not mark delivered or rebuild. Next recover186 delivery then187/189/190. Named script absent; installed Playwright and existing Chromium used; Claude selection unavailable;0credits. Only Tyler targeted per scheduler; no email sent. Obtain genuine photos.
